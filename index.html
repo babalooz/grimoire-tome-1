@@ -2179,6 +2179,24 @@ results <span class="op">=</span> client<span class="op">.</span>messages<span c
     <div style="margin-top:18px;font-size:12px;color:var(--dim);font-style:italic;" id="impl-progress-lbl">0 of 5 done</div>
   </div>
   <button class="cert-btn" onclick="window.print()">🖨 Print Certificate</button>
+
+  <!-- TOME 2 UPSELL -->
+  <div style="margin:24px 0 0;padding:24px 24px 20px;background:rgba(255,184,48,0.05);border:1.5px solid rgba(255,184,48,0.25);border-radius:16px;text-align:center;">
+    <div style="font-family:var(--pixel);font-size:7px;color:#FFB830;letter-spacing:2px;margin-bottom:14px;">⚡ PRÓXIMA MISSÃO DESBLOQUEADA</div>
+    <h3 style="font-size:17px;font-weight:900;color:var(--white);margin:0 0 10px;line-height:1.3;">Tome #2 está em construção.</h3>
+    <p style="font-size:13px;color:var(--muted);margin:0 0 18px;line-height:1.65;">No próximo Tome você vai dominar o que derrubou a Uber — orquestrar múltiplos agentes Claude sem o custo explodir. Cada missão, um sistema real.</p>
+    <a href="javascript:void(0)" onclick="window.open(GUMROAD_URL,'_blank')" style="display:inline-block;background:linear-gradient(135deg,#FFB830,#E86030);color:#fff;border-radius:10px;padding:13px 28px;font-size:14px;font-weight:900;cursor:pointer;text-decoration:none;margin-bottom:18px;box-shadow:0 0 24px rgba(255,184,48,0.2);">🔮 Apoiar o Tome #2 — pague o que quiser →</a>
+    <div>
+      <div style="font-size:11px;color:var(--dim);margin-bottom:10px;letter-spacing:1px;">QUAL TEMA VOCÊ QUER NO TOME #2?</div>
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;" id="tome2-vote-btns">
+        <button onclick="voteT2(this,'agents')" style="font-size:12px;padding:7px 16px;border-radius:8px;border:1px solid rgba(255,184,48,0.3);background:rgba(255,184,48,0.06);color:var(--muted);cursor:pointer;transition:all .2s;">🤖 Multi-Agent</button>
+        <button onclick="voteT2(this,'mcp')" style="font-size:12px;padding:7px 16px;border-radius:8px;border:1px solid rgba(255,184,48,0.3);background:rgba(255,184,48,0.06);color:var(--muted);cursor:pointer;transition:all .2s;">🔌 MCP Protocol</button>
+        <button onclick="voteT2(this,'prompts')" style="font-size:12px;padding:7px 16px;border-radius:8px;border:1px solid rgba(255,184,48,0.3);background:rgba(255,184,48,0.06);color:var(--muted);cursor:pointer;transition:all .2s;">✍️ Prompt Engineering</button>
+      </div>
+      <div id="tome2-vote-thanks" style="display:none;font-size:12px;color:#FFB830;margin-top:12px;font-weight:700;">Voto registrado! 🔮 Te avisamos quando sair.</div>
+    </div>
+  </div>
+
   <!-- SHARE CARD -->
   <div class="cert-div" style="margin-top:48px;"></div>
   <div id="share-card">
@@ -3378,6 +3396,16 @@ function _buildShareText(){
     +' · '+Object.keys(_earned).length+' achievements unlocked\n\n'
     +'grimoire.gg · felipe_pguimaraes@hotmail.com\n'
     +PRODUCT_URL;
+}
+function voteT2(btn,theme){
+  document.querySelectorAll('#tome2-vote-btns button').forEach(function(b){
+    b.style.opacity='0.4';b.style.background='rgba(255,184,48,0.06)';
+    b.style.color='var(--muted)';b.style.borderColor='rgba(255,184,48,0.3)';
+  });
+  btn.style.opacity='1';btn.style.background='rgba(255,184,48,0.2)';
+  btn.style.color='#FFB830';btn.style.borderColor='#FFB830';
+  document.getElementById('tome2-vote-thanks').style.display='block';
+  try{localStorage.setItem('t2vote',theme);}catch(e){}
 }
 function shareTwitter(){
   window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(_buildShareText()),'_blank','noopener');
