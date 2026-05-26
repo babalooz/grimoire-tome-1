@@ -1532,9 +1532,9 @@ body::before{
     <span class="badge" id="b4" data-unlock="Finish in under 45 min">⏱ Speed Run</span>
   </div>
   <button class="start-btn" id="start-cta" onclick="checkUsernameBeforeStart()">Start Module 1 <span class="arrow">→</span></button>
-  <div id="completions-display" style="margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px;">
+  <div id="completions-display" style="margin-top:14px;display:none;align-items:center;justify-content:center;gap:8px;">
     <span style="width:7px;height:7px;background:#0DD4A8;border-radius:50%;flex-shrink:0;animation:livePulse 1.5s ease-in-out infinite;display:inline-block;"></span>
-    <span style="font-family:var(--pixel);font-size:7px;color:var(--muted);letter-spacing:0;"><span id="comp-count">312</span> earned the certificate 🏆</span>
+    <span style="font-family:var(--pixel);font-size:7px;color:var(--muted);letter-spacing:0;"><span id="comp-count">0</span> devs already playing</span>
   </div>
 
   <!-- DAILY CHALLENGE -->
@@ -2251,18 +2251,18 @@ results <span class="op">=</span> client<span class="op">.</span>messages<span c
 
   <!-- TOME 2 UPSELL -->
   <div style="margin:24px 0 0;padding:24px 24px 20px;background:rgba(255,184,48,0.05);border:1.5px solid rgba(255,184,48,0.25);border-radius:16px;text-align:center;">
-    <div style="font-family:var(--pixel);font-size:7px;color:#FFB830;letter-spacing:2px;margin-bottom:14px;">⚡ PRÓXIMA MISSÃO DESBLOQUEADA</div>
-    <h3 style="font-size:17px;font-weight:900;color:var(--white);margin:0 0 10px;line-height:1.3;">Tome #2 está em construção.</h3>
-    <p style="font-size:13px;color:var(--muted);margin:0 0 18px;line-height:1.65;">No próximo Tome você vai dominar o que derrubou a Uber — orquestrar múltiplos agentes Claude sem o custo explodir. Cada missão, um sistema real.</p>
-    <a href="javascript:void(0)" onclick="window.open(GUMROAD_URL,'_blank')" style="display:inline-block;background:linear-gradient(135deg,#FFB830,#E86030);color:#fff;border-radius:10px;padding:13px 28px;font-size:14px;font-weight:900;cursor:pointer;text-decoration:none;margin-bottom:18px;box-shadow:0 0 24px rgba(255,184,48,0.2);">🔮 Apoiar o Tome #2 — pague o que quiser →</a>
+    <div style="font-family:var(--pixel);font-size:7px;color:#FFB830;letter-spacing:2px;margin-bottom:14px;">⚡ NEXT MISSION UNLOCKED</div>
+    <h3 style="font-size:17px;font-weight:900;color:var(--white);margin:0 0 10px;line-height:1.3;">Tome #2 is being forged.</h3>
+    <p style="font-size:13px;color:var(--muted);margin:0 0 18px;line-height:1.65;">The next Tome tackles what took down Uber — orchestrating multiple Claude agents without the cost exploding. Each mission, a real system you ship.</p>
+    <a href="javascript:void(0)" onclick="window.open(GUMROAD_URL,'_blank')" style="display:inline-block;background:linear-gradient(135deg,#FFB830,#E86030);color:#fff;border-radius:10px;padding:13px 28px;font-size:14px;font-weight:900;cursor:pointer;text-decoration:none;margin-bottom:18px;box-shadow:0 0 24px rgba(255,184,48,0.2);">🔮 Back Tome #2 — pay what you want →</a>
     <div>
-      <div style="font-size:11px;color:var(--dim);margin-bottom:10px;letter-spacing:1px;">QUAL TEMA VOCÊ QUER NO TOME #2?</div>
+      <div style="font-size:11px;color:var(--dim);margin-bottom:10px;letter-spacing:1px;">WHAT DO YOU WANT IN TOME #2?</div>
       <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;" id="tome2-vote-btns">
         <button onclick="voteT2(this,'agents')" style="font-size:12px;padding:7px 16px;border-radius:8px;border:1px solid rgba(255,184,48,0.3);background:rgba(255,184,48,0.06);color:var(--muted);cursor:pointer;transition:all .2s;">🤖 Multi-Agent</button>
         <button onclick="voteT2(this,'mcp')" style="font-size:12px;padding:7px 16px;border-radius:8px;border:1px solid rgba(255,184,48,0.3);background:rgba(255,184,48,0.06);color:var(--muted);cursor:pointer;transition:all .2s;">🔌 MCP Protocol</button>
         <button onclick="voteT2(this,'prompts')" style="font-size:12px;padding:7px 16px;border-radius:8px;border:1px solid rgba(255,184,48,0.3);background:rgba(255,184,48,0.06);color:var(--muted);cursor:pointer;transition:all .2s;">✍️ Prompt Engineering</button>
       </div>
-      <div id="tome2-vote-thanks" style="display:none;font-size:12px;color:#FFB830;margin-top:12px;font-weight:700;">Voto registrado! 🔮 Te avisamos quando sair.</div>
+      <div id="tome2-vote-thanks" style="display:none;font-size:12px;color:#FFB830;margin-top:12px;font-weight:700;">Vote registered! 🔮 We'll notify you when it drops.</div>
     </div>
   </div>
 
@@ -2545,6 +2545,7 @@ function prevCardGlobal(){
   var active=deck.querySelector('.m-card.active');if(!active)return;
   var idx=Array.from(cards).indexOf(active);
   if(idx>0){active.classList.remove('active');cards[idx-1].classList.add('active');updateDots(n,idx-1);updateNavBar();var cs=document.getElementById('center-scroll');if(cs)cs.scrollTop=0;}
+  else if(n===1&&idx===0){goTo('intro');} /* first card of M1 → scroll to intro */
 }
 
 function nextCardGlobal(){var n=activeModule;if(n<1)return;nextCard(n);updateNavBar();}
@@ -3499,11 +3500,14 @@ function shareTwitter(){
   window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(_buildShareText()),'_blank','noopener');
 }
 /* ── COMPLETIONS COUNTER ── */
-var _COMPLETIONS_SEED=312;
+var _COMPLETIONS_SEED=0;
 function _updateCompletionDisplays(n){
-  /* comp-count: real Supabase number ("312 earned the certificate") */
+  /* comp-count: real Supabase number ("X devs already playing") */
   var el=document.getElementById('comp-count');
   if(el)el.textContent=n.toLocaleString();
+  /* show/hide the completions-display block */
+  var cd=document.getElementById('completions-display');
+  if(cd)cd.style.display=n>0?'flex':'none';
   var cn=document.getElementById('cert-comp-n');
   if(cn)cn.textContent='#'+(n+1);
   /* intro-live: static marketing copy — NOT overridden with real count
@@ -3570,7 +3574,7 @@ function loadLiveTicker(){
 function loadCompletions(){
   var sb=getSB();
   if(!sb){_updateCompletionDisplays(_COMPLETIONS_SEED);return;}
-  sb.from('grimoire_profiles').select('id',{count:'exact',head:true}).eq('course_id',COURSE_ID)
+  sb.from('grimoire_profiles').select('id',{count:'exact',head:true}).eq('course_id',COURSE_ID).gte('modules_done',1)
     .then(function(r){_updateCompletionDisplays(r.count||_COMPLETIONS_SEED);})
     .catch(function(){_updateCompletionDisplays(_COMPLETIONS_SEED);});
 }
