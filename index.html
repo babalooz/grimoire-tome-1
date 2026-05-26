@@ -3069,7 +3069,12 @@ function updateHUD(){
     else{fill.style.width='0%';}
   }
 }
-function updateTime(){document.getElementById('time-spent').textContent=Math.round((Date.now()-sessionStart)/60000)+'m';}
+function updateTime(){
+  var el=document.getElementById('time-spent');if(!el)return;
+  // For new users, show estimated course time instead of session timer
+  if(totalDone===0&&totalPts===0){el.textContent='~45m';return;}
+  el.textContent=Math.round((Date.now()-sessionStart)/60000)+'m';
+}
 function checkBadges(){
   if(totalDone>=1)document.getElementById('b1').classList.add('earned');
   if(totalDone>=3)document.getElementById('b2').classList.add('earned');
