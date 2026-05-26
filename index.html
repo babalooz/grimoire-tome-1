@@ -94,8 +94,13 @@ body{background:var(--bg);color:var(--white);font-family:'Nunito',-apple-system,
 #intro{position:relative;z-index:1;max-width:820px;margin:0 auto;padding:92px 28px 64px;border-bottom:1px solid var(--border);}
 .intro-brand{font-size:11px;letter-spacing:4px;color:var(--mc);font-weight:900;text-transform:uppercase;display:block;margin-bottom:20px;}
 #intro h1{font-size:58px;font-weight:900;line-height:1.06;letter-spacing:-1.5px;margin-bottom:20px;background:linear-gradient(135deg,#FFB830 0%,#E86030 28%,#C04820 55%,#8B4DC8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-family:'Nunito',sans-serif;}
-.intro-sub{color:var(--muted);font-size:20px;max-width:580px;line-height:1.8;margin-bottom:48px;}
+.intro-sub{color:var(--muted);font-size:20px;max-width:580px;line-height:1.8;margin-bottom:32px;}
+.intro-sub-gate{display:block;margin-top:6px;font-size:15px;color:rgba(255,255,255,.45);font-style:italic;letter-spacing:.2px;}
 .score-row{display:flex;gap:0;background:var(--card);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:24px;max-width:520px;}
+/* Badge unlock tooltip */
+.badge:not(.earned){position:relative;cursor:help;}
+.badge:not(.earned)::after{content:attr(data-unlock);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:rgba(15,14,23,.96);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.8);font-size:11px;font-family:'Nunito',sans-serif;font-weight:700;white-space:nowrap;padding:5px 11px;border-radius:7px;pointer-events:none;opacity:0;transition:opacity .18s;z-index:10;}
+.badge:not(.earned):hover::after{opacity:1;}
 .score-item{flex:1;padding:18px 20px;border-right:1px solid var(--border);}
 .score-item:last-child{border-right:none;}
 .score-val{font-size:32px;font-weight:900;font-family:'Nunito',sans-serif;line-height:1;display:block;margin-bottom:6px;}
@@ -974,15 +979,21 @@ body::before{
 ══════════════════════════════════════════ */
 #username-modal{position:fixed;inset:0;z-index:1200;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .3s;}
 #username-modal.show{opacity:1;pointer-events:auto;}
-#username-box{background:#12101e;border:1.5px solid rgba(232,96,48,.25);border-radius:20px;padding:36px 32px;width:100%;max-width:360px;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.7);}
-.um-owl{font-size:40px;margin-bottom:12px;display:block;}
-.um-title{font-family:var(--pixel);font-size:9px;letter-spacing:3px;color:var(--mc);margin-bottom:8px;}
-.um-sub{font-size:12px;color:var(--muted);margin-bottom:22px;line-height:1.6;}
+#username-box{background:#12101e;border:1.5px solid rgba(232,96,48,.35);border-radius:20px;padding:32px 32px 28px;width:100%;max-width:380px;text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.8),0 0 0 1px rgba(232,96,48,.08);}
+/* GRIM no modal */
+.um-grim-wrap{position:relative;display:inline-flex;flex-direction:column;align-items:center;margin-bottom:16px;}
+.um-grim-svg{width:64px;height:70px;image-rendering:pixelated;image-rendering:crisp-edges;filter:drop-shadow(0 4px 16px rgba(232,96,48,.4));animation:umGrimFloat 3s ease-in-out infinite;}
+@keyframes umGrimFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.um-speech{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px 10px 10px 2px;padding:7px 11px;font-size:10.5px;color:rgba(255,255,255,.7);line-height:1.5;margin-top:10px;max-width:240px;text-align:left;position:relative;}
+.um-speech::before{content:'';position:absolute;top:-6px;left:18px;border:6px solid transparent;border-bottom-color:rgba(255,255,255,.1);border-top:0;}
+.um-title{font-family:var(--pixel);font-size:9px;letter-spacing:3px;color:var(--mc);margin-bottom:6px;margin-top:4px;}
+.um-sub{font-size:11.5px;color:rgba(255,255,255,.55);margin-bottom:20px;line-height:1.65;}
+.um-sub strong{color:rgba(255,255,255,.85);}
 #username-input{width:100%;padding:12px 16px;background:var(--card);border:1.5px solid rgba(255,255,255,.1);border-radius:10px;color:var(--white);font-size:16px;font-weight:900;text-align:center;margin-bottom:14px;box-sizing:border-box;font-family:inherit;letter-spacing:1px;}
 #username-input:focus{outline:none;border-color:var(--mc);box-shadow:0 0 0 3px rgba(232,96,48,.15);}
 .um-btn{width:100%;padding:13px;background:var(--mc);color:#0f0e17;border:none;border-radius:10px;font-size:13px;font-weight:900;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s;letter-spacing:.5px;}
 .um-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(232,96,48,.4);}
-.um-skip{font-size:10px;color:var(--dim);margin-top:10px;cursor:pointer;background:none;border:none;font-family:inherit;}
+.um-skip{font-size:10px;color:var(--dim);margin-top:10px;cursor:pointer;background:none;border:none;font-family:inherit;opacity:.6;}
 .paywall-ov.show{display:flex!important;}
 
 /* HUD username pill */
@@ -1165,13 +1176,27 @@ body::before{
 <!-- USERNAME MODAL -->
 <div id="username-modal">
   <div id="username-box">
-    <span class="um-owl">🦉</span>
-    <div class="um-title" id="username-box-title">CHOOSE YOUR CALLSIGN</div>
-    <div class="um-sub" id="username-box-sub">This name appears in global rankings across all Grimoire courses</div>
-    <input id="username-input" type="text" maxlength="18" placeholder="e.g. NightOwl_Dev" autocomplete="off" spellcheck="false"/>
+    <div class="um-grim-wrap">
+      <!-- GRIM pixel art -->
+      <svg class="um-grim-svg" viewBox="0 0 20 22" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+        <g><rect x="5" y="0" width="1" height="1" fill="#342E80"/><rect x="4" y="1" width="3" height="1" fill="#342E80"/><rect x="4" y="2" width="3" height="1" fill="#2B2368"/><rect x="14" y="0" width="1" height="1" fill="#342E80"/><rect x="13" y="1" width="3" height="1" fill="#342E80"/><rect x="13" y="2" width="3" height="1" fill="#2B2368"/><rect x="5" y="0" width="1" height="1" fill="#E86030"/><rect x="14" y="0" width="1" height="1" fill="#E86030"/></g>
+        <rect x="4" y="1" width="12" height="1" fill="#1A1535"/><rect x="1" y="2" width="18" height="15" fill="#1A1535"/><rect x="3" y="17" width="14" height="1" fill="#1A1535"/><rect x="5" y="18" width="10" height="1" fill="#1A1535"/>
+        <rect x="2" y="8" width="2" height="7" fill="#252240"/><rect x="2" y="8" width="1" height="6" fill="#2E2A50"/><rect x="16" y="8" width="2" height="7" fill="#252240"/><rect x="17" y="8" width="1" height="6" fill="#2E2A50"/>
+        <rect x="8" y="10" width="4" height="6" fill="#D4B278"/><rect x="7" y="11" width="6" height="5" fill="#D4B278"/>
+        <rect x="2" y="3" width="7" height="7" fill="#E86030"/><rect x="3" y="4" width="5" height="5" fill="#FFFFFF"/><rect x="3" y="5" width="4" height="3" fill="#120604"/><rect x="3" y="5" width="1" height="1" fill="#FFFFFF"/><rect x="7" y="5" width="1" height="3" fill="#C49028"/><rect x="3" y="8" width="5" height="1" fill="#C49028"/>
+        <rect x="11" y="3" width="7" height="7" fill="#E86030"/><rect x="12" y="4" width="5" height="5" fill="#FFFFFF"/><rect x="12" y="5" width="4" height="3" fill="#120604"/><rect x="12" y="5" width="1" height="1" fill="#FFFFFF"/><rect x="16" y="5" width="1" height="3" fill="#C49028"/><rect x="12" y="8" width="5" height="1" fill="#C49028"/>
+        <rect x="2" y="4" width="7" height="1" fill="#120604"/><rect x="11" y="4" width="7" height="1" fill="#120604"/>
+        <rect x="8" y="9" width="4" height="1" fill="#FFB020"/><rect x="9" y="10" width="2" height="1" fill="#E89010"/>
+        <rect x="1" y="19" width="4" height="1" fill="#E86030"/><rect x="2" y="20" width="3" height="1" fill="#E86030"/><rect x="15" y="19" width="4" height="1" fill="#E86030"/><rect x="15" y="20" width="3" height="1" fill="#E86030"/>
+      </svg>
+      <div class="um-speech">Devs who name themselves finish.<br>Every one. I keep count.</div>
+    </div>
+    <div class="um-title" id="username-box-title">WHO ENTERS THE GRIMOIRE?</div>
+    <div class="um-sub" id="username-box-sub">Your name gets inscribed in the leaderboard alongside every dev who slashed their API costs. <strong>The XP is real. The rank is real.</strong></div>
+    <input id="username-input" type="text" maxlength="18" placeholder="e.g. VoidMage_99, TokenSlayer" autocomplete="off" spellcheck="false"/>
     <div id="username-error" style="font-size:11px;color:#FF6B9D;min-height:16px;margin-bottom:4px;"></div>
-    <button id="username-confirm" class="um-btn" onclick="setUsername()">LOCK IT IN →</button>
-    <button class="um-skip" onclick="skipUsername()">skip for now →</button>
+    <button id="username-confirm" class="um-btn" onclick="setUsername()">INSCRIBE MY NAME →</button>
+    <button class="um-skip" onclick="skipUsername()">enter without identity →</button>
   </div>
 </div>
 
@@ -1198,7 +1223,6 @@ body::before{
         <span id="hud-ulv" class="hud-ulv">LV 1</span>
       </div>
     </div>
-    <span id="hud-level" style="display:none">LV 1</span>
     <span class="hud-xp" id="hxp">0 XP</span>
   </div>
 </div>
@@ -1425,15 +1449,8 @@ body::before{
 <div id="intro">
   <span class="intro-brand">Grimoire</span>
   <h1>Cut Your Claude API Costs by 80%</h1>
-  <p class="intro-sub">5 techniques Anthropic doesn't teach you. Each module has an exercise — you only move forward when you actually understand it. Not a blog post. Real training.</p>
-  <div class="intro-live"><span class="intro-live-dot"></span><span>2,847 developers studying this · average savings: $642/month</span></div>
-  <div id="live-ticker"><span class="lt-dot"></span><span id="lt-msg">Alex T. just completed Module 2 · 4 min ago</span></div>
-  <div class="score-row">
-    <div class="score-item"><span class="score-val xp-v" id="pts">0</span><span class="score-lbl">XP Points</span></div>
-    <div class="score-item"><span class="score-val str-v" id="streak-num">0</span><span class="score-lbl">Day Streak</span><div class="streak-dots" id="streak-dots"></div></div>
-    <div class="score-item"><span class="score-val tim-v" id="time-spent">0m</span><span class="score-lbl">Time Today</span></div>
-  </div>
-  <!-- SAVINGS MYSTERY -->
+  <p class="intro-sub">5 techniques Anthropic doesn't document.<br><span class="intro-sub-gate">Each module is gated by an exercise — you advance only when you actually get it right.</span></p>
+  <!-- SAVINGS MYSTERY — moved above fold so curiosity pulls the click -->
   <div id="savings-mystery">
     <div class="sm-lock-row">
       <span class="sm-icon" id="sm-icon">🔒</span>
@@ -1444,16 +1461,23 @@ body::before{
       </div>
     </div>
   </div>
+  <div class="intro-live"><span class="intro-live-dot"></span><span>2,847 developers started this · average savings: $642/month</span></div>
+  <div id="live-ticker"><span class="lt-dot"></span><span id="lt-msg">Alex T. just completed Module 2 · 4 min ago</span></div>
+  <div class="score-row">
+    <div class="score-item"><span class="score-val xp-v" id="pts">0</span><span class="score-lbl" id="pts-lbl">XP Points</span></div>
+    <div class="score-item"><span class="score-val str-v" id="streak-num">0</span><span class="score-lbl" id="streak-lbl">Day Streak</span><div class="streak-dots" id="streak-dots"></div></div>
+    <div class="score-item"><span class="score-val tim-v" id="time-spent">0m</span><span class="score-lbl" id="time-lbl">Time Today</span></div>
+  </div>
   <div class="badges-row">
-    <span class="badge" id="b1">⚡ First Step</span>
-    <span class="badge" id="b2">🔥 Momentum</span>
-    <span class="badge" id="b3">💎 Cost Master</span>
-    <span class="badge" id="b4">⏱ Speed Run</span>
+    <span class="badge" id="b1" data-unlock="Complete Module 1">⚡ First Step</span>
+    <span class="badge" id="b2" data-unlock="Complete 3 modules">🔥 Momentum</span>
+    <span class="badge" id="b3" data-unlock="Complete all 5 modules">💎 Cost Master</span>
+    <span class="badge" id="b4" data-unlock="Finish in under 45 min">⏱ Speed Run</span>
   </div>
   <button class="start-btn" id="start-cta" onclick="goTo('m1')">Start Module 1 <span class="arrow">→</span></button>
   <div id="completions-display" style="margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px;">
     <span style="width:7px;height:7px;background:#0DD4A8;border-radius:50%;flex-shrink:0;animation:livePulse 1.5s ease-in-out infinite;display:inline-block;"></span>
-    <span style="font-family:var(--pixel);font-size:7px;color:var(--muted);letter-spacing:0;"><span id="comp-count">312</span> devs completed this Tome</span>
+    <span style="font-family:var(--pixel);font-size:7px;color:var(--muted);letter-spacing:0;"><span id="comp-count">312</span> earned the certificate 🏆</span>
   </div>
 
   <!-- DAILY CHALLENGE -->
@@ -1490,7 +1514,7 @@ body::before{
   <div class="module-inner" id="mi1">
     <div class="m-meta"><span class="m-label">MODULE 01 / 05</span><span class="m-status" id="st1">not started</span></div>
     <h2 class="m-title">Why Your Claude Bill Is Probably 4× Higher Than It Should Be</h2>
-    <div class="m-chips"><span class="chip">📖 6 min read</span><span class="chip">✏️ 10 min exercise</span><span class="chip chip-xp">+20 XP</span><span class="chip">🟢 Beginner</span></div>
+    <div class="m-chips"><span class="chip">⚡ ~8 min</span><span class="chip chip-xp">+20 XP</span><span class="chip">🟢 Beginner</span></div>
     <div class="card-deck" id="deck1">
       <div class="card-progress" id="cdots1">
         <div class="cp-dot active"></div><div class="cp-dot"></div><div class="cp-dot"></div><div class="cp-dot"></div>
@@ -1498,12 +1522,9 @@ body::before{
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="m-obj"><span class="m-obj-label">By the end of this module you'll be able to</span><p>Identify the 3 biggest sources of token waste in any Claude implementation — and find yours.</p></div>
         <div class="social-proof">📊 <b>78%</b> of learners found their #1 waste source in this module.</div>
-        <div class="urgency-block">⏱ At $642/mo average waste, every day without this fix costs <strong>~$21</strong>. This module takes 10 minutes.</div>
         <div class="m-content">
-          <p>Most developers using the Claude API are paying 300–400% more than they should — not because they're doing anything wrong, but because nobody explained what actually makes up the bill.</p>
-          <p>Every API call has two costs: <strong>input tokens</strong> (what you send) and <strong>output tokens</strong> (what Claude returns). Output tokens cost ~5× more than input. Most guides focus on input. That's the wrong direction.</p>
+          <p>Most API bills are 3–4× higher than they should be. Output tokens cost <strong>5× more</strong> than input — and that's where the real waste hides.</p>
         </div>
         <button class="card-next" onclick="nextCard(1)">Next →</button>
       </div>
@@ -1652,7 +1673,7 @@ c <span class="op">=</span> <span class="fn">cost_of</span>(response<span class=
   <div class="module-inner" id="mi2">
     <div class="m-meta"><span class="m-label">MODULE 02 / 05</span><span class="m-status" id="st2">not started</span></div>
     <h2 class="m-title">Prompt Caching — The 2-Line Fix That Cuts Input Costs by 90%</h2>
-    <div class="m-chips"><span class="chip">📖 7 min read</span><span class="chip">✏️ 15 min exercise</span><span class="chip chip-xp">+30 XP</span><span class="chip">🟡 Intermediate</span></div>
+    <div class="m-chips"><span class="chip">⚡ ~10 min</span><span class="chip chip-xp">+30 XP</span><span class="chip">🟡 Intermediate</span></div>
     <div class="card-deck" id="deck2">
       <div class="card-progress" id="cdots2">
         <div class="cp-dot active"></div><div class="cp-dot"></div><div class="cp-dot"></div><div class="cp-dot"></div>
@@ -1660,11 +1681,9 @@ c <span class="op">=</span> <span class="fn">cost_of</span>(response<span class=
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="m-obj"><span class="m-obj-label">By the end of this module you'll be able to</span><p>Implement prompt caching for any repeated system prompt in under 5 minutes.</p></div>
         <div class="social-proof">📊 <b>91%</b> of learners who implement this see savings the same day.</div>
-        <div class="urgency-block">💾 If you make 50+ API calls/day without caching, you're burning <strong>~$300/mo</strong> re-sending the same system prompt. This fix is 2 lines.</div>
         <div class="m-content">
-          <p>Prompt caching stores your system prompt on Anthropic's servers for 5 minutes. Every call within that window reuses the cached version at <strong>10% of the original input cost</strong>. Break-even happens after just 2 calls.</p>
+          <p>Two lines of code. Your system prompt is cached for 5 minutes at <strong>10% of the original cost</strong>. Break-even: 2 calls.</p>
         </div>
         <button class="card-next" onclick="nextCard(2)">Next →</button>
       </div>
@@ -1784,7 +1803,7 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
   <div class="module-inner" id="mi3">
     <div class="m-meta"><span class="m-label">MODULE 03 / 05</span><span class="m-status" id="st3">not started</span></div>
     <h2 class="m-title">Model Routing — Use Haiku for 80% of Your Calls</h2>
-    <div class="m-chips"><span class="chip">📖 8 min read</span><span class="chip">✏️ 15 min exercise</span><span class="chip chip-xp">+25 XP</span><span class="chip">🟡 Intermediate</span></div>
+    <div class="m-chips"><span class="chip">⚡ ~10 min</span><span class="chip chip-xp">+25 XP</span><span class="chip">🟡 Intermediate</span></div>
     <div class="card-deck" id="deck3">
       <div class="card-progress" id="cdots3">
         <div class="cp-dot active"></div><div class="cp-dot"></div><div class="cp-dot"></div><div class="cp-dot"></div>
@@ -1792,15 +1811,13 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="m-obj"><span class="m-obj-label">By the end of this module you'll be able to</span><p>Build a routing layer that automatically sends each task to the right model.</p></div>
         <div class="social-proof">📊 <b>84%</b> of learners cut their model costs in half within the first week.</div>
-        <div class="urgency-block">🔀 Haiku is <strong>20× cheaper</strong> than Sonnet. If 80% of your calls can run on Haiku — and they probably can — you're overpaying by up to 16× on those calls right now.</div>
         <div class="m-content">
-          <p>Most implementations use one model for everything. That's the most expensive way to use the API. The right move is a 3-tier routing layer:</p>
+          <p>One model for everything = maximum cost. Use a 3-tier router:</p>
           <ul>
-            <li><strong>Haiku:</strong> classify, yes/no, extract, format, tag, translate — anything under 300 tokens</li>
-            <li><strong>Sonnet:</strong> reasoning, long-form writing, code generation, multi-step analysis</li>
-            <li><strong>Opus:</strong> architecture decisions, novel problem-solving, 10k+ context deep reasoning — deploy sparingly</li>
+            <li><strong>Haiku</strong> — classify, extract, tag, translate (12× cheaper)</li>
+            <li><strong>Sonnet</strong> — write, reason, debug, analyze</li>
+            <li><strong>Opus</strong> — architecture, novel problems, 10k+ context</li>
           </ul>
         </div>
         <button class="card-next" onclick="nextCard(3)">Next →</button>
@@ -1840,11 +1857,11 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
       <span class="ex-xp">+25 XP</span>
     </div>
     <div class="ex-body">
-      <p class="ex-inst">For each task: which model is more cost-efficient <em>without sacrificing quality</em>?</p>
+      <p class="ex-inst">Haiku or Sonnet? Tap one — next task loads instantly.</p>
       <div id="router-tasks"></div>
       <div class="ex-footer">
-        <span id="router-hint" style="font-size:13px;color:var(--muted)">Choose a model for each task</span>
-        <button class="exec-btn" id="eb3" onclick="submitRouter(this)" disabled><div class="exec-prog"></div><span class="exec-lbl">Check answers →</span></button>
+        <span id="router-hint" style="font-size:13px;color:var(--muted)">5 tasks · need 4/5 right</span>
+        <button class="exec-btn" id="eb3" onclick="submitRouter(this)" disabled style="display:none"><div class="exec-prog"></div><span class="exec-lbl">Check answers →</span></button>
       </div>
       <div id="snip-m3" class="snip-block">
         <div class="snip-head">
@@ -1881,7 +1898,7 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
   <div class="module-inner" id="mi4">
     <div class="m-meta"><span class="m-label">MODULE 04 / 05</span><span class="m-status" id="st4">not started</span></div>
     <h2 class="m-title">Output Control — Stop Paying for Tokens You Never Use</h2>
-    <div class="m-chips"><span class="chip">📖 6 min read</span><span class="chip">✏️ 10 min exercise</span><span class="chip chip-xp">+30 XP</span><span class="chip">🟠 Advanced</span></div>
+    <div class="m-chips"><span class="chip">⚡ ~8 min</span><span class="chip chip-xp">+30 XP</span><span class="chip">🟠 Advanced</span></div>
     <div class="card-deck" id="deck4">
       <div class="card-progress" id="cdots4">
         <div class="cp-dot active"></div><div class="cp-dot"></div><div class="cp-dot"></div><div class="cp-dot"></div>
@@ -1889,12 +1906,9 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="m-obj"><span class="m-obj-label">By the end of this module you'll be able to</span><p>Set precise output limits based on real data — and stop paying for space you never use.</p></div>
         <div class="social-proof">📊 <b>67%</b> of devs had max_tokens set 3× higher than their actual average response.</div>
-        <div class="urgency-block">✂️ Output tokens cost <strong>5× more</strong> than input. The average dev's max_tokens is 3× their actual use. You're paying for silence. This module: 5-minute calibration.</div>
         <div class="m-content">
-          <p>Output tokens cost 5× more than input — and most apps set <code>max_tokens</code> way higher than needed.</p>
-          <p><strong>Claude writes longer responses when given more space.</strong> Tightening the limit tightens the output. It's not a bug — it's a lever you're not using.</p>
+          <p><strong>Claude writes longer when given more space.</strong> Tighten <code>max_tokens</code> to your real P95 — same quality, 40% fewer output tokens.</p>
         </div>
         <button class="card-next" onclick="nextCard(4)">Next →</button>
       </div>
@@ -1998,7 +2012,7 @@ used <span class="op">=</span> response<span class="op">.</span>usage<span class
   <div class="module-inner" id="mi5">
     <div class="m-meta"><span class="m-label">MODULE 05 / 05</span><span class="m-status" id="st5">🔒 locked</span></div>
     <h2 class="m-title">Batch API — Cut Another 50% While You Sleep</h2>
-    <div class="m-chips"><span class="chip">📖 7 min</span><span class="chip">✏️ 20 min exercise</span><span class="chip chip-xp">+40 XP</span><span class="chip">🔴 Expert</span></div>
+    <div class="m-chips"><span class="chip">⚡ ~12 min</span><span class="chip chip-xp">+40 XP</span><span class="chip">🔴 Expert</span></div>
     <div class="card-deck" id="deck5">
       <div class="card-progress" id="cdots5">
         <div class="cp-dot active"></div><div class="cp-dot"></div><div class="cp-dot"></div><div class="cp-dot"></div>
@@ -2006,11 +2020,9 @@ used <span class="op">=</span> response<span class="op">.</span>usage<span class
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="m-obj"><span class="m-obj-label">By the end of this module you will be able to</span><p>Identify which of your calls qualify for batch and set up your first async job.</p></div>
         <div class="social-proof">📊 <b>Only 12%</b> of Claude API users use Batch — almost all the savings are still on the table.</div>
-        <div class="urgency-block">⚡ Batch API = <strong>50% off</strong> every non-realtime call. 88% of devs don't use it. Every async job you run today is paying double what it should.</div>
         <div class="m-content">
-          <p>The Anthropic Batch API runs requests asynchronously at <strong>50% of the standard price</strong>. You submit a batch, it processes within 24h, you fetch the results. For any non-realtime task, that's a direct 50% cut.</p>
+          <p>Non-realtime calls via Batch API = <strong>50% off</strong>, automatically. Submit → wait 24h → fetch results. That's it.</p>
         </div>
         <button class="card-next" onclick="nextCard(5)">Next →</button>
       </div>
@@ -2058,11 +2070,11 @@ used <span class="op">=</span> response<span class="op">.</span>usage<span class
       <span class="ex-xp">+40 XP</span>
     </div>
     <div class="ex-body">
-      <p class="ex-inst">Can this wait until tomorrow, or does it need an instant response?</p>
+      <p class="ex-inst">Real-time or Batch? Tap one — next task loads instantly.</p>
       <div id="batch-tasks"></div>
       <div class="ex-footer">
-        <span id="batch-hint" style="font-size:13px;color:var(--muted)">Classify all 6 tasks above</span>
-        <button class="exec-btn" id="eb5" onclick="submitBatch(this)" disabled><div class="exec-prog"></div><span class="exec-lbl">Check answers →</span></button>
+        <span id="batch-hint" style="font-size:13px;color:var(--muted)">6 tasks · need 5/6 right</span>
+        <button class="exec-btn" id="eb5" onclick="submitBatch(this)" disabled style="display:none"><div class="exec-prog"></div><span class="exec-lbl">Check answers →</span></button>
       </div>
       <div id="snip-m5" class="snip-block">
         <div class="snip-head">
@@ -3307,6 +3319,9 @@ function unlockSavingsMystery(amount){
   (function tick(){var p=Math.min((Date.now()-t0)/dur,1),v=Math.round(end*p);el.textContent='$'+v+'/mo';if(p<1)requestAnimationFrame(tick);})();
   /* nudge: scroll to mystery if it's in intro and user is there */
   if(activeModule===0){var m=document.getElementById('savings-mystery');if(m)m.scrollIntoView({behavior:'smooth',block:'nearest'});}
+  /* wire HUD savings pill */
+  var hudSav=document.getElementById('hud-sav');
+  if(hudSav){hudSav.textContent='💰 $'+Math.round(amount)+'/mo';hudSav.style.display='inline-block';}
 }
 
 /* — Speed Percentile Toast — */
@@ -3371,6 +3386,8 @@ function updateSavingsTicker(n){
   if(sub)sub.textContent=totalDone+'/5 techniques applied';
   /* update mystery hint when savings come in */
   if(_savTotal>0){var hint=document.getElementById('sm-hint');if(hint&&_savingsUnlocked)hint.textContent='← $'+_savTotal+'/mo already implemented. Keep going.';}
+  /* keep HUD savings pill updated as modules complete */
+  if(_savTotal>0){var hudSav=document.getElementById('hud-sav');if(hudSav){hudSav.textContent='💰 $'+_savTotal+'/mo';hudSav.style.display='inline-block';}}
 }
 
 /* — GRIM provocative module messages — */
@@ -3417,6 +3434,9 @@ function _updateCompletionDisplays(n){
   if(el)el.textContent=n.toLocaleString();
   var cn=document.getElementById('cert-comp-n');
   if(cn)cn.textContent='#'+(n+1);
+  /* sync intro-live counter with real data */
+  var liveTxt=document.querySelector('.intro-live span:last-child');
+  if(liveTxt&&n>0){liveTxt.textContent=n.toLocaleString()+' developers completed this · average savings: $642/month';}
 }
 function loadCompletions(){
   var sb=getSB();
@@ -3452,10 +3472,13 @@ function submitEmail(e){
   if(!email)return;
   var btn=e.target.querySelector('.em-submit');
   if(btn){btn.disabled=true;btn.textContent='Sending...';}
+  var _payload={email:email,username:_username||'',xp:totalPts,level:getLevel(totalPts),achievements:Object.keys(_earned).join(','),source:'grimoire-tome-claude-costs-v1'};
+  /* n8n Brevo automation — fire and forget */
+  fetch('https://volinda.app.n8n.cloud/webhook/formspree-grimoire',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(_payload)}).catch(function(){});
   fetch('https://formspree.io/f/'+FORMSPREE_ID,{
     method:'POST',
     headers:{'Content-Type':'application/json','Accept':'application/json'},
-    body:JSON.stringify({email:email,xp:totalPts,level:getLevel(totalPts),achievements:Object.keys(_earned).join(','),source:'grimoire-tome-claude-costs-v1'})
+    body:JSON.stringify(_payload)
   }).then(function(r){
     if(!r.ok){localStorage.setItem('sds-email-skip','1');dismissEmail();return;}
     localStorage.setItem('sds-email','1');
@@ -3552,6 +3575,15 @@ function loadState(){
     } else if(totalDone>=TOTAL){
       switchModule(5);
     }
+  }
+  /* New user: score-row shows potential instead of zeros */
+  if(totalDone===0&&totalPts===0){
+    var ptsEl=document.getElementById('pts'),ptsLbl=document.getElementById('pts-lbl');
+    var strEl=document.getElementById('streak-num'),strLbl=document.getElementById('streak-lbl');
+    var tmEl=document.getElementById('time-spent'),tmLbl=document.getElementById('time-lbl');
+    if(ptsEl)ptsEl.textContent='20+';if(ptsLbl)ptsLbl.textContent='XP to Earn';
+    if(strEl)strEl.textContent='5';if(strLbl)strLbl.textContent='Modules';
+    if(tmEl)tmEl.textContent='~45m';if(tmLbl)tmLbl.textContent='Est. Time';
   }
   /* RPG init */
   loadAchievements();
@@ -3684,7 +3716,7 @@ function runCacheSim(){
   }
 }
 
-/* ── M3: ROUTER GAME ── */
+/* ── M3: ROUTER GAME (one-at-a-time) ── */
 var routerTasks=[
   {id:'r1',task:'Classify a support ticket as "billing", "technical", or "general"',correct:'haiku',reason:'Simple classification — Haiku handles this perfectly at 12× lower cost.'},
   {id:'r2',task:'Write a 500-word technical blog post about a new API feature',correct:'sonnet',reason:'Long-form writing requires Sonnet\'s reasoning and fluency.'},
@@ -3693,65 +3725,58 @@ var routerTasks=[
   {id:'r5',task:'Translate a product description from English to Spanish',correct:'haiku',reason:'Short translation is well within Haiku\'s capabilities.'}
 ];
 var _routerAnswers={};
+var _routerCurrent=0;
 function renderRouter(){
+  _routerCurrent=0;
+  _routerAnswers={};
+  showRouterTask(0);
+}
+function showRouterTask(idx){
   var c=document.getElementById('router-tasks');
   if(!c)return;
-  c.innerHTML=routerTasks.map(function(t){
-    return '<div class="router-task" id="rt-'+t.id+'" style="margin-bottom:12px;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:12px;">'
-      +'<div style="font-size:14px;color:var(--body);margin-bottom:10px;">'+t.task+'</div>'
-      +'<div style="display:flex;gap:8px;">'
-      +'<button class="route-btn" id="rb-'+t.id+'-haiku" onclick="selectRoute(\''+t.id+'\',\'haiku\')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;transition:all .2s;">🐦 Haiku</button>'
-      +'<button class="route-btn" id="rb-'+t.id+'-sonnet" onclick="selectRoute(\''+t.id+'\',\'sonnet\')" style="flex:1;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;transition:all .2s;">🤖 Sonnet</button>'
-      +'</div>'
-      +'<div class="route-feedback" id="rf-'+t.id+'" style="font-size:12px;margin-top:8px;display:none;"></div>'
-      +'</div>';
-  }).join('');
+  if(idx>=routerTasks.length){
+    var eb=document.getElementById('eb3');
+    if(eb){eb.disabled=false;eb.querySelector('.exec-lbl').textContent='✓ Checking...';}
+    var hint=document.getElementById('router-hint');if(hint)hint.textContent='';
+    autoExec('eb3',function(b){submitRouter(b);});
+    return;
+  }
+  var t=routerTasks[idx];
+  c.innerHTML='<div style="font-size:10px;font-family:var(--pixel);color:var(--muted);letter-spacing:2px;margin-bottom:12px;text-transform:uppercase;">Task '+(idx+1)+' / '+routerTasks.length+'</div>'
+    +'<div style="padding:16px 18px;background:var(--surface);border:1px solid var(--border);border-radius:12px;animation:cardIn .3s ease;">'
+    +'<div style="font-size:15px;color:var(--body);margin-bottom:14px;line-height:1.6;">'+t.task+'</div>'
+    +'<div style="display:flex;gap:8px;">'
+    +'<button id="rr-haiku" onclick="selectRoute(\''+t.id+'\',\'haiku\')" style="flex:1;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;transition:all .2s;">🐦 Haiku</button>'
+    +'<button id="rr-sonnet" onclick="selectRoute(\''+t.id+'\',\'sonnet\')" style="flex:1;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:13px;font-weight:700;transition:all .2s;">🤖 Sonnet</button>'
+    +'</div>'
+    +'<div id="rf-inline" style="font-size:13px;margin-top:10px;min-height:22px;display:none;"></div>'
+    +'</div>';
+  var hint=document.getElementById('router-hint');
+  if(hint)hint.textContent=(routerTasks.length-idx)+' left';
 }
 function selectRoute(id,model){
   playClick();
   _routerAnswers[id]=model;
   var task=routerTasks.find(function(t){return t.id===id;});
-  ['haiku','sonnet'].forEach(function(m){
-    var b=document.getElementById('rb-'+id+'-'+m);
-    if(!b)return;
-    if(m===model){
-      b.style.background=task&&task.correct===m?'rgba(13,212,168,0.15)':'rgba(255,107,157,0.15)';
-      b.style.borderColor=task&&task.correct===m?'#0DD4A8':'#FF6B9D';
-      b.style.color=task&&task.correct===m?'#0DD4A8':'#FF6B9D';
-    } else {
-      b.style.background='var(--card)';b.style.borderColor='var(--border)';b.style.color='var(--muted)';
-    }
-  });
-  if(Object.keys(_routerAnswers).length===routerTasks.length){
-    var eb=document.getElementById('eb3');
-    if(eb){eb.disabled=false;eb.querySelector('.exec-lbl').textContent='✓ Validating...';}
-    var hint=document.getElementById('router-hint');if(hint)hint.textContent='All answered — auto-checking!';
-    autoExec('eb3',function(b){submitRouter(b);});
-  }
+  var isRight=task&&task.correct===model;
+  var fb=document.getElementById('rf-inline');
+  if(fb){fb.style.display='block';fb.style.color=isRight?'#0DD4A8':'#FF6B9D';fb.textContent=(isRight?'✓ ':'✗ ')+task.reason;}
+  var hb=document.getElementById('rr-haiku'),sb=document.getElementById('rr-sonnet');
+  if(hb){if(model==='haiku'){hb.style.background=isRight?'rgba(13,212,168,0.15)':'rgba(255,107,157,0.15)';hb.style.borderColor=isRight?'#0DD4A8':'#FF6B9D';hb.style.color=isRight?'#0DD4A8':'#FF6B9D';}else{hb.style.background='var(--card)';hb.style.borderColor='var(--border)';hb.style.color='var(--muted)';}}
+  if(sb){if(model==='sonnet'){sb.style.background=isRight?'rgba(13,212,168,0.15)':'rgba(255,107,157,0.15)';sb.style.borderColor=isRight?'#0DD4A8':'#FF6B9D';sb.style.color=isRight?'#0DD4A8':'#FF6B9D';}else{sb.style.background='var(--card)';sb.style.borderColor='var(--border)';sb.style.color='var(--muted)';}}
+  if(hb)hb.onclick=null;if(sb)sb.onclick=null;
+  _routerCurrent++;
+  setTimeout(function(){showRouterTask(_routerCurrent);},isRight?700:1100);
 }
 function submitRouter(btn){
   var correct=0;
-  routerTasks.forEach(function(t){
-    var fb=document.getElementById('rf-'+t.id);
-    var isRight=_routerAnswers[t.id]===t.correct;
-    if(isRight)correct++;
-    if(fb){fb.style.display='block';fb.style.color=isRight?'#0DD4A8':'#FF6B9D';fb.textContent=(isRight?'✓ ':'✗ ')+t.reason;}
-  });
+  routerTasks.forEach(function(t){if(_routerAnswers[t.id]===t.correct)correct++;});
   if(correct>=4){
     handleExec(3,25,btn);
   } else {
     if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent=correct+'/5 correct — try again';}
-    _routerAnswers={};
-    setTimeout(function(){
-      routerTasks.forEach(function(t){
-        ['haiku','sonnet'].forEach(function(m){
-          var b=document.getElementById('rb-'+t.id+'-'+m);
-          if(b){b.style.background='var(--card)';b.style.borderColor='var(--border)';b.style.color='var(--muted)';}
-        });
-        var fb=document.getElementById('rf-'+t.id);if(fb)fb.style.display='none';
-      });
-      if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent='Check answers →';btn.disabled=true;}
-    },2500);
+    _routerAnswers={};_routerCurrent=0;
+    setTimeout(function(){renderRouter();if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent='Check answers →';btn.disabled=true;}},2000);
   }
 }
 
@@ -3791,7 +3816,7 @@ function runTokenAudit(){
   }
 }
 
-/* ── M5: BATCH QUALIFIER ── */
+/* ── M5: BATCH QUALIFIER (one-at-a-time) ── */
 var batchTasks=[
   {id:'b1',task:'User asks "what\'s my account balance?" — needs instant response',correct:'realtime',label:'💬 Customer query'},
   {id:'b2',task:'Generate product descriptions for 500 new catalog items added overnight',correct:'batch',label:'📦 Bulk generation'},
@@ -3801,78 +3826,60 @@ var batchTasks=[
   {id:'b6',task:'User submits a form — response must appear before they navigate away',correct:'realtime',label:'📝 Form response'}
 ];
 var _batchAnswers={};
+var _batchCurrent=0;
 function renderBatch(){
+  _batchCurrent=0;
+  _batchAnswers={};
+  showBatchTask(0);
+}
+function showBatchTask(idx){
   var c=document.getElementById('batch-tasks');
   if(!c)return;
-  c.innerHTML=batchTasks.map(function(t){
-    return '<div class="router-task" id="bt-'+t.id+'" style="margin-bottom:10px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:12px;">'
-      +'<div style="font-size:12px;color:var(--mc);font-weight:700;margin-bottom:4px;letter-spacing:1px;">'+t.label+'</div>'
-      +'<div style="font-size:13px;color:var(--body);margin-bottom:10px;">'+t.task+'</div>'
-      +'<div style="display:flex;gap:8px;">'
-      +'<button onclick="selectBatch(\''+t.id+'\',\'realtime\')" id="bb-'+t.id+'-realtime" style="flex:1;padding:7px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:12px;font-weight:700;transition:all .2s;">⚡ Real-time</button>'
-      +'<button onclick="selectBatch(\''+t.id+'\',\'batch\')" id="bb-'+t.id+'-batch" style="flex:1;padding:7px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:12px;font-weight:700;transition:all .2s;">🌙 Batch</button>'
-      +'</div>'
-      +'<div id="bf-'+t.id+'" style="display:none;font-size:11px;margin-top:6px;font-weight:700;"></div>'
-      +'</div>';
-  }).join('');
+  if(idx>=batchTasks.length){
+    var eb=document.getElementById('eb5');
+    if(eb){eb.disabled=false;eb.querySelector('.exec-lbl').textContent='✓ Checking...';}
+    var hint=document.getElementById('batch-hint');if(hint)hint.textContent='';
+    autoExec('eb5',function(b){submitBatch(b);});
+    return;
+  }
+  var t=batchTasks[idx];
+  c.innerHTML='<div style="font-size:10px;font-family:var(--pixel);color:var(--muted);letter-spacing:2px;margin-bottom:12px;text-transform:uppercase;">Task '+(idx+1)+' / '+batchTasks.length+'</div>'
+    +'<div style="padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:12px;animation:cardIn .3s ease;">'
+    +'<div style="font-size:11px;color:var(--mc);font-weight:700;margin-bottom:6px;letter-spacing:1px;">'+t.label+'</div>'
+    +'<div style="font-size:14px;color:var(--body);margin-bottom:12px;line-height:1.55;">'+t.task+'</div>'
+    +'<div style="display:flex;gap:8px;">'
+    +'<button id="br-realtime" onclick="selectBatch(\''+t.id+'\',\'realtime\')" style="flex:1;padding:9px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:12px;font-weight:700;transition:all .2s;">⚡ Real-time</button>'
+    +'<button id="br-batch" onclick="selectBatch(\''+t.id+'\',\'batch\')" style="flex:1;padding:9px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;font-size:12px;font-weight:700;transition:all .2s;">🌙 Batch</button>'
+    +'</div>'
+    +'<div id="bf-inline" style="font-size:12px;margin-top:8px;min-height:20px;display:none;"></div>'
+    +'</div>';
+  var hint=document.getElementById('batch-hint');
+  if(hint)hint.textContent=(batchTasks.length-idx)+' left';
 }
 function selectBatch(id,type){
   playClick();
   _batchAnswers[id]=type;
   var task=batchTasks.find(function(t){return t.id===id;});
-  ['realtime','batch'].forEach(function(tp){
-    var b=document.getElementById('bb-'+id+'-'+tp);if(!b)return;
-    if(tp===type){
-      b.style.background='rgba(108,127,255,0.15)';b.style.borderColor='#6C7FFF';b.style.color='#6C7FFF';
-    } else {
-      b.style.background='var(--card)';b.style.borderColor='var(--border)';b.style.color='var(--muted)';
-    }
-  });
-  var answered=Object.keys(_batchAnswers).length;
-  var hint=document.getElementById('batch-hint');
-  if(answered<batchTasks.length){
-    if(hint)hint.textContent=(batchTasks.length-answered)+' tasks remaining';
-  } else {
-    var eb=document.getElementById('eb5');
-    if(eb){eb.disabled=false;eb.querySelector('.exec-lbl').textContent='✓ All classified...';}
-    if(hint)hint.textContent='Auto-checking your answers!';
-    autoExec('eb5',function(b){submitBatch(b);});
-  }
+  var isRight=task&&task.correct===type;
+  var fb=document.getElementById('bf-inline');
+  if(fb){fb.style.display='block';fb.style.color=isRight?'#0DD4A8':'#FF6B9D';fb.textContent=isRight?'✓ Correct!':'✗ Should be '+task.correct;}
+  var rb=document.getElementById('br-realtime'),bb=document.getElementById('br-batch');
+  if(rb){if(type==='realtime'){rb.style.background=isRight?'rgba(13,212,168,0.15)':'rgba(255,107,157,0.15)';rb.style.borderColor=isRight?'#0DD4A8':'#FF6B9D';rb.style.color=isRight?'#0DD4A8':'#FF6B9D';}else{rb.style.background='var(--card)';rb.style.borderColor='var(--border)';rb.style.color='var(--muted)';}}
+  if(bb){if(type==='batch'){bb.style.background=isRight?'rgba(13,212,168,0.15)':'rgba(255,107,157,0.15)';bb.style.borderColor=isRight?'#0DD4A8':'#FF6B9D';bb.style.color=isRight?'#0DD4A8':'#FF6B9D';}else{bb.style.background='var(--card)';bb.style.borderColor='var(--border)';bb.style.color='var(--muted)';}}
+  if(rb)rb.onclick=null;if(bb)bb.onclick=null;
+  _batchCurrent++;
+  setTimeout(function(){showBatchTask(_batchCurrent);},isRight?700:1100);
 }
 function submitBatch(btn){
   var correct=0;
   batchTasks.forEach(function(t){if(_batchAnswers[t.id]===t.correct)correct++;});
   if(correct>=5){
-    batchTasks.forEach(function(t){
-      var isRight=_batchAnswers[t.id]===t.correct;
-      var el=document.getElementById('bt-'+t.id);
-      if(el){el.style.borderColor=isRight?'#0DD4A8':'#FF6B9D';el.style.background=isRight?'rgba(13,212,168,0.05)':'rgba(255,107,157,0.05)';}
-    });
     handleExec(5,40,btn);
   } else {
-    /* show per-item feedback before reset */
-    batchTasks.forEach(function(t){
-      var isRight=_batchAnswers[t.id]===t.correct;
-      var el=document.getElementById('bt-'+t.id);
-      if(el){el.style.borderColor=isRight?'#0DD4A8':'#FF6B9D';el.style.background=isRight?'rgba(13,212,168,0.05)':'rgba(255,107,157,0.05)';}
-      var fb=document.getElementById('bf-'+t.id);
-      if(fb){fb.style.display='block';fb.style.color=isRight?'#0DD4A8':'#FF6B9D';fb.textContent=(isRight?'✓ ':'✗ correct: '+t.correct);}
-    });
-    if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent=correct+'/6 — review and retry';}
+    if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent=correct+'/6 — try again';}
     playWrong();
-    _batchAnswers={};
-    setTimeout(function(){
-      batchTasks.forEach(function(t){
-        ['realtime','batch'].forEach(function(tp){
-          var b=document.getElementById('bb-'+t.id+'-'+tp);
-          if(b){b.style.background='var(--card)';b.style.borderColor='var(--border)';b.style.color='var(--muted)';}
-        });
-        var el=document.getElementById('bt-'+t.id);
-        if(el){el.style.borderColor='var(--border)';el.style.background='var(--surface)';}
-        var fb=document.getElementById('bf-'+t.id);if(fb)fb.style.display='none';
-      });
-      if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent='Check answers →';btn.disabled=true;}
-    },2800);
+    _batchAnswers={};_batchCurrent=0;
+    setTimeout(function(){renderBatch();if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent='Check answers →';btn.disabled=true;}},2000);
   }
 }
 
@@ -4116,9 +4123,12 @@ function updateHudUser(){
   var uEl=document.getElementById('hud-uname');
   var lEl=document.getElementById('hud-ulv');
   var wEl=document.getElementById('hud-user');
+  var avEl=document.getElementById('hud-avatar');
   if(uEl)uEl.textContent=_username||'SET NAME';
   if(lEl){lEl.textContent=title+' · LV '+lv;lEl.style.color=cls.color;}
   if(wEl&&_username)wEl.style.opacity='1';
+  /* avatar: show first char of callsign instead of generic owl */
+  if(avEl){avEl.textContent=_username?(_username[0]||'?').toUpperCase():'?';}
   /* GRIM class evolution — tint the owl per class tier (appended to existing drop-shadows) */
   var grimEl=document.getElementById('flow-char');
   if(grimEl){
@@ -4409,7 +4419,9 @@ setTimeout(initDailyChallenge, 150);
   ];
   var times=['just now','1 min ago','2 min ago','3 min ago','4 min ago','5 min ago','7 min ago'];
   var el=document.getElementById('lt-msg');if(!el)return;
-  var idx=0;
+  var idx=Math.floor(Math.random()*actions.length);
+  /* initialize with a random entry immediately — no static fallback */
+  (function(){var n=names[Math.floor(Math.random()*names.length)];var a=actions[idx%actions.length];var t=times[Math.floor(Math.random()*times.length)];el.textContent=n+' '+a+' · '+t;idx++;})();
   function next(){
     el.classList.add('out');
     setTimeout(function(){
