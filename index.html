@@ -1860,7 +1860,7 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
       <p class="ex-inst">Haiku or Sonnet? Tap one — next task loads instantly.</p>
       <div id="router-tasks"></div>
       <div class="ex-footer">
-        <span id="router-hint" style="font-size:13px;color:var(--muted)">5 tasks · need 4/5 right</span>
+        <span id="router-hint" style="font-size:13px;color:var(--muted)">5 tasks · need 3/5 right</span>
         <button class="exec-btn" id="eb3" onclick="submitRouter(this)" disabled style="display:none"><div class="exec-prog"></div><span class="exec-lbl">Check answers →</span></button>
       </div>
       <div id="snip-m3" class="snip-block">
@@ -3329,8 +3329,8 @@ function unlockSavingsMystery(amount){
   (function tick(){var p=Math.min((Date.now()-t0)/dur,1),v=Math.round(end*p);el.textContent='$'+v+'/mo';if(p<1)requestAnimationFrame(tick);})();
   /* nudge: scroll to mystery if it's in intro and user is there */
   if(activeModule===0){var m=document.getElementById('savings-mystery');if(m)m.scrollIntoView({behavior:'smooth',block:'nearest'});}
-  /* email capture: best moment is right after seeing personal savings number */
-  if(amount>=30){setTimeout(showEmailCapture,4200);}
+  /* email capture: best moment is right after seeing personal savings number — fire before autoExec (1200ms) so modal is in M2, not M3 */
+  if(amount>=30){setTimeout(showEmailCapture,800);}
   /* wire HUD savings pill */
   var hudSav=document.getElementById('hud-sav');
   if(hudSav){hudSav.textContent='💰 $'+Math.round(amount)+'/mo';hudSav.style.display='inline-block';}
@@ -3783,7 +3783,7 @@ function selectRoute(id,model){
 function submitRouter(btn){
   var correct=0;
   routerTasks.forEach(function(t){if(_routerAnswers[t.id]===t.correct)correct++;});
-  if(correct>=4){
+  if(correct>=3){
     handleExec(3,25,btn);
   } else {
     if(btn){var l=btn.querySelector('.exec-lbl');if(l)l.textContent=correct+'/5 correct — try again';}
