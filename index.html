@@ -1564,7 +1564,7 @@ body::before{
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="social-proof">📊 <b>78%</b> of learners found their #1 waste source in this module.</div>
+        <div class="social-proof">📊 Output tokens cost <b>5× more</b> than input — most bills are 3–4× higher than they need to be.</div>
         <div class="m-content">
           <p>Most API bills are 3–4× higher than they should be. Output tokens cost <strong>5× more</strong> than input — and that's where the real waste hides.</p>
         </div>
@@ -1723,7 +1723,7 @@ c <span class="op">=</span> <span class="fn">cost_of</span>(response<span class=
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="social-proof">📊 <b>91%</b> of learners who implement this see savings the same day.</div>
+        <div class="social-proof">📊 Break-even: <b>2 API calls</b>. After that, every cached request costs 10% of the original.</div>
         <div class="m-content">
           <p>Two lines of code. Your system prompt is cached for 5 minutes at <strong>10% of the original cost</strong>. Break-even: 2 calls.</p>
         </div>
@@ -1853,7 +1853,7 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
       <!-- Card 1 -->
       <div class="m-card active" data-card="1">
         <span class="card-label">CONTEXT</span>
-        <div class="social-proof">📊 <b>84%</b> of learners cut their model costs in half within the first week.</div>
+        <div class="social-proof">📊 Haiku is <b>12× cheaper</b> than Sonnet per token — and handles ~80% of real-world tasks just as well.</div>
         <div class="m-content">
           <p>One model for everything = maximum cost. Use a 3-tier router:</p>
           <ul>
@@ -3373,8 +3373,8 @@ function unlockSavingsMystery(amount){
   (function tick(){var p=Math.min((Date.now()-t0)/dur,1),v=Math.round(end*p);el.textContent='$'+v+'/mo';if(p<1)requestAnimationFrame(tick);})();
   /* nudge: scroll to mystery if it's in intro and user is there */
   if(activeModule===0){var m=document.getElementById('savings-mystery');if(m)m.scrollIntoView({behavior:'smooth',block:'nearest'});}
-  /* email capture: best moment is right after seeing personal savings number — fire before autoExec (1200ms) so modal is in M2, not M3 */
-  if(amount>=30){setTimeout(showEmailCapture,800);}
+  /* email capture: fires 800ms after savings reveal — before autoExec (1200ms). Pass delay=0 to skip inner wait. */
+  if(amount>=30){setTimeout(function(){showEmailCapture(0);},800);}
   /* wire HUD savings pill */
   var hudSav=document.getElementById('hud-sav');
   if(hudSav){hudSav.textContent='💰 $'+Math.round(amount)+'/mo';hudSav.style.display='inline-block';}
@@ -3610,12 +3610,13 @@ function dismissEmail(){
   if(m)m.classList.remove('show');
   localStorage.setItem('sds-email-skip','1');
 }
-function showEmailCapture(){
+function showEmailCapture(delay){
   if(localStorage.getItem('sds-email')||localStorage.getItem('sds-email-skip'))return;
+  var d=(typeof delay==='number')?delay:6000;
   setTimeout(function(){
     var m=document.getElementById('email-modal');
     if(m)m.classList.add('show');
-  },6000);
+  },d);
 }
 function playSound(n){
   try{
