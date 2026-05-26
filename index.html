@@ -493,6 +493,8 @@ footer{text-align:center;color:var(--dim);font-size:9px;font-family:'Courier New
   .module{padding:28px 40px 44px;}
   #cert{margin:28px 32px 0!important;}
   footer{padding:24px 32px 40px!important;}
+  /* hide mobile-only early CTA on desktop */
+  .mobile-cta-early{display:none!important;}
 }
 @media(min-width:1100px){
   #rp{display:flex;}
@@ -505,6 +507,8 @@ footer{text-align:center;color:var(--dim);font-size:9px;font-family:'Courier New
   #intro h1{font-size:34px!important;}
   .module{padding:20px 16px 36px;}
   #intro{padding:20px 16px 24px;}
+  /* mobile CTA early: hidden on 641-767px (tablets), only for true mobile <640 */
+  .mobile-cta-early{display:none!important;}
 }
 
 /* ════════════════════════════════════════════
@@ -1079,6 +1083,8 @@ body::before{
   #flow-bubble{font-size:8px !important;max-width:210px !important;}
   /* social proof mechanism: allow tag to wrap on narrow screens */
   .sp-mech-tag{white-space:normal;margin-left:0;width:100%;padding-top:4px;}
+  /* mobile CTA early: visible above fold, before social proof */
+  .mobile-cta-early{display:block!important;margin:0 0 20px!important;width:100%!important;animation:none!important;}
   /* bottom nav: override global pixel-font 5px after cascade */
   .mt-lbl{font-size:9px !important;}
   .mt-num{font-size:10px !important;}
@@ -1480,6 +1486,8 @@ body::before{
   <span class="intro-brand">Grimoire</span>
   <h1>Cut Your Claude API Costs by 80%</h1>
   <p class="intro-sub">5 techniques Anthropic doesn't document.<br><span class="intro-sub-gate">Each module ends with a real exercise. Leave with code you can ship today.</span></p>
+  <!-- MOBILE CTA — visible only on mobile, above the fold, before social proof -->
+  <button class="start-btn mobile-cta-early" onclick="checkUsernameBeforeStart()">Start Module 1 <span class="arrow">→</span></button>
   <!-- SAVINGS MYSTERY — moved above fold so curiosity pulls the click -->
   <div id="savings-mystery">
     <div class="sm-lock-row">
