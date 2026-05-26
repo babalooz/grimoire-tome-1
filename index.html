@@ -1192,10 +1192,10 @@ body::before{
       <div class="um-speech">Devs who name themselves finish.<br>Every one. I keep count.</div>
     </div>
     <div class="um-title" id="username-box-title">WHO ENTERS THE GRIMOIRE?</div>
-    <div class="um-sub" id="username-box-sub">Your name gets inscribed in the leaderboard alongside every dev who slashed their API costs. <strong>The XP is real. The rank is real.</strong></div>
-    <input id="username-input" type="text" maxlength="18" placeholder="e.g. VoidMage_99, TokenSlayer" autocomplete="off" spellcheck="false"/>
+    <input id="username-input" type="text" maxlength="18" placeholder="e.g. VoidMage_99, TokenSlayer" autocomplete="off" spellcheck="false" style="margin-top:10px;"/>
     <div id="username-error" style="font-size:11px;color:#FF6B9D;min-height:16px;margin-bottom:4px;"></div>
     <button id="username-confirm" class="um-btn" onclick="setUsername()">INSCRIBE MY NAME →</button>
+    <div class="um-sub" id="username-box-sub" style="font-size:13px;margin-top:12px;margin-bottom:4px;">Your name gets inscribed in the leaderboard alongside every dev who slashed their API costs. <strong>The XP is real. The rank is real.</strong></div>
     <button class="um-skip" onclick="skipUsername()">enter without identity →</button>
   </div>
 </div>
@@ -2432,7 +2432,12 @@ function updateSidebar(activeN){
     var num=row.querySelector('.sb-num');var st=document.getElementById('sbst'+i);
     if(num)num.style.color='';if(st)st.style.color='';
     var mst=document.getElementById('st'+i);if(mst)mst.style.color='';
-    if(mod&&mod.classList.contains('locked')){row.classList.add('sb-locked');if(st)st.textContent='locked';if(mst)mst.textContent='🔒 locked';}
+    if(mod&&mod.classList.contains('locked')){
+      row.classList.add('sb-locked');
+      /* M5: show progress toward unlock instead of just "locked" */
+      if(i===5){var modsLeft=Math.max(0,4-totalDone);var lockTxt=modsLeft>0?'🔒 '+modsLeft+' more to unlock':'🔒 locked';if(st)st.textContent=lockTxt;if(mst)mst.textContent=lockTxt;}
+      else{if(st)st.textContent='locked';if(mst)mst.textContent='🔒 locked';}
+    }
     else if(mod&&mod.classList.contains('done')){if(st){st.textContent='✓ done';st.style.color='#0DD4A8';}if(dot){dot.style.background='#0DD4A8';}if(num)num.style.color='#0DD4A8';if(mst){mst.textContent='✓ done';mst.style.color='#0DD4A8';}}
     else{var isProg=(i===activeN);if(st)st.textContent=isProg?'▶ in progress':'not started';if(mst){mst.textContent=isProg?'▶ in progress':'not started';if(isProg)mst.style.color='var(--mc)';}}
     if(i===activeN){
@@ -3324,6 +3329,8 @@ function unlockSavingsMystery(amount){
   (function tick(){var p=Math.min((Date.now()-t0)/dur,1),v=Math.round(end*p);el.textContent='$'+v+'/mo';if(p<1)requestAnimationFrame(tick);})();
   /* nudge: scroll to mystery if it's in intro and user is there */
   if(activeModule===0){var m=document.getElementById('savings-mystery');if(m)m.scrollIntoView({behavior:'smooth',block:'nearest'});}
+  /* email capture: best moment is right after seeing personal savings number */
+  if(amount>=30){setTimeout(showEmailCapture,4200);}
   /* wire HUD savings pill */
   var hudSav=document.getElementById('hud-sav');
   if(hudSav){hudSav.textContent='💰 $'+Math.round(amount)+'/mo';hudSav.style.display='inline-block';}
@@ -3607,8 +3614,8 @@ function loadState(){
   /* Flow greeting */
   setTimeout(function(){
     if(totalDone===0)flowCorner('I didn\'t choose to be a mascot, but here I am. You too. Let\'s get started.',false);
-    else if(totalDone<TOTAL)flowCorner('You\'re back. I thought you\'d abandoned me. <strong>Module '+(totalDone+1)+'</strong> is waiting.',false);
-    else flowCorner('Stack complete. You\'re top 8%. <em>Statistically, that wasn\'t likely. But it happened.</em>',false);
+    else if(totalDone<TOTAL)flowCorner((_username?'Welcome back, <strong>'+_username+'</strong>.':'You\'re back.')+' Module <strong>'+(totalDone+1)+'</strong> is waiting.',false);
+    else flowCorner((_username?'<strong>'+_username+'</strong> — stack':'Stack')+' complete. You\'re top 8%. <em>Statistically, that wasn\'t likely. But it happened.</em>',false);
   },1500);
 }
 
@@ -4101,6 +4108,7 @@ function setUsername(){
   localStorage.setItem('sds-username',val);
   var m=document.getElementById('username-modal');
   if(m)m.classList.remove('show');
+  _resetUsernameModal();
   updateHudUser();
   sbSyncProgress();
   loadLeaderboard();
@@ -4116,9 +4124,25 @@ function openUsernameEdit(){
   var m=document.getElementById('username-modal');
   if(!m)return;
   var inp=document.getElementById('username-input');
-  if(inp)inp.value=_username||'';
+  if(inp){
+    inp.value=_username||'';
+    /* update modal title/button for edit context */
+    var title=document.getElementById('username-box-title');
+    var btn=document.getElementById('username-confirm');
+    if(title)title.textContent='UPDATE YOUR CALLSIGN';
+    if(btn)btn.textContent='SAVE CHANGES →';
+    /* ensure Enter key works on edit (re-attach to avoid stale closures) */
+    inp.onkeydown=function(e){if(e.key==='Enter'){e.preventDefault();setUsername();}};
+  }
   m.classList.add('show');
   setTimeout(function(){if(inp)inp.focus();},80);
+}
+
+function _resetUsernameModal(){
+  var title=document.getElementById('username-box-title');
+  var btn=document.getElementById('username-confirm');
+  if(title)title.textContent='WHO ENTERS THE GRIMOIRE?';
+  if(btn)btn.textContent='INSCRIBE MY NAME →';
 }
 
 function updateHudUser(){
