@@ -1472,7 +1472,7 @@ body::before{
 <div id="intro">
   <span class="intro-brand">Grimoire</span>
   <h1>Cut Your Claude API Costs by 80%</h1>
-  <p class="intro-sub">5 techniques Anthropic doesn't document.<br><span class="intro-sub-gate">Each module is gated by an exercise — you advance only when you actually get it right.</span></p>
+  <p class="intro-sub">5 techniques Anthropic doesn't document.<br><span class="intro-sub-gate">Each module ends with a real exercise. Leave with code you can ship today.</span></p>
   <!-- SAVINGS MYSTERY — moved above fold so curiosity pulls the click -->
   <div id="savings-mystery">
     <div class="sm-lock-row">
@@ -1516,7 +1516,7 @@ body::before{
     <span class="badge" id="b3" data-unlock="Complete all 5 modules">💎 Cost Master</span>
     <span class="badge" id="b4" data-unlock="Finish in under 45 min">⏱ Speed Run</span>
   </div>
-  <button class="start-btn" id="start-cta" onclick="goTo('m1')">Start Module 1 <span class="arrow">→</span></button>
+  <button class="start-btn" id="start-cta" onclick="checkUsernameBeforeStart()">Start Module 1 <span class="arrow">→</span></button>
   <div id="completions-display" style="margin-top:14px;display:flex;align-items:center;justify-content:center;gap:8px;">
     <span style="width:7px;height:7px;background:#0DD4A8;border-radius:50%;flex-shrink:0;animation:livePulse 1.5s ease-in-out infinite;display:inline-block;"></span>
     <span style="font-family:var(--pixel);font-size:7px;color:var(--muted);letter-spacing:0;"><span id="comp-count">312</span> earned the certificate 🏆</span>
@@ -4185,18 +4185,18 @@ var _username='';
 
 function initUsername(){
   _username=localStorage.getItem('sds-username')||'';
-  if(_username){
-    updateHudUser();
-  } else {
-    setTimeout(function(){
-      var m=document.getElementById('username-modal');
-      if(m)m.classList.add('show');
-      var inp=document.getElementById('username-input');
-      if(inp)inp.focus();
-    },2200);
-  }
+  if(_username){updateHudUser();}
+  /* modal no longer auto-fires on load — triggered by checkUsernameBeforeStart() on intent */
   var inp=document.getElementById('username-input');
   if(inp){inp.addEventListener('keydown',function(e){if(e.key==='Enter')setUsername();});}
+}
+function checkUsernameBeforeStart(){
+  /* show modal only when user clicks Start — they've shown intent, modal fits naturally */
+  var hasId=_username||localStorage.getItem('sds-username')||localStorage.getItem('sds-email-skip');
+  if(hasId){goTo('m1');return;}
+  window._pendingNav='m1';
+  var m=document.getElementById('username-modal');if(m)m.classList.add('show');
+  var inp=document.getElementById('username-input');if(inp)inp.focus();
 }
 
 function setUsername(){
@@ -4215,11 +4215,13 @@ function setUsername(){
   sbSyncProgress();
   loadLeaderboard();
   loadCompletions();
+  if(window._pendingNav){var nav=window._pendingNav;window._pendingNav=null;goTo(nav);}
 }
 
 function skipUsername(){
-  var m=document.getElementById('username-modal');
-  if(m)m.classList.remove('show');
+  var m=document.getElementById('username-modal');if(m)m.classList.remove('show');
+  localStorage.setItem('sds-email-skip','1');
+  if(window._pendingNav){var nav=window._pendingNav;window._pendingNav=null;goTo(nav);}
 }
 
 function openUsernameEdit(){
