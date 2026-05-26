@@ -993,7 +993,7 @@ body::before{
 #username-input:focus{outline:none;border-color:var(--mc);box-shadow:0 0 0 3px rgba(232,96,48,.15);}
 .um-btn{width:100%;padding:13px;background:var(--mc);color:#0f0e17;border:none;border-radius:10px;font-size:13px;font-weight:900;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s;letter-spacing:.5px;}
 .um-btn:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(232,96,48,.4);}
-.um-skip{font-size:10px;color:var(--dim);margin-top:10px;cursor:pointer;background:none;border:none;font-family:inherit;opacity:.6;}
+.um-skip{font-size:11px;color:var(--muted);margin-top:10px;cursor:pointer;background:none;border:none;font-family:inherit;opacity:.85;text-decoration:underline;text-decoration-color:rgba(154,128,112,0.4);}
 .paywall-ov.show{display:flex!important;}
 
 /* HUD username pill */
@@ -1857,7 +1857,7 @@ response <span class="op">=</span> client<span class="op">.</span>messages<span 
       <span class="ex-xp">+25 XP</span>
     </div>
     <div class="ex-body">
-      <p class="ex-inst">Haiku or Sonnet? Tap one — next task loads instantly.</p>
+      <p class="ex-inst">For each task below: which model would you use? Tap Haiku or Sonnet — next task loads instantly.</p>
       <div id="router-tasks"></div>
       <div class="ex-footer">
         <span id="router-hint" style="font-size:13px;color:var(--muted)">5 tasks · need 3/5 right</span>
@@ -2477,6 +2477,8 @@ function updateNavBar(){
   var info=document.getElementById('nav-info');if(info)info.textContent='module 0'+n+' / 05  ·  card '+cardIdx+' / '+cards.length;
   var btn=document.getElementById('btn-next-nb');
   if(btn&&modColors[n]){btn.style.background=modColors[n];btn.style.boxShadow='0 3px 14px rgba('+hexToRgbStr(modColors[n])+',0.28)';}
+  /* hide Next → when on last card (exercise) — prevents phantom click with no feedback */
+  if(btn){btn.style.visibility=(cardIdx===cards.length)?'hidden':'visible';}
 }
 
 function prevCardGlobal(){
