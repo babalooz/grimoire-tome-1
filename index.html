@@ -2536,6 +2536,9 @@ function updateNavBar(){
   if(btn&&modColors[n]){btn.style.background=modColors[n];btn.style.boxShadow='0 3px 14px rgba('+hexToRgbStr(modColors[n])+',0.28)';}
   /* hide Next → when on last card (exercise) — prevents phantom click with no feedback */
   if(btn){btn.style.visibility=(cardIdx===cards.length)?'hidden':'visible';}
+  /* dim Back when at M1/card 1 — nothing behind it */
+  var btnPrev=document.querySelector('.btn-prev');
+  if(btnPrev){var atStart=(n===1&&cardIdx===1);btnPrev.style.opacity=atStart?'0.25':'1';btnPrev.style.pointerEvents=atStart?'none':'auto';}
 }
 
 function prevCardGlobal(){
@@ -2545,7 +2548,6 @@ function prevCardGlobal(){
   var active=deck.querySelector('.m-card.active');if(!active)return;
   var idx=Array.from(cards).indexOf(active);
   if(idx>0){active.classList.remove('active');cards[idx-1].classList.add('active');updateDots(n,idx-1);updateNavBar();var cs=document.getElementById('center-scroll');if(cs)cs.scrollTop=0;}
-  else if(n===1&&idx===0){goTo('intro');} /* first card of M1 → scroll to intro */
 }
 
 function nextCardGlobal(){var n=activeModule;if(n<1)return;nextCard(n);updateNavBar();}
