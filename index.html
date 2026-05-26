@@ -365,12 +365,12 @@ footer{max-width:820px;margin:0 auto;padding:36px 28px 60px;text-align:center;co
   #center-scroll .module,footer{padding-bottom:100px!important;}
   .ex-footer{padding-right:80px;}
   /* ── Bottom nav: fit 5 tabs ── */
-  .mt-lbl{font-size:7px!important;letter-spacing:0;}
-  .mt-num{font-size:8px!important;}
+  .mt-lbl{font-size:9px!important;letter-spacing:0;}
+  .mt-num{font-size:10px!important;}
   /* ── Touch targets: 52px min ── */
-  .card-next{width:100%!important;min-height:52px!important;padding:14px 20px!important;font-size:10px!important;margin-top:12px;}
+  .card-next{width:100%!important;min-height:52px!important;padding:14px 20px!important;font-size:13px!important;margin-top:12px;}
   .exec-btn{min-height:52px!important;padding:16px 20px!important;width:100%!important;}
-  .qc-opt{min-height:52px!important;padding:16px 20px!important;font-size:9px!important;width:100%;}
+  .qc-opt{min-height:52px!important;padding:16px 20px!important;font-size:13px!important;width:100%;}
   .qc-gate{width:100%!important;min-height:52px!important;padding:14px 20px!important;}
 
   /* ── HUD brand smaller ── */
@@ -1069,14 +1069,21 @@ body::before{
 
 /* ── MOBILE ADJUSTMENTS ── */
 @media(max-width:640px){
-  .start-btn{font-size:9px !important;padding:16px 24px !important;}
-  .card-next,.exec-btn{font-size:9px !important;padding:13px 20px !important;}
-  .badge,.chip,.chip-xp{font-size:8px !important;}
-  .m-title{font-size:13px !important;line-height:1.9 !important;}
-  .qc-question{font-size:10px !important;}
+  .start-btn{font-size:14px !important;padding:16px 24px !important;}
+  .card-next,.exec-btn{font-size:13px !important;padding:13px 20px !important;}
+  .badge,.chip,.chip-xp{font-size:9px !important;}
+  /* .m-title intentionally NOT overridden here — 28px from main mobile block is correct */
+  .qc-question{font-size:14px !important;}
   .score-val{font-size:16px !important;}
   .stat-num{font-size:30px !important;}
   #flow-bubble{font-size:8px !important;max-width:210px !important;}
+  /* social proof mechanism: allow tag to wrap on narrow screens */
+  .sp-mech-tag{white-space:normal;margin-left:0;width:100%;padding-top:4px;}
+  /* bottom nav: override global pixel-font 5px after cascade */
+  .mt-lbl{font-size:9px !important;}
+  .mt-num{font-size:10px !important;}
+  /* sidebar module name: readable on mobile */
+  .sb-name{font-size:9px !important;}
 }
 </style>
 </head>
