@@ -3435,13 +3435,13 @@ function shareTwitter(){
 /* ── COMPLETIONS COUNTER ── */
 var _COMPLETIONS_SEED=312;
 function _updateCompletionDisplays(n){
+  /* comp-count: real Supabase number ("312 earned the certificate") */
   var el=document.getElementById('comp-count');
   if(el)el.textContent=n.toLocaleString();
   var cn=document.getElementById('cert-comp-n');
   if(cn)cn.textContent='#'+(n+1);
-  /* sync intro-live counter with real data */
-  var liveTxt=document.querySelector('.intro-live span:last-child');
-  if(liveTxt&&n>0){liveTxt.textContent=n.toLocaleString()+' developers completed this · average savings: $642/month';}
+  /* intro-live: static marketing copy — NOT overridden with real count
+     to preserve social proof headline ("2,847 developers started this") */
 }
 function loadCompletions(){
   var sb=getSB();
