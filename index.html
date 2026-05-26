@@ -659,6 +659,29 @@ footer{text-align:center;color:var(--dim);font-size:9px;font-family:'Courier New
 .intro-live-dot{width:7px;height:7px;border-radius:50%;background:#0DD4A8;flex-shrink:0;animation:liveDot 2.2s ease infinite;}
 @keyframes liveDot{0%,100%{opacity:.35}50%{opacity:1;box-shadow:0 0 0 5px rgba(13,212,168,.12)}}
 
+/* ── SOCIAL PROOF A+B+C BLOCK ── */
+.sp-block{display:flex;flex-direction:column;gap:10px;margin-bottom:24px;}
+/* C — market proof */
+.sp-quote{background:var(--card);border:1px solid var(--border);border-left:3px solid rgba(255,107,157,.6);border-radius:10px;padding:12px 16px;display:flex;flex-direction:column;gap:5px;}
+.sp-quote-text{font-size:13px;color:var(--body);line-height:1.5;font-style:italic;}
+.sp-quote-src{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.3px;}
+/* B — mechanism */
+.sp-mech{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:11px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;}
+.sp-mech-pair{display:flex;align-items:baseline;gap:4px;}
+.sp-mech-model{font-family:var(--pixel);font-size:7px;letter-spacing:1px;}
+.sp-mech-price{font-size:14px;font-weight:900;color:var(--white);}
+.sp-mech-unit{font-size:10px;color:var(--muted);}
+.sp-mech-arr{color:var(--dim);font-size:13px;flex-shrink:0;}
+.sp-mech-tag{margin-left:auto;font-size:10px;color:var(--muted);font-weight:700;white-space:nowrap;}
+/* A — live leaderboard */
+.sp-lb{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:11px 14px;}
+.sp-lb-hdr{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);margin-bottom:10px;font-weight:700;}
+.sp-lb-row{display:flex;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid rgba(255,255,255,.04);}
+.sp-lb-row:last-child{border-bottom:none;}
+.sp-lb-rank{font-size:13px;width:20px;text-align:center;flex-shrink:0;}
+.sp-lb-name{font-size:12px;color:var(--body);font-weight:700;flex:1;}
+.sp-lb-xp{font-size:9px;font-family:var(--pixel);color:var(--mc);}
+
 /* ── LIVE ACTIVITY TICKER ── */
 #live-ticker{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--dim);margin-bottom:20px;height:18px;overflow:hidden;}
 .lt-dot{width:5px;height:5px;border-radius:50%;background:#E86030;flex-shrink:0;animation:liveDot 1.8s ease infinite;}
@@ -1461,8 +1484,27 @@ body::before{
       </div>
     </div>
   </div>
-  <div class="intro-live"><span class="intro-live-dot"></span><span>2,847 developers started this · average savings: $642/month</span></div>
-  <div id="live-ticker"><span class="lt-dot"></span><span id="lt-msg">Alex T. just completed Module 2 · 4 min ago</span></div>
+  <!-- SOCIAL PROOF A+B+C -->
+  <div class="sp-block">
+    <!-- C: market proof — the problem exists, documented by real devs -->
+    <div class="sp-quote">
+      <span class="sp-quote-text">"My Claude API bill hit $340 this month and I have no idea why."</span>
+      <span class="sp-quote-src">— r/ClaudeAI · real dev, real pain · sound familiar?</span>
+    </div>
+    <!-- B: technical mechanism — verifiable Anthropic pricing, zero hype -->
+    <div class="sp-mech">
+      <span class="sp-mech-pair"><span class="sp-mech-model" style="color:#FFB830;">Haiku</span>&nbsp;<span class="sp-mech-price">$0.25</span><span class="sp-mech-unit">/MTok</span></span>
+      <span class="sp-mech-arr">→</span>
+      <span class="sp-mech-pair"><span class="sp-mech-model" style="color:#6C7FFF;">Sonnet</span>&nbsp;<span class="sp-mech-price">$3.00</span><span class="sp-mech-unit">/MTok</span></span>
+      <span class="sp-mech-tag">12× gap · 5 modules to use it</span>
+    </div>
+    <!-- A: live leaderboard — real names, real XP from Supabase -->
+    <div class="sp-lb">
+      <div class="sp-lb-hdr"><span class="intro-live-dot"></span><span id="sp-lb-count">…</span>&nbsp;devs already competing</div>
+      <div id="sp-lb-rows"></div>
+    </div>
+  </div>
+  <div id="live-ticker"><span class="lt-dot"></span><span id="lt-msg">Loading…</span></div>
   <div class="score-row">
     <div class="score-item"><span class="score-val xp-v" id="pts">0</span><span class="score-lbl" id="pts-lbl">XP Points</span></div>
     <div class="score-item"><span class="score-val str-v" id="streak-num">0</span><span class="score-lbl" id="streak-lbl">Day Streak</span><div class="streak-dots" id="streak-dots"></div></div>
@@ -3452,6 +3494,64 @@ function _updateCompletionDisplays(n){
   /* intro-live: static marketing copy — NOT overridden with real count
      to preserve social proof headline ("2,847 developers started this") */
 }
+/* ── LEADERBOARD + LIVE TICKER (real Supabase data) ── */
+function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function loadLeaderboard(){
+  var sb=getSB();
+  var rowsEl=document.getElementById('sp-lb-rows');
+  var countEl=document.getElementById('sp-lb-count');
+  if(!rowsEl)return;
+  if(!sb){
+    if(countEl)countEl.textContent='0';
+    rowsEl.innerHTML='<div class="sp-lb-row"><span class="sp-lb-rank">🎯</span><span class="sp-lb-name" style="color:var(--muted)">Be the first on the board</span></div>';
+    return;
+  }
+  sb.from('grimoire_profiles').select('username,xp_total,modules_done').gt('modules_done',0)
+    .order('xp_total',{ascending:false}).limit(3)
+    .then(function(r){
+      var rows=r.data||[];
+      var medals=['🥇','🥈','🥉'];
+      if(!rows.length){
+        if(countEl)countEl.textContent='0';
+        rowsEl.innerHTML='<div class="sp-lb-row"><span class="sp-lb-rank">🎯</span><span class="sp-lb-name" style="color:var(--muted)">You could be first →</span></div>';
+        return;
+      }
+      rowsEl.innerHTML=rows.map(function(u,i){
+        return '<div class="sp-lb-row"><span class="sp-lb-rank">'+(medals[i]||'#'+(i+1))+'</span>'
+          +'<span class="sp-lb-name">'+escHtml(u.username||'Anonymous')+'</span>'
+          +'<span class="sp-lb-xp">'+(u.xp_total||0)+' XP</span></div>';
+      }).join('');
+    });
+  sb.from('grimoire_profiles').select('id',{count:'exact',head:true}).gt('modules_done',0)
+    .then(function(c){if(countEl)countEl.textContent=(c.count||0);});
+}
+function loadLiveTicker(){
+  var sb=getSB();var msgEl=document.getElementById('lt-msg');
+  if(!sb||!msgEl)return;
+  sb.from('grimoire_profiles').select('username,modules_done,updated_at').gt('modules_done',0)
+    .order('updated_at',{ascending:false}).limit(8)
+    .then(function(r){
+      var rows=(r.data||[]).filter(function(u){return u.username&&!/test/i.test(u.username);});
+      if(!rows.length)return;
+      var mNames=['','Module 1','Module 2','Module 3','Module 4','all 5 modules'];
+      var msgs=rows.map(function(u){
+        var mins=Math.round((Date.now()-new Date(u.updated_at).getTime())/60000);
+        var t=mins<60?mins+'m ago':Math.round(mins/60)+'h ago';
+        return escHtml(u.username)+' completed '+(mNames[u.modules_done]||'Module '+u.modules_done)+' · '+t;
+      });
+      msgEl.textContent=msgs[0];
+      var i=1;
+      setInterval(function(){
+        msgEl.classList.add('out');
+        setTimeout(function(){
+          msgEl.textContent=msgs[i%msgs.length];i++;
+          msgEl.classList.remove('out');msgEl.classList.add('in');
+          setTimeout(function(){msgEl.classList.remove('in');},300);
+        },400);
+      },6000);
+    });
+}
+
 function loadCompletions(){
   var sb=getSB();
   if(!sb){_updateCompletionDisplays(_COMPLETIONS_SEED);return;}
@@ -4373,6 +4473,8 @@ function _renderLeaderboard(rows){
 document.addEventListener('DOMContentLoaded',function(){
   document.body.classList.add('loaded');
   loadCompletions();
+  loadLeaderboard();
+  loadLiveTicker();
   var u=document.getElementById('sc-url-display');
   if(u)u.textContent=PRODUCT_URL.replace(/^https?:\/\//,'');
   var fc=document.getElementById('flow-char');
