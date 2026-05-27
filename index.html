@@ -1199,7 +1199,7 @@ body::before{
     <div style="font-family:var(--pixel);font-size:9px;letter-spacing:3px;color:#A77FFF;margin-bottom:12px;">MODULES 4 + 5</div>
     <h3 style="font-size:20px;font-weight:900;color:var(--white);margin-bottom:10px;line-height:1.3;">You made it to the advanced tier.</h3>
     <p style="font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:24px;">Output control + Batch API are where <strong style="color:var(--white)">most of the money is saved</strong>. Unlock both modules + the certificate for a one-time payment.</p>
-    <a href="javascript:void(0)" onclick="window.open(GUMROAD_URL,'_blank')" style="display:block;background:linear-gradient(135deg,#A77FFF,#6C7FFF);color:#fff;border:none;border-radius:12px;padding:16px 28px;font-size:15px;font-weight:900;cursor:pointer;text-decoration:none;margin-bottom:12px;">Unlock for $9 →</a>
+    <a href="javascript:void(0)" onclick="window.open(GUMROAD_URL_UNLOCK,'_blank')" style="display:block;background:linear-gradient(135deg,#A77FFF,#6C7FFF);color:#fff;border:none;border-radius:12px;padding:16px 28px;font-size:15px;font-weight:900;cursor:pointer;text-decoration:none;margin-bottom:12px;">Unlock for $9 →</a>
     <div style="font-size:11px;color:var(--dim);margin-bottom:18px;">One-time · Instant access · Yours forever</div>
     <div style="display:flex;gap:8px;align-items:center;justify-content:center;">
       <input id="paywall-key-input" type="text" placeholder="Have an unlock code?" style="flex:1;padding:10px 14px;background:var(--card);border:1px solid var(--border);border-radius:8px;color:var(--white);font-size:13px;"/>
@@ -2427,7 +2427,8 @@ var FORMSPREE_ID='xredaljj';/* formspree.io form ID — active */
 
 /* ── PAYWALL ── */
 var PAYWALL_ENABLED=false;/* set true when Gumroad is live */
-var GUMROAD_URL='https://gumroad.com/l/grimoire-tome-1';/* ← real link when ready */
+var GUMROAD_URL='https://gumroad.com/l/grimoire-tome-1?price=7';/* PWYW — suggested $7, anchors above $0 */
+var GUMROAD_URL_UNLOCK='https://gumroad.com/l/grimoire-tome-1?price=9';/* paywall unlock — fixed $9 */
 var PAYWALL_MODULES=[4,5];/* M4+M5+cert locked */
 function isUnlocked(){
   if(!PAYWALL_ENABLED)return true;
