@@ -3528,8 +3528,8 @@ function loadLeaderboard(){
     rowsEl.innerHTML='<div class="sp-lb-row"><span class="sp-lb-rank">🎯</span><span class="sp-lb-name" style="color:var(--muted)">Be the first on the board</span></div>';
     return;
   }
-  sb.from('grimoire_profiles').select('username,xp_total,modules_done').gt('modules_done',0)
-    .order('xp_total',{ascending:false}).limit(3)
+  sb.from('grimoire_profiles').select('username,xp,modules_done').gt('modules_done',0)
+    .order('xp',{ascending:false}).limit(3)
     .then(function(r){
       var rows=r.data||[];
       var medals=['🥇','🥈','🥉'];
@@ -3541,7 +3541,7 @@ function loadLeaderboard(){
       rowsEl.innerHTML=rows.map(function(u,i){
         return '<div class="sp-lb-row"><span class="sp-lb-rank">'+(medals[i]||'#'+(i+1))+'</span>'
           +'<span class="sp-lb-name">'+escHtml(u.username||'Anonymous')+'</span>'
-          +'<span class="sp-lb-xp">'+(u.xp_total||0)+' XP</span></div>';
+          +'<span class="sp-lb-xp">'+(u.xp||0)+' XP</span></div>';
       }).join('');
     });
   sb.from('grimoire_profiles').select('id',{count:'exact',head:true}).gt('modules_done',0)
@@ -3827,7 +3827,7 @@ function runeWrongAnim(){
 
 /* ── M2: CACHE SIMULATOR ── */
 var _cacheSimInteracted=false;
-function runCacheSim(){
+function runCacheSim(isInit){
   var prompt=parseInt(document.getElementById('cs-prompt').value)||800;
   var calls=parseInt(document.getElementById('cs-calls').value)||500;
   document.getElementById('csv-prompt').textContent=prompt.toLocaleString();
@@ -3844,7 +3844,8 @@ function runCacheSim(){
   var el2=document.getElementById('cr-withcache');if(el2)el2.textContent=fmt(withCache);
   var el3=document.getElementById('cr-cachesave');if(el3)el3.textContent=fmt(save);
   var hint=document.getElementById('cs-hint');
-  if(!_cacheSimInteracted){
+  /* only unlock the exercise button when the USER moves a slider — not on auto-init */
+  if(!isInit&&!_cacheSimInteracted){
     _cacheSimInteracted=true;
     var eb=document.getElementById('eb2');
     if(eb){eb.disabled=false;eb.querySelector('.exec-lbl').textContent='✓ Caching applied...';}
@@ -4562,7 +4563,7 @@ _sessionXpStart=totalPts;setInterval(updateSessionStats,30000);
   setTimeout(runCalc,200);/* initialize calculator */
 renderRouter();
 renderBatch();
-setTimeout(runCacheSim, 100);
+setTimeout(function(){runCacheSim(true);}, 100);/* isInit=true: populates display without unlocking exercise */
 setTimeout(runTokenAudit, 100);
 setTimeout(initDailyChallenge, 150);
 
