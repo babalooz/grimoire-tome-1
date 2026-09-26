@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:T;src:url(LilitaOne.woff2)}
+@font-face{font-family:B;src:url(Rubik-800.woff2);font-weight:800}
+:root{--am:#FFD400;--pr:#0D0D12;--az:#1740FF;--az2:#2A55FF;--vm:#FF2E3D;--cr:#FFF6E0}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:var(--az)}
+.bg{position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 50%,var(--az) 0 7.5deg,var(--az2) 7.5deg 15deg)}
+.tarja{position:absolute;left:0;right:0;top:210px}
+.l1{display:flex;align-items:stretch;height:96px}
+.marca{background:var(--pr);color:var(--am);font:64px T;padding:10px 34px 0 60px;letter-spacing:1px}
+.vivo{background:var(--vm);color:#fff;font:800 40px B;display:flex;align-items:center;gap:14px;padding:0 26px}
+.vivo i{width:22px;height:22px;border-radius:50%;background:#fff;display:block}
+.l2{background:var(--am);color:var(--pr);font:800 58px/1.08 B;padding:22px 60px 26px;border-top:8px solid var(--pr);border-bottom:8px solid var(--pr);text-transform:uppercase}
+.leg{position:absolute;left:60px;right:140px;top:1215px;text-align:center;font:92px/1.05 T;color:#fff;
+ -webkit-text-stroke:14px var(--pr);paint-order:stroke fill;text-transform:uppercase}
+.leg b{color:var(--am);font-weight:normal}
+.tick{position:absolute;left:0;right:0;top:1440px;height:64px;background:var(--pr);color:var(--cr);font:800 34px B;display:flex;align-items:center;padding-left:60px;white-space:nowrap}
+.tick span{color:var(--am);margin-right:18px}
+</style></head><body>
+<div class="bg"></div>
+<div class="tarja">
+ <div class="l1"><div class="marca">PLANTÃO ABSURDO</div><div class="vivo"><i></i>AO VIVO</div></div>
+ <div class="l2">Micro-ondas se recusa a esquentar marmita de segunda-feira</div>
+</div>
+<svg style="position:absolute;left:140px;top:560px" width="800" height="640" viewBox="0 0 800 640">
+ <g stroke="#0D0D12" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+  <!-- linhas de impacto -->
+  <path d="M40 120 L0 90 M30 200 L-10 200 M760 110 L800 80 M770 190 L810 190" />
+  <!-- pés -->
+  <rect x="150" y="560" width="70" height="50" rx="12" fill="#0D0D12"/>
+  <rect x="580" y="560" width="70" height="50" rx="12" fill="#0D0D12"/>
+  <!-- corpo -->
+  <rect x="60" y="120" width="680" height="450" rx="46" fill="#F2F2F2"/>
+  <!-- janela -->
+  <rect x="110" y="170" width="430" height="350" rx="30" fill="#FFB02E"/>
+  <!-- marmita dentro -->
+  <rect x="215" y="440" width="220" height="60" rx="14" fill="#C9CED6"/>
+  <path d="M228 440 Q325 408 422 440" fill="#E8EBEF"/>
+  <!-- painel -->
+  <rect x="580" y="170" width="120" height="70" rx="12" fill="#0D0D12"/>
+  <circle cx="615" cy="310" r="24" fill="#FF2E3D"/><circle cx="665" cy="310" r="24" fill="#FFD400"/>
+  <rect x="600" y="370" width="80" height="120" rx="14" fill="#DADDE3"/>
+  <!-- olhos (na janela) -->
+  <ellipse cx="250" cy="255" rx="52" ry="58" fill="#fff"/><ellipse cx="400" cy="255" rx="52" ry="58" fill="#fff"/>
+  <circle cx="268" cy="270" r="20" fill="#0D0D12" stroke="none"/><circle cx="382" cy="270" r="20" fill="#0D0D12" stroke="none"/>
+  <!-- sobrancelhas bravas -->
+  <path d="M190 180 L300 212" stroke-width="20"/><path d="M460 180 L350 212" stroke-width="20"/>
+  <!-- boca -->
+  <path d="M280 375 Q325 345 370 375" fill="none" stroke-width="16"/>
+  <!-- gota de suor -->
+  <path d="M500 200 Q520 240 500 262 Q480 240 500 200 Z" fill="#7FD3FF" stroke-width="8"/>
+ </g>
+ <text x="648" y="218" font-family="B" font-weight="800" font-size="42" fill="#FF2E3D" text-anchor="middle">0:00</text>
+</svg>
+<div class="leg">"Hoje eu <b>não</b> trabalho!"</div>
+<div class="tick"><span>● ÚLTIMAS</span> Frame de teste — pauta fictícia · fonte citada no fim do vídeo</div>
+</body></html>
