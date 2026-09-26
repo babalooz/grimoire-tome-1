@@ -9,14 +9,17 @@ import {
   CompleteBanner, ExChip, L, LessonBg, ListenPanel, MicPanel, Options, PromptCard, TileBoard, Timer, TopBar, XpPop,
 } from "./lesson/LessonUI";
 import {
-  Exercicio, Line, LicaoProps, Pause, Step, buildSchedule, exerciseMarks, isLine, phaseBounds,
+  Exercicio, LIGAR_STAG, Line, LicaoProps, Pause, Step, buildSchedule, exerciseMarks, isLine, phaseBounds,
 } from "./lesson/timeline";
 import { Cam, CharId, DayBadge, Notebook, STAGE, Sfx, TWO, closeOn, toScreen } from "./Sitcom";
-import { C, SAFE, TITLE } from "./theme";
+import { BODY, C, SAFE, TITLE } from "./theme";
 import { STAG } from "./lesson/LessonUI";
+import { CardsBoard, COMPLETAR_CARD_H, GapSentence, MatchBoard, ReviewBoard, SeriesSeal, ligarDone } from "./lesson/ExerciseBoards";
 import { MUSIC, musicEnvelope } from "./lesson/music";
 
 export type { LicaoProps } from "./lesson/timeline";
+// Flags de render (usadas pela faixa ESQUETE, src/LicaoEsquete.tsx): o corte reaproveita este componente.
+export type LicaoRenderProps = LicaoProps & { semAudio?: boolean; semTrilha?: boolean; semGancho?: boolean };
 export { licaoFrames } from "./lesson/timeline";
 
 // "LIÇÃO EM VÍDEO" (CapyFala): CENA (a Capy erra e desmaia) → LIÇÃO (4 exercícios de app, com pausa real
@@ -29,14 +32,16 @@ const MOOD: Record<Emotion, Mood> = {
 };
 const FLY = (n: number) => n * STAG + 20; // frames do voo dos blocos (montar)
 
-const shotFor = (s: Step): Cam => {
+// Só capi/hank/lazy têm lugar no palco do café; outros falantes (narrador, elenco novo) usam o plano aberto.
+export const onStage = (sp: string): sp is CharId => sp in STAGE;
+export const shotFor = (s: Step): Cam => {
   const p = s.passo;
   if (!isLine(p)) return TWO;
-  if (p.card || p.shot === "two" || p.speaker === "narrador") return TWO;
-  return closeOn(p.speaker as CharId);
+  if (p.card || p.shot === "two" || !onStage(p.speaker)) return TWO;
+  return closeOn(p.speaker);
 };
 
-export const Licao: React.FC<LicaoProps> = (p) => {
+export const Licao: React.FC<LicaoRenderProps> = (p) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const steps = useMemo(() => buildSchedule(p, fps), [p, fps]);
@@ -47,7 +52,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
   const cur = steps.find((s) => frame >= s.from && frame < s.from + s.dur) ?? steps[steps.length - 1];
   const line = isLine(cur.passo) ? (cur.passo as Line) : null;
   const inAudio = !!line && frame >= cur.start && frame < cur.start + cur.audioFrames;
-  const talking = inAudio && line!.mode !== "pensamento" && line!.speaker !== "narrador" ? (line!.speaker as CharId) : null;
+  const talking = inAudio && line!.mode !== "pensamento" && onStage(line!.speaker) ? line!.speaker : null;
 
   // ---- estado emocional acumulado ----
   const emo: Record<CharId, Emotion> = { capi: "zen", hank: "bored", lazy: "neutral" };
@@ -67,7 +72,13 @@ export const Licao: React.FC<LicaoProps> = (p) => {
     const m = marks[ei];
     const own = steps.filter((s) => s.ex === ei);
     const wrong = e.chute !== undefined && e.chute !== e.resposta;
-    const doneAt = e.tipo === "montar" ? m.reveal + FLY(e.ordem?.length ?? 0) : e.tipo === "repetir" ? own[own.length - 1].start : m.reveal;
+    const lembra = own.filter((s) => isLine(s.passo) && (s.passo as Line).evento === "lembra");
+    const doneAt =
+      e.tipo === "montar" ? m.reveal + FLY(e.ordem?.length ?? 0)
+      : e.tipo === "repetir" ? own[own.length - 1].start
+      : e.tipo === "ligar" ? m.reveal + ligarDone(e.pares?.length ?? 1)
+      : e.tipo === "revisao" && lembra.length ? lembra[lembra.length - 1].start + 12
+      : m.reveal;
     return { m, wrong, doneAt, xp: wrong ? 0 : e.xp ?? 10 };
   });
   const XP_LAND = 38; // o "+10 XP" voa até o contador; o número sobe quando chega
@@ -160,6 +171,55 @@ export const Licao: React.FC<LicaoProps> = (p) => {
         </>
       );
     }
+    if (e.tipo === "cartoes") {
+      const cart = ownSteps.filter((s) => isLine(s.passo) && (s.passo as Line).evento === "cartao" && frame >= s.start);
+      const curCard = cart[cart.length - 1];
+      const inHold = !!curCard && frame >= curCard.start + curCard.audioFrames && curCard === ownSteps.find((s) => frame >= s.from && frame < s.from + s.dur);
+      return (
+        <>
+          {header}
+          <CardsBoard cards={e.cartoes!} active={curCard ? (curCard.passo as Line).alvo ?? 0 : -1} activeSince={curCard ? frame - curCard.start : 0} since={since}
+            repita={!!e.repita} repitaOn={inHold} repitaT={curCard ? frame - (curCard.start + curCard.audioFrames) : 0} frame={frame} fps={fps} />
+        </>
+      );
+    }
+    if (e.tipo === "ligar") {
+      return (
+        <>
+          {header}
+          <MatchBoard pares={e.pares!} direita={e.direita!} since={since} revealT={revealT} frame={frame} fps={fps} />
+          {timer}
+        </>
+      );
+    }
+    if (e.tipo === "completar") {
+      const chuteT = m.timerFrom >= 0 ? frame - (m.timerFrom + Math.round(1.3 * fps)) : -1;
+      return (
+        <>
+          {header}
+          <PromptCard tag="COMPLETE:" minH={COMPLETAR_CARD_H}>
+            {e.enunciado && <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 38, lineHeight: 1.12, color: C.tinta }}>{e.enunciado}</div>}
+            <GapSentence frase={e.frase!} lacuna={e.lacuna ?? "___"} answer={e.opcoes![e.resposta!]} revealT={revealT} fps={fps} frame={frame} />
+          </PromptCard>
+          <Options options={e.opcoes!} answer={e.resposta!} since={since} revealT={revealT} fps={fps} frame={frame} top={L.cardY + COMPLETAR_CARD_H + 34} chute={e.chute} chuteT={chuteT} />
+          {timer}
+        </>
+      );
+    }
+    if (e.tipo === "revisao") {
+      const revealedAt = e.itens!.map((_, i) => {
+        const s = ownSteps.find((x) => isLine(x.passo) && (x.passo as Line).evento === "lembra" && (x.passo as Line).alvo === i);
+        return s ? s.start : -1;
+      });
+      return (
+        <>
+          {header}
+          <ReviewBoard itens={e.itens!} since={since} revealedAt={revealedAt} timerOn={inTimer} frame={frame} fps={fps} />
+          {timer}
+        </>
+      );
+    }
+    if (e.tipo !== "repetir") throw new Error(`exercício ${ei + 1}: tipo "${e.tipo}" sem renderer em src/Licao.tsx`);
     // repetir
     const modelo = ownSteps.filter((s) => isLine(s.passo) && (s.passo as Line).evento === "modelo");
     const cm = playingLine && modelo.includes(playingLine) ? playingLine : null;
@@ -205,7 +265,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
       caption = <Caption anchor={L.capiMouth} side="right" maxW={SAFE.x1 - L.capiMouth[0] - 34} fontSize={50} text={line.text} lang={line.lang} progress={lineProgress} pop={capPop}
         bars={line.evento === "som" ? frame : undefined} />;
     } else {
-      const id: CharId = line.speaker === "narrador" ? "capi" : (line.speaker as CharId);
+      const id: CharId = onStage(line.speaker) ? line.speaker : "capi";
       const [ax, ay] = toScreen(cam, STAGE[id].head[0] + (id === "capi" && thinking ? 60 : 0), STAGE[id].headTop);
       caption = <Caption anchor={[ax, ay]} text={line.text} lang={line.lang} progress={lineProgress} thought={line.mode === "pensamento"} pop={cur.i === 0 ? 1 : capPop} />;
     }
@@ -235,7 +295,14 @@ export const Licao: React.FC<LicaoProps> = (p) => {
     }
     if (m.kind === "mic") sfx.push(<Sfx key={`mic${ei}`} at={m.timerFrom} name="pop" vol={0.4} />);
     if (e.tipo === "montar") e.ordem!.forEach((_, j) => sfx.push(<Sfx key={`fl${ei}-${j}`} at={m.reveal + j * STAG + 8} name="pop" vol={0.3} />));
-    if (e.tipo !== "repetir") sfx.push(<Sfx key={`ok${ei}`} at={e.tipo === "montar" ? exInfo[ei].doneAt : m.reveal} name="correct" vol={0.5} />);
+    if (e.tipo === "ligar") e.pares!.forEach((_, j) => sfx.push(<Sfx key={`lg${ei}-${j}`} at={m.reveal + Math.round(j * LIGAR_STAG) + 2} name="pop" vol={0.32} />));
+    if (e.tipo === "cartoes") steps.filter((s) => s.ex === ei && isLine(s.passo) && (s.passo as Line).evento === "cartao")
+      .forEach((s) => sfx.push(<Sfx key={`ct${s.i}`} at={s.start} name="whoosh" vol={0.14} />));
+    if (e.tipo === "revisao") {
+      e.itens!.forEach((_, j) => sfx.push(<Sfx key={`rv${ei}-${j}`} at={m.start + 14 + j * 6} name="pop" vol={0.2} />));
+      steps.filter((s) => s.ex === ei && isLine(s.passo) && (s.passo as Line).evento === "lembra").forEach((s) => sfx.push(<Sfx key={`lb${s.i}`} at={s.start} name="pop" vol={0.4} />));
+    }
+    if (e.tipo !== "repetir" && e.tipo !== "cartoes") sfx.push(<Sfx key={`ok${ei}`} at={e.tipo === "montar" || e.tipo === "ligar" || e.tipo === "revisao" ? exInfo[ei].doneAt : m.reveal} name="correct" vol={0.5} />);
     if (e.chute !== undefined) sfx.push(<Sfx key={`ch${ei}`} at={m.timerFrom + Math.round(1.3 * fps)} name="pop" vol={0.4} />);
     if (exInfo[ei].wrong) sfx.push(<Sfx key={`hb${ei}`} at={m.reveal + 10} name="heartbreak" vol={0.5} />);
     if (exInfo[ei].xp) sfx.push(<Sfx key={`xp${ei}`} at={exInfo[ei].doneAt + 4} name="xp" vol={0.35} />);
@@ -246,14 +313,14 @@ export const Licao: React.FC<LicaoProps> = (p) => {
 
   return (
     <AbsoluteFill style={{ background: C.noite, overflow: "hidden" }}>
-      {steps.filter((s) => s.audio).map((s) => (
+      {!p.semAudio && steps.filter((s) => s.audio).map((s) => (
         <Sequence key={`a${s.i}`} from={s.start} durationInFrames={s.audioFrames + 2}>
           <Audio src={staticFile(s.audio!)} />
         </Sequence>
       ))}
-      {sfx}
+      {!p.semAudio && sfx}
       {/* trilha em loop (cópias encostadas a cada 600 frames = emenda exata), volume com ducking por frame */}
-      {Array.from({ length: Math.ceil(durationInFrames / MUSIC.loopFrames) }, (_, k) => (
+      {!p.semAudio && !p.semTrilha && Array.from({ length: Math.ceil(durationInFrames / MUSIC.loopFrames) }, (_, k) => (
         <Sequence key={`m${k}`} from={k * MUSIC.loopFrames} durationInFrames={MUSIC.loopFrames}>
           <Audio src={staticFile(MUSIC.src)} volume={(f) => musicVol[Math.min(durationInFrames - 1, k * MUSIC.loopFrames + f)] ?? 0} />
         </Sequence>
@@ -262,9 +329,10 @@ export const Licao: React.FC<LicaoProps> = (p) => {
       {showCafe && (
         <AbsoluteFill>
           <CafeStage frame={frame} cam={cam} blur={blur} emo={emo} capiMood={MOOD[emo.capi]} talking={cur.phase !== "licao" ? talking : null}
-            overlay={overlay} tremor={panic ? 2 : 0} faintT={cur.phase === "volta" ? -1 : faintT} capiHop={cur.phase === "volta" ? hop : 0} />
-          <DayBadge day={p.day} />
-          {cur.i === 0 && p.hookTitle && (
+            overlay={overlay} tremor={panic ? 2 : 0} faintT={cur.phase === "volta" ? -1 : faintT} capiHop={cur.phase === "volta" ? hop : 0}
+            lazy={!!p.cast?.includes("lazy")} />
+          {!p.serie && <DayBadge day={p.day} />}
+          {cur.i === 0 && p.hookTitle && !p.semGancho && (
             <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 318, transform: "rotate(-2deg)" }}>
               <div style={{
                 background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 36, boxShadow: `0 10px 0 ${C.tinta}`, padding: "18px 26px",
@@ -297,7 +365,8 @@ export const Licao: React.FC<LicaoProps> = (p) => {
           {cur.phase === "licao" && caption}
         </AbsoluteFill>
       )}
-    <Watermark />
+      {p.serie && <SeriesSeal serie={p.serie} />}
+      <Watermark />
     </AbsoluteFill>
   );
 };

@@ -63,8 +63,10 @@ ALIAS = {"leo": "lazy"}  # episódios antigos
 #   pt-br "Capy" -> kˈapi ("CÁ-pi", certo; já "Capi" sai kapˈi = "ca-PÍ", errado) -> nada a corrigir em PT.
 #   en-us "Capy" -> kˈeɪpi ("KÊI-pi", errado)  ·  "Cappy" -> kˈæpi ("KÁ-pi", como em capybara) -> corrige em EN.
 #   en-us conferidos sem ajuste: coffee kˈɔfi · cookie kˈʊki · copy kˈɑːpi · "Can I get" kæn aɪ ɡɛt.
+#   pt-br "Lazy" -> lˈazi ("LÁ-zi", errado) · "Lêizi" -> lˈeizi ("LÊI-zi", como o en-us lˈeɪzi) -> corrige em PT (E08).
+#   en-us letras soletradas (E04) conferidas sem ajuste: A ˈeɪ · E ˈiː · I ˈaɪ · Y wˈaɪ · "C. A. P. Y." sˈiː ˈeɪ pˈiː wˈaɪ.
 PRONUNCIA = {
-    "pt": {},
+    "pt": {"Lazy": "Lêizi"},
     "en": {"Capy": "Cappy", "CapyFala": "Cappy Fala"},
 }
 ELLIPSIS = re.compile(r"(?<=\.\.\.)\s*")  # corta DEPOIS das reticências: o pedaço mantém a entonação suspensa
@@ -164,7 +166,8 @@ def iter_lines(node):
 def render_licao(episode: dict, out_dir: Path) -> dict:
     """Formato lição: 1 .wav por fala única (falas repetidas reaproveitam o mesmo áudio)."""
     timings = {}
-    for line in iter_lines({k: episode[k] for k in ("cena", "licao", "volta") if k in episode}):
+    # esquetes[].abertura = falas do hype do dia que tocam antes do corte da esquete (src/LicaoEsquete.tsx)
+    for line in iter_lines({k: episode[k] for k in ("cena", "licao", "volta", "esquetes") if k in episode}):
         key = line_key(line)
         if key in timings:
             continue

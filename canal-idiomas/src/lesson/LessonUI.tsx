@@ -6,8 +6,9 @@ import { BODY, C, SAFE, TITLE } from "../theme";
 // Tudo em coordenadas de tela 1080x1920, dentro da zona segura x 60–940 / y 200–1436.
 
 export const L = {
-  barY: 214,
-  chipY: 304,
+  sealY: SAFE.y0, // selo da série "T1 E01 · capítulo" (SeriesSeal), acima da barra
+  barY: 252,
+  chipY: 326,
   cardY: 406,
   optY: 676,
   optH: 120,
@@ -121,7 +122,7 @@ export const PromptCard: React.FC<{ children: React.ReactNode; top?: number; min
 );
 
 // Timer circular: 3–4 s, tique por segundo (SFX no motor), vermelho no último.
-export const Timer: React.FC<{ remaining: number; total: number; since: number; fps: number; x?: number; y?: number }> = ({ remaining, total, since, fps, x = SAFE.x1 - 118, y = 286 }) => {
+export const Timer: React.FC<{ remaining: number; total: number; since: number; fps: number; x?: number; y?: number }> = ({ remaining, total, since, fps, x = SAFE.x1 - 118, y = 306 }) => {
   const r = 50, circ = 2 * Math.PI * r;
   const inS = spring({ frame: since, fps, config: { damping: 12 } });
   const last = remaining <= 1;
@@ -180,7 +181,7 @@ export const Options: React.FC<{
               <div style={{
                 position: "absolute", right: -14, top: -30, fontFamily: TITLE, fontSize: 32, color: C.tinta, background: C.tangerina, border: `5px solid ${C.tinta}`,
                 borderRadius: 16, padding: "0 14px", transform: `rotate(6deg) scale(${spring({ frame: chuteT, fps, config: { damping: 9 } })})`,
-              }}>CAPI: ESSA!</div>
+              }}>CAPY: ESSA!</div>
             )}
           </div>
         );
@@ -340,7 +341,7 @@ export const MicPanel: React.FC<{ frame: number; fps: number; since: number; mic
       <div style={{
         position: "absolute", left: SAFE.x0, width: W, top: cy + (active ? 256 : 176), textAlign: "center", fontFamily: TITLE, fontSize: active ? 64 : 44,
         color: active ? C.amarelo : "#C9B8F5", WebkitTextStroke: active ? `8px ${C.tinta}` : "0px", paintOrder: "stroke fill",
-      }}>{active ? "SUA VEZ! FALA ALTO" : after ? "DE NOVO, JUNTO COM ELA" : "OUÇA A CAPI PRIMEIRO"}</div>
+      }}>{active ? "SUA VEZ! FALA ALTO" : after ? "DE NOVO, JUNTO COM ELA" : "OUÇA A CAPY PRIMEIRO"}</div>
     </div>
   );
 };
