@@ -7,13 +7,13 @@ import { BODY, C, SAFE, TITLE } from "../theme";
 
 export const L = {
   barY: 214,
-  chipY: 300,
-  cardY: 384,
-  optY: 612,
-  optH: 116,
+  chipY: 304,
+  cardY: 406,
+  optY: 676,
+  optH: 120,
   optGap: 24,
-  capi: { left: 0, top: 1096, size: 340 },
-  capiMouth: [350, 1262] as [number, number], // ponta do focinho da Capi na lição (âncora do balão lateral)
+  capi: { left: 0, top: 1116, size: 340 },
+  capiMouth: [350, 1282] as [number, number], // ponta do focinho da Capi na lição (âncora do balão lateral)
 };
 const W = SAFE.x1 - SAFE.x0;
 const CARD_SHADOW = `0 10px 0 ${C.tinta}`;
@@ -92,7 +92,7 @@ export const XpPop: React.FC<{ since: number; amount: number; fps: number }> = (
   if (since < 0 || since > 42) return null;
   const s = spring({ frame: since, fps, config: { damping: 10, mass: 0.7 } });
   const fly = interpolate(since, [22, 40], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
-  const x = interpolate(fly, [0, 1], [700, 850]), y = interpolate(fly, [0, 1], [560, 250]);
+  const x = interpolate(fly, [0, 1], [640, 850]), y = interpolate(fly, [0, 1], [760, 250]);
   return (
     <div style={{
       position: "absolute", left: x - 150, top: y - 50, width: 300, textAlign: "center", fontFamily: TITLE, fontSize: 84, color: C.amarelo,
@@ -110,9 +110,9 @@ export const ExChip: React.FC<{ text: string; n: number; total: number }> = ({ t
   </div>
 );
 
-export const PromptCard: React.FC<{ children: React.ReactNode; top?: number; minH?: number; tag?: string }> = ({ children, top = L.cardY, minH = 170, tag }) => (
+export const PromptCard: React.FC<{ children: React.ReactNode; top?: number; minH?: number; tag?: string }> = ({ children, top = L.cardY, minH = 228, tag }) => (
   <div style={{
-    position: "absolute", left: SAFE.x0, top, width: W, minHeight: minH, boxSizing: "border-box", background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 38,
+    position: "absolute", left: SAFE.x0, top, width: W, height: minH, boxSizing: "border-box", textWrap: "balance" as any, background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 38,
     boxShadow: CARD_SHADOW, padding: "24px 34px", display: "flex", flexDirection: "column", justifyContent: "center",
   }}>
     {tag && <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 28, color: C.roxo, marginBottom: 6, letterSpacing: 1 }}>{tag}</div>}
@@ -121,14 +121,14 @@ export const PromptCard: React.FC<{ children: React.ReactNode; top?: number; min
 );
 
 // Timer circular: 3–4 s, tique por segundo (SFX no motor), vermelho no último.
-export const Timer: React.FC<{ remaining: number; total: number; since: number; fps: number; x?: number; y?: number }> = ({ remaining, total, since, fps, x = SAFE.x1 - 128, y = 278 }) => {
+export const Timer: React.FC<{ remaining: number; total: number; since: number; fps: number; x?: number; y?: number }> = ({ remaining, total, since, fps, x = SAFE.x1 - 118, y = 286 }) => {
   const r = 50, circ = 2 * Math.PI * r;
   const inS = spring({ frame: since, fps, config: { damping: 12 } });
   const last = remaining <= 1;
   const pulse = 1 + (1 - (remaining % 1)) * 0.06;
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `scale(${inS * pulse})` }}>
-      <svg width={136} height={136} viewBox="0 0 136 136">
+      <svg width={118} height={118} viewBox="0 0 136 136">
         <circle cx={68} cy={68} r={r + 6} fill={C.tinta} />
         <circle cx={68} cy={68} r={r} fill={C.creme} />
         <circle cx={68} cy={68} r={r - 8} fill="none" stroke={last ? C.errado : C.amarelo} strokeWidth={16}
@@ -175,7 +175,7 @@ export const Options: React.FC<{
               width: 64, height: 64, flex: "0 0 64px", borderRadius: 18, background: revealed && ok ? "#0E9C78" : wrongPick ? "#D12E40" : C.creme,
               border: `5px solid ${C.tinta}`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: TITLE, fontSize: 40, color: C.tinta,
             }}>{revealed && ok ? <Check /> : wrongPick ? <Cross /> : String.fromCharCode(65 + i)}</div>
-            <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 44, lineHeight: 1.05, color: fg }}>{opt}</div>
+            <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 46, lineHeight: 1.05, color: fg }}>{opt}</div>
             {picked && (
               <div style={{
                 position: "absolute", right: -14, top: -30, fontFamily: TITLE, fontSize: 32, color: C.tinta, background: C.tangerina, border: `5px solid ${C.tinta}`,
@@ -214,7 +214,7 @@ const flow = (words: string[], x0: number, y0: number, maxW: number, rowH: numbe
 export const TileBoard: React.FC<{
   tiles: string[]; order: number[]; since: number; flyT: number; revealT: number; fps: number; frame: number;
 }> = ({ tiles, order, since, flyT, revealT, fps, frame }) => {
-  const ANS_Y = 624, BANK_Y = 900;
+  const ANS_Y = 676, BANK_Y = 948;
   const ansWords = order.map((i) => tiles[i]);
   const ans = flow(ansWords, SAFE.x0 + 10, ANS_Y, W - 20, 120);
   const bank = flow(tiles, SAFE.x0, BANK_Y, W, TILE_H + 22, true);
@@ -289,7 +289,7 @@ export const ListenPanel: React.FC<{ since: number; fps: number; frame: number; 
     }}>{label}</div>
   );
   return (
-    <div style={{ position: "absolute", left: SAFE.x0, top: L.cardY - 6, width: W, height: 200, transform: `scale(${s})` }}>
+    <div style={{ position: "absolute", left: SAFE.x0, top: L.cardY + 10, width: W, height: 200, transform: `scale(${s})` }}>
       <div style={{ position: "absolute", left: 60, top: 6, width: 188, height: 188 }}>
         {ring >= 0 && (
           <div style={{ position: "absolute", inset: -ring * 40, borderRadius: "50%", border: `6px solid ${C.amarelo}`, opacity: 1 - ring }} />
@@ -308,10 +308,10 @@ export const ListenPanel: React.FC<{ since: number; fps: number; frame: number; 
 };
 
 // ---------- repetir: frase-modelo + microfone ----------
-export const MicPanel: React.FC<{ frame: number; fps: number; since: number; micT: number; micFrames: number; active: boolean }> = ({ frame, fps, since, micT, micFrames, active }) => {
+export const MicPanel: React.FC<{ frame: number; fps: number; since: number; micT: number; micFrames: number; active: boolean; after?: boolean }> = ({ frame, fps, since, micT, micFrames, active, after = false }) => {
   const s = spring({ frame: since, fps, config: { damping: 12 } });
   const k = active ? micT / micFrames : 0;
-  const cx = 540, cy = 800;
+  const cx = 540, cy = 850;
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920, transform: `scale(${s})`, transformOrigin: `${cx}px ${cy}px` }}>
       {active && [0, 1].map((j) => {
@@ -340,7 +340,7 @@ export const MicPanel: React.FC<{ frame: number; fps: number; since: number; mic
       <div style={{
         position: "absolute", left: SAFE.x0, width: W, top: cy + (active ? 256 : 176), textAlign: "center", fontFamily: TITLE, fontSize: active ? 64 : 44,
         color: active ? C.amarelo : "#C9B8F5", WebkitTextStroke: active ? `8px ${C.tinta}` : "0px", paintOrder: "stroke fill",
-      }}>{active ? "SUA VEZ! FALA ALTO" : "OUÇA A CAPI PRIMEIRO"}</div>
+      }}>{active ? "SUA VEZ! FALA ALTO" : after ? "DE NOVO, JUNTO COM ELA" : "OUÇA A CAPI PRIMEIRO"}</div>
     </div>
   );
 };
@@ -350,7 +350,7 @@ export const CompleteBanner: React.FC<{ since: number; fps: number; xp: number }
   if (since < 0) return null;
   const s = spring({ frame: since, fps, config: { damping: 10 } });
   return (
-    <div style={{ position: "absolute", left: SAFE.x0 + 40, width: W - 80, top: 1000, transform: `scale(${s}) rotate(-3deg)`, textAlign: "center" }}>
+    <div style={{ position: "absolute", left: SAFE.x0 + 40, width: W - 80, top: 820, transform: `scale(${s}) rotate(-3deg)`, textAlign: "center" }}>
       <div style={{ display: "inline-block", background: C.amarelo, border: `8px solid ${C.tinta}`, borderRadius: 30, boxShadow: `0 10px 0 ${C.tinta}`, padding: "10px 30px", fontFamily: TITLE, fontSize: 60, color: C.tinta }}>
         LIÇÃO COMPLETA! <span style={{ color: C.roxo }}>{xp} XP</span>
       </div>

@@ -67,9 +67,10 @@ export const Licao: React.FC<LicaoProps> = (p) => {
     const doneAt = e.tipo === "montar" ? m.reveal + FLY(e.ordem?.length ?? 0) : e.tipo === "repetir" ? own[own.length - 1].start : m.reveal;
     return { m, wrong, doneAt, xp: wrong ? 0 : e.xp ?? 10 };
   });
-  const xp = exInfo.reduce((s, x) => s + (frame >= x.doneAt ? x.xp : 0), 0);
+  const XP_LAND = 38; // o "+10 XP" voa até o contador; o número sobe quando chega
+  const xp = exInfo.reduce((s, x) => s + (frame >= x.doneAt + XP_LAND ? x.xp : 0), 0);
   const xpTotal = exInfo.reduce((s, x) => s + x.xp, 0);
-  const lastXp = exInfo.filter((x) => x.xp && frame >= x.doneAt).pop();
+  const lastXp = exInfo.filter((x) => x.xp && frame >= x.doneAt + XP_LAND).pop();
   const heartsLostAt: number[] = [];
   exInfo.filter((x) => x.wrong).forEach((x, k) => { heartsLostAt[2 - k] = x.m.reveal + 10; });
   const progress = exInfo.reduce((s, x) => s + interpolate(frame, [x.doneAt, x.doneAt + 14], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), 0) / exs.length;
@@ -135,7 +136,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
       return (
         <>
           {header}
-          <PromptCard tag="MONTE EM INGLÊS:" minH={150}>
+          <PromptCard tag="MONTE EM INGLÊS:">
             <div style={{ fontFamily: TITLE, fontSize: 60, lineHeight: 1.06, color: C.tinta }}>{e.enunciado}</div>
           </PromptCard>
           <TileBoard tiles={e.tiles!} order={e.ordem!} since={since} flyT={revealT} revealT={revealT >= fly ? revealT - fly : -1} fps={fps} frame={frame} />
@@ -170,7 +171,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
             {words.map((w, i) => <span key={i} style={{ color: i === act ? C.tangerina : i < act ? C.roxo : C.tinta }}>{w}{i < words.length - 1 ? " " : ""}</span>)}
           </div>
         </PromptCard>
-        {!done && <MicPanel frame={frame} fps={fps} since={since - 6} micT={frame - m.timerFrom} micFrames={m.timerFrames} active={inTimer} />}
+        {!done && <MicPanel frame={frame} fps={fps} since={since - 6} micT={frame - m.timerFrom} micFrames={m.timerFrames} active={inTimer} after={frame >= m.reveal} />}
       </>
     );
   };
@@ -198,7 +199,8 @@ export const Licao: React.FC<LicaoProps> = (p) => {
   let caption: React.ReactNode = null;
   if (line && frame >= cur.start) {
     if (cur.phase === "licao") {
-      caption = <Caption anchor={L.capiMouth} side="right" maxW={SAFE.x1 - L.capiMouth[0] - 34} fontSize={50} text={line.text} lang={line.lang} progress={lineProgress} pop={capPop} />;
+      caption = <Caption anchor={L.capiMouth} side="right" maxW={SAFE.x1 - L.capiMouth[0] - 34} fontSize={50} text={line.text} lang={line.lang} progress={lineProgress} pop={capPop}
+        bars={line.evento === "som" ? frame : undefined} />;
     } else {
       const id: CharId = line.speaker === "narrador" ? "capi" : (line.speaker as CharId);
       const [ax, ay] = toScreen(cam, STAGE[id].head[0] + (id === "capi" && thinking ? 60 : 0), STAGE[id].headTop);
@@ -269,7 +271,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
       {showLesson && (
         <AbsoluteFill style={{ transform: `translateY(${(1 - lessonIn) * 1920 + lessonOut * 1920}px)` }}>
           <LessonBg frame={frame} />
-          <TopBar frame={frame} fps={fps} progress={progress} heartsLostAt={heartsLostAt} xp={xp} xpBumpSince={lastXp ? frame - lastXp.doneAt - 4 : -1} />
+          <TopBar frame={frame} fps={fps} progress={progress} heartsLostAt={heartsLostAt} xp={xp} xpBumpSince={lastXp ? frame - lastXp.doneAt - XP_LAND : -1} />
           {exs.map((_, ei) => {
             if (ei !== exNow && ei !== exNow - 1) return null;
             if (ei === exNow - 1 && frame >= marks[exNow].start + 16) return null;

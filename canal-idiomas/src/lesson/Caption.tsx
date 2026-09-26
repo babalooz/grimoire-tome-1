@@ -13,7 +13,9 @@ export const Caption: React.FC<{
   maxW?: number;
   fontSize?: number;
   pop?: number; // 0..1 (entrada)
-}> = ({ anchor, text, lang, progress, thought = false, side = "above", maxW = SAFE.x1 - SAFE.x0, fontSize = 58, pop = 1 }) => {
+  bars?: number; // exercício de ouvir: esconde o texto (não entrega a resposta) e mostra ondas de som animadas (valor = frame)
+}> = ({ anchor, text: rawText, lang, progress, thought = false, side = "above", maxW = SAFE.x1 - SAFE.x0, fontSize = 58, pop = 1, bars }) => {
+  const text = bars !== undefined ? "~~~~~~~~~~" : rawText;
   const words = text.split(/\s+/);
   const active = progress >= 1 ? -1 : Math.max(0, Math.min(words.length - 1, Math.floor(progress * words.length)));
   const padX = 34;
@@ -70,12 +72,18 @@ export const Caption: React.FC<{
     }}>
       <div style={{
         position: "relative", background: bg, borderRadius: 32, border: `7px ${thought ? "dashed" : "solid"} ${C.tinta}`, boxShadow: `0 8px 0 ${C.tinta}`,
-        padding: `16px ${padX}px 18px`, fontFamily: TITLE, fontSize, lineHeight: 1.14, color: C.tinta, textAlign: "center",
+        padding: `16px ${padX}px 18px`, fontFamily: TITLE, fontSize, lineHeight: 1.14, color: C.tinta, textAlign: "center", textWrap: "balance" as any,
       }}>
         {lang === "en" && (
           <span style={{ fontFamily: BODY, fontWeight: 800, fontSize: 28, color: "#fff", background: C.roxo, borderRadius: 12, padding: "4px 10px", marginRight: 12, verticalAlign: "middle", position: "relative", top: -6 }}>EN</span>
         )}
-        {words.map((wd, i) => (
+        {bars !== undefined ? (
+          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", height: fontSize * 1.14, verticalAlign: "middle" }}>
+            {Array.from({ length: 9 }, (_, i) => (
+              <span key={i} style={{ display: "inline-block", width: 12, borderRadius: 6, background: i % 2 ? C.roxo : C.tangerina, height: 12 + Math.abs(Math.sin(bars / 3.2 + i * 0.8)) * fontSize * 0.8 }} />
+            ))}
+          </span>
+        ) : words.map((wd, i) => (
           <span key={i} style={{ color: i === active ? C.tangerina : C.tinta }}>{wd}{i < words.length - 1 ? " " : ""}</span>
         ))}
       </div>
