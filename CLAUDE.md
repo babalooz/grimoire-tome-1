@@ -33,6 +33,12 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Agenda Google **CapyFala** (id `ac285cc7e8ab6ec1a05993c3a2a0a7c6c92a4cd6ec54bca0b7b9e72c36eb56d8@group.calendar.google.com`):
   calendário editorial até 05/11, eleições bloqueadas (04/10, 25/10), aprovação diária 11:30 a partir de 12/10, longo aos domingos.
 
+## Ponte com o PC do Felipe
+- Branch `ponte`: pedidos em `ponte/PEDIDOS.md` (push no branch ponte), respostas em `ponte/RESPOSTAS.md`
+  (`git fetch origin ponte && git show origin/ponte:ponte/RESPOSTAS.md`). O Claude local tem navegador, Drive, Railway, arquivos.
+  Não faz login/senha/código/chave nem publica/altera conta sem o Felipe no teclado. Ver ponte/README.md.
+- YouTube: canal existente "Felipe Pazini" (UCE46GzcE1XXYcn0y1O0i3JA), 3 Shorts antigos de futebol a tornar privados.
+
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
   Meta proíbe chatbot "de uso geral" desde 15/01/2026, mas no Brasil o CADE suspendeu (mantido em 04/03/2026);
