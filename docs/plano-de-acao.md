@@ -31,9 +31,9 @@ construir código pronto antes do fim do crédito (05/11). CapyKids = fase 2 (de
 |---|---|---|---|
 | 16 | Roteirista gera 14 episódios (fila) + versão ≥61 s para TikTok | Claude | 10/10 |
 | 17 | `publicar.py` via Buffer: título/legenda/hashtags por rede, `madeForKids=false`, horário | Claude | 10/10 |
-| 18 | GitHub Actions diário: radar → roteiro → vídeo → fila no Buffer (Felipe aprova 11:30) | Claude | 11/10 |
+| 18 | GitHub Actions diário: radar → roteiro → vídeo → **portão automático** → publica (sem aprovação humana) | Claude | 11/10 |
 | 19 | W-8BEN no AdSense + categoria Educação no YouTube | Felipe | 12/10 |
-| 20 | **Início das postagens** | Felipe aprova | 12/10 |
+| 20 | **Início das postagens (automático)** | fábrica | 12/10 |
 
 ## Fase 4 — Medir e decidir (12/10 → 05/11)
 | # | Ação | Dono | Prazo |
@@ -51,3 +51,29 @@ Músicas didáticas (melodia de domínio público + letra própria), canal separ
 - Storytelling contínuo (aprovado pelo Felipe): cada episódio avança o arco da temporada ("Dia N nos EUA").
   T1 "Sobreviver" (A1): chegar, pedir café, período de experiência no Bean There, conquistar o Hank, final = prova do DMV (vídeo longo).
   Callbacks: o chunk de episódios anteriores volta dito por outro personagem (repetição espaçada dentro da história).
+
+## Decisão 26/09 (Felipe) — FÁBRICA 100% AUTÔNOMA, AI-driven e data-driven
+Felipe não aprova vídeo. Ele só faz setup único (contas/tokens) e age se o FREIO disparar.
+
+**Portão automático (do barato ao caro)** — vídeo só sai se passar nas 3 camadas:
+1. *Checagens por código (reprovam sozinhas):* duração na faixa; −14 LUFS ±1 e pico ≤ −1 dBTP; legenda = áudio
+   (transcrição Whisper local × roteiro); marca Capy + @acapyfala presente; zero texto cortado/embaralhado (OCR dos stills);
+   frase em inglês da lição confere com fonte (dicionário/corpus + LanguageTool); nada de marca/música/rosto de terceiros.
+2. *Juiz LLM com rubrica 0–10* (inglês correto, lição útil, história contínua, humor, nada infantil, nada "inautêntico").
+   Nota < 8 → reescreve (máx. 2x) → descarta.
+3. *Publica sozinho* via Buffer/API. YouTube: responde comentários no personagem (API). TikTok: não responde.
+
+**Loop de aprendizado:** métricas de 48 h (retenção, % assistido até o fim, comentários, inscritos/1.000 views) voltam
+para o roteirista; a régua do portão sobe com o que performa.
+
+**FREIO automático** (pausa tudo e só então avisa o Felipe por e-mail): aviso/strike, vídeo removido,
+ou 3 vídeos seguidos muito abaixo da média (< 50% da mediana de views engajadas em 48 h).
+
+**Princípio:** toda decisão (formato, quadro, horário, cadência, gancho, corte) cita a métrica que a sustenta e é gravada em
+`canal-idiomas/decisoes.md`. Sem dado = teste com prazo e critério de corte definidos ANTES. Produção: 80% dobra o que o dado
+mostra, 20% explora novidade.
+
+**Riscos de plataforma a resolver (não dependem de vontade):**
+- TikTok Content Posting API: sem auditoria o vídeo sai só privado, e as regras exigem prévia/consentimento do usuário no app
+  → caminho: Buffer (app já auditado) — confirmar se publica direto no TikTok sem toque humano; se não, TikTok fica semi-manual.
+- YouTube Data API: projeto não verificado publica como privado → publicar via Buffer ou pedir auditoria do projeto.

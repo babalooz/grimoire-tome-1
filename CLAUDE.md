@@ -31,13 +31,21 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 ## Integrações ativas (26/09)
 - Conectores: Gmail, Google Drive, Google Calendar, **vidIQ** (Free: 150 créditos/mês, renova dia 25 — usar só em pesquisa semanal).
 - Agenda Google **CapyFala** (id `ac285cc7e8ab6ec1a05993c3a2a0a7c6c92a4cd6ec54bca0b7b9e72c36eb56d8@group.calendar.google.com`):
-  calendário editorial até 05/11, eleições bloqueadas (04/10, 25/10), aprovação diária 11:30 a partir de 12/10, longo aos domingos.
+  calendário editorial até 05/11, eleições bloqueadas (04/10, 25/10), longo aos domingos. (Aprovação diária REMOVIDA: fábrica autônoma.)
 
 ## Ponte com o PC do Felipe
 - Branch `ponte`: pedidos em `ponte/PEDIDOS.md` (push no branch ponte), respostas em `ponte/RESPOSTAS.md`
   (`git fetch origin ponte && git show origin/ponte:ponte/RESPOSTAS.md`). O Claude local tem navegador, Drive, Railway, arquivos.
   Não faz login/senha/código/chave nem publica/altera conta sem o Felipe no teclado. Ver ponte/README.md.
 - YouTube: canal existente "Felipe Pazini" (UCE46GzcE1XXYcn0y1O0i3JA), 3 Shorts antigos de futebol a tornar privados.
+
+## Fábrica autônoma (decisão do Felipe, 26/09)
+- Felipe NÃO aprova vídeos. Portão automático em 3 camadas (código → juiz LLM nota ≥8, máx. 2 reescritas → publica).
+  Freio automático (strike, remoção, 3 vídeos seguidos < 50% da mediana) pausa tudo e avisa o Felipe. Detalhes em docs/plano-de-acao.md.
+- AI-driven + data-driven: toda decisão cita métrica e vai para `canal-idiomas/decisoes.md`; sem dado = teste com prazo e
+  critério de corte prévios. 80% explorar o que funciona / 20% explorar novo.
+- Comentários: resposta automática no personagem só no YouTube; TikTok não responde.
+- Elenco completo liberado para criar: Duda, Poppy, Dona Jaca.
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
