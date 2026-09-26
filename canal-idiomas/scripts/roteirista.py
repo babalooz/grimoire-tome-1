@@ -73,7 +73,7 @@ DURACAO_CURTA = (25, 40)
 
 # ---------------------------------------------------------------- personagem e regras (seção 6, adaptados à marca)
 PERSONAGEM = (
-    "Capi é uma capivara brasileira, professora de inglês do canal CapyFala (@capyfala). TODAS as falas são da Capi, em "
+    "Capi é uma capivara brasileira, professora de inglês do canal CapyFala (@acapyfala). TODAS as falas são da Capi, em "
     "primeira pessoa. Zen por fora, dramática por dentro: fala pouco e calma, mas sua no nível difícil, fica presunçosa "
     "quando acha que acertou e desmorona quando cai na armadilha. Humor adulto-leve de brasileiro (trabalho, "
     "segunda-feira, viagem, término, boleto, memes) — nunca infantil, nunca palavrão, nunca política. Bordões (usar NO "
@@ -153,7 +153,7 @@ MODELOS = {
             {"type": "question", "title": "Uma dessas tá ERRADA. Qual?", "subtitle": "Capi no aeroporto de Miami ✈️",
              "options": ["I'm here since Monday.", "I'm looking forward to seeing you.", "She's married to a Canadian."],
              "timerSeconds": 3,
-             "speech": [{"lang": "pt", "text": "Cheguei em Miami e mandei essas três. A:"},
+             "speech": [{"lang": "pt", "text": "Cheguei em Miami e mandei essas três pro gringo. A:"},
                         {"lang": "en", "text": "I'm here since Monday."}, {"lang": "pt", "text": "B:"},
                         {"lang": "en", "text": "I'm looking forward to seeing you."}, {"lang": "pt", "text": "C:"},
                         {"lang": "en", "text": "She's married to a Canadian."}]},
