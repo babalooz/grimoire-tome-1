@@ -7,4 +7,5 @@ python3 scripts/radar.py
 BEFORE=$(ls episodes/*.json | sort)
 .venv/bin/python scripts/roteirista.py ${1:+--quadro "$1"}
 NEW=$(comm -13 <(echo "$BEFORE") <(ls episodes/*.json | sort) | tail -1)
+[ -n "$NEW" ] || exit 0  # domingo / sem episódio novo
 scripts/make.sh "$NEW"

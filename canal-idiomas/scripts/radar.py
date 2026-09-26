@@ -318,6 +318,7 @@ def vira_aula(termo: str) -> list[str]:
     """Autocomplete Google BR para '<termo> em inglês' e 'como se diz <termo> em inglês'."""
     achados = []
     t = norm(re.sub(r"\s*-\s*.*$", "", termo) if " - " in termo else termo)
+    nucleo = sorted(tokens(t), key=len, reverse=True)[:1] or [t]
     for seed in (f"{t} em inglês", f"como se diz {t} em inglês"):
         q = urllib.parse.urlencode({"client": "firefox", "hl": "pt-BR", "gl": "BR", "q": seed})
         try:
@@ -326,7 +327,8 @@ def vira_aula(termo: str) -> list[str]:
             sug = []
         for s in sug:
             n = norm(s)
-            if _AULA_SUG.search(n) and " e ingles" not in n and s not in achados:
+            # exige o termo na sugestão: o Google "corrige" (vozinha -> cozinha) e isso não conta
+            if _AULA_SUG.search(n) and nucleo[0] in n and " e ingles" not in n and s not in achados:
                 achados.append(s)
         time.sleep(0.3)
     return achados

@@ -12,6 +12,7 @@ e devolve a versão corrigida. Só a versão revisada é salva.
 import argparse
 import datetime as dt
 import json
+import sys
 from pathlib import Path
 
 import anthropic
@@ -19,8 +20,8 @@ import anthropic
 ROOT = Path(__file__).resolve().parent.parent
 MODEL = "claude-opus-5"
 
-# Grade semanal (0 = segunda). Domingo = vídeo longo (fora deste script por enquanto).
-GRADE = {0: "nivel", 1: "voce-sabia", 2: "capi-errou", 3: "br-vs-nativo", 4: "hype", 5: "pegadinha", 6: "nivel"}
+# Grade semanal (0 = segunda). Domingo (6) fica de fora: é o dia do vídeo longo, sem Short do roteirista.
+GRADE = {0: "nivel", 1: "voce-sabia", 2: "capi-errou", 3: "br-vs-nativo", 4: "hype", 5: "pegadinha"}
 
 QUADROS = {
     "nivel": "Nível 1→5: 5 perguntas de dificuldade crescente (type=question com level 1..5, 2 opções, timerSeconds=3). "
@@ -102,8 +103,25 @@ REVIEW = {
 
 
 def load_radar() -> dict:
-    files = sorted((ROOT / "radar").glob("*.json"))
-    return json.loads(files[-1].read_text()) if files else {"trends": {}, "pairs": {}}
+    """Radar v2 mais recente. Só lê as seções já filtradas (hype_seguro, evento_do_dia, duvidas_em_alta);
+    a lista crua de tendências e a seção 'descartados' nunca entram no prompt."""
+    files = sorted((ROOT / "radar").glob("20??-??-??.json"))
+    radar = json.loads(files[-1].read_text()) if files else {}
+    if radar.get("version") != 2:  # radar antigo = lista crua sem filtro de segurança: não usar
+        return {"hype_seguro": [], "evento_do_dia": {}, "duvidas_em_alta": []}
+    return radar
+
+
+def hype_seguro(radar: dict) -> list[dict]:
+    descartados = {d["termo"].lower() for d in radar.get("descartados", [])}
+    return [h for h in radar.get("hype_seguro", []) if h["termo"].lower() not in descartados]
+
+
+def fmt_eventos(ev: dict) -> str:
+    linhas = [f"- HOJE: {e['evento']} -> aula sugerida: {e['tema_aula']}" for e in ev.get("hoje", []) if e.get("seguro")]
+    linhas += [f"- em {e['faltam_dias']} dia(s): {e['evento']} -> aula sugerida: {e['tema_aula']}"
+               for e in ev.get("preparar", []) if e.get("seguro")]
+    return "\n".join(linhas) or "nenhum"
 
 
 def ask(client: anthropic.Anthropic, system: str, prompt: str, schema: dict) -> dict:
@@ -137,17 +155,26 @@ def main() -> None:
     args = ap.parse_args()
 
     today = dt.date.today()
+    if not args.quadro and today.weekday() not in GRADE:
+        print("Domingo: dia do vídeo longo, sem Short do roteirista. Use --quadro para forçar um quadro.")
+        sys.exit(0)
     quadro = args.quadro or GRADE[today.weekday()]
     radar = load_radar()
-    trends = radar.get("trends", {}).get("BR", [])
-    duvidas = [r["query"] for r in radar.get("pairs", {}).get("en-para-brasileiros", [])[:15]]
+    ev = radar.get("evento_do_dia", {})
+    hype = hype_seguro(radar)
+    trends = "\n".join(f"- {h['termo']} (contexto: {h.get('contexto') or 's/ manchete'}; ideia: {h['sugestao_aula']})"
+                        for h in hype[:10])
+    if ev.get("block_hype"):
+        trends = "BLOQUEADO HOJE (dia de eleição): não use nenhum assunto em alta; faça um tema atemporal e neutro."
+    duvidas = [r["query"] for r in radar.get("duvidas_em_alta", [])[:15]]
     recentes = sorted(p.stem for p in (ROOT / "episodes").glob("*.json"))[-20:]
 
     system = f"{PERSONAGEM}\n\n{REGRAS}"
     prompt = (
         f"Data: {today.isoformat()}. Crie o episódio do quadro '{quadro}'.\n\n"
         f"Formato do quadro: {QUADROS[quadro]}\n\n"
-        f"Assuntos em alta hoje no Brasil (Google Trends): {', '.join(trends) or 'nenhum'}\n"
+        f"Evento do calendário (prioridade como tema do dia):\n{fmt_eventos(ev)}\n"
+        f"Assuntos em alta hoje no Brasil (já filtrados por segurança):\n{trends or 'nenhum'}\n"
         f"Dúvidas de inglês mais buscadas (YouTube): {', '.join(duvidas) or 'nenhuma'}\n"
         f"Episódios recentes (não repetir tema): {', '.join(recentes) or 'nenhum'}\n\n"
         "Se algum assunto em alta combinar naturalmente com o quadro, use-o como gancho; se não, ignore."
