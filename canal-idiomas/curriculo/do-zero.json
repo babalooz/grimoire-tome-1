@@ -1,0 +1,4643 @@
+{
+  "versao": 1,
+  "criado": "2026-09-26",
+  "nome": "Percurso do zero CapyFala (inglês americano para brasileiros adultos)",
+  "principio": "Palavra e bloco pronto antes da frase; 1 objetivo 'Consigo…' por episódio; o erro de brasileiro é tempero dentro do objetivo, não a espinha.",
+  "estrutura": {
+    "temporada": "nível CEFR (T1 = A1 com Pre-A1, T2 = A2, T3 = B1)",
+    "capitulo": "bloco temático de 4–5 episódios",
+    "episodio": "1 unidade = 1 objetivo can-do"
+  },
+  "regraPublico": "Adultos. Nada de pacote infantil: número = preço/telefone/hora; alfabeto = soletrar nome/e-mail; cor = roupa na loja; comida = pedido no café.",
+  "freqLegenda": {
+    "ngslSpoken": "rank no NGSL-Spoken 1.2 (1 = mais frequente; null = fora dos 721 lemas)",
+    "ngsl": "SFI rank no NGSL 1.2 (null = fora das 2.809)",
+    "oxford3000": "nível CEFR no Oxford 3000 americano (null = fora da lista)",
+    "lema": "lema consultado (his → he, my → i, contrações → verbo)"
+  },
+  "fontes": {
+    "CEFR-CV": {
+      "nome": "Council of Europe, CEFR Companion Volume (2020): descritores A1 e o novo nível Pre-A1",
+      "url": "https://rm.coe.int/cefr-companion-volume-with-new-descriptors-2020/16809ea0d4",
+      "rotulo": "verificado (documento existe e cria o Pre-A1); usado para a espinha A0→A1→A2 e para os 'Consigo…'"
+    },
+    "GSE-ADULT": {
+      "nome": "Pearson, GSE Learning Objectives for Adult Learners (set/2022)",
+      "url": "https://www.pearson.com/content/dam/one-dot-com/one-dot-com/pearson-languages/en-gb/pdfs/gse/gse-resources/gse-learning-objectives-adult-general-english.pdf",
+      "rotulo": "verificado (texto extraído do PDF em 26/09/2026); fonte dos valores GSE e dos descritores citados literalmente. Faixas: 10–21 abaixo de A1, 22–29 A1, 30–35 A2, 36–42 A2+"
+    },
+    "NGSL-S": {
+      "nome": "NGSL-Spoken 1.2 (Browne, Culligan & Phillips), 721 lemas = 90% da fala do Cambridge English Corpus",
+      "url": "https://www.newgeneralservicelist.com/s/NGSL-Spoken_12_stats.csv",
+      "rotulo": "verificado (CSV baixado; o rank de cada palavra-alvo foi lido dele, campo freq.ngslSpoken)"
+    },
+    "NGSL": {
+      "nome": "New General Service List 1.2 (2.809 palavras, ~92% de cobertura de texto geral)",
+      "url": "https://www.newgeneralservicelist.com/new-general-service-list",
+      "rotulo": "verificado (campo freq.ngsl = SFI rank do CSV oficial)"
+    },
+    "OX3000": {
+      "nome": "The Oxford 3000 by CEFR level (American English)",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000_by_CEFR_level.pdf",
+      "rotulo": "verificado (PDF baixado; campo freq.oxford3000 = nível CEFR que a Oxford atribui à palavra)"
+    },
+    "EVP-EGP": {
+      "nome": "Cambridge English Profile: English Vocabulary Profile e English Grammar Profile",
+      "url": "https://www.englishprofile.org/",
+      "rotulo": "não consultado item a item (site fora do alcance da rede do ambiente). Usado só como princípio: nível por SENTIDO da palavra, não pela palavra. O nível de cada palavra aqui vem do Oxford 3000; conferir no EVP quando a rede permitir"
+    },
+    "EF-BEG": {
+      "nome": "English File Beginner, 4ª ed. (OUP): 1A 'A cappuccino, please', 1B 'World music', 2A 'Are you on vacation?', 2B 'That's my bus!', 3A 'Where are my keys?', 3B 'Souvenirs', 4A 'Meet the family', 5A 'A big breakfast?', 6B 'Good morning, goodnight', 7A 'Have a nice weekend!', 8A 'Can I park here?'",
+      "url": "https://elt.oup.com/catalogue/items/global/adult_courses/english_file_fourth_edition/english_file_fourth_edition_beginner/",
+      "rotulo": "títulos das lições verificados via busca; a gramática de cada lição (be I/you → he/she/it → we/they → a/an, plurais, this/that → possessivos → presente simples → horas/rotina → frequência → can) é de memória do livro: a conferir no sumário"
+    },
+    "HW-BEG": {
+      "nome": "Headway Beginner, 5ª ed. (OUP), Unit 1 'Hello!': am/is/are, my/your, This is…, How are you?, números 1–10, plurais",
+      "url": "https://www.alleng.org/d/engl_en/eng1480.htm",
+      "rotulo": "verificado via busca (fonte secundária)"
+    },
+    "IC-INTRO": {
+      "nome": "Interchange Intro, 5ª ed. (Cambridge): U1 'What's your name?' (my/your/his/her, be, soletrar nome, telefone, e-mail), U2 'Where are my keys?' (a/an, plurais, this/these), U3 'Where are you from?'",
+      "url": "https://www.cambridge.org/us/files/6615/0366/5047/Interchange_Intro_Level_Scope_and_Sequence.pdf",
+      "rotulo": "verificado via busca (o PDF oficial não abriu daqui: 404/timeout)"
+    },
+    "BC-A1A2": {
+      "nome": "British Council LearnEnglish, gramática A1–A2 (lista de tópicos: to be, present simple, there is/are, possessive 's, articles, countable/uncountable, comparatives, past simple…)",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2",
+      "rotulo": "verificado (página lida em 26/09/2026)"
+    },
+    "EN-BR": {
+      "nome": "Currículo de erros do canal (canal-idiomas/curriculo/en-br.json)",
+      "url": "canal-idiomas/curriculo/en-br.json",
+      "rotulo": "interno; usado como TEMPERO (erroBrasileiro), não como espinha"
+    }
+  },
+  "temporadas": [
+    {
+      "t": 1,
+      "nivel": "A1 (inclui Pre-A1)",
+      "gseFaixa": "10–29",
+      "titulo": "Sobreviver",
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "Primeiro contato",
+          "episodios": "E01–E05"
+        },
+        {
+          "n": 2,
+          "titulo": "Eu, você e o verbo be",
+          "episodios": "E06–E10"
+        },
+        {
+          "n": 3,
+          "titulo": "Coisas, preços e lugares",
+          "episodios": "E11–E14"
+        },
+        {
+          "n": 4,
+          "titulo": "Minha rotina",
+          "episodios": "E15–E19"
+        },
+        {
+          "n": 5,
+          "titulo": "Pedir e resolver",
+          "episodios": "E20–E24"
+        }
+      ]
+    },
+    {
+      "t": 2,
+      "nivel": "A2",
+      "gseFaixa": "30–42",
+      "titulo": "Se virar",
+      "capitulos": [
+        {
+          "n": 1,
+          "titulo": "O que aconteceu",
+          "episodios": "E01–E05"
+        },
+        {
+          "n": 2,
+          "titulo": "Planos e convites",
+          "episodios": "E06–E09"
+        },
+        {
+          "n": 3,
+          "titulo": "Na cidade",
+          "episodios": "E10–E13"
+        },
+        {
+          "n": 4,
+          "titulo": "Resolver problemas",
+          "episodios": "E14–E17"
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "nivel": "B1",
+      "gseFaixa": "43–58",
+      "titulo": "Conversar (esboço)",
+      "capitulos": []
+    }
+  ],
+  "unidades": [
+    {
+      "id": "U01",
+      "codigo": "T1 E01",
+      "temporada": 1,
+      "capitulo": 1,
+      "episodio": 1,
+      "tituloCapitulo": "Primeiro contato",
+      "tema": "Cumprimentar e se despedir",
+      "canDo": "Consigo cumprimentar e me despedir com expressões fixas.",
+      "gse": [
+        {
+          "valor": 12,
+          "descritor": "Can greet people using a few basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 19,
+          "descritor": "Can establish basic social contacts with simple, polite greetings and farewells.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "hi",
+          "pt": "oi",
+          "emoji": "👋",
+          "freq": {
+            "lema": "hi",
+            "ngslSpoken": null,
+            "ngsl": 1826,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "hello",
+          "pt": "olá",
+          "emoji": "👋",
+          "freq": {
+            "lema": "hello",
+            "ngslSpoken": null,
+            "ngsl": 2803,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "good morning",
+          "pt": "bom dia",
+          "emoji": "☀️",
+          "freq": {
+            "lema": "morning",
+            "ngslSpoken": 228,
+            "ngsl": 434,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "good evening",
+          "pt": "boa noite (chegando)",
+          "emoji": "🌆",
+          "freq": {
+            "lema": "evening",
+            "ngslSpoken": 678,
+            "ngsl": 679,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "good night",
+          "pt": "boa noite (saindo/dormir)",
+          "emoji": "🌙",
+          "freq": {
+            "lema": "night",
+            "ngslSpoken": 199,
+            "ngsl": 270,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "bye",
+          "pt": "tchau",
+          "emoji": "🚪",
+          "freq": {
+            "lema": "bye",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "see you",
+          "pt": "até mais",
+          "emoji": "🙂",
+          "freq": {
+            "lema": "see",
+            "ngslSpoken": 54,
+            "ngsl": 50,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Fórmulas fixas, sem gramática: Hi! / Good morning! / Bye!",
+      "pronuncia": {
+        "foco": "morning /ˈmɔːrnɪŋ/",
+        "dica": "termina no som nasal do -ng; nada de 'mórningui'"
+      },
+      "erroBrasileiro": {
+        "errado": "Good night! (ao chegar num lugar à noite)",
+        "certo": "Good evening!",
+        "porque": "good night só se diz ao ir embora ou ir dormir"
+      },
+      "preRequer": [],
+      "contextoAdulto": "chegar no trabalho, cumprimentar o chefe, sair do turno",
+      "referencias": [
+        "CEFR-CV",
+        "GSE-ADULT",
+        "EF-BEG",
+        "HW-BEG"
+      ],
+      "topicoId": "A1-12"
+    },
+    {
+      "id": "U02",
+      "codigo": "T1 E02",
+      "temporada": 1,
+      "capitulo": 1,
+      "episodio": 2,
+      "tituloCapitulo": "Primeiro contato",
+      "tema": "Por favor, obrigado, desculpa",
+      "canDo": "Consigo ser educado: pedir por favor, agradecer, responder 'de nada' e pedir licença ou desculpa.",
+      "gse": [
+        {
+          "valor": 12,
+          "descritor": "Can use a few basic words and phrases to show politeness (e.g. 'please', 'thank you').",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "please",
+          "pt": "por favor",
+          "emoji": "🙏",
+          "freq": {
+            "lema": "please",
+            "ngslSpoken": 298,
+            "ngsl": 471,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "thank you",
+          "pt": "obrigado(a)",
+          "emoji": "🤝",
+          "freq": {
+            "lema": "thank",
+            "ngslSpoken": 158,
+            "ngsl": 244,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "thanks",
+          "pt": "valeu / obrigado",
+          "freq": {
+            "lema": "thank",
+            "ngslSpoken": 158,
+            "ngsl": 244,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "you're welcome",
+          "pt": "de nada",
+          "emoji": "😊",
+          "freq": {
+            "lema": "welcome",
+            "ngslSpoken": null,
+            "ngsl": 989,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "sorry",
+          "pt": "desculpa",
+          "emoji": "😬",
+          "freq": {
+            "lema": "sorry",
+            "ngslSpoken": 254,
+            "ngsl": 765,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "excuse me",
+          "pt": "com licença",
+          "emoji": "✋",
+          "freq": {
+            "lema": "excuse",
+            "ngslSpoken": null,
+            "ngsl": 1915,
+            "oxford3000": "B2"
+          }
+        },
+        {
+          "en": "yes",
+          "pt": "sim",
+          "freq": {
+            "lema": "yes",
+            "ngslSpoken": 56,
+            "ngsl": 228,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "no",
+          "pt": "não",
+          "freq": {
+            "lema": "no",
+            "ngslSpoken": 50,
+            "ngsl": 60,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Fórmulas fixas: ___, please. / Thank you. — You're welcome.",
+      "pronuncia": {
+        "foco": "thank /θæŋk/",
+        "dica": "ponta da língua entre os dentes e sopra; não é 'tenk' nem 'fenk'"
+      },
+      "erroBrasileiro": {
+        "errado": "Thank you! — Nothing!",
+        "certo": "Thank you! — You're welcome!",
+        "porque": "'de nada' não se traduz palavra por palavra; nothing = coisa nenhuma"
+      },
+      "preRequer": [
+        "U01"
+      ],
+      "contextoAdulto": "entregar um café, segurar a porta, esbarrar em alguém",
+      "referencias": [
+        "CEFR-CV",
+        "GSE-ADULT",
+        "EF-BEG"
+      ],
+      "nota": "Oxford 3000 lista o verbo 'excuse' como B2, mas o bloco 'excuse me' é fórmula de cortesia de Pre-A1 (GSE 12, politeness)."
+    },
+    {
+      "id": "U03",
+      "codigo": "T1 E03",
+      "temporada": 1,
+      "capitulo": 1,
+      "episodio": 3,
+      "tituloCapitulo": "Primeiro contato",
+      "tema": "Dizer e perguntar o nome",
+      "canDo": "Consigo dizer meu nome, perguntar o nome de alguém e responder 'prazer'.",
+      "gse": [
+        {
+          "valor": 10,
+          "descritor": "Can say their name.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 10,
+          "descritor": "Can ask someone for their name.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 12,
+          "descritor": "Can introduce themselves using a basic phrase (e.g. 'My name's ...').",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I'm …",
+          "pt": "eu sou / eu me chamo",
+          "emoji": "🙋",
+          "freq": {
+            "lema": "be",
+            "ngslSpoken": 1,
+            "ngsl": 2,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "my name's …",
+          "pt": "meu nome é",
+          "emoji": "🏷️",
+          "freq": {
+            "lema": "name",
+            "ngslSpoken": 223,
+            "ngsl": 206,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "What's your name?",
+          "pt": "qual é o seu nome?",
+          "emoji": "❓",
+          "freq": {
+            "lema": "name",
+            "ngslSpoken": 223,
+            "ngsl": 206,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Nice to meet you.",
+          "pt": "prazer (em te conhecer)",
+          "emoji": "🤝",
+          "freq": {
+            "lema": "meet",
+            "ngslSpoken": 159,
+            "ngsl": 135,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "And you?",
+          "pt": "e você?",
+          "emoji": "👉",
+          "freq": {
+            "lema": "and",
+            "ngslSpoken": 4,
+            "ngsl": 3,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "I'm + nome (contração pronta, sem analisar o verbo ainda)",
+      "pronuncia": {
+        "foco": "I'm /aɪm/",
+        "dica": "um bloco só, 'áim', não 'ái ém'"
+      },
+      "erroBrasileiro": {
+        "errado": "I call myself Capy.",
+        "certo": "I'm Capy. / My name's Capy.",
+        "porque": "'eu me chamo' traduzido ao pé da letra; em inglês se diz 'eu sou'"
+      },
+      "preRequer": [
+        "U01"
+      ],
+      "contextoAdulto": "crachá do trabalho, primeira conversa com colega",
+      "referencias": [
+        "GSE-ADULT",
+        "HW-BEG",
+        "IC-INTRO"
+      ]
+    },
+    {
+      "id": "U04",
+      "codigo": "T1 E04",
+      "temporada": 1,
+      "capitulo": 1,
+      "episodio": 4,
+      "tituloCapitulo": "Primeiro contato",
+      "tema": "Soletrar nome e e-mail",
+      "canDo": "Consigo soletrar meu nome e entender quando alguém pergunta como se escreve.",
+      "gse": [
+        {
+          "valor": 11,
+          "descritor": "Can say the letters of the alphabet.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 14,
+          "descritor": "Can spell out their own name and address.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 22,
+          "descritor": "Can ask for the spelling of a word, or for a word to be written down.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "How do you spell that?",
+          "pt": "como se escreve?",
+          "emoji": "✍️",
+          "freq": {
+            "lema": "spell",
+            "ngslSpoken": null,
+            "ngsl": 1972,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "A",
+          "pt": "a letra A (som 'êi')",
+          "emoji": "🔤",
+          "freq": {
+            "lema": "letter",
+            "ngslSpoken": 454,
+            "ngsl": 358,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "E",
+          "pt": "a letra E (som 'í')",
+          "emoji": "🔤",
+          "freq": {
+            "lema": "letter",
+            "ngslSpoken": 454,
+            "ngsl": 358,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I",
+          "pt": "a letra I (som 'ái')",
+          "emoji": "🔤",
+          "freq": {
+            "lema": "letter",
+            "ngslSpoken": 454,
+            "ngsl": 358,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Y",
+          "pt": "a letra Y (som 'uái')",
+          "emoji": "🔤",
+          "freq": {
+            "lema": "letter",
+            "ngslSpoken": 454,
+            "ngsl": 358,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "at",
+          "pt": "arroba (@)",
+          "emoji": "📧",
+          "freq": {
+            "lema": "at",
+            "ngslSpoken": 40,
+            "ngsl": 23,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "dot",
+          "pt": "ponto (.)",
+          "emoji": "📧",
+          "freq": {
+            "lema": "dot",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": null
+          }
+        }
+      ],
+      "estrutura": "How do you spell ___? — C, A, P, Y.",
+      "pronuncia": {
+        "foco": "A /eɪ/, E /iː/, I /aɪ/",
+        "dica": "as três vogais trocam de som em relação ao português"
+      },
+      "erroBrasileiro": {
+        "errado": "soletrar E como 'é' e I como 'i'",
+        "certo": "E = 'í', I = 'ái'",
+        "porque": "o atendente escreve outra letra; seu nome sai errado no cadastro"
+      },
+      "preRequer": [
+        "U03"
+      ],
+      "contextoAdulto": "cadastro por telefone, reserva, e-mail do trabalho (nada de alfabeto cantado)",
+      "referencias": [
+        "GSE-ADULT",
+        "IC-INTRO"
+      ]
+    },
+    {
+      "id": "U05",
+      "codigo": "T1 E05",
+      "temporada": 1,
+      "capitulo": 1,
+      "episodio": 5,
+      "tituloCapitulo": "Primeiro contato",
+      "tema": "Números 0–10 e telefone",
+      "canDo": "Consigo dar e pedir um número de telefone.",
+      "gse": [
+        {
+          "valor": 13,
+          "descritor": "Can read out phone numbers.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 17,
+          "descritor": "Can ask for and give a phone number.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "What's your number?",
+          "pt": "qual é o seu número?",
+          "emoji": "📱",
+          "freq": {
+            "lema": "number",
+            "ngslSpoken": 162,
+            "ngsl": 127,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "one, two, three",
+          "pt": "um, dois, três",
+          "emoji": "1️⃣",
+          "freq": {
+            "lema": "three",
+            "ngslSpoken": 95,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "four, five, six",
+          "pt": "quatro, cinco, seis",
+          "emoji": "4️⃣",
+          "freq": {
+            "lema": "five",
+            "ngslSpoken": 116,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "seven, eight, nine",
+          "pt": "sete, oito, nove",
+          "emoji": "7️⃣",
+          "freq": {
+            "lema": "seven",
+            "ngslSpoken": 234,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "oh",
+          "pt": "zero (em telefone)",
+          "emoji": "0️⃣",
+          "freq": {
+            "lema": "zero",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "ten",
+          "pt": "dez",
+          "emoji": "🔟",
+          "freq": {
+            "lema": "ten",
+            "ngslSpoken": 210,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "What's your number? — It's five five five…",
+      "pronuncia": {
+        "foco": "three /θriː/",
+        "dica": "com o som de língua entre os dentes; 'tri' vira tree (árvore)"
+      },
+      "erroBrasileiro": {
+        "errado": "tree (para 3)",
+        "certo": "three",
+        "porque": "sem o /θ/ o americano ouve outra palavra"
+      },
+      "preRequer": [
+        "U04"
+      ],
+      "contextoAdulto": "passar o celular para a escala do trabalho",
+      "referencias": [
+        "GSE-ADULT",
+        "EF-BEG",
+        "IC-INTRO"
+      ],
+      "topicoId": "A1-11",
+      "nota": "Nos EUA o zero em telefone costuma ser dito 'oh'. Números de exemplo usam o prefixo 555-01xx, reservado para ficção."
+    },
+    {
+      "id": "U06",
+      "codigo": "T1 E06",
+      "temporada": 1,
+      "capitulo": 2,
+      "episodio": 6,
+      "tituloCapitulo": "Eu, você e o verbo be",
+      "tema": "Como você está? (be: I / you)",
+      "canDo": "Consigo perguntar como alguém está e dizer como eu estou.",
+      "gse": [
+        {
+          "valor": 24,
+          "descritor": "Can greet people, ask how they are and react to news.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 28,
+          "descritor": "Can express how they are feeling using very basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "How are you?",
+          "pt": "como você está?",
+          "emoji": "🙂",
+          "freq": {
+            "lema": "how",
+            "ngslSpoken": 84,
+            "ngsl": 93,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I'm good.",
+          "pt": "tô bem",
+          "emoji": "👍",
+          "freq": {
+            "lema": "good",
+            "ngslSpoken": 63,
+            "ngsl": 56,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I'm tired.",
+          "pt": "tô cansada",
+          "emoji": "🥱",
+          "freq": {
+            "lema": "tired",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Are you …?",
+          "pt": "você está …?",
+          "emoji": "❓",
+          "freq": {
+            "lema": "be",
+            "ngslSpoken": 1,
+            "ngsl": 2,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Yes, I am.",
+          "pt": "sim, estou",
+          "emoji": "✅",
+          "freq": {
+            "lema": "yes",
+            "ngslSpoken": 56,
+            "ngsl": 228,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "No, I'm not.",
+          "pt": "não, não estou",
+          "emoji": "❌",
+          "freq": {
+            "lema": "not",
+            "ngslSpoken": 11,
+            "ngsl": 14,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "be com I / you: I'm, you're, Are you…? — Yes, I am.",
+      "pronuncia": {
+        "foco": "you're /jʊr/",
+        "dica": "soa quase igual a your; o contexto separa"
+      },
+      "erroBrasileiro": {
+        "errado": "Yes, I'm.",
+        "certo": "Yes, I am.",
+        "porque": "no fim da resposta curta a contração não fica sozinha"
+      },
+      "preRequer": [
+        "U03"
+      ],
+      "contextoAdulto": "primeiro turno cansativo no trabalho",
+      "referencias": [
+        "EF-BEG",
+        "HW-BEG",
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U07",
+      "codigo": "T1 E07",
+      "temporada": 1,
+      "capitulo": 2,
+      "episodio": 7,
+      "tituloCapitulo": "Eu, você e o verbo be",
+      "tema": "De onde você é",
+      "canDo": "Consigo dizer de onde sou e perguntar a origem de alguém.",
+      "gse": [
+        {
+          "valor": 12,
+          "descritor": "Can recognise and say the name of their own country, nationality and language.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 13,
+          "descritor": "Can ask someone what their nationality is.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 23,
+          "descritor": "Can give key information to introduce themselves (e.g. 'name', 'age', 'where they are from').",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Where are you from?",
+          "pt": "de onde você é?",
+          "emoji": "🌎",
+          "freq": {
+            "lema": "from",
+            "ngslSpoken": 64,
+            "ngsl": 26,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I'm from Brazil.",
+          "pt": "sou do Brasil",
+          "emoji": "🇧🇷",
+          "freq": {
+            "lema": "from",
+            "ngslSpoken": 64,
+            "ngsl": 26,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Brazilian",
+          "pt": "brasileiro(a)",
+          "emoji": "🇧🇷",
+          "freq": {
+            "lema": "brazilian",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": null
+          }
+        },
+        {
+          "en": "the US",
+          "pt": "os EUA",
+          "emoji": "🇺🇸",
+          "freq": {
+            "lema": "us",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "American",
+          "pt": "americano(a)",
+          "emoji": "🇺🇸",
+          "freq": {
+            "lema": "american",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": null
+          }
+        }
+      ],
+      "estrutura": "I'm from + país / I'm + nacionalidade",
+      "pronuncia": {
+        "foco": "Brazil /brəˈzɪl/",
+        "dica": "tônica no fim: bra-ZIL, com z"
+      },
+      "erroBrasileiro": {
+        "errado": "I'm from Brazilian. / I'm Brazil.",
+        "certo": "I'm from Brazil. I'm Brazilian.",
+        "porque": "from + país; nacionalidade vem sem from (e com maiúscula)"
+      },
+      "preRequer": [
+        "U06"
+      ],
+      "contextoAdulto": "cliente ou colega pergunta a origem",
+      "referencias": [
+        "EF-BEG",
+        "IC-INTRO",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U08",
+      "codigo": "T1 E08",
+      "temporada": 1,
+      "capitulo": 2,
+      "episodio": 8,
+      "tituloCapitulo": "Eu, você e o verbo be",
+      "tema": "Apresentar alguém (be: he / she / it)",
+      "canDo": "Consigo apresentar uma pessoa e dizer uma coisa simples sobre ela.",
+      "gse": [
+        {
+          "valor": 27,
+          "descritor": "Can introduce people using basic language.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 26,
+          "descritor": "Can introduce someone in a basic way, giving their name and job title.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "This is …",
+          "pt": "este(a) é …",
+          "emoji": "👉",
+          "freq": {
+            "lema": "this",
+            "ngslSpoken": 21,
+            "ngsl": 19,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "he's",
+          "pt": "ele é / ele está",
+          "emoji": "👨",
+          "freq": {
+            "lema": "he",
+            "ngslSpoken": 16,
+            "ngsl": 11,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "she's",
+          "pt": "ela é / ela está",
+          "emoji": "👩",
+          "freq": {
+            "lema": "she",
+            "ngslSpoken": 33,
+            "ngsl": 24,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "it's",
+          "pt": "é (coisa, lugar)",
+          "emoji": "📦",
+          "freq": {
+            "lema": "it",
+            "ngslSpoken": 5,
+            "ngsl": 9,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "my friend",
+          "pt": "meu amigo(a)",
+          "emoji": "🤝",
+          "freq": {
+            "lema": "friend",
+            "ngslSpoken": 272,
+            "ngsl": 208,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "my boss",
+          "pt": "meu chefe",
+          "emoji": "💼",
+          "freq": {
+            "lema": "boss",
+            "ngslSpoken": null,
+            "ngsl": 1854,
+            "oxford3000": "A2"
+          }
+        }
+      ],
+      "estrutura": "This is + nome. He's / She's / It's + …",
+      "pronuncia": {
+        "foco": "he's /hiːz/",
+        "dica": "o s final soa como z"
+      },
+      "erroBrasileiro": {
+        "errado": "Is my friend. / Is good.",
+        "certo": "He's my friend. / It's good.",
+        "porque": "português esconde o sujeito; inglês exige he, she ou it"
+      },
+      "preRequer": [
+        "U06",
+        "U07"
+      ],
+      "contextoAdulto": "apresentar o colega de trabalho",
+      "referencias": [
+        "EF-BEG",
+        "HW-BEG",
+        "GSE-ADULT"
+      ],
+      "topicoId": "A1-09"
+    },
+    {
+      "id": "U09",
+      "codigo": "T1 E09",
+      "temporada": 1,
+      "capitulo": 2,
+      "episodio": 9,
+      "tituloCapitulo": "Eu, você e o verbo be",
+      "tema": "Sensações com be (fome, sede, frio)",
+      "canDo": "Consigo dizer como estou me sentindo agora: fome, sede, frio, calor.",
+      "gse": [
+        {
+          "valor": 28,
+          "descritor": "Can express how they are feeling using very basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I'm hungry.",
+          "pt": "tô com fome",
+          "emoji": "🍩",
+          "freq": {
+            "lema": "hungry",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "thirsty",
+          "pt": "com sede",
+          "emoji": "💧",
+          "freq": {
+            "lema": "thirsty",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "cold",
+          "pt": "com frio",
+          "emoji": "🥶",
+          "freq": {
+            "lema": "cold",
+            "ngslSpoken": 622,
+            "ngsl": 867,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "hot",
+          "pt": "com calor",
+          "emoji": "🥵",
+          "freq": {
+            "lema": "hot",
+            "ngslSpoken": 675,
+            "ngsl": 885,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "so",
+          "pt": "muito (como em 'tô com muita fome')",
+          "emoji": "➕",
+          "freq": {
+            "lema": "so",
+            "ngslSpoken": 20,
+            "ngsl": 32,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "I'm + adjetivo (be, não have)",
+      "pronuncia": {
+        "foco": "hungry /ˈhʌŋɡri/ × angry /ˈæŋɡri/",
+        "dica": "com H soprado é fome; sem H é raiva"
+      },
+      "erroBrasileiro": {
+        "errado": "I have hungry.",
+        "certo": "I'm hungry.",
+        "porque": "fome, sede e frio em inglês a gente ESTÁ, não TEM"
+      },
+      "preRequer": [
+        "U06"
+      ],
+      "contextoAdulto": "intervalo do trabalho",
+      "referencias": [
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-05"
+    },
+    {
+      "id": "U10",
+      "codigo": "T1 E10",
+      "temporada": 1,
+      "capitulo": 2,
+      "episodio": 10,
+      "tituloCapitulo": "Eu, você e o verbo be",
+      "tema": "Não é, não está (be negativo; we / they)",
+      "canDo": "Consigo dizer que algo não está aberto, não está pronto, não é aqui.",
+      "gse": [
+        {
+          "valor": 25,
+          "descritor": "Can ask and answer simple questions in areas of immediate need or on very familiar topics.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "open",
+          "pt": "aberto",
+          "emoji": "🟢",
+          "freq": {
+            "lema": "open",
+            "ngslSpoken": 288,
+            "ngsl": 214,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "closed",
+          "pt": "fechado",
+          "emoji": "🔴",
+          "freq": {
+            "lema": "closed",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "It isn't …",
+          "pt": "não é / não está",
+          "emoji": "🚫",
+          "freq": {
+            "lema": "be",
+            "ngslSpoken": 1,
+            "ngsl": 2,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "We aren't …",
+          "pt": "nós não estamos",
+          "emoji": "🙅",
+          "freq": {
+            "lema": "we",
+            "ngslSpoken": 14,
+            "ngsl": 16,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "not yet",
+          "pt": "ainda não",
+          "emoji": "⏳",
+          "freq": {
+            "lema": "yet",
+            "ngslSpoken": 282,
+            "ngsl": 311,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "we're / they're",
+          "pt": "nós estamos / eles estão",
+          "emoji": "👥",
+          "freq": {
+            "lema": "they",
+            "ngslSpoken": 13,
+            "ngsl": 13,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "sujeito + be + not: It isn't / We aren't / They aren't",
+      "pronuncia": {
+        "foco": "aren't /ɑːrnt/",
+        "dica": "o t final quase some; preste atenção no 'n' para não ouvir o contrário"
+      },
+      "erroBrasileiro": {
+        "errado": "It's no open. / No is open.",
+        "certo": "It isn't open.",
+        "porque": "o 'não' vem DEPOIS do be e é not, não no"
+      },
+      "preRequer": [
+        "U08"
+      ],
+      "contextoAdulto": "cliente bate na porta antes de abrir",
+      "referencias": [
+        "EF-BEG",
+        "BC-A1A2"
+      ]
+    },
+    {
+      "id": "U11",
+      "codigo": "T1 E11",
+      "temporada": 1,
+      "capitulo": 3,
+      "episodio": 11,
+      "tituloCapitulo": "Coisas, preços e lugares",
+      "tema": "O que é isso? (a/an, this/that)",
+      "canDo": "Consigo perguntar o nome de um objeto e dizer o que é.",
+      "gse": [
+        {
+          "valor": 16,
+          "descritor": "Can ask and answer basic requests for information with 'What's this/that?'",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 12,
+          "descritor": "Can name a few very common everyday objects.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "What's this?",
+          "pt": "o que é isto?",
+          "emoji": "❓",
+          "freq": {
+            "lema": "this",
+            "ngslSpoken": 21,
+            "ngsl": 19,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "that",
+          "pt": "aquilo / isso (longe)",
+          "emoji": "👉",
+          "freq": {
+            "lema": "that",
+            "ngslSpoken": 12,
+            "ngsl": 15,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a key",
+          "pt": "uma chave",
+          "emoji": "🔑",
+          "freq": {
+            "lema": "key",
+            "ngslSpoken": null,
+            "ngsl": 659,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a card",
+          "pt": "um cartão",
+          "emoji": "💳",
+          "freq": {
+            "lema": "card",
+            "ngslSpoken": 457,
+            "ngsl": 781,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "an umbrella",
+          "pt": "um guarda-chuva",
+          "emoji": "☂️",
+          "freq": {
+            "lema": "umbrella",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a phone",
+          "pt": "um celular",
+          "emoji": "📱",
+          "freq": {
+            "lema": "phone",
+            "ngslSpoken": 325,
+            "ngsl": 479,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "It's a / an + objeto. (an antes de som de vogal)",
+      "pronuncia": {
+        "foco": "this /ðɪs/",
+        "dica": "língua entre os dentes com voz; não é 'dis'"
+      },
+      "erroBrasileiro": {
+        "errado": "It's a umbrella.",
+        "certo": "It's an umbrella.",
+        "porque": "antes de som de vogal o artigo vira an"
+      },
+      "preRequer": [
+        "U08"
+      ],
+      "contextoAdulto": "achados e perdidos do trabalho",
+      "referencias": [
+        "EF-BEG",
+        "IC-INTRO",
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U12",
+      "codigo": "T1 E12",
+      "temporada": 1,
+      "capitulo": 3,
+      "episodio": 12,
+      "tituloCapitulo": "Coisas, preços e lugares",
+      "tema": "Números 11–100: preço e idade",
+      "canDo": "Consigo perguntar e dizer o preço de algo, e dizer minha idade.",
+      "gse": [
+        {
+          "valor": 19,
+          "descritor": "Can ask about the price of something.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 20,
+          "descritor": "Can say a range of basic numbers, quantities and prices.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 26,
+          "descritor": "Can say how much something costs using basic language.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 18,
+          "descritor": "Can say their own age and ask someone about their age.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "How much is it?",
+          "pt": "quanto custa?",
+          "emoji": "💵",
+          "freq": {
+            "lema": "much",
+            "ngslSpoken": 96,
+            "ngsl": 91,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "fifteen",
+          "pt": "quinze",
+          "emoji": "1️⃣5️⃣",
+          "freq": {
+            "lema": "fifteen",
+            "ngslSpoken": 484,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "fifty",
+          "pt": "cinquenta",
+          "emoji": "5️⃣0️⃣",
+          "freq": {
+            "lema": "fifty",
+            "ngslSpoken": 278,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "dollars",
+          "pt": "dólares",
+          "emoji": "💲",
+          "freq": {
+            "lema": "dollar",
+            "ngslSpoken": 437,
+            "ngsl": 971,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "How old are you?",
+          "pt": "quantos anos você tem?",
+          "emoji": "🎂",
+          "freq": {
+            "lema": "old",
+            "ngslSpoken": 171,
+            "ngsl": 144,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "twenty",
+          "pt": "vinte",
+          "emoji": "2️⃣0️⃣",
+          "freq": {
+            "lema": "twenty",
+            "ngslSpoken": 188,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "How much is it? — It's + preço. / I'm + idade.",
+      "pronuncia": {
+        "foco": "fifTEEN × FIFty",
+        "dica": "-teen tem tônica no fim e n longo; -ty tem tônica no começo"
+      },
+      "erroBrasileiro": {
+        "errado": "How much costs? / I have 26 years.",
+        "certo": "How much is it? / I'm 26.",
+        "porque": "preço e idade em inglês usam be"
+      },
+      "preRequer": [
+        "U05",
+        "U09"
+      ],
+      "contextoAdulto": "caixa do café, cadastro",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-01"
+    },
+    {
+      "id": "U13",
+      "codigo": "T1 E13",
+      "temporada": 1,
+      "capitulo": 3,
+      "episodio": 13,
+      "tituloCapitulo": "Coisas, preços e lugares",
+      "tema": "De quem é? (my, your, his, her, 's)",
+      "canDo": "Consigo dizer de quem é uma coisa.",
+      "gse": [
+        {
+          "valor": 29,
+          "descritor": "Can say who something belongs to.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "my",
+          "pt": "meu / minha",
+          "emoji": "🙋",
+          "freq": {
+            "lema": "i",
+            "ngslSpoken": 25,
+            "ngsl": 20,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "your",
+          "pt": "seu / sua",
+          "emoji": "👉",
+          "freq": {
+            "lema": "you",
+            "ngslSpoken": 3,
+            "ngsl": 10,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "his",
+          "pt": "dele",
+          "emoji": "👨",
+          "freq": {
+            "lema": "he",
+            "ngslSpoken": 16,
+            "ngsl": 11,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "her",
+          "pt": "dela",
+          "emoji": "👩",
+          "freq": {
+            "lema": "she",
+            "ngslSpoken": 33,
+            "ngsl": 24,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Leo's",
+          "pt": "do Léo",
+          "emoji": "🏷️",
+          "freq": {
+            "lema": "s",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": null
+          }
+        },
+        {
+          "en": "Whose … is this?",
+          "pt": "de quem é …?",
+          "emoji": "❓",
+          "freq": {
+            "lema": "whose",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A2"
+          }
+        }
+      ],
+      "estrutura": "my / your / his / her + coisa · nome + 's + coisa",
+      "pronuncia": {
+        "foco": "his /hɪz/ × he's /hiːz/",
+        "dica": "his é curto; he's é longo"
+      },
+      "erroBrasileiro": {
+        "errado": "the phone of Leo / her phone (para o celular de um homem)",
+        "certo": "Leo's phone / his phone",
+        "porque": "his/her concorda com o DONO, não com a coisa"
+      },
+      "preRequer": [
+        "U11"
+      ],
+      "contextoAdulto": "achados e perdidos",
+      "referencias": [
+        "EF-BEG",
+        "IC-INTRO",
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U14",
+      "codigo": "T1 E14",
+      "temporada": 1,
+      "capitulo": 3,
+      "episodio": 14,
+      "tituloCapitulo": "Coisas, preços e lugares",
+      "tema": "Tem … aqui perto? (there is / there are)",
+      "canDo": "Consigo perguntar se existe um lugar perto e entender a resposta.",
+      "gse": [
+        {
+          "valor": 28,
+          "descritor": "Can use brief, everyday expressions to describe wants and needs, and request information.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 29,
+          "descritor": "Can ask for simple directions, referring to a map or plan.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Is there …?",
+          "pt": "tem …? (existe)",
+          "emoji": "❓",
+          "freq": {
+            "lema": "there",
+            "ngslSpoken": 30,
+            "ngsl": 40,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "There's …",
+          "pt": "tem … (existe)",
+          "emoji": "📍",
+          "freq": {
+            "lema": "there",
+            "ngslSpoken": 30,
+            "ngsl": 40,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "near here",
+          "pt": "aqui perto",
+          "emoji": "📍",
+          "freq": {
+            "lema": "near",
+            "ngslSpoken": 559,
+            "ngsl": 427,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a supermarket",
+          "pt": "um mercado",
+          "emoji": "🛒",
+          "freq": {
+            "lema": "supermarket",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a bathroom",
+          "pt": "um banheiro",
+          "emoji": "🚻",
+          "freq": {
+            "lema": "bathroom",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a bank",
+          "pt": "um banco",
+          "emoji": "🏦",
+          "freq": {
+            "lema": "bank",
+            "ngslSpoken": null,
+            "ngsl": 627,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Is there a … near here? — Yes, there's … / No, there isn't.",
+      "pronuncia": {
+        "foco": "there's /ðerz/",
+        "dica": "começa com o som de this, não com 'dér'"
+      },
+      "erroBrasileiro": {
+        "errado": "Have a supermarket near here?",
+        "certo": "Is there a supermarket near here?",
+        "porque": "o 'tem' de existir é there is, não have"
+      },
+      "preRequer": [
+        "U10",
+        "U11"
+      ],
+      "contextoAdulto": "procurar mercado depois do turno",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-06"
+    },
+    {
+      "id": "U15",
+      "codigo": "T1 E15",
+      "temporada": 1,
+      "capitulo": 4,
+      "episodio": 15,
+      "tituloCapitulo": "Minha rotina",
+      "tema": "Horas e dias",
+      "canDo": "Consigo perguntar e dizer a hora e o dia de um compromisso.",
+      "gse": [
+        {
+          "valor": 16,
+          "descritor": "Can tell the time of day in full hours.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 24,
+          "descritor": "Can tell the time of day to the quarter hour.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 19,
+          "descritor": "Can ask for and give the day and date.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "What time is it?",
+          "pt": "que horas são?",
+          "emoji": "⏰",
+          "freq": {
+            "lema": "time",
+            "ngslSpoken": 65,
+            "ngsl": 49,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "It's six o'clock.",
+          "pt": "são seis horas",
+          "emoji": "🕕",
+          "freq": {
+            "lema": "six",
+            "ngslSpoken": 165,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "six thirty",
+          "pt": "seis e meia",
+          "emoji": "🕡",
+          "freq": {
+            "lema": "thirty",
+            "ngslSpoken": 256,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "at",
+          "pt": "às (hora)",
+          "emoji": "📌",
+          "freq": {
+            "lema": "at",
+            "ngslSpoken": 40,
+            "ngsl": 23,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "today",
+          "pt": "hoje",
+          "emoji": "📅",
+          "freq": {
+            "lema": "today",
+            "ngslSpoken": 187,
+            "ngsl": 246,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "tomorrow",
+          "pt": "amanhã",
+          "emoji": "➡️",
+          "freq": {
+            "lema": "tomorrow",
+            "ngslSpoken": 341,
+            "ngsl": 726,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Monday",
+          "pt": "segunda-feira",
+          "emoji": "📅",
+          "freq": {
+            "lema": "monday",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "It's + hora. / at + hora.",
+      "pronuncia": {
+        "foco": "thirty /ˈθɝːɾi/",
+        "dica": "no inglês americano o t do meio vira um r rápido"
+      },
+      "erroBrasileiro": {
+        "errado": "What hours are they?",
+        "certo": "What time is it?",
+        "porque": "'que horas são' não se traduz palavra por palavra"
+      },
+      "preRequer": [
+        "U12"
+      ],
+      "contextoAdulto": "escala do trabalho",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U16",
+      "codigo": "T1 E16",
+      "temporada": 1,
+      "capitulo": 4,
+      "episodio": 16,
+      "tituloCapitulo": "Minha rotina",
+      "tema": "Gosto / não gosto (presente simples I/you)",
+      "canDo": "Consigo dizer do que gosto e do que não gosto.",
+      "gse": [
+        {
+          "valor": 28,
+          "descritor": "Can express preferences about food and drink using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 28,
+          "descritor": "Can describe a person's likes and dislikes using simple language.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I like …",
+          "pt": "eu gosto de …",
+          "emoji": "👍",
+          "freq": {
+            "lema": "like",
+            "ngslSpoken": 29,
+            "ngsl": 45,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I don't like …",
+          "pt": "eu não gosto de …",
+          "emoji": "👎",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I love …",
+          "pt": "eu amo …",
+          "emoji": "❤️",
+          "freq": {
+            "lema": "love",
+            "ngslSpoken": 267,
+            "ngsl": 229,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "coffee",
+          "pt": "café",
+          "emoji": "☕",
+          "freq": {
+            "lema": "coffee",
+            "ngslSpoken": null,
+            "ngsl": 1395,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "tea",
+          "pt": "chá",
+          "emoji": "🍵",
+          "freq": {
+            "lema": "tea",
+            "ngslSpoken": 656,
+            "ngsl": 1599,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "it",
+          "pt": "isso / ele / ela (objeto)",
+          "emoji": "📦",
+          "freq": {
+            "lema": "it",
+            "ngslSpoken": 5,
+            "ngsl": 9,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "I + verbo / I don't + verbo",
+      "pronuncia": {
+        "foco": "don't /doʊnt/",
+        "dica": "'dôunt', com o t quase mudo"
+      },
+      "erroBrasileiro": {
+        "errado": "I no like coffee.",
+        "certo": "I don't like coffee.",
+        "porque": "a negação do presente usa don't"
+      },
+      "preRequer": [
+        "U10"
+      ],
+      "contextoAdulto": "preferências no café",
+      "referencias": [
+        "EF-BEG",
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U17",
+      "codigo": "T1 E17",
+      "temporada": 1,
+      "capitulo": 4,
+      "episodio": 17,
+      "tituloCapitulo": "Minha rotina",
+      "tema": "Perguntas do presente (Do you…?)",
+      "canDo": "Consigo perguntar o que a pessoa faz, gosta ou onde mora.",
+      "gse": [
+        {
+          "valor": 27,
+          "descritor": "Can ask simple questions about other people (e.g. their 'name', 'age', 'where they live', 'things they have').",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 28,
+          "descritor": "Can exchange personal details (e.g. 'where they live', 'things they have').",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Do you …?",
+          "pt": "você …? (pergunta)",
+          "emoji": "❓",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Yes, I do.",
+          "pt": "sim",
+          "emoji": "✅",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "No, I don't.",
+          "pt": "não",
+          "emoji": "❌",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "live",
+          "pt": "morar",
+          "emoji": "🏠",
+          "freq": {
+            "lema": "live",
+            "ngslSpoken": 178,
+            "ngsl": 153,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "work",
+          "pt": "trabalhar",
+          "emoji": "💼",
+          "freq": {
+            "lema": "work",
+            "ngslSpoken": 76,
+            "ngsl": 67,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "speak",
+          "pt": "falar (idioma)",
+          "emoji": "🗣️",
+          "freq": {
+            "lema": "speak",
+            "ngslSpoken": 268,
+            "ngsl": 284,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Do you + verbo …? — Yes, I do. / No, I don't.",
+      "pronuncia": {
+        "foco": "live /lɪv/",
+        "dica": "i curto; com i longo vira leave (sair)"
+      },
+      "erroBrasileiro": {
+        "errado": "Do you like? (sem objeto)",
+        "certo": "Do you like it?",
+        "porque": "like precisa de objeto: it, him, coffee…"
+      },
+      "preRequer": [
+        "U16"
+      ],
+      "contextoAdulto": "conversa com colega no intervalo",
+      "referencias": [
+        "EF-BEG",
+        "BC-A1A2",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A2-01"
+    },
+    {
+      "id": "U18",
+      "codigo": "T1 E18",
+      "temporada": 1,
+      "capitulo": 4,
+      "episodio": 18,
+      "tituloCapitulo": "Minha rotina",
+      "tema": "Ele e ela no presente (-s)",
+      "canDo": "Consigo dizer onde alguém trabalha, mora e o que faz.",
+      "gse": [
+        {
+          "valor": 27,
+          "descritor": "Can say what someone's job is, using familiar common job names.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 29,
+          "descritor": "Can answer simple questions about habits and routines.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "works",
+          "pt": "trabalha",
+          "emoji": "💼",
+          "freq": {
+            "lema": "work",
+            "ngslSpoken": 76,
+            "ngsl": 67,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "lives",
+          "pt": "mora",
+          "emoji": "🏠",
+          "freq": {
+            "lema": "live",
+            "ngslSpoken": 178,
+            "ngsl": 153,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "has",
+          "pt": "tem",
+          "emoji": "🎒",
+          "freq": {
+            "lema": "have",
+            "ngslSpoken": 8,
+            "ngsl": 8,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "doesn't",
+          "pt": "não (ele/ela)",
+          "emoji": "🚫",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "goes",
+          "pt": "vai",
+          "emoji": "🚶",
+          "freq": {
+            "lema": "go",
+            "ngslSpoken": 19,
+            "ngsl": 31,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "in the afternoon",
+          "pt": "à tarde",
+          "emoji": "🌇",
+          "freq": {
+            "lema": "afternoon",
+            "ngslSpoken": 529,
+            "ngsl": 948,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "he / she / it + verbo com -s",
+      "pronuncia": {
+        "foco": "-s /s/ /z/ /ɪz/",
+        "dica": "works 's', lives 'z', watches 'iz'"
+      },
+      "erroBrasileiro": {
+        "errado": "She work in the afternoon.",
+        "certo": "She works in the afternoon.",
+        "porque": "he, she, it: o verbo ganha -s"
+      },
+      "preRequer": [
+        "U17"
+      ],
+      "contextoAdulto": "explicar a escala de uma colega",
+      "referencias": [
+        "EF-BEG",
+        "BC-A1A2",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-04"
+    },
+    {
+      "id": "U19",
+      "codigo": "T1 E19",
+      "temporada": 1,
+      "capitulo": 4,
+      "episodio": 19,
+      "tituloCapitulo": "Minha rotina",
+      "tema": "Rotina e frequência",
+      "canDo": "Consigo descrever minha rotina com sempre, normalmente, nunca.",
+      "gse": [
+        {
+          "valor": 28,
+          "descritor": "Can answer simple questions about their daily activities or routines, given a model.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 31,
+          "descritor": "Can describe their daily routines in a simple way.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "get up",
+          "pt": "levantar",
+          "emoji": "⏰",
+          "freq": {
+            "lema": "get",
+            "ngslSpoken": 18,
+            "ngsl": 43,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "go to work",
+          "pt": "ir trabalhar",
+          "emoji": "🚌",
+          "freq": {
+            "lema": "go",
+            "ngslSpoken": 19,
+            "ngsl": 31,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "have breakfast",
+          "pt": "tomar café da manhã",
+          "emoji": "🥐",
+          "freq": {
+            "lema": "breakfast",
+            "ngslSpoken": null,
+            "ngsl": 1819,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "always",
+          "pt": "sempre",
+          "emoji": "🔁",
+          "freq": {
+            "lema": "always",
+            "ngslSpoken": 146,
+            "ngsl": 183,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "usually",
+          "pt": "normalmente",
+          "emoji": "🔂",
+          "freq": {
+            "lema": "usually",
+            "ngslSpoken": 404,
+            "ngsl": 555,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "never",
+          "pt": "nunca",
+          "emoji": "⛔",
+          "freq": {
+            "lema": "never",
+            "ngslSpoken": 136,
+            "ngsl": 162,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "every day",
+          "pt": "todo dia",
+          "emoji": "📆",
+          "freq": {
+            "lema": "every",
+            "ngslSpoken": 186,
+            "ngsl": 180,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "sujeito + always/usually/never + verbo",
+      "pronuncia": {
+        "foco": "usually /ˈjuːʒuəli/",
+        "dica": "o s soa como o j de 'já'"
+      },
+      "erroBrasileiro": {
+        "errado": "I go always to work.",
+        "certo": "I always go to work.",
+        "porque": "a frequência fica ANTES do verbo principal"
+      },
+      "preRequer": [
+        "U18",
+        "U15"
+      ],
+      "contextoAdulto": "rotina de quem trabalha cedo",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U20",
+      "codigo": "T1 E20",
+      "temporada": 1,
+      "capitulo": 5,
+      "episodio": 20,
+      "tituloCapitulo": "Pedir e resolver",
+      "tema": "Pedir comida e bebida",
+      "canDo": "Consigo pedir comida e bebida com educação.",
+      "gse": [
+        {
+          "valor": 24,
+          "descritor": "Can ask for a drink or food in a limited way.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 26,
+          "descritor": "Can make a few basic requests related to immediate personal needs (e.g. 'Can I have a pen, please?').",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 31,
+          "descritor": "Can use simple phrases to order a meal.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Can I get …?",
+          "pt": "pode me ver …?",
+          "emoji": "☕",
+          "freq": {
+            "lema": "get",
+            "ngslSpoken": 18,
+            "ngsl": 43,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Can I have …?",
+          "pt": "posso pegar …? / me vê …",
+          "emoji": "🥪",
+          "freq": {
+            "lema": "have",
+            "ngslSpoken": 8,
+            "ngsl": 8,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I'd like …",
+          "pt": "eu gostaria de …",
+          "emoji": "🙏",
+          "freq": {
+            "lema": "like",
+            "ngslSpoken": 29,
+            "ngsl": 45,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "for here",
+          "pt": "pra comer aqui",
+          "emoji": "🪑",
+          "freq": {
+            "lema": "here",
+            "ngslSpoken": 73,
+            "ngsl": 98,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "to go",
+          "pt": "pra viagem",
+          "emoji": "🥡",
+          "freq": {
+            "lema": "go",
+            "ngslSpoken": 19,
+            "ngsl": 31,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "small",
+          "pt": "pequeno",
+          "emoji": "🥤",
+          "freq": {
+            "lema": "small",
+            "ngslSpoken": 322,
+            "ngsl": 186,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "large",
+          "pt": "grande",
+          "emoji": "🥤",
+          "freq": {
+            "lema": "large",
+            "ngslSpoken": 458,
+            "ngsl": 210,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Can I get / have + coisa, please?",
+      "pronuncia": {
+        "foco": "Can I /kən aɪ/",
+        "dica": "can fraco: 'kãn-ái' rápido"
+      },
+      "erroBrasileiro": {
+        "errado": "I want a coffee.",
+        "certo": "Can I get a coffee, please?",
+        "porque": "I want soa como ordem; pedir perguntando é o normal"
+      },
+      "preRequer": [
+        "U02",
+        "U12"
+      ],
+      "contextoAdulto": "balcão do café",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U21",
+      "codigo": "T1 E21",
+      "temporada": 1,
+      "capitulo": 5,
+      "episodio": 21,
+      "tituloCapitulo": "Pedir e resolver",
+      "tema": "Placas e instruções (imperativo)",
+      "canDo": "Consigo entender e dar instruções curtas: empurre, espere, entre.",
+      "gse": [
+        {
+          "valor": 26,
+          "descritor": "Can follow short, simple written directions (e.g. 'to go from X to Y').",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "push",
+          "pt": "empurre",
+          "emoji": "🫸",
+          "freq": {
+            "lema": "push",
+            "ngslSpoken": 647,
+            "ngsl": 868,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "pull",
+          "pt": "puxe",
+          "emoji": "🫷",
+          "freq": {
+            "lema": "pull",
+            "ngslSpoken": 514,
+            "ngsl": 799,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "wait",
+          "pt": "espere",
+          "emoji": "✋",
+          "freq": {
+            "lema": "wait",
+            "ngslSpoken": 285,
+            "ngsl": 403,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "come in",
+          "pt": "entre",
+          "emoji": "🚪",
+          "freq": {
+            "lema": "come",
+            "ngslSpoken": 60,
+            "ngsl": 65,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "don't …",
+          "pt": "não …",
+          "emoji": "🚫",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "sit down",
+          "pt": "sente-se",
+          "emoji": "🪑",
+          "freq": {
+            "lema": "sit",
+            "ngslSpoken": 220,
+            "ngsl": 356,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "verbo sem sujeito = ordem/instrução; Don't + verbo",
+      "pronuncia": {
+        "foco": "push /pʊʃ/ × pull /pʊl/",
+        "dica": "os dois têm o mesmo u curto"
+      },
+      "erroBrasileiro": {
+        "errado": "push = puxar",
+        "certo": "push = empurrar; pull = puxar",
+        "porque": "falso cognato: parece 'puxar', é o contrário"
+      },
+      "preRequer": [
+        "U10"
+      ],
+      "contextoAdulto": "portas, placas, instruções no trabalho",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-10",
+      "nota": "GSE 26 é descritor de leitura; imperativo é gramática A1 nos livros-base."
+    },
+    {
+      "id": "U22",
+      "codigo": "T1 E22",
+      "temporada": 1,
+      "capitulo": 5,
+      "episodio": 22,
+      "tituloCapitulo": "Pedir e resolver",
+      "tema": "Can / can't (habilidade e permissão)",
+      "canDo": "Consigo dizer o que sei ou não sei fazer e pedir permissão.",
+      "gse": [
+        {
+          "valor": 27,
+          "descritor": "Can express ability or lack of ability with regard to basic activities using 'can' or 'can't'.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 27,
+          "descritor": "Can ask for help using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I can …",
+          "pt": "eu sei / consigo …",
+          "emoji": "✅",
+          "freq": {
+            "lema": "can",
+            "ngslSpoken": 49,
+            "ngsl": 38,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I can't …",
+          "pt": "eu não sei / não consigo …",
+          "emoji": "❌",
+          "freq": {
+            "lema": "can",
+            "ngslSpoken": 49,
+            "ngsl": 38,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Can you help me?",
+          "pt": "pode me ajudar?",
+          "emoji": "🆘",
+          "freq": {
+            "lema": "help",
+            "ngslSpoken": 209,
+            "ngsl": 133,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Can I pay by card?",
+          "pt": "posso pagar no cartão?",
+          "emoji": "💳",
+          "freq": {
+            "lema": "pay",
+            "ngslSpoken": 166,
+            "ngsl": 220,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "drive",
+          "pt": "dirigir",
+          "emoji": "🚗",
+          "freq": {
+            "lema": "drive",
+            "ngslSpoken": 354,
+            "ngsl": 387,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "ask",
+          "pt": "perguntar",
+          "emoji": "❓",
+          "freq": {
+            "lema": "ask",
+            "ngslSpoken": 140,
+            "ngsl": 134,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "can + verbo (sem to, sem -s)",
+      "pronuncia": {
+        "foco": "can /kən/ × can't /kænt/",
+        "dica": "can é fraco; can't é forte e aberto"
+      },
+      "erroBrasileiro": {
+        "errado": "Can I make a question?",
+        "certo": "Can I ask a question?",
+        "porque": "pergunta se ASK, não se make"
+      },
+      "preRequer": [
+        "U21"
+      ],
+      "contextoAdulto": "pagar, pedir ajuda, dizer o que sabe fazer",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A2-04"
+    },
+    {
+      "id": "U23",
+      "codigo": "T1 E23",
+      "temporada": 1,
+      "capitulo": 5,
+      "episodio": 23,
+      "tituloCapitulo": "Pedir e resolver",
+      "tema": "Roupa e cor na loja (adjetivo antes do nome)",
+      "canDo": "Consigo pedir uma roupa pela cor e pelo tamanho.",
+      "gse": [
+        {
+          "valor": 30,
+          "descritor": "Can ask basic questions about colour, size, price etc. when shopping.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 31,
+          "descritor": "Can describe what someone is wearing using a limited range of expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "a black jacket",
+          "pt": "uma jaqueta preta",
+          "emoji": "🧥",
+          "freq": {
+            "lema": "black",
+            "ngslSpoken": 544,
+            "ngsl": 411,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a white shirt",
+          "pt": "uma camisa branca",
+          "emoji": "👕",
+          "freq": {
+            "lema": "white",
+            "ngslSpoken": 589,
+            "ngsl": 482,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "blue",
+          "pt": "azul",
+          "emoji": "🔵",
+          "freq": {
+            "lema": "blue",
+            "ngslSpoken": null,
+            "ngsl": 858,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "size",
+          "pt": "tamanho",
+          "emoji": "📏",
+          "freq": {
+            "lema": "size",
+            "ngslSpoken": 665,
+            "ngsl": 705,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "too big",
+          "pt": "grande demais",
+          "emoji": "⬆️",
+          "freq": {
+            "lema": "big",
+            "ngslSpoken": 138,
+            "ngsl": 184,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "small",
+          "pt": "pequeno",
+          "emoji": "⬇️",
+          "freq": {
+            "lema": "small",
+            "ngslSpoken": 322,
+            "ngsl": 186,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "adjetivo + nome (sem plural no adjetivo)",
+      "pronuncia": {
+        "foco": "shirt /ʃɝːt/",
+        "dica": "r americano enrolado, sem 'i' no fim"
+      },
+      "erroBrasileiro": {
+        "errado": "a jacket black / blacks shoes",
+        "certo": "a black jacket / black shoes",
+        "porque": "adjetivo vem antes e não vai para o plural"
+      },
+      "preRequer": [
+        "U12",
+        "U20"
+      ],
+      "contextoAdulto": "loja de roupa (cores só em contexto de compra)",
+      "referencias": [
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-07"
+    },
+    {
+      "id": "U24",
+      "codigo": "T1 E24",
+      "temporada": 1,
+      "capitulo": 5,
+      "episodio": 24,
+      "tituloCapitulo": "Pedir e resolver",
+      "tema": "O que está acontecendo agora (presente contínuo)",
+      "canDo": "Consigo dizer o que está acontecendo agora.",
+      "gse": [
+        {
+          "valor": 33,
+          "descritor": "Can describe basic activities or events that are happening at the time of speaking.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "It's raining.",
+          "pt": "está chovendo",
+          "emoji": "🌧️",
+          "freq": {
+            "lema": "rain",
+            "ngslSpoken": null,
+            "ngsl": 1232,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I'm working.",
+          "pt": "tô trabalhando",
+          "emoji": "💼",
+          "freq": {
+            "lema": "work",
+            "ngslSpoken": 76,
+            "ngsl": 67,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "What are you doing?",
+          "pt": "o que você está fazendo?",
+          "emoji": "❓",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "now",
+          "pt": "agora",
+          "emoji": "⏱️",
+          "freq": {
+            "lema": "now",
+            "ngslSpoken": 61,
+            "ngsl": 70,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "right now",
+          "pt": "agora mesmo",
+          "emoji": "⏱️",
+          "freq": {
+            "lema": "right",
+            "ngslSpoken": 48,
+            "ngsl": 92,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "waiting",
+          "pt": "esperando",
+          "emoji": "⏳",
+          "freq": {
+            "lema": "wait",
+            "ngslSpoken": 285,
+            "ngsl": 403,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "be + verbo-ing",
+      "pronuncia": {
+        "foco": "-ing /ɪŋ/",
+        "dica": "nasal no fim, sem 'ingui'"
+      },
+      "erroBrasileiro": {
+        "errado": "Is raining.",
+        "certo": "It's raining.",
+        "porque": "chuva também precisa do sujeito it"
+      },
+      "preRequer": [
+        "U08",
+        "U18"
+      ],
+      "contextoAdulto": "tempestade no fim do turno; final da T1",
+      "referencias": [
+        "EF-BEG",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-09",
+      "nota": "GSE 33 fica na faixa A2 da Pearson; os livros Beginner põem o presente contínuo no fim do A1. Mantido como final da T1 (ponte para a T2)."
+    },
+    {
+      "id": "U25",
+      "codigo": "T2 E01",
+      "temporada": 2,
+      "capitulo": 1,
+      "episodio": 1,
+      "tituloCapitulo": "O que aconteceu",
+      "tema": "Onde você estava? (was / were)",
+      "canDo": "Consigo dizer onde eu estava e como estava.",
+      "gse": [
+        {
+          "valor": 33,
+          "descritor": "Can make simple references to the past using 'was/were'.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I was …",
+          "pt": "eu estava / era",
+          "emoji": "⏪",
+          "freq": {
+            "lema": "be",
+            "ngslSpoken": 1,
+            "ngsl": 2,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "you were",
+          "pt": "você estava",
+          "emoji": "⏪",
+          "freq": {
+            "lema": "be",
+            "ngslSpoken": 1,
+            "ngsl": 2,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "yesterday",
+          "pt": "ontem",
+          "emoji": "📅",
+          "freq": {
+            "lema": "yesterday",
+            "ngslSpoken": 409,
+            "ngsl": 703,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "at home",
+          "pt": "em casa",
+          "emoji": "🏠",
+          "freq": {
+            "lema": "home",
+            "ngslSpoken": 173,
+            "ngsl": 161,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "at work",
+          "pt": "no trabalho",
+          "emoji": "💼",
+          "freq": {
+            "lema": "work",
+            "ngslSpoken": 76,
+            "ngsl": 67,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "last night",
+          "pt": "ontem à noite",
+          "emoji": "🌙",
+          "freq": {
+            "lema": "night",
+            "ngslSpoken": 199,
+            "ngsl": 270,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "was / were + lugar/adjetivo",
+      "pronuncia": {
+        "foco": "was /wʌz/ fraco",
+        "dica": "na frase soa 'uâz' rápido"
+      },
+      "erroBrasileiro": {
+        "errado": "I was in home.",
+        "certo": "I was at home.",
+        "porque": "em casa = at home"
+      },
+      "preRequer": [
+        "U24"
+      ],
+      "contextoAdulto": "faltou ao trabalho, explica pro chefe",
+      "referencias": [
+        "EF-BEG",
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U26",
+      "codigo": "T2 E02",
+      "temporada": 2,
+      "capitulo": 1,
+      "episodio": 2,
+      "tituloCapitulo": "O que aconteceu",
+      "tema": "Passado regular (-ed)",
+      "canDo": "Consigo contar o que fiz ontem com verbos regulares.",
+      "gse": [
+        {
+          "valor": 40,
+          "descritor": "Can talk about past events or experiences, using simple language",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "worked",
+          "pt": "trabalhei",
+          "emoji": "💼",
+          "freq": {
+            "lema": "work",
+            "ngslSpoken": 76,
+            "ngsl": 67,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "called",
+          "pt": "liguei",
+          "emoji": "📞",
+          "freq": {
+            "lema": "call",
+            "ngslSpoken": 118,
+            "ngsl": 105,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "asked",
+          "pt": "perguntei",
+          "emoji": "❓",
+          "freq": {
+            "lema": "ask",
+            "ngslSpoken": 140,
+            "ngsl": 134,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "needed",
+          "pt": "precisei",
+          "emoji": "🙏",
+          "freq": {
+            "lema": "need",
+            "ngslSpoken": 98,
+            "ngsl": 90,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "watched",
+          "pt": "assisti",
+          "emoji": "📺",
+          "freq": {
+            "lema": "watch",
+            "ngslSpoken": 275,
+            "ngsl": 326,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "stayed",
+          "pt": "fiquei",
+          "emoji": "🏠",
+          "freq": {
+            "lema": "stay",
+            "ngslSpoken": 304,
+            "ngsl": 345,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "verbo + -ed",
+      "pronuncia": {
+        "foco": "-ed /t/ /d/ /ɪd/",
+        "dica": "worked 't', called 'd', needed 'id'"
+      },
+      "erroBrasileiro": {
+        "errado": "work-ÊD (pronunciar sempre 'êd')",
+        "certo": "worked /wɝːkt/",
+        "porque": "só depois de t ou d o -ed vira sílaba"
+      },
+      "preRequer": [
+        "U25"
+      ],
+      "contextoAdulto": "contar o dia de trabalho",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A2-15"
+    },
+    {
+      "id": "U27",
+      "codigo": "T2 E03",
+      "temporada": 2,
+      "capitulo": 1,
+      "episodio": 3,
+      "tituloCapitulo": "O que aconteceu",
+      "tema": "Passado irregular mais frequente",
+      "canDo": "Consigo contar o que fiz com os verbos irregulares mais usados.",
+      "gse": [
+        {
+          "valor": 40,
+          "descritor": "Can ask and answer questions about past times and past activities.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "went",
+          "pt": "fui",
+          "emoji": "🚶",
+          "freq": {
+            "lema": "go",
+            "ngslSpoken": 19,
+            "ngsl": 31,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "had",
+          "pt": "tive / comi",
+          "emoji": "🍽️",
+          "freq": {
+            "lema": "have",
+            "ngslSpoken": 8,
+            "ngsl": 8,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "got",
+          "pt": "peguei / consegui / cheguei",
+          "emoji": "📦",
+          "freq": {
+            "lema": "get",
+            "ngslSpoken": 18,
+            "ngsl": 43,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "did",
+          "pt": "fiz",
+          "emoji": "✅",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "said",
+          "pt": "disse",
+          "emoji": "💬",
+          "freq": {
+            "lema": "say",
+            "ngslSpoken": 32,
+            "ngsl": 30,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "made",
+          "pt": "fiz (fabriquei)",
+          "emoji": "🛠️",
+          "freq": {
+            "lema": "make",
+            "ngslSpoken": 69,
+            "ngsl": 48,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "bought",
+          "pt": "comprei",
+          "emoji": "🛍️",
+          "freq": {
+            "lema": "buy",
+            "ngslSpoken": 192,
+            "ngsl": 242,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "formas irregulares (decorar em bloco com contexto)",
+      "pronuncia": {
+        "foco": "said /sed/",
+        "dica": "rima com red, não 'sêid'"
+      },
+      "erroBrasileiro": {
+        "errado": "Yesterday I go to the store.",
+        "certo": "Yesterday I went to the store.",
+        "porque": "o verbo precisa ir para o passado"
+      },
+      "preRequer": [
+        "U26"
+      ],
+      "contextoAdulto": "fim de semana, compras",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U28",
+      "codigo": "T2 E04",
+      "temporada": 2,
+      "capitulo": 1,
+      "episodio": 4,
+      "tituloCapitulo": "O que aconteceu",
+      "tema": "Perguntas e negativas no passado (did)",
+      "canDo": "Consigo perguntar o que alguém fez e negar o que não fiz.",
+      "gse": [
+        {
+          "valor": 40,
+          "descritor": "Can ask and answer questions about past times and past activities.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Did you …?",
+          "pt": "você …? (passado)",
+          "emoji": "❓",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I didn't …",
+          "pt": "eu não … (passado)",
+          "emoji": "🚫",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Yes, I did.",
+          "pt": "sim",
+          "emoji": "✅",
+          "freq": {
+            "lema": "do",
+            "ngslSpoken": 10,
+            "ngsl": 21,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "see",
+          "pt": "ver",
+          "emoji": "👀",
+          "freq": {
+            "lema": "see",
+            "ngslSpoken": 54,
+            "ngsl": 50,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "call",
+          "pt": "ligar",
+          "emoji": "📞",
+          "freq": {
+            "lema": "call",
+            "ngslSpoken": 118,
+            "ngsl": 105,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "finish",
+          "pt": "terminar",
+          "emoji": "🏁",
+          "freq": {
+            "lema": "finish",
+            "ngslSpoken": 384,
+            "ngsl": 609,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Did + sujeito + verbo base / didn't + verbo base",
+      "pronuncia": {
+        "foco": "didn't /ˈdɪdənt/",
+        "dica": "o segundo d quase some: 'dín(t)'"
+      },
+      "erroBrasileiro": {
+        "errado": "I didn't went.",
+        "certo": "I didn't go.",
+        "porque": "depois de did/didn't o verbo volta à forma base"
+      },
+      "preRequer": [
+        "U27"
+      ],
+      "contextoAdulto": "chefe confere tarefas do dia anterior",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U29",
+      "codigo": "T2 E05",
+      "temporada": 2,
+      "capitulo": 1,
+      "episodio": 5,
+      "tituloCapitulo": "O que aconteceu",
+      "tema": "Quando foi (ago, last, in, on)",
+      "canDo": "Consigo situar um fato no tempo.",
+      "gse": [
+        {
+          "valor": 25,
+          "descritor": "Can indicate time by such phrases as 'next week', 'last Friday', 'in November', 'three o'clock'.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "ago",
+          "pt": "atrás (tempo)",
+          "emoji": "⏪",
+          "freq": {
+            "lema": "ago",
+            "ngslSpoken": 300,
+            "ngsl": 372,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "last week",
+          "pt": "semana passada",
+          "emoji": "📅",
+          "freq": {
+            "lema": "last",
+            "ngslSpoken": 120,
+            "ngsl": 101,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "in 2024",
+          "pt": "em 2024",
+          "emoji": "📆",
+          "freq": {
+            "lema": "in",
+            "ngslSpoken": 15,
+            "ngsl": 7,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "on Monday",
+          "pt": "na segunda",
+          "emoji": "📅",
+          "freq": {
+            "lema": "on",
+            "ngslSpoken": 23,
+            "ngsl": 17,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "two days ago",
+          "pt": "dois dias atrás",
+          "emoji": "⏪",
+          "freq": {
+            "lema": "day",
+            "ngslSpoken": 106,
+            "ngsl": 85,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "When …?",
+          "pt": "quando …?",
+          "emoji": "❓",
+          "freq": {
+            "lema": "when",
+            "ngslSpoken": 57,
+            "ngsl": 46,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "número + ago / last + período / in + ano / on + dia",
+      "pronuncia": {
+        "foco": "ago /əˈɡoʊ/",
+        "dica": "tônica no fim"
+      },
+      "erroBrasileiro": {
+        "errado": "since two days / the last week",
+        "certo": "two days ago / last week",
+        "porque": "tradução de 'faz dois dias' e 'na semana passada'"
+      },
+      "preRequer": [
+        "U28"
+      ],
+      "contextoAdulto": "contar há quanto tempo chegou nos EUA",
+      "referencias": [
+        "GSE-ADULT",
+        "BC-A1A2"
+      ]
+    },
+    {
+      "id": "U30",
+      "codigo": "T2 E06",
+      "temporada": 2,
+      "capitulo": 2,
+      "episodio": 6,
+      "tituloCapitulo": "Planos e convites",
+      "tema": "Planos (be going to / plan to)",
+      "canDo": "Consigo dizer o que vou fazer e o que pretendo fazer.",
+      "gse": [
+        {
+          "valor": 39,
+          "descritor": "Can talk about plans for the near future in a simple way.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 38,
+          "descritor": "Can ask and answer questions about basic plans and intentions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I'm going to …",
+          "pt": "eu vou …",
+          "emoji": "➡️",
+          "freq": {
+            "lema": "go",
+            "ngslSpoken": 19,
+            "ngsl": 31,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "plan to",
+          "pt": "pretender / planejar",
+          "emoji": "🗓️",
+          "freq": {
+            "lema": "plan",
+            "ngslSpoken": 277,
+            "ngsl": 232,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "this weekend",
+          "pt": "neste fim de semana",
+          "emoji": "📅",
+          "freq": {
+            "lema": "weekend",
+            "ngslSpoken": 543,
+            "ngsl": 934,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "next week",
+          "pt": "semana que vem",
+          "emoji": "📅",
+          "freq": {
+            "lema": "next",
+            "ngslSpoken": 164,
+            "ngsl": 151,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "take the test",
+          "pt": "fazer a prova",
+          "emoji": "📝",
+          "freq": {
+            "lema": "test",
+            "ngslSpoken": 172,
+            "ngsl": 332,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "maybe",
+          "pt": "talvez",
+          "emoji": "🤔",
+          "freq": {
+            "lema": "maybe",
+            "ngslSpoken": 170,
+            "ngsl": 464,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "be going to + verbo",
+      "pronuncia": {
+        "foco": "going to → gonna",
+        "dica": "na fala rápida vira 'gana'; na escrita, going to"
+      },
+      "erroBrasileiro": {
+        "errado": "I pretend to take the test.",
+        "certo": "I plan to take the test.",
+        "porque": "pretend = fingir (falso cognato)"
+      },
+      "preRequer": [
+        "U24"
+      ],
+      "contextoAdulto": "planejar a prova de direção (DMV)",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A2-10"
+    },
+    {
+      "id": "U31",
+      "codigo": "T2 E07",
+      "temporada": 2,
+      "capitulo": 2,
+      "episodio": 7,
+      "tituloCapitulo": "Planos e convites",
+      "tema": "Convidar, aceitar, recusar",
+      "canDo": "Consigo convidar alguém e aceitar ou recusar com educação.",
+      "gse": [
+        {
+          "valor": 31,
+          "descritor": "Can make simple invitations using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 32,
+          "descritor": "Can express agreement using simple fixed expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Would you like to …?",
+          "pt": "você gostaria de …?",
+          "emoji": "🎟️",
+          "freq": {
+            "lema": "like",
+            "ngslSpoken": 29,
+            "ngsl": 45,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Are you free …?",
+          "pt": "você está livre …?",
+          "emoji": "📅",
+          "freq": {
+            "lema": "free",
+            "ngslSpoken": 554,
+            "ngsl": 395,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Sure!",
+          "pt": "claro!",
+          "emoji": "👍",
+          "freq": {
+            "lema": "sure",
+            "ngslSpoken": 144,
+            "ngsl": 279,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I'd love to.",
+          "pt": "eu adoraria",
+          "emoji": "❤️",
+          "freq": {
+            "lema": "love",
+            "ngslSpoken": 267,
+            "ngsl": 229,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Sorry, I can't.",
+          "pt": "desculpa, não posso",
+          "emoji": "🙅",
+          "freq": {
+            "lema": "can",
+            "ngslSpoken": 49,
+            "ngsl": 38,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I agree.",
+          "pt": "concordo",
+          "emoji": "🤝",
+          "freq": {
+            "lema": "agree",
+            "ngslSpoken": 350,
+            "ngsl": 420,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "Would you like to + verbo? / I'd love to.",
+      "pronuncia": {
+        "foco": "Would you /wʊdʒə/",
+        "dica": "d + y vira 'dj': 'wu-dja'"
+      },
+      "erroBrasileiro": {
+        "errado": "I'm agree.",
+        "certo": "I agree.",
+        "porque": "agree já é verbo; não leva am"
+      },
+      "preRequer": [
+        "U30"
+      ],
+      "contextoAdulto": "convite dos colegas depois do trabalho",
+      "referencias": [
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A1-02"
+    },
+    {
+      "id": "U32",
+      "codigo": "T2 E08",
+      "temporada": 2,
+      "capitulo": 2,
+      "episodio": 8,
+      "tituloCapitulo": "Planos e convites",
+      "tema": "Obrigação (have to / need to)",
+      "canDo": "Consigo dizer o que preciso ou tenho que fazer.",
+      "gse": [
+        {
+          "valor": 33,
+          "descritor": "Can make excuses using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I have to …",
+          "pt": "eu tenho que …",
+          "emoji": "❗",
+          "freq": {
+            "lema": "have",
+            "ngslSpoken": 8,
+            "ngsl": 8,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I need to …",
+          "pt": "eu preciso …",
+          "emoji": "🙏",
+          "freq": {
+            "lema": "need",
+            "ngslSpoken": 98,
+            "ngsl": 90,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I don't have to …",
+          "pt": "não preciso …",
+          "emoji": "😌",
+          "freq": {
+            "lema": "have",
+            "ngslSpoken": 8,
+            "ngsl": 8,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "go",
+          "pt": "ir",
+          "emoji": "🚶",
+          "freq": {
+            "lema": "go",
+            "ngslSpoken": 19,
+            "ngsl": 31,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "leave",
+          "pt": "sair / ir embora",
+          "emoji": "🚪",
+          "freq": {
+            "lema": "leave",
+            "ngslSpoken": 155,
+            "ngsl": 126,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "early",
+          "pt": "cedo",
+          "emoji": "🌅",
+          "freq": {
+            "lema": "early",
+            "ngslSpoken": 313,
+            "ngsl": 197,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "have to / need to + verbo",
+      "pronuncia": {
+        "foco": "have to /ˈhæftə/",
+        "dica": "na fala o v vira f: 'háf-ta'"
+      },
+      "erroBrasileiro": {
+        "errado": "I need go.",
+        "certo": "I need to go.",
+        "porque": "need pede to antes do verbo"
+      },
+      "preRequer": [
+        "U31"
+      ],
+      "contextoAdulto": "sair mais cedo do turno",
+      "referencias": [
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U33",
+      "codigo": "T2 E09",
+      "temporada": 2,
+      "capitulo": 2,
+      "episodio": 9,
+      "tituloCapitulo": "Planos e convites",
+      "tema": "Pedir emprestado e pedir favor",
+      "canDo": "Consigo pedir algo emprestado e pedir um favor.",
+      "gse": [
+        {
+          "valor": 30,
+          "descritor": "Can ask to borrow things using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 34,
+          "descritor": "Can agree or refuse to lend things using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Can I borrow …?",
+          "pt": "posso pegar … emprestado?",
+          "emoji": "🖊️",
+          "freq": {
+            "lema": "borrow",
+            "ngslSpoken": null,
+            "ngsl": 1880,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "lend",
+          "pt": "emprestar (dar)",
+          "emoji": "🤲",
+          "freq": {
+            "lema": "lend",
+            "ngslSpoken": null,
+            "ngsl": 2305,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "Could you …?",
+          "pt": "você poderia …?",
+          "emoji": "🙏",
+          "freq": {
+            "lema": "could",
+            "ngslSpoken": 75,
+            "ngsl": 66,
+            "oxford3000": null
+          }
+        },
+        {
+          "en": "a pen",
+          "pt": "uma caneta",
+          "emoji": "🖊️",
+          "freq": {
+            "lema": "pen",
+            "ngslSpoken": null,
+            "ngsl": 2320,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Of course.",
+          "pt": "claro",
+          "emoji": "👍",
+          "freq": {
+            "lema": "course",
+            "ngslSpoken": 149,
+            "ngsl": 164,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a favor",
+          "pt": "um favor",
+          "emoji": "🙏",
+          "freq": {
+            "lema": "favor",
+            "ngslSpoken": null,
+            "ngsl": 1134,
+            "oxford3000": "B1"
+          }
+        }
+      ],
+      "estrutura": "Can I borrow + coisa? / Could you lend me + coisa?",
+      "pronuncia": {
+        "foco": "borrow /ˈbɑːroʊ/",
+        "dica": "tônica no começo"
+      },
+      "erroBrasileiro": {
+        "errado": "Can you borrow me your pen?",
+        "certo": "Can I borrow your pen?",
+        "porque": "borrow = pegar emprestado; lend = emprestar"
+      },
+      "preRequer": [
+        "U32"
+      ],
+      "contextoAdulto": "formulário no órgão público",
+      "referencias": [
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A2-06"
+    },
+    {
+      "id": "U34",
+      "codigo": "T2 E10",
+      "temporada": 2,
+      "capitulo": 3,
+      "episodio": 10,
+      "tituloCapitulo": "Na cidade",
+      "tema": "Direções",
+      "canDo": "Consigo pedir e dar direções simples.",
+      "gse": [
+        {
+          "valor": 32,
+          "descritor": "Can ask for simple directions from X to Y on foot or by public transport.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 34,
+          "descritor": "Can give simple directions from X to Y on foot or by public transport.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "turn left",
+          "pt": "vire à esquerda",
+          "emoji": "⬅️",
+          "freq": {
+            "lema": "left",
+            "ngslSpoken": null,
+            "ngsl": 1220,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "turn right",
+          "pt": "vire à direita",
+          "emoji": "➡️",
+          "freq": {
+            "lema": "right",
+            "ngslSpoken": 48,
+            "ngsl": 92,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "go straight",
+          "pt": "siga reto",
+          "emoji": "⬆️",
+          "freq": {
+            "lema": "straight",
+            "ngslSpoken": 553,
+            "ngsl": 1072,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "next to",
+          "pt": "ao lado de",
+          "emoji": "↔️",
+          "freq": {
+            "lema": "next",
+            "ngslSpoken": 164,
+            "ngsl": 151,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "across from",
+          "pt": "em frente a",
+          "emoji": "↕️",
+          "freq": {
+            "lema": "across",
+            "ngslSpoken": 414,
+            "ngsl": 383,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "on the corner",
+          "pt": "na esquina",
+          "emoji": "📐",
+          "freq": {
+            "lema": "corner",
+            "ngslSpoken": null,
+            "ngsl": 1188,
+            "oxford3000": "A2"
+          }
+        }
+      ],
+      "estrutura": "imperativo + preposição de lugar",
+      "pronuncia": {
+        "foco": "straight /streɪt/",
+        "dica": "o gh é mudo"
+      },
+      "erroBrasileiro": {
+        "errado": "in the corner (de rua)",
+        "certo": "on the corner",
+        "porque": "esquina de rua é on; in the corner é o canto de dentro de uma sala"
+      },
+      "preRequer": [
+        "U14",
+        "U21"
+      ],
+      "contextoAdulto": "achar o DMV",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U35",
+      "codigo": "T2 E11",
+      "temporada": 2,
+      "capitulo": 3,
+      "episodio": 11,
+      "tituloCapitulo": "Na cidade",
+      "tema": "Quantidade (some/any, much/many)",
+      "canDo": "Consigo perguntar e dizer quantidades.",
+      "gse": [
+        {
+          "valor": 33,
+          "descritor": "Can ask simple questions about quantities and amounts.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "How many …?",
+          "pt": "quantos …? (contável)",
+          "emoji": "🔢",
+          "freq": {
+            "lema": "many",
+            "ngslSpoken": 156,
+            "ngsl": 99,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "How much …?",
+          "pt": "quanto …? (incontável)",
+          "emoji": "💧",
+          "freq": {
+            "lema": "much",
+            "ngslSpoken": 96,
+            "ngsl": 91,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "some",
+          "pt": "algum / um pouco",
+          "emoji": "➕",
+          "freq": {
+            "lema": "some",
+            "ngslSpoken": 62,
+            "ngsl": 53,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "any",
+          "pt": "nenhum / algum (pergunta, negativa)",
+          "emoji": "❔",
+          "freq": {
+            "lema": "any",
+            "ngslSpoken": 88,
+            "ngsl": 83,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "money",
+          "pt": "dinheiro",
+          "emoji": "💵",
+          "freq": {
+            "lema": "money",
+            "ngslSpoken": 167,
+            "ngsl": 201,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "a lot of",
+          "pt": "muito(s)",
+          "emoji": "📦",
+          "freq": {
+            "lema": "lot",
+            "ngslSpoken": 89,
+            "ngsl": 123,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "many + contável / much + incontável",
+      "pronuncia": {
+        "foco": "money /ˈmʌni/",
+        "dica": "o o soa como 'â'"
+      },
+      "erroBrasileiro": {
+        "errado": "How many money?",
+        "certo": "How much money?",
+        "porque": "money é incontável em inglês"
+      },
+      "preRequer": [
+        "U34"
+      ],
+      "contextoAdulto": "mercado, estoque do café",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U36",
+      "codigo": "T2 E12",
+      "temporada": 2,
+      "capitulo": 3,
+      "episodio": 12,
+      "tituloCapitulo": "Na cidade",
+      "tema": "Comparar (cheaper, more expensive)",
+      "canDo": "Consigo comparar duas coisas.",
+      "gse": [
+        {
+          "valor": 37,
+          "descritor": "Can make simple, direct comparisons between two people or things using common adjectives.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "cheaper",
+          "pt": "mais barato",
+          "emoji": "💲",
+          "freq": {
+            "lema": "cheap",
+            "ngslSpoken": 707,
+            "ngsl": 1095,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "bigger",
+          "pt": "maior",
+          "emoji": "⬆️",
+          "freq": {
+            "lema": "big",
+            "ngslSpoken": 138,
+            "ngsl": 184,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "better",
+          "pt": "melhor",
+          "emoji": "👍",
+          "freq": {
+            "lema": "good",
+            "ngslSpoken": 63,
+            "ngsl": 56,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "more expensive",
+          "pt": "mais caro",
+          "emoji": "💰",
+          "freq": {
+            "lema": "expensive",
+            "ngslSpoken": null,
+            "ngsl": 1061,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "than",
+          "pt": "do que",
+          "emoji": "⚖️",
+          "freq": {
+            "lema": "than",
+            "ngslSpoken": 114,
+            "ngsl": 69,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "worse",
+          "pt": "pior",
+          "emoji": "👎",
+          "freq": {
+            "lema": "bad",
+            "ngslSpoken": 206,
+            "ngsl": 268,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "adjetivo-er + than / more + adjetivo longo + than",
+      "pronuncia": {
+        "foco": "than /ðæn/",
+        "dica": "com o som de this; na frase fica 'dãn' fraco"
+      },
+      "erroBrasileiro": {
+        "errado": "more cheap / more better",
+        "certo": "cheaper / better",
+        "porque": "adjetivo curto ganha -er; good vira better"
+      },
+      "preRequer": [
+        "U35"
+      ],
+      "contextoAdulto": "comparar preço de celular e aluguel",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U37",
+      "codigo": "T2 E13",
+      "temporada": 2,
+      "capitulo": 3,
+      "episodio": 13,
+      "tituloCapitulo": "Na cidade",
+      "tema": "O melhor, o mais (superlativo)",
+      "canDo": "Consigo dizer qual é o melhor, o mais barato, o mais perto.",
+      "gse": [
+        {
+          "valor": 37,
+          "descritor": "Can compare their own and others' possessions using simple language.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "the best",
+          "pt": "o melhor",
+          "emoji": "🏆",
+          "freq": {
+            "lema": "good",
+            "ngslSpoken": 63,
+            "ngsl": 56,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "the cheapest",
+          "pt": "o mais barato",
+          "emoji": "💲",
+          "freq": {
+            "lema": "cheap",
+            "ngslSpoken": 707,
+            "ngsl": 1095,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "the closest",
+          "pt": "o mais perto",
+          "emoji": "📍",
+          "freq": {
+            "lema": "close",
+            "ngslSpoken": 324,
+            "ngsl": 239,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "the most expensive",
+          "pt": "o mais caro",
+          "emoji": "💰",
+          "freq": {
+            "lema": "expensive",
+            "ngslSpoken": null,
+            "ngsl": 1061,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "in town",
+          "pt": "na cidade",
+          "emoji": "🏙️",
+          "freq": {
+            "lema": "town",
+            "ngslSpoken": 508,
+            "ngsl": 364,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "the worst",
+          "pt": "o pior",
+          "emoji": "👎",
+          "freq": {
+            "lema": "bad",
+            "ngslSpoken": 206,
+            "ngsl": 268,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "the + adjetivo-est / the most + adjetivo longo",
+      "pronuncia": {
+        "foco": "best /best/",
+        "dica": "sem 'i' no fim: 'bést', não 'bésti'"
+      },
+      "erroBrasileiro": {
+        "errado": "the more good",
+        "certo": "the best",
+        "porque": "good é irregular: better, the best"
+      },
+      "preRequer": [
+        "U36"
+      ],
+      "contextoAdulto": "indicar o melhor café da cidade",
+      "referencias": [
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U38",
+      "codigo": "T2 E14",
+      "temporada": 2,
+      "capitulo": 4,
+      "episodio": 14,
+      "tituloCapitulo": "Resolver problemas",
+      "tema": "Na farmácia e no médico",
+      "canDo": "Consigo dizer o que estou sentindo e entender um conselho simples.",
+      "gse": [
+        {
+          "valor": 36,
+          "descritor": "Can ask and talk about very basic symptoms and ailments (e.g. 'cold', 'flu').",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 39,
+          "descritor": "Can give basic advice using simple language.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "I have a headache.",
+          "pt": "tô com dor de cabeça",
+          "emoji": "🤕",
+          "freq": {
+            "lema": "headache",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "a cold",
+          "pt": "um resfriado",
+          "emoji": "🤧",
+          "freq": {
+            "lema": "cold",
+            "ngslSpoken": 622,
+            "ngsl": 867,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "It hurts.",
+          "pt": "dói",
+          "emoji": "😣",
+          "freq": {
+            "lema": "hurt",
+            "ngslSpoken": null,
+            "ngsl": 1421,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "sick",
+          "pt": "doente",
+          "emoji": "🤒",
+          "freq": {
+            "lema": "sick",
+            "ngslSpoken": null,
+            "ngsl": 1716,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "You should …",
+          "pt": "você deveria …",
+          "emoji": "💡",
+          "freq": {
+            "lema": "should",
+            "ngslSpoken": 103,
+            "ngsl": 89,
+            "oxford3000": null
+          }
+        },
+        {
+          "en": "medicine",
+          "pt": "remédio",
+          "emoji": "💊",
+          "freq": {
+            "lema": "medicine",
+            "ngslSpoken": null,
+            "ngsl": 1761,
+            "oxford3000": "A2"
+          }
+        }
+      ],
+      "estrutura": "I have a + sintoma / You should + verbo",
+      "pronuncia": {
+        "foco": "headache /ˈhedeɪk/",
+        "dica": "ch soa k: 'héd-eik'"
+      },
+      "erroBrasileiro": {
+        "errado": "I'm with a headache.",
+        "certo": "I have a headache.",
+        "porque": "'estar com dor' vira HAVE (aqui o have é certo, ao contrário da fome)"
+      },
+      "preRequer": [
+        "U09",
+        "U32"
+      ],
+      "contextoAdulto": "farmácia nos EUA",
+      "referencias": [
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U39",
+      "codigo": "T2 E15",
+      "temporada": 2,
+      "capitulo": 4,
+      "episodio": 15,
+      "tituloCapitulo": "Resolver problemas",
+      "tema": "No telefone e tirando dúvidas",
+      "canDo": "Consigo marcar horário por telefone e pedir para repetir.",
+      "gse": [
+        {
+          "valor": 30,
+          "descritor": "Can ask for repetition and clarification when they don't understand, using basic fixed expressions.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 35,
+          "descritor": "Can ask for repetition or clarification on the phone in a simple way.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 42,
+          "descritor": "Can make an appointment on the phone.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Could you repeat that?",
+          "pt": "pode repetir?",
+          "emoji": "🔁",
+          "freq": {
+            "lema": "repeat",
+            "ngslSpoken": null,
+            "ngsl": 1253,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I have a question.",
+          "pt": "tenho uma dúvida",
+          "emoji": "❓",
+          "freq": {
+            "lema": "question",
+            "ngslSpoken": 141,
+            "ngsl": 181,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "appointment",
+          "pt": "horário marcado / consulta",
+          "emoji": "📅",
+          "freq": {
+            "lema": "appointment",
+            "ngslSpoken": null,
+            "ngsl": 1839,
+            "oxford3000": "B1"
+          }
+        },
+        {
+          "en": "Can I speak to …?",
+          "pt": "posso falar com …?",
+          "emoji": "📞",
+          "freq": {
+            "lema": "speak",
+            "ngslSpoken": 268,
+            "ngsl": 284,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "slowly",
+          "pt": "devagar",
+          "emoji": "🐢",
+          "freq": {
+            "lema": "slowly",
+            "ngslSpoken": null,
+            "ngsl": 1512,
+            "oxford3000": "A2"
+          }
+        },
+        {
+          "en": "Hold on.",
+          "pt": "aguarde um momento",
+          "emoji": "⏸️",
+          "freq": {
+            "lema": "hold",
+            "ngslSpoken": 359,
+            "ngsl": 222,
+            "oxford3000": "A2"
+          }
+        }
+      ],
+      "estrutura": "Could you + verbo? / I'd like to make an appointment.",
+      "pronuncia": {
+        "foco": "question /ˈkwestʃən/",
+        "dica": "'kuéss-tchan'"
+      },
+      "erroBrasileiro": {
+        "errado": "I have a doubt.",
+        "certo": "I have a question.",
+        "porque": "doubt = desconfiança; dúvida de pergunta é question"
+      },
+      "preRequer": [
+        "U33"
+      ],
+      "contextoAdulto": "marcar a prova do DMV por telefone",
+      "referencias": [
+        "GSE-ADULT",
+        "EN-BR"
+      ],
+      "topicoId": "A2-05"
+    },
+    {
+      "id": "U40",
+      "codigo": "T2 E16",
+      "temporada": 2,
+      "capitulo": 4,
+      "episodio": 16,
+      "tituloCapitulo": "Resolver problemas",
+      "tema": "Experiências (present perfect)",
+      "canDo": "Consigo perguntar e contar se já fiz algo na vida.",
+      "gse": [
+        {
+          "valor": 35,
+          "descritor": "Can answer simple questions about their life and experiences.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 36,
+          "descritor": "Can ask someone simple questions about their life and experiences.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "Have you ever …?",
+          "pt": "você já …? (alguma vez)",
+          "emoji": "❓",
+          "freq": {
+            "lema": "ever",
+            "ngslSpoken": 242,
+            "ngsl": 317,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "I've been to …",
+          "pt": "eu já fui a …",
+          "emoji": "✈️",
+          "freq": {
+            "lema": "be",
+            "ngslSpoken": 1,
+            "ngsl": 2,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "never",
+          "pt": "nunca",
+          "emoji": "⛔",
+          "freq": {
+            "lema": "never",
+            "ngslSpoken": 136,
+            "ngsl": 162,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "driven",
+          "pt": "dirigido",
+          "emoji": "🚗",
+          "freq": {
+            "lema": "drive",
+            "ngslSpoken": 354,
+            "ngsl": 387,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "tried",
+          "pt": "experimentado",
+          "emoji": "🍽️",
+          "freq": {
+            "lema": "try",
+            "ngslSpoken": 109,
+            "ngsl": 125,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "once",
+          "pt": "uma vez",
+          "emoji": "1️⃣",
+          "freq": {
+            "lema": "once",
+            "ngslSpoken": 289,
+            "ngsl": 265,
+            "oxford3000": "A1"
+          }
+        }
+      ],
+      "estrutura": "have + particípio (experiência, sem data)",
+      "pronuncia": {
+        "foco": "I've /aɪv/",
+        "dica": "o v fica, curtinho"
+      },
+      "erroBrasileiro": {
+        "errado": "I have been there last year.",
+        "certo": "I went there last year.",
+        "porque": "com data (last year) é passado simples"
+      },
+      "preRequer": [
+        "U27",
+        "U29"
+      ],
+      "contextoAdulto": "entrevista de emprego, conversa com colegas",
+      "referencias": [
+        "BC-A1A2",
+        "GSE-ADULT"
+      ]
+    },
+    {
+      "id": "U41",
+      "codigo": "T2 E17",
+      "temporada": 2,
+      "capitulo": 4,
+      "episodio": 17,
+      "tituloCapitulo": "Resolver problemas",
+      "tema": "Reclamar e resolver",
+      "canDo": "Consigo explicar um problema simples e pedir troca ou reembolso.",
+      "gse": [
+        {
+          "valor": 35,
+          "descritor": "Can make simple requests to have or do something in relation to common everyday activities.",
+          "fonte": "GSE-ADULT"
+        },
+        {
+          "valor": 35,
+          "descritor": "Can ask for and provide everyday goods and services.",
+          "fonte": "GSE-ADULT"
+        }
+      ],
+      "vocabulario": [
+        {
+          "en": "There's a problem with …",
+          "pt": "tem um problema com …",
+          "emoji": "⚠️",
+          "freq": {
+            "lema": "problem",
+            "ngslSpoken": 135,
+            "ngsl": 120,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "It doesn't work.",
+          "pt": "não funciona",
+          "emoji": "🔌",
+          "freq": {
+            "lema": "work",
+            "ngslSpoken": 76,
+            "ngsl": 67,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "broken",
+          "pt": "quebrado",
+          "emoji": "💔",
+          "freq": {
+            "lema": "break",
+            "ngslSpoken": 349,
+            "ngsl": 368,
+            "oxford3000": "A1"
+          }
+        },
+        {
+          "en": "Can I get a refund?",
+          "pt": "posso ter o dinheiro de volta?",
+          "emoji": "💵",
+          "freq": {
+            "lema": "refund",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": null
+          }
+        },
+        {
+          "en": "exchange",
+          "pt": "trocar",
+          "emoji": "🔄",
+          "freq": {
+            "lema": "exchange",
+            "ngslSpoken": null,
+            "ngsl": 1015,
+            "oxford3000": "B1"
+          }
+        },
+        {
+          "en": "receipt",
+          "pt": "nota / recibo",
+          "emoji": "🧾",
+          "freq": {
+            "lema": "receipt",
+            "ngslSpoken": null,
+            "ngsl": null,
+            "oxford3000": "B1"
+          }
+        }
+      ],
+      "estrutura": "It doesn't + verbo / Can I + verbo?",
+      "pronuncia": {
+        "foco": "receipt /rɪˈsiːt/",
+        "dica": "o p é mudo"
+      },
+      "erroBrasileiro": {
+        "errado": "It's not functioning.",
+        "certo": "It doesn't work.",
+        "porque": "'funcionar' no dia a dia é work"
+      },
+      "preRequer": [
+        "U40"
+      ],
+      "contextoAdulto": "celular com defeito na loja",
+      "referencias": [
+        "GSE-ADULT"
+      ]
+    }
+  ]
+}
