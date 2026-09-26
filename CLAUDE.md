@@ -23,7 +23,9 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
   Meta proíbe chatbot "de uso geral" desde 15/01/2026; atendimento, agendamento e vendas seguem permitidos.
 - Stack alvo: WhatsApp Cloud API + n8n + Claude API + planilha/CRM.
-- Venda BR: Kiwify/Hotmart (PIX). Internacional: Polar/Gumroad (confirmar suporte a Brasil).
+- Venda BR: Kiwify/Hotmart (PIX). Internacional: Gumroad (repasse só via PayPal, 2%) ou GitHub Sponsors.
+  Polar NÃO paga para o Brasil (verificado 26/09/2026).
+- Meta lançou MCP oficial do WhatsApp Business (15/09/2026) — só configuração/onboarding; usar no `/novo-cliente`.
 
 ## Pesquisa de mercado
 Usar a skill `pesquisa-mercado` (`.claude/skills/pesquisa-mercado/SKILL.md`).
