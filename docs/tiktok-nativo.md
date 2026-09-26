@@ -174,6 +174,35 @@ Checagens do portão para o bloco `tiktok` (a implementar no roteirista/portão,
 (dividir por `speed` quando < 1) + soma de `pausa.s`, `pre` e `hold` (**estimativa**, ±10%). Mirar 66–72 s para ter folga
 dos dois lados; o portão mede o render.
 
+### Campo `esquetes` — faixa ESQUETE (implementado 26/09, composição `LicaoEsquete`)
+
+Fica no JSON do episódio-lição, no nível de cima (ao lado de `cena`/`licao`/`volta`). Cada item vira
+`out/<id>-esquete-<X>.mp4` no mesmo `scripts/make-licao.sh` do episódio (mesmo áudio/render, mesma masterização
+-14 LUFS). Não refaz a cena: é um **corte** do episódio, então custo marginal ~0.
+
+```json
+"esquetes": [
+  { "id": "A", "de": "cena.1", "ate": "cena.3", "gancho": "O gringo te deu bom dia", "cta": "aula completa no EP 01" },
+  { "id": "B", "de": "volta.0", "ate": "volta.4", "gancho": "Do oi ao tchau, em inglês", "cta": "aula completa no EP 01",
+    "abertura": [ { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "(fala do hype do dia)" } ] }
+]
+```
+
+| Campo | Tipo | Obrigatório | Regra |
+|---|---|---|---|
+| `id` | `"A"`·`"B"`·`"C"` | sim | A = chama pro EP do dia (erro da `cena`, termina no suspense) · B = revisão do EP anterior (acerto + piada da `volta`) |
+| `de` / `ate` | referência | sim | Passo do episódio, **nunca segundos**: `"cena.N"`, `"volta.N"`, `"licao.E"` (exercício inteiro) ou `"licao.E.P"` (passo P do exercício E). O corte vai do começo da fala `de` ao fim do passo `ate` (inclusive). Índices contam a partir de 0. Continua válido quando o TTS muda o tempo das falas |
+| `gancho` | string | sim | Texto de tela ≤ 6 palavras, presente **desde o frame 0** (capa no feed), sai em 2,6 s. Sem vinheta. Pode vir do hype do dia |
+| `cta` | string | sim | Card final de 2 s: "aula completa no EP 0N" + selo "T1 E0N · capítulo" |
+| `abertura` | passos | não | 1–2 falas curtas do **hype do dia** (mesmo formato dos passos da cena), geradas no dia pelo roteirista, tocadas no palco do café ANTES do corte. Máx. 4 s. `scripts/tts.py` sintetiza (lê `esquetes[].abertura`). Nos 14 EPs da T1 fica ausente: o hype só existe no dia |
+
+Regras que o render aplica (falha com erro claro, `src/lesson/timeline.ts: esqueteWindow`): referência inexistente,
+`ate` antes de `de`, gancho com mais de 6 palavras, abertura > 4 s ou esquete fora de **5–20 s** (abertura + corte + 2 s
+de card). Escolha do trecho: começar na primeira fala que já é piada (o gancho de tela segura o 1º segundo), terminar
+na reação (não no Caderninho, que tem CTA própria), deixar ≥ 4 s de folga abaixo de 20 s para caber a abertura.
+Selo da série ("T1 E01 · Cap. 1 · …") aparece no topo da zona segura no episódio e na esquete.
+Durações medidas na T1 (sem abertura): A 6,9–13,4 s · B 8,3–15,6 s; episódios 63,3–73,3 s (todos ≥ 61 s).
+
 ### Exemplos (genéricos, prontos para virar few-shot do roteirista)
 
 Os exemplos assumem que o Short do mesmo episódio tem 4 exercícios na ordem `traducao`, `montar`, `ouvir`, `repetir`
