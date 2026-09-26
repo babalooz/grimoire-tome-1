@@ -1,0 +1,420 @@
+{
+  "id": "licao-s01e09-im-hungry",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 9,
+  "day": 9,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 2,
+    "episodio": 9,
+    "codigo": "T1 E09",
+    "tituloCapitulo": "Eu, você e o verbo be"
+  },
+  "unidade": "U09",
+  "canDo": "Consigo dizer como estou me sentindo agora: fome, sede, frio, calor.",
+  "gse": [
+    {
+      "valor": 28,
+      "descritor": "Can express how they are feeling using very basic fixed expressions.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "I'm + adjetivo (be, não have)",
+  "vocabulario": [
+    "I'm hungry.",
+    "thirsty",
+    "cold",
+    "hot",
+    "so"
+  ],
+  "erroBrasileiro": {
+    "errado": "I have hungry.",
+    "certo": "I'm hungry.",
+    "porque": "fome, sede e frio em inglês a gente ESTÁ, não TEM"
+  },
+  "pronuncia": {
+    "foco": "hungry /ˈhʌŋɡri/ × angry /ˈæŋɡri/",
+    "dica": "com H soprado é fome; sem H é raiva"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E08",
+      "en": [
+        "This is …"
+      ]
+    },
+    {
+      "codigo": "T1 E06",
+      "en": [
+        "How are you?"
+      ]
+    },
+    {
+      "codigo": "T1 E02",
+      "en": [
+        "excuse me"
+      ]
+    }
+  ],
+  "topicoId": "A1-05",
+  "topic": "Sensações com be: fome, sede, frio, calor",
+  "title": "Dia 9: 'I have hungry'? Fome em inglês não se TEM 🍩",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER QUE TÔ COM FOME",
+  "notebook": 9,
+  "chunk": {
+    "en": "I'm so hungry.",
+    "pt": "Tô com muita fome.",
+    "pattern": "I'm hungry / thirsty / cold / hot"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "zen",
+        "mode": "pensamento",
+        "shot": "two",
+        "text": "Seis horas sem comer."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Hank... I have hungry."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "You have... a hungry?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Ele achou que é coisa de pegar."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "I'm hungry.",
+            "pt": "tô com fome",
+            "emoji": "🍩"
+          },
+          {
+            "en": "thirsty",
+            "pt": "com sede",
+            "emoji": "💧"
+          },
+          {
+            "en": "cold",
+            "pt": "com frio",
+            "emoji": "🥶"
+          },
+          {
+            "en": "hot",
+            "pt": "com calor",
+            "emoji": "🥵"
+          },
+          {
+            "en": "so",
+            "pt": "muito",
+            "emoji": "➕"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Fome, sede, frio e calor: a gente está, não tem."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "I'm hungry."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "I'm thirsty."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "I'm cold."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "I'm hot."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "I'm so hungry."
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "thirsty",
+            "pt": "com sede"
+          },
+          {
+            "en": "cold",
+            "pt": "com frio"
+          },
+          {
+            "en": "hot",
+            "pt": "com calor"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "I'm angry.",
+          "I'm hungry.",
+          "I have hungry."
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "I'm hungry."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "pre": 0.4,
+            "text": "Com agá soprado é fome. Sem agá é raiva."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Tô com muita fome.",
+        "tiles": [
+          "hungry.",
+          "have",
+          "so",
+          "I'm"
+        ],
+        "ordem": [
+          3,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "I'm so hungry."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o ter. Ele não desiste."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "This is …",
+            "pt": "este(a) é …",
+            "emoji": "👉",
+            "de": "T1 E08"
+          },
+          {
+            "en": "How are you?",
+            "pt": "como você está?",
+            "emoji": "🙂",
+            "de": "T1 E06"
+          },
+          {
+            "en": "excuse me",
+            "pt": "com licença",
+            "emoji": "✋",
+            "de": "T1 E02"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "This is …"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "How are you?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 2,
+            "text": "excuse me"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Hank, I'm so hungry."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Hungry? Here. A muffin."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "text": "Thank you!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "text": "You're welcome."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Fome, sede ou frio agora? Responde em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e10-isnt-open"
+}

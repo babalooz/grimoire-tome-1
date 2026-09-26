@@ -1,0 +1,412 @@
+{
+  "id": "licao-s01e14-is-there",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 14,
+  "day": 14,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 14,
+    "codigo": "T1 E14",
+    "tituloCapitulo": "Coisas, preços e lugares"
+  },
+  "unidade": "U14",
+  "canDo": "Consigo perguntar se existe um lugar perto e entender a resposta.",
+  "gse": [
+    {
+      "valor": 28,
+      "descritor": "Can use brief, everyday expressions to describe wants and needs, and request information.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 29,
+      "descritor": "Can ask for simple directions, referring to a map or plan.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "Is there a … near here? — Yes, there's … / No, there isn't.",
+  "vocabulario": [
+    "Is there …?",
+    "There's …",
+    "near here",
+    "a supermarket",
+    "a bathroom",
+    "a bank"
+  ],
+  "erroBrasileiro": {
+    "errado": "Have a supermarket near here?",
+    "certo": "Is there a supermarket near here?",
+    "porque": "o 'tem' de existir é there is, não have"
+  },
+  "pronuncia": {
+    "foco": "there's /ðerz/",
+    "dica": "começa com o som de this, não com 'dér'"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E13",
+      "en": [
+        "his"
+      ]
+    },
+    {
+      "codigo": "T1 E11",
+      "en": [
+        "What's this?"
+      ]
+    },
+    {
+      "codigo": "T1 E07",
+      "en": [
+        "Brazilian"
+      ]
+    }
+  ],
+  "topicoId": "A1-06",
+  "topic": "There is / there are: tem … aqui perto?",
+  "title": "Dia 14: 'Have a supermarket near here?' Como perguntar se TEM 🛒",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: ACHAR UM MERCADO",
+  "notebook": 14,
+  "chunk": {
+    "en": "Is there a supermarket near here?",
+    "pt": "Tem um mercado aqui perto?",
+    "pattern": "Is there a ___ near here? — Yes, there's ___."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "shot": "two",
+        "text": "Have a supermarket near here?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "I have a supermarket? I have a café."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "O tem de existir é outro."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "Is there …?",
+            "pt": "tem …? (existe)",
+            "emoji": "❓"
+          },
+          {
+            "en": "There's …",
+            "pt": "tem … (existe)",
+            "emoji": "📍"
+          },
+          {
+            "en": "near here",
+            "pt": "aqui perto",
+            "emoji": "📍"
+          },
+          {
+            "en": "a supermarket",
+            "pt": "um mercado",
+            "emoji": "🛒"
+          },
+          {
+            "en": "a bathroom",
+            "pt": "um banheiro",
+            "emoji": "🚻"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Tem, de existir, é outro bloco."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "Is there a bank?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "There's a bank."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "near here"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "a supermarket"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "a bathroom"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "near here",
+            "pt": "aqui perto"
+          },
+          {
+            "en": "a supermarket",
+            "pt": "um mercado"
+          },
+          {
+            "en": "a bathroom",
+            "pt": "um banheiro"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "There's a bathroom.",
+          "Is there a bathroom?",
+          "Is there a bedroom?"
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "Is there a bathroom?"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.4,
+            "text": "Pergunta começa pelo verbo. Quarto não serve."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Tem um mercado aqui perto?",
+        "tiles": [
+          "supermarket",
+          "Have",
+          "there",
+          "near",
+          "Is",
+          "a",
+          "here?"
+        ],
+        "ordem": [
+          4,
+          2,
+          5,
+          0,
+          3,
+          6
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o ter. Existir é outra palavra."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "his",
+            "pt": "dele",
+            "emoji": "👨",
+            "de": "T1 E13"
+          },
+          {
+            "en": "What's this?",
+            "pt": "o que é isto?",
+            "emoji": "❓",
+            "de": "T1 E11"
+          },
+          {
+            "en": "Brazilian",
+            "pt": "brasileiro(a)",
+            "emoji": "🇧🇷",
+            "de": "T1 E07"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "his"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "What's this?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 2,
+            "text": "Brazilian"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Is there a supermarket near here?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "panic"
+        },
+        "text": "Yes. Near the bank. And tomorrow, be here at six."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Seis? Que horas? Comenta se tem mercado perto de você."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e15-what-time"
+}

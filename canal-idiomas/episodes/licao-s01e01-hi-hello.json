@@ -1,0 +1,397 @@
+{
+  "id": "licao-s01e01-hi-hello",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 1,
+  "day": 1,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 1,
+    "codigo": "T1 E01",
+    "tituloCapitulo": "Primeiro contato"
+  },
+  "unidade": "U01",
+  "canDo": "Consigo cumprimentar e me despedir com expressões fixas.",
+  "gse": [
+    {
+      "valor": 12,
+      "descritor": "Can greet people using a few basic fixed expressions.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 19,
+      "descritor": "Can establish basic social contacts with simple, polite greetings and farewells.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "Fórmulas fixas, sem gramática: Hi! / Good morning! / Bye!",
+  "vocabulario": [
+    "hi",
+    "hello",
+    "good morning",
+    "good evening",
+    "good night",
+    "bye",
+    "see you"
+  ],
+  "erroBrasileiro": {
+    "errado": "Good night! (ao chegar num lugar à noite)",
+    "certo": "Good evening!",
+    "porque": "good night só se diz ao ir embora ou ir dormir"
+  },
+  "pronuncia": {
+    "foco": "morning /ˈmɔːrnɪŋ/",
+    "dica": "termina no som nasal do -ng; nada de 'mórningui'"
+  },
+  "revisaoDe": [],
+  "topicoId": "A1-12",
+  "topic": "Cumprimentar e se despedir (hi, hello, good morning, bye)",
+  "title": "Dia 1: as primeiras palavras em inglês no trabalho ☀️ (do zero)",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER OI",
+  "notebook": 1,
+  "chunk": {
+    "en": "Hi! Good morning!",
+    "pt": "Oi! Bom dia!",
+    "pattern": "Hi / Hello / Good morning / Good evening / Bye"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "zen",
+        "mode": "pensamento",
+        "shot": "two",
+        "text": "Primeiro dia no café. Só sei português."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "text": "Good morning!"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "sfx": [
+          "wrong"
+        ],
+        "text": "Ele falou comigo. Travei."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "...Hello?"
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "hi",
+            "pt": "oi",
+            "emoji": "👋"
+          },
+          {
+            "en": "hello",
+            "pt": "olá",
+            "emoji": "👋"
+          },
+          {
+            "en": "good morning",
+            "pt": "bom dia",
+            "emoji": "☀️"
+          },
+          {
+            "en": "good evening",
+            "pt": "boa noite (chegando)",
+            "emoji": "🌆"
+          },
+          {
+            "en": "bye",
+            "pt": "tchau",
+            "emoji": "🚪"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Antes da frase, a palavra. Ouve e repete."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "hi"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "hello"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "good morning"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "good evening"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "bye"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "good morning",
+            "pt": "bom dia"
+          },
+          {
+            "en": "bye",
+            "pt": "tchau"
+          },
+          {
+            "en": "hello",
+            "pt": "olá"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Good evening!",
+          "Good morning!",
+          "Good night!"
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "Good morning!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.4,
+            "text": "Manhã, tarde, noite. Presta atenção no fim."
+          }
+        ]
+      },
+      {
+        "tipo": "completar",
+        "titulo": "COMPLETE",
+        "enunciado": "Chegando no café às oito da noite:",
+        "frase": "___!",
+        "lacuna": "___",
+        "opcoes": [
+          "Good night",
+          "Good evening",
+          "Good morning"
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "Good evening!"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "text": "A outra boa noite é só pra ir embora ou dormir."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "hi",
+            "pt": "oi",
+            "emoji": "👋",
+            "de": "T1 E01"
+          },
+          {
+            "en": "bye",
+            "pt": "tchau",
+            "emoji": "🚪",
+            "de": "T1 E01"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "hi"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "bye"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Hi, Hank! Good morning!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Good morning."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "zen",
+        "mode": "pensamento",
+        "text": "Oito horas depois..."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "text": "Bye, Hank!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "text": "Bye."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Qual dessas você já usou? Comenta."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e02-please-thank-you"
+}

@@ -1,0 +1,405 @@
+{
+  "id": "licao-s01e07-where-from",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 7,
+  "day": 7,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 2,
+    "episodio": 7,
+    "codigo": "T1 E07",
+    "tituloCapitulo": "Eu, você e o verbo be"
+  },
+  "unidade": "U07",
+  "canDo": "Consigo dizer de onde sou e perguntar a origem de alguém.",
+  "gse": [
+    {
+      "valor": 12,
+      "descritor": "Can recognise and say the name of their own country, nationality and language.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 13,
+      "descritor": "Can ask someone what their nationality is.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 23,
+      "descritor": "Can give key information to introduce themselves (e.g. 'name', 'age', 'where they are from').",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "I'm from + país / I'm + nacionalidade",
+  "vocabulario": [
+    "Where are you from?",
+    "I'm from Brazil.",
+    "Brazilian",
+    "the US",
+    "American"
+  ],
+  "erroBrasileiro": {
+    "errado": "I'm from Brazilian. / I'm Brazil.",
+    "certo": "I'm from Brazil. I'm Brazilian.",
+    "porque": "from + país; nacionalidade vem sem from (e com maiúscula)"
+  },
+  "pronuncia": {
+    "foco": "Brazil /brəˈzɪl/",
+    "dica": "tônica no fim: bra-ZIL, com z"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E06",
+      "en": [
+        "I'm tired."
+      ]
+    },
+    {
+      "codigo": "T1 E04",
+      "en": [
+        "How do you spell that?"
+      ]
+    }
+  ],
+  "topic": "De onde você é: país e nacionalidade",
+  "title": "Dia 7: 'I'm from Brazilian'? O erro que entrega o brasileiro 🇧🇷",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER DE ONDE SOU",
+  "notebook": 7,
+  "chunk": {
+    "en": "I'm from Brazil. I'm Brazilian.",
+    "pt": "Sou do Brasil. Sou brasileira.",
+    "pattern": "I'm from + país / I'm + nacionalidade"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "Where are you from?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "I'm from Brazilian."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "From... Brazilian?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Misturei o país com a pessoa."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "Where are you from?",
+            "pt": "de onde você é?",
+            "emoji": "🌎"
+          },
+          {
+            "en": "I'm from Brazil.",
+            "pt": "sou do Brasil",
+            "emoji": "🇧🇷"
+          },
+          {
+            "en": "Brazilian",
+            "pt": "brasileiro(a)",
+            "emoji": "🇧🇷"
+          },
+          {
+            "en": "the US",
+            "pt": "os EUA",
+            "emoji": "🇺🇸"
+          },
+          {
+            "en": "American",
+            "pt": "americano(a)",
+            "emoji": "🇺🇸"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "País é uma palavra. Quem nasce lá é outra."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "Where are you from?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "I'm from Brazil."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "Brazilian"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "the US"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "American"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "Brazil",
+            "pt": "Brasil"
+          },
+          {
+            "en": "Brazilian",
+            "pt": "brasileiro"
+          },
+          {
+            "en": "American",
+            "pt": "americano"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "I'm Brazil.",
+          "I'm from Brazilian.",
+          "I'm from Brazil."
+        ],
+        "resposta": 2,
+        "chute": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "I'm from Brazil."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Força no fim: bra-ZIL."
+          }
+        ]
+      },
+      {
+        "tipo": "completar",
+        "titulo": "COMPLETE",
+        "enunciado": "Sou do Brasil. Sou brasileira.",
+        "frase": "I'm from Brazil. I'm ___.",
+        "lacuna": "___",
+        "opcoes": [
+          "Brazil",
+          "Brazilian",
+          "brazilian"
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "I'm from Brazil. I'm Brazilian."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "E com letra maiúscula. Em inglês, nacionalidade é nome próprio."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "I'm tired.",
+            "pt": "tô cansada",
+            "emoji": "🥱",
+            "de": "T1 E06"
+          },
+          {
+            "en": "How do you spell that?",
+            "pt": "como se escreve?",
+            "emoji": "✍️",
+            "de": "T1 E04"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "I'm tired."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "How do you spell that?"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "Where are you from?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "I'm from Brazil. I'm Brazilian."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "Brazil? I love Brazil."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "mode": "pensamento",
+        "text": "O chefe sorriu. Anota a data."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "De onde você é? Responde em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e08-this-is-lazy"
+}

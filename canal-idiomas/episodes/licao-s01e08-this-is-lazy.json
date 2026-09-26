@@ -1,0 +1,413 @@
+{
+  "id": "licao-s01e08-this-is-lazy",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 8,
+  "day": 8,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 2,
+    "episodio": 8,
+    "codigo": "T1 E08",
+    "tituloCapitulo": "Eu, você e o verbo be"
+  },
+  "unidade": "U08",
+  "canDo": "Consigo apresentar uma pessoa e dizer uma coisa simples sobre ela.",
+  "gse": [
+    {
+      "valor": 27,
+      "descritor": "Can introduce people using basic language.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 26,
+      "descritor": "Can introduce someone in a basic way, giving their name and job title.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "This is + nome. He's / She's / It's + …",
+  "vocabulario": [
+    "This is …",
+    "he's",
+    "she's",
+    "it's",
+    "my friend",
+    "my boss"
+  ],
+  "erroBrasileiro": {
+    "errado": "Is my friend. / Is good.",
+    "certo": "He's my friend. / It's good.",
+    "porque": "português esconde o sujeito; inglês exige he, she ou it"
+  },
+  "pronuncia": {
+    "foco": "he's /hiːz/",
+    "dica": "o s final soa como z"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E07",
+      "en": [
+        "Brazilian"
+      ]
+    },
+    {
+      "codigo": "T1 E05",
+      "en": [
+        "What's your number?"
+      ]
+    }
+  ],
+  "topicoId": "A1-09",
+  "topic": "Apresentar alguém: this is, he's, she's, it's",
+  "title": "Dia 8: a frase sem sujeito que ninguém entende 🤷 (he's, she's, it's)",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank",
+    "lazy"
+  ],
+  "hookTitle": "MISSÃO: APRESENTAR O LAZY",
+  "notebook": 8,
+  "chunk": {
+    "en": "This is Lazy. He's my friend.",
+    "pt": "Este é o Lazy. Ele é meu amigo.",
+    "pattern": "This is ___. He's / She's / It's ___."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "shot": "two",
+        "text": "Who is that?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Is Lazy. Is my friend."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "Is who? Who is?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Esqueci o ele da frase."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "This is …",
+            "pt": "este(a) é …",
+            "emoji": "👉"
+          },
+          {
+            "en": "he's",
+            "pt": "ele é",
+            "emoji": "👨"
+          },
+          {
+            "en": "she's",
+            "pt": "ela é",
+            "emoji": "👩"
+          },
+          {
+            "en": "it's",
+            "pt": "é (coisa)",
+            "emoji": "📦"
+          },
+          {
+            "en": "my friend",
+            "pt": "meu amigo",
+            "emoji": "🤝"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Em inglês, toda frase tem alguém fazendo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "This is Lazy."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "He's my friend."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "She's my boss."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "It's good."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "my friend"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "he's",
+            "pt": "ele é"
+          },
+          {
+            "en": "she's",
+            "pt": "ela é"
+          },
+          {
+            "en": "it's",
+            "pt": "é (coisa)"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Is my friend.",
+          "His my friend.",
+          "He's my friend."
+        ],
+        "resposta": 2,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "He's my friend."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Ele é, com som de zê no fim."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Este é o Lazy. Ele é meu amigo.",
+        "tiles": [
+          "He's",
+          "This",
+          "Lazy.",
+          "is",
+          "friend.",
+          "my",
+          "Is"
+        ],
+        "ordem": [
+          1,
+          3,
+          2,
+          0,
+          5,
+          4
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "This is Lazy. He's my friend."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou a frase sem dono."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "Brazilian",
+            "pt": "brasileiro(a)",
+            "emoji": "🇧🇷",
+            "de": "T1 E07"
+          },
+          {
+            "en": "What's your number?",
+            "pt": "qual é o seu número?",
+            "emoji": "📱",
+            "de": "T1 E05"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "Brazilian"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "What's your number?"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Hank, this is Lazy. He's my friend."
+      },
+      {
+        "speaker": "lazy",
+        "lang": "en",
+        "emotion": "whisper",
+        "text": "Hi. I'm Lazy."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "react": {
+          "capi": "panic"
+        },
+        "text": "Lazy? He's lazy?"
+      },
+      {
+        "speaker": "lazy",
+        "lang": "pt",
+        "emotion": "whisper",
+        "hold": 0.4,
+        "text": "Meu nome é Lazy... e eu não sou preguiçoso. Sou... eficiente."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Apresenta alguém em inglês aqui."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e09-im-hungry"
+}

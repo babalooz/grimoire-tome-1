@@ -1,0 +1,431 @@
+{
+  "id": "licao-s01e12-how-much",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 12,
+  "day": 12,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 12,
+    "codigo": "T1 E12",
+    "tituloCapitulo": "Coisas, preços e lugares"
+  },
+  "unidade": "U12",
+  "canDo": "Consigo perguntar e dizer o preço de algo, e dizer minha idade.",
+  "gse": [
+    {
+      "valor": 19,
+      "descritor": "Can ask about the price of something.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 20,
+      "descritor": "Can say a range of basic numbers, quantities and prices.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 26,
+      "descritor": "Can say how much something costs using basic language.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 18,
+      "descritor": "Can say their own age and ask someone about their age.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "How much is it? — It's + preço. / I'm + idade.",
+  "vocabulario": [
+    "How much is it?",
+    "fifteen",
+    "fifty",
+    "dollars",
+    "How old are you?",
+    "twenty"
+  ],
+  "erroBrasileiro": {
+    "errado": "How much costs? / I have 26 years.",
+    "certo": "How much is it? / I'm 26.",
+    "porque": "preço e idade em inglês usam be"
+  },
+  "pronuncia": {
+    "foco": "fifTEEN × FIFty",
+    "dica": "-teen tem tônica no fim e n longo; -ty tem tônica no começo"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E11",
+      "en": [
+        "an umbrella"
+      ]
+    },
+    {
+      "codigo": "T1 E09",
+      "en": [
+        "thirsty"
+      ]
+    },
+    {
+      "codigo": "T1 E05",
+      "en": [
+        "three"
+      ]
+    }
+  ],
+  "topicoId": "A1-01",
+  "topic": "Números 11–100: preço e idade",
+  "title": "Dia 12: quinze ou cinquenta? O erro que custa caro no caixa 💵",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER O PREÇO",
+  "notebook": 12,
+  "chunk": {
+    "en": "How much is it? — It's fifteen dollars.",
+    "pt": "Quanto custa? — Quinze dólares.",
+    "pattern": "How much is it? — It's ___ dollars."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "shot": "two",
+        "text": "Hank, how much costs the sandwich?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "How much IS it? It's fifteen dollars."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Quinze ou cinquenta? Socorro."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "How much is it?",
+            "pt": "quanto custa?",
+            "emoji": "💵"
+          },
+          {
+            "en": "fifteen",
+            "pt": "quinze",
+            "emoji": "1️⃣5️⃣"
+          },
+          {
+            "en": "fifty",
+            "pt": "cinquenta",
+            "emoji": "5️⃣0️⃣"
+          },
+          {
+            "en": "dollars",
+            "pt": "dólares",
+            "emoji": "💲"
+          },
+          {
+            "en": "How old are you?",
+            "pt": "quantos anos você tem?",
+            "emoji": "🎂"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Preço e idade: verbo ser."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "How much is it?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "fifteen"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "fifty"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "dollars"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "How old are you?"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "fifteen",
+            "pt": "15"
+          },
+          {
+            "en": "fifty",
+            "pt": "50"
+          },
+          {
+            "en": "dollars",
+            "pt": "dólares"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "$15",
+          "$50",
+          "$5"
+        ],
+        "resposta": 0,
+        "chute": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "It's fifteen dollars."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Quinze tem força no fim. Cinquenta, no começo."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Quanto custa?",
+        "tiles": [
+          "it?",
+          "costs",
+          "much",
+          "is",
+          "How"
+        ],
+        "ordem": [
+          4,
+          2,
+          3,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "How much is it?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o custa. Preço usa o verbo ser."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "an umbrella",
+            "pt": "um guarda-chuva",
+            "emoji": "☂️",
+            "de": "T1 E11"
+          },
+          {
+            "en": "thirsty",
+            "pt": "com sede",
+            "emoji": "💧",
+            "de": "T1 E09"
+          },
+          {
+            "en": "three",
+            "pt": "três",
+            "emoji": "3️⃣",
+            "de": "T1 E05"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "an umbrella"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "thirsty"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 2,
+            "text": "three"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "How much is it?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "It's fifteen dollars."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "text": "Good. And how old are you?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "react": {
+          "hank": "smile"
+        },
+        "text": "I'm twenty-six."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Idade também é com eu sou. Fala a sua em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e13-whose"
+}

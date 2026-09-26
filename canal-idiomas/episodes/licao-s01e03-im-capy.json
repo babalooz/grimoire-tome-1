@@ -1,0 +1,403 @@
+{
+  "id": "licao-s01e03-im-capy",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 3,
+  "day": 3,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 3,
+    "codigo": "T1 E03",
+    "tituloCapitulo": "Primeiro contato"
+  },
+  "unidade": "U03",
+  "canDo": "Consigo dizer meu nome, perguntar o nome de alguém e responder 'prazer'.",
+  "gse": [
+    {
+      "valor": 10,
+      "descritor": "Can say their name.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 10,
+      "descritor": "Can ask someone for their name.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 12,
+      "descritor": "Can introduce themselves using a basic phrase (e.g. 'My name's ...').",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "I'm + nome (contração pronta, sem analisar o verbo ainda)",
+  "vocabulario": [
+    "I'm …",
+    "my name's …",
+    "What's your name?",
+    "Nice to meet you.",
+    "And you?"
+  ],
+  "erroBrasileiro": {
+    "errado": "I call myself Capy.",
+    "certo": "I'm Capy. / My name's Capy.",
+    "porque": "'eu me chamo' traduzido ao pé da letra; em inglês se diz 'eu sou'"
+  },
+  "pronuncia": {
+    "foco": "I'm /aɪm/",
+    "dica": "um bloco só, 'áim', não 'ái ém'"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E02",
+      "en": [
+        "please"
+      ]
+    },
+    {
+      "codigo": "T1 E01",
+      "en": [
+        "good evening"
+      ]
+    }
+  ],
+  "topic": "Dizer e perguntar o nome",
+  "title": "Dia 3: 'I call myself'? Não! Como se apresentar em inglês 🏷️",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER MEU NOME",
+  "notebook": 3,
+  "chunk": {
+    "en": "Hi, I'm Capy. Nice to meet you.",
+    "pt": "Oi, eu sou a Capy. Prazer.",
+    "pattern": "I'm ___. / What's your name? / Nice to meet you."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "Badge. What's your name?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "I call myself Capy."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "You... call yourself?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Traduzi eu me chamo. Errei."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "I'm …",
+            "pt": "eu sou / eu me chamo",
+            "emoji": "🙋"
+          },
+          {
+            "en": "my name's …",
+            "pt": "meu nome é",
+            "emoji": "🏷️"
+          },
+          {
+            "en": "What's your name?",
+            "pt": "qual é o seu nome?",
+            "emoji": "❓"
+          },
+          {
+            "en": "Nice to meet you.",
+            "pt": "prazer",
+            "emoji": "🤝"
+          },
+          {
+            "en": "And you?",
+            "pt": "e você?",
+            "emoji": "👉"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Pra se apresentar, cinco blocos prontos."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "I'm Capy."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "My name's Capy."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "What's your name?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "Nice to meet you."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "And you?"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "I'm",
+            "pt": "eu sou"
+          },
+          {
+            "en": "Nice to meet you.",
+            "pt": "prazer"
+          },
+          {
+            "en": "And you?",
+            "pt": "e você?"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Nice to meet you.",
+          "Nice to see you.",
+          "Nice to eat you."
+        ],
+        "resposta": 0,
+        "chute": 2,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "Nice to meet you."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Comer você, não. Ninguém come ninguém aqui."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Oi, eu sou a Capy.",
+        "tiles": [
+          "Capy.",
+          "I'm",
+          "Hi,",
+          "call",
+          "myself"
+        ],
+        "ordem": [
+          2,
+          1,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "Hi, I'm Capy."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou a tradução ao pé da letra."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "please",
+            "pt": "por favor",
+            "emoji": "🙏",
+            "de": "T1 E02"
+          },
+          {
+            "en": "good evening",
+            "pt": "boa noite (chegando)",
+            "emoji": "🌆",
+            "de": "T1 E01"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "please"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "good evening"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Hi! I'm Capy. Nice to meet you."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Nice to meet you, Capy. I'm Hank."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "text": "Prazer, chefe. Agora oficialmente."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Se apresenta aqui embaixo, em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e04-spell"
+}

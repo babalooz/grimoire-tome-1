@@ -1,0 +1,398 @@
+{
+  "id": "licao-s01e06-are-you-tired",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 6,
+  "day": 6,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 2,
+    "episodio": 6,
+    "codigo": "T1 E06",
+    "tituloCapitulo": "Eu, você e o verbo be"
+  },
+  "unidade": "U06",
+  "canDo": "Consigo perguntar como alguém está e dizer como eu estou.",
+  "gse": [
+    {
+      "valor": 24,
+      "descritor": "Can greet people, ask how they are and react to news.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 28,
+      "descritor": "Can express how they are feeling using very basic fixed expressions.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "be com I / you: I'm, you're, Are you…? — Yes, I am.",
+  "vocabulario": [
+    "How are you?",
+    "I'm good.",
+    "I'm tired.",
+    "Are you …?",
+    "Yes, I am.",
+    "No, I'm not."
+  ],
+  "erroBrasileiro": {
+    "errado": "Yes, I'm.",
+    "certo": "Yes, I am.",
+    "porque": "no fim da resposta curta a contração não fica sozinha"
+  },
+  "pronuncia": {
+    "foco": "you're /jʊr/",
+    "dica": "soa quase igual a your; o contexto separa"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E05",
+      "en": [
+        "three"
+      ]
+    },
+    {
+      "codigo": "T1 E03",
+      "en": [
+        "Nice to meet you."
+      ]
+    }
+  ],
+  "topic": "Verbo be com I e you: como você está",
+  "title": "Dia 6: 'Yes, I'm'? Quase! Como dizer como você está 🥱",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER COMO ESTOU",
+  "notebook": 6,
+  "chunk": {
+    "en": "Are you tired? — Yes, I am.",
+    "pt": "Você está cansada? — Sim, estou.",
+    "pattern": "I'm ___ / Are you ___? — Yes, I am."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "Long day. Are you tired?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Yes, I'm."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "Yes, you're... what?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Faltou um pedaço na resposta."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "How are you?",
+            "pt": "como você está?",
+            "emoji": "🙂"
+          },
+          {
+            "en": "I'm good.",
+            "pt": "tô bem",
+            "emoji": "👍"
+          },
+          {
+            "en": "I'm tired.",
+            "pt": "tô cansada",
+            "emoji": "🥱"
+          },
+          {
+            "en": "Are you …?",
+            "pt": "você está …?",
+            "emoji": "❓"
+          },
+          {
+            "en": "Yes, I am.",
+            "pt": "sim, estou",
+            "emoji": "✅"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Pra dizer como você está, o verbo é o mesmo do eu sou."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "How are you?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "I'm good."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "I'm tired."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "Are you tired?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "Yes, I am."
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "How are you?",
+            "pt": "como você está?"
+          },
+          {
+            "en": "I'm tired.",
+            "pt": "tô cansada"
+          },
+          {
+            "en": "Yes, I am.",
+            "pt": "sim, estou"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Yes, I'm.",
+          "Yes, I am.",
+          "Yes, I and."
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "Yes, I am."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "No fim da resposta, a palavra vai inteira."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Você está cansada? Sim, estou.",
+        "tiles": [
+          "am.",
+          "Yes,",
+          "I'm",
+          "I"
+        ],
+        "ordem": [
+          1,
+          3,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "Yes, I am."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou a contração. Ela não fecha frase."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "three",
+            "pt": "três",
+            "emoji": "3️⃣",
+            "de": "T1 E05"
+          },
+          {
+            "en": "Nice to meet you.",
+            "pt": "prazer",
+            "emoji": "🤝",
+            "de": "T1 E03"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "three"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "Nice to meet you."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "I'm tired. Are you tired?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Yes, I am. Always."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Como você está hoje? Responde em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e07-where-from"
+}

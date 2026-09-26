@@ -1,0 +1,400 @@
+{
+  "id": "licao-s01e05-phone-number",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 5,
+  "day": 5,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 5,
+    "codigo": "T1 E05",
+    "tituloCapitulo": "Primeiro contato"
+  },
+  "unidade": "U05",
+  "canDo": "Consigo dar e pedir um número de telefone.",
+  "gse": [
+    {
+      "valor": 13,
+      "descritor": "Can read out phone numbers.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 17,
+      "descritor": "Can ask for and give a phone number.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "What's your number? — It's five five five…",
+  "vocabulario": [
+    "What's your number?",
+    "one, two, three",
+    "four, five, six",
+    "seven, eight, nine",
+    "oh",
+    "ten"
+  ],
+  "erroBrasileiro": {
+    "errado": "tree (para 3)",
+    "certo": "three",
+    "porque": "sem o /θ/ o americano ouve outra palavra"
+  },
+  "pronuncia": {
+    "foco": "three /θriː/",
+    "dica": "com o som de língua entre os dentes; 'tri' vira tree (árvore)"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E04",
+      "en": [
+        "How do you spell that?"
+      ]
+    },
+    {
+      "codigo": "T1 E02",
+      "en": [
+        "sorry"
+      ]
+    }
+  ],
+  "topicoId": "A1-11",
+  "topic": "Números 0–10 e telefone",
+  "title": "Dia 5: ela disse 'tree' em vez de three 🌳📱",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DAR MEU TELEFONE",
+  "notebook": 5,
+  "chunk": {
+    "en": "What's your number? — It's five five five, oh one three eight.",
+    "pt": "Qual é o seu número? — É cinco cinco cinco, zero um três oito.",
+    "pattern": "What's your number? — It's ___."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "For the schedule. What's your number?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Five, five, five... tree."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "Tree? Like a tree?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Meu número virou uma árvore."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "one, two, three",
+            "pt": "um, dois, três",
+            "emoji": "1️⃣"
+          },
+          {
+            "en": "four, five, six",
+            "pt": "quatro, cinco, seis",
+            "emoji": "4️⃣"
+          },
+          {
+            "en": "seven, eight, nine",
+            "pt": "sete, oito, nove",
+            "emoji": "7️⃣"
+          },
+          {
+            "en": "oh",
+            "pt": "zero (em telefone)",
+            "emoji": "0️⃣"
+          },
+          {
+            "en": "What's your number?",
+            "pt": "qual é o seu número?",
+            "emoji": "📱"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Números pra telefone. Ouve e repete."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "one, two, three"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "four, five, six"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "seven, eight, nine"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "oh"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "What's your number?"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "three",
+            "pt": "3"
+          },
+          {
+            "en": "eight",
+            "pt": "8"
+          },
+          {
+            "en": "oh",
+            "pt": "0"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "tree",
+          "three",
+          "free"
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "three"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Língua entre os dentes. Sem isso, vira árvore."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Qual é o seu número?",
+        "tiles": [
+          "number?",
+          "What's",
+          "you",
+          "your"
+        ],
+        "ordem": [
+          1,
+          3,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "What's your number?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o você. O certo é o seu."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "How do you spell that?",
+            "pt": "como se escreve?",
+            "emoji": "✍️",
+            "de": "T1 E04"
+          },
+          {
+            "en": "sorry",
+            "pt": "desculpa",
+            "emoji": "😬",
+            "de": "T1 E02"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "How do you spell that?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "sorry"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "What's your number?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "speed": 0.85,
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "It's five five five, oh one three eight."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Three. Not tree. Good."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Fala seu número da sorte em inglês nos comentários."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e06-are-you-tired"
+}

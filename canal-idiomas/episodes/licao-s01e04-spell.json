@@ -1,0 +1,409 @@
+{
+  "id": "licao-s01e04-spell",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 4,
+  "day": 4,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 4,
+    "codigo": "T1 E04",
+    "tituloCapitulo": "Primeiro contato"
+  },
+  "unidade": "U04",
+  "canDo": "Consigo soletrar meu nome e entender quando alguém pergunta como se escreve.",
+  "gse": [
+    {
+      "valor": 11,
+      "descritor": "Can say the letters of the alphabet.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 14,
+      "descritor": "Can spell out their own name and address.",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 22,
+      "descritor": "Can ask for the spelling of a word, or for a word to be written down.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "How do you spell ___? — C, A, P, Y.",
+  "vocabulario": [
+    "How do you spell that?",
+    "A",
+    "E",
+    "I",
+    "Y",
+    "at",
+    "dot"
+  ],
+  "erroBrasileiro": {
+    "errado": "soletrar E como 'é' e I como 'i'",
+    "certo": "E = 'í', I = 'ái'",
+    "porque": "o atendente escreve outra letra; seu nome sai errado no cadastro"
+  },
+  "pronuncia": {
+    "foco": "A /eɪ/, E /iː/, I /aɪ/",
+    "dica": "as três vogais trocam de som em relação ao português"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E03",
+      "en": [
+        "Nice to meet you."
+      ]
+    },
+    {
+      "codigo": "T1 E01",
+      "en": [
+        "bye"
+      ]
+    }
+  ],
+  "topic": "Soletrar nome e e-mail (A, E, I, Y)",
+  "title": "Dia 4: soletrar o nome em inglês sem virar outra pessoa ✍️",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: SOLETRAR MEU NOME",
+  "notebook": 4,
+  "chunk": {
+    "en": "How do you spell that? — C, A, P, Y.",
+    "pt": "Como se escreve? — C, A, P, Y.",
+    "pattern": "How do you spell ___?"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "How do you spell that?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "zen",
+        "text": "Cê, á, pê, ípsilon."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "C... A... P... what?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "O alfabeto dele tem outro som."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "How do you spell that?",
+            "pt": "como se escreve?",
+            "emoji": "✍️"
+          },
+          {
+            "en": "A",
+            "pt": "som de êi",
+            "emoji": "🔤"
+          },
+          {
+            "en": "E",
+            "pt": "som de í",
+            "emoji": "🔤"
+          },
+          {
+            "en": "I",
+            "pt": "som de ái",
+            "emoji": "🔤"
+          },
+          {
+            "en": "Y",
+            "pt": "som de uái",
+            "emoji": "🔤"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "As letras que mais enganam brasileiro."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "How do you spell that?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "The letter A."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "The letter E."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "The letter I."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "The letter Y."
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "A",
+            "pt": "êi"
+          },
+          {
+            "en": "E",
+            "pt": "í"
+          },
+          {
+            "en": "I",
+            "pt": "ái"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "E",
+          "I",
+          "A"
+        ],
+        "resposta": 0,
+        "chute": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "The letter E."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Eu ouvi í e marquei o i. Clássico."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Como se escreve isso?",
+        "tiles": [
+          "spell",
+          "you",
+          "How",
+          "that?",
+          "do",
+          "write"
+        ],
+        "ordem": [
+          2,
+          4,
+          1,
+          0,
+          3
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "How do you spell that?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Soletrar e escrever são verbos diferentes."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "Nice to meet you.",
+            "pt": "prazer",
+            "emoji": "🤝",
+            "de": "T1 E03"
+          },
+          {
+            "en": "bye",
+            "pt": "tchau",
+            "emoji": "🚪",
+            "de": "T1 E01"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "Nice to meet you."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "bye"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "How do you spell that?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "speed": 0.8,
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "C. A. P. Y."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "C, A, P, Y. Got it."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Soletra seu nome em inglês aqui embaixo."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e05-phone-number"
+}

@@ -1,0 +1,389 @@
+{
+  "id": "licao-s01e02-please-thank-you",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 2,
+  "day": 2,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 2,
+    "codigo": "T1 E02",
+    "tituloCapitulo": "Primeiro contato"
+  },
+  "unidade": "U02",
+  "canDo": "Consigo ser educado: pedir por favor, agradecer, responder 'de nada' e pedir licença ou desculpa.",
+  "gse": [
+    {
+      "valor": 12,
+      "descritor": "Can use a few basic words and phrases to show politeness (e.g. 'please', 'thank you').",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "Fórmulas fixas: ___, please. / Thank you. — You're welcome.",
+  "vocabulario": [
+    "please",
+    "thank you",
+    "thanks",
+    "you're welcome",
+    "sorry",
+    "excuse me",
+    "yes",
+    "no"
+  ],
+  "erroBrasileiro": {
+    "errado": "Thank you! — Nothing!",
+    "certo": "Thank you! — You're welcome!",
+    "porque": "'de nada' não se traduz palavra por palavra; nothing = coisa nenhuma"
+  },
+  "pronuncia": {
+    "foco": "thank /θæŋk/",
+    "dica": "ponta da língua entre os dentes e sopra; não é 'tenk' nem 'fenk'"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E01",
+      "en": [
+        "good morning",
+        "bye"
+      ]
+    }
+  ],
+  "topic": "Por favor, obrigado, de nada, desculpa, com licença",
+  "title": "Dia 2: ela respondeu 'nothing' pro chefe 😬 (inglês do zero)",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: SER EDUCADA",
+  "notebook": 2,
+  "chunk": {
+    "en": "Thank you! — You're welcome!",
+    "pt": "Obrigado! — De nada!",
+    "pattern": "please / thank you / you're welcome / sorry / excuse me"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "Thank you, Capy."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "text": "Nothing!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "Nothing? ...Okay."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Eu quis dizer de nada. Saiu coisa nenhuma."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "please",
+            "pt": "por favor",
+            "emoji": "🙏"
+          },
+          {
+            "en": "thank you",
+            "pt": "obrigado(a)",
+            "emoji": "🤝"
+          },
+          {
+            "en": "you're welcome",
+            "pt": "de nada",
+            "emoji": "😊"
+          },
+          {
+            "en": "sorry",
+            "pt": "desculpa",
+            "emoji": "😬"
+          },
+          {
+            "en": "excuse me",
+            "pt": "com licença",
+            "emoji": "✋"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Cinco palavras de educação. Ouve e repete."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "please"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "thank you"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "you're welcome"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "sorry"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "excuse me"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "please",
+            "pt": "por favor"
+          },
+          {
+            "en": "sorry",
+            "pt": "desculpa"
+          },
+          {
+            "en": "excuse me",
+            "pt": "com licença"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Excuse me.",
+          "Sorry.",
+          "Please."
+        ],
+        "resposta": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "Excuse me."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.4,
+            "text": "Com licença pra passar. Desculpa depois do esbarrão."
+          }
+        ]
+      },
+      {
+        "tipo": "completar",
+        "titulo": "COMPLETE",
+        "enunciado": "O chefe agradeceu. Você responde:",
+        "frase": "Thank you! — ___!",
+        "lacuna": "___",
+        "opcoes": [
+          "Nothing",
+          "You're welcome",
+          "Excuse me"
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "You're welcome!"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "text": "De nada não é nada. É isso aí."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "good morning",
+            "pt": "bom dia",
+            "emoji": "☀️",
+            "de": "T1 E01"
+          },
+          {
+            "en": "bye",
+            "pt": "tchau",
+            "emoji": "🚪",
+            "de": "T1 E01"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "good morning"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "bye"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "Thank you, Capy."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "You're welcome!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "text": "Not 'nothing'?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "text": "Sorry! You're welcome!"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Você já respondeu nada em vez de de nada? Comenta."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e03-im-capy"
+}

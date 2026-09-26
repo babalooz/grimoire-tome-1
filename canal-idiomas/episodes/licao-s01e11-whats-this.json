@@ -1,0 +1,414 @@
+{
+  "id": "licao-s01e11-whats-this",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 11,
+  "day": 11,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 11,
+    "codigo": "T1 E11",
+    "tituloCapitulo": "Coisas, preços e lugares"
+  },
+  "unidade": "U11",
+  "canDo": "Consigo perguntar o nome de um objeto e dizer o que é.",
+  "gse": [
+    {
+      "valor": 16,
+      "descritor": "Can ask and answer basic requests for information with 'What's this/that?'",
+      "fonte": "GSE-ADULT"
+    },
+    {
+      "valor": 12,
+      "descritor": "Can name a few very common everyday objects.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "It's a / an + objeto. (an antes de som de vogal)",
+  "vocabulario": [
+    "What's this?",
+    "that",
+    "a key",
+    "a card",
+    "an umbrella",
+    "a phone"
+  ],
+  "erroBrasileiro": {
+    "errado": "It's a umbrella.",
+    "certo": "It's an umbrella.",
+    "porque": "antes de som de vogal o artigo vira an"
+  },
+  "pronuncia": {
+    "foco": "this /ðɪs/",
+    "dica": "língua entre os dentes com voz; não é 'dis'"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E10",
+      "en": [
+        "closed"
+      ]
+    },
+    {
+      "codigo": "T1 E08",
+      "en": [
+        "she's"
+      ]
+    },
+    {
+      "codigo": "T1 E04",
+      "en": [
+        "How do you spell that?"
+      ]
+    }
+  ],
+  "topic": "Objetos: a/an, this/that, What's this?",
+  "title": "Dia 11: achados e perdidos em inglês 🔑☂️ (a, an, this)",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER O QUE É",
+  "notebook": 11,
+  "chunk": {
+    "en": "What's this? — It's an umbrella.",
+    "pt": "O que é isto? — É um guarda-chuva.",
+    "pattern": "What's this? — It's a / an ___."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "Lost and found. What's this?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "It's a... a... umbrella?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "A umbrella?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Até o um muda de roupa em inglês."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "What's this?",
+            "pt": "o que é isto?",
+            "emoji": "❓"
+          },
+          {
+            "en": "a key",
+            "pt": "uma chave",
+            "emoji": "🔑"
+          },
+          {
+            "en": "a card",
+            "pt": "um cartão",
+            "emoji": "💳"
+          },
+          {
+            "en": "an umbrella",
+            "pt": "um guarda-chuva",
+            "emoji": "☂️"
+          },
+          {
+            "en": "that",
+            "pt": "aquilo",
+            "emoji": "👉"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Objetos do dia. Repara no um antes de cada um."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "What's this?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "a key"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "a card"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "an umbrella"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "What's that?"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "a key",
+            "pt": "uma chave"
+          },
+          {
+            "en": "a card",
+            "pt": "um cartão"
+          },
+          {
+            "en": "an umbrella",
+            "pt": "um guarda-chuva"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "What's that?",
+          "What's this?",
+          "Where's this?"
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "What's this?"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.4,
+            "text": "Língua entre os dentes, com voz. Não é dis."
+          }
+        ]
+      },
+      {
+        "tipo": "completar",
+        "titulo": "COMPLETE",
+        "enunciado": "É um guarda-chuva.",
+        "frase": "It's ___ umbrella.",
+        "lacuna": "___",
+        "opcoes": [
+          "a",
+          "an",
+          "the"
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "It's an umbrella."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "text": "Antes de som de vogal, o um ganha um ene."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "closed",
+            "pt": "fechado",
+            "emoji": "🔴",
+            "de": "T1 E10"
+          },
+          {
+            "en": "she's",
+            "pt": "ela é",
+            "emoji": "👩",
+            "de": "T1 E08"
+          },
+          {
+            "en": "How do you spell that?",
+            "pt": "como se escreve?",
+            "emoji": "✍️",
+            "de": "T1 E04"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "closed"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "she's"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 2,
+            "text": "How do you spell that?"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "close",
+        "text": "And what's that?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "It's a key. And this is an umbrella."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Good. Keep the umbrella."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Olha em volta e fala um objeto em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e12-how-much"
+}

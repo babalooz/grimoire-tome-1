@@ -1,0 +1,417 @@
+{
+  "id": "licao-s01e10-isnt-open",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 10,
+  "day": 10,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 2,
+    "episodio": 10,
+    "codigo": "T1 E10",
+    "tituloCapitulo": "Eu, você e o verbo be"
+  },
+  "unidade": "U10",
+  "canDo": "Consigo dizer que algo não está aberto, não está pronto, não é aqui.",
+  "gse": [
+    {
+      "valor": 25,
+      "descritor": "Can ask and answer simple questions in areas of immediate need or on very familiar topics.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "sujeito + be + not: It isn't / We aren't / They aren't",
+  "vocabulario": [
+    "open",
+    "closed",
+    "It isn't …",
+    "We aren't …",
+    "not yet",
+    "we're / they're"
+  ],
+  "erroBrasileiro": {
+    "errado": "It's no open. / No is open.",
+    "certo": "It isn't open.",
+    "porque": "o 'não' vem DEPOIS do be e é not, não no"
+  },
+  "pronuncia": {
+    "foco": "aren't /ɑːrnt/",
+    "dica": "o t final quase some; preste atenção no 'n' para não ouvir o contrário"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E09",
+      "en": [
+        "thirsty"
+      ]
+    },
+    {
+      "codigo": "T1 E07",
+      "en": [
+        "Where are you from?"
+      ]
+    },
+    {
+      "codigo": "T1 E03",
+      "en": [
+        "What's your name?"
+      ]
+    }
+  ],
+  "topic": "Negativo do be: isn't, aren't, open, closed",
+  "title": "Dia 10: 'It's no open'? Como dizer NÃO em inglês 🔴",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: DIZER QUE NÃO ABRIU",
+  "notebook": 10,
+  "chunk": {
+    "en": "Sorry, we aren't open yet.",
+    "pt": "Desculpa, ainda não abrimos.",
+    "pattern": "It isn't ___ / We aren't ___"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "zen",
+        "mode": "pensamento",
+        "shot": "two",
+        "text": "Cedo. Tem alguém batendo na porta."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "It's no open!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "It's... no open?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "O não do português não serve aqui."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "open",
+            "pt": "aberto",
+            "emoji": "🟢"
+          },
+          {
+            "en": "closed",
+            "pt": "fechado",
+            "emoji": "🔴"
+          },
+          {
+            "en": "It isn't …",
+            "pt": "não é / não está",
+            "emoji": "🚫"
+          },
+          {
+            "en": "We aren't …",
+            "pt": "nós não estamos",
+            "emoji": "🙅"
+          },
+          {
+            "en": "not yet",
+            "pt": "ainda não",
+            "emoji": "⏳"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Pra negar, o não vem depois do verbo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "open"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "closed"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "It isn't open."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "We aren't open."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "not yet"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "open",
+            "pt": "aberto"
+          },
+          {
+            "en": "closed",
+            "pt": "fechado"
+          },
+          {
+            "en": "not yet",
+            "pt": "ainda não"
+          }
+        ],
+        "direita": [
+          1,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "We are open.",
+          "We aren't open.",
+          "We're no open."
+        ],
+        "resposta": 1,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "We aren't open."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.4,
+            "text": "Ouve o ene no meio. Ele muda tudo."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Ainda não está aberto.",
+        "tiles": [
+          "open",
+          "It",
+          "yet.",
+          "no",
+          "isn't"
+        ],
+        "ordem": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "It isn't open yet."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o no. Aqui ele não entra."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "thirsty",
+            "pt": "com sede",
+            "emoji": "💧",
+            "de": "T1 E09"
+          },
+          {
+            "en": "Where are you from?",
+            "pt": "de onde você é?",
+            "emoji": "🌎",
+            "de": "T1 E07"
+          },
+          {
+            "en": "What's your name?",
+            "pt": "qual é o seu nome?",
+            "emoji": "❓",
+            "de": "T1 E03"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "thirsty"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "Where are you from?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 2,
+            "text": "What's your name?"
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Sorry! We aren't open yet."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Good. We're open at seven."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "mode": "pensamento",
+        "text": "Ele disse bom. Dia histórico."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Escreve em inglês: a loja não está aberta."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e11-whats-this"
+}

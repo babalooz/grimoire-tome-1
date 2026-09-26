@@ -53,8 +53,8 @@
     },
     "HW-BEG": {
       "nome": "Headway Beginner, 5ª ed. (OUP), Unit 1 'Hello!': am/is/are, my/your, This is…, How are you?, números 1–10, plurais",
-      "url": "https://www.alleng.org/d/engl_en/eng1480.htm",
-      "rotulo": "verificado via busca (fonte secundária)"
+      "url": "https://elt.oup.com/catalogue/items/global/adult_courses/headway/beginner/9780194523929",
+      "rotulo": "livro (14 unidades) verificado no catálogo OUP; conteúdo da Unit 1 verificado via busca (fonte secundária)"
     },
     "IC-INTRO": {
       "nome": "Interchange Intro, 5ª ed. (Cambridge): U1 'What's your name?' (my/your/his/her, be, soletrar nome, telefone, e-mail), U2 'Where are my keys?' (a/an, plurais, this/these), U3 'Where are you from?'",
@@ -1538,8 +1538,8 @@
           }
         },
         {
-          "en": "Leo's",
-          "pt": "do Léo",
+          "en": "Lazy's",
+          "pt": "do Lazy",
           "emoji": "🏷️",
           "freq": {
             "lema": "s",
@@ -1566,8 +1566,8 @@
         "dica": "his é curto; he's é longo"
       },
       "erroBrasileiro": {
-        "errado": "the phone of Leo / her phone (para o celular de um homem)",
-        "certo": "Leo's phone / his phone",
+        "errado": "the phone of Lazy / her phone (para o celular de um homem)",
+        "certo": "Lazy's phone / his phone",
         "porque": "his/her concorda com o DONO, não com a coisa"
       },
       "preRequer": [

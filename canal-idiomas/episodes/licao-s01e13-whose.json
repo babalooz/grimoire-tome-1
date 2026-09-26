@@ -1,0 +1,426 @@
+{
+  "id": "licao-s01e13-whose",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 13,
+  "day": 13,
+  "level": "A1",
+  "set": "cafe-bean-there",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 13,
+    "codigo": "T1 E13",
+    "tituloCapitulo": "Coisas, preços e lugares"
+  },
+  "unidade": "U13",
+  "canDo": "Consigo dizer de quem é uma coisa.",
+  "gse": [
+    {
+      "valor": 29,
+      "descritor": "Can say who something belongs to.",
+      "fonte": "GSE-ADULT"
+    }
+  ],
+  "gramatica": "my / your / his / her + coisa · nome + 's + coisa",
+  "vocabulario": [
+    "my",
+    "your",
+    "his",
+    "her",
+    "Lazy's",
+    "Whose … is this?"
+  ],
+  "erroBrasileiro": {
+    "errado": "the phone of Lazy / her phone (para o celular de um homem)",
+    "certo": "Lazy's phone / his phone",
+    "porque": "his/her concorda com o DONO, não com a coisa"
+  },
+  "pronuncia": {
+    "foco": "his /hɪz/ × he's /hiːz/",
+    "dica": "his é curto; he's é longo"
+  },
+  "revisaoDe": [
+    {
+      "codigo": "T1 E12",
+      "en": [
+        "How much is it?"
+      ]
+    },
+    {
+      "codigo": "T1 E10",
+      "en": [
+        "open"
+      ]
+    },
+    {
+      "codigo": "T1 E06",
+      "en": [
+        "Yes, I am."
+      ]
+    }
+  ],
+  "topic": "Possessivos: my, your, his, her, 's",
+  "title": "Dia 13: 'the phone of Lazy'? De quem é, em inglês 📱",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesdozero",
+    "#inglesparabrasileiros",
+    "#aprenderingles"
+  ],
+  "cast": [
+    "capi",
+    "hank",
+    "lazy"
+  ],
+  "hookTitle": "MISSÃO: DIZER DE QUEM É",
+  "notebook": 13,
+  "chunk": {
+    "en": "Whose phone is this? — It's Lazy's phone.",
+    "pt": "De quem é este celular? — É o celular do Lazy.",
+    "pattern": "my / your / his / her · nome + 's"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "Whose phone is this?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "It's the phone of Lazy."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "The phone... of Lazy?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "panic",
+        "mode": "pensamento",
+        "text": "Em inglês o dono vem primeiro."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "cartoes",
+        "titulo": "PALAVRAS NOVAS",
+        "repita": true,
+        "cartoes": [
+          {
+            "en": "my",
+            "pt": "meu / minha",
+            "emoji": "🙋"
+          },
+          {
+            "en": "your",
+            "pt": "seu / sua",
+            "emoji": "👉"
+          },
+          {
+            "en": "his",
+            "pt": "dele",
+            "emoji": "👨"
+          },
+          {
+            "en": "her",
+            "pt": "dela",
+            "emoji": "👩"
+          },
+          {
+            "en": "Lazy's",
+            "pt": "do Lazy",
+            "emoji": "🏷️"
+          }
+        ],
+        "xp": 0,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "De quem é: o dono vem antes da coisa."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 0,
+            "hold": 0.3,
+            "text": "my phone"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 1,
+            "hold": 0.3,
+            "text": "your phone"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 2,
+            "hold": 0.3,
+            "text": "his phone"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 3,
+            "hold": 0.3,
+            "text": "her phone"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "cartao",
+            "alvo": 4,
+            "hold": 0.3,
+            "text": "Lazy's phone"
+          }
+        ]
+      },
+      {
+        "tipo": "ligar",
+        "titulo": "LIGUE OS PARES",
+        "pares": [
+          {
+            "en": "his",
+            "pt": "dele"
+          },
+          {
+            "en": "her",
+            "pt": "dela"
+          },
+          {
+            "en": "Lazy's",
+            "pt": "do Lazy"
+          }
+        ],
+        "direita": [
+          2,
+          0,
+          1
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "pausa": "respiro",
+            "s": 1.6500000000000001,
+            "evento": "ligar"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "It's his bag.",
+          "It's her bag.",
+          "It's Hank's bag."
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.75,
+            "evento": "som",
+            "text": "It's her bag."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.4,
+            "text": "Quem decide é o dono, não a bolsa."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "É o celular do Lazy.",
+        "tiles": [
+          "phone.",
+          "the",
+          "Lazy's",
+          "of",
+          "It's"
+        ],
+        "ordem": [
+          4,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.2,
+            "text": "It's Lazy's phone."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o de. O apóstrofo faz o trabalho."
+          }
+        ]
+      },
+      {
+        "tipo": "revisao",
+        "titulo": "LEMBRA?",
+        "mascote": "bolinha",
+        "itens": [
+          {
+            "en": "How much is it?",
+            "pt": "quanto custa?",
+            "emoji": "💵",
+            "de": "T1 E12"
+          },
+          {
+            "en": "open",
+            "pt": "aberto",
+            "emoji": "🟢",
+            "de": "T1 E10"
+          },
+          {
+            "en": "Yes, I am.",
+            "pt": "sim, estou",
+            "emoji": "✅",
+            "de": "T1 E06"
+          }
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 0,
+            "text": "How much is it?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 1,
+            "text": "open"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "lembra",
+            "alvo": 2,
+            "text": "Yes, I am."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "It's Lazy's phone."
+      },
+      {
+        "speaker": "lazy",
+        "lang": "en",
+        "emotion": "whisper",
+        "text": "My phone. Thank you."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "text": "And this bag?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "text": "It's your bag, Hank."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "surprised",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "My bag!"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Escreve em inglês: o carro do meu pai."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e14-is-there"
+}
