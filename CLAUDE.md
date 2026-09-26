@@ -24,6 +24,10 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   (entrar antes); TikTok CRP exige vídeo ≥1 min; evitar "conteúdo inautêntico" e classificação "feito para crianças";
   brecha forte = português para hispanofalantes/anglófonos.
 
+## Decisões de marca (Felipe, 26/09)
+- Nome **Capi Lingo** mantido por decisão do Felipe (conselho alertou risco de 'quase-Duolingo'). Mitigar: zero elementos visuais do Duolingo,
+  registrar INPI cedo, handle @capilingo está ocupado → usar variante (ex.: @capilingobr / @capi.lingo). Capi tem voz feminina.
+
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
   Meta proíbe chatbot "de uso geral" desde 15/01/2026, mas no Brasil o CADE suspendeu (mantido em 04/03/2026);
