@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "date": "2026-09-26",
+  "janela": [
+    "2026-09-20",
+    "2026-09-26"
+  ],
+  "radares_lidos": 1,
+  "tema_da_semana": null,
+  "temas_persistentes": [],
+  "calendario_proxima_semana": [
+    {
+      "id": "amistoso-brasil-australia",
+      "evento": "Amistoso Brasil x Austrália (Brisbane)",
+      "data_inicio": "2026-09-29",
+      "data_fim": "2026-09-29",
+      "categoria": "esporte",
+      "seguro": true,
+      "block_hype": false,
+      "tema_aula": "Por que australiano fala 'mate' e 'arvo'? Gírias australianas x americanas.",
+      "ganchos_ingles": [
+        "mate",
+        "arvo",
+        "no worries",
+        "g'day"
+      ],
+      "status": "fonte única (a confirmar)",
+      "faltam_dias": 2
+    },
+    {
+      "id": "amistoso-brasil-india",
+      "evento": "Amistoso Brasil x Índia (Calcutá)",
+      "data_inicio": "2026-10-03",
+      "data_fim": "2026-10-03",
+      "categoria": "esporte",
+      "seguro": true,
+      "block_hype": false,
+      "tema_aula": "Pronúncia em inglês de nomes de jogadores e de 'Kolkata'; vocabulário de jogo (score, draw).",
+      "ganchos_ingles": [
+        "score",
+        "draw",
+        "friendly match",
+        "Kolkata"
+      ],
+      "status": "fonte única (a confirmar)",
+      "faltam_dias": 6
+    }
+  ],
+  "dias_bloqueados": [],
+  "fallback": "sem tema persistente: episódios contextualizam com o calendário da semana"
+}

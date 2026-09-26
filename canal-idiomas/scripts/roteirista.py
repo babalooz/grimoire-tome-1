@@ -114,6 +114,17 @@ TIKTOK_NATIVO = """Versão TikTok (nativa, NÃO repost do Short):
 - Legenda do post: minúscula, irônica, 1 frase; 3–5 hashtags de nicho, com #capyfala e #capybara; preguiça = #sloth.
 - Nada de promessa de prazo ou "método"; CTA = escolha nos comentários ou "link no perfil" (teste de nível)."""
 
+# Contexto por faixa (decisão do Felipe, 26/09): todo vídeo é contextualizado com tendência.
+#   esquete  -> 1 hype do DIA que passou no filtro de segurança; sem hype seguro -> calendário; sem nada -> atemporal.
+#   episódio -> a lição do currículo NÃO muda; o TEMA DA SEMANA (radar semanal) vira cenário, fala de apoio
+#               (Dona Jaca, Poppy...) ou exemplo em português; sem tema -> calendário da semana.
+REGRA_CONTEXTO = """Contexto de tendência (obrigatório):
+- Use o CONTEXTO abaixo como cenário, piada ou exemplo. Ele NUNCA troca a lição: erro, forma certa e frases em inglês
+  do currículo ficam iguais. Cite o assunto, não a pessoa: nada de nome, rosto, voz ou bordão de pessoa real.
+- Nada de política, crime, tragédia, morte, religião, aposta ou conteúdo infantil (o radar já filtrou; na dúvida, ignore).
+- Se o contexto não couber naturalmente em 1 fala, use-o só no texto de tela/legenda. Forçar é pior que não usar."""
+MAX_FALAS_CONTEXTO = 3  # episódio: no máximo 3 falas pt reescritas pelo contexto
+
 # ---------------------------------------------------------------- 3 roteiros-modelo (seção 7), limpos:
 # sem números inventados, marca CapyFala, inglês separado em fala en e ganchos dentro dos validadores.
 MODELOS = {
@@ -672,6 +683,79 @@ def montar_prompt(quadro: str, hoje: dt.date, escolha: dict, radar: dict, penden
     )
 
 
+def load_radar_semanal() -> dict:
+    files = sorted((ROOT / "radar").glob("semana-20??-??-??.json"))
+    return json.loads(files[-1].read_text()) if files else {}
+
+
+def contexto(faixa: str, radar: dict, semanal: dict) -> dict:
+    """Escolhe o contexto de tendência do vídeo. faixa = 'esquete' | 'episodio'."""
+    ev = radar.get("evento_do_dia", {})
+    if ev.get("block_hype"):
+        return {"tipo": "nenhum", "motivo": "dia de bloqueio (eleição): tema atemporal"}
+    if faixa == "esquete":
+        hype = hype_seguro(radar)
+        if hype:
+            h = hype[0]
+            return {"tipo": "hype-do-dia", "termo": h["termo"], "detalhe": h.get("contexto") or "",
+                    "ideia": h.get("sugestao_aula") or ""}
+    else:
+        t = semanal.get("tema_da_semana")
+        if t:
+            return {"tipo": "tema-da-semana", "termo": t["termo"], "detalhe": t.get("contexto") or "",
+                    "ideia": t.get("sugestao_aula") or "", "dias": t["dias"]}
+        cal = semanal.get("calendario_proxima_semana") or []
+        cal = [e for e in cal if e.get("seguro", True) and not e.get("block_hype")]
+        if cal:
+            return {"tipo": "calendario", "termo": cal[0]["evento"], "detalhe": cal[0].get("tema_aula") or "",
+                    "ideia": ", ".join(cal[0].get("ganchos_ingles") or [])}
+    evs = [e for e in ev.get("hoje", []) + ev.get("preparar", []) if e.get("seguro", True)]
+    if evs:
+        return {"tipo": "calendario", "termo": evs[0]["evento"], "detalhe": evs[0].get("tema_aula") or "",
+                "ideia": ", ".join(evs[0].get("ganchos_ingles") or [])}
+    return {"tipo": "nenhum", "motivo": "sem hype seguro nem calendário: tema atemporal"}
+
+
+CONTEXTUALIZA = {
+    "type": "object", "additionalProperties": False, "required": ["usou", "alteracoes", "textoTela", "legenda"],
+    "properties": {
+        "usou": {"type": "boolean"},
+        "alteracoes": {"type": "array", "items": {
+            "type": "object", "additionalProperties": False, "required": ["bloco", "indice", "text"],
+            "properties": {"bloco": {"type": "string", "enum": ["cena", "volta"]}, "indice": {"type": "integer"},
+                           "text": {"type": "string"}}}},
+        "textoTela": {"type": "string"}, "legenda": {"type": "string"},
+    },
+}
+
+
+def contextualizar(client, ep: dict, ctx: dict) -> dict:
+    """Reescreve até MAX_FALAS_CONTEXTO falas em PORTUGUÊS de cena/volta com o contexto. Inglês e lição intocados."""
+    if ctx["tipo"] == "nenhum":
+        return {**ep, "contexto": ctx}
+    linhas = [f"{b}[{i}] {x.get('speaker', 'capi')} ({x['lang']}): {x['text']}"
+              for b in ("cena", "volta") for i, x in enumerate(ep[b]["passos"])]
+    system = f"{PERSONAGEM}\n\n{REGRA_CONTEXTO}"
+    prompt = (f"Episódio {ep.get('serie', {}).get('codigo', ep['id'])} — objetivo: {ep.get('canDo', '')}\n"
+              f"CONTEXTO ({ctx['tipo']}): {ctx['termo']} — {ctx.get('detalhe', '')} (ideia: {ctx.get('ideia', '')})\n\n"
+              f"Falas atuais:\n" + "\n".join(linhas) + "\n\n"
+              f"Reescreva no máximo {MAX_FALAS_CONTEXTO} falas com lang=pt (NUNCA as en) para amarrar o contexto, mantendo "
+              "o mesmo tamanho (±3 palavras) e a mesma função na cena. Dê também textoTela (≤ 6 palavras) e legenda do post "
+              "(1 frase, minúscula). Se não couber, usou=false e alteracoes=[].")
+    r = ask(client, system, prompt, CONTEXTUALIZA)
+    novo = json.loads(json.dumps(ep))
+    feitas = 0
+    for a in r["alteracoes"]:
+        passos = novo.get(a["bloco"], {}).get("passos", [])
+        if 0 <= a["indice"] < len(passos) and passos[a["indice"]]["lang"] == "pt" and feitas < MAX_FALAS_CONTEXTO:
+            if abs(n_palavras(a["text"]) - n_palavras(passos[a["indice"]]["text"])) <= 3:
+                passos[a["indice"]]["text"] = a["text"]
+                feitas += 1
+    novo["contexto"] = {**ctx, "usou": r["usou"] and feitas > 0, "falas": feitas,
+                        "textoTela": r["textoTela"], "legenda": r["legenda"]}
+    return novo
+
+
 # ---------------------------------------------------------------- API
 def ask(client, system: str, prompt: str, schema: dict) -> dict:
     response = client.beta.messages.create(
@@ -738,7 +822,26 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--data", help="AAAA-MM-DD (simula outra data)")
     ap.add_argument("--validar", nargs="+", metavar="EPISODIO.json", help="só roda os validadores")
+    ap.add_argument("--contexto", choices=["esquete", "episodio"], help="só mostra o contexto de tendência escolhido")
+    ap.add_argument("--contextualizar", metavar="EPISODIO.json",
+                    help="amarra o tema da semana num episódio-lição pronto (falas pt; lição intocada)")
     args = ap.parse_args()
+
+    if args.contexto:
+        print(json.dumps(contexto(args.contexto, load_radar(), load_radar_semanal()), ensure_ascii=False, indent=2))
+        return
+    if args.contextualizar:
+        import anthropic
+        path = Path(args.contextualizar)
+        ep = json.loads(path.read_text())
+        ctx = contexto("episodio", load_radar(), load_radar_semanal())
+        novo = contextualizar(anthropic.Anthropic(), ep, ctx)
+        en_antes = [x["text"] for b in ("cena", "volta") for x in ep[b]["passos"] if x["lang"] == "en"]
+        en_depois = [x["text"] for b in ("cena", "volta") for x in novo[b]["passos"] if x["lang"] == "en"]
+        assert en_antes == en_depois and ep.get("licao") == novo.get("licao"), "contexto mexeu na lição: descartado"
+        path.write_text(json.dumps(novo, ensure_ascii=False, indent=2))
+        print(f"ok: {path.name} · contexto {ctx['tipo']}: {ctx.get('termo', '-')} · falas trocadas: {novo['contexto'].get('falas', 0)}")
+        return
 
     if args.validar:
         sys.exit(validar_arquivos(args.validar))

@@ -4,13 +4,18 @@ Uso:
   python3 scripts/radar.py                 -> gera radar/AAAA-MM-DD.md + .json
   python3 scripts/radar.py --so-hype       -> pula a pesquisa de demanda no YouTube (rápido, ~1 min)
   python3 scripts/radar.py --data 2026-10-04   -> simula outra data (calendário/bloqueio)
+  python3 scripts/radar.py --semanal       -> radar/semana-AAAA-MM-DD.md + .json (tema da semana = assunto seguro
+                                             que apareceu em 3+ dos últimos 7 radares diários; calendário dos próximos 7 dias)
   python3 scripts/radar.py --testar-filtro "tortura" "vice-prefeito" ...  -> só testa o filtro de segurança
 
 Sem chave de API. Fontes (todas grátis):
   - Google Trends RSS BR (termo + volume aproximado + manchetes de contexto)
   - Wikipédia PT: artigos mais vistos de ontem (API pageviews) + descrição/resumo de cada um
   - Spotify Brasil diário (kworb.net): só faixas que também estão no global e não são em PT/ES
-  - radar/manual.txt (opcional): hashtags do TikTok coladas à mão, 1 por linha
+  - TikTok BR automático: Google Notícias (busca "trend/viralizou/meme no TikTok", últimas 48 h) -> termos entre
+    aspas e #hashtags das manchetes. O Creative Center sem login só mostra top 3 dos EUA e o endpoint público
+    /api/challenge/detail não responde a partir da nuvem (testado 26/09: resposta vazia), então a medição de views
+    das hashtags fica para o PC (ponte). radar/manual.txt continua aceito como reforço opcional.
   - calendario.json: evento-âncora do dia e dias de bloqueio (block_hype)
   - Autocomplete Google/YouTube + busca do YouTube (demanda de aula e teste "vira aula?")
 
@@ -286,6 +291,40 @@ def fonte_manual() -> list[dict]:
     return out
 
 
+TIKTOK_QUERIES = ["trend tiktok", "viralizou tiktok", "meme tiktok", "trend do momento", "bordão viral"]
+_ASPAS = re.compile(r"[\"“”‘’'«]([^\"“”‘’'«»]{3,40})[\"“”‘’'»]")
+_HASHTAG = re.compile(r"#([\wÀ-ÿ]{3,30})")
+_TT_GENERICO = {"tiktok", "trend", "viral", "meme", "fyp", "foryou", "brasil"}
+
+
+def fonte_tiktok(horas: int = 48) -> list[dict]:
+    """Trends do TikTok BR pela imprensa: termo entre aspas ou #hashtag em manchete que cita o TikTok."""
+    out, vistos = [], set()
+    agora = dt.datetime.now(dt.timezone.utc)
+    for q in TIKTOK_QUERIES:
+        url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(f"{q} when:2d")
+               + "&hl=pt-BR&gl=BR&ceid=BR:pt-419")
+        root = ET.fromstring(get(url, lang="pt-BR"))
+        for it in root.iter("item"):
+            titulo = html.unescape(it.findtext("title") or "")
+            try:
+                quando = dt.datetime.strptime(it.findtext("pubDate") or "", "%a, %d %b %Y %H:%M:%S %Z").replace(tzinfo=dt.timezone.utc)
+                if (agora - quando).total_seconds() > horas * 3600:
+                    continue
+            except ValueError:
+                pass
+            manchete = titulo.rsplit(" - ", 1)[0]
+            termos = [m.strip() for m in _ASPAS.findall(manchete)] + ["#" + h for h in _HASHTAG.findall(manchete)]
+            for t in termos:
+                k = norm(t.lstrip("#"))
+                if not k or k in vistos or k in _TT_GENERICO or len(k.split()) > 6:
+                    continue
+                vistos.add(k)
+                out.append({"termo": t, "fonte": "tiktok (notícias)", "volume": 0, "volume_txt": "citado na imprensa",
+                            "forca": 2.5, "contexto": manchete, "url": it.findtext("link") or ""})
+    return out
+
+
 # ---------------------------------------------------------------- score de hype
 ENCAIXE = [  # (peso, padrões) — o primeiro que bater vale
     (0.6, r"sertanej\w*|funk|pagode|forro|piseiro|gospel|cantor brasileiro|cantora brasileira|dupla"),
@@ -388,7 +427,7 @@ def filtrar(cands: list[dict]) -> tuple[list[dict], list[dict]]:
 def hype(hoje: dt.date, bloqueado: bool, log: list[str]) -> tuple[list[dict], list[dict], list[str]]:
     cands, coletados = [], []
     for nome, fn in (("google-trends", fonte_trends), ("wikipedia", lambda: fonte_wikipedia(hoje)),
-                     ("spotify-br", fonte_spotify), ("manual", fonte_manual)):
+                     ("spotify-br", fonte_spotify), ("tiktok", fonte_tiktok), ("manual", fonte_manual)):
         try:
             got = fn()
             log.append(f"{nome}: {len(got)} itens")
@@ -449,6 +488,58 @@ def calendario(hoje: dt.date) -> dict:
         elif hoje < ini <= hoje + dt.timedelta(days=14):
             res["proximos"].append({**item, "faltam_dias": (ini - hoje).days})
     return res
+
+
+# ---------------------------------------------------------------- radar semanal
+PERSISTE_DIAS = 3  # assunto em 3+ radares diários da semana = tema da semana
+
+
+def semanal(hoje: dt.date) -> dict:
+    ini = hoje - dt.timedelta(days=6)
+    dias = []
+    for i in range(7):
+        f = ROOT / "radar" / f"{(ini + dt.timedelta(days=i)).isoformat()}.json"
+        if f.exists():
+            dias.append(json.loads(f.read_text()))
+    grupos: list[dict] = []
+    for d in dias:
+        for h in d.get("hype_seguro", []):
+            tk = tokens(h["termo"])
+            g = next((g for g in grupos if mesmo_assunto(tk, g["_tk"])), None)
+            if g is None:
+                g = {"termo": h["termo"], "_tk": tk, "dias": set(), "score_total": 0.0, "categoria": h.get("categoria"),
+                     "contexto": h.get("contexto"), "sugestao_aula": h.get("sugestao_aula"), "fontes": set()}
+                grupos.append(g)
+            g["dias"].add(d["date"])
+            g["score_total"] += h.get("score") or 0
+            g["fontes"].update(h.get("fontes") or [])
+    temas = [{"termo": g["termo"], "dias": len(g["dias"]), "datas": sorted(g["dias"]), "score_total": round(g["score_total"], 2),
+              "categoria": g["categoria"], "fontes": sorted(g["fontes"]), "contexto": g["contexto"],
+              "sugestao_aula": g["sugestao_aula"]}
+             for g in grupos if len(g["dias"]) >= PERSISTE_DIAS]
+    temas.sort(key=lambda t: (t["dias"], t["score_total"]), reverse=True)
+    prox = calendario(hoje + dt.timedelta(days=1))
+    semana_que_vem = [e for e in prox["hoje"] + prox["preparar"] + prox["proximos"]
+                      if dt.date.fromisoformat(e["data_inicio"]) <= hoje + dt.timedelta(days=7)]
+    bloqueios = [e["data_inicio"] for e in semana_que_vem if e.get("block_hype")]
+    return {"version": 1, "date": hoje.isoformat(), "janela": [ini.isoformat(), hoje.isoformat()],
+            "radares_lidos": len(dias), "tema_da_semana": temas[0] if temas else None, "temas_persistentes": temas[:5],
+            "calendario_proxima_semana": semana_que_vem, "dias_bloqueados": bloqueios,
+            "fallback": None if temas else "sem tema persistente: episódios contextualizam com o calendário da semana"}
+
+
+def markdown_semanal(d: dict) -> str:
+    L = [f"# Radar semanal CapyFala — {d['janela'][0]} a {d['janela'][1]}", "",
+         f"Radares diários lidos: {d['radares_lidos']}/7. Tema da semana = assunto seguro em {PERSISTE_DIAS}+ dias.", ""]
+    t = d["tema_da_semana"]
+    L += ["## Tema da semana", f"**{t['termo']}** — {t['dias']} dias ({', '.join(t['datas'])}) · {t.get('categoria')}",
+          f"Aula: {t.get('sugestao_aula')}", ""] if t else ["## Tema da semana", d["fallback"], ""]
+    if d["temas_persistentes"][1:]:
+        L += ["## Outros persistentes"] + [f"- {x['termo']} ({x['dias']} dias)" for x in d["temas_persistentes"][1:]] + [""]
+    L += ["## Calendário da próxima semana"]
+    L += [f"- {e['data_inicio']}: {e['evento']}{' — BLOQUEIO DE HYPE' if e.get('block_hype') else ''} · aula: {e.get('tema_aula')}"
+          for e in d["calendario_proxima_semana"]] or ["- (nada no calendário)"]
+    return "\n".join(L) + "\n"
 
 
 # ---------------------------------------------------------------- demanda (dúvidas de aula)
@@ -645,7 +736,19 @@ def main() -> None:
     ap.add_argument("--so-hype", action="store_true", help="pula a demanda do YouTube")
     ap.add_argument("--data", help="AAAA-MM-DD (simula outra data para calendário/bloqueio)")
     ap.add_argument("--testar-filtro", nargs="+", metavar="TERMO")
+    ap.add_argument("--semanal", action="store_true", help="gera o radar semanal a partir dos diários")
     args = ap.parse_args()
+
+    if args.semanal:
+        hoje = dt.date.fromisoformat(args.data) if args.data else dt.date.today()
+        d = semanal(hoje)
+        out = ROOT / "radar"
+        out.mkdir(exist_ok=True)
+        (out / f"semana-{hoje.isoformat()}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        (out / f"semana-{hoje.isoformat()}.md").write_text(markdown_semanal(d))
+        tema = d["tema_da_semana"]["termo"] if d["tema_da_semana"] else "nenhum (usa calendário)"
+        print(f"ok: radar/semana-{hoje.isoformat()}.md  (tema: {tema}; radares lidos: {d['radares_lidos']})")
+        return
 
     if args.testar_filtro:
         for t in args.testar_filtro:
