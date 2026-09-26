@@ -77,3 +77,8 @@ mostra, 20% explora novidade.
 - TikTok Content Posting API: sem auditoria o vídeo sai só privado, e as regras exigem prévia/consentimento do usuário no app
   → caminho: Buffer (app já auditado) — confirmar se publica direto no TikTok sem toque humano; se não, TikTok fica semi-manual.
 - YouTube Data API: projeto não verificado publica como privado → publicar via Buffer ou pedir auditoria do projeto.
+
+## Decisão 26/09 (Felipe) — série do zero
+- Temporadas = CEFR, capítulos, episódios "T1 E03" (selo no vídeo + título); playlists por temporada no YouTube (publicador cria/atribui).
+- Episódio: apresentar palavras → reconhecer → usar → mini-cena da Capy → revisão espaçada. 1 objetivo can-do por episódio.
+- Renderer: novos exercícios (cartões de vocabulário, ligar pares) + selo de série. Roteiros T1 reescritos do zero antes do render.

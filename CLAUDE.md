@@ -39,6 +39,13 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   Não faz login/senha/código/chave nem publica/altera conta sem o Felipe no teclado. Ver ponte/README.md.
 - YouTube: canal existente "Felipe Pazini" (UCE46GzcE1XXYcn0y1O0i3JA), 3 Shorts antigos de futebol a tornar privados.
 
+## Estrutura de série (decisão do Felipe, 26/09)
+- Temporadas = níveis CEFR (T1=A1, T2=A2, T3=B1…), capítulos temáticos de 4–6 episódios, episódios numerados ("T1 E03")
+  visíveis no vídeo e no título; playlists do YouTube por temporada. Ordem do conteúdo: English Profile/Cambridge (EVP/EGP),
+  Pearson GSE, Oxford 3000 e progressão Headway/English File/Interchange. Cada episódio = 1 objetivo "Consigo…" (can-do);
+  erro de brasileiro é tempero dentro do objetivo. Ensinar palavras ANTES de frases (apresentar → reconhecer → usar → mini-cena).
+  Sempre em contexto adulto (evitar classificação "feito para crianças"). Percurso em canal-idiomas/curriculo/do-zero.json.
+
 ## Fábrica autônoma (decisão do Felipe, 26/09)
 - Felipe NÃO aprova vídeos. Portão automático em 3 camadas (código → juiz LLM nota ≥8, máx. 2 reescritas → publica).
   Freio automático (strike, remoção, 3 vídeos seguidos < 50% da mediana) pausa tudo e avisa o Felipe. Detalhes em docs/plano-de-acao.md.
