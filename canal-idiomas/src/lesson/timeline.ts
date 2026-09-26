@@ -4,8 +4,8 @@ import { Emotion } from "../chars/common";
 // O roteiro é uma lista de passos. Passo = fala (1 áudio) ou pausa (timer, microfone, respiro).
 // Esta agenda é a fonte da verdade do tempo: a composição, o áudio e o script de stills leem daqui.
 
-export type Speaker = "capi" | "hank" | "leo" | "narrador";
-export type CharId = "capi" | "hank" | "leo";
+export type Speaker = "capi" | "hank" | "lazy" | "narrador";
+export type CharId = "capi" | "hank" | "lazy";
 
 export type Line = {
   speaker: Speaker;

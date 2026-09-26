@@ -1,7 +1,7 @@
 import React from "react";
 import { CharProps, INK, S, isBlinking, mouthOpen } from "./common";
 
-// Léo — bicho-preguiça, 29 anos, brasileiro, lava a louça no café. Sabe tudo e quase nunca fala; quando fala, sussurra devagar.
+// Lazy — bicho-preguiça, 29 anos ("lazy" = preguiçoso; ele jura que é "eficiente"), lava a louça no café. Sabe tudo e quase nunca fala; quando fala, sussurra devagar.
 // Silhueta a 64 px: cabeça redonda com "máscara" escura nos olhos + braços longos pendurados + caneca.
 // Paleta (playbook 4.5): areia #CDB58E, máscara #6B4A2E, cardigã mostarda #E0A526.
 const FUR = "#CDB58E";
@@ -12,9 +12,9 @@ const CARDIGAN = "#E0A526";
 const CARDIGAN_DARK = "#B98416";
 const MUG = "#3D1F8F";
 
-export const LEO_BOX = { x: 40, y: 110, w: 540, h: 1030 };
+export const LAZY_BOX = { x: 40, y: 110, w: 540, h: 1030 };
 
-export const Leo: React.FC<CharProps & { mug?: boolean }> = ({ frame, talking, emotion, size = 400, seed = "leo", mug = true }) => {
+export const Lazy: React.FC<CharProps & { mug?: boolean }> = ({ frame, talking, emotion, size = 400, seed = "lazy", mug = true }) => {
   const blink = isBlinking(frame, seed, 110);
   const open = mouthOpen(frame, talking, 3.2); // fala devagar
   const sway = Math.sin(frame / 22) * 1.6; // balanço lento de preguiça
@@ -75,7 +75,7 @@ export const Leo: React.FC<CharProps & { mug?: boolean }> = ({ frame, talking, e
   );
 
   return (
-    <svg width={size} height={(size * LEO_BOX.h) / LEO_BOX.w} viewBox={`${LEO_BOX.x} ${LEO_BOX.y} ${LEO_BOX.w} ${LEO_BOX.h}`}
+    <svg width={size} height={(size * LAZY_BOX.h) / LAZY_BOX.w} viewBox={`${LAZY_BOX.x} ${LAZY_BOX.y} ${LAZY_BOX.w} ${LAZY_BOX.h}`}
       style={{ overflow: "visible" }}>
       <g transform={`rotate(${sway} 300 1000)`}>
         {/* corpo: cardigã mostarda */}

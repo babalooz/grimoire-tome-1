@@ -1,5 +1,7 @@
 # Elenco CapyFala: quais animais as pessoas amam (dados de 26/09/2026)
 
+> Atualização 26/09: a preguiça se chama **Lazy** (não Léo) — decisão do Felipe. Elenco final em CLAUDE.md.
+
 **Resultado:** o elenco fica com **capivara, preguiça, panda-gigante, panda-vermelho, axolote e hamster**. Saem o bisão (espécie do Hank), o quati (Duda) e o gambá (Poppy). A Dona Jaca continua capivara. Os 14 roteiros **não mudam nenhuma linha**, porque só usam os ids `capi`, `hank` e `leo` e não citam a espécie em lugar nenhum.
 
 Confirmado: o **Léo já é bicho-preguiça** (playbook, seção 4.2). Ele fica.

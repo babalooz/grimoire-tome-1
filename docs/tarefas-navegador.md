@@ -27,8 +27,8 @@ Baixe do GitHub (branch main) se não estiverem no PC.
 - [ ] Mudar para **conta de criador** (Configurações → Tipo de conta)
 - [ ] Bio:
   ```
-  🐹 Capy, capivara brasileira nos EUA
-  Inglês de verdade, um mico por dia 🇧🇷➡️🇺🇸
+  Inglês pra quem trava na hora de falar.
+  1 minuto por dia com a Capy 🐹
   👇 Teste seu nível grátis
   ```
 

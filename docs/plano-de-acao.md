@@ -21,7 +21,7 @@ construir código pronto antes do fim do crédito (05/11). CapyKids = fase 2 (de
 | # | Ação | Dono | Prazo |
 |---|---|---|---|
 | 11 | ✅ Formato: lição em vídeo + storytelling (26/09) | Felipe | 26/09 |
-| 12 | Bíblia da série: elenco (Capy, Tuca, Dona Jaca), piadas recorrentes, cenários, 10 episódios | Claude | 29/09 |
+| 12 | Bíblia da série: elenco aprovado (Capy, Lazy, Hank, Duda, Poppy, Bolinha, Dona Jaca — ver CLAUDE.md), piadas recorrentes, cenários, 10 episódios | Claude | 29/09 |
 | 13 | Template do formato escolhido no Remotion (cenários, 2º personagem, cortes, lip sync Rhubarb) | Claude | 02/10 |
 | 14 | Piloto renderizado + revisão pelo conselho (`/conselho`) | Claude | 03/10 |
 | 15 | Aprovação do piloto | Felipe | 04/10 |

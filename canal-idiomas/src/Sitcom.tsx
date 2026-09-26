@@ -5,7 +5,7 @@ import {
 } from "remotion";
 import { Capi, Mood } from "./Capi";
 import { Hank } from "./chars/Hank";
-import { Leo } from "./chars/Leo";
+import { Lazy } from "./chars/Lazy";
 import { Emotion } from "./chars/common";
 import { CafeBack, CafeCounter, ThoughtOverlay } from "./sets/CafeSet";
 import { BODY, C, SAFE, TITLE } from "./theme";
@@ -13,7 +13,7 @@ import { BODY, C, SAFE, TITLE } from "./theme";
 // "Capy no Exterior" — motor de sitcom em micro-episódios.
 // Roteiro = lista de beats (1 fala cada, 1 áudio cada). O motor decide câmera, balão, reações, quiz e cartão final.
 
-export type Speaker = "capi" | "hank" | "leo" | "narrador";
+export type Speaker = "capi" | "hank" | "lazy" | "narrador";
 export type Beat = {
   speaker: Speaker;
   lang: "pt" | "en";
@@ -22,7 +22,7 @@ export type Beat = {
   emotion?: Emotion;
   shot?: "auto" | "two" | "close";
   sfx?: string[]; // nomes em public/sfx, tocados no início do beat
-  react?: Partial<Record<"capi" | "hank" | "leo", Emotion>>; // reação de quem ouve
+  react?: Partial<Record<"capi" | "hank" | "lazy", Emotion>>; // reação de quem ouve
   quiz?: "ask" | "reveal"; // ask = painel aberto (o timer roda depois do último ask); reveal = resposta
   option?: number; // opção que está sendo lida (destaque)
   card?: boolean; // cartão "Caderninho da Capy" na tela
@@ -61,11 +61,11 @@ export const sitcomFrames = (p: SitcomProps, fps: number) => {
 };
 
 // ---- palco (coordenadas do mundo 1080x1920) ----
-export type CharId = "capi" | "hank" | "leo";
+export type CharId = "capi" | "hank" | "lazy";
 export const STAGE: Record<CharId, { left: number; top: number; size: number; head: [number, number]; headTop: number; zoom: number }> = {
   capi: { left: 20, top: 900, size: 520, head: [293, 1177], headTop: 1034, zoom: 1.3 },
   hank: { left: 480, top: 560, size: 560, head: [680, 800], headTop: 626, zoom: 1.3 },
-  leo: { left: 276, top: 751, size: 340, head: [440, 890], headTop: 765, zoom: 1.6 },
+  lazy: { left: 276, top: 751, size: 340, head: [440, 890], headTop: 765, zoom: 1.6 },
 };
 export type Cam = { cx: number; cy: number; z: number };
 export const TWO: Cam = { cx: 540, cy: 960, z: 1 };
@@ -289,10 +289,10 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
   const inAudio = t < dur;
 
   // estado emocional de cada personagem = último valor definido até o beat atual
-  const emo: Record<CharId, Emotion> = { capi: "zen", hank: "bored", leo: "neutral" };
-  let leoFrom = -1;
+  const emo: Record<CharId, Emotion> = { capi: "zen", hank: "bored", lazy: "neutral" };
+  let lazyFrom = -1;
   p.beats.forEach((b, i) => {
-    if (b.speaker === "leo" && leoFrom < 0) leoFrom = sched[i].from;
+    if (b.speaker === "lazy" && lazyFrom < 0) lazyFrom = sched[i].from;
     if (i > cur.i) return;
     if (b.speaker !== "narrador" && b.emotion) emo[b.speaker] = b.emotion;
     if (b.react) Object.assign(emo, b.react);
@@ -317,7 +317,7 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
 
   // personagens
   const talking = (id: Speaker) => beat.speaker === id && beat.mode !== "pensamento" && inAudio;
-  const leoRise = leoFrom < 0 ? 0 : interpolate(frame, [leoFrom - 4, leoFrom + 36], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
+  const lazyRise = lazyFrom < 0 ? 0 : interpolate(frame, [lazyFrom - 4, lazyFrom + 36], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.quad) });
 
   const place = (id: CharId, el: React.ReactNode, dy = 0) => (
     <div style={{ position: "absolute", left: STAGE[id].left, top: STAGE[id].top + dy }}>{el}</div>
@@ -363,7 +363,7 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
         if (s.timer) for (let j = 0; j < s.timer / fps; j++) out.push(<Sfx key={`t${j}`} at={s.timerFrom + j * fps} name={j === s.timer / fps - 1 ? "tick2" : "tick"} vol={0.6} />);
         if (b.quiz === "reveal" && s.i === revIdx) out.push(<Sfx key="ok" at={s.from} name="correct" vol={0.6} />);
         if (b.card) out.push(<Sfx key="st" at={s.from + 10} name="stamp" vol={0.55} />);
-        if (b.speaker === "leo" && s.from === leoFrom) out.push(<Sfx key="leo" at={s.from} name="whoosh" vol={0.12} />);
+        if (b.speaker === "lazy" && s.from === lazyFrom) out.push(<Sfx key="lazy" at={s.from} name="whoosh" vol={0.12} />);
         return <React.Fragment key={`f${s.i}`}>{out}</React.Fragment>;
       })}
 
@@ -371,7 +371,7 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
       <AbsoluteFill style={{ transform: worldT, transformOrigin: "0 0", filter: blur > 0.3 ? `blur(${blur}px)` : undefined }}>
         <AbsoluteFill style={{ transform: parallax }}><CafeBack frame={frame} /></AbsoluteFill>
         {place("hank", <Hank frame={frame} talking={talking("hank")} emotion={emo.hank} size={STAGE.hank.size} />)}
-        {leoFrom >= 0 && leoRise > 0 && place("leo", <Leo frame={frame} talking={talking("leo")} emotion={emo.leo} size={STAGE.leo.size} />, (1 - leoRise) * 440)}
+        {lazyFrom >= 0 && lazyRise > 0 && place("lazy", <Lazy frame={frame} talking={talking("lazy")} emotion={emo.lazy} size={STAGE.lazy.size} />, (1 - lazyRise) * 440)}
         <CafeCounter frame={frame} />
         <ThoughtOverlay amount={overlay} frame={frame} />
         {place("capi", capiEl)}

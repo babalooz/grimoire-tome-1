@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, Easing, interpolate } from "remotion";
 import { Capi, Mood } from "../Capi";
 import { Hank } from "../chars/Hank";
-import { Leo } from "../chars/Leo";
+import { Lazy } from "../chars/Lazy";
 import { Emotion } from "../chars/common";
 import { CafeBack, CafeCounter, ThoughtOverlay } from "../sets/CafeSet";
 import { Cam, CharId, STAGE, clampCam } from "../Sitcom";
@@ -23,10 +23,10 @@ export const CafeStage: React.FC<{
   overlay: number;
   tremor: number;
   faintT: number; // frames desde o início do desmaio (-1 = de pé)
-  leo?: boolean;
+  lazy?: boolean;
   capiArmUp?: boolean;
   capiHop?: number;
-}> = ({ frame, cam, blur, emo, capiMood, talking, overlay, tremor, faintT, leo = false, capiArmUp = false, capiHop = 0 }) => {
+}> = ({ frame, cam, blur, emo, capiMood, talking, overlay, tremor, faintT, lazy = false, capiArmUp = false, capiHop = 0 }) => {
   const tr = tremor ? [Math.sin(frame * 2.3) * tremor, Math.cos(frame * 1.9) * tremor] : [0, 0];
   const worldT = `translate(${540 + tr[0]}px, ${960 + tr[1]}px) scale(${cam.z}) translate(${-cam.cx}px, ${-cam.cy}px)`;
   const parallax = `translate(${(cam.cx - 540) * 0.12}px, ${(cam.cy - 960) * 0.08}px)`;
@@ -51,7 +51,7 @@ export const CafeStage: React.FC<{
       <AbsoluteFill style={{ transform: worldT, transformOrigin: "0 0", filter: blur > 0.3 ? `blur(${blur}px)` : undefined }}>
         <AbsoluteFill style={{ transform: parallax }}><CafeBack frame={frame} /></AbsoluteFill>
         {place("hank", <Hank frame={frame} talking={talking === "hank"} emotion={emo.hank} size={STAGE.hank.size} />)}
-        {leo && place("leo", <Leo frame={frame} talking={talking === "leo"} emotion={emo.leo} size={STAGE.leo.size} />)}
+        {lazy && place("lazy", <Lazy frame={frame} talking={talking === "lazy"} emotion={emo.lazy} size={STAGE.lazy.size} />)}
         <CafeCounter frame={frame} />
         <ThoughtOverlay amount={overlay} frame={frame} />
         {place("capi", <Capi frame={frame} talking={talking === "capi"} mood={mood} size={STAGE.capi.size} sweat={sweat} armUp={capiArmUp} />, 0, capiT)}

@@ -1,5 +1,7 @@
 # Playbook CapyFala: o que os campeões de Shorts com personagem fazem, qual formato escolher e o universo da série (26/09/2026)
 
+> Atualização 26/09: a preguiça se chama **Lazy** (não Léo) — decisão do Felipe. Elenco final em CLAUDE.md.
+
 Complementa `2026-09-26-campeoes-shorts-quiz-idiomas.md`, que cobre quiz e nível. Aqui o foco é **personagem, série e fandom**.
 
 ## Resultado

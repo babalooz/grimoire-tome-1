@@ -50,7 +50,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
   const talking = inAudio && line!.mode !== "pensamento" && line!.speaker !== "narrador" ? (line!.speaker as CharId) : null;
 
   // ---- estado emocional acumulado ----
-  const emo: Record<CharId, Emotion> = { capi: "zen", hank: "bored", leo: "neutral" };
+  const emo: Record<CharId, Emotion> = { capi: "zen", hank: "bored", lazy: "neutral" };
   let capiEmoFrom = 0;
   steps.forEach((s) => {
     if (s.i > cur.i || !isLine(s.passo)) return;

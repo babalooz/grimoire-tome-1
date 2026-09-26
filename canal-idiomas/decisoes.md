@@ -10,3 +10,5 @@ Formato: data · decisão · métrica/evidência que sustenta · se for teste: p
 | 2026-09-26 | Cadência inicial 1 Short/dia + 1 longo/semana | Analista de dados: n mínimo ≥4 vídeos/quadro para decidir | Sim · até 02/11 · reavaliar com retenção relativa |
 | 2026-09-26 | Horários iniciais TikTok 19:07/12:37 · Shorts 12:10 · Reels 18:40 | Estimativa de blogs (sem dado próprio) | Sim · dia 15 e 45 · trocar o pior quartil de horário |
 | 2026-09-26 | 80% dobrar o que funciona / 20% explorar | Regra do Felipe | Não |
+| 2026-09-26 | Elenco: Capy, Lazy (preguiça), Hank (panda-gigante), Duda (panda-vermelho), Poppy (axolote), Bolinha (hamster), Dona Jaca | Pesquisa docs/pesquisas/2026-09-26-elenco-animais.md (animais com mais apelo em redes); aprovado pelo Felipe | Sim · por personagem: cortar/reduzir quem tiver retenção < mediana em ≥4 episódios até 02/11 |
+| 2026-09-26 | Bio: "Inglês pra quem trava na hora de falar. 1 minuto por dia com a Capy" | Dor nº1 do público A1–B1 (travar ao falar); sem dado próprio | Sim · 30 dias · comparar seguidores/1.000 views com a bio antiga não é possível → reavaliar com taxa de follow do perfil |

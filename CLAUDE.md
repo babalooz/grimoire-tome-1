@@ -52,7 +52,15 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - AI-driven + data-driven: toda decisão cita métrica e vai para `canal-idiomas/decisoes.md`; sem dado = teste com prazo e
   critério de corte prévios. 80% explorar o que funciona / 20% explorar novo.
 - Comentários: resposta automática no personagem só no YouTube; TikTok não responde.
-- Elenco completo liberado para criar: Duda, Poppy, Dona Jaca.
+
+## Elenco aprovado (Felipe, 26/09) — só animais queridos; cada um = 1 mecânica de ensino
+- **Capy** (capivara, protagonista) · **Lazy** (preguiça; NUNCA "Léo"; nome = lição "lazy = preguiçoso"; fala lenta =
+  pronúncia/"repita comigo"; bordão "não sou preguiçoso, sou... eficiente") · **Hank** (panda-gigante rabugento, dono do
+  café Bean There; traduções literais) · **Duda** (panda-vermelho, falsos cognatos, diz ser prima do Hank) · **Poppy**
+  (axolote influencer, gírias; só temas adultos) · **Bolinha** (hamster, guarda frases nas bochechas e devolve = revisão
+  espaçada) · **Dona Jaca** (capivara, mãe da Capy, por videochamada).
+- Speakers no JSON/TTS: capi, lazy, hank, duda, poppy, bolinha, donajaca, narrador ("leo" = alias antigo de lazy).
+- Bio aprovada como recomendação: "Inglês pra quem trava na hora de falar. / 1 minuto por dia com a Capy 🐹" (EUA fica só como cenário).
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.

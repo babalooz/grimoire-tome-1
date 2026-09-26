@@ -11,7 +11,7 @@ Base: `docs/pesquisas/2026-09-26-campeoes-shorts-quiz-idiomas.md` e `...canais-c
 - **Capy**: capivara brasileira (**voz feminina** — decidido 26/09), zen por fora e dramática por dentro. Calma absurda que desmorona quando alguém erra inglês.
 - Bordões: "Calma... respira... ERROU." · "Capivara não julga. Capivara corrige."
 - Acessórios fixos: óculos redondos + boné virado (troca por quadro: fone no "Gíria", apito no "Nível", microfone no "Hype").
-- Elenco de apoio (aparece em cenas, dá variedade): **Tuca** (tucano gringo que fala português errado — ótimo para os canais ES/EN) e **Dona Jaca** (vó brasileira que resolve tudo em português).
+- Elenco de apoio (aprovado 26/09, substitui o rascunho com Tuca): **Lazy** (preguiça), **Hank** (panda-gigante), **Duda** (panda-vermelho), **Poppy** (axolote), **Bolinha** (hamster) e **Dona Jaca** (capivara, mãe da Capy). Detalhes em CLAUDE.md.
 - Humor adulto-leve (trabalho, viagem, namoro, memes) → evita a classificação "feito para crianças".
 - Proibido: coruja/ave verde, verde-limão dominante, "Duo", tipografia estilo Duolingo.
 
