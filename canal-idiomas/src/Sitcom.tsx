@@ -64,7 +64,7 @@ type CharId = "capi" | "hank" | "leo";
 const STAGE: Record<CharId, { left: number; top: number; size: number; head: [number, number]; headTop: number; zoom: number }> = {
   capi: { left: 20, top: 900, size: 520, head: [293, 1177], headTop: 1034, zoom: 1.3 },
   hank: { left: 480, top: 560, size: 560, head: [680, 800], headTop: 626, zoom: 1.3 },
-  leo: { left: 276, top: 751, size: 340, head: [440, 890], headTop: 765, zoom: 1.45 },
+  leo: { left: 276, top: 751, size: 340, head: [440, 890], headTop: 765, zoom: 1.6 },
 };
 type Cam = { cx: number; cy: number; z: number };
 const TWO: Cam = { cx: 540, cy: 960, z: 1 };
@@ -210,8 +210,8 @@ const QuizPanel: React.FC<{
           <div key={i} style={{
             marginTop: 22, minHeight: 104, display: "flex", alignItems: "center", gap: 18, padding: "10px 24px",
             borderRadius: 54, border: `7px solid ${C.tinta}`, boxShadow: `0 8px 0 ${C.tinta}`,
-            background: revealed ? (ok ? C.certo : C.errado) : lit ? C.amarelo : "#fff",
-            opacity: (revealed && !ok ? 0.55 : 1) * Math.min(1, s * 1.5),
+            background: revealed ? (ok ? C.certo : "#C9A9B6") : lit ? C.amarelo : "#fff",
+            opacity: Math.min(1, s * 1.5),
             transform: `translateX(${(1 - s) * (i % 2 ? 300 : -300) + shake}px) scale(${revealed && ok ? 1.04 : lit ? 1.03 : 1})`,
           }}>
             <div style={{
