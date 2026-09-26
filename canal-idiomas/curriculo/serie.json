@@ -1,0 +1,5 @@
+{
+  "_sobre": "Memória de série do roteirista: promessas de continuação ('amanhã eu conto'). pendentes[] = {de, nextEpisodeId, cumprir_em, answerTomorrow}; o episódio de cumprir_em recebe a pendência no prompt, é salvo com id = nextEpisodeId e a promessa vai para cumpridas[].",
+  "pendentes": [],
+  "cumpridas": []
+}

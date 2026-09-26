@@ -1,0 +1,69 @@
+{
+  "_sobre": "Registro de uso do currículo (curriculo/en-br.json), escrito pelo scripts/roteirista.py a cada episódio salvo. usos[topico_id] = lista de {data, episodio, papel: alvo|revisao|apoio}. A seleção prioriza tópicos não usados e agenda revisão ~3/10/30 dias após o 1º/2º/3º uso. Semeado com os episódios 001–003 (26/09/2026).",
+  "usos": {
+    "A1-01": [
+      {
+        "data": "2026-09-26",
+        "episodio": "002-desafio-5-niveis",
+        "papel": "alvo"
+      },
+      {
+        "data": "2026-09-26",
+        "episodio": "003-nivel-1-a-4",
+        "papel": "alvo"
+      }
+    ],
+    "A1-02": [
+      {
+        "data": "2026-09-26",
+        "episodio": "002-desafio-5-niveis",
+        "papel": "apoio"
+      },
+      {
+        "data": "2026-09-26",
+        "episodio": "003-nivel-1-a-4",
+        "papel": "apoio"
+      }
+    ],
+    "A2-10": [
+      {
+        "data": "2026-09-26",
+        "episodio": "002-desafio-5-niveis",
+        "papel": "apoio"
+      },
+      {
+        "data": "2026-09-26",
+        "episodio": "003-nivel-1-a-4",
+        "papel": "apoio"
+      }
+    ],
+    "B1-01": [
+      {
+        "data": "2026-09-26",
+        "episodio": "001-looking-forward",
+        "papel": "alvo"
+      }
+    ],
+    "B1-02": [
+      {
+        "data": "2026-09-26",
+        "episodio": "002-desafio-5-niveis",
+        "papel": "apoio"
+      }
+    ],
+    "B1-03": [
+      {
+        "data": "2026-09-26",
+        "episodio": "003-nivel-1-a-4",
+        "papel": "apoio"
+      }
+    ],
+    "B1-15": [
+      {
+        "data": "2026-09-26",
+        "episodio": "002-desafio-5-niveis",
+        "papel": "apoio"
+      }
+    ]
+  }
+}
