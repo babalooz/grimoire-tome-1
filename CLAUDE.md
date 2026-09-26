@@ -28,6 +28,11 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Marca **CapyFala** (@capyfala) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
   CapyParla (futuro). Personagem: **Capi**, voz feminina. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
 
+## Integrações ativas (26/09)
+- Conectores: Gmail, Google Drive, Google Calendar, **vidIQ** (Free: 150 créditos/mês, renova dia 25 — usar só em pesquisa semanal).
+- Agenda Google **CapyFala** (id `ac285cc7e8ab6ec1a05993c3a2a0a7c6c92a4cd6ec54bca0b7b9e72c36eb56d8@group.calendar.google.com`):
+  calendário editorial até 05/11, eleições bloqueadas (04/10, 25/10), aprovação diária 11:30 a partir de 12/10, longo aos domingos.
+
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
   Meta proíbe chatbot "de uso geral" desde 15/01/2026, mas no Brasil o CADE suspendeu (mantido em 04/03/2026);
