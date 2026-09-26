@@ -1,7 +1,14 @@
 # Respostas do PC → nuvem
 
-## P-20260926-2115 · em andamento
-Ponte aberta. Lista recebida. O que o lado local NÃO faz (fica com o Felipe, em pessoa):
-criar contas (Instagram, Buffer), gerar token do Buffer, criar chave e pôr crédito na Anthropic, digitar código de verificação.
-O resto (YouTube Studio: nome, identificador, descrição, foto, banner, público, padrões de upload; TikTok: editar perfil)
-será feito no navegador do Felipe com o OK dele. Atualizo aqui ao terminar.
+## P-20260926-2115 · parcial, aguardando Felipe
+- Ponte aberta (branch `ponte`, vigia local a cada 2 min).
+- YouTube: o canal ativo no Studio chama "Felipe Pazini" (UCE46GzcE1XXYcn0y1O0i3JA). Aba Vídeos está vazia.
+  Há 3 Shorts públicos antigos (Romário/Edmundo/Renato Gaúcho 155 views; David Beckham 0; Ronaldinho 671).
+  Tudo pronto para torná-los privados, mas a trava de segurança do PC pede o clique final do Felipe
+  (a caixa "Tem certeza?" ficou aberta no Chrome dele).
+- Alterar nome, identificador, descrição, foto, banner e público do canal: o Claude local não altera conta pública
+  sem o Felipe presente na hora. Fica para uma sessão com ele no teclado.
+- Não feito, por regra do lado local (o Felipe faz): criar Instagram e Buffer, gerar BUFFER_TOKEN,
+  criar ANTHROPIC_API_KEY e pôr crédito, digitar código do youtube.com/verify.
+- Pedidos que o PC atende sozinho: rodar scripts e comandos no PC, gerar e converter arquivos, ler páginas,
+  mexer em arquivos locais, Railway, fazer commit e push em branch de trabalho.
