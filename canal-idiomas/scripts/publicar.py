@@ -148,9 +148,32 @@ def subir_cloudinary(mp4: Path) -> str:
         return json.loads(r.read())["secure_url"]
 
 
+def subir_cloudinary_sem_segredo(mp4: Path) -> str:
+    """Upload com "upload preset" NÃO assinado: só nome da nuvem + nome do preset (nenhum segredo na sessão).
+    Variáveis: CLOUDINARY_CLOUD e CLOUDINARY_PRESET (preset unsigned, pasta capyfala, só vídeo)."""
+    campos = {"upload_preset": os.environ["CLOUDINARY_PRESET"], "public_id": mp4.stem}
+    limite = uuid.uuid4().hex
+    corpo = b""
+    for k, v in campos.items():
+        corpo += f"--{limite}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode()
+    corpo += (f"--{limite}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{mp4.name}\"\r\n"
+              "Content-Type: video/mp4\r\n\r\n").encode() + mp4.read_bytes() + f"\r\n--{limite}--\r\n".encode()
+    req = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{os.environ['CLOUDINARY_CLOUD']}/video/upload",
+                                 data=corpo, method="POST",
+                                 headers={"Content-Type": f"multipart/form-data; boundary={limite}"})
+    with urllib.request.urlopen(req, timeout=300) as r:
+        return json.loads(r.read())["secure_url"]
+
+
+def tem_hospedagem() -> bool:
+    return bool(os.environ.get("CLOUDINARY_URL") or (os.environ.get("CLOUDINARY_CLOUD") and os.environ.get("CLOUDINARY_PRESET")))
+
+
 def url_publica(mp4: Path, url_base: str | None) -> str | None:
     if url_base:
         return url_base.rstrip("/") + "/" + mp4.name
+    if os.environ.get("CLOUDINARY_CLOUD") and os.environ.get("CLOUDINARY_PRESET"):
+        return subir_cloudinary_sem_segredo(mp4)
     if os.environ.get("CLOUDINARY_URL"):
         return subir_cloudinary(mp4)
     return None
@@ -254,8 +277,8 @@ def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
             motivo.append(f"canal {p['rede']} não conectado/listado (rode --listar)")
         if due <= dt.datetime.now(dt.timezone.utc):
             motivo.append("horário já passou")
-        if not os.environ.get("CLOUDINARY_URL") and not url_base:
-            motivo.append("sem hospedagem pública do vídeo (CLOUDINARY_URL ou --url-base)")
+        if not tem_hospedagem() and not url_base:
+            motivo.append("sem hospedagem pública do vídeo (CLOUDINARY_CLOUD + CLOUDINARY_PRESET, ou --url-base)")
         entrada = {"input": {"channelId": cid or "?", "text": t["texto"], "schedulingType": "automatic",
                              "mode": "customScheduled", "dueAt": due.isoformat().replace("+00:00", "Z"),
                              "aiAssisted": True, "metadata": metadata(p["rede"], t),
