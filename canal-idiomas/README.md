@@ -7,13 +7,15 @@ narração automática PT+EN, legenda palavra a palavra e quiz com contagem regr
 ```bash
 scripts/setup.sh                                   # uma vez
 scripts/make.sh episodes/001-looking-forward.json  # gera out/001-looking-forward.mp4
+export ANTHROPIC_API_KEY=...                       # uma vez
+scripts/diario.sh                                  # radar -> roteiro -> vídeo do dia
 ```
 
 ## Pipeline (meta: zero trabalho manual)
 | Etapa | Status | Como |
 |---|---|---|
-| 1. Radar de tendências (hype local + dúvidas de inglês) | a fazer | Google Trends + autocomplete YouTube/TikTok |
-| 2. Roteiro do episódio (JSON) | a fazer | Claude API gera + 2ª passada de revisão de inglês |
+| 1. Radar de tendências (hype local + dúvidas de inglês) | **pronto** | `scripts/radar.py` — Google Trends RSS + autocomplete/busca YouTube |
+| 2. Roteiro do episódio (JSON) | **pronto** (falta chave API) | `scripts/roteirista.py` — Claude gera + 2ª passada professor nativo |
 | 3. Narração | **pronto** | Piper TTS local (grátis). Upgrade opcional: ElevenLabs |
 | 4. Vídeo + legenda + mascote | **pronto** | Remotion (`src/Episode.tsx`) |
 | 5. Postagem automática | a fazer | YouTube Data API + TikTok Content Posting API |
