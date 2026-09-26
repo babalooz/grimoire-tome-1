@@ -10,7 +10,11 @@ Monólogo interno (`mode: "pensamento"`) acelera a voz (regra 2 do mundo).
 Uso: .venv/bin/python scripts/tts.py episodes/<id>.json
 Saída (formato quiz, `scenes`): public/audio/<id>/<n>.wav (+ <n>_reveal.wav) + timings.json
 Saída (formato sitcom, `beats`): public/audio/<id>/b<n>.wav (1 por fala) + timings.json
+Saída (formato lição, `format: "licao"`): public/audio/<id>/l<hash>.wav (1 por fala única) + timings.json
+  = {chave: {audio, duration}}, chave = line_key() (mesma conta de src/lesson/timeline.ts: lineKey).
+  Velocidades mais calmas (feedback do piloto: "muito rápido"): Capi PT 1.0 · EN 0.9; `speed` na fala sobrescreve.
 """
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -32,6 +36,15 @@ VOICES = {
     ("narrador", "pt"): ("pm_alex", 1.05, 1.0),
     ("narrador", "en"): ("am_michael", 1.0, 1.0),
 }
+# Formato lição: fala natural, sem pressa (sobrescreve só a velocidade de VOICES).
+LICAO_SPEED = {
+    ("capi", "pt"): 1.0,
+    ("capi", "en"): 0.9,
+    ("hank", "pt"): 0.92,
+    ("hank", "en"): 0.92,
+    ("leo", "pt"): 0.86,
+    ("leo", "en"): 0.8,
+}
 THOUGHT_SPEED = 1.12  # pensamento acelera
 GAP_SECONDS = 0.12  # pausa entre falas da mesma cena (manual de retenção: ≤ 0,12 s)
 SR = 24000
@@ -39,11 +52,13 @@ SR = 24000
 _kokoro = None
 
 
-def synth(text: str, lang: str, speaker: str = "capi", mode: str = "fala") -> tuple[np.ndarray, int]:
+def synth(text: str, lang: str, speaker: str = "capi", mode: str = "fala", speed_override: float | None = None) -> tuple[np.ndarray, int]:
     global _kokoro
     _kokoro = _kokoro or Kokoro(str(ROOT / "voices/kokoro-v1.0.onnx"), str(ROOT / "voices/voices-v1.0.bin"))
     voice, speed, gain = VOICES.get((speaker, lang), VOICES[("capi", lang)])
-    if mode == "pensamento":
+    if speed_override is not None:
+        speed = speed_override
+    elif mode == "pensamento":
         speed *= THOUGHT_SPEED
     audio, sr = _kokoro.create(text, voice=voice, speed=speed, lang=LANG_CODE[lang])
     return (audio * gain).astype(audio.dtype), sr
@@ -73,11 +88,60 @@ def render_beats(beats: list, out_dir: Path) -> list:
     return timings
 
 
+def _num(v) -> str:
+    """Número como o JavaScript imprime (1.0 -> "1", 0.7 -> "0.7")."""
+    return str(int(v)) if float(v).is_integer() else repr(float(v))
+
+
+def line_key(line: dict) -> str:
+    speed = "" if line.get("speed") is None else _num(line["speed"])
+    return "|".join([line.get("speaker", "capi"), line["lang"], line.get("mode", "fala"), speed, line["text"]])
+
+
+def iter_lines(node):
+    """Toda fala do episódio-lição: qualquer objeto com `text` + `lang` (cena, exercícios, volta)."""
+    if isinstance(node, dict):
+        if "text" in node and "lang" in node:
+            yield node
+        for v in node.values():
+            yield from iter_lines(v)
+    elif isinstance(node, list):
+        for v in node:
+            yield from iter_lines(v)
+
+
+def render_licao(episode: dict, out_dir: Path) -> dict:
+    """Formato lição: 1 .wav por fala única (falas repetidas reaproveitam o mesmo áudio)."""
+    timings = {}
+    for line in iter_lines({k: episode[k] for k in ("cena", "licao", "volta") if k in episode}):
+        key = line_key(line)
+        if key in timings:
+            continue
+        speaker, lang, mode = line.get("speaker", "capi"), line["lang"], line.get("mode", "fala")
+        speed = line.get("speed")
+        if speed is None:
+            speed = LICAO_SPEED.get((speaker, lang))
+            if speed is not None and mode == "pensamento":
+                speed *= 1.05  # monólogo interno um pouco mais rápido, sem correria
+        audio, sr = synth(line["text"], lang, speaker, mode, speed)
+        audio = np.trim_zeros(audio, "b") if len(audio) else audio
+        name = "l" + hashlib.md5(key.encode()).hexdigest()[:10]
+        sf.write(out_dir / f"{name}.wav", audio, sr)
+        timings[key] = {"audio": f"audio/{out_dir.name}/{name}.wav", "duration": len(audio) / sr}
+    return timings
+
+
 def main(episode_path: str) -> None:
     episode = json.loads(Path(episode_path).read_text())
     out_dir = ROOT / "public/audio" / episode["id"]
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    if episode.get("format") == "licao":
+        timings = render_licao(episode, out_dir)
+        (out_dir / "timings.json").write_text(json.dumps(timings, ensure_ascii=False, indent=2))
+        total = sum(t["duration"] for t in timings.values())
+        print(f"ok: {len(timings)} falas únicas, {total:.1f}s de fala -> {out_dir}")
+        return
     if "beats" in episode:
         timings = render_beats(episode["beats"], out_dir)
     else:

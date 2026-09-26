@@ -5,6 +5,7 @@ import { CapiSheet } from "./CapiSheet";
 import { Avatar, Banner } from "./Brand";
 import { CastSheet } from "./CastSheet";
 import { Sitcom, SitcomProps, sitcomFrames } from "./Sitcom";
+import { Licao, LicaoProps, licaoFrames } from "./Licao";
 
 const FPS = 30;
 
@@ -39,6 +40,17 @@ const Root: React.FC = () =>
     durationInFrames: 1,
     defaultProps: { day: 1, notebook: 1, chunk: { en: "", pt: "" }, beats: [], timings: [] },
     calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, sitcomFrames(props, FPS)) }),
+  }),
+  // "LIÇÃO EM VÍDEO": cena no café → mini-lição com exercícios de app → volta à cena. Props = episódio + timings (scripts/make-licao.sh).
+  React.createElement(Composition<any, LicaoProps>, {
+    id: "Licao",
+    component: Licao,
+    fps: FPS,
+    width: 1080,
+    height: 1920,
+    durationInFrames: 1,
+    defaultProps: { day: 1, notebook: 1, chunk: { en: "", pt: "" }, cena: { passos: [] }, licao: { exercicios: [] }, volta: { passos: [] }, timings: {} },
+    calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, licaoFrames(props, FPS)) }),
   }));
 
 registerRoot(Root);

@@ -60,19 +60,19 @@ export const sitcomFrames = (p: SitcomProps, fps: number) => {
 };
 
 // ---- palco (coordenadas do mundo 1080x1920) ----
-type CharId = "capi" | "hank" | "leo";
-const STAGE: Record<CharId, { left: number; top: number; size: number; head: [number, number]; headTop: number; zoom: number }> = {
+export type CharId = "capi" | "hank" | "leo";
+export const STAGE: Record<CharId, { left: number; top: number; size: number; head: [number, number]; headTop: number; zoom: number }> = {
   capi: { left: 20, top: 900, size: 520, head: [293, 1177], headTop: 1034, zoom: 1.3 },
   hank: { left: 480, top: 560, size: 560, head: [680, 800], headTop: 626, zoom: 1.3 },
   leo: { left: 276, top: 751, size: 340, head: [440, 890], headTop: 765, zoom: 1.6 },
 };
-type Cam = { cx: number; cy: number; z: number };
-const TWO: Cam = { cx: 540, cy: 960, z: 1 };
-const clampCam = (c: Cam): Cam => {
+export type Cam = { cx: number; cy: number; z: number };
+export const TWO: Cam = { cx: 540, cy: 960, z: 1 };
+export const clampCam = (c: Cam): Cam => {
   const hw = 540 / c.z, hh = 960 / c.z;
   return { z: c.z, cx: Math.min(1080 - hw, Math.max(hw, c.cx)), cy: Math.min(1920 - hh, Math.max(hh, c.cy)) };
 };
-const closeOn = (id: CharId): Cam => {
+export const closeOn = (id: CharId): Cam => {
   const st = STAGE[id];
   return clampCam({ cx: st.head[0], cy: st.head[1] - (id === "capi" ? 150 : 90), z: st.zoom });
 };
@@ -82,28 +82,28 @@ const shotFor = (b: Beat): Cam => {
   if (b.shot === "two" || b.speaker === "narrador") return TWO;
   return closeOn(b.speaker as CharId);
 };
-const toScreen = (cam: Cam, x: number, y: number) => [540 + (x - cam.cx) * cam.z, 960 + (y - cam.cy) * cam.z];
+export const toScreen = (cam: Cam, x: number, y: number) => [540 + (x - cam.cx) * cam.z, 960 + (y - cam.cy) * cam.z];
 
-const CAPI_MOOD: Record<Emotion, Mood> = {
+export const CAPI_MOOD: Record<Emotion, Mood> = {
   neutral: "zen", zen: "zen", bored: "zen", angry: "fail", eyebrow: "thinking", surprised: "shock",
   panic: "sweat", happy: "happy", smile: "happy", whisper: "thinking",
 };
 
-const Sfx: React.FC<{ at: number; name: string; vol?: number }> = ({ at, name, vol = 0.5 }) => (
+export const Sfx: React.FC<{ at: number; name: string; vol?: number }> = ({ at, name, vol = 0.5 }) => (
   <Sequence from={Math.max(0, Math.round(at))} durationInFrames={60}>
     <Audio src={staticFile(`sfx/${name}.ogg`)} volume={vol} />
   </Sequence>
 );
 
 // ---- legenda em balão (blocos de 3 palavras, dentro da zona segura) ----
-const captionChunk = (text: string, t: number, dur: number) => {
+export const captionChunk = (text: string, t: number, dur: number) => {
   const words = text.split(/\s+/);
   const active = Math.max(0, Math.min(words.length - 1, Math.floor((t / Math.max(0.1, dur)) * words.length)));
   const start = Math.floor(active / 3) * 3;
   return { words: words.slice(start, start + 3), active: active - start };
 };
 
-const Balloon: React.FC<{
+export const Balloon: React.FC<{
   anchor: [number, number]; words: string[]; active: number; thought: boolean; lang: "pt" | "en"; pop: number;
 }> = ({ anchor, words, active, thought, lang, pop }) => {
   const fontSize = 64;
@@ -161,7 +161,7 @@ const Balloon: React.FC<{
 };
 
 // ---- elementos de interface ----
-const DayBadge: React.FC<{ day: number }> = ({ day }) => (
+export const DayBadge: React.FC<{ day: number }> = ({ day }) => (
   <div style={{
     position: "absolute", left: SAFE.x0, top: SAFE.y0, display: "flex", alignItems: "center", gap: 12,
     background: C.amarelo, border: `6px solid ${C.tinta}`, borderRadius: 40, padding: "8px 24px 8px 12px", boxShadow: `0 6px 0 ${C.tinta}`,
@@ -174,7 +174,7 @@ const DayBadge: React.FC<{ day: number }> = ({ day }) => (
   </div>
 );
 
-const TimerRing: React.FC<{ remaining: number; total: number }> = ({ remaining, total }) => {
+export const TimerRing: React.FC<{ remaining: number; total: number }> = ({ remaining, total }) => {
   const r = 50, circ = 2 * Math.PI * r;
   return (
     <svg width={136} height={136} viewBox="0 0 136 136">
@@ -226,7 +226,7 @@ const QuizPanel: React.FC<{
   );
 };
 
-const Particles: React.FC<{ since: number; x: number; y: number }> = ({ since, x, y }) => {
+export const Particles: React.FC<{ since: number; x: number; y: number }> = ({ since, x, y }) => {
   if (since < 0 || since > 22) return null;
   return (
     <>
@@ -242,7 +242,7 @@ const Particles: React.FC<{ since: number; x: number; y: number }> = ({ since, x
 };
 
 // Cartão final colecionável: "Caderninho da Capi #00N" com o chunk do dia.
-const Notebook: React.FC<{ n: number; chunk: SitcomProps["chunk"]; since: number }> = ({ n, chunk, since }) => {
+export const Notebook: React.FC<{ n: number; chunk: SitcomProps["chunk"]; since: number }> = ({ n, chunk, since }) => {
   const { fps } = useVideoConfig();
   const s = spring({ frame: since, fps, config: { damping: 13 } });
   const st = spring({ frame: since - 10, fps, config: { damping: 8, mass: 0.6 } });
