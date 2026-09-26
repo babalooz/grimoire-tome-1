@@ -18,3 +18,12 @@
 - Arquivos: perfil-800.png (66.830 bytes), banner-youtube-2560x1440.png (144.191 bytes). Pasta aberta no Explorador.
 - YouTube: o PC não consegue editar nome, @ ou imagens do canal (a trava de segurança barra alteração de conta).
   O Felipe faz: Studio → Personalização → Perfil → Nome CapyFala, @acapyfala, foto e banner desta pasta → Publicar.
+
+## P-20260926-2330 · aguardando Felipe (1 clique)
+- Evento achado: 81 ocorrências, de 12/10 a 31/12, agenda CapyFala. A trava de segurança do PC barrou a exclusão;
+  a janela "Excluir evento recorrente" ficou aberta no Chrome do Felipe (ele marca "Todos os eventos" → OK).
+- ATENÇÃO, antes de tirar o humano do TikTok: a descrição do próprio evento dizia "apertar publicar (exigência do TikTok
+  + prova de autoria humana)". CONFIRME na documentação oficial se a Content Posting API do TikTok
+  (e o Buffer para conta pessoal) publica direto ou só manda rascunho/notificação para o app, e se app não auditado
+  só posta como privado (SELF_ONLY). Se o TikTok exigir o toque humano, a fábrica é autônoma no YouTube, e no TikTok
+  o Felipe dá 1 toque no celular (o vídeo chega pronto). Traga a resposta com a URL da documentação e a data.
