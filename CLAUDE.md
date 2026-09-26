@@ -16,8 +16,13 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 ## Estado atual (set/2026)
 - `index.html` + `guard.js` = Grimoire Tome (produto Gumroad) — **abandonado**. Não investir tempo nele.
 - Crédito promocional Claude Code: US$250, data-limite ~05/11/2026. Uso excedente desligado — manter assim.
-- Direção escolhida pela pesquisa: **agência de automação IA/WhatsApp para PMEs BR**
-  (repo público como vitrine → serviço pago). Detalhes em `docs/pesquisas/`.
+- Direção ATUAL (escolhida pelo Felipe): **canais de vídeo curto (TikTok/Shorts/Reels) de idiomas**, estilo quiz
+  viciante com mascote original + assuntos do hype local, produção 100% automatizada. Código em `canal-idiomas/`.
+  Felipe rejeitou: agência WhatsApp, vender skills, add-ons/extensões (retorno pequeno/pouco original).
+  Mascote atual (SVG no código) e formato v1/v2 foram reprovados — refazer com base em referências + pesquisa de campeões.
+- Pesquisas em `docs/pesquisas/`. Pontos-chave de canais: Shorts pagam 3–14% do vídeo longo; YPP endurece em 01/02/2027
+  (entrar antes); TikTok CRP exige vídeo ≥1 min; evitar "conteúdo inautêntico" e classificação "feito para crianças";
+  brecha forte = português para hispanofalantes/anglófonos.
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
