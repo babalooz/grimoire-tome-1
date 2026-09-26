@@ -1,17 +1,20 @@
 """Publicador CapyFala via Buffer API (GraphQL, https://api.buffer.com). Só biblioteca padrão.
 
-Chave: variável de ambiente BUFFER_TOKEN (ou BUFFER_API_KEY). Nunca é impressa, logada nem commitada.
+Chave: "Credencial de API" do ambiente Default (nome "Buffer", Bearer, site api.buffer.com). O proxy do ambiente injeta
+o header Authorization sozinho: o script NÃO lê nem vê a chave. (Fallback local: BUFFER_TOKEN/BUFFER_API_KEY, se existir.)
+Teste de acesso = consulta de leitura (listar canais) responde 200 e contém TikTok "acapyfala" e YouTube "CapyFala".
 
 Uso (a partir de canal-idiomas/):
   python3 scripts/publicar.py --listar
-      Só leitura: lista organizações e canais e grava os IDs em config/buffer-canais.json. Teste da chave.
+      Só leitura: lista organizações e canais, grava os IDs em config/buffer-canais.json e diz se o acesso está OK
+      (sai com código 0 = OK; 1 = sem acesso ou canais faltando). É o teste que as rotinas usam.
   python3 scripts/publicar.py --data 2026-10-12 --dry-run
       Monta os posts do dia a partir de config/grade.json e mostra o que seria enviado. Não envia nada.
   python3 scripts/publicar.py --data 2026-10-12
       Agenda os posts do dia (mode=customScheduled, schedulingType=automatic, horário da grade em BRT).
 
 Um post só é enviado se TUDO for verdade (docs/plano-de-acao.md §4):
-  data >= 2026-10-12 · BUFFER_TOKEN existe · MP4 existe · portão aprovou (out/<arquivo>.portao.json com "aprovado": true)
+  data >= 2026-10-12 · acesso ao Buffer OK (--listar) · MP4 existe · portão aprovou (out/<arquivo>.portao.json com "aprovado": true)
   · URL pública do vídeo (Cloudinary via CLOUDINARY_URL, ou --url-base) · canal da rede conectado no Buffer.
 Se algo faltar, o post vai para fila/<data>_<rede>_<faixa>_<episodio>.json com o motivo. Arquivo FREIO existe = não faz nada.
 Enviado com sucesso -> linha nova em publicados.csv.
@@ -43,19 +46,29 @@ AI_LABEL = {"tiktok": True, "youtube": False, "instagram": False}
 
 
 # ---------------------------------------------------------------- API
+ESPERADOS = {"tiktok": "acapyfala", "youtube": "capyfala"}  # canais que precisam aparecer no teste de acesso
+
+
+class SemAcesso(Exception):
+    pass
+
+
 def token() -> str | None:
+    """Só para rodar fora da nuvem. Na nuvem a credencial é injetada pelo proxy e isto é None."""
     return os.environ.get("BUFFER_TOKEN") or os.environ.get("BUFFER_API_KEY") or None
 
 
 def gql(query: str, variables: dict | None = None) -> dict:
     body = json.dumps({"query": query, "variables": variables or {}}).encode()
-    req = urllib.request.Request(API, data=body, method="POST", headers={
-        "Content-Type": "application/json", "Authorization": f"Bearer {token()}"})
+    headers = {"Content-Type": "application/json"}
+    if token():
+        headers["Authorization"] = f"Bearer {token()}"
+    req = urllib.request.Request(API, data=body, method="POST", headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=60) as r:
             data = json.loads(r.read())
     except urllib.error.HTTPError as e:  # sem cabeçalhos no erro: a chave nunca aparece
-        raise SystemExit(f"Buffer API HTTP {e.code}: {e.read()[:300].decode(errors='replace')}")
+        raise SemAcesso(f"Buffer API HTTP {e.code}: {e.read()[:200].decode(errors='replace')}")
     if data.get("errors"):
         raise SystemExit(f"Buffer API erro: {json.dumps(data['errors'], ensure_ascii=False)[:500]}")
     return data["data"]
@@ -87,6 +100,19 @@ def listar() -> dict:
     CANAIS.write_text(json.dumps(out, ensure_ascii=False, indent=2))
     print(f"ok: {CANAIS.relative_to(ROOT)}")
     return out
+
+
+def acesso_ok() -> tuple[bool, str]:
+    """Teste das rotinas: leitura em api.buffer.com responde e lista TikTok acapyfala + YouTube CapyFala."""
+    try:
+        d = listar()
+    except SemAcesso as e:
+        return False, str(e)
+    canais = [c for o in d["organizacoes"] for c in o["canais"]]
+    faltam = [f"{srv} {nome}" for srv, nome in ESPERADOS.items()
+              if not any(c["service"] == srv and nome in f"{c.get('name', '')} {c.get('displayName', '')}".lower()
+                         for c in canais)]
+    return (not faltam), ("acesso OK" if not faltam else "faltam canais: " + ", ".join(faltam))
 
 
 def canal_id(rede: str) -> str | None:
@@ -200,6 +226,7 @@ def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
         return 0
     eps = episodios()
     enviados = 0
+    acesso, acesso_msg = acesso_ok()
     for p in grade[dia.isoformat()]["posts"]:
         if p["faixa"] == "longo":
             para_fila(dia.isoformat(), p, ["vídeo longo: sem render nem publicador ainda"], {})
@@ -215,8 +242,8 @@ def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
         due = dt.datetime(dia.year, dia.month, dia.day, hh, mm, tzinfo=BRT).astimezone(dt.timezone.utc)
         if dia < INICIO:
             motivo.append(f"antes de {INICIO}")
-        if not token():
-            motivo.append("BUFFER_TOKEN ausente")
+        if not acesso:
+            motivo.append(f"sem acesso ao Buffer ({acesso_msg})")
         if not mp4.exists():
             motivo.append(f"MP4 não renderizado ({mp4.relative_to(ROOT)})")
         portao = mp4.with_suffix(".portao.json")
@@ -264,10 +291,9 @@ def main() -> None:
         print("FREIO ativo (canal-idiomas/FREIO existe): nada publicado.")
         return
     if args.listar:
-        if not token():
-            sys.exit("BUFFER_TOKEN não definido no ambiente. Crie a chave no Buffer e salve nas variáveis do ambiente.")
-        listar()
-        return
+        ok, msg = acesso_ok()
+        print(("OK: " if ok else "FALHOU: ") + msg)
+        sys.exit(0 if ok else 1)
     dia = dt.date.fromisoformat(args.data) if args.data else dt.datetime.now(BRT).date()
     n = publicar_dia(dia, args.dry_run, args.url_base)
     if not args.dry_run:

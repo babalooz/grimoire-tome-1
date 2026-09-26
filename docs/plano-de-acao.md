@@ -128,8 +128,11 @@ Dia N do teste = T1 E0N (12/10 = E01 … 25/10 = E14). Depois de 25/10 a grade �
 | Freio | `canal-idiomas/FREIO` | existe = pausa |
 
 ## 4. Condição para publicar (rotina de produção)
-Publica só se **as 3** forem verdade: data ≥ **2026-10-12** · variável de ambiente **`BUFFER_TOKEN`** existe · o post
-passou no **portão** (§5.6). Qualquer uma falsa → grava em `canal-idiomas/fila/` com o motivo e segue.
+Publica só se **as 3** forem verdade: data ≥ **2026-10-12** · **acesso ao Buffer OK**: `python3 scripts/publicar.py --listar`
+sai com código 0 (a leitura GraphQL em `api.buffer.com` responde 200 e lista TikTok **acapyfala** e YouTube **CapyFala**) · o post
+passou no **portão** (§5.6).
+A chave do Buffer NÃO é variável de ambiente: é a "Credencial de API" **Buffer** do ambiente Default (Bearer, site
+`api.buffer.com`), injetada pelo proxy. Nenhuma rotina lê, imprime ou pede a chave. Qualquer uma falsa → grava em `canal-idiomas/fila/` com o motivo e segue.
 
 ## 5. Comandos exatos
 Container novo a cada rotina: rodar o setup antes de render/TTS. Todos a partir de `canal-idiomas/`.
@@ -142,7 +145,7 @@ Container novo a cada rotina: rodar o setup antes de render/TTS. Todos a partir 
 | 5.4b | Contexto da esquete (hype do dia) | `.venv/bin/python scripts/roteirista.py --contexto esquete` (mostra o hype escolhido) | ✅ EXISTE só a escolha; a geração da `abertura` da esquete ⛔ NÃO EXISTE AINDA |
 | 5.5 | Render do episódio (+ esquetes) | `bash scripts/make-licao.sh episodes/<ep>.json` → `out/<id>.mp4` (−14 LUFS) | 🔄 EM IMPLEMENTAÇÃO: tipos de exercício novos, selo "T1 E0N" e esquetes (`out/<id>-esquete-A.mp4`). Até terminar, NÃO renderizar os episódios novos |
 | 5.6 | Portão automático (código + juiz LLM ≥ 8) | `scripts/portao.py` | ⛔ NÃO EXISTE AINDA → tudo vai para a fila |
-| 5.7 | Publicar via Buffer (TikTok + YouTube conectados; Instagram ainda não) | teste da chave: `python3 scripts/publicar.py --listar` · simular: `python3 scripts/publicar.py --data AAAA-MM-DD --dry-run` · agendar: `python3 scripts/publicar.py --data AAAA-MM-DD` | ✅ EXISTE. Envia só com token + portão aprovado + MP4 + URL pública (`CLOUDINARY_URL`); faltando algo, grava em `fila/` com o motivo |
+| 5.7 | Publicar via Buffer (TikTok + YouTube conectados; Instagram ainda não) | teste de acesso: `python3 scripts/publicar.py --listar` (código 0 = OK) · simular: `python3 scripts/publicar.py --data AAAA-MM-DD --dry-run` · agendar: `python3 scripts/publicar.py --data AAAA-MM-DD` | ✅ EXISTE. Envia só com token + portão aprovado + MP4 + URL pública (`CLOUDINARY_URL`); faltando algo, grava em `fila/` com o motivo |
 | 5.8 | Registrar publicado | automático no `publicar.py` (append em `publicados.csv`) | ✅ EXISTE |
 | 5.9 | Métricas 72 h + freio | `scripts/metricas.py` | ⛔ NÃO EXISTE AINDA (precisa OAuth do YouTube Analytics) → rotina só registra "sem coletor" |
 

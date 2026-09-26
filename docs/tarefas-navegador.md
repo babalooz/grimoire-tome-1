@@ -39,7 +39,7 @@ Baixe do GitHub (branch main) se não estiverem no PC.
 ## 4. Buffer — buffer.com (plano Free)
 - [ ] Criar conta e conectar **YouTube (CapyFala), TikTok e Instagram**
 - [ ] Em Settings → API/Developers: gerar **token de acesso** e entregar ao Felipe para salvar nas variáveis do ambiente
-  do Claude Code na nuvem como `BUFFER_TOKEN` (não colar no chat)
+  do Claude Code como "Credencial de API" **Buffer** (Bearer, site api.buffer.com) no ambiente Default (não colar no chat)
 
 ## 5. Anthropic — console.anthropic.com
 - [ ] Criar chave de API "capyfala-roteirista", colocar ~US$10 de crédito
