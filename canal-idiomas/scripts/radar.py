@@ -15,6 +15,7 @@ Sem chave de API. Fontes (todas grátis):
   - Autocomplete Google/YouTube + busca do YouTube (demanda de aula e teste "vira aula?")
 
 Saída JSON (lida pelo roteirista): evento_do_dia, hype_seguro, duvidas_em_alta, descartados.
+Cada dúvida traz `infantil: true/false` (trava de conteúdo infantil); o roteirista do canal adulto ignora as `true`.
 Todo termo de tendência passa pelo filtro de segurança ANTES de sair; o bloqueado vai para
 "descartados" com o motivo e nunca chega ao roteirista.
 """
@@ -557,6 +558,31 @@ def demanda(log: list[str]) -> tuple[dict, list[dict]]:
     return pairs, desc
 
 
+# ---------------------------------------------------------------- trava de conteúdo infantil
+# Dúvida com cara de aula infantil (cores, animais, números...) empurra o roteiro para "feito para crianças"
+# (made for kids) -> no canal adulto isso derruba comentários/recomendação. Marcamos `infantil: true` e o
+# roteirista ignora. Fica aqui (e não no BLOQUEIO) porque é tema válido para o futuro CapyKids.
+INFANTIL = re.compile(r"\b(?:" + "|".join([
+    r"cores?", r"colou?rs?", r"animais", r"animal", r"animals?", r"bichos?", r"numeros?", r"numbers?",
+    r"contar de", r"de 1 a (?:10|20|100)", r"alfabeto", r"abc", r"alphabet", r"letras do alfabeto",
+    r"frutas?", r"fruits?", r"legumes", r"partes do corpo", r"corpo humano", r"body parts?",
+    r"formas geometricas", r"shapes", r"brinquedos?", r"desenhos?", r"musica infantil",
+    r"para (?:as )?criancas", r"pra criancas", r"criancas?", r"infantil", r"infantis", r"kids?", r"children",
+    r"nursery", r"toddlers?", r"baby", r"bebes?",
+]) + r")\b")
+
+
+def cara_de_infantil(*textos: str) -> bool:
+    """True se a busca (ou o título do vídeo-topo dela) tem cara de conteúdo infantil."""
+    return any(INFANTIL.search(norm(t or "")) for t in textos)
+
+
+def marcar_infantil(duvidas: list[dict]) -> list[dict]:
+    for r in duvidas:
+        r["infantil"] = cara_de_infantil(r.get("query", ""), (r.get("top") or {}).get("title", ""))
+    return duvidas
+
+
 # ---------------------------------------------------------------- saída
 def markdown(data: dict) -> str:
     ev = data["evento_do_dia"]
@@ -593,10 +619,12 @@ def markdown(data: dict) -> str:
     if not data["duvidas_em_alta"]:
         L.append("_não rodou (--so-hype) ou sem amostra válida_")
     else:
-        L += ["| # | Busca | Score | Mediana views | Topo >1 ano | Recentes | Vídeos-aula válidos |", "|---|---|---|---|---|---|---|"]
+        L += ["Infantil = cara de conteúdo infantil (cores, animais, números...): o roteirista do canal adulto ignora.", "",
+              "| # | Busca | Score | Mediana views | Topo >1 ano | Recentes | Vídeos-aula válidos | Infantil |",
+              "|---|---|---|---|---|---|---|---|"]
         for i, r in enumerate(data["duvidas_em_alta"], 1):
             L.append(f"| {i} | {r['query']} | {r['score']} | {r.get('median_views', 0):,} | {r.get('stale_pct', 0)}% | "
-                     f"{r.get('recent', 0)} | {r.get('validos', 0)} |")
+                     f"{r.get('recent', 0)} | {r.get('validos', 0)} | {'SIM (ignorada)' if r.get('infantil') else 'não'} |")
     L.append("")
     for pair, rows in data.get("demanda", {}).items():
         if pair == "en-para-brasileiros":
@@ -621,7 +649,7 @@ def main() -> None:
 
     if args.testar_filtro:
         for t in args.testar_filtro:
-            print(f"{t!r:40} -> {motivo_bloqueio(t) or 'SEGURO'}")
+            print(f"{t!r:40} -> {motivo_bloqueio(t) or 'SEGURO'}{'  [infantil]' if cara_de_infantil(t) else ''}")
         return
 
     hoje = dt.date.fromisoformat(args.data) if args.data else dt.date.today()
@@ -629,7 +657,7 @@ def main() -> None:
     ev = calendario(hoje)
     top, desc, coletados = hype(hoje, ev["block_hype"], log)
     pairs, desc_dem = ({}, []) if args.so_hype else demanda(log)
-    duvidas = [r for r in pairs.get("en-para-brasileiros", []) if r["score"] > 0][:10]
+    duvidas = marcar_infantil([r for r in pairs.get("en-para-brasileiros", []) if r["score"] > 0][:10])
 
     data = {
         "version": 2, "date": hoje.isoformat(),
