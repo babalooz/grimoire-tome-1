@@ -1,0 +1,52 @@
+{
+  "id": "002-desafio-5-niveis",
+  "format": "desafio-niveis",
+  "triggers": ["desafio/ego", "escassez (só 3%)", "barra de progresso", "loop aberto (nível 5)", "isca de comentário", "replay"],
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Só 3% dos brasileiros chegam no nível 5 😳",
+      "speech": [{ "lang": "pt", "text": "Só três por cento dos brasileiros chegam no nível cinco. Bora ver você." }]
+    },
+    {
+      "type": "question", "level": 1,
+      "title": "Como se diz: \"Eu tenho 20 anos\"?",
+      "options": ["I have 20 years", "I am 20 years old"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Nível um. Como se diz: eu tenho vinte anos?" }],
+      "revealSpeech": [{ "lang": "en", "text": "I am twenty years old." }]
+    },
+    {
+      "type": "question", "level": 2,
+      "title": "\"Pretend\" significa...",
+      "options": ["Fingir", "Pretender"], "answer": 0, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Nível dois. Pretend significa..." }],
+      "revealSpeech": [{ "lang": "pt", "text": "Fingir! Pegadinha clássica." }]
+    },
+    {
+      "type": "question", "level": 3,
+      "title": "Qual está certo?",
+      "options": ["I'm agree", "I agree"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Nível três. Qual está certo?" }],
+      "revealSpeech": [{ "lang": "en", "text": "I agree." }]
+    },
+    {
+      "type": "question", "level": 4,
+      "title": "\"Actually\" significa...",
+      "options": ["Na verdade", "Atualmente"], "answer": 0, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Nível quatro. Actually significa..." }],
+      "revealSpeech": [{ "lang": "pt", "text": "Na verdade! Atualmente é currently." }]
+    },
+    {
+      "type": "question", "level": 5,
+      "title": "If I ___ rich, I would travel.",
+      "options": ["am", "were"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Nível cinco, o mais difícil. Complete a frase." }],
+      "revealSpeech": [{ "lang": "en", "text": "If I were rich, I would travel." }]
+    },
+    {
+      "type": "cta",
+      "title": "Quantas você acertou? Comenta 👇",
+      "speech": [{ "lang": "pt", "text": "Quantas você acertou? Comenta aí. Errou a primeira? Volta e tenta de novo." }]
+    }
+  ]
+}
