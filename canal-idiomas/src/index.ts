@@ -6,6 +6,7 @@ import { Avatar, Banner } from "./Brand";
 import { CastSheet } from "./CastSheet";
 import { Sitcom, SitcomProps, sitcomFrames } from "./Sitcom";
 import { Licao, LicaoProps, licaoFrames } from "./Licao";
+import { LicaoEsquete, LicaoEsqueteProps, licaoEsqueteFrames } from "./LicaoEsquete";
 
 const FPS = 30;
 
@@ -51,6 +52,17 @@ const Root: React.FC = () =>
     durationInFrames: 1,
     defaultProps: { day: 1, notebook: 1, chunk: { en: "", pt: "" }, cena: { passos: [] }, licao: { exercicios: [] }, volta: { passos: [] }, timings: {} },
     calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, licaoFrames(props, FPS)) }),
+  }),
+  // Faixa ESQUETE (5–20 s): corte do mesmo episódio + gancho no frame 0 + card "aula completa no EP N". Props = as do Licao + `esquete`.
+  React.createElement(Composition<any, LicaoEsqueteProps>, {
+    id: "LicaoEsquete",
+    component: LicaoEsquete,
+    fps: FPS,
+    width: 1080,
+    height: 1920,
+    durationInFrames: 1,
+    defaultProps: { day: 1, notebook: 1, chunk: { en: "", pt: "" }, cena: { passos: [] }, licao: { exercicios: [] }, volta: { passos: [] }, timings: {}, esquete: "A" },
+    calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, licaoEsqueteFrames(props, FPS)) }),
   }));
 
 registerRoot(Root);

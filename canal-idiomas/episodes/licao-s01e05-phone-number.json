@@ -396,5 +396,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e06-are-you-tired"
+  "nextEpisodeId": "licao-s01e06-are-you-tired",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Three ou tree? Cuidado",
+      "cta": "aula completa no EP 05"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.2",
+      "gancho": "Telefone em inglês: zero vira 'oh'",
+      "cta": "aula completa no EP 05"
+    }
+  ]
 }

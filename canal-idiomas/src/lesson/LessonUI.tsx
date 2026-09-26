@@ -347,11 +347,11 @@ export const MicPanel: React.FC<{ frame: number; fps: number; since: number; mic
 };
 
 // Faixa de lição completa.
-export const CompleteBanner: React.FC<{ since: number; fps: number; xp: number }> = ({ since, fps, xp }) => {
+export const CompleteBanner: React.FC<{ since: number; fps: number; xp: number; top?: number }> = ({ since, fps, xp, top = 820 }) => {
   if (since < 0) return null;
   const s = spring({ frame: since, fps, config: { damping: 10 } });
   return (
-    <div style={{ position: "absolute", left: SAFE.x0 + 40, width: W - 80, top: 820, transform: `scale(${s}) rotate(-3deg)`, textAlign: "center" }}>
+    <div style={{ position: "absolute", left: SAFE.x0 + 40, width: W - 80, top, transform: `scale(${s}) rotate(-3deg)`, textAlign: "center" }}>
       <div style={{ display: "inline-block", background: C.amarelo, border: `8px solid ${C.tinta}`, borderRadius: 30, boxShadow: `0 10px 0 ${C.tinta}`, padding: "10px 30px", fontFamily: TITLE, fontSize: 60, color: C.tinta }}>
         LIÇÃO COMPLETA! <span style={{ color: C.roxo }}>{xp} XP</span>
       </div>

@@ -393,5 +393,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e02-please-thank-you"
+  "nextEpisodeId": "licao-s01e02-please-thank-you",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.1",
+      "ate": "cena.3",
+      "gancho": "O gringo te deu bom dia",
+      "cta": "aula completa no EP 01"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.4",
+      "gancho": "Do oi ao tchau, em inglês",
+      "cta": "aula completa no EP 01"
+    }
+  ]
 }

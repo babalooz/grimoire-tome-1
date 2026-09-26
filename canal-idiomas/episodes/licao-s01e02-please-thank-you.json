@@ -385,5 +385,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e03-im-capy"
+  "nextEpisodeId": "licao-s01e03-im-capy",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Nunca responda 'nothing' pro gringo",
+      "cta": "aula completa no EP 02"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.3",
+      "gancho": "O 'de nada' certo em inglês",
+      "cta": "aula completa no EP 02"
+    }
+  ]
 }

@@ -416,5 +416,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e10-isnt-open"
+  "nextEpisodeId": "licao-s01e10-isnt-open",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.1",
+      "ate": "cena.3",
+      "gancho": "'I have hungry' não existe",
+      "cta": "aula completa no EP 09"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.3",
+      "gancho": "Com fome no trabalho? Fala assim",
+      "cta": "aula completa no EP 09"
+    }
+  ]
 }

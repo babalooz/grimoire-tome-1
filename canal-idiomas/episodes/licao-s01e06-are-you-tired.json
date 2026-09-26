@@ -394,5 +394,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e07-where-from"
+  "nextEpisodeId": "licao-s01e07-where-from",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Nunca termine a frase com 'I'm'",
+      "cta": "aula completa no EP 06"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.2",
+      "gancho": "O chefe também está cansado",
+      "cta": "aula completa no EP 06"
+    }
+  ]
 }

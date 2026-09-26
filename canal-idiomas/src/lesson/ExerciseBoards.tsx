@@ -219,7 +219,7 @@ export const GapSentence: React.FC<{ frase: string; lacuna: string; answer: stri
         display: "inline-block", minWidth: Math.round(answer.length * fs * 0.5) + 30, padding: "0 12px", margin: "0 4px", borderRadius: 16, textAlign: "center",
         background: revealT >= 0 ? C.certo : "rgba(140,108,255,0.14)", border: `5px ${revealT >= 0 ? "solid" : "dashed"} ${revealT >= 0 ? C.tinta : C.lilas}`,
         color: revealT >= 0 ? "#fff" : C.lilas, transform: `scale(${revealT >= 0 ? 0.85 + 0.15 * k : 1})`, opacity: revealT >= 0 ? 1 : blink,
-        ...(revealT >= 0 ? { WebkitTextStroke: `2px ${C.tinta}` } : {}),
+        ...(revealT >= 0 ? { WebkitTextStroke: `1.5px ${C.tinta}` } : {}),
       }}>{revealT >= 0 ? answer : "?"}</span>
       {after}
     </div>
@@ -242,14 +242,14 @@ export const ReviewBoard: React.FC<{
   const puff = lastRev >= 0 && frame - lastRev < 10 ? Math.sin(((frame - lastRev) / 10) * Math.PI) : 0;
   const cheeks = Math.max(0.2, 1 - (nRev / n) * 0.8) + puff * 0.15;
   const bIn = spring({ frame: since, fps, config: { damping: 12 } });
-  const bx = 540, bw = 250;
+  const bx = 540, bw = 330;
   return (
     <>
-      <div style={{ position: "absolute", left: bx - bw / 2 - 90, top: 420, transform: `scale(${bIn})`, transformOrigin: "50% 100%" }}>
+      <div style={{ position: "absolute", left: bx - bw / 2 - 150, top: 388, transform: `scale(${bIn})`, transformOrigin: "50% 100%" }}>
         <Bolinha frame={frame} talking={false} emotion={puff > 0 ? "happy" : timerOn ? "neutral" : "smile"} size={bw} cheeks={cheeks} />
       </div>
       <div style={{
-        position: "absolute", left: bx + 40, top: 452, transform: `rotate(5deg) scale(${spring({ frame: since - 10, fps, config: { damping: 10 } })})`,
+        position: "absolute", left: bx + 60, top: 470, transform: `rotate(5deg) scale(${spring({ frame: since - 10, fps, config: { damping: 10 } })})`,
         fontFamily: TITLE, fontSize: 40, color: C.tinta, background: C.amarelo, border: `6px solid ${C.tinta}`, borderRadius: 20, boxShadow: `0 6px 0 ${C.tinta}`,
         padding: "4px 18px", lineHeight: 1.05, textAlign: "center",
       }}>O BOLINHA<br />GUARDOU!</div>

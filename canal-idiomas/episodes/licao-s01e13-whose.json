@@ -422,5 +422,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e14-is-there"
+  "nextEpisodeId": "licao-s01e14-is-there",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "'The phone of Lazy' não existe",
+      "cta": "aula completa no EP 13"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.4",
+      "gancho": "De quem é esse celular?",
+      "cta": "aula completa no EP 13"
+    }
+  ]
 }

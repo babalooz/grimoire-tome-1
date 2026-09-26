@@ -142,8 +142,8 @@ Container novo a cada rotina: rodar o setup antes de render/TTS. Todos a partir 
 | 5.4b | Contexto da esquete (hype do dia) | `.venv/bin/python scripts/roteirista.py --contexto esquete` (mostra o hype escolhido) | ✅ EXISTE só a escolha; a geração da `abertura` da esquete ⛔ NÃO EXISTE AINDA |
 | 5.5 | Render do episódio (+ esquetes) | `bash scripts/make-licao.sh episodes/<ep>.json` → `out/<id>.mp4` (−14 LUFS) | 🔄 EM IMPLEMENTAÇÃO: tipos de exercício novos, selo "T1 E0N" e esquetes (`out/<id>-esquete-A.mp4`). Até terminar, NÃO renderizar os episódios novos |
 | 5.6 | Portão automático (código + juiz LLM ≥ 8) | `scripts/portao.py` | ⛔ NÃO EXISTE AINDA → tudo vai para a fila |
-| 5.7 | Publicar via Buffer (YouTube/Instagram; TikTok semi-manual) | `scripts/publicar.py` | ⛔ NÃO EXISTE AINDA → fila |
-| 5.8 | Registrar publicado | append em `publicados.csv` | depende de 5.7 |
+| 5.7 | Publicar via Buffer (TikTok + YouTube conectados; Instagram ainda não) | teste da chave: `python3 scripts/publicar.py --listar` · simular: `python3 scripts/publicar.py --data AAAA-MM-DD --dry-run` · agendar: `python3 scripts/publicar.py --data AAAA-MM-DD` | ✅ EXISTE. Envia só com token + portão aprovado + MP4 + URL pública (`CLOUDINARY_URL`); faltando algo, grava em `fila/` com o motivo |
+| 5.8 | Registrar publicado | automático no `publicar.py` (append em `publicados.csv`) | ✅ EXISTE |
 | 5.9 | Métricas 72 h + freio | `scripts/metricas.py` | ⛔ NÃO EXISTE AINDA (precisa OAuth do YouTube Analytics) → rotina só registra "sem coletor" |
 
 ## 6. Critérios de corte dos testes (definidos antes; detalhe em `canal-idiomas/decisoes.md`)

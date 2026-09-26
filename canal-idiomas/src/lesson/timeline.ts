@@ -226,7 +226,7 @@ export const esqueteWindow = (p: LicaoProps, esqueteId: string, fps: number) => 
   const a = resolveRef(steps, e.de)[0];
   const zs = resolveRef(steps, e.ate);
   const z = zs[zs.length - 1];
-  const from = Math.max(0, a.start - ESQUETE_LEAD);
+  const from = Math.max(0, a.from, a.start - ESQUETE_LEAD); // sem sobra da fala anterior no frame 0 (capa)
   const to = z.from + z.dur;
   if (to <= from) throw new Error(`esquete ${esqueteId}: "ate" (${e.ate}) vem antes de "de" (${e.de})`);
   const cta = Math.round(ESQUETE_CTA * fps);

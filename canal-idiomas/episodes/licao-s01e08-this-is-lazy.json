@@ -409,5 +409,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e09-im-hungry"
+  "nextEpisodeId": "licao-s01e09-im-hungry",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Apresentei meu amigo errado",
+      "cta": "aula completa no EP 08"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.3",
+      "gancho": "O Lazy não é preguiçoso",
+      "cta": "aula completa no EP 08"
+    }
+  ]
 }

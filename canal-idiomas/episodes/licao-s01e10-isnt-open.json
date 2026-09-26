@@ -413,5 +413,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e11-whats-this"
+  "nextEpisodeId": "licao-s01e11-whats-this",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Cliente batendo antes de abrir",
+      "cta": "aula completa no EP 10"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.2",
+      "gancho": "O chefe disse 'good'. Histórico",
+      "cta": "aula completa no EP 10"
+    }
+  ]
 }

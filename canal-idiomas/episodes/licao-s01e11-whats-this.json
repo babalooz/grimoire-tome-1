@@ -410,5 +410,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e12-how-much"
+  "nextEpisodeId": "licao-s01e12-how-much",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "A umbrella ou an umbrella?",
+      "cta": "aula completa no EP 11"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.2",
+      "gancho": "Achados e perdidos em inglês",
+      "cta": "aula completa no EP 11"
+    }
+  ]
 }

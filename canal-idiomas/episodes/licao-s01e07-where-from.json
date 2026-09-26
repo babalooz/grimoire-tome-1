@@ -401,5 +401,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e08-this-is-lazy"
+  "nextEpisodeId": "licao-s01e08-this-is-lazy",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Brazil ou Brazilian? Cuidado",
+      "cta": "aula completa no EP 07"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.3",
+      "gancho": "O chefe sorriu pela primeira vez",
+      "cta": "aula completa no EP 07"
+    }
+  ]
 }

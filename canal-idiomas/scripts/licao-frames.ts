@@ -30,7 +30,7 @@ const m = exerciseMarks(s, p.licao.exercicios.length);
 const line = (x: Step) => (isLine(x.passo) ? (x.passo as Line) : null);
 const out: [number, string][] = [[0, "capa"]];
 const cena = s.filter((x) => x.phase === "cena");
-const wrong = cena.find((x) => line(x)?.emotion === "eyebrow") ?? cena[cena.length - 1];
+const wrong = [...cena].reverse().find((x) => line(x)?.emotion === "eyebrow") ?? cena[cena.length - 1];
 out.push([wrong.start + 18, "cena: reação ao erro"]);
 const faint = s.find((x) => !isLine(x.passo) && (x.passo as Pause).evento === "desmaio");
 if (faint) out.push([faint.start + 30, "desmaio"]);

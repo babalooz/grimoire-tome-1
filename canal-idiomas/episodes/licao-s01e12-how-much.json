@@ -427,5 +427,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e13-whose"
+  "nextEpisodeId": "licao-s01e13-whose",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.2",
+      "gancho": "Perguntei o preço errado",
+      "cta": "aula completa no EP 12"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.3",
+      "gancho": "Preço e idade: mesmo verbo",
+      "cta": "aula completa no EP 12"
+    }
+  ]
 }

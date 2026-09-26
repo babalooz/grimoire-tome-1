@@ -399,5 +399,21 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e04-spell"
+  "nextEpisodeId": "licao-s01e04-spell",
+  "esquetes": [
+    {
+      "id": "A",
+      "de": "cena.0",
+      "ate": "cena.3",
+      "gancho": "Não diga 'I call myself'",
+      "cta": "aula completa no EP 03"
+    },
+    {
+      "id": "B",
+      "de": "volta.0",
+      "ate": "volta.2",
+      "gancho": "Como se apresentar em inglês",
+      "cta": "aula completa no EP 03"
+    }
+  ]
 }

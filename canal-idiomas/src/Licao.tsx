@@ -19,7 +19,8 @@ import { MUSIC, musicEnvelope } from "./lesson/music";
 
 export type { LicaoProps } from "./lesson/timeline";
 // Flags de render (usadas pela faixa ESQUETE, src/LicaoEsquete.tsx): o corte reaproveita este componente.
-export type LicaoRenderProps = LicaoProps & { semAudio?: boolean; semTrilha?: boolean; semGancho?: boolean };
+// corteDe = frame em que a esquete começa: o plano desse passo entra já pronto (sem chicote de câmera no frame 0).
+export type LicaoRenderProps = LicaoProps & { semAudio?: boolean; semTrilha?: boolean; semGancho?: boolean; corteDe?: number };
 export { licaoFrames } from "./lesson/timeline";
 
 // "LIÇÃO EM VÍDEO" (CapyFala): CENA (a Capy erra e desmaia) → LIÇÃO (4 exercícios de app, com pausa real
@@ -92,7 +93,8 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
   // ---- transições de bloco ----
   const T = Math.round(0.6 * fps);
   const lessonIn = spring({ frame: frame - bounds.licao.from, fps, config: { damping: 16, mass: 0.8 }, durationInFrames: T });
-  const lessonOut = interpolate(frame, [bounds.volta.from, bounds.volta.from + T - 2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
+  // esquete cortada na volta: começa com a lição já fora da tela (nada de painel saindo no frame 0)
+  const lessonOut = p.corteDe !== undefined && p.corteDe >= bounds.volta.from ? 1 : interpolate(frame, [bounds.volta.from, bounds.volta.from + T - 2], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   const showLesson = frame >= bounds.licao.from && lessonOut < 1;
   const showCafe = cur.phase !== "licao" || lessonIn < 0.999 || lessonOut > 0;
 
@@ -101,7 +103,8 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
   const cafeCur = cur.phase === "licao" ? (frame < bounds.licao.from + T ? cafeSteps.filter((s) => s.phase === "cena").pop()! : cafeSteps.find((s) => s.phase === "volta")!) : cur;
   const ci = cafeSteps.indexOf(cafeCur);
   const target = shotFor(cafeCur);
-  const prevStep = ci > 0 && cafeSteps[ci - 1].phase === cafeCur.phase ? cafeSteps[ci - 1] : null;
+  const cutHere = p.corteDe !== undefined && cafeCur.from <= p.corteDe && p.corteDe < cafeCur.from + cafeCur.dur;
+  const prevStep = ci > 0 && cafeSteps[ci - 1].phase === cafeCur.phase && !cutHere ? cafeSteps[ci - 1] : null;
   const prev = prevStep ? shotFor(prevStep) : target;
   const lf = frame - cafeCur.from;
   const changed = prev.cx !== target.cx || prev.cy !== target.cy || prev.z !== target.z;
@@ -197,7 +200,7 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
       return (
         <>
           {header}
-          <PromptCard tag="COMPLETE:" minH={COMPLETAR_CARD_H}>
+          <PromptCard tag="SITUAÇÃO:" minH={COMPLETAR_CARD_H}>
             {e.enunciado && <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 38, lineHeight: 1.12, color: C.tinta }}>{e.enunciado}</div>}
             <GapSentence frase={e.frase!} lacuna={e.lacuna ?? "___"} answer={e.opcoes![e.resposta!]} revealT={revealT} fps={fps} frame={frame} />
           </PromptCard>
@@ -333,10 +336,10 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
             lazy={!!p.cast?.includes("lazy")} />
           {!p.serie && <DayBadge day={p.day} />}
           {cur.i === 0 && p.hookTitle && !p.semGancho && (
-            <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 318, transform: "rotate(-2deg)" }}>
+            <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 256, transform: "rotate(-2deg)" }}>
               <div style={{
                 background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 36, boxShadow: `0 10px 0 ${C.tinta}`, padding: "18px 26px",
-                textAlign: "center", fontFamily: TITLE, fontSize: 84, lineHeight: 1.02, color: C.tinta,
+                textAlign: "center", fontFamily: TITLE, fontSize: p.hookTitle.length > 16 ? 64 : 84, lineHeight: 1.02, color: C.tinta, textWrap: "balance" as any,
               }}>{p.hookTitle}</div>
             </div>
           )}
@@ -361,7 +364,9 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
               sweat={capiLessonMood === "sweat" ? 2 : 0} armUp={micOn} />
           </div>
           {exInfo.map((x, ei) => x.xp ? <XpPop key={ei} since={frame - x.doneAt} amount={x.xp} fps={fps} /> : null)}
-          <CompleteBanner since={frame - lastLessonStep.start} fps={fps} xp={xpTotal} />
+          {/* revisão no fim: a faixa espera o último item aparecer e fica sobre o Bolinha, sem tampar os cartões */}
+          <CompleteBanner since={frame - (exs[exs.length - 1].tipo === "revisao" ? Math.max(lastLessonStep.start + lastLessonStep.audioFrames, lastLessonStep.start + 15) : lastLessonStep.start)}
+            fps={fps} xp={xpTotal} top={exs[exs.length - 1].tipo === "revisao" ? 610 : 820} />
           {cur.phase === "licao" && caption}
         </AbsoluteFill>
       )}
