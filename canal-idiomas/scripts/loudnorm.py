@@ -63,8 +63,8 @@ def master(x: np.ndarray, ceiling: float) -> tuple[np.ndarray, float]:
         y = y * 10 ** ((TARGET_LUFS - lufs) / 20)
         pre = y
         y = limit(y, ceiling)
-        g = 20 * np.log10(np.abs(y).max(axis=1) / np.maximum(np.abs(pre).max(axis=1), 1e-9) + 1e-12)
-        gr = max(gr, -g.min())
+        loud = np.abs(pre).max(axis=1) > 0.01
+        gr = max(gr, -20 * np.log10((np.abs(y).max(axis=1)[loud] / np.abs(pre).max(axis=1)[loud]).min()))
         lufs, tp = measure(y)
         if abs(lufs - TARGET_LUFS) < 0.1 and tp <= ceiling + 0.05:
             break
@@ -91,10 +91,13 @@ def main(mp4: str) -> None:
             ceiling -= tp1 - MAX_TP + 0.2
         out.replace(mp4)
     ok = abs(l1 - TARGET_LUFS) <= 0.5 and tp1 <= MAX_TP
-    lim = 20 * np.log10(np.abs(y).max(axis=1) / np.maximum(np.abs(x * 10 ** ((l1 - l0) / 20)).max(axis=1), 1e-9) + 1e-12)
-    busy = (lim < -3)[np.abs(x).max(axis=1) > 1e-3].mean() * 100
-    hot = sorted({round(i / SR, 1) for i in np.argsort(lim)[:2000]})[:8]
-    print(f"limitador: >3 dB em {busy:.1f}% do tempo com som; pontos mais limitados (s): {hot}")
+    ref = np.abs(x * 10 ** ((TARGET_LUFS - l0) / 20)).max(axis=1)  # só ganho, sem limitador
+    loud = ref > 0.01
+    lim = np.zeros(len(x))
+    lim[loud] = 20 * np.log10(np.abs(y).max(axis=1)[loud] / ref[loud])
+    busy = (lim[loud] < -3).mean() * 100
+    hot = sorted({round(float(i) / SR, 1) for i in np.argsort(lim)[:4000] if lim[i] < -3})[:10]
+    print(f"limitador: >3 dB em {busy:.1f}% do tempo com som; trechos mais limitados (s): {hot}")
     print(f"loudness: antes {l0:.1f} LUFS / {tp0:.1f} dBTP -> depois {l1:.1f} LUFS / {tp1:.1f} dBTP "
           f"(limitador máx. {gr:.1f} dB) {'OK' if ok else 'FORA DO ALVO'}")
     if not ok:
