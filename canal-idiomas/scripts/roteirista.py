@@ -103,6 +103,17 @@ REGRAS = """Estrutura obrigatória:
 - hashtags: 4–5, sempre com #capyfala e #inglês.
 - topico_id = id do tópico-alvo; topicos_extra = ids dos outros tópicos do currículo que você usou."""
 
+# Playbook dos campeões do TikTok (docs/pesquisas/2026-09-26-tiktok-campeoes.md, dados de 26/09/2026).
+TIKTOK_NATIVO = """Versão TikTok (nativa, NÃO repost do Short):
+- A Capy AGE e a aula vem de carona: a palavra em inglês nasce de uma reação dela (vergonha, pânico, "perdendo aura").
+- Frame 0 = erro ou piada já na tela, sem vinheta, logo ou "olá pessoal". Texto de tela em minúsculas, 1 frase.
+- Moldura que funciona hoje: "pov: ...", autodepreciação, ironia seca, hype do dia (até 24 h). PROIBIDO "ninguém:" (gasto).
+- Gírias do TikTok que vêm do inglês são aula pronta: rizz, mid, cooked, sus, delulu, NPC, sigma, aura, farm. Elas vão
+  em fala lang=en (nunca dentro de fala pt). Nada de skibidi/67/brainrot (puxa para infantil).
+- Palavra-chave de busca em português dita E escrita nos primeiros 5 s ("como se diz ... em inglês").
+- Legenda do post: minúscula, irônica, 1 frase; 3–5 hashtags de nicho, com #capyfala e #capybara; preguiça = #sloth.
+- Nada de promessa de prazo ou "método"; CTA = escolha nos comentários ou "link no perfil" (teste de nível)."""
+
 # ---------------------------------------------------------------- 3 roteiros-modelo (seção 7), limpos:
 # sem números inventados, marca CapyFala, inglês separado em fala en e ganchos dentro dos validadores.
 MODELOS = {
@@ -621,7 +632,8 @@ def montar_system(quadro: str) -> str:
     lo, hi = DURACAO.get(quadro, DURACAO_CURTA)
     ordem = [quadro] + [q for q in MODELOS if q != quadro] if quadro in MODELOS else list(MODELOS)
     exemplos = "\n".join(f'<exemplo quadro="{q}">\n{json.dumps(MODELOS[q], ensure_ascii=False)}\n</exemplo>' for q in ordem)
-    return (f"{PERSONAGEM}\n\n{REGRAS}\nDuração-alvo deste quadro: {lo}–{hi} s. A duração é conferida por código "
+    extra = f"\n\n{TIKTOK_NATIVO}" if quadro in DURACAO else ""  # quadros com duração própria = versão TikTok
+    return (f"{PERSONAGEM}\n\n{REGRAS}{extra}\nDuração-alvo deste quadro: {lo}–{hi} s. A duração é conferida por código "
             "(fala + timer + revelação); roteiro fora da faixa volta para você.\n\n"
             "Roteiros-modelo abaixo: copie ritmo, tamanho de fala, tipo de piada e a separação pt/en; NUNCA copie as "
             f"perguntas nem os temas (o conteúdo vem do currículo).\n{exemplos}")

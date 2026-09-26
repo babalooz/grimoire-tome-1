@@ -8,8 +8,20 @@ reescritos (básico do zero), então o bloco ainda não foi gravado em nenhum ep
 Rótulos: **verificado** (fonte oficial ou página primária lida hoje) · **terceiros** (blog/imprensa, não confirmado pela
 plataforma) · **estimativa** (conta ou julgamento meu).
 
-Status da pesquisa do PC (`ponte/saida/pesquisa-tiktok-campeoes.md`): **ainda não publicada** em 26/09 (checado no início
-e no fim desta tarefa). Quando sair, cruzar com as §2–§4 e atualizar este arquivo.
+## 0. Atualização v2 — playbook dos campeões (26/09, `docs/pesquisas/2026-09-26-tiktok-campeoes.md`)
+
+Muda o que está abaixo; em conflito, vale esta seção.
+1. **Duas faixas, não uma.** `esquete` 8–20 s (alcance: mascote + 1 piada + som original; Duolingo BR 21,7 mi com 6 s)
+   e `episodio` 60–100 s em formato "EP N" (salvamento + Creator Rewards; Pablo Marcus "EP 1": 2,1 mi, 6,3% de salvamento).
+   A faixa longa segue a lição; a curta é só a cena/piada com o chunk.
+2. **Qualidade e cara autoral = sobrevivência.** Fruit Love Island caiu −94% na T2 com rótulo "AI slop" e vídeos removidos.
+   Não vender a automação como atração; variar quadros; ligar rótulo de IA quando a voz soar realista.
+3. **Hashtags de bicho:** #capybara rende ~2,2x #cat por vídeo; para a preguiça usar **#sloth**, não #preguiça.
+4. **Gírias de 2026 que vêm do inglês** (rizz, mid, cooked, sus, delulu, NPC, sigma, aura) = série "a gíria que você usa e
+   não sabe que é inglês". Sempre em fala `en`.
+5. **"ninguém:" está gasto** (~4,6 mil views/vídeo vs 24 mil de #pov) → formato `ninguem` aposentado. POV e hype do dia seguem.
+6. Calendário da série escrito na bio ("curtas seg–sex · episódio sábado") e fim de episódio com escolha do público.
+7. Testes A/B dos primeiros 30 dias: §6 da pesquisa, registrados em `canal-idiomas/decisoes.md`.
 
 ---
 
@@ -17,14 +29,14 @@ e no fim desta tarefa). Quando sair, cruzar com as §2–§4 e atualizar este ar
 
 | Item | Short (YouTube) | TikTok |
 |---|---|---|
-| Gancho | Missão ("MISSÃO: PEDIR UM CAFÉ") | Começa **no erro** (cold open) + moldura nativa na tela (POV / ninguém: / eu: também eu:) |
+| Gancho | Missão ("MISSÃO: PEDIR UM CAFÉ") | Começa **no erro** (cold open) + moldura nativa na tela (POV / eu: também eu: / hype do dia) |
 | Voz da Capy | Simpática, didática | Ironia seca e autodepreciação ("Pronto. Vergonha junto, mas certa.") |
 | Repita em voz alta | Exercício | **Isca de dueto** ("faz dueto e repete comigo") |
 | Final | Card "comenta" | Card + **corte seco para o gancho** (loop, conta replay) |
 | Legenda | Título | Frase de busca primeiro ("Como pedir café em inglês…") |
 | Hashtags | 4–5 | 3–5 (o TikTok só considera 5) |
 | Comentário fixado | Pergunta | Frase da lição por escrito + pedido de salvar/comentar |
-| Duração | 25–75 s | **61–75 s** (Creator Rewards exige > 1 min) |
+| Duração | 25–75 s | **Duas faixas:** esquete 8–20 s · episódio 60–100 s (Creator Rewards exige > 1 min) |
 | Áudio | Som próprio | Som original (voz + trilha CC0). Som em alta só em post manual |
 
 ## 2. Linguagem TikTok BR 2026 — gírias e memes (com validade)
@@ -58,7 +70,7 @@ frame 1 (loop). Keyword da busca **falada ou escrita nos 3 primeiros segundos** 
 | `formato` | Tela no gancho | Quando usar | Exemplo |
 |---|---|---|---|
 | `pov` | "POV: seu 1º pedido em inglês nos EUA" (fixo no topo) | Situação que o público reconhece como sua | Ex. A |
-| `ninguem` | "ninguém:" (0,8 s) → "eu preenchendo a ficha em inglês:" | Erro espontâneo e sem motivo | Ex. B |
+| ~~`ninguem`~~ | **Aposentado (v2): formato gasto** | — | Ex. B: refazer como `pov` |
 | `eu-tambem-eu` | "eu: vou arrasar" → "também eu:" + tombo | Expectativa × realidade | Ex. C |
 | `quando-voce` | "quando você fala 'I have 26 years' e o gringo trava" | Reação do outro personagem | Eps. com Hank reagindo |
 | `resposta-comentario` | Balão "Responder @usuário" com o comentário real | Comentário real com erro ou pergunta | Plano em `respostaComentario` |
@@ -113,7 +125,7 @@ Regra do CapyFala:
   nos EUA" (série), 1 emoji no fim. Sem hashtag no meio do texto.
 - **Hashtags: 3–5.** O TikTok passou a limitar a 5 por post em ago/2025 (terceiros:
   [Social Media Today, 17/08/2025](https://www.socialmediatoday.com/news/tiktok-implements-five-hashtag-limit-per-post/757857/)).
-  Fórmula: `#capyfala` + `#inglês` + 1 de busca (`#aprenderingles`) + 1 de nível (`#inglesparainiciantes`) + 1 do tema
+  Fórmula (v2): `#capyfala` + `#capybara` (ou `#sloth` quando o Lazy é o foco) + `#inglês` + 1 de busca (`#aprenderingles`) + 1 de nível (`#inglesparainiciantes`) + 1 do tema
   (`#falsocognato`, `#errosdeingles`, `#morarnoseua`). Nada de #fyp/#foryou.
 - **Comentário fixado:** a frase da lição escrita + pedido de ação que gera sinal forte: salvar ("Salva pra próxima
   porta") ou comentar algo que prova aprendizado ("Escreve sua idade em inglês aqui").
@@ -130,8 +142,9 @@ formato dos passos do Short (`speaker`, `lang`, `emotion`, `text`, `pausa`, `sfx
 | Campo | Tipo | Obrigatório | Regra |
 |---|---|---|---|
 | `versao` | int | sim | 1 |
-| `formato` | enum | sim | `pov` · `ninguem` · `eu-tambem-eu` · `quando-voce` · `resposta-comentario` |
-| `duracaoAlvo` | [min, max] | sim | [61, 75]. Portão reprova render < 61 s |
+| `faixa` | enum | sim | `esquete` (8–20 s, só cena + chunk) · `episodio` (60–100 s, lição completa, "EP N") |
+| `formato` | enum | sim | `pov` · `eu-tambem-eu` · `quando-voce` · `resposta-comentario` · `hype` |
+| `duracaoAlvo` | [min, max] | sim | esquete [8, 20] · episodio [61, 100]. Portão reprova episodio < 61 s |
 | `cabecalho` | string | sim | Texto fixo no topo durante o gancho (moldura do formato). ≤ 45 caracteres, dentro da zona segura (`src/theme.ts`) |
 | `gancho.ate_s` | número | sim | Fim do gancho (≤ 2,5 s) |
 | `gancho.passos` | passos | sim | 1–2 falas. O erro do episódio acontece aqui (cold open) |
@@ -154,7 +167,7 @@ Checagens do portão para o bloco `tiktok` (a implementar no roteirista/portão,
 2. Todas as falas `en` de exercício = `chunk.en` (mesma lição) ou fala de personagem revisada pelo LanguageTool.
 3. `memeRefs`: se data de publicação > `validoAte`, troca `text` do passo em `onde` por `fallback`; se `fonte` vazia, reprova.
 4. `hashtags` 3–5; `legendaPost` começa por palavra-chave; `comentarioFixado` contém o chunk.
-5. Render final 61–75 s; texto de tela e cabeçalho dentro da zona segura; nenhum "%" sem fonte.
+5. Render na faixa (esquete 8–20 s · episodio 61–100 s); texto de tela e cabeçalho dentro da zona segura; nenhum "%" sem fonte.
 6. `gancho` e `legendaPost` diferentes do `title`/`hookTitle` do Short (anti-repost).
 
 **Duração:** régua de estimativa calibrada pelo render real do antigo ep. 1 (70,8 s): ~0,49 s por palavra falada
@@ -227,7 +240,7 @@ Chunk do Short: `Hi, I'm Capy. Nice to meet you.` · erro-gancho: responder "fin
 }
 ```
 
-#### Ex. B — números no contexto de preço · formato `ninguem`
+#### Ex. B — números no contexto de preço · formato `ninguem` (APOSENTADO na v2 — usar só a estrutura; refazer o gancho como `pov`)
 
 Chunk do Short: `How much is it?` + resposta `It's fourteen dollars.` · erro-gancho: fourteen × forty.
 O preço é da cena (ficção), não estatística.
