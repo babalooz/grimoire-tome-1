@@ -1,0 +1,860 @@
+{
+ "_sobre": "Grade do teste 'Duas faixas' (12/10–25/10/2026). Lida por scripts/publicar.py. Horários BRT (docs/conselho/2026-09-26/growth-algoritmo.md §3). Esquete A = teaser do EP do dia; esquete B = revisão do EP anterior (mesmo render, corte próprio). frame0 = braço do A/B 2 (dias ímpares erro escrito, pares cena sem texto).",
+ "teste": "duas-faixas-14d",
+ "grade": [
+  {
+   "data": "2026-10-12",
+   "diaSemana": "seg",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E01"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E01",
+     "corte": "A",
+     "papel": "chama pro EP 01",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E01",
+     "corte": "A",
+     "papel": "chama pro EP 01",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E01",
+     "corte": "A",
+     "papel": "chama pro EP 01 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E01"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E01"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E01",
+     "corte": "B",
+     "papel": "2a esquete do E01",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-13",
+   "diaSemana": "ter",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E02"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E02",
+     "corte": "A",
+     "papel": "chama pro EP 02",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E02",
+     "corte": "A",
+     "papel": "chama pro EP 02",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E02",
+     "corte": "A",
+     "papel": "chama pro EP 02 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E02"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E02"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E01",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-14",
+   "diaSemana": "qua",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E03"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E03",
+     "corte": "A",
+     "papel": "chama pro EP 03",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E03",
+     "corte": "A",
+     "papel": "chama pro EP 03",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E03",
+     "corte": "A",
+     "papel": "chama pro EP 03 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E03"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E03"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E02",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-15",
+   "diaSemana": "qui",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E04"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E04",
+     "corte": "A",
+     "papel": "chama pro EP 04",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E04",
+     "corte": "A",
+     "papel": "chama pro EP 04",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E04",
+     "corte": "A",
+     "papel": "chama pro EP 04 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E04"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E04"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E03",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-16",
+   "diaSemana": "sex",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E05"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E05",
+     "corte": "A",
+     "papel": "chama pro EP 05",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E05",
+     "corte": "A",
+     "papel": "chama pro EP 05",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E05",
+     "corte": "A",
+     "papel": "chama pro EP 05 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E05"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E05"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E04",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-17",
+   "diaSemana": "sáb",
+   "posts": [
+    {
+     "hora": "10:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E06"
+    },
+    {
+     "hora": "10:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E06",
+     "corte": "A",
+     "papel": "chama pro EP 06",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "11:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E06"
+    },
+    {
+     "hora": "12:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E06"
+    },
+    {
+     "hora": "16:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E06",
+     "corte": "A",
+     "papel": "chama pro EP 06 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "17:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E06",
+     "corte": "A",
+     "papel": "chama pro EP 06",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E05",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-18",
+   "diaSemana": "dom",
+   "posts": [
+    {
+     "hora": "10:00",
+     "rede": "youtube",
+     "faixa": "longo",
+     "episodio": "T1 E01–E07 (compilação)",
+     "papel": "teste domingo 'Estudar inglês sozinho'"
+    },
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E07"
+    },
+    {
+     "hora": "10:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E07",
+     "corte": "A",
+     "papel": "chama pro EP 07",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "11:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E07"
+    },
+    {
+     "hora": "12:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E07"
+    },
+    {
+     "hora": "16:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E07",
+     "corte": "A",
+     "papel": "chama pro EP 07 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "17:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E07",
+     "corte": "A",
+     "papel": "chama pro EP 07",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E06",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-19",
+   "diaSemana": "seg",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E08"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E08",
+     "corte": "A",
+     "papel": "chama pro EP 08",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E08",
+     "corte": "A",
+     "papel": "chama pro EP 08",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E08",
+     "corte": "A",
+     "papel": "chama pro EP 08 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E08"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E08"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E07",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-20",
+   "diaSemana": "ter",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E09"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E09",
+     "corte": "A",
+     "papel": "chama pro EP 09",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E09",
+     "corte": "A",
+     "papel": "chama pro EP 09",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E09",
+     "corte": "A",
+     "papel": "chama pro EP 09 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E09"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E09"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E08",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-21",
+   "diaSemana": "qua",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E10"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E10",
+     "corte": "A",
+     "papel": "chama pro EP 10",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E10",
+     "corte": "A",
+     "papel": "chama pro EP 10",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E10",
+     "corte": "A",
+     "papel": "chama pro EP 10 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E10"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E10"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E09",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-22",
+   "diaSemana": "qui",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E11"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E11",
+     "corte": "A",
+     "papel": "chama pro EP 11",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E11",
+     "corte": "A",
+     "papel": "chama pro EP 11",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E11",
+     "corte": "A",
+     "papel": "chama pro EP 11 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E11"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E11"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E10",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-23",
+   "diaSemana": "sex",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E12"
+    },
+    {
+     "hora": "12:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E12",
+     "corte": "A",
+     "papel": "chama pro EP 12",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "12:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E12",
+     "corte": "A",
+     "papel": "chama pro EP 12",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E12",
+     "corte": "A",
+     "papel": "chama pro EP 12 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E12"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E12"
+    },
+    {
+     "hora": "21:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E11",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-24",
+   "diaSemana": "sáb",
+   "posts": [
+    {
+     "hora": "10:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E13"
+    },
+    {
+     "hora": "10:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E13",
+     "corte": "A",
+     "papel": "chama pro EP 13",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "11:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E13"
+    },
+    {
+     "hora": "12:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E13"
+    },
+    {
+     "hora": "16:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E13",
+     "corte": "A",
+     "papel": "chama pro EP 13 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "17:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E13",
+     "corte": "A",
+     "papel": "chama pro EP 13",
+     "frame0": "erro-escrito"
+    },
+    {
+     "hora": "18:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E12",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "erro-escrito"
+    }
+   ]
+  },
+  {
+   "data": "2026-10-25",
+   "diaSemana": "dom",
+   "posts": [
+    {
+     "hora": "10:00",
+     "rede": "youtube",
+     "faixa": "longo",
+     "episodio": "T1 E08–E14 (compilação)",
+     "papel": "teste domingo 'Estudar inglês sozinho'"
+    },
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E14"
+    },
+    {
+     "hora": "10:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E14",
+     "corte": "A",
+     "papel": "chama pro EP 14",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "11:40",
+     "rede": "instagram",
+     "faixa": "episodio",
+     "episodio": "T1 E14"
+    },
+    {
+     "hora": "12:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E14"
+    },
+    {
+     "hora": "16:10",
+     "rede": "youtube",
+     "faixa": "esquete",
+     "episodio": "T1 E14",
+     "corte": "A",
+     "papel": "chama pro EP 14 (link 'vídeo relacionado' pro EP já publicado)",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "17:40",
+     "rede": "instagram",
+     "faixa": "esquete",
+     "episodio": "T1 E14",
+     "corte": "A",
+     "papel": "chama pro EP 14",
+     "frame0": "cena-sem-texto"
+    },
+    {
+     "hora": "18:37",
+     "rede": "tiktok",
+     "faixa": "esquete",
+     "episodio": "T1 E13",
+     "corte": "B",
+     "papel": "revisao do EP anterior",
+     "frame0": "cena-sem-texto"
+    }
+   ]
+  }
+ ]
+}

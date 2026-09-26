@@ -11,8 +11,8 @@ plataforma) · **estimativa** (conta ou julgamento meu).
 ## 0. Atualização v2 — playbook dos campeões (26/09, `docs/pesquisas/2026-09-26-tiktok-campeoes.md`)
 
 Muda o que está abaixo; em conflito, vale esta seção.
-1. **Duas faixas, não uma.** `esquete` 8–20 s (alcance: mascote + 1 piada + som original; Duolingo BR 21,7 mi com 6 s)
-   e `episodio` 60–100 s em formato "EP N" (salvamento + Creator Rewards; Pablo Marcus "EP 1": 2,1 mi, 6,3% de salvamento).
+1. **Duas faixas, não uma (aprovado pelo Felipe).** `esquete` 5–20 s (alcance: mascote + 1 piada + som original; Duolingo BR 21,7 mi com 6 s)
+   e `episodio` 60–140 s (≥61 s no TikTok) em formato "EP N" (salvamento + Creator Rewards; Pablo Marcus "EP 1": 2,1 mi, 6,3% de salvamento).
    A faixa longa segue a lição; a curta é só a cena/piada com o chunk.
 2. **Qualidade e cara autoral = sobrevivência.** Fruit Love Island caiu −94% na T2 com rótulo "AI slop" e vídeos removidos.
    Não vender a automação como atração; variar quadros; ligar rótulo de IA quando a voz soar realista.
@@ -36,7 +36,7 @@ Muda o que está abaixo; em conflito, vale esta seção.
 | Legenda | Título | Frase de busca primeiro ("Como pedir café em inglês…") |
 | Hashtags | 4–5 | 3–5 (o TikTok só considera 5) |
 | Comentário fixado | Pergunta | Frase da lição por escrito + pedido de salvar/comentar |
-| Duração | 25–75 s | **Duas faixas:** esquete 8–20 s · episódio 60–100 s (Creator Rewards exige > 1 min) |
+| Duração | 25–75 s | **Duas faixas:** esquete 5–20 s · episódio 60–140 s (Creator Rewards exige > 1 min) |
 | Áudio | Som próprio | Som original (voz + trilha CC0). Som em alta só em post manual |
 
 ## 2. Linguagem TikTok BR 2026 — gírias e memes (com validade)
@@ -142,9 +142,9 @@ formato dos passos do Short (`speaker`, `lang`, `emotion`, `text`, `pausa`, `sfx
 | Campo | Tipo | Obrigatório | Regra |
 |---|---|---|---|
 | `versao` | int | sim | 1 |
-| `faixa` | enum | sim | `esquete` (8–20 s, só cena + chunk) · `episodio` (60–100 s, lição completa, "EP N") |
+| `faixa` | enum | sim | `esquete` (5–20 s, corte do render do EP: 1 piada + 1 chunk + CTA "aula completa no EP N") · `episodio` (60–140 s, lição completa, "T1 E0N") |
 | `formato` | enum | sim | `pov` · `eu-tambem-eu` · `quando-voce` · `resposta-comentario` · `hype` |
-| `duracaoAlvo` | [min, max] | sim | esquete [8, 20] · episodio [61, 100]. Portão reprova episodio < 61 s |
+| `duracaoAlvo` | [min, max] | sim | esquete [5, 20] · episodio [61, 140]. Portão reprova episodio < 61 s |
 | `cabecalho` | string | sim | Texto fixo no topo durante o gancho (moldura do formato). ≤ 45 caracteres, dentro da zona segura (`src/theme.ts`) |
 | `gancho.ate_s` | número | sim | Fim do gancho (≤ 2,5 s) |
 | `gancho.passos` | passos | sim | 1–2 falas. O erro do episódio acontece aqui (cold open) |
@@ -167,7 +167,7 @@ Checagens do portão para o bloco `tiktok` (a implementar no roteirista/portão,
 2. Todas as falas `en` de exercício = `chunk.en` (mesma lição) ou fala de personagem revisada pelo LanguageTool.
 3. `memeRefs`: se data de publicação > `validoAte`, troca `text` do passo em `onde` por `fallback`; se `fonte` vazia, reprova.
 4. `hashtags` 3–5; `legendaPost` começa por palavra-chave; `comentarioFixado` contém o chunk.
-5. Render na faixa (esquete 8–20 s · episodio 61–100 s); texto de tela e cabeçalho dentro da zona segura; nenhum "%" sem fonte.
+5. Render na faixa (esquete 5–20 s · episodio 61–140 s); texto de tela e cabeçalho dentro da zona segura; nenhum "%" sem fonte.
 6. `gancho` e `legendaPost` diferentes do `title`/`hookTitle` do Short (anti-repost).
 
 **Duração:** régua de estimativa calibrada pelo render real do antigo ep. 1 (70,8 s): ~0,49 s por palavra falada
