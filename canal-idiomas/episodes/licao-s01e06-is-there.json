@@ -1,0 +1,266 @@
+{
+  "id": "licao-s01e06-is-there",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 6,
+  "day": 6,
+  "level": "A1",
+  "topicoId": "A1-06",
+  "set": "cafe-bean-there",
+  "topic": "Tem = there is (pedir informação)",
+  "title": "Dia 6: a Capy perguntou se o Hank TEM um mercado 🛒😬",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesparabrasileiros",
+    "#morarnoseua",
+    "#viagem"
+  ],
+  "cast": [
+    "capi",
+    "hank",
+    "leo"
+  ],
+  "hookTitle": "MISSÃO: ACHAR UM MERCADO",
+  "notebook": 6,
+  "chunk": {
+    "en": "Is there a supermarket near here?",
+    "pt": "Tem um supermercado aqui perto?",
+    "pattern": "Is there ___ near here?"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "zen",
+        "shot": "two",
+        "text": "Na geladeira, só mostarda."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Hank... have a supermarket near here?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "I don't HAVE a supermarket. I have a café."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "hold": 0.6,
+        "text": "Não é seu! É existir! ERREI."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "traducao",
+        "titulo": "ESCOLHA A TRADUÇÃO",
+        "enunciado": "Tem um supermercado aqui perto?",
+        "opcoes": [
+          "Have a supermarket near here?",
+          "Is there a supermarket near here?",
+          "Are there supermarket near here?"
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Levantei. Traduz!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Tem de existir não é o verbo ter."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Tem um supermercado aqui perto?",
+        "tiles": [
+          "near",
+          "there",
+          "Have",
+          "supermarket",
+          "Is",
+          "here?",
+          "a"
+        ],
+        "ordem": [
+          4,
+          1,
+          6,
+          3,
+          0,
+          5
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.6,
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "O ter de novo. É perseguição."
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Is there a supermarket near here?",
+          "Is there a supermarket near her?",
+          "Is there a supermarket in here?"
+        ],
+        "resposta": 0,
+        "chute": 2,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "som",
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "evento": "som",
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.8,
+            "text": "Achei que tinha mercado no café."
+          }
+        ]
+      },
+      {
+        "tipo": "repetir",
+        "titulo": "REPITA EM VOZ ALTA",
+        "frase": "Is there a supermarket near here?",
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Agora repete comigo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "modelo",
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "pausa": "mic",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "modelo",
+            "text": "Is there a supermarket near here?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Isso! Agora eu acho tudo."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "Is there a supermarket near here?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "text": "Two blocks. Bad coffee."
+      },
+      {
+        "speaker": "leo",
+        "lang": "en",
+        "emotion": "whisper",
+        "text": "I agree."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "O que você compraria primeiro? Comenta."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e07-people-are"
+}

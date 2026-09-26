@@ -14,6 +14,7 @@ import {
 import { Cam, CharId, DayBadge, Notebook, STAGE, Sfx, TWO, closeOn, toScreen } from "./Sitcom";
 import { C, SAFE, TITLE } from "./theme";
 import { STAG } from "./lesson/LessonUI";
+import { MUSIC, musicEnvelope } from "./lesson/music";
 
 export type { LicaoProps } from "./lesson/timeline";
 export { licaoFrames } from "./lesson/timeline";
@@ -37,8 +38,9 @@ const shotFor = (s: Step): Cam => {
 
 export const Licao: React.FC<LicaoProps> = (p) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, durationInFrames } = useVideoConfig();
   const steps = useMemo(() => buildSchedule(p, fps), [p, fps]);
+  const musicVol = useMemo(() => musicEnvelope(steps, durationInFrames, p.voiceLufs), [steps, durationInFrames, p.voiceLufs]);
   const exs = p.licao.exercicios;
   const marks = useMemo(() => exerciseMarks(steps, exs.length), [steps, exs.length]);
   const bounds = phaseBounds(steps);
@@ -250,6 +252,12 @@ export const Licao: React.FC<LicaoProps> = (p) => {
         </Sequence>
       ))}
       {sfx}
+      {/* trilha em loop (cópias encostadas a cada 600 frames = emenda exata), volume com ducking por frame */}
+      {Array.from({ length: Math.ceil(durationInFrames / MUSIC.loopFrames) }, (_, k) => (
+        <Sequence key={`m${k}`} from={k * MUSIC.loopFrames} durationInFrames={MUSIC.loopFrames}>
+          <Audio src={staticFile(MUSIC.src)} volume={(f) => musicVol[Math.min(durationInFrames - 1, k * MUSIC.loopFrames + f)] ?? 0} />
+        </Sequence>
+      ))}
 
       {showCafe && (
         <AbsoluteFill>

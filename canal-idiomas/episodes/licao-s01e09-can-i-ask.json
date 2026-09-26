@@ -1,0 +1,279 @@
+{
+  "id": "licao-s01e09-can-i-ask",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 9,
+  "day": 9,
+  "level": "A2",
+  "topicoId": "A2-04",
+  "set": "cafe-bean-there",
+  "topic": "Ask a question (não make)",
+  "title": "Dia 9: o segredo do Hank 📓🤫",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesparabrasileiros",
+    "#morarnoseua",
+    "#ingles"
+  ],
+  "cast": [
+    "hank",
+    "capi"
+  ],
+  "hookTitle": "MISSÃO: DESCOBRIR O SEGREDO",
+  "notebook": 9,
+  "chunk": {
+    "en": "Can I ask you something?",
+    "pt": "Posso te perguntar uma coisa?",
+    "pattern": "Can I ask ___?"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "I'm so hungry right now."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "surprised",
+        "text": "O Hank come brigadeiro e esconde um caderno."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Hank... can I make a question?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "You MAKE questions? With flour?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "text": "Pergunta não se faz?! ERREI."
+      },
+      {
+        "pausa": "respiro",
+        "s": 1.6,
+        "evento": "desmaio",
+        "sfx": [
+          "thud"
+        ]
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "traducao",
+        "titulo": "ESCOLHA A TRADUÇÃO",
+        "enunciado": "Posso te perguntar uma coisa?",
+        "opcoes": [
+          "Can I make you a question?",
+          "Can I ask you something?",
+          "Can I do a question?"
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "O caderno segue lá. Traduz!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "Can I ask you something?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Pergunta não se faz. É outro verbo."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Posso te perguntar uma coisa?",
+        "tiles": [
+          "ask",
+          "you",
+          "make",
+          "Can",
+          "something?",
+          "I"
+        ],
+        "ordem": [
+          3,
+          5,
+          0,
+          1,
+          4
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.6,
+            "text": "Can I ask you something?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o fazer."
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "Can I ask you something?",
+          "Can I ask you some things?",
+          "Can I tell you something?"
+        ],
+        "resposta": 0,
+        "chute": 2,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "som",
+            "text": "Can I ask you something?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "evento": "som",
+            "text": "Can I ask you something?"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.8,
+            "text": "Eu ia contar o segredo do Hank."
+          }
+        ]
+      },
+      {
+        "tipo": "repetir",
+        "titulo": "REPITA EM VOZ ALTA",
+        "frase": "Can I ask you something?",
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Agora repete comigo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "modelo",
+            "text": "Can I ask you something?"
+          },
+          {
+            "pausa": "mic",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "modelo",
+            "text": "Can I ask you something?"
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Isso! Agora eu pergunto."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "text": "Can I ask you something?"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "angry",
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "No."
+      },
+      {
+        "speaker": "hank",
+        "lang": "pt",
+        "emotion": "whisper",
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "...Tá bom. Pode perguntar."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "O Hank fala português?! Teorias aqui."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e10-its-raining"
+}

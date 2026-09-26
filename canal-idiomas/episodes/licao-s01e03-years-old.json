@@ -1,0 +1,279 @@
+{
+  "id": "licao-s01e03-years-old",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 3,
+  "day": 3,
+  "level": "A1",
+  "topicoId": "A1-01",
+  "set": "cafe-bean-there",
+  "topic": "Idade com BE (I'm 26 years old)",
+  "title": "Dia 3: a Capy disse que TEM 26 anos 😳📋",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesparabrasileiros",
+    "#morarnoseua",
+    "#ingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: PREENCHER A FICHA",
+  "notebook": 3,
+  "chunk": {
+    "en": "I'm 26 years old.",
+    "pt": "Eu tenho 26 anos.",
+    "pattern": "I'm ___ years old."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "zen",
+        "shot": "two",
+        "text": "Ficha de experiência."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "text": "How old are you?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "I have 26 years."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "You HAVE twenty-six years? ...Of what?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "text": "De vida, Hank! ERREI."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "shot": "two",
+        "text": "I'll write... confused."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "traducao",
+        "titulo": "ESCOLHA A TRADUÇÃO",
+        "enunciado": "Eu tenho 26 anos.",
+        "opcoes": [
+          "I have 26 years.",
+          "I'm 26 years old.",
+          "I'm 26 years."
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Idade não se tem. Traduz!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "I'm 26 years old."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Em inglês, você é a idade."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Eu tenho 26 anos.",
+        "tiles": [
+          "old.",
+          "have",
+          "26",
+          "I'm",
+          "years"
+        ],
+        "ordem": [
+          3,
+          2,
+          4,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.6,
+            "text": "I'm 26 years old."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Tchau, verbo ter."
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "I'm 26 years old.",
+          "I have 26 years.",
+          "I'm 26 years cold."
+        ],
+        "resposta": 0,
+        "chute": 2,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "som",
+            "text": "I'm 26 years old."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "evento": "som",
+            "text": "I'm 26 years old."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.8,
+            "text": "Ouvi frio. O ar daqui é polar."
+          }
+        ]
+      },
+      {
+        "tipo": "repetir",
+        "titulo": "REPITA EM VOZ ALTA",
+        "frase": "I'm 26 years old.",
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Agora repete comigo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "modelo",
+            "text": "I'm 26 years old."
+          },
+          {
+            "pausa": "mic",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "modelo",
+            "text": "I'm 26 years old."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Isso! Vinte e seis e fluente."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "I'm 26 years old."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Better."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "angry",
+        "sfx": [
+          "thud"
+        ],
+        "text": "Hey! PUSH the door!"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Escreve sua idade em inglês aqui."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e04-im-hungry"
+}

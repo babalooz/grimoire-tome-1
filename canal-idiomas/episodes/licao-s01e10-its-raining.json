@@ -1,0 +1,266 @@
+{
+  "id": "licao-s01e10-its-raining",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 10,
+  "day": 10,
+  "level": "A1",
+  "topicoId": "A1-09",
+  "set": "cafe-bean-there",
+  "topic": "Sujeito obrigatório (it's raining)",
+  "title": "Dia 10: a Capy quis fechar o café por causa da chuva ⛈️",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesparabrasileiros",
+    "#morarnoseua",
+    "#ingles"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: IR PRA CASA",
+  "notebook": 10,
+  "chunk": {
+    "en": "It's raining, let's go home.",
+    "pt": "Tá chovendo, bora pra casa.",
+    "pattern": "It's raining / It's late"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "zen",
+        "shot": "two",
+        "text": "Tempestade. Café vazio."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Hank... is raining. Let's go home."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "WHAT is raining? Coffee?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "text": "Esqueci o sujeito. ERREI."
+      },
+      {
+        "pausa": "respiro",
+        "s": 1.6,
+        "evento": "desmaio",
+        "sfx": [
+          "thud"
+        ]
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "traducao",
+        "titulo": "ESCOLHA A TRADUÇÃO",
+        "enunciado": "Tá chovendo, bora pra casa.",
+        "opcoes": [
+          "Is raining, let's go home.",
+          "It's raining, let's go home.",
+          "Raining, let's go to home."
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Tô molhada, mas tô bem. Traduz!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "It's raining, let's go home."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Toda frase precisa de sujeito. Até a chuva."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Tá chovendo, bora pra casa.",
+        "tiles": [
+          "home.",
+          "raining,",
+          "go",
+          "It's",
+          "let's",
+          "Is"
+        ],
+        "ordem": [
+          3,
+          1,
+          4,
+          2,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.6,
+            "text": "It's raining, let's go home."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou a frase sem dono."
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "It's raining, let's go home.",
+          "It's raining, let's go, Hank.",
+          "It's training, let's go home."
+        ],
+        "resposta": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "som",
+            "text": "It's raining, let's go home."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "evento": "som",
+            "text": "It's raining, let's go home."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "panic",
+            "pre": 0.8,
+            "text": "Treino? Com esse tempo? Nunca."
+          }
+        ]
+      },
+      {
+        "tipo": "repetir",
+        "titulo": "REPITA EM VOZ ALTA",
+        "frase": "It's raining, let's go home.",
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Agora repete comigo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "modelo",
+            "text": "It's raining, let's go home."
+          },
+          {
+            "pausa": "mic",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "modelo",
+            "text": "It's raining, let's go home."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Isso! Agora me deixa ir."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "It's raining, let's go home."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "panic"
+        },
+        "text": "No. Can I ask you something? Where's your umbrella?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Como tá o tempo aí? Comenta em inglês."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e11-do-you-like-it"
+}

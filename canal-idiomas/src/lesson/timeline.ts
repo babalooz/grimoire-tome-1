@@ -50,6 +50,7 @@ export type LicaoProps = {
   licao: { exercicios: Exercicio[] };
   volta: { passos: Passo[] };
   timings: Timings;
+  voiceLufs?: number; // loudness da voz do episódio (scripts/tts.py -> mix.json) — referência do nível da trilha
 };
 
 export type Phase = "cena" | "licao" | "volta";

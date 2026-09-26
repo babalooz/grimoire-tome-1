@@ -16,6 +16,7 @@ Saída (formato lição, `format: "licao"`): public/audio/<id>/l<hash>.wav (1 po
 """
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -45,6 +46,33 @@ LICAO_SPEED = {
     ("leo", "pt"): 0.86,
     ("leo", "en"): 0.8,
 }
+# Pronúncia SÓ no áudio (legenda/timings continuam com o texto original). Testado pelos fonemas do Kokoro (espeak):
+#   pt-br "Capy" -> kˈapi ("CÁ-pi", certo; já "Capi" sai kapˈi = "ca-PÍ", errado) -> nada a corrigir em PT.
+#   en-us "Capy" -> kˈeɪpi ("KÊI-pi", errado)  ·  "Cappy" -> kˈæpi ("KÁ-pi", como em capybara) -> corrige em EN.
+#   en-us conferidos sem ajuste: coffee kˈɔfi · cookie kˈʊki · copy kˈɑːpi · "Can I get" kæn aɪ ɡɛt.
+PRONUNCIA = {
+    "pt": {},
+    "en": {"Capy": "Cappy", "CapyFala": "Cappy Fala"},
+}
+ELLIPSIS = re.compile(r"(?<=\.\.\.)\s*")  # corta DEPOIS das reticências: o pedaço mantém a entonação suspensa
+ELLIPSIS_PAUSE = 0.4  # "..." vira pausa real (o Kokoro faz só ~0,08 s)
+SILENCE_THR = 0.01  # abaixo disso é "silêncio" nas bordas de cada pedaço
+
+
+def speech_text(text: str, lang: str) -> str:
+    for word, say in PRONUNCIA.get(lang, {}).items():
+        text = re.sub(rf"\b{re.escape(word)}\b", say, text)
+    return text
+
+
+def _trim(audio: np.ndarray, head: bool = True, tail: bool = True) -> np.ndarray:
+    idx = np.flatnonzero(np.abs(audio) > SILENCE_THR)
+    if not len(idx):
+        return audio[:0]
+    pad = int(0.03 * SR)  # 30 ms de folga para não cortar consoante
+    return audio[max(0, idx[0] - pad) if head else 0: idx[-1] + pad if tail else len(audio)]
+
+
 THOUGHT_SPEED = 1.12  # pensamento acelera
 GAP_SECONDS = 0.12  # pausa entre falas da mesma cena (manual de retenção: ≤ 0,12 s)
 SR = 24000
@@ -60,7 +88,16 @@ def synth(text: str, lang: str, speaker: str = "capi", mode: str = "fala", speed
         speed = speed_override
     elif mode == "pensamento":
         speed *= THOUGHT_SPEED
-    audio, sr = _kokoro.create(text, voice=voice, speed=speed, lang=LANG_CODE[lang])
+    parts = [t for t in ELLIPSIS.split(speech_text(text, lang).replace("…", "...")) if re.search(r"\w", t)]
+    if len(parts) <= 1:
+        audio, sr = _kokoro.create(speech_text(text, lang), voice=voice, speed=speed, lang=LANG_CODE[lang])
+    else:  # reticências: sintetiza cada pedaço e junta com silêncio real
+        chunks = []
+        for i, part in enumerate(parts):
+            a, sr = _kokoro.create(part, voice=voice, speed=speed, lang=LANG_CODE[lang])
+            a = _trim(a, head=i > 0, tail=i < len(parts) - 1)  # corta só as bordas coladas na pausa
+            chunks += [a, np.zeros(int(ELLIPSIS_PAUSE * sr), dtype=a.dtype)]
+        audio = np.concatenate(chunks[:-1])
     return (audio * gain).astype(audio.dtype), sr
 
 
@@ -140,7 +177,12 @@ def main(episode_path: str) -> None:
         timings = render_licao(episode, out_dir)
         (out_dir / "timings.json").write_text(json.dumps(timings, ensure_ascii=False, indent=2))
         total = sum(t["duration"] for t in timings.values())
-        print(f"ok: {len(timings)} falas únicas, {total:.1f}s de fala -> {out_dir}")
+        # loudness da voz (referência da trilha de fundo em src/lesson/music.ts)
+        import pyloudnorm as pyln
+        voice = np.concatenate([sf.read(ROOT / "public" / t["audio"])[0] for t in timings.values()])
+        voice_lufs = round(float(pyln.Meter(SR).integrated_loudness(voice)), 2)
+        (out_dir / "mix.json").write_text(json.dumps({"voiceLufs": voice_lufs}))
+        print(f"ok: {len(timings)} falas únicas, {total:.1f}s de fala, voz {voice_lufs} LUFS -> {out_dir}")
         return
     if "beats" in episode:
         timings = render_beats(episode["beats"], out_dir)

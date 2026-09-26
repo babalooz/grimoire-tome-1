@@ -1,0 +1,11 @@
+cafe-loop.wav — trilha de fundo do CapyFala (formato lição)
+
+Origem: gerada 100% por código pelo próprio projeto (scripts/music.py: síntese Karplus-Strong, aditiva e ruído
+filtrado com numpy/scipy). Nenhum sample, loop, preset ou gravação de terceiros. Melodia e progressão escritas no
+próprio script (I-vi-ii-V em Dó maior, progressão genérica, não protegida).
+
+Licença: CC0 1.0 Universal (domínio público) — https://creativecommons.org/publicdomain/zero/1.0/
+Pode usar, alterar e monetizar sem atribuição. Não registrar em sistemas de Content ID (evita reclamação
+contra os próprios vídeos e contra quem reutilizar).
+
+Regenerar: .venv/bin/python scripts/music.py  (determinístico: semente fixa -> mesmo arquivo)

@@ -1,0 +1,270 @@
+{
+  "id": "licao-s01e14-i-have-a-question",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 14,
+  "day": 14,
+  "level": "A2",
+  "topicoId": "A2-05",
+  "set": "cafe-bean-there",
+  "topic": "Doubt × question (tirar dúvida)",
+  "title": "Dia 14: véspera da prova e a Capy DESCONFIA do Hank 😬🚗",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesparabrasileiros",
+    "#morarnoseua",
+    "#morarfora"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: ENSAIAR A PROVA",
+  "notebook": 14,
+  "chunk": {
+    "en": "I have a question.",
+    "pt": "Tenho uma dúvida.",
+    "pattern": "I have a question."
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "zen",
+        "shot": "two",
+        "text": "Véspera da prova. Muito zen."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "bored",
+        "text": "I'm the examiner. Any questions?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "zen",
+        "text": "Yes. I have a doubt."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "You DOUBT? ...About me?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "text": "Dúvida virou desconfiança! ERREI."
+      },
+      {
+        "pausa": "respiro",
+        "s": 1.6,
+        "evento": "desmaio",
+        "sfx": [
+          "thud"
+        ]
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "traducao",
+        "titulo": "ESCOLHA A TRADUÇÃO",
+        "enunciado": "Tenho uma dúvida.",
+        "opcoes": [
+          "I have a doubt.",
+          "I have a question.",
+          "I make a question."
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Última revisão. Traduz!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "I have a question."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Dúvida de aula é pergunta. A palavra parecida é desconfiança."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "Tenho uma dúvida.",
+        "tiles": [
+          "question.",
+          "doubt.",
+          "have",
+          "I",
+          "a"
+        ],
+        "ordem": [
+          3,
+          2,
+          4,
+          0
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.6,
+            "text": "I have a question."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou a desconfiança. Desculpa, Hank."
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "I have a question.",
+          "I have two questions.",
+          "I had a question."
+        ],
+        "resposta": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "som",
+            "text": "I have a question."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "evento": "som",
+            "text": "I have a question."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.8,
+            "text": "Duas? Tenho quarenta. Uma de cada vez."
+          }
+        ]
+      },
+      {
+        "tipo": "repetir",
+        "titulo": "REPITA EM VOZ ALTA",
+        "frase": "I have a question.",
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Agora repete comigo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "modelo",
+            "text": "I have a question."
+          },
+          {
+            "pausa": "mic",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "modelo",
+            "text": "I have a question."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Isso! Tô pronta. Acho."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "I have a question."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "Good. Tomorrow... I plan to drive you there."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "A Capy passa na prova? Comenta sua aposta."
+      }
+    ]
+  },
+  "nextEpisodeId": null
+}

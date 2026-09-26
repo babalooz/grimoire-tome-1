@@ -1,0 +1,268 @@
+{
+  "id": "licao-s01e07-people-are",
+  "format": "licao",
+  "series": "Capy no Exterior",
+  "season": 1,
+  "episode": 7,
+  "day": 7,
+  "level": "A1",
+  "topicoId": "A1-03",
+  "set": "cafe-bean-there",
+  "topic": "People é plural (people are)",
+  "title": "Dia 7: a mãe da Capy ligou no pior momento 📱😱",
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#inglesparabrasileiros",
+    "#morarnoseua",
+    "#familia"
+  ],
+  "cast": [
+    "capi",
+    "hank"
+  ],
+  "hookTitle": "MISSÃO: IMPRESSIONAR A MÃE",
+  "notebook": 7,
+  "chunk": {
+    "en": "People are so nice here.",
+    "pt": "As pessoas são muito legais aqui.",
+    "pattern": "People are ___"
+  },
+  "cena": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "shot": "two",
+        "sfx": [
+          "pop"
+        ],
+        "text": "Oi, mãe! A câmera tá no seu queixo."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "text": "Ela quer ouvir inglês. Na frente do Hank."
+      },
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "text": "People is so nice here!"
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "eyebrow",
+        "sfx": [
+          "wrong"
+        ],
+        "react": {
+          "capi": "surprised"
+        },
+        "text": "People IS? ...Is there a problem here?"
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "mode": "pensamento",
+        "emotion": "panic",
+        "text": "Calma... respira... ERREI."
+      }
+    ]
+  },
+  "licao": {
+    "exercicios": [
+      {
+        "tipo": "traducao",
+        "titulo": "ESCOLHA A TRADUÇÃO",
+        "enunciado": "As pessoas são muito legais aqui.",
+        "opcoes": [
+          "People is so nice here.",
+          "People are so nice here.",
+          "The people is so nice here."
+        ],
+        "resposta": 1,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Mãe, segura aí. Traduz!"
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "text": "People are so nice here."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Pessoas já é plural. Verbo no plural."
+          }
+        ]
+      },
+      {
+        "tipo": "montar",
+        "titulo": "MONTE A FRASE",
+        "enunciado": "As pessoas são muito legais aqui.",
+        "tiles": [
+          "nice",
+          "is",
+          "People",
+          "here.",
+          "are",
+          "so"
+        ],
+        "ordem": [
+          2,
+          4,
+          5,
+          0,
+          3
+        ],
+        "xp": 10,
+        "passos": [
+          {
+            "pausa": "timer",
+            "s": 4
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "pre": 1.6,
+            "text": "People are so nice here."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "angry",
+            "text": "Sobrou o singular. Mãe, ainda tá aí?"
+          }
+        ]
+      },
+      {
+        "tipo": "ouvir",
+        "titulo": "OUÇA E ESCOLHA",
+        "opcoes": [
+          "People are so nice here.",
+          "People are so nice, dear.",
+          "Peoples are so nice here."
+        ],
+        "resposta": 0,
+        "chute": 0,
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "som",
+            "text": "People are so nice here."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "evento": "som",
+            "text": "People are so nice here."
+          },
+          {
+            "pausa": "timer",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "pre": 0.8,
+            "text": "Acertei! Mãe, viu? Tava filmando o teto."
+          }
+        ]
+      },
+      {
+        "tipo": "repetir",
+        "titulo": "REPITA EM VOZ ALTA",
+        "frase": "People are so nice here.",
+        "xp": 10,
+        "passos": [
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Agora repete comigo."
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "zen",
+            "speed": 0.7,
+            "evento": "modelo",
+            "text": "People are so nice here."
+          },
+          {
+            "pausa": "mic",
+            "s": 3
+          },
+          {
+            "speaker": "capi",
+            "lang": "en",
+            "emotion": "happy",
+            "evento": "modelo",
+            "text": "People are so nice here."
+          },
+          {
+            "speaker": "capi",
+            "lang": "pt",
+            "emotion": "happy",
+            "text": "Isso! Beijo, mãe."
+          }
+        ]
+      }
+    ]
+  },
+  "volta": {
+    "passos": [
+      {
+        "speaker": "capi",
+        "lang": "en",
+        "emotion": "happy",
+        "shot": "close",
+        "react": {
+          "hank": "surprised"
+        },
+        "text": "People are so nice here."
+      },
+      {
+        "speaker": "hank",
+        "lang": "en",
+        "emotion": "smile",
+        "react": {
+          "capi": "happy"
+        },
+        "text": "People are NOT nice. ...I'm a little nice."
+      },
+      {
+        "speaker": "capi",
+        "lang": "pt",
+        "emotion": "happy",
+        "card": true,
+        "hold": 1.0,
+        "text": "Manda pra sua mãe. Ela vai amar."
+      }
+    ]
+  },
+  "nextEpisodeId": "licao-s01e08-she-works"
+}
