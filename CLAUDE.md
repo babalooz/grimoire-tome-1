@@ -21,7 +21,10 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
-  Meta proíbe chatbot "de uso geral" desde 15/01/2026; atendimento, agendamento e vendas seguem permitidos.
+  Meta proíbe chatbot "de uso geral" desde 15/01/2026, mas no Brasil o CADE suspendeu (mantido em 04/03/2026);
+  aqui IA de uso geral é aceita a R$0,3217/msg. Bot de atendimento/agendamento/vendas segue tabela normal.
+- Preço Cloud API BR (01/07/2026): marketing R$0,3217 · utilidade R$0,0350 · autenticação R$0,0350 ·
+  resposta na janela de 24h grátis · 72h grátis via anúncio click-to-WhatsApp. Desenhar fluxos com o cliente iniciando.
 - Stack alvo: WhatsApp Cloud API + n8n + Claude API + planilha/CRM.
 - Venda BR: Kiwify/Hotmart (PIX). Internacional: Gumroad (repasse só via PayPal, 2%) ou GitHub Sponsors.
   Polar NÃO paga para o Brasil (verificado 26/09/2026).
