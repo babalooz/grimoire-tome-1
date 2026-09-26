@@ -1,4 +1,4 @@
-# Canal de idiomas — "Capi English"
+# Canal de idiomas — "CapyFala"
 
 Vídeos curtos 9:16 (TikTok / Shorts / Reels) de inglês para brasileiros, com mascote original (Capi, a capivara),
 narração automática PT+EN, legenda palavra a palavra e quiz com contagem regressiva. 100% gerado por código.
@@ -16,7 +16,7 @@ scripts/diario.sh                                  # radar -> roteiro -> vídeo 
 |---|---|---|
 | 1. Radar de tendências (hype local + dúvidas de inglês) | **pronto** | `scripts/radar.py` — Google Trends RSS + autocomplete/busca YouTube |
 | 2. Roteiro do episódio (JSON) | **pronto** (falta chave API) | `scripts/roteirista.py` — Claude gera + 2ª passada professor nativo |
-| 3. Narração | **pronto** | Piper TTS local (grátis). Upgrade opcional: ElevenLabs |
+| 3. Narração | **pronto** | Kokoro TTS local (grátis, Apache-2.0): pf_dora (PT) + af_heart (EN), voz feminina |
 | 4. Vídeo + legenda + mascote | **pronto** | Remotion (`src/Episode.tsx`) |
 | 5. Postagem automática | a fazer | YouTube Data API + TikTok Content Posting API |
 | 6. Agendamento diário | a fazer | GitHub Actions (cron) |

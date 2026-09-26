@@ -12,7 +12,7 @@ const Root: React.FC = () =>
     width: 1080,
     height: 1920,
     durationInFrames: 1,
-    defaultProps: { scenes: [], timings: [] },
+    defaultProps: { format: "nivel", scenes: [], timings: [] },
     calculateMetadata: ({ props }) => ({
       durationInFrames: Math.max(
         1,

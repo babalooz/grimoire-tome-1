@@ -10,7 +10,7 @@ ID=$(node -e "console.log(require('./$EP').id)")
 node -e "
 const ep=require('./$EP');
 const timings=require('./public/audio/'+ep.id+'/timings.json');
-require('fs').writeFileSync('out/props.json', JSON.stringify({scenes: ep.scenes, timings}));
+require('fs').writeFileSync('out/props.json', JSON.stringify({format: ep.format, scenes: ep.scenes, timings}));
 "
 npx remotion render src/index.ts Episode "out/$ID.mp4" --props=out/props.json \
   --browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell

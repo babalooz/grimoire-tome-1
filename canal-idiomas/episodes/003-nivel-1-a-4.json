@@ -1,0 +1,47 @@
+{
+  "id": "003-nivel-1-a-4",
+  "format": "nivel",
+  "topic": "idade com be · pretend · agree · since",
+  "title": "Nível 1 é fácil. Nível 4… duvido 😏",
+  "hashtags": ["#inglês", "#capyfala", "#quiz", "#aprenderingles"],
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Nível 1 é fácil. Nível 4… duvido 😏",
+      "speech": [{ "lang": "pt", "text": "Nível um é fácil. Nível quatro? Duvido." }]
+    },
+    {
+      "type": "question", "level": 1,
+      "title": "\"Eu tenho 20 anos\"",
+      "options": ["I have 20 years", "I'm 20 years old"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Como se diz: eu tenho vinte anos?" }],
+      "revealSpeech": [{ "lang": "en", "text": "I'm twenty years old." }, { "lang": "pt", "text": "Idade usa o verbo ser." }]
+    },
+    {
+      "type": "question", "level": 2,
+      "title": "\"Pretend\" significa…",
+      "options": ["Pretender", "Fingir"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "O que significa" }, { "lang": "en", "text": "pretend?" }],
+      "revealSpeech": [{ "lang": "pt", "text": "Fingir! Pegadinha clássica." }]
+    },
+    {
+      "type": "question", "level": 3, "rehook": "Agora complica 😬",
+      "title": "Qual está certo?",
+      "options": ["I'm agree", "I agree"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Agora complica. Qual está certo?" }],
+      "revealSpeech": [{ "lang": "en", "text": "I agree." }, { "lang": "pt", "text": "Sem nada antes do verbo." }]
+    },
+    {
+      "type": "question", "level": 4,
+      "title": "I've lived here ___ 2020.",
+      "options": ["for", "since"], "answer": 1, "timerSeconds": 3,
+      "speech": [{ "lang": "pt", "text": "Nível quatro. Completa a frase." }],
+      "revealSpeech": [{ "lang": "en", "text": "Since twenty twenty." }, { "lang": "pt", "text": "Ponto no tempo, usa" }, { "lang": "en", "text": "since." }]
+    },
+    {
+      "type": "cta",
+      "title": "Placar? Comenta 0 a 4 👇",
+      "speech": [{ "lang": "pt", "text": "Quantas você acertou? Comenta aí." }]
+    }
+  ]
+}
