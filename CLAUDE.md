@@ -25,7 +25,7 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   brecha forte = português para hispanofalantes/anglófonos.
 
 ## Decisões de marca (Felipe, 26/09)
-- Marca **CapyFala** (@capyfala) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
+- Marca **CapyFala** — handle **@acapyfala** (TikTok criado 26/09; usar o mesmo no YouTube e Instagram) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
   CapyParla (futuro). Personagem: **Capi**, voz feminina. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
 
 ## Integrações ativas (26/09)
