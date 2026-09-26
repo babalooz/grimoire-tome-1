@@ -276,5 +276,267 @@
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e02-push-the-door"
+  "nextEpisodeId": "licao-s01e02-push-the-door",
+  "tiktok": {
+    "versao": 1,
+    "formato": "pov",
+    "duracaoAlvo": [
+      61,
+      75
+    ],
+    "cabecalho": "POV: seu 1º pedido em inglês nos EUA",
+    "gancho": {
+      "ate_s": 2.5,
+      "passos": [
+        {
+          "speaker": "capi",
+          "lang": "en",
+          "emotion": "zen",
+          "text": "I want a coffee.",
+          "shot": "two",
+          "tela": "ela ensaiou a fila inteira"
+        },
+        {
+          "speaker": "hank",
+          "lang": "en",
+          "emotion": "eyebrow",
+          "text": "You... WANT?",
+          "sfx": [
+            "wrong"
+          ],
+          "react": {
+            "capi": "surprised"
+          }
+        }
+      ]
+    },
+    "cena": {
+      "passos": [
+        {
+          "speaker": "capi",
+          "lang": "pt",
+          "emotion": "panic",
+          "text": "Ensaiei na fila inteira. Nervosismo surreal.",
+          "mode": "pensamento",
+          "tela": "o silêncio depois:"
+        },
+        {
+          "pausa": "respiro",
+          "s": 1.2,
+          "evento": "desmaio",
+          "sfx": [
+            "thud"
+          ]
+        },
+        {
+          "speaker": "hank",
+          "lang": "en",
+          "emotion": "bored",
+          "text": "Next.",
+          "shot": "two",
+          "tela": "ele nem piscou"
+        }
+      ]
+    },
+    "licao": {
+      "exercicios": [
+        {
+          "ref": 0,
+          "passos": [
+            {
+              "speaker": "capi",
+              "lang": "pt",
+              "emotion": "happy",
+              "text": "Ninguém viu. Qual era a certa?"
+            },
+            {
+              "pausa": "timer",
+              "s": 3
+            },
+            {
+              "speaker": "capi",
+              "lang": "en",
+              "emotion": "happy",
+              "text": "Can I get a coffee, please?"
+            },
+            {
+              "speaker": "capi",
+              "lang": "pt",
+              "emotion": "happy",
+              "text": "Pedir perguntando. Ele para de te julgar."
+            }
+          ]
+        },
+        {
+          "ref": 1,
+          "passos": [
+            {
+              "pausa": "timer",
+              "s": 4
+            },
+            {
+              "speaker": "capi",
+              "lang": "en",
+              "emotion": "happy",
+              "text": "Can I get a coffee, please?",
+              "pre": 1.6
+            },
+            {
+              "speaker": "capi",
+              "lang": "pt",
+              "emotion": "angry",
+              "text": "Sobrou o verbo que me derrubou."
+            }
+          ]
+        },
+        {
+          "ref": 2,
+          "passos": [
+            {
+              "speaker": "capi",
+              "lang": "en",
+              "emotion": "zen",
+              "text": "Can I get a coffee, please?",
+              "speed": 0.7,
+              "evento": "som"
+            },
+            {
+              "speaker": "capi",
+              "lang": "en",
+              "emotion": "zen",
+              "text": "Can I get a coffee, please?",
+              "evento": "som"
+            },
+            {
+              "pausa": "timer",
+              "s": 3
+            },
+            {
+              "speaker": "capi",
+              "lang": "pt",
+              "emotion": "panic",
+              "text": "Ouvi biscoito. Fome é contexto.",
+              "pre": 0.8
+            }
+          ]
+        },
+        {
+          "ref": 3,
+          "passos": [
+            {
+              "speaker": "capi",
+              "lang": "pt",
+              "emotion": "happy",
+              "text": "Faz dueto e repete comigo.",
+              "tela": "faz dueto e repete"
+            },
+            {
+              "speaker": "capi",
+              "lang": "en",
+              "emotion": "zen",
+              "text": "Can I get a coffee, please?",
+              "speed": 0.7,
+              "evento": "modelo"
+            },
+            {
+              "pausa": "mic",
+              "s": 3
+            },
+            {
+              "speaker": "capi",
+              "lang": "en",
+              "emotion": "happy",
+              "text": "Can I get a coffee, please?",
+              "evento": "modelo"
+            },
+            {
+              "speaker": "capi",
+              "lang": "pt",
+              "emotion": "happy",
+              "text": "Pronto. Vergonha junto, mas certa."
+            }
+          ]
+        }
+      ]
+    },
+    "volta": {
+      "passos": [
+        {
+          "speaker": "capi",
+          "lang": "en",
+          "emotion": "happy",
+          "text": "Can I get a coffee, please?",
+          "shot": "close",
+          "react": {
+            "hank": "surprised"
+          },
+          "tela": "tentativa 2:"
+        },
+        {
+          "speaker": "hank",
+          "lang": "en",
+          "emotion": "smile",
+          "text": "Sure. ...Are you okay?",
+          "react": {
+            "capi": "happy"
+          }
+        },
+        {
+          "speaker": "capi",
+          "lang": "pt",
+          "emotion": "happy",
+          "text": "Não. Mas agora com café."
+        },
+        {
+          "speaker": "capi",
+          "lang": "pt",
+          "emotion": "happy",
+          "text": "Qual frase te travou na hora? Comenta.",
+          "card": true,
+          "hold": 1.0
+        }
+      ]
+    },
+    "loop": "o card final corta seco para o gancho (I want a coffee.), sem fade",
+    "legendaPost": "Como pedir café em inglês sem passar vergonha (eu passei). Can I get a coffee, please? Dia 1 da Capy nos EUA ☕",
+    "hashtags": [
+      "#capyfala",
+      "#inglês",
+      "#aprenderingles",
+      "#inglesparainiciantes",
+      "#morarnoseua"
+    ],
+    "comentarioFixado": "Frase do dia: Can I get a coffee, please? ☕ Acertou as 4? Eu acertei depois de desmaiar.",
+    "palavrasChave": [
+      "como pedir café em inglês",
+      "can I get",
+      "inglês para viagem"
+    ],
+    "audio": {
+      "tipo": "original",
+      "trilha": "public/music/cafe-loop.wav (scripts/music.py, CC0, gerada pelo projeto)",
+      "somEmAlta": null,
+      "motivo": "Upload por API/Buffer não anexa som da biblioteca do TikTok; o vídeo sobe com som original (voz + trilha própria). Som em alta só em post manual, ver docs/tiktok-nativo.md §5.",
+      "nomeSomSugerido": "Capy pedindo café em inglês (errado)"
+    },
+    "dueto": {
+      "permitir": true,
+      "trecho": "licao.exercicios[3] (repita em voz alta)"
+    },
+    "respostaComentario": {
+      "gatilho": "comentário real perguntando por que 'I want' soa rude ou se 'Can I have' também serve",
+      "roteiro": "vídeo-resposta curto com o print do comentário: Capy compara Can I get / Can I have / I'd like, com a mesma porta de entrada 'Responder @usuário'",
+      "automatico": false
+    },
+    "memeRefs": [
+      {
+        "termo": "nervosismo surreal",
+        "onde": "cena.passos[0]",
+        "fonte": "https://www.tediado.com.br/08/memes-2026-os-virais/",
+        "visto": "2026-08",
+        "validoAte": "2026-10-31",
+        "fallback": "Ensaiei na fila inteira. Deu branco total."
+      }
+    ]
+  }
 }
