@@ -1,7 +1,7 @@
 import React from "react";
 import { random } from "remotion";
 
-// Capi v2 — vetor feito em código a partir do conceito docs/arte/capi-conceito-v1.png.
+// Capy v2 — vetor feito em código a partir do conceito docs/arte/capi-conceito-v1.png.
 // Perfil 3/4: cabeça e corpo num bloco só (sem pescoço), focinho retangular grande, orelhas no topo,
 // olhar zen (pálpebra a meio-mastro). Sem acessórios (Felipe vetou óculos e tangerina em 26/09).
 export type Mood = "zen" | "thinking" | "sweat" | "shock" | "happy" | "fail";

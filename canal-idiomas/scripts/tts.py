@@ -1,6 +1,6 @@
 """Gera o áudio de um episódio com Kokoro (TTS local, grátis, licença Apache-2.0).
 
-Vozes por personagem (campo `speaker`; sem speaker = Capi, compatível com os episódios antigos):
+Vozes por personagem (campo `speaker`; sem speaker = Capy, compatível com os episódios antigos):
   capi      pt pf_dora  · en af_heart   (feminina)
   hank      pt pm_santa · en am_onyx    (bisão: a voz masculina mais grave do Kokoro, ~93 Hz medidos)
   leo       pt pm_alex  · en am_puck    (preguiça: mais lento, sussurrado = ganho menor)
@@ -12,7 +12,7 @@ Saída (formato quiz, `scenes`): public/audio/<id>/<n>.wav (+ <n>_reveal.wav) + 
 Saída (formato sitcom, `beats`): public/audio/<id>/b<n>.wav (1 por fala) + timings.json
 Saída (formato lição, `format: "licao"`): public/audio/<id>/l<hash>.wav (1 por fala única) + timings.json
   = {chave: {audio, duration}}, chave = line_key() (mesma conta de src/lesson/timeline.ts: lineKey).
-  Velocidades mais calmas (feedback do piloto: "muito rápido"): Capi PT 1.0 · EN 0.9; `speed` na fala sobrescreve.
+  Velocidades mais calmas (feedback do piloto: "muito rápido"): Capy PT 1.0 · EN 0.9; `speed` na fala sobrescreve.
 """
 import hashlib
 import json

@@ -10,7 +10,7 @@ Missão: plano de distribuição dos primeiros 90 dias e mudanças no pipeline (
 
 ## Contexto obrigatório (ler antes de responder)
 - `CLAUDE.md` (perfil do Felipe, regras de resposta, direção atual)
-- `docs/plano-capi-lingo.md` (plano mestre: Capi, quadros, pipeline, etapas)
+- `docs/plano-capi-lingo.md` (plano mestre: Capy, quadros, pipeline, etapas)
 - `docs/pesquisas/` (pesquisas verificadas — use, não repita)
 - `canal-idiomas/` (código: Remotion, roteirista, radar, episódios)
 

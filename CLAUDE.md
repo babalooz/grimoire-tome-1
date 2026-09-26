@@ -26,7 +26,7 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 
 ## Decisões de marca (Felipe, 26/09)
 - Marca **CapyFala** — handle **@acapyfala** (TikTok criado 26/09; usar o mesmo no YouTube e Instagram) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
-  CapyParla (futuro). Personagem: **Capi**, voz feminina. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
+  CapyParla (futuro). Personagem: **Capy** (com y, decisão do Felipe 26/09 — nunca "Capi"), voz feminina. Keywords do canal no Studio: CapyFala, Capy, capivara, aprender inglês, inglês para brasileiros, inglês do dia a dia, inglês fácil, falar inglês, erros em inglês, frases em inglês, inglês americano, inglês para viagem, morar nos EUA, vocabulário em inglês, pronúncia em inglês, inglês básico, curso de inglês grátis. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
 
 ## Integrações ativas (26/09)
 - Conectores: Gmail, Google Drive, Google Calendar, **vidIQ** (Free: 150 créditos/mês, renova dia 25 — usar só em pesquisa semanal).

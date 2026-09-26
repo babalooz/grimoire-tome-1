@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill } from "remotion";
 import { C, TITLE } from "../theme";
 
-// Bean There Café — cenário principal de "Capi no Exterior" (Lagoa Pines, Kissimmee; tudo fictício).
+// Bean There Café — cenário principal de "Capy no Exterior" (Lagoa Pines, Kissimmee; tudo fictício).
 // Direção visual (playbook 4.5): amarelo quente + detalhes roxos, contorno grosso, 3 camadas.
 // Mundo = 1080x1920. Camadas: CafeBack (parede, menu, luzes) · personagens atrás do balcão · CafeCounter (balcão).
 const INK = "#3A2213";

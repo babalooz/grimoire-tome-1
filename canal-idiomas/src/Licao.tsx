@@ -18,8 +18,8 @@ import { STAG } from "./lesson/LessonUI";
 export type { LicaoProps } from "./lesson/timeline";
 export { licaoFrames } from "./lesson/timeline";
 
-// "LIÇÃO EM VÍDEO" (CapyFala): CENA (a Capi erra e desmaia) → LIÇÃO (4 exercícios de app, com pausa real
-// para o espectador pensar) → VOLTA (a Capi acerta no balcão) + Caderninho + CTA.
+// "LIÇÃO EM VÍDEO" (CapyFala): CENA (a Capy erra e desmaia) → LIÇÃO (4 exercícios de app, com pausa real
+// para o espectador pensar) → VOLTA (a Capy acerta no balcão) + Caderninho + CTA.
 // Ritmo calmo (feedback do piloto), mas algo muda na tela a cada 2–3 s (reações, micro-animações, SFX).
 
 const MOOD: Record<Emotion, Mood> = {

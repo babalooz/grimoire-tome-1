@@ -9,7 +9,7 @@ import { Cam, CharId, STAGE, clampCam } from "../Sitcom";
 import { C, TITLE } from "../theme";
 
 // Palco do Bean There Café para o formato lição (mesmo elenco/cenário/câmera do Sitcom, mais calmo:
-// troca de plano em 12 frames em vez de 8 e push-in mais lento). Inclui o desmaio da Capi.
+// troca de plano em 12 frames em vez de 8 e push-in mais lento). Inclui o desmaio da Capy.
 
 export const WHIP = 12;
 

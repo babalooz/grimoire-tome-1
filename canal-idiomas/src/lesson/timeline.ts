@@ -1,6 +1,6 @@
 import { Emotion } from "../chars/common";
 
-// Formato "LIÇÃO EM VÍDEO": CENA (problema no café) → LIÇÃO (exercícios de app) → VOLTA (Capi usa a frase certa).
+// Formato "LIÇÃO EM VÍDEO": CENA (problema no café) → LIÇÃO (exercícios de app) → VOLTA (Capy usa a frase certa).
 // O roteiro é uma lista de passos. Passo = fala (1 áudio) ou pausa (timer, microfone, respiro).
 // Esta agenda é a fonte da verdade do tempo: a composição, o áudio e o script de stills leem daqui.
 
@@ -20,7 +20,7 @@ export type Line = {
   evento?: "som" | "modelo"; // som = botão de áudio aceso (ouvir) · modelo = frase-modelo acesa (repetir)
   pre?: number; // silêncio antes da fala (s): deixa a animação respirar
   hold?: number; // silêncio extra depois (s)
-  card?: boolean; // Caderninho da Capi na tela
+  card?: boolean; // Caderninho da Capy na tela
 };
 export type Pause = { pausa: "timer" | "mic" | "respiro"; s: number; evento?: "desmaio"; sfx?: string[] };
 export type Passo = Line | Pause;
@@ -31,7 +31,7 @@ export type Exercicio = {
   enunciado?: string;
   opcoes?: string[];
   resposta?: number;
-  chute?: number; // opção que a Capi escolhe durante o timer (se errada: perde 1 coração, sem XP)
+  chute?: number; // opção que a Capy escolhe durante o timer (se errada: perde 1 coração, sem XP)
   tiles?: string[];
   ordem?: number[]; // índices de `tiles` na ordem certa
   frase?: string;

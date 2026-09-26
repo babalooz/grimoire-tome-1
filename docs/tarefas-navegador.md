@@ -13,7 +13,7 @@ Baixe do GitHub (branch main) se não estiverem no PC.
 - [ ] **Identificador:** `acapyfala`
 - [ ] **Descrição:**
   ```
-  Aprenda inglês com a Capi, uma capivara brasileira tentando sobreviver nos EUA. 🇧🇷➡️🇺🇸
+  Aprenda inglês com a Capy, uma capivara brasileira tentando sobreviver nos EUA. 🇧🇷➡️🇺🇸
   Um erro real por episódio, a frase certa e muita vergonha alheia. Episódio novo todo dia!
   📝 Descubra seu nível de inglês grátis: (link do teste — em breve)
   ```
@@ -27,7 +27,7 @@ Baixe do GitHub (branch main) se não estiverem no PC.
 - [ ] Mudar para **conta de criador** (Configurações → Tipo de conta)
 - [ ] Bio:
   ```
-  🐹 Capi, capivara brasileira nos EUA
+  🐹 Capy, capivara brasileira nos EUA
   Inglês de verdade, um mico por dia 🇧🇷➡️🇺🇸
   👇 Teste seu nível grátis
   ```

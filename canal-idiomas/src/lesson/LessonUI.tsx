@@ -13,7 +13,7 @@ export const L = {
   optH: 120,
   optGap: 24,
   capi: { left: 0, top: 1116, size: 340 },
-  capiMouth: [350, 1282] as [number, number], // ponta do focinho da Capi na lição (âncora do balão lateral)
+  capiMouth: [350, 1282] as [number, number], // ponta do focinho da Capy na lição (âncora do balão lateral)
 };
 const W = SAFE.x1 - SAFE.x0;
 const CARD_SHADOW = `0 10px 0 ${C.tinta}`;

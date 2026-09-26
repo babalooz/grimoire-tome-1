@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Episódio sitcom ("Capi no Exterior") JSON -> vozes por personagem (Kokoro) -> vídeo 9:16 (Remotion, composição Sitcom).
+# Episódio sitcom ("Capy no Exterior") JSON -> vozes por personagem (Kokoro) -> vídeo 9:16 (Remotion, composição Sitcom).
 # Uso: scripts/make-sitcom.sh episodes/s01e01-can-i-get.json [--stills]
 #   --stills  também gera 6 quadros-chave em out/<id>-stills/ (gancho, Hank, pânico, quiz/timer, revelação, caderninho)
 set -euo pipefail

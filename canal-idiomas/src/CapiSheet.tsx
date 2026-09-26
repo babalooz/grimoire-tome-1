@@ -3,7 +3,7 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { Capi, Mood } from "./Capi";
 import { C, TITLE } from "./theme";
 
-// Folha de personagem: todas as expressões lado a lado (revisão visual da Capi).
+// Folha de personagem: todas as expressões lado a lado (revisão visual da Capy).
 const MOODS: Mood[] = ["zen", "thinking", "sweat", "shock", "happy", "fail"];
 
 export const CapiSheet: React.FC = () => {

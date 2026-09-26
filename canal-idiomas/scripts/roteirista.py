@@ -11,7 +11,7 @@ Requer ANTHROPIC_API_KEY (ou `ant auth login`) fora do --dry-run/--validar.
 Fluxo (spec: docs/conselho/2026-09-26/didatica-linguistica.md, roteirista-shorts.md, retencao-psicologia.md):
   1. O CÓDIGO escolhe o tópico do currículo (curriculo/en-br.json) antes da IA: não usados primeiro, foco A1–B1,
      B2/C1 só de vez em quando, e um tópico de revisão espaçada (~3/10/30 dias) quando houver. Registro em curriculo/uso.json.
-  2. A IA só roteiriza (gancho, cena, piada, fala da Capi) em cima do conteúdo linguístico do tópico.
+  2. A IA só roteiriza (gancho, cena, piada, fala da Capy) em cima do conteúdo linguístico do tópico.
   3. Validadores em código (gancho, 1ª pergunta até ~2 s, "%" sem fonte, promessa sem episódio, inglês na voz PT,
      duração, CTA). Reprovou -> volta à IA com os problemas (até 2 novas tentativas).
   4. Revisor (2ª passada) só APROVA/REPROVA e aponta erro de inglês/fato/gabarito; não reescreve nada.
@@ -42,19 +42,19 @@ GRADE = {0: "nivel", 1: "capi-errou", 2: "qual-seu-nivel", 3: "pegadinha", 4: "h
 QUADROS = {
     "nivel": "Nível 1→4 (versão curta): 4 questions (level 1..4, 2 opções, timer 2 s nos níveis 1–2 e 3 s nos 3–4). "
              "Cada nível testa um TIPO diferente, em escalada real (ex.: vocabulário → falso cognato → preposição → tempo "
-             "verbal), usando SÓ os tópicos do currículo abaixo, do mais fácil ao mais difícil. A Capi fica mais nervosa a "
+             "verbal), usando SÓ os tópicos do currículo abaixo, do mais fácil ao mais difícil. A Capy fica mais nervosa a "
              "cada nível. Re-gancho (campo rehook) no nível 3, ex.: 'Agora complica 😬'. Gancho de personagem: "
              "'nível 4 me fez suar'. CTA pedindo o placar (0 a 4) nos comentários.",
     "qual-seu-nivel": "Qual seu nível? (versão TikTok, 61–75 s): 6 questions (level 1..6, subtitle com o nível CEFR do "
                       "tópico), uma por tópico do currículo abaixo, em ordem de dificuldade. Gancho: 'teu nível em um "
                       "minuto'. CTA: 'parou em qual? comenta teu nível'.",
-    "capi-errou": "Capi errou, corrige aí: a Capi, presunçosa, apresenta 3 frases numa situação adulta (aeroporto, trabalho, "
+    "capi-errou": "Capy errou, corrige aí: a Capy, presunçosa, apresenta 3 frases numa situação adulta (aeroporto, trabalho, "
                   "date). Exatamente 1 está errada (o erro_do_brasileiro do tópico-alvo) e as outras 2 são CERTAS (use a "
                   "forma_certa dos tópicos de apoio); pelo menos 1 das certas PARECE errada (isca de debate). question "
                   "SEM answer. Não revele. Preencha answerTomorrow {wrong, correction, why, trap}. "
                   "CTA: 'comenta A, B ou C — amanhã eu conto'.",
     "mico": "Para de pagar mico: 3 palavras em inglês que brasileiro pronuncia diferente (use as palavras_pronuncia dos "
-            "tópicos abaixo). Para cada uma: a Capi fala confiante do jeito brasileiro (lang=pt, grafia aportuguesada, ex.: "
+            "tópicos abaixo). Para cada uma: a Capy fala confiante do jeito brasileiro (lang=pt, grafia aportuguesada, ex.: "
             "'uêdinesdei'), timer 2 s, e a pronúncia certa (lang=en). Só pronúncias de dicionário (Cambridge/Merriam-Webster).",
     "pegadinha": "Pegadinha (falso amigo/confusão clássica): 3 questions com 2 opções, uma por tópico abaixo. Revelação com "
                  "a palavra certa em inglês (fala en) + o porquê em até 1 linha.",
@@ -73,7 +73,7 @@ DURACAO_CURTA = (25, 40)
 
 # ---------------------------------------------------------------- personagem e regras (seção 6, adaptados à marca)
 PERSONAGEM = (
-    "Capi é uma capivara brasileira, professora de inglês do canal CapyFala (@acapyfala). TODAS as falas são da Capi, em "
+    "Capy é uma capivara brasileira, professora de inglês do canal CapyFala (@acapyfala). TODAS as falas são da Capy, em "
     "primeira pessoa. Zen por fora, dramática por dentro: fala pouco e calma, mas sua no nível difícil, fica presunçosa "
     "quando acha que acertou e desmorona quando cai na armadilha. Humor adulto-leve de brasileiro (trabalho, "
     "segunda-feira, viagem, término, boleto, memes) — nunca infantil, nunca palavrão, nunca política. Bordões (usar NO "
@@ -87,11 +87,11 @@ REGRAS = """Estrutura obrigatória:
   até ~2 s: na prática a fala do gancho tem 5–6 palavras. Gancho de desafio, identidade ou personagem sob pressão.
   PROIBIDO porcentagem, estatística ou "X% dos brasileiros" — não temos dado real.
 - O CONTEÚDO LINGUÍSTICO vem do currículo (tópico-alvo e tópicos de apoio): erro, forma certa, regra e exemplo. Você NÃO
-  inventa outro erro nem outra regra; você escreve gancho, cena, piada e a fala da Capi em volta deles.
+  inventa outro erro nem outra regra; você escreve gancho, cena, piada e a fala da Capy em volta deles.
 - Perguntas: a opção errada é o erro_do_brasileiro do tópico. Nunca duas opções que possam estar certas em algum registro.
 - Revelação: frase correta em inglês (lang=en, fala separada) + no máximo 1 linha em português com o PORQUÊ (regra_curta,
   pode enxugar). A forma certa é sempre a última frase em inglês da cena.
-- Em cada vídeo: pelo menos 1 piada da Capi (reação, comparação com a vida adulta) e 1 momento de emoção (suor, choque).
+- Em cada vídeo: pelo menos 1 piada da Capy (reação, comparação com a vida adulta) e 1 momento de emoção (suor, choque).
 - A fala da pergunta NÃO repete o que está escrito na tela: é reação/tensão ("Nível três. Começou o suor.").
 - Última cena type=cta: fala ≤ 12 palavras, pede placar ou escolha nos comentários (A/B/C, 0–4). Nunca prometa
   "parte 2", "amanhã" ou "próximo vídeo", a não ser que o quadro mande (capi-errou, com answerTomorrow preenchido).
@@ -108,9 +108,9 @@ REGRAS = """Estrutura obrigatória:
 MODELOS = {
     "nivel": {
         "topic": "4 armadilhas clássicas de brasileiro, da mais fácil à mais cruel",
-        "title": "Nível 1 é fácil. Nível 4 fez a Capi suar 😰",
+        "title": "Nível 1 é fácil. Nível 4 fez a Capy suar 😰",
         "hashtags": ["#inglês", "#quiz", "#capyfala", "#aprenderingles", "#desafio"],
-        "pinnedComment": "Placar da Capi: nível 4 eu errei na primeira vez. Qual foi o teu?",
+        "pinnedComment": "Placar da Capy: nível 4 eu errei na primeira vez. Qual foi o teu?",
         "scenes": [
             {"type": "hook", "title": "Nível 4 me fez suar 😰",
              "speech": [{"lang": "pt", "text": "Nível quatro me fez suar."}]},
@@ -139,7 +139,7 @@ MODELOS = {
     },
     "capi-errou": {
         "topic": "since × for no present perfect (com isca: married to)",
-        "title": "A Capi disse 3 frases. UMA tá errada 🤨",
+        "title": "A Capy disse 3 frases. UMA tá errada 🤨",
         "hashtags": ["#inglês", "#capyfala", "#achaoerro", "#aprenderingles", "#quiz"],
         "pinnedComment": "Resposta no fim do vídeo de amanhã. Até lá: A, B ou C?",
         "answerTomorrow": {
@@ -150,7 +150,7 @@ MODELOS = {
         "scenes": [
             {"type": "hook", "title": "Meu inglês é perfeito. Confia 😌",
              "speech": [{"lang": "pt", "text": "Meu inglês é perfeito. Confia."}]},
-            {"type": "question", "title": "Uma dessas tá ERRADA. Qual?", "subtitle": "Capi no aeroporto de Miami ✈️",
+            {"type": "question", "title": "Uma dessas tá ERRADA. Qual?", "subtitle": "Capy no aeroporto de Miami ✈️",
              "options": ["I'm here since Monday.", "I'm looking forward to seeing you.", "She's married to a Canadian."],
              "timerSeconds": 3,
              "speech": [{"lang": "pt", "text": "Cheguei em Miami e mandei essas três pro gringo. A:"},
@@ -168,7 +168,7 @@ MODELOS = {
         "topic": "teste A1→C2 em 1 minuto (versão TikTok ≥61 s)",
         "title": "Descubra teu nível de inglês em 1 minuto 🎯",
         "hashtags": ["#inglês", "#testedeingles", "#qualseunivel", "#capyfala", "#aprenderingles"],
-        "pinnedComment": "Parei no ___. Comenta o teu (sem mentir, a Capi tá vendo 👀)",
+        "pinnedComment": "Parei no ___. Comenta o teu (sem mentir, a Capy tá vendo 👀)",
         "scenes": [
             {"type": "hook", "title": "Teu nível em 1 minuto 🎯", "subtitle": "Onde você parar de acertar = teu nível",
              "speech": [{"lang": "pt", "text": "Teu nível em um minuto."}]},
@@ -187,7 +187,7 @@ MODELOS = {
              "timerSeconds": 3, "speech": [{"lang": "pt", "text": "B um. Aqui muita gente cai."}],
              "revealSpeech": [{"lang": "pt", "text": "Começou lá atrás e continua:"},
                               {"lang": "en", "text": "present perfect. I've been living here for three years."}]},
-            {"type": "question", "level": 4, "rehook": "Aqui a Capi começou a suar 😬",
+            {"type": "question", "level": 4, "rehook": "Aqui a Capy começou a suar 😬",
              "title": "\"Se eu tivesse estudado, teria passado\"", "subtitle": "B2",
              "options": ["If I studied, I would pass", "If I had studied, I would have passed"], "answer": 1,
              "timerSeconds": 3, "speech": [{"lang": "pt", "text": "B dois. Se eu tivesse estudado, teria passado."}],

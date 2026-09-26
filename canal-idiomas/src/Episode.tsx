@@ -247,7 +247,7 @@ const SceneView: React.FC<{ scene: Scene; timing: Timing; first: boolean; levels
         )}
       </div>
 
-      {/* Capi: grande no gancho, à esquerda nas demais; balão de fala ao lado */}
+      {/* Capy: grande no gancho, à esquerda nas demais; balão de fala ao lado */}
       <div style={{ position: "absolute", left: isHook ? 150 : SAFE.x0 - 10, top: isHook ? 760 : 1010 }}>
         <Capi frame={frame} talking={talking} mood={mood} size={isHook ? 700 : 400}
           sweat={inTimer ? (scene.level ?? 1) : 0} armUp={scene.type === "question" && !inTimer} />

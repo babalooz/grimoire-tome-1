@@ -19,7 +19,7 @@ const out = [
   faint.start + 30, // 3 desmaio (PLOFT)
   m[ix("traducao")].timerFrom + 45, // 4 escolha a tradução + timer
   m[ix("montar")].reveal + 6 * e[ix("montar")].ordem.length + 40, // 5 blocos montados + vilã
-  m[ix("ouvir")].reveal + 24, // 6 ouvir: a Capi errou, coração quebra
+  m[ix("ouvir")].reveal + 24, // 6 ouvir: a Capy errou, coração quebra
   m[ix("repetir")].timerFrom + 40, // 7 microfone: sua vez
   card.from + card.dur - 2, // 8 caderninho + CTA
 ];

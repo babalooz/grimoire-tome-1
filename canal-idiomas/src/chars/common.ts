@@ -1,6 +1,6 @@
 import { random } from "remotion";
 
-// Traço comum do elenco (mesmo da Capi v2): contorno grosso marrom-tinta, pontas redondas.
+// Traço comum do elenco (mesmo da Capy v2): contorno grosso marrom-tinta, pontas redondas.
 export const INK = "#3A2213";
 export const S = { stroke: INK, strokeWidth: 9, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
 

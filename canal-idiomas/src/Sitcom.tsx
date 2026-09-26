@@ -10,7 +10,7 @@ import { Emotion } from "./chars/common";
 import { CafeBack, CafeCounter, ThoughtOverlay } from "./sets/CafeSet";
 import { BODY, C, SAFE, TITLE } from "./theme";
 
-// "Capi no Exterior" — motor de sitcom em micro-episódios.
+// "Capy no Exterior" — motor de sitcom em micro-episódios.
 // Roteiro = lista de beats (1 fala cada, 1 áudio cada). O motor decide câmera, balão, reações, quiz e cartão final.
 
 export type Speaker = "capi" | "hank" | "leo" | "narrador";
@@ -25,7 +25,7 @@ export type Beat = {
   react?: Partial<Record<"capi" | "hank" | "leo", Emotion>>; // reação de quem ouve
   quiz?: "ask" | "reveal"; // ask = painel aberto (o timer roda depois do último ask); reveal = resposta
   option?: number; // opção que está sendo lida (destaque)
-  card?: boolean; // cartão "Caderninho da Capi" na tela
+  card?: boolean; // cartão "Caderninho da Capy" na tela
   hold?: number; // segundos extras parados no fim do beat
 };
 export type BeatTiming = { audio: string; duration: number };
@@ -242,7 +242,7 @@ export const Particles: React.FC<{ since: number; x: number; y: number }> = ({ s
   );
 };
 
-// Cartão final colecionável: "Caderninho da Capi #00N" com o chunk do dia.
+// Cartão final colecionável: "Caderninho da Capy #00N" com o chunk do dia.
 export const Notebook: React.FC<{ n: number; chunk: SitcomProps["chunk"]; since: number }> = ({ n, chunk, since }) => {
   const { fps } = useVideoConfig();
   const s = spring({ frame: since, fps, config: { damping: 13 } });
@@ -259,7 +259,7 @@ export const Notebook: React.FC<{ n: number; chunk: SitcomProps["chunk"]; since:
           {Array.from({ length: 9 }, (_, i) => <div key={i} style={{ width: 22, height: 52, borderRadius: 11, background: "#D9D4E8", border: `6px solid ${C.tinta}` }} />)}
         </div>
         <div style={{ position: "absolute", top: 0, bottom: 0, left: 62, width: 5, background: C.errado, opacity: 0.7 }} />
-        <div style={{ fontFamily: TITLE, fontSize: 46, color: C.roxo }}>Caderninho da Capi</div>
+        <div style={{ fontFamily: TITLE, fontSize: 46, color: C.roxo }}>Caderninho da Capy</div>
         <div style={{ fontFamily: TITLE, fontSize: 76, lineHeight: 1.05, color: C.tinta, marginTop: 18 }}>{chunk.en}</div>
         <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 40, color: C.roxo, marginTop: 16 }}>{chunk.pt}</div>
         {chunk.pattern && (

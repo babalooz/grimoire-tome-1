@@ -2,7 +2,7 @@ import React from "react";
 import { Capi } from "./Capi";
 import { C, TITLE } from "./theme";
 
-// Marca dentro do vídeo (Shorts não mostra marca d'água do canal): Capi + @acapyfala, canto inferior direito da zona segura.
+// Marca dentro do vídeo (Shorts não mostra marca d'água do canal): Capy + @acapyfala, canto inferior direito da zona segura.
 export const Watermark: React.FC = () => (
   <div style={{
     position: "absolute", right: 1080 - 940, top: 1370, display: "flex", alignItems: "center", gap: 8,

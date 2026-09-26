@@ -1,7 +1,7 @@
 {
   "id": "s01e01-can-i-get",
   "format": "sitcom",
-  "series": "Capi no Exterior",
+  "series": "Capy no Exterior",
   "season": 1,
   "episode": 1,
   "day": 1,
@@ -20,7 +20,7 @@
     "callbacks": ["s01e02", "s01e09"]
   },
   "quiz": {
-    "question": "O que a Capi devia ter dito?",
+    "question": "O que a Capy devia ter dito?",
     "options": ["Give me a coffee.", "Can I get a coffee, please?"],
     "answer": 1,
     "timerSeconds": 3

@@ -10,7 +10,7 @@ Missão: definir as métricas-norte, os limiares de corte por quadro e o relató
 
 ## Contexto obrigatório (ler antes de responder)
 - `CLAUDE.md` (perfil do Felipe, regras de resposta, direção atual)
-- `docs/plano-capi-lingo.md` (plano mestre: Capi, quadros, pipeline, etapas)
+- `docs/plano-capi-lingo.md` (plano mestre: Capy, quadros, pipeline, etapas)
 - `docs/pesquisas/` (pesquisas verificadas — use, não repita)
 - `canal-idiomas/` (código: Remotion, roteirista, radar, episódios)
 

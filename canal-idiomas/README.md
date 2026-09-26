@@ -1,6 +1,6 @@
 # Canal de idiomas — "CapyFala"
 
-Vídeos curtos 9:16 (TikTok / Shorts / Reels) de inglês para brasileiros, com mascote original (Capi, a capivara),
+Vídeos curtos 9:16 (TikTok / Shorts / Reels) de inglês para brasileiros, com mascote original (Capy, a capivara),
 narração automática PT+EN, legenda palavra a palavra e quiz com contagem regressiva. 100% gerado por código.
 
 ## Uso

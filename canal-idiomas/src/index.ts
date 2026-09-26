@@ -30,7 +30,7 @@ const Root: React.FC = () =>
       ),
     }),
   }),
-  // "Capi no Exterior" (sitcom em micro-episódios). Props = episódio com `beats` + timings do TTS (scripts/make-sitcom.sh).
+  // "Capy no Exterior" (sitcom em micro-episódios). Props = episódio com `beats` + timings do TTS (scripts/make-sitcom.sh).
   React.createElement(Composition<any, SitcomProps>, {
     id: "Sitcom",
     component: Sitcom,
