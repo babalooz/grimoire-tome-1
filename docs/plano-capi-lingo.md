@@ -1,4 +1,4 @@
-# Plano Capi Lingo — 26/09/2026
+# Plano CapyFala (ex-Capi Lingo) — 26/09/2026
 
 Marca guarda-chuva **Capi Lingo** (mascote: Capi, a capivara). Três públicos, um motor:
 1. **Capi Lingo** — inglês para brasileiros (começo)

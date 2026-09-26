@@ -25,8 +25,8 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   brecha forte = português para hispanofalantes/anglófonos.
 
 ## Decisões de marca (Felipe, 26/09)
-- Nome **Capi Lingo** mantido por decisão do Felipe (conselho alertou risco de 'quase-Duolingo'). Mitigar: zero elementos visuais do Duolingo,
-  registrar INPI cedo, handle @capilingo está ocupado → usar variante (ex.: @capilingobr / @capi.lingo). Capi tem voz feminina.
+- Marca **CapyFala** (@capyfala) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
+  CapyParla (futuro). Personagem: **Capi**, voz feminina. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
