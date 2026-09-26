@@ -4,8 +4,8 @@
 - Ponte aberta (branch `ponte`, vigia local a cada 2 min).
 - YouTube: o canal ativo no Studio chama "Felipe Pazini" (UCE46GzcE1XXYcn0y1O0i3JA). Aba Vídeos está vazia.
   Há 3 Shorts públicos antigos (Romário/Edmundo/Renato Gaúcho 155 views; David Beckham 0; Ronaldinho 671).
-  Tudo pronto para torná-los privados, mas a trava de segurança do PC pede o clique final do Felipe
-  (a caixa "Tem certeza?" ficou aberta no Chrome dele).
+  ATUALIZAÇÃO 26/set: o Felipe EXCLUIU os 3 Shorts. Conferido no Studio: Vídeos e Shorts vazios.
+  O canal está limpo para virar CapyFala.
 - Alterar nome, identificador, descrição, foto, banner e público do canal: o Claude local não altera conta pública
   sem o Felipe presente na hora. Fica para uma sessão com ele no teclado.
 - Não feito, por regra do lado local (o Felipe faz): criar Instagram e Buffer, gerar BUFFER_TOKEN,
