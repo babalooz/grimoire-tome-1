@@ -101,14 +101,14 @@ export const Poppy: React.FC<Omit<CharProps, "emotion"> & { emotion: PoppyEmotio
         {/* braço direito erguendo o celular (selfie) */}
         {phone ? (
           <g>
-            <path d="M404 604 C470 610 506 560 506 500" fill="none" stroke={INK} strokeWidth={82} strokeLinecap="round" />
-            <path d="M404 604 C470 610 506 560 506 500" fill="none" stroke={PUFFER} strokeWidth={66} strokeLinecap="round" />
-            <g transform="rotate(-12 520 430)">
-              <rect x={476} y={352} width={92} height={160} rx={18} fill={CASE} {...S} strokeWidth={8} />
-              <rect x={488} y={364} width={40} height={40} rx={10} fill={INK} />
-              <circle cx={500} cy={376} r={6} fill="#555" /><circle cx={516} cy={392} r={6} fill="#555" />
+            <path d="M404 604 C470 640 530 640 548 612" fill="none" stroke={INK} strokeWidth={82} strokeLinecap="round" />
+            <path d="M404 604 C470 640 530 640 548 612" fill="none" stroke={PUFFER} strokeWidth={66} strokeLinecap="round" />
+            <g transform="rotate(10 556 560)">
+              <rect x={512} y={478} width={88} height={150} rx={18} fill={CASE} {...S} strokeWidth={8} />
+              <rect x={524} y={490} width={38} height={38} rx={10} fill={INK} />
+              <circle cx={535} cy={501} r={6} fill="#555" /><circle cx={551} cy={517} r={6} fill="#555" />
             </g>
-            <circle cx={504} cy={482} r={26} fill={SKIN} {...S} strokeWidth={7} />
+            <circle cx={548} cy={606} r={26} fill={SKIN} {...S} strokeWidth={7} />
           </g>
         ) : (
           <g>

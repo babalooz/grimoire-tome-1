@@ -28,7 +28,7 @@ export const Bolinha: React.FC<CharProps & { cheeks?: number }> = ({ frame, talk
   const hop = emotion === "happy" ? Math.abs(Math.sin(frame / 5)) * -10 : 0;
 
   // bochechas: crescem para os lados e um pouco para baixo
-  const crx = 44 + c * 70, cry = 50 + c * 34, cdx = 30 + c * 44, cdy = 450 + c * 10;
+  const crx = 46 + c * 58, cry = 52 + c * 30, cdx = 26 + c * 40, cdy = 452 + c * 8;
 
   return (
     <svg width={size} height={(size * BOLINHA_BOX.h) / BOLINHA_BOX.w} viewBox={`${BOLINHA_BOX.x} ${BOLINHA_BOX.y} ${BOLINHA_BOX.w} ${BOLINHA_BOX.h}`}
@@ -60,6 +60,9 @@ export const Bolinha: React.FC<CharProps & { cheeks?: number }> = ({ frame, talk
         <path d="M172 520 C180 600 220 644 268 652 C214 650 170 610 172 520 Z" fill={FUR_DARK} opacity={0.55} />
         {/* máscara creme (focinho + bochechas internas) e barriga */}
         <path d="M178 440 C196 400 250 404 300 404 C350 404 404 400 422 440 C440 520 410 640 300 646 C190 640 160 520 178 440 Z" fill={CREAM} />
+        {/* funde bochecha e rosto: repinta a bochecha sem contorno por cima da borda do corpo */}
+        <ellipse cx={300 - 120 - cdx} cy={cdy} rx={crx - 4.5} ry={cry - 4.5} fill={CREAM} />
+        <ellipse cx={300 + 120 + cdx} cy={cdy} rx={crx - 4.5} ry={cry - 4.5} fill={CREAM} />
         {/* listra dourada da testa */}
         <path d="M284 262 Q300 300 316 262" fill="none" stroke={FUR_DARK} strokeWidth={10} strokeLinecap="round" />
         {/* marcas de esforço quando lotado */}

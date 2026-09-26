@@ -11,8 +11,9 @@ const WHITE = "#F4F1EA";
 const SHADE = "#DCD5C8";
 const BLACK = "#2B2530";
 const BLACK_HI = "#4A4252";
+const ARM = "#3B3445"; // braço um tom acima do corpo para os braços cruzados lerem
+const PAD = "#5E5568";
 const APRON = "#E23B3B";
-const APRON_DARK = "#B82A2E";
 const BEAN = "#7A4A2A";
 
 export const HANK_BOX = { x: 60, y: 150, w: 680, h: 720 };
@@ -30,7 +31,7 @@ export const Hank: React.FC<CharProps> = ({ frame, talking, emotion, size = 520,
   const arm = (d: string) => (
     <g>
       <path d={d} stroke={INK} strokeWidth={84} strokeLinecap="round" fill="none" />
-      <path d={d} stroke={BLACK} strokeWidth={66} strokeLinecap="round" fill="none" />
+      <path d={d} stroke={ARM} strokeWidth={66} strokeLinecap="round" fill="none" />
     </g>
   );
 
@@ -39,8 +40,8 @@ export const Hank: React.FC<CharProps> = ({ frame, talking, emotion, size = 520,
       style={{ overflow: "visible", transform: `translateX(${shake}px)` }}>
       <g transform={`translate(400 870) scale(1 ${breathe}) translate(-400 -870)`}>
         {/* corpo: ombros pretos largos, peito branco, avental */}
-        <path d="M104 870 C100 736 150 646 262 612 L476 598 C616 604 704 700 716 870 Z" fill={BLACK} {...S} />
-        <path d="M600 640 C660 690 694 770 700 860" fill="none" stroke={BLACK_HI} strokeWidth={10} strokeLinecap="round" />
+        <path d="M110 870 C104 736 154 646 262 612 L476 598 C590 606 664 694 676 870 Z" fill={BLACK} {...S} />
+        <path d="M586 646 C632 696 656 770 662 860" fill="none" stroke={BLACK_HI} strokeWidth={10} strokeLinecap="round" />
         <path d="M244 870 C240 758 290 676 404 664 C524 668 584 758 590 870 Z" fill={WHITE} {...S} />
         <path d="M256 704 L566 700 C578 760 586 818 590 870 L240 870 C244 806 248 752 256 704 Z" fill={APRON} {...S} />
         <path d="M300 704 L318 640" stroke={INK} strokeWidth={26} strokeLinecap="round" />
@@ -53,6 +54,13 @@ export const Hank: React.FC<CharProps> = ({ frame, talking, emotion, size = 520,
         <path d="M262 758 L500 750" stroke={BLACK_HI} strokeWidth={9} strokeLinecap="round" />
         {arm("M548 832 L270 826")}
         <path d="M290 806 L520 810" stroke={BLACK_HI} strokeWidth={9} strokeLinecap="round" />
+        <g fill={ARM} {...S} strokeWidth={7}>
+          <ellipse cx={524} cy={770} rx={34} ry={38} />
+          <ellipse cx={262} cy={828} rx={34} ry={38} />
+        </g>
+        <g fill={PAD}>
+          <ellipse cx={530} cy={778} rx={14} ry={11} /><ellipse cx={256} cy={836} rx={14} ry={11} />
+        </g>
         {/* grão de café (logo do Bean There) no bolso do avental */}
         <g transform="translate(470 858) rotate(-20)">
           <ellipse cx={0} cy={0} rx={20} ry={13} fill={BEAN} {...S} strokeWidth={5} />

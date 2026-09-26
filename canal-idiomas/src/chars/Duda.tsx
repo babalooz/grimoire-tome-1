@@ -8,7 +8,6 @@ import { Blush, Brow, Eye, Mouth, Sweat } from "./face";
 // Paleta: ferrugem #D2542A, anéis caramelo #F0A45C, máscara branca #FFF6EA, patas café #4A2419, camiseta creme, pochete rosa.
 // As manchas brancas acima dos olhos SÃO as sobrancelhas (mexem com a emoção).
 const FUR = "#D2542A";
-const FUR_DARK = "#A83C1A";
 const RING = "#F0A45C";
 const MARK = "#FFF6EA";
 const TEAR = "#8E3514";
