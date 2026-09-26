@@ -2,7 +2,8 @@
 
 **Regra-mãe (decisão do Felipe):** o TikTok NÃO recebe o Short repostado. Mesma lição e mesmo chunk em inglês, mas
 gancho, falas em português, texto na tela, legenda e comentário fixado próprios, no idioma da comunidade TikTok BR.
-O adaptador é o bloco `tiktok` dentro do JSON do episódio-lição (spec na §7). Episódios 1–3 já têm o bloco.
+O adaptador é o bloco `tiktok` dentro do JSON do episódio-lição (spec e 3 exemplos na §7). Os JSONs da T1 estão sendo
+reescritos (básico do zero), então o bloco ainda não foi gravado em nenhum episódio.
 
 Rótulos: **verificado** (fonte oficial ou página primária lida hoje) · **terceiros** (blog/imprensa, não confirmado pela
 plataforma) · **estimativa** (conta ou julgamento meu).
@@ -33,9 +34,9 @@ o portão troca o texto pelo fallback se a data de publicação passar da valida
 
 | Termo | Sentido | Fonte · data da fonte | Validade (estimativa) | Usar na Capy? |
 |---|---|---|---|---|
-| "é um nervosismo surreal" | bordão de vídeo viral de nervosismo | [Tediado](https://www.tediado.com.br/08/memes-2026-os-virais/) · ago/2026 (terceiros; "mais de 1 mi de views" segundo o site) | **até 31/10/2026** | Sim, ep. 1 (pânico da Capy) |
-| buffado | forte demais, em vantagem (gamer) | [HBR](https://hbrbr.com.br/10-girias-mais-usadas.html) · 21/11/2025 (terceiros) | até 31/12/2026 | Sim, ep. 2 ("essa porta tá buffada") |
-| flopou / flopado | fracassou | HBR · 21/11/2025 (terceiros) | até 31/12/2026 (gíria estável) | Sim, ep. 3 ("minha ficha flopou") |
+| "é um nervosismo surreal" | bordão de vídeo viral de nervosismo | [Tediado](https://www.tediado.com.br/08/memes-2026-os-virais/) · ago/2026 (terceiros; "mais de 1 mi de views" segundo o site) | **até 31/10/2026** | Sim, no pânico da Capy (ex. A) |
+| buffado | forte demais, em vantagem (gamer) | [HBR](https://hbrbr.com.br/10-girias-mais-usadas.html) · 21/11/2025 (terceiros) | até 31/12/2026 | Sim ("essa porta tá buffada") |
+| flopou / flopado | fracassou | HBR · 21/11/2025 (terceiros) | até 31/12/2026 (gíria estável) | Sim ("minha ficha flopou") |
 | amassou | mandou muito bem | HBR · 21/11/2025 (terceiros) | até 31/12/2026 | Sim, para acerto no exercício |
 | hypeado / estourado | em alta / viralizou | HBR · 21/11/2025 (terceiros) | até 31/12/2026 | Com moderação |
 | comeu | fez algo excelente | [Conversar com Adolescente](https://www.conversarcomadolescente.com.br/post/dicion%C3%A1rio-de-g%C3%ADrias-da-gera%C3%A7%C3%A3o-z-e-gera%C3%A7%C3%A3o-alpha-atualizado-2026) · mar/2026, atualizado set/2026 (terceiros) | até 31/12/2026 | Sim ("o Hank comeu nessa") |
@@ -56,12 +57,12 @@ frame 1 (loop). Keyword da busca **falada ou escrita nos 3 primeiros segundos** 
 
 | `formato` | Tela no gancho | Quando usar | Exemplo |
 |---|---|---|---|
-| `pov` | "POV: seu 1º pedido em inglês nos EUA" (fixo no topo) | Situação que o público reconhece como sua | Ep. 1 |
-| `ninguem` | "ninguém:" (0,8 s) → "eu preenchendo a ficha em inglês:" | Erro espontâneo e sem motivo | Ep. 3 |
-| `eu-tambem-eu` | "eu: vou arrasar" → "também eu:" + tombo | Expectativa × realidade | Ep. 2 |
+| `pov` | "POV: seu 1º pedido em inglês nos EUA" (fixo no topo) | Situação que o público reconhece como sua | Ex. A |
+| `ninguem` | "ninguém:" (0,8 s) → "eu preenchendo a ficha em inglês:" | Erro espontâneo e sem motivo | Ex. B |
+| `eu-tambem-eu` | "eu: vou arrasar" → "também eu:" + tombo | Expectativa × realidade | Ex. C |
 | `quando-voce` | "quando você fala 'I have 26 years' e o gringo trava" | Reação do outro personagem | Eps. com Hank reagindo |
 | `resposta-comentario` | Balão "Responder @usuário" com o comentário real | Comentário real com erro ou pergunta | Plano em `respostaComentario` |
-| `dueto-isca` | "faz dueto e repete comigo" | Sempre no exercício "repetir" | Eps. 1–3 |
+| `dueto-isca` | "faz dueto e repete comigo" | Sempre no exercício "repetir" | Todos |
 | `costura` (stitch) | Outro vídeo 1–5 s + Capy reage | Só manual, no app | Nunca automático |
 
 Notas: dueto e costura são feitos no app. Pelos termos do Creator Rewards, dueto/stitch **não contam** como conteúdo
@@ -156,14 +157,207 @@ Checagens do portão para o bloco `tiktok` (a implementar no roteirista/portão,
 5. Render final 61–75 s; texto de tela e cabeçalho dentro da zona segura; nenhum "%" sem fonte.
 6. `gancho` e `legendaPost` diferentes do `title`/`hookTitle` do Short (anti-repost).
 
-Duração estimada dos eps. 1–3 (versão TikTok), calibrada pelo render real do ep. 1 (70,8 s), **estimativa** ±10%:
-ep. 1 ≈ 72 s · ep. 2 ≈ 74 s · ep. 3 ≈ 68 s. Confirmar no render.
+**Duração:** régua de estimativa calibrada pelo render real do antigo ep. 1 (70,8 s): ~0,49 s por palavra falada
+(dividir por `speed` quando < 1) + soma de `pausa.s`, `pre` e `hold` (**estimativa**, ±10%). Mirar 66–72 s para ter folga
+dos dois lados; o portão mede o render.
+
+### Exemplos (genéricos, prontos para virar few-shot do roteirista)
+
+Os exemplos assumem que o Short do mesmo episódio tem 4 exercícios na ordem `traducao`, `montar`, `ouvir`, `repetir`
+(o bloco `tiktok` herda opções e tiles por `ref`). Speaker id no código continua `capi` (a personagem é a Capy).
+Chunks e cenários são ilustrativos: trocar pelos do episódio reescrito.
+
+#### Ex. A — vocabulário básico (cumprimentos) · formato `pov`
+
+Chunk do Short: `Hi, I'm Capy. Nice to meet you.` · erro-gancho: responder "fine, thank you" a uma apresentação.
+
+```json
+"tiktok": {
+  "versao": 1, "formato": "pov", "duracaoAlvo": [61, 75],
+  "cabecalho": "POV: um gringo se apresentou pra você",
+  "gancho": { "ate_s": 2.5, "passos": [
+    {"speaker": "hank", "lang": "en", "emotion": "bored", "text": "Hi, I'm Hank.", "shot": "two"},
+    {"speaker": "capi", "lang": "en", "emotion": "zen", "text": "Fine, thank you!", "tela": "ela respondeu isso"},
+    {"speaker": "hank", "lang": "en", "emotion": "eyebrow", "text": "...I didn't ask.", "sfx": ["wrong"], "react": {"capi": "surprised"}}
+  ]},
+  "cena": { "passos": [
+    {"speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "panic", "text": "Respondi o que ninguém perguntou. Nervosismo surreal."},
+    {"pausa": "respiro", "s": 1.2, "evento": "desmaio", "sfx": ["thud"]}
+  ]},
+  "licao": { "exercicios": [
+    {"ref": 0, "passos": [
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Ninguém viu. Qual era a certa?"},
+      {"pausa": "timer", "s": 3},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "text": "Hi, I'm Capy. Nice to meet you."},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Ele disse o nome. Você diz o seu."}
+    ]},
+    {"ref": 1, "passos": [
+      {"pausa": "timer", "s": 4},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "pre": 1.6, "text": "Hi, I'm Capy. Nice to meet you."},
+      {"speaker": "capi", "lang": "pt", "emotion": "angry", "text": "Sobrou a resposta que me derrubou."}
+    ]},
+    {"ref": 2, "passos": [
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "speed": 0.7, "evento": "som", "text": "Nice to meet you."},
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "evento": "som", "text": "Nice to meet you."},
+      {"pausa": "timer", "s": 3},
+      {"speaker": "capi", "lang": "pt", "emotion": "panic", "pre": 0.8, "text": "Acertei. Estranho."}
+    ]},
+    {"ref": 3, "passos": [
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Dueto com o seu nome.", "tela": "faz dueto com o SEU nome"},
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "speed": 0.7, "evento": "modelo", "text": "Hi, I'm Capy. Nice to meet you."},
+      {"pausa": "mic", "s": 3},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "evento": "modelo", "text": "Hi, I'm Capy. Nice to meet you."},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Pronto. Vergonha junto, mas certa."}
+    ]}
+  ]},
+  "volta": { "passos": [
+    {"speaker": "capi", "lang": "en", "emotion": "happy", "shot": "close", "text": "Hi, I'm Capy. Nice to meet you.", "tela": "tentativa 2:"},
+    {"speaker": "hank", "lang": "en", "emotion": "smile", "text": "Nice to meet you too."},
+    {"speaker": "capi", "lang": "pt", "emotion": "happy", "card": true, "hold": 1.0, "text": "Como você se apresenta em inglês? Escreve aqui."}
+  ]},
+  "loop": "card final corta seco para 'Hi, I'm Hank.'",
+  "legendaPost": "Como se apresentar em inglês sem responder o que ninguém perguntou (eu respondi). Hi, I'm Capy 👋",
+  "hashtags": ["#capyfala", "#inglês", "#aprenderingles", "#inglesparainiciantes", "#inglesdozero"],
+  "comentarioFixado": "Se apresentar: Hi, I'm ___. Nice to meet you. Escreve com o seu nome que eu confiro.",
+  "palavrasChave": ["como se apresentar em inglês", "nice to meet you", "inglês do zero"],
+  "audio": {"tipo": "original", "trilha": "public/music/cafe-loop.wav (CC0)", "nomeSomSugerido": "Capy se apresentando errado", "somEmAlta": null},
+  "dueto": {"permitir": true, "trecho": "licao.exercicios[3]"},
+  "respostaComentario": {"gatilho": "comentário real com apresentação errada (ex.: nome com 'my name's is')", "roteiro": "print do comentário + Hank lê + Capy corrige", "automatico": false},
+  "memeRefs": [{"termo": "nervosismo surreal", "onde": "cena.passos[0]", "fonte": "https://www.tediado.com.br/08/memes-2026-os-virais/", "visto": "2026-08", "validoAte": "2026-10-31", "fallback": "Respondi o que ninguém perguntou. Deu branco."}]
+}
+```
+
+#### Ex. B — números no contexto de preço · formato `ninguem`
+
+Chunk do Short: `How much is it?` + resposta `It's fourteen dollars.` · erro-gancho: fourteen × forty.
+O preço é da cena (ficção), não estatística.
+
+```json
+"tiktok": {
+  "versao": 1, "formato": "ninguem", "duracaoAlvo": [61, 75],
+  "cabecalho": "ninguém:",
+  "gancho": { "ate_s": 2.5, "passos": [
+    {"speaker": "hank", "lang": "en", "emotion": "bored", "text": "It's fourteen dollars.", "shot": "two", "tela": "eu ouvindo preço em inglês:"},
+    {"speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "panic", "text": "Quatorze ou quarenta? Na dúvida, paguei quarenta.", "sfx": ["wrong"]}
+  ]},
+  "cena": { "passos": [
+    {"speaker": "hank", "lang": "en", "emotion": "eyebrow", "text": "Fourteen. Not forty.", "tela": "ele devolveu o troco com pena"},
+    {"speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "panic", "text": "Minha matemática flopou antes do café."}
+  ]},
+  "licao": { "exercicios": [
+    {"ref": 0, "passos": [
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Primeiro: perguntar o preço. Qual é?"},
+      {"pausa": "timer", "s": 3},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "text": "How much is it?"},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Quatro palavras. Serve pra tudo que tem preço."}
+    ]},
+    {"ref": 1, "passos": [
+      {"pausa": "timer", "s": 4},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "pre": 1.6, "text": "It's fourteen dollars."},
+      {"speaker": "capi", "lang": "pt", "emotion": "angry", "text": "Sobrou o quarenta. Ele sabe o que fez."}
+    ]},
+    {"ref": 2, "passos": [
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "speed": 0.7, "evento": "som", "text": "Fourteen."},
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "evento": "som", "text": "Forty."},
+      {"pausa": "timer", "s": 3},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "pre": 0.8, "text": "O acento no fim é o quatorze. No começo, o quarenta."}
+    ]},
+    {"ref": 3, "passos": [
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Faz dueto e repete comigo.", "tela": "faz dueto e repete"},
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "speed": 0.7, "evento": "modelo", "text": "How much is it? It's fourteen dollars."},
+      {"pausa": "mic", "s": 3},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "evento": "modelo", "text": "How much is it? It's fourteen dollars."},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso. Agora eu pago o certo."}
+    ]}
+  ]},
+  "volta": { "passos": [
+    {"speaker": "capi", "lang": "en", "emotion": "happy", "shot": "close", "text": "How much is it?", "tela": "revanche:"},
+    {"speaker": "hank", "lang": "en", "emotion": "smile", "text": "Fourteen."},
+    {"speaker": "capi", "lang": "en", "emotion": "happy", "text": "Fourteen. Here you go."},
+    {"speaker": "capi", "lang": "pt", "emotion": "happy", "card": true, "hold": 1.0, "text": "Escreve em inglês o preço do teu último café."}
+  ]},
+  "loop": "card final corta seco para 'It's fourteen dollars.'",
+  "legendaPost": "Fourteen ou forty? Como entender preço em inglês sem pagar quarenta num café 💸",
+  "hashtags": ["#capyfala", "#inglês", "#aprenderingles", "#inglesparainiciantes", "#numerosemingles"],
+  "comentarioFixado": "Perguntar preço: How much is it? Fourteen = 14 (acento no fim). Forty = 40 (acento no começo). Salva.",
+  "palavrasChave": ["números em inglês", "fourteen ou forty", "como perguntar preço em inglês"],
+  "audio": {"tipo": "original", "trilha": "public/music/cafe-loop.wav (CC0)", "nomeSomSugerido": "Capy pagando quarenta num café", "somEmAlta": null},
+  "dueto": {"permitir": true, "trecho": "licao.exercicios[3]"},
+  "respostaComentario": {"gatilho": "comentário real com número escrito errado ou pergunta sobre fifteen/fifty", "roteiro": "print + Capy repete o par com a regra do acento", "automatico": false},
+  "memeRefs": [{"termo": "flopar", "onde": "cena.passos[1]", "fonte": "https://hbrbr.com.br/10-girias-mais-usadas.html", "visto": "2025-11", "validoAte": "2026-12-31", "fallback": "Minha matemática morreu antes do café."}]
+}
+```
+
+Nota de fonética (checar no portão com dicionário): em isolamento, *fourteen* tem acento na 2ª sílaba e *forty* na 1ª
+(Cambridge/Merriam-Webster). Não afirmar mais que isso.
+
+#### Ex. C — verbo to be · formato `eu-tambem-eu`
+
+Chunk do Short: `I'm so tired today.` · erro-gancho: "I tired" (sem o verbo).
+
+```json
+"tiktok": {
+  "versao": 1, "formato": "eu-tambem-eu", "duracaoAlvo": [61, 75],
+  "cabecalho": "eu: sei verbo to be desde a escola",
+  "gancho": { "ate_s": 2.5, "passos": [
+    {"speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "zen", "text": "Verbo ser? Domino desde criança.", "shot": "two", "tela": "eu: sei verbo to be"},
+    {"speaker": "capi", "lang": "en", "emotion": "zen", "text": "I tired.", "tela": "também eu:"},
+    {"speaker": "hank", "lang": "en", "emotion": "eyebrow", "text": "You... tired what?", "sfx": ["wrong"], "react": {"capi": "surprised"}}
+  ]},
+  "cena": { "passos": [
+    {"speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "panic", "text": "Esqueci o verbo. O único que eu sabia."},
+    {"pausa": "respiro", "s": 1.2, "evento": "desmaio", "sfx": ["thud"]}
+  ]},
+  "licao": { "exercicios": [
+    {"ref": 0, "passos": [
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Acordei. Qual das três tem verbo?"},
+      {"pausa": "timer", "s": 3},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "text": "I'm so tired today."},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Sem o verbo ser, a frase fica pela metade."}
+    ]},
+    {"ref": 1, "passos": [
+      {"pausa": "timer", "s": 4},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "pre": 1.6, "text": "I'm so tired today."},
+      {"speaker": "capi", "lang": "pt", "emotion": "angry", "text": "Sobrou uma. Cansada igual a mim."}
+    ]},
+    {"ref": 2, "passos": [
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "speed": 0.7, "evento": "som", "text": "I'm so tired today."},
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "evento": "som", "text": "I'm so tired today."},
+      {"pausa": "timer", "s": 3},
+      {"speaker": "capi", "lang": "pt", "emotion": "panic", "pre": 0.8, "text": "Ouvi certo. Pela primeira vez. Anota."}
+    ]},
+    {"ref": 3, "passos": [
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Faz dueto e troca pelo seu estado de hoje.", "tela": "dueto: como VOCÊ tá hoje?"},
+      {"speaker": "capi", "lang": "en", "emotion": "zen", "speed": 0.7, "evento": "modelo", "text": "I'm so tired today."},
+      {"pausa": "mic", "s": 3},
+      {"speaker": "capi", "lang": "en", "emotion": "happy", "evento": "modelo", "text": "I'm so tired today."},
+      {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso. Cansada, mas com verbo."}
+    ]}
+  ]},
+  "volta": { "passos": [
+    {"speaker": "capi", "lang": "en", "emotion": "happy", "shot": "close", "text": "I'm so tired today.", "tela": "tentativa 2:"},
+    {"speaker": "hank", "lang": "en", "emotion": "smile", "text": "Me too."},
+    {"speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Primeira coisa que a gente tem em comum."},
+    {"speaker": "capi", "lang": "en", "emotion": "happy", "text": "I'm so... today."},
+    {"speaker": "capi", "lang": "pt", "emotion": "happy", "card": true, "hold": 1.0, "text": "Completa nos comentários. Com verbo."}
+  ]},
+  "loop": "card final corta seco para 'Verbo ser? Domino desde criança.'",
+  "legendaPost": "Verbo to be: I'm so tired, e não I tired. A Capy esqueceu o único verbo que sabia 😴",
+  "hashtags": ["#capyfala", "#inglês", "#verbotobe", "#aprenderingles", "#inglesparainiciantes"],
+  "comentarioFixado": "I'm = I am. Sem ele a frase quebra. Completa aqui: I'm so ___ today.",
+  "palavrasChave": ["verbo to be", "I'm tired", "inglês básico"],
+  "audio": {"tipo": "original", "trilha": "public/music/cafe-loop.wav (CC0)", "nomeSomSugerido": "Capy esquecendo o verbo to be", "somEmAlta": null},
+  "dueto": {"permitir": true, "trecho": "licao.exercicios[3]"},
+  "respostaComentario": {"gatilho": "comentário real sem o verbo (ex.: 'I happy')", "roteiro": "print + Hank: '...happy what?' + Capy corrige", "automatico": false},
+  "memeRefs": []
+}
+```
 
 ## 8. Próximos passos técnicos (não feitos aqui: `src/` e `scripts/` fora do escopo)
 
 1. `Licao.tsx`: composição `LicaoTikTok` que lê `tiktok` (gancho → cena → exercícios herdados por `ref` → volta),
    desenha `cabecalho` e `tela`, e emenda o loop.
-2. `roteirista.py`: gerar o bloco `tiktok` junto com o episódio (few-shot = eps. 1–3) + checagens da §7.
+2. `roteirista.py`: gerar o bloco `tiktok` junto com o episódio (few-shot = exemplos A–C da §7) + checagens da §7.
 3. `publicar.py`: usar `tiktok.legendaPost`/`hashtags` no TikTok; `comentarioFixado` exige ação no app (a API não fixa
    comentário) → entra na lista manual do Felipe ou fica fora.
 
