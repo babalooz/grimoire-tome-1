@@ -3,7 +3,7 @@ import { random } from "remotion";
 
 // Capi v2 — vetor feito em código a partir do conceito docs/arte/capi-conceito-v1.png.
 // Perfil 3/4: cabeça e corpo num bloco só (sem pescoço), focinho retangular grande, orelhas no topo,
-// óculos redondos amarelos, tangerina na cabeça, olhar zen (pálpebra a meio-mastro).
+// olhar zen (pálpebra a meio-mastro). Sem acessórios (Felipe vetou óculos e tangerina em 26/09).
 export type Mood = "zen" | "thinking" | "sweat" | "shock" | "happy" | "fail";
 
 const INK = "#3A2213";
@@ -99,22 +99,6 @@ export const Capi: React.FC<{
       {eye()}
       {mood === "thinking" && <path d="M318 452 L400 470" fill="none" {...S} />}
       {mood === "fail" && <path d="M318 462 L396 448" fill="none" {...S} />}
-
-      {/* óculos: lente da frente, ponte e lente de trás (parcial) */}
-      <g fill="none" stroke={YELLOW} strokeWidth={14} strokeLinecap="round">
-        <circle cx={360} cy={515} r={76} />
-        <path d="M436 498 Q470 470 508 468" />
-        <path d="M508 452 Q548 408 588 448 Q598 470 584 488" />
-        <path d="M284 512 L168 532" />
-      </g>
-
-      {/* tangerina */}
-      <g transform={mood === "shock" ? `translate(0 ${-12 + Math.sin(frame) * 4})` : undefined}>
-        <circle cx={356} cy={352} r={58} fill={ORANGE} {...S} />
-        <ellipse cx={338} cy={332} rx={14} ry={9} fill="#FFB36B" />
-        <path d="M356 296 L352 272" fill="none" {...S} strokeWidth={7} />
-        <path d="M356 284 Q380 256 408 270 Q386 292 356 284 Z" fill="#2F9E6B" {...S} strokeWidth={6} />
-      </g>
 
       {/* gotas de suor */}
       {Array.from({ length: Math.min(sweat, 4) }, (_, i) => (
