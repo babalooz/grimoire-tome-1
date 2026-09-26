@@ -131,6 +131,14 @@ Dia N do teste = T1 E0N (12/10 = E01 … 25/10 = E14). Depois de 25/10 a grade �
 Publica só se **as 3** forem verdade: data ≥ **2026-10-12** · **acesso ao Buffer OK**: `python3 scripts/publicar.py --listar`
 sai com código 0 (a leitura GraphQL em `api.buffer.com` responde 200 e lista TikTok **acapyfala** e YouTube **CapyFala**) · o post
 passou no **portão** (§5.6).
+**Buffer (testado pelo PC em sessão nova, 26/09 23:57 UTC: HTTP 200 nas duas consultas, filas ativas):**
+- Endpoint `POST https://api.buffer.com` (GraphQL). O código NÃO manda header Authorization: a credencial do ambiente injeta.
+- `organizationId` **6a1599888465779c73b3235d** · TikTok **acapyfala** = `6ab84f02ea19ca0bdefbf095` · YouTube **CapyFala** =
+  `6ab84ddbea19ca0bdefbd32a` (cópia em `canal-idiomas/config/buffer-canais.json`). Instagram: não conectado.
+- Consultas: `query { account { organizations { id name } } }` e `channels(input: { organizationId })`.
+- Post: `createPost` com `assets: [{ video: { url } }]`, `schedulingType: automatic` (TikTok sem notificação),
+  `mode: customScheduled`, `dueAt` UTC; YouTube com `metadata.youtube` (título, categoria 27, madeForKids false).
+- Sessão aberta ANTES da credencial recebe 401: só sessões novas (as rotinas) têm acesso. 401 numa rotina = problema real.
 A chave do Buffer NÃO é variável de ambiente: é a "Credencial de API" **Buffer** do ambiente Default (Bearer, site
 `api.buffer.com`), injetada pelo proxy. Nenhuma rotina lê, imprime ou pede a chave. Qualquer uma falsa → grava em `canal-idiomas/fila/` com o motivo e segue.
 

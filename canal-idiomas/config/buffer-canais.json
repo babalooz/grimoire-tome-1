@@ -1,0 +1,26 @@
+{
+  "_sobre": "IDs dos canais no Buffer (sem segredo). Gerado por scripts/publicar.py --listar.",
+  "atualizado": "2026-09-26T20:59-03:00",
+  "organizacoes": [
+    {
+      "id": "6a1599888465779c73b3235d",
+      "nome": "My Organization",
+      "canais": [
+        {
+          "id": "6ab84f02ea19ca0bdefbf095",
+          "name": "acapyfala",
+          "displayName": "acapyfala",
+          "service": "tiktok",
+          "isQueuePaused": false
+        },
+        {
+          "id": "6ab84ddbea19ca0bdefbd32a",
+          "name": "CapyFala",
+          "displayName": "CapyFala",
+          "service": "youtube",
+          "isQueuePaused": false
+        }
+      ]
+    }
+  ]
+}
