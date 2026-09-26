@@ -75,3 +75,12 @@ Sala de aula, aeroporto, praia, estádio, cozinha da Dona Jaca, estúdio de TV (
 > sobrancelhas, 9 bocas para lip sync (A, B, C, D, E, F, G, H, X — padrão Rhubarb), acessórios soltos.
 > Expressões: neutra, feliz, chocada, suando/nervosa, brava, rindo. Poses: frente, 3/4, apontando, facepalm.
 > Referência de nível de acabamento: mascotes de apps (Duolingo, Headspace), mas visual 100% original.
+
+## Linhas por nível (Felipe, 26/09)
+- **CapyFala (adultos)** — foco iniciante + médio; avançado ocasional. Comentários, funil, afiliados, produto.
+- **CapyKids (canal separado, fase 2)** — "feito para crianças" obrigatório (COPPA): sem comentários, sem anúncio
+  personalizado (~US$0,33/mil views), sem TikTok (<13), sem captação de dados (ECA Digital/LGPD). Ganha no volume + licenciamento.
+  **Cereja do bolo: músicas didáticas viciantes** (estilo Galinha Pintadinha): melodias de domínio público (as mesmas que os
+  campeões infantis usam) + letras originais que ensinam inglês + Capi animada. Instrumental gerado por código (MIDI);
+  voz cantada: serviço com licença comercial paga (ElevenLabs Music/Suno Pro — conferir termos) ou cantora humana.
+  Risco: música 100% IA não tem direito autoral protegido (EUA) → melodia de domínio público + letra nossa + arranjo nosso.
