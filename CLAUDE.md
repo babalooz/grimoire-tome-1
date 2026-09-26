@@ -28,6 +28,11 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Marca **CapyFala** (@capyfala) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
   CapyParla (futuro). Personagem: **Capi**, voz feminina. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
 
+## Canal de notícias (26/09)
+- 2º canal TikTok automatizado: **notícia leve/curiosa do dia**, lúdica e didática, sem rosto. **Marca separada — NÃO tem a ver com a Capi/CapyFala.**
+- Molde de 62s e referências em `docs/pesquisas/2026-09-26-campeoes-noticia-ludica-sem-rosto.md`.
+- Filtro obrigatório: sem crime, menores, tragédia ou política (eleições 04/10 e 25/10).
+
 ## Integrações ativas (26/09)
 - Conectores: Gmail, Google Drive, Google Calendar, **vidIQ** (Free: 150 créditos/mês, renova dia 25 — usar só em pesquisa semanal).
 - Agenda Google **CapyFala** (id `ac285cc7e8ab6ec1a05993c3a2a0a7c6c92a4cd6ec54bca0b7b9e72c36eb56d8@group.calendar.google.com`):
