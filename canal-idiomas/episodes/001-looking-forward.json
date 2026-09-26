@@ -1,0 +1,51 @@
+{
+  "id": "001-looking-forward",
+  "topic": "looking forward to + ing",
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "90% dos brasileiros erram isso 😬",
+      "speech": [
+        { "lang": "pt", "text": "Noventa por cento dos brasileiros erram essa frase em inglês." }
+      ]
+    },
+    {
+      "type": "question",
+      "title": "Qual está certo?",
+      "options": ["I'm looking forward to see you", "I'm looking forward to seeing you"],
+      "answer": 1,
+      "speech": [
+        { "lang": "pt", "text": "Qual está certo? A:" },
+        { "lang": "en", "text": "I'm looking forward to see you." },
+        { "lang": "pt", "text": "Ou B:" },
+        { "lang": "en", "text": "I'm looking forward to seeing you." }
+      ],
+      "timerSeconds": 3
+    },
+    {
+      "type": "reveal",
+      "title": "B! ✅",
+      "subtitle": "Depois de \"looking forward to\" vem verbo com ING",
+      "speech": [
+        { "lang": "pt", "text": "Letra B! Depois de looking forward to, o verbo vem com I N G." }
+      ]
+    },
+    {
+      "type": "example",
+      "title": "Na vida real:",
+      "example": "I'm looking forward to watching the World Cup!",
+      "translation": "Tô ansioso pra assistir a Copa!",
+      "speech": [
+        { "lang": "en", "text": "I'm looking forward to watching the World Cup!" },
+        { "lang": "pt", "text": "Tô ansioso pra assistir a Copa!" }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Segue pra parte 2 amanhã 🔥",
+      "speech": [
+        { "lang": "pt", "text": "Amanhã tem a parte dois. Segue pra não perder." }
+      ]
+    }
+  ]
+}
