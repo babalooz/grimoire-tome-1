@@ -14,7 +14,7 @@ const Root: React.FC = () =>
   React.createElement(Composition, { id: "Avatar", component: Avatar, fps: FPS, width: 800, height: 800, durationInFrames: 1 }),
   React.createElement(Composition, { id: "Banner", component: Banner, fps: FPS, width: 2560, height: 1440, durationInFrames: 1 }),
   React.createElement(Composition, { id: "CapiSheet", component: CapiSheet, fps: FPS, width: 1080, height: 1150, durationInFrames: 1 }),
-  React.createElement(Composition, { id: "CastSheet", component: CastSheet, fps: FPS, width: 1520, height: 900, durationInFrames: 60 }),
+  React.createElement(Composition, { id: "CastSheet", component: CastSheet, fps: FPS, width: 2560, height: 1720, durationInFrames: 60 }),
   React.createElement(Composition<any, EpisodeProps>, {
     id: "Episode",
     component: Episode,
