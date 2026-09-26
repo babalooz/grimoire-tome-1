@@ -20,7 +20,7 @@ construir código pronto antes do fim do crédito (05/11). CapyKids = fase 2 (de
 ## Fase 2 — Formato e piloto (27/09 → 05/10)
 | # | Ação | Dono | Prazo |
 |---|---|---|---|
-| 11 | Escolher formato (A sitcom / B duelo / C diário / híbrido) com base no manual | Felipe | 27/09 |
+| 11 | ✅ Formato: lição em vídeo + storytelling (26/09) | Felipe | 26/09 |
 | 12 | Bíblia da série: elenco (Capi, Tuca, Dona Jaca), piadas recorrentes, cenários, 10 episódios | Claude | 29/09 |
 | 13 | Template do formato escolhido no Remotion (cenários, 2º personagem, cortes, lip sync Rhubarb) | Claude | 02/10 |
 | 14 | Piloto renderizado + revisão pelo conselho (`/conselho`) | Claude | 03/10 |
@@ -45,3 +45,9 @@ construir código pronto antes do fim do crédito (05/11). CapyKids = fase 2 (de
 
 ## Fase 5 — CapyKids (depois de 02/11)
 Músicas didáticas (melodia de domínio público + letra própria), canal separado "made for kids". Ver `docs/plano-capi-lingo.md`.
+
+## Decisão 26/09 — formato oficial: LIÇÃO EM VÍDEO com storytelling
+- Estrutura: cena (problema na história) → mini-lição estilo app (4 exercícios, XP, corações, "repita em voz alta") → volta à cena → Caderninho #N.
+- Storytelling contínuo (aprovado pelo Felipe): cada episódio avança o arco da temporada ("Dia N nos EUA").
+  T1 "Sobreviver" (A1): chegar, pedir café, período de experiência no Bean There, conquistar o Hank, final = prova do DMV (vídeo longo).
+  Callbacks: o chunk de episódios anteriores volta dito por outro personagem (repetição espaçada dentro da história).
