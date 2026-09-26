@@ -26,7 +26,7 @@ require('fs').writeFileSync('out/props-$ID.json', JSON.stringify({...ep, timings
 "
 
 if [ "$VIDEO" = 1 ]; then
-  npx remotion render src/index.ts Licao "out/$ID.mp4" --props="out/props-$ID.json" $BROWSER_FLAG
+  npx remotion render src/index.ts Licao "out/$ID.mp4" --props="out/props-$ID.json" --audio-bitrate=320k $BROWSER_FLAG
   .venv/bin/python scripts/loudnorm.py "out/$ID.mp4"
   echo "vídeo: out/$ID.mp4"
 fi

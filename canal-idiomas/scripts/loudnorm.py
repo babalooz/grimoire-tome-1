@@ -1,7 +1,7 @@
 """Masteriza o áudio de um MP4 para celular: -14 LUFS integrado, pico verdadeiro <= -1 dBTP (ITU-R BS.1770 / EBU R128).
 
 Fluxo: extrai o áudio (ffmpeg do Remotion) -> mede (pyloudnorm) -> ganho -> limitador com lookahead medindo o pico
-verdadeiro em 4x oversampling -> repete até cravar o alvo -> AAC 192k -> remux com o vídeo copiado (sem re-encode)
+verdadeiro em 4x oversampling -> repete até cravar o alvo -> AAC 256k -> remux com o vídeo copiado (sem re-encode)
 -> decodifica o MP4 final e mede de novo (o AAC mexe um pouco no pico; por isso o teto interno é -1,5 dBTP).
 
 Uso: .venv/bin/python scripts/loudnorm.py out/<id>.mp4   (substitui o arquivo; imprime antes/depois)
@@ -55,17 +55,18 @@ def limit(x: np.ndarray, ceiling_db: float, lookahead: float = 0.005, release: f
     return x * g[:, None]
 
 
-def master(x: np.ndarray) -> tuple[np.ndarray, float]:
+def master(x: np.ndarray, ceiling: float) -> tuple[np.ndarray, float]:
     """Ganho + limitador, iterando (o limitador tira um pouco de loudness)."""
     y, gr = x, 0.0
     for _ in range(6):
         lufs, _ = measure(y)
         y = y * 10 ** ((TARGET_LUFS - lufs) / 20)
-        before = np.abs(y).max()
-        y = limit(y, CEILING)
-        gr = max(gr, 20 * np.log10(before / max(np.abs(y).max(), 1e-12)))
+        pre = y
+        y = limit(y, ceiling)
+        g = 20 * np.log10(np.abs(y).max(axis=1) / np.maximum(np.abs(pre).max(axis=1), 1e-9) + 1e-12)
+        gr = max(gr, -g.min())
         lufs, tp = measure(y)
-        if abs(lufs - TARGET_LUFS) < 0.1 and tp <= CEILING + 0.05:
+        if abs(lufs - TARGET_LUFS) < 0.1 and tp <= ceiling + 0.05:
             break
     return y, gr
 
@@ -77,15 +78,23 @@ def main(mp4: str) -> None:
         ffmpeg("-i", str(mp4), "-vn", "-ac", "2", "-ar", str(SR), "-c:a", "pcm_s16le", str(raw))
         x, _ = sf.read(raw)
         l0, tp0 = measure(x)
-        y, gr = master(x)
-        sf.write(mastered, y.astype(np.float32), SR, subtype="FLOAT")
-        ffmpeg("-i", str(mp4), "-i", str(mastered), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
-               "-c:a", "libfdk_aac", "-b:a", "192k", "-ar", str(SR), "-movflags", "+faststart", "-shortest", str(out))
-        ffmpeg("-i", str(out), "-vn", "-ac", "2", "-ar", str(SR), "-c:a", "pcm_s16le", str(raw))
-        z, _ = sf.read(raw)
-        l1, tp1 = measure(z)
+        ceiling = CEILING
+        for _ in range(3):  # o AAC sobe o pico verdadeiro ~0,5 dB: se passar de -1 dBTP, baixa o teto e refaz
+            y, gr = master(x, ceiling)
+            sf.write(mastered, y.astype(np.float32), SR, subtype="FLOAT")
+            ffmpeg("-i", str(mp4), "-i", str(mastered), "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy",
+                   "-c:a", "libfdk_aac", "-b:a", "256k", "-ar", str(SR), "-movflags", "+faststart", "-shortest", str(out))
+            ffmpeg("-i", str(out), "-vn", "-ac", "2", "-ar", str(SR), "-c:a", "pcm_s16le", str(raw))
+            l1, tp1 = measure(sf.read(raw)[0])
+            if tp1 <= MAX_TP:
+                break
+            ceiling -= tp1 - MAX_TP + 0.2
         out.replace(mp4)
     ok = abs(l1 - TARGET_LUFS) <= 0.5 and tp1 <= MAX_TP
+    lim = 20 * np.log10(np.abs(y).max(axis=1) / np.maximum(np.abs(x * 10 ** ((l1 - l0) / 20)).max(axis=1), 1e-9) + 1e-12)
+    busy = (lim < -3)[np.abs(x).max(axis=1) > 1e-3].mean() * 100
+    hot = sorted({round(i / SR, 1) for i in np.argsort(lim)[:2000]})[:8]
+    print(f"limitador: >3 dB em {busy:.1f}% do tempo com som; pontos mais limitados (s): {hot}")
     print(f"loudness: antes {l0:.1f} LUFS / {tp0:.1f} dBTP -> depois {l1:.1f} LUFS / {tp1:.1f} dBTP "
           f"(limitador máx. {gr:.1f} dB) {'OK' if ok else 'FORA DO ALVO'}")
     if not ok:
