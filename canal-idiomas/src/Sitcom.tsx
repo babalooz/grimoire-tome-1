@@ -7,7 +7,7 @@ import { Hank } from "./chars/Hank";
 import { Leo } from "./chars/Leo";
 import { Emotion } from "./chars/common";
 import { CafeBack, CafeCounter, ThoughtOverlay } from "./sets/CafeSet";
-import { BODY, C, SAFE, TITLE, outline } from "./theme";
+import { BODY, C, SAFE, TITLE } from "./theme";
 
 // "Capi no Exterior" — motor de sitcom em micro-episódios.
 // Roteiro = lista de beats (1 fala cada, 1 áudio cada). O motor decide câmera, balão, reações, quiz e cartão final.
@@ -311,7 +311,7 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
   // monólogo interno: tela roxa (forte no pânico), tremor de 2 px
   const thinking = beat.mode === "pensamento" || beat.quiz === "ask";
   const panic = thinking && (emo.capi === "panic" || inTimer);
-  const overlay = thinking ? (panic || beat.quiz === "ask" ? 1 : 0.5) * (cur.i === 0 ? 1 : Math.min(1, lf / 4)) : 0;
+  const overlay = thinking ? (panic || beat.quiz === "ask" ? 1 : 0.3) * (cur.i === 0 ? 1 : Math.min(1, lf / 4)) : 0;
   const tremor = panic ? [Math.sin(frame * 2.3) * 2, Math.cos(frame * 1.9) * 2] : [0, 0];
 
   // personagens
@@ -379,8 +379,11 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
       {/* interface (espaço de tela, zona segura) */}
       <DayBadge day={p.day} />
       {cur.i === 0 && p.hookTitle && (
-        <div style={{ position: "absolute", left: SAFE.x0, width: SAFE.x1 - SAFE.x0, top: 300, textAlign: "center", fontFamily: TITLE, fontSize: 92, lineHeight: 1.02, color: "#fff", ...outline(12) }}>
-          {p.hookTitle}
+        <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 318, transform: "rotate(-2deg)" }}>
+          <div style={{
+            background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 36, boxShadow: `0 10px 0 ${C.tinta}`, padding: "18px 26px",
+            textAlign: "center", fontFamily: TITLE, fontSize: 84, lineHeight: 1.02, color: C.tinta,
+          }}>{p.hookTitle}</div>
         </div>
       )}
       {quizOpen && p.quiz && (
