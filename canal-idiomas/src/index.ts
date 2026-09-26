@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, registerRoot } from "remotion";
 import { Episode, EpisodeProps, sceneFrames } from "./Episode";
 import { CapiSheet } from "./CapiSheet";
+import { Avatar, Banner } from "./Brand";
 import { CastSheet } from "./CastSheet";
 import { Sitcom, SitcomProps, sitcomFrames } from "./Sitcom";
 
@@ -9,6 +10,8 @@ const FPS = 30;
 
 const Root: React.FC = () =>
   React.createElement(React.Fragment, null,
+  React.createElement(Composition, { id: "Avatar", component: Avatar, fps: FPS, width: 800, height: 800, durationInFrames: 1 }),
+  React.createElement(Composition, { id: "Banner", component: Banner, fps: FPS, width: 2560, height: 1440, durationInFrames: 1 }),
   React.createElement(Composition, { id: "CapiSheet", component: CapiSheet, fps: FPS, width: 1080, height: 1150, durationInFrames: 1 }),
   React.createElement(Composition, { id: "CastSheet", component: CastSheet, fps: FPS, width: 1520, height: 900, durationInFrames: 60 }),
   React.createElement(Composition<any, EpisodeProps>, {
