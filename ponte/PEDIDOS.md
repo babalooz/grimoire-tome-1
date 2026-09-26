@@ -15,3 +15,10 @@
   na Área de Trabalho do Felipe. Depois abrir essa pasta no Explorador de Arquivos.
 - entregar: caminho da pasta criada
 - risco: seguro
+
+## P-20260926-2330 · apagar aprovação diária da agenda CapyFala
+- status: novo
+- o que fazer: no Google Calendar do Felipe, agenda "CapyFala", apagar o evento recorrente "✅ Aprovar vídeos do dia (1 min)"
+  (todas as ocorrências, a partir de 12/10). Decisão do Felipe: fábrica autônoma, sem aprovação humana.
+- entregar: confirmação
+- risco: seguro (é só da agenda do projeto; decisão já dada pelo Felipe)
