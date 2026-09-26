@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import { Watermark } from "./Watermark";
 import { AbsoluteFill, Audio, Easing, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Capi, Mood } from "./Capi";
 import { Emotion } from "./chars/common";
@@ -288,6 +289,7 @@ export const Licao: React.FC<LicaoProps> = (p) => {
           {cur.phase === "licao" && caption}
         </AbsoluteFill>
       )}
+    <Watermark />
     </AbsoluteFill>
   );
 };

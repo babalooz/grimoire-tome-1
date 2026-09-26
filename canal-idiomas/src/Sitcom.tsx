@@ -1,4 +1,5 @@
 import React from "react";
+import { Watermark } from "./Watermark";
 import {
   AbsoluteFill, Audio, Easing, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig,
 } from "remotion";
@@ -398,6 +399,7 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
       {beat.card && inAudio && (
         <Balloon anchor={toScreen(cam, STAGE.capi.head[0], STAGE.capi.headTop) as [number, number]} words={cap.words} active={cap.active} thought={false} lang={beat.lang} pop={1} />
       )}
+    <Watermark />
     </AbsoluteFill>
   );
 };

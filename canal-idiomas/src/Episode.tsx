@@ -1,4 +1,5 @@
 import React from "react";
+import { Watermark } from "./Watermark";
 import {
   AbsoluteFill, Audio, Sequence, interpolate, random, spring, staticFile, useCurrentFrame, useVideoConfig,
 } from "remotion";
@@ -280,6 +281,7 @@ export const Episode: React.FC<EpisodeProps> = ({ format, scenes, timings }) => 
         if (scene.answer !== undefined) done += 1;
         return el;
       })}
+    <Watermark />
     </AbsoluteFill>
   );
 };
