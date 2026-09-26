@@ -684,7 +684,7 @@ def montar_prompt(quadro: str, hoje: dt.date, escolha: dict, radar: dict, penden
 
 
 def load_radar_semanal() -> dict:
-    files = sorted((ROOT / "radar").glob("semana-20??-??-??.json"))
+    files = sorted((ROOT / "radar").glob("semana-20??-W??.json"))
     return json.loads(files[-1].read_text()) if files else {}
 
 

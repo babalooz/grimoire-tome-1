@@ -4,7 +4,7 @@ Uso:
   python3 scripts/radar.py                 -> gera radar/AAAA-MM-DD.md + .json
   python3 scripts/radar.py --so-hype       -> pula a pesquisa de demanda no YouTube (rápido, ~1 min)
   python3 scripts/radar.py --data 2026-10-04   -> simula outra data (calendário/bloqueio)
-  python3 scripts/radar.py --semanal       -> radar/semana-AAAA-MM-DD.md + .json (tema da semana = assunto seguro
+  python3 scripts/radar.py --semanal       -> radar/semana-AAAA-Www.md + .json (tema da semana = assunto seguro
                                              que apareceu em 3+ dos últimos 7 radares diários; calendário dos próximos 7 dias)
   python3 scripts/radar.py --testar-filtro "tortura" "vice-prefeito" ...  -> só testa o filtro de segurança
 
@@ -744,10 +744,12 @@ def main() -> None:
         d = semanal(hoje)
         out = ROOT / "radar"
         out.mkdir(exist_ok=True)
-        (out / f"semana-{hoje.isoformat()}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2))
-        (out / f"semana-{hoje.isoformat()}.md").write_text(markdown_semanal(d))
+        ano, sem, _ = hoje.isocalendar()
+        nome = f"semana-{ano}-W{sem:02d}"  # mesmo nome que a rotina "radar semanal" usa
+        (out / f"{nome}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2))
+        (out / f"{nome}.md").write_text(markdown_semanal(d))
         tema = d["tema_da_semana"]["termo"] if d["tema_da_semana"] else "nenhum (usa calendário)"
-        print(f"ok: radar/semana-{hoje.isoformat()}.md  (tema: {tema}; radares lidos: {d['radares_lidos']})")
+        print(f"ok: radar/{nome}.md  (tema: {tema}; radares lidos: {d['radares_lidos']})")
         return
 
     if args.testar_filtro:

@@ -4,3 +4,4 @@ voices/
 out/
 public/audio/
 __pycache__/
+fila/*.mp4

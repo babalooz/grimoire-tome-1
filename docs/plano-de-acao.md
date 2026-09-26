@@ -82,3 +82,79 @@ mostra, 20% explora novidade.
 - Temporadas = CEFR, capítulos, episódios "T1 E03" (selo no vídeo + título); playlists por temporada no YouTube (publicador cria/atribui).
 - Episódio: apresentar palavras → reconhecer → usar → mini-cena da Capy → revisão espaçada. 1 objetivo can-do por episódio.
 - Renderer: novos exercícios (cartões de vocabulário, ligar pares) + selo de série. Roteiros T1 reescritos do zero antes do render.
+
+---
+
+# OPERAÇÃO DIÁRIA — fonte da verdade das rotinas (atualizado 26/09)
+
+As rotinas da nuvem leem esta seção + `CLAUDE.md` + `docs/tiktok-nativo.md`. Caminhos relativos à raiz do repo.
+**Regra de ouro: só executar etapa marcada ✅ EXISTE. Etapa ⛔ NÃO EXISTE AINDA = pular e registrar "pendente" no commit.**
+
+## 1. Rotinas (criadas pelo Felipe no claude.ai — não criar outras)
+| Rotina | Quando (BRT) | Modelo | Faz |
+|---|---|---|---|
+| CapyFala - radar diário | todo dia 06:00 | Sonnet | §5.2 radar diário → commit em main |
+| radar semanal | domingo 07:00 | Sonnet | §5.3 → `canal-idiomas/radar/semana-AAAA-Www.md/.json` |
+| produção, portão e publicação | todo dia 08:00 | Opus 5.5 | §5.4 a §5.8 para os posts do dia na grade |
+| métricas e aprendizado | todo dia 23:00 | Sonnet | §5.9 |
+
+**FREIO:** se o arquivo `canal-idiomas/FREIO` existir, TODAS as rotinas param no início (só registram "freio ativo").
+Quem cria o FREIO: a rotina de métricas (strike/aviso, vídeo removido, 3 vídeos seguidos < 50% da mediana de views em 48 h)
+ou o Felipe. Quem remove: só o Felipe.
+
+## 2. Grade (dia · faixa · rede · horário)
+Arquivo lido por máquina: **`canal-idiomas/config/grade.json`** (12/10–25/10, 1 entrada por post com `data`, `hora`, `rede`,
+`faixa`, `episodio`, `corte`, `papel`, `frame0`). Versão legível: `docs/grade-semana-1.md`.
+| Rede | Faixa | Seg–Sex | Sáb–Dom |
+|---|---|---|---|
+| YouTube | episódio (T1 E0N do dia) | 12:10 | 10:10 (dom 12:10) |
+| TikTok | esquete A (chama pro EP do dia) | 12:37 | 10:37 |
+| Instagram | esquete A | 12:40 | 17:40 |
+| YouTube | esquete A (link "vídeo relacionado" pro EP) | 18:10 | 16:10 |
+| Instagram | episódio | 18:40 | 11:40 |
+| TikTok | episódio | 19:07 | 12:07 |
+| TikTok | esquete B (revisão do EP de ontem) | 21:37 | 18:37 |
+| YouTube | longo (compilação da semana) | — | dom 10:00 |
+Dia N do teste = T1 E0N (12/10 = E01 … 25/10 = E14). Depois de 25/10 a grade é regerada pelo resultado do teste (§6).
+
+## 3. Arquivos de estado
+| O quê | Caminho | Formato |
+|---|---|---|
+| Log de decisões (toda decisão com métrica) | `canal-idiomas/decisoes.md` | tabela + seções de teste |
+| Fila (pronto, não publicado) | `canal-idiomas/fila/` | `<data>_<rede>_<faixa>_<episodio>.json` com metadados + motivo de estar na fila. O MP4 não vai pro git (é regerado: render determinístico) |
+| Publicados | `canal-idiomas/publicados.csv` | `data,hora,rede,faixa,episodio,corte,post_id,url,status` |
+| Radar diário / semanal | `canal-idiomas/radar/AAAA-MM-DD.json` · `canal-idiomas/radar/semana-AAAA-Www.json` | JSON v2 |
+| Episódios | `canal-idiomas/episodes/licao-s01eNN-*.json` | formato lição (`docs/percurso-do-zero.md`) |
+| Freio | `canal-idiomas/FREIO` | existe = pausa |
+
+## 4. Condição para publicar (rotina de produção)
+Publica só se **as 3** forem verdade: data ≥ **2026-10-12** · variável de ambiente **`BUFFER_TOKEN`** existe · o post
+passou no **portão** (§5.6). Qualquer uma falsa → grava em `canal-idiomas/fila/` com o motivo e segue.
+
+## 5. Comandos exatos
+Container novo a cada rotina: rodar o setup antes de render/TTS. Todos a partir de `canal-idiomas/`.
+| # | Etapa | Comando | Status |
+|---|---|---|---|
+| 5.1 | Setup (Node + Python + modelo Kokoro ~340 MB) | `bash scripts/setup.sh` | ✅ EXISTE |
+| 5.2 | Radar diário | `python3 scripts/radar.py` (fallback rápido: `--so-hype`) | ✅ EXISTE |
+| 5.3 | Radar semanal | `python3 scripts/radar.py --semanal` | ✅ EXISTE |
+| 5.4 | Contexto do episódio (tema da semana; lição intocada) | `.venv/bin/python scripts/roteirista.py --contextualizar episodes/<ep>.json` (precisa `ANTHROPIC_API_KEY`) | ✅ EXISTE (sem chave = pular, episódio sai sem contexto) |
+| 5.4b | Contexto da esquete (hype do dia) | `.venv/bin/python scripts/roteirista.py --contexto esquete` (mostra o hype escolhido) | ✅ EXISTE só a escolha; a geração da `abertura` da esquete ⛔ NÃO EXISTE AINDA |
+| 5.5 | Render do episódio (+ esquetes) | `bash scripts/make-licao.sh episodes/<ep>.json` → `out/<id>.mp4` (−14 LUFS) | 🔄 EM IMPLEMENTAÇÃO: tipos de exercício novos, selo "T1 E0N" e esquetes (`out/<id>-esquete-A.mp4`). Até terminar, NÃO renderizar os episódios novos |
+| 5.6 | Portão automático (código + juiz LLM ≥ 8) | `scripts/portao.py` | ⛔ NÃO EXISTE AINDA → tudo vai para a fila |
+| 5.7 | Publicar via Buffer (YouTube/Instagram; TikTok semi-manual) | `scripts/publicar.py` | ⛔ NÃO EXISTE AINDA → fila |
+| 5.8 | Registrar publicado | append em `publicados.csv` | depende de 5.7 |
+| 5.9 | Métricas 72 h + freio | `scripts/metricas.py` | ⛔ NÃO EXISTE AINDA (precisa OAuth do YouTube Analytics) → rotina só registra "sem coletor" |
+
+## 6. Critérios de corte dos testes (definidos antes; detalhe em `canal-idiomas/decisoes.md`)
+Regras comuns: métricas 72 h após postar · compara MEDIANA · mínimo 5 vídeos por braço · vence com +25% e em ≥4 de 5 pares
+· empate = opção mais barata · 1 variável por teste · o freio tem prioridade.
+- **Duas faixas (12/10–25/10, decisão 28/10):** esquete < 1,5× views do EP → esquete 1/dia no TikTok e 0 em YT/IG ·
+  esquete ≥ 3× views do EP e seguidores/mil ≥ 50% do EP → TikTok 3/dia, YT/IG 2/dia · EP com salvamentos/mil ≥ 20 → EP
+  diário; < 10 e views < 50% da esquete → EP 3×/semana · nada dispara → mantém.
+- **A/B 2 frame 0 (12/10–25/10, só esquetes, ímpar × par):** +25% de retenção no s3 vira padrão.
+- **A/B 3 capítulos (26/10–08/11):** views N+1/N e seguidores/mil +25% → capítulos no sábado.
+- **A/B 4 CTA (26/10–08/11):** mais comentários/mil vira padrão; nenhum +25% sobre controle → sem CTA.
+- **A/B 5 gíria × situação (26/10–08/11):** compartilhamentos/mil; gíria vence → quadro fixo 2×/semana.
+- **Domingo longo (4 domingos):** views/vídeo < mediana dos Shorts → cortar.
+- **Elenco:** personagem com retenção < mediana em ≥ 4 episódios até 02/11 → reduzir.
