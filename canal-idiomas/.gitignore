@@ -3,3 +3,4 @@ node_modules/
 voices/
 out/
 public/audio/
+__pycache__/

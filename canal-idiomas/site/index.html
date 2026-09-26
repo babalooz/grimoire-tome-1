@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teste de nível CapyFala</title>
+<meta name="description" content="Descubra seu nível de inglês (A1 a B2) em 3 minutos com a Capi. Grátis, sem cadastro.">
+<meta name="theme-color" content="#3D1F8F">
+<meta property="og:title" content="Teste de nível CapyFala: qual é o seu nível de inglês?">
+<meta property="og:description" content="15 perguntas, 3 minutos, sem cadastro. A Capi te diz se você é A1, A2, B1 ou B2.">
+<meta property="og:type" content="website">
+<link rel="icon" href="capi.svg" type="image/svg+xml">
+<!-- Fontes Google (OFL) hospedadas aqui mesmo em fonts/: nenhuma requisição a terceiros, nenhum cookie. -->
+<style>
+@font-face{font-family:"Lilita One";src:url(fonts/LilitaOne.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Rubik";src:url(fonts/Rubik-latin.woff2) format("woff2");font-weight:300 900;font-display:swap}
+:root{
+  --roxo:#3D1F8F;--noite:#1E0F4D;--lilas:#8C6CFF;--amarelo:#FFCC00;--tangerina:#FF8A1F;
+  --creme:#FFF4E0;--tinta:#1A0B45;--certo:#16C79A;--errado:#FF4D5E;--linha:#E9DCC6;
+  --r:20px;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:Rubik,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--roxo);color:var(--tinta);
+  min-height:100vh;min-height:100dvh;line-height:1.45;
+  background-image:radial-gradient(circle at 15% 8%,#5B37C4 0,transparent 45%),radial-gradient(circle at 90% 95%,#2A1470 0,transparent 50%);}
+.wrap{max-width:520px;margin:0 auto;padding:16px 16px 40px}
+h1,h2,h3,.lilita{font-family:"Lilita One",Rubik,sans-serif;font-weight:400;letter-spacing:.3px}
+button{font:inherit;cursor:pointer}
+a{color:inherit}
+.hidden{display:none!important}
+
+/* topo */
+.brand{display:flex;align-items:center;justify-content:space-between;color:#fff;margin:4px 2px 14px}
+.brand .logo{font-family:"Lilita One";font-size:26px;letter-spacing:.5px}
+.brand .logo b{color:var(--amarelo);font-weight:400}
+.brand .tag{font-size:12px;font-weight:600;background:rgba(255,255,255,.14);padding:5px 10px;border-radius:99px}
+
+.card{background:var(--creme);border-radius:var(--r);padding:20px;box-shadow:0 6px 0 var(--tinta)}
+
+/* início */
+.hero{text-align:center;color:#fff}
+.hero .capi{width:190px;margin:0 auto -8px;display:block;filter:drop-shadow(0 6px 0 rgba(26,11,69,.45))}
+.hero h1{font-size:40px;line-height:1.02;color:var(--amarelo);-webkit-text-stroke:6px var(--tinta);paint-order:stroke fill;text-shadow:0 5px 0 var(--tinta);margin:6px 0 10px}
+.hero p.sub{font-size:17px;font-weight:500;max-width:360px;margin:0 auto 18px}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.chip{background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.25);color:#fff;border-radius:99px;padding:6px 12px;font-size:14px;font-weight:600}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:3px solid var(--tinta);border-radius:16px;
+  padding:15px 18px;font-size:19px;font-weight:800;text-decoration:none;box-shadow:0 5px 0 var(--tinta);transition:transform .08s,box-shadow .08s;text-align:center}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 var(--tinta)}
+.btn-y{background:var(--amarelo);color:var(--tinta)}
+.btn-w{background:#fff;color:var(--tinta)}
+.btn-g{background:#25D366;color:var(--tinta)}
+.btn[disabled],.btn[aria-disabled="true"]{opacity:.45;pointer-events:none;box-shadow:0 5px 0 var(--tinta)}
+.fine{font-size:13px;color:rgba(255,255,255,.8);text-align:center;margin-top:14px}
+.linkbtn{background:none;border:0;padding:0;text-decoration:underline;color:inherit;font-size:inherit}
+
+/* quiz */
+.top{display:flex;align-items:center;gap:10px;color:#fff;margin-bottom:10px}
+.bar{flex:1;height:14px;background:rgba(255,255,255,.18);border-radius:99px;overflow:hidden;border:2px solid var(--tinta)}
+.bar i{display:block;height:100%;width:0;background:var(--amarelo);transition:width .35s}
+.count{font-weight:800;font-size:15px;min-width:44px;text-align:right}
+.qhead{display:flex;align-items:flex-end;gap:8px;margin-bottom:-6px;position:relative;z-index:1}
+.qhead .capi{width:92px;flex:none;margin-left:-4px;filter:drop-shadow(0 4px 0 rgba(26,11,69,.45))}
+.bubble{background:#fff;border:3px solid var(--tinta);border-radius:16px 16px 16px 4px;padding:8px 12px;font-weight:600;font-size:14px;margin-bottom:22px;position:relative}
+.lvl{display:inline-block;font-family:"Lilita One";font-size:14px;background:var(--lilas);color:#fff;border-radius:8px;padding:2px 8px;margin-right:6px;letter-spacing:.5px}
+.qtext{font-size:15px;font-weight:600;color:#5A4A7A;margin-bottom:6px}
+.qen{font-family:"Lilita One";font-size:25px;line-height:1.15;margin-bottom:16px}
+.qen .gap{display:inline-block;min-width:64px;border-bottom:4px solid var(--tangerina);margin:0 3px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#fff;border:3px solid var(--tinta);border-radius:14px;padding:12px 14px;font-size:17px;font-weight:600;color:var(--tinta);box-shadow:0 4px 0 var(--tinta)}
+.opt .k{flex:none;width:30px;height:30px;border-radius:9px;background:var(--creme);border:2px solid var(--tinta);display:grid;place-items:center;font-family:"Lilita One";font-size:16px}
+.opt:not([disabled]):active{transform:translateY(3px);box-shadow:0 1px 0 var(--tinta)}
+.opt[disabled]{cursor:default}
+.opt.ok{background:var(--certo);color:var(--tinta)}
+.opt.ok .k{background:#fff}
+.opt.no{background:var(--errado);color:#fff}
+.opt.no .k{background:#fff;color:var(--tinta)}
+.opt.dim{opacity:.5}
+.fb{margin-top:16px;border-radius:14px;padding:14px;border:3px solid var(--tinta);animation:pop .25s ease-out}
+.fb.ok{background:#D6F7EC}
+.fb.no{background:#FFE0E3}
+.fb h3{font-size:22px;margin-bottom:4px}
+.fb p{font-size:15.5px}
+.fb .ex{margin-top:8px;font-size:14.5px;background:rgba(255,255,255,.7);border-radius:10px;padding:8px 10px}
+.fb .ex b{font-weight:700}
+.next{margin-top:14px}
+@keyframes pop{from{transform:scale(.96);opacity:0}to{transform:none;opacity:1}}
+
+/* resultado */
+.res-top{text-align:center;color:#fff;margin-bottom:14px}
+.res-top .capi{width:150px;margin:0 auto -6px;display:block;filter:drop-shadow(0 6px 0 rgba(26,11,69,.45))}
+.badge{display:inline-block;font-family:"Lilita One";font-size:72px;line-height:1;color:var(--amarelo);-webkit-text-stroke:7px var(--tinta);paint-order:stroke fill;text-shadow:0 6px 0 var(--tinta);margin:6px 0 2px}
+.res-top .nome{font-family:"Lilita One";font-size:24px}
+.res-top .score{font-weight:600;opacity:.9;font-size:15px}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:14px 0 4px}
+.band{background:#fff;color:var(--tinta);border:2px solid var(--tinta);border-radius:10px;padding:6px 4px;text-align:center;font-size:12px;font-weight:600}
+.band b{display:block;font-family:"Lilita One";font-size:18px;font-weight:400}
+.band.on{background:var(--amarelo);box-shadow:0 3px 0 var(--tinta)}
+.band.pass{background:#D6F7EC}
+.card h2{font-size:23px;margin-bottom:6px}
+.card + .card{margin-top:16px}
+.topics{list-style:none;padding:0;display:grid;gap:8px;margin-top:10px}
+.topics li{display:flex;gap:10px;background:#fff;border:2px solid var(--linha);border-radius:12px;padding:10px 12px;font-size:15px}
+.topics li .n{flex:none;width:26px;height:26px;border-radius:50%;background:var(--roxo);color:#fff;display:grid;place-items:center;font-family:"Lilita One";font-size:14px}
+.topics li small{display:block;color:#6B5C86;font-size:13px}
+.social{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.social a{display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--roxo);color:#fff;border:3px solid var(--tinta);border-radius:14px;padding:10px 4px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 4px 0 var(--tinta)}
+.social svg{width:26px;height:26px;fill:currentColor}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;margin-top:10px;cursor:pointer}
+.check input{flex:none;width:22px;height:22px;margin-top:1px;accent-color:var(--roxo)}
+.minor{font-size:13.5px;color:#6B5C86;margin-top:10px}
+.offer{border:3px dashed var(--tangerina)}
+.publi{display:inline-block;background:var(--tangerina);color:var(--tinta);font-weight:800;font-size:12px;letter-spacing:.4px;text-transform:uppercase;border-radius:6px;padding:3px 8px;margin-bottom:8px}
+.again{display:flex;gap:10px;margin-top:16px}
+.again .btn{font-size:16px;padding:12px}
+footer{color:rgba(255,255,255,.75);font-size:12.5px;text-align:center;margin-top:26px}
+footer button{color:#fff}
+dialog{margin:auto;max-height:calc(100dvh - 32px);overflow:auto;border:3px solid var(--tinta);border-radius:var(--r);padding:20px;max-width:480px;width:calc(100% - 32px);background:var(--creme);color:var(--tinta)}
+dialog::backdrop{background:rgba(20,8,55,.7)}
+dialog h2{font-size:24px;margin-bottom:8px}
+dialog p,dialog li{font-size:14.5px;margin-bottom:8px}
+dialog ul{padding-left:18px}
+@media (min-width:600px){.wrap{padding-top:28px}.hero h1{font-size:48px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="brand">
+    <span class="logo">Capy<b>Fala</b></span>
+    <span class="tag">grátis · sem cadastro</span>
+  </header>
+
+  <!-- INÍCIO -->
+  <main id="s-start">
+    <section class="hero">
+      <div class="capi" data-capi="happy"></div>
+      <h1>Qual é o seu nível de inglês?</h1>
+      <p class="sub">15 perguntas rápidas, do básico ao avançado. No fim, a Capi te diz se você é <b>A1, A2, B1 ou B2</b> e o que estudar agora.</p>
+      <div class="chips"><span class="chip">⏱ 3 min</span><span class="chip">A1 → B2</span><span class="chip">Explicação em cada pergunta</span></div>
+      <button class="btn btn-y" id="go">Começar o teste</button>
+      <p class="fine">Nada é salvo nem enviado: suas respostas ficam só no seu celular. <button class="linkbtn" data-privacy>Privacidade</button></p>
+    </section>
+  </main>
+
+  <!-- PERGUNTA -->
+  <main id="s-quiz" class="hidden" aria-live="polite">
+    <div class="top"><div class="bar" aria-hidden="true"><i id="prog"></i></div><span class="count" id="count">1/15</span></div>
+    <div class="qhead"><div class="capi" id="qcapi"></div><div class="bubble" id="bubble"></div></div>
+    <section class="card">
+      <p class="qtext" id="qtext"></p>
+      <p class="qen" id="qen"></p>
+      <div class="opts" id="opts"></div>
+      <div id="fb"></div>
+    </section>
+  </main>
+
+  <!-- RESULTADO -->
+  <main id="s-result" class="hidden">
+    <section class="res-top">
+      <div class="capi" data-capi="happy"></div>
+      <div>Seu nível estimado</div>
+      <div class="badge" id="r-level">B1</div>
+      <div class="nome" id="r-name"></div>
+      <div class="score" id="r-score"></div>
+      <div class="bands" id="r-bands"></div>
+    </section>
+
+    <section class="card">
+      <h2 id="r-title"></h2>
+      <p id="r-text"></p>
+      <h3 style="font-size:19px;margin-top:14px">Seus 3 próximos passos</h3>
+      <ol class="topics" id="r-topics"></ol>
+    </section>
+
+    <section class="card">
+      <h2>Receba o plano de estudo no WhatsApp</h2>
+      <p style="font-size:15px">Você manda a mensagem e a Capi responde com um plano de 4 semanas para o nível <b id="wa-level">B1</b>.</p>
+      <label class="check"><input type="checkbox" id="ck-age"> <span>Tenho <b>18 anos ou mais</b>.</span></label>
+      <label class="check"><input type="checkbox" id="ck-optin"> <span>Quero receber meu resultado e dicas do CapyFala no WhatsApp. Posso sair quando quiser respondendo <b>SAIR</b>. (<button class="linkbtn" data-privacy>privacidade</button>)</span></label>
+      <a class="btn btn-g" id="wa-btn" style="margin-top:14px" href="#" target="_blank" rel="noopener" aria-disabled="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+        Quero meu plano
+      </a>
+      <p class="minor">Menor de 18? Tudo certo: seu resultado está aqui na tela. Siga a Capi nas redes para continuar treinando.</p>
+    </section>
+
+    <section class="card">
+      <h2>Siga a Capi</h2>
+      <p style="font-size:15px">Um quiz de inglês por dia, com os erros que todo brasileiro comete.</p>
+      <div class="social" id="social"></div>
+    </section>
+
+    <section class="card offer hidden" id="offer">
+      <span class="publi" id="offer-tag">Publi · link de afiliado</span>
+      <h2 id="offer-title"></h2>
+      <p id="offer-text" style="font-size:15px;margin-bottom:12px"></p>
+      <a class="btn btn-y" id="offer-btn" href="#" target="_blank" rel="sponsored noopener"></a>
+      <p class="minor" id="offer-note">Se você comprar por este link, o CapyFala pode receber uma comissão, sem custo extra para você.</p>
+    </section>
+
+    <div class="again">
+      <button class="btn btn-w" id="share">Desafiar amigo</button>
+      <button class="btn btn-w" id="restart">Refazer</button>
+    </div>
+  </main>
+
+  <footer>
+    CapyFala · teste gratuito e indicativo (não é certificação oficial).<br>
+    <button class="linkbtn" data-privacy>Privacidade</button> · sem cookies · sem cadastro
+  </footer>
+</div>
+
+<dialog id="privacy">
+  <h2>Privacidade, em 1 minuto</h2>
+  <ul>
+    <li><b>Este site não coleta dados.</b> Não tem cadastro, cookie nem ferramenta de rastreamento. Suas respostas ficam só no seu navegador e somem quando você fecha a página.</li>
+    <li><b>WhatsApp:</b> só existe contato se <b>você</b> abrir a conversa. Aí recebemos seu número e a mensagem que você enviou, e usamos só para mandar o plano de estudo e dicas do CapyFala. Para parar, responda <b>SAIR</b> a qualquer momento. A conversa também segue a política do WhatsApp (Meta).</li>
+    <li><b>Idade:</b> o contato pelo WhatsApp é só para maiores de 18 anos.</li>
+    <li><b>Links de afiliado</b> aparecem marcados como “publi”.</li>
+    <li><b>Responsável (controlador):</b> <span id="pv-controller"></span>. <span id="pv-contact"></span></li>
+  </ul>
+  <form method="dialog"><button class="btn btn-y" style="margin-top:6px">Entendi</button></form>
+</dialog>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO — edite só este bloco (ver README.md)
+   ============================================================ */
+const CONFIG = {
+  // Número do WhatsApp com DDI+DDD, só dígitos (ex.: "5511999999999"). Vazio = botão mostra aviso.
+  whatsapp: "5500000000000",
+  redes: {
+    tiktok: "https://www.tiktok.com/@capyfala",
+    youtube: "https://www.youtube.com/@capyfala",
+    instagram: "https://www.instagram.com/capyfala",
+  },
+  // Slot de afiliado/produto. url vazio = bloco escondido. Com url preenchido, aparece com a etiqueta "publi" (CONAR).
+  oferta: {
+    url: "",
+    titulo: "Curso de inglês recomendado",
+    texto: "O curso que a gente indica para quem quer sair do nível dele.",
+    botao: "Conhecer o curso",
+    etiqueta: "Publi · link de afiliado",   // produto próprio? troque por "Produto CapyFala"
+    aviso: "Se você comprar por este link, o CapyFala pode receber uma comissão, sem custo extra para você.",
+  },
+  // LGPD: quem é o controlador dos dados do WhatsApp e como falar com ele.
+  controlador: "CapyFala (Felipe)",
+  contatoPrivacidade: "", // ex.: "privacidade@capyfala.com.br"
+};
+
+/* Analytics sem cookies (opcional, depois): cole aqui o <script> do GoatCounter, Plausible
+   ou Cloudflare Web Analytics e faça track() chamar a função deles, ex.:
+     window.goatcounter?.count({path: "evento/" + nome, event: true});
+   Não use Google Analytics/Meta Pixel: põem cookie e exigem banner de consentimento. */
+function track(nome, dados) { /* sem analytics por enquanto: não faz nada */ }
+
+/* ============================================================
+   PERGUNTAS — dificuldade crescente A1 → B2 (currículo docs/conselho/2026-09-26/didatica-linguistica.md)
+   ============================================================ */
+const Q = [
+  // A1
+  {lvl:"A1", id:"A1-01", pt:"Como se diz “Eu tenho 20 anos”?", en:"",
+   o:["I have 20 years.","I'm 20 years old.","I have 20 years old."], a:1,
+   why:"Idade em inglês usa o verbo BE (ser/estar), nunca HAVE.", ex:"My brother <b>is</b> 25. = Meu irmão tem 25 anos.",
+   topic:"Idade e sensações com BE", tip:"I'm 20, I'm hungry, I'm cold: nada de “I have”."},
+  {lvl:"A1", id:"A1-04", pt:"Complete a frase:", en:"My sister ___ from home.",
+   o:["work","works","working"], a:1,
+   why:"Com he, she e it, o verbo ganha -s no presente.", ex:"My mom <b>works</b> on Saturdays.",
+   topic:"O -s da 3ª pessoa (she works)", tip:"He/she/it + verbo com -s no presente."},
+  {lvl:"A1", id:"A1-06", pt:"Como se diz “Tem muita gente aqui”?", en:"",
+   o:["Have a lot of people here.","It has a lot of people here.","There are a lot of people here."], a:2,
+   why:"O “tem” de existir é THERE IS (singular) ou THERE ARE (plural).", ex:"<b>There's</b> a great bar near the beach.",
+   topic:"There is / there are", tip:"O “tem” de existir: there is (1) e there are (vários)."},
+  {lvl:"A1", id:"A1-10", pt:"Na porta do shopping está escrito <b>PUSH</b>. O que você faz?", en:"",
+   o:["Puxo a porta","Empurro a porta","Toco a campainha"], a:1,
+   why:"PUSH é empurrar. PULL é puxar. Falso amigo clássico!", ex:"<b>Push</b> the door, don't pull it.",
+   topic:"Falsos amigos básicos (push, pull)", tip:"Push = empurrar, pull = puxar."},
+  // A2
+  {lvl:"A2", id:"A2-02", pt:"Complete a frase:", en:"She's married ___ a Canadian.",
+   o:["with","to","for"], a:1,
+   why:"“Casado com” em inglês é MARRIED TO.", ex:"He's married <b>to</b> my cousin.",
+   topic:"Preposições do dia a dia (married to, depend on)", tip:"Married TO, depends ON, good AT."},
+  {lvl:"A2", id:"A2-06", pt:"Você quer pegar o carregador do amigo emprestado. Complete:", en:"Can I ___ your charger?",
+   o:["lend","borrow","lend me"], a:1,
+   why:"BORROW é pegar emprestado. LEND é emprestar para alguém.", ex:"Can you <b>lend</b> me your charger? = Você me empresta?",
+   topic:"Lend × borrow", tip:"Borrow = pegar emprestado; lend = emprestar para alguém."},
+  {lvl:"A2", id:"A2-17", pt:"Como se diz “Você assistiu o jogo ontem?”", en:"",
+   o:["Did you assist the game last night?","Did you watch the game last night?","Did you look the game last night?"], a:1,
+   why:"Assistir TV, filme ou jogo é WATCH. ASSIST é ajudar.", ex:"Did you <b>watch</b> the game last night?",
+   topic:"Falsos amigos: assist, parents, college", tip:"Assist = ajudar; parents = pais; college = faculdade."},
+  {lvl:"A2", id:"A2-09", pt:"“My <b>parents</b> live in Recife.” Quem mora em Recife?", en:"",
+   o:["Meus parentes","Meus pais","Meus padrinhos"], a:1,
+   why:"PARENTS são o pai e a mãe. Parentes em inglês é RELATIVES.", ex:"My <b>relatives</b> live in Recife. = Meus parentes moram em Recife.",
+   topic:"Falsos amigos: assist, parents, college", tip:"Assist = ajudar; parents = pais; college = faculdade."},
+  // B1
+  {lvl:"B1", id:"B1-01", pt:"Complete a frase:", en:"I'm looking forward to ___ you.",
+   o:["see","seeing","saw"], a:1,
+   why:"Esse TO é preposição, e depois de preposição o verbo vem com -ING.", ex:"I'm looking forward to <b>watching</b> the World Cup.",
+   topic:"TO preposição + -ing (looking forward to)", tip:"Looking forward to / be used to + verbo com -ing."},
+  {lvl:"B1", id:"B1-02", pt:"“<b>Actually</b>, I'm a teacher.” O que significa <i>actually</i>?", en:"",
+   o:["Atualmente","Na verdade","Eventualmente"], a:1,
+   why:"ACTUALLY é “na verdade”. “Atualmente” em inglês é CURRENTLY.", ex:"Actually, I'm <b>currently</b> living in Lisbon.",
+   topic:"Falsos amigos: actually, eventually, realize", tip:"Actually = na verdade; eventually = no fim; realize = perceber."},
+  {lvl:"B1", id:"B1-03", pt:"Como se diz “Moro aqui desde 2020”?", en:"",
+   o:["I live here since 2020.","I've lived here since 2020.","I'm living here since 2020."], a:1,
+   why:"Começou no passado e continua até hoje: present perfect (have + particípio) com SINCE ou FOR.", ex:"I've lived here <b>for</b> five years.",
+   topic:"Present perfect com since/for", tip:"Começou e continua: I've lived / I've been + since/for."},
+  {lvl:"B1", id:"B1-05", pt:"Complete a frase:", en:"He ___ me the truth.",
+   o:["said","told","talked"], a:1,
+   why:"TELL vem com a pessoa (told me). SAY vem sem a pessoa (he said that…).", ex:"She <b>told</b> me she was tired. / She <b>said</b> she was tired.",
+   topic:"Tell × say", tip:"Tell + pessoa (told me); say sem pessoa (said that)."},
+  // B2
+  {lvl:"B2", id:"B2-01", pt:"Complete a frase:", en:"___ the rain, we went to the beach.",
+   o:["Despite of","Despite","Although"], a:1,
+   why:"DESPITE não leva OF (in spite of leva). Although pede uma frase com verbo: although it was raining.", ex:"<b>In spite of</b> the traffic, we made it.",
+   topic:"Despite × in spite of × although", tip:"Despite + nome; in spite of + nome; although + frase."},
+  {lvl:"B2", id:"B2-03", pt:"Como se diz “Parei de fumar ano passado”?", en:"",
+   o:["I stopped to smoke last year.","I stopped smoking last year.","I stopped smoke last year."], a:1,
+   why:"STOP + -ING é parar de fazer algo. STOP + TO é parar PARA fazer algo.", ex:"We <b>stopped to get</b> gas. = Paramos para abastecer.",
+   topic:"Stop + -ing × stop + to", tip:"Stop smoking = parar de fumar; stop to smoke = parar para fumar."},
+  {lvl:"B2", id:"B2-04", pt:"Complete a frase:", en:"If I ___ known, I would have gone.",
+   o:["would have","had","have"], a:1,
+   why:"Na 3ª condicional, depois do IF vem HAD + particípio. O would have fica na outra parte.", ex:"If I <b>had studied</b>, I would have passed.",
+   topic:"Condicionais (If I were / If I had known)", tip:"If + had + particípio, would have + particípio."},
+];
+
+const LEVELS = {
+  A1:{name:"Iniciante", title:"Você está construindo a base", text:"Você já reconhece palavras e frases simples. Agora o que mais rende é firmar as estruturas que o português “atrapalha”: idade com BE, o “tem” de existir e o -s do presente. Com isso, seu inglês deixa de soar traduzido.",
+      def:["Idade e sensações com BE","There is / there are","O -s da 3ª pessoa (she works)"]},
+  A2:{name:"Básico", title:"Você se vira no dia a dia", text:"Você entende e monta frases do cotidiano. O que te separa do B1 são as preposições “de brasileiro” e os falsos amigos que mudam o sentido da frase sem você perceber.",
+      def:["Preposições do dia a dia (married to, depend on)","Falsos amigos: assist, parents, college","Lend × borrow"]},
+  B1:{name:"Intermediário", title:"Você já conversa", text:"Você mantém uma conversa e entende bastante. Para chegar ao B2, foque nas estruturas que o nativo usa sem pensar: present perfect, verbos com -ing depois de preposição e falsos amigos traiçoeiros.",
+      def:["Present perfect com since/for","Tell × say","TO preposição + -ing (looking forward to)"]},
+  B2:{name:"Intermediário avançado", title:"Seu inglês é independente", text:"Você acertou até as pegadinhas avançadas. O próximo salto (C1) está nos detalhes: expressões idiomáticas, falsos amigos sutis e frases com ênfase, como os nativos falam.",
+      def:["Falsos amigos sutis: sympathetic, sensible, exquisite","Expressões: cost an arm and a leg, take the blame","Inversão com not only (Not only do I…)"]},
+};
+const TIPS = { // dicas para os tópicos padrão que não vêm de uma pergunta
+  "Falsos amigos sutis: sympathetic, sensible, exquisite":"Sympathetic = compreensivo; sensible = sensato; exquisite = requintado.",
+  "Expressões: cost an arm and a leg, take the blame":"Custar os olhos da cara = cost an arm and a leg; pagar o pato = take the blame.",
+  "Inversão com not only (Not only do I…)":"Frase que começa com not only inverte: Not only did we win…",
+};
+Q.forEach(q => { if (!TIPS[q.topic]) TIPS[q.topic] = q.tip; });
+
+const CAPI = {"zen": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"80 340 560 680\" role=\"img\" aria-label=\"Capi, a capivara do CapyFala\"><circle cx=\"452\" cy=\"400\" r=\"30\" fill=\"#A8703F\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><path d=\"M500 735 C525 800 535 900 552 990\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g transform=\"translate(330 1000) scale(1 1) translate(-330 -1000)\"><path d=\"M100 1000 C98 800 110 650 152 560 C188 470 252 420 332 410 C422 400 502 420 562 460 C612 492 628 542 622 602 C617 662 590 702 540 716 C528 762 544 882 550 1000 Z\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M112 1000 C110 820 118 690 150 600 C160 700 158 850 176 1000 Z\" fill=\"#A8703F\" opacity=\"0.55\"></path><path d=\"M492 505 C542 494 602 510 616 560 C626 622 606 680 560 700 C520 710 490 690 486 640 C481 590 472 520 492 505 Z\" fill=\"#A5714A\" opacity=\"0.85\"></path><path d=\"M512 540 Q526 530 540 540\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M580 540 Q594 530 606 542\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M562 568 L562 650 M532 668 Q562 660 590 666\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M315 690 Q400 730 482 714\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M168 760 C150 850 172 948 232 958 C272 960 262 900 268 840\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></g><circle cx=\"222\" cy=\"412\" r=\"42\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><circle cx=\"226\" cy=\"416\" r=\"20\" fill=\"#9C6A45\"></circle><path d=\"M150 560 C188 470 252 420 332 410\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g><ellipse cx=\"360\" cy=\"515\" rx=\"38\" ry=\"31.159999999999997\" fill=\"#fff\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></ellipse><circle cx=\"364\" cy=\"519\" r=\"16\" fill=\"#3A2213\"></circle><g><clipPath id=\"lid-zen\"><ellipse cx=\"360\" cy=\"515\" rx=\"38\" ry=\"31.159999999999997\"></ellipse></clipPath><rect x=\"322\" y=\"477\" width=\"76\" height=\"41.800000000000004\" fill=\"#C98B54\" clip-path=\"url(#lid-zen)\"></rect><line x1=\"326\" y1=\"518.116\" x2=\"394\" y2=\"518.116\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></line></g></g></svg>", "thinking": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"80 340 560 680\" role=\"img\" aria-label=\"Capi, a capivara do CapyFala\"><circle cx=\"452\" cy=\"400\" r=\"30\" fill=\"#A8703F\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><path d=\"M500 735 C525 800 535 900 552 990\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g transform=\"translate(330 1000) scale(1 1) translate(-330 -1000)\"><path d=\"M100 1000 C98 800 110 650 152 560 C188 470 252 420 332 410 C422 400 502 420 562 460 C612 492 628 542 622 602 C617 662 590 702 540 716 C528 762 544 882 550 1000 Z\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M112 1000 C110 820 118 690 150 600 C160 700 158 850 176 1000 Z\" fill=\"#A8703F\" opacity=\"0.55\"></path><path d=\"M492 505 C542 494 602 510 616 560 C626 622 606 680 560 700 C520 710 490 690 486 640 C481 590 472 520 492 505 Z\" fill=\"#A5714A\" opacity=\"0.85\"></path><path d=\"M512 540 Q526 530 540 540\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M580 540 Q594 530 606 542\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M562 568 L562 650 M532 668 Q562 660 590 666\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M315 690 Q400 730 482 714\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M168 760 C150 850 172 948 232 958 C272 960 262 900 268 840\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></g><circle cx=\"222\" cy=\"412\" r=\"42\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><circle cx=\"226\" cy=\"416\" r=\"20\" fill=\"#9C6A45\"></circle><path d=\"M150 560 C188 470 252 420 332 410\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g><ellipse cx=\"360\" cy=\"515\" rx=\"38\" ry=\"31.159999999999997\" fill=\"#fff\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></ellipse><circle cx=\"368\" cy=\"507\" r=\"16\" fill=\"#3A2213\"></circle><g><clipPath id=\"lid-thinking\"><ellipse cx=\"360\" cy=\"515\" rx=\"38\" ry=\"31.159999999999997\"></ellipse></clipPath><rect x=\"322\" y=\"477\" width=\"76\" height=\"26.599999999999998\" fill=\"#C98B54\" clip-path=\"url(#lid-thinking)\"></rect><line x1=\"326\" y1=\"505.65200000000004\" x2=\"394\" y2=\"505.65200000000004\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></line></g></g><path d=\"M318 452 L400 470\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>", "happy": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"80 340 560 680\" role=\"img\" aria-label=\"Capi, a capivara do CapyFala\"><circle cx=\"452\" cy=\"400\" r=\"30\" fill=\"#A8703F\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><path d=\"M500 735 C525 800 535 900 552 990\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g transform=\"translate(330 1000) scale(1 1) translate(-330 -1000)\"><path d=\"M100 1000 C98 800 110 650 152 560 C188 470 252 420 332 410 C422 400 502 420 562 460 C612 492 628 542 622 602 C617 662 590 702 540 716 C528 762 544 882 550 1000 Z\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M112 1000 C110 820 118 690 150 600 C160 700 158 850 176 1000 Z\" fill=\"#A8703F\" opacity=\"0.55\"></path><path d=\"M492 505 C542 494 602 510 616 560 C626 622 606 680 560 700 C520 710 490 690 486 640 C481 590 472 520 492 505 Z\" fill=\"#A5714A\" opacity=\"0.85\"></path><path d=\"M512 540 Q526 530 540 540\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M580 540 Q594 530 606 542\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M562 568 L562 650 M532 668 Q562 660 590 666\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M300 675 Q400 760 490 712\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M168 760 C150 850 172 948 232 958 C272 960 262 900 268 840\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></g><circle cx=\"222\" cy=\"412\" r=\"42\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><circle cx=\"226\" cy=\"416\" r=\"20\" fill=\"#9C6A45\"></circle><path d=\"M150 560 C188 470 252 420 332 410\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M330 525 Q360 485 390 525\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>", "shock": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"80 340 560 680\" role=\"img\" aria-label=\"Capi, a capivara do CapyFala\"><circle cx=\"452\" cy=\"400\" r=\"30\" fill=\"#A8703F\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><path d=\"M500 735 C525 800 535 900 552 990\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g transform=\"translate(330 1000) scale(1 1) translate(-330 -1000)\"><path d=\"M100 1000 C98 800 110 650 152 560 C188 470 252 420 332 410 C422 400 502 420 562 460 C612 492 628 542 622 602 C617 662 590 702 540 716 C528 762 544 882 550 1000 Z\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M112 1000 C110 820 118 690 150 600 C160 700 158 850 176 1000 Z\" fill=\"#A8703F\" opacity=\"0.55\"></path><path d=\"M492 505 C542 494 602 510 616 560 C626 622 606 680 560 700 C520 710 490 690 486 640 C481 590 472 520 492 505 Z\" fill=\"#A5714A\" opacity=\"0.85\"></path><path d=\"M512 540 Q526 530 540 540\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M580 540 Q594 530 606 542\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M562 568 L562 650 M532 668 Q562 660 590 666\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M315 690 Q400 730 482 714\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><ellipse cx=\"548\" cy=\"690\" rx=\"18\" ry=\"20\" fill=\"#5A2E1A\" stroke=\"#3A2213\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></ellipse><path d=\"M168 760 C150 850 172 948 232 958 C272 960 262 900 268 840\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></g><circle cx=\"222\" cy=\"412\" r=\"42\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><circle cx=\"226\" cy=\"416\" r=\"20\" fill=\"#9C6A45\"></circle><path d=\"M150 560 C188 470 252 420 332 410\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g><ellipse cx=\"360\" cy=\"515\" rx=\"44\" ry=\"36.08\" fill=\"#fff\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></ellipse><circle cx=\"364\" cy=\"519\" r=\"11\" fill=\"#3A2213\"></circle></g></svg>", "fail": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"80 340 560 680\" role=\"img\" aria-label=\"Capi, a capivara do CapyFala\"><circle cx=\"452\" cy=\"400\" r=\"30\" fill=\"#A8703F\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><path d=\"M500 735 C525 800 535 900 552 990\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g transform=\"translate(330 1000) scale(1 1) translate(-330 -1000)\"><path d=\"M100 1000 C98 800 110 650 152 560 C188 470 252 420 332 410 C422 400 502 420 562 460 C612 492 628 542 622 602 C617 662 590 702 540 716 C528 762 544 882 550 1000 Z\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M112 1000 C110 820 118 690 150 600 C160 700 158 850 176 1000 Z\" fill=\"#A8703F\" opacity=\"0.55\"></path><path d=\"M492 505 C542 494 602 510 616 560 C626 622 606 680 560 700 C520 710 490 690 486 640 C481 590 472 520 492 505 Z\" fill=\"#A5714A\" opacity=\"0.85\"></path><path d=\"M512 540 Q526 530 540 540\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M580 540 Q594 530 606 542\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M562 568 L562 650 M532 668 Q562 660 590 666\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M320 720 Q400 700 480 722\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M520 700 Q548 680 578 700\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><path d=\"M168 760 C150 850 172 948 232 958 C272 960 262 900 268 840\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></g><circle cx=\"222\" cy=\"412\" r=\"42\" fill=\"#C98B54\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></circle><circle cx=\"226\" cy=\"416\" r=\"20\" fill=\"#9C6A45\"></circle><path d=\"M150 560 C188 470 252 420 332 410\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path><g stroke=\"#3A2213\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><line x1=\"338\" y1=\"493\" x2=\"382\" y2=\"537\"></line><line x1=\"382\" y1=\"493\" x2=\"338\" y2=\"537\"></line></g><path d=\"M318 462 L396 448\" fill=\"none\" stroke=\"#3A2213\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>"};
+
+/* ============================================================
+   APP
+   ============================================================ */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const params = new URLSearchParams(location.search);
+const QUADRO = (params.get("q") || "").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 40); // ?q=<quadro> do vídeo
+let i = 0, answers = [], result = null;
+
+document.querySelectorAll("[data-capi]").forEach(el => el.innerHTML = CAPI[el.dataset.capi]);
+function show(id){ ["s-start","s-quiz","s-result"].forEach(s => $("#"+s).classList.toggle("hidden", s !== id)); window.scrollTo(0,0); }
+
+const BUBBLES = {A1:"Aquecimento! Nível A1.", A2:"Subindo: agora é A2.", B1:"Chegamos no B1. Foco!", B2:"Nível B2: pegadinha avançada."};
+function renderQ(){
+  const q = Q[i];
+  $("#prog").style.width = (i / Q.length * 100) + "%";
+  $("#count").textContent = (i+1) + "/" + Q.length;
+  $("#qcapi").innerHTML = CAPI.thinking;
+  $("#bubble").innerHTML = '<span class="lvl">'+q.lvl+'</span>' + BUBBLES[q.lvl];
+  $("#qtext").innerHTML = q.pt;
+  const en = $("#qen");
+  en.classList.toggle("hidden", !q.en);
+  en.innerHTML = q.en ? esc(q.en).replace("___", '<span class="gap"></span>') : "";
+  $("#opts").innerHTML = q.o.map((t,k) => '<button class="opt" data-k="'+k+'"><span class="k">'+"ABC"[k]+'</span><span>'+esc(t)+'</span></button>').join("");
+  $("#fb").innerHTML = "";
+}
+$("#opts").addEventListener("click", e => {
+  const b = e.target.closest(".opt"); if (!b || b.disabled) return;
+  const q = Q[i], k = +b.dataset.k, ok = k === q.a;
+  answers[i] = ok;
+  document.querySelectorAll(".opt").forEach((el, j) => {
+    el.disabled = true;
+    if (j === q.a) el.classList.add("ok"); else if (j === k) el.classList.add("no"); else el.classList.add("dim");
+  });
+  $("#qcapi").innerHTML = ok ? CAPI.happy : CAPI.shock;
+  $("#bubble").innerHTML = ok ? "Isso aí! 🎉" : "Quase! Olha o porquê 👇";
+  const last = i === Q.length - 1;
+  $("#fb").innerHTML =
+    '<div class="fb '+(ok?"ok":"no")+'"><h3>'+(ok?"Acertou!":"Não foi dessa vez")+'</h3>' +
+    (ok ? "" : '<p style="margin-bottom:4px">Certo: <b>'+esc(q.o[q.a])+'</b></p>') +
+    '<p>'+q.why+'</p><p class="ex">Exemplo: '+q.ex+'</p></div>' +
+    '<button class="btn btn-y next" id="next">'+(last?"Ver meu nível":"Próxima")+'</button>';
+  $("#prog").style.width = ((i+1) / Q.length * 100) + "%";
+  $("#next").focus({preventScroll:true});
+  $("#next").scrollIntoView({behavior:"smooth", block:"nearest"});
+});
+$("#fb").addEventListener("click", e => {
+  if (e.target.id !== "next") return;
+  i++; if (i < Q.length) { renderQ(); window.scrollTo(0,0); } else finish();
+});
+
+function computeLevel(){
+  const bands = ["A1","A2","B1","B2"], per = {};
+  bands.forEach(b => per[b] = {ok:0, n:0});
+  Q.forEach((q, k) => { per[q.lvl].n++; if (answers[k]) per[q.lvl].ok++; });
+  // Nível = a faixa mais alta aprovada em sequência (≥75% da faixa, arredondado para cima). Nenhuma aprovada = A1.
+  let level = "A1";
+  for (const b of bands) { if (per[b].ok >= Math.ceil(per[b].n * 0.75)) level = b; else break; }
+  return {level, per, total: answers.filter(Boolean).length};
+}
+function finish(){
+  result = computeLevel();
+  const L = LEVELS[result.level];
+  $("#r-level").textContent = result.level;
+  $("#r-name").textContent = L.name;
+  $("#r-score").textContent = "Você acertou " + result.total + " de " + Q.length;
+  $("#r-bands").innerHTML = ["A1","A2","B1","B2"].map(b => '<div class="band'+(b===result.level?" on":(result.per[b].ok>=Math.ceil(result.per[b].n*.75)?" pass":""))+'"><b>'+b+'</b>'+result.per[b].ok+'/'+result.per[b].n+'</div>').join("");
+  $("#r-title").textContent = L.title;
+  $("#r-text").textContent = L.text;
+  // tópicos: primeiro o que errou (do nível mais baixo), depois os padrões do nível
+  const topics = [];
+  Q.forEach((q, k) => { if (!answers[k] && !topics.includes(q.topic)) topics.push(q.topic); });
+  L.def.forEach(t => { if (!topics.includes(t)) topics.push(t); });
+  $("#r-topics").innerHTML = topics.slice(0,3).map((t,k) => '<li><span class="n">'+(k+1)+'</span><span>'+esc(t)+'<small>'+esc(TIPS[t]||"")+'</small></span></li>').join("");
+  $("#wa-level").textContent = result.level;
+  document.querySelector("#s-result [data-capi]").innerHTML = result.total >= 8 ? CAPI.happy : CAPI.zen;
+  $("#ck-age").checked = false; $("#ck-optin").checked = false; updateWa();
+  show("s-result");
+  track("resultado", {nivel: result.level, acertos: result.total, quadro: QUADRO});
+}
+
+/* WhatsApp: o usuário inicia a conversa (janela de 24h grátis na Cloud API). */
+function waLink(){
+  const msg = "Oi, Capi! Fiz o teste de nível CapyFala e deu " + result.level + " (" + result.total + "/" + Q.length + " acertos). " +
+              "Quero receber meu plano de estudo." + (QUADRO ? " [quadro: " + QUADRO + "]" : "");
+  return "https://wa.me/" + CONFIG.whatsapp.replace(/\D/g, "") + "?text=" + encodeURIComponent(msg);
+}
+function updateWa(){
+  const ok = $("#ck-age").checked && $("#ck-optin").checked;
+  const a = $("#wa-btn");
+  a.setAttribute("aria-disabled", String(!ok));
+  a.href = ok && result ? waLink() : "#";
+}
+["#ck-age","#ck-optin"].forEach(s => $(s).addEventListener("change", updateWa));
+$("#wa-btn").addEventListener("click", e => {
+  if ($("#wa-btn").getAttribute("aria-disabled") === "true") { e.preventDefault(); return; }
+  if (!CONFIG.whatsapp.replace(/\D/g, "") || /^550+$/.test(CONFIG.whatsapp)) { e.preventDefault(); alert("Número do WhatsApp ainda não configurado (CONFIG.whatsapp)."); return; }
+  track("whatsapp", {nivel: result.level, quadro: QUADRO});
+});
+
+/* Redes */
+const ICONS = {
+  tiktok:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2.1-2.8V9a6.3 6.3 0 1 0 5.4 6.2V8.6a7.7 7.7 0 0 0 4.4 1.4V6.7a4.4 4.4 0 0 1-4.4-4.4Z"/></svg>',
+  youtube:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8ZM9.7 15.1V8.9l5.8 3.1-5.8 3.1Z"/></svg>',
+  instagram:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2Zm0 1.8c2.7 0 3 0 4 .1 2.6.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.6-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.4-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1Z"/></svg>',
+};
+const NAMES = {tiktok:"TikTok", youtube:"YouTube", instagram:"Instagram"};
+$("#social").innerHTML = Object.entries(CONFIG.redes).filter(([,u]) => u)
+  .map(([k,u]) => '<a href="'+esc(u)+'" target="_blank" rel="noopener" data-rede="'+k+'">'+ICONS[k]+NAMES[k]+'</a>').join("");
+$("#social").addEventListener("click", e => { const a = e.target.closest("a"); if (a) track("seguir", {rede: a.dataset.rede, quadro: QUADRO}); });
+
+/* Oferta (afiliado/produto) — só aparece se CONFIG.oferta.url estiver preenchido */
+if (CONFIG.oferta.url) {
+  const o = CONFIG.oferta;
+  $("#offer").classList.remove("hidden");
+  $("#offer-tag").textContent = o.etiqueta || "Publi · link de afiliado";
+  $("#offer-title").textContent = o.titulo; $("#offer-text").textContent = o.texto;
+  $("#offer-note").textContent = o.aviso || "";
+  const b = $("#offer-btn"); b.textContent = o.botao; b.href = o.url;
+  b.addEventListener("click", () => track("oferta", {nivel: result && result.level, quadro: QUADRO}));
+}
+
+/* Privacidade */
+$("#pv-controller").textContent = CONFIG.controlador;
+$("#pv-contact").textContent = CONFIG.contatoPrivacidade ? "Dúvidas ou pedidos sobre seus dados: " + CONFIG.contatoPrivacidade + "." : "Dúvidas ou pedidos sobre seus dados: responda no próprio WhatsApp.";
+document.addEventListener("click", e => { if (e.target.closest("[data-privacy]")) { e.preventDefault(); $("#privacy").showModal(); } });
+
+/* Compartilhar (mantém o ?q= do quadro) */
+$("#share").addEventListener("click", async () => {
+  const text = "Tirei " + result.level + " no teste de nível de inglês da Capi. Duvido você passar de mim:";
+  const url = location.href.split("#")[0];
+  track("compartilhar", {nivel: result.level, quadro: QUADRO});
+  if (navigator.share) { try { await navigator.share({title:"Teste de nível CapyFala", text, url}); } catch(_){} }
+  else { try { await navigator.clipboard.writeText(text + " " + url); $("#share").textContent = "Link copiado!"; } catch(_){ prompt("Copie o link:", url); } }
+});
+
+$("#go").addEventListener("click", () => { i = 0; answers = []; renderQ(); show("s-quiz"); track("inicio", {quadro: QUADRO}); });
+$("#restart").addEventListener("click", () => { $("#share").textContent = "Desafiar amigo"; show("s-start"); });
+</script>
+</body>
+</html>
