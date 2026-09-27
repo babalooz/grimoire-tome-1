@@ -6,3 +6,6 @@
 - `licao-s01e02-please-thank-you.mp4` · midia 0df1ac7 · 70.6 s · -14.0 LUFS · pico -1.1 · mov 0.295 · ok
 - `licao-s01e03-im-capy-esquete-A.mp4` · midia 0df1ac7 · 11.4 s · -14.0 LUFS · pico -1.5 · mov 0.285 · ok
 - `licao-s01e03-im-capy.mp4` · midia 0df1ac7 · 75.8 s · -14.0 LUFS · pico -1.3 · mov 0.287 · ok
+- `licao-s01e04-spell-esquete-A.mp4` · midia 4877fb6 · 13.0 s · -14.0 LUFS · pico -1.5 · mov 0.284 · ok
+- `licao-s01e04-spell-esquete-B.mp4` · midia 4877fb6 · 9.5 s · -14.0 LUFS · pico -1.5 · mov 0.279 · ok
+- `licao-s01e04-spell.mp4` · midia 4877fb6 · 78.4 s · -14.0 LUFS · pico -1.2 · mov 0.286 · ok
