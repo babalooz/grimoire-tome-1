@@ -40,6 +40,8 @@ ZONA_MAX = 0.002        # fração máxima de pixels de interface/texto dentro d
 ZONA_PERSISTE = 12      # só reprova se a invasão continuar 12 quadros (0,4 s) depois: entradas/saídas animadas passam
 NOTA_MIN = 8.0
 FAIXA = {"episodio": (61.0, 140.0), "esquete": (5.0, 20.0)}
+FAIXA_CAFE = {"episodio": (61.0, 95.0), "esquete": (20.0, 35.0)}  # Sitcom do Café (docs/plano-formato-cafe.md)
+TIPOS_APP = {"ouvir", "traducao", "montar", "ligar", "completar", "cartoes", "revisao", "repetir"}
 LUFS_ALVO, LUFS_TOL, TP_MAX = -14.0, 1.0, -1.0
 PROIBIDO = re.compile(r"\bduolingo\b|\bduo\b|\bcoruja\b|\bowl\b|%|\bpor ?cento\b", re.I)
 EN_COMUNS = set("the and you your is are am i'm it's this that what where how please thank thanks hello hi bye "
@@ -48,7 +50,7 @@ EN_COMUNS = set("the and you your is are am i'm it's this that what where how pl
 RUBRICA = """Você é o juiz de qualidade do canal CapyFala (inglês para brasileiros adultos, personagem Capy, capivara).
 Dê nota 0–10 para cada critério e uma nota final (média ponderada, pesos entre parênteses). Seja exigente.
 1. Inglês correto e natural (americano), sem erro nas frases ensinadas (3)
-2. Lição útil: 1 objetivo claro "Consigo…", palavras antes de frases, revisão (2)
+2. Ensina sem interação: 1 objetivo claro "Consigo…", a cena deixa o sentido óbvio, frase-alvo repetida e devagar, revisão (2)
 3. História contínua e personagens coerentes com o elenco (1)
 4. Humor: pelo menos 1 piada que funciona sozinha (1)
 5. Adulto: nada que classifique como "feito para crianças" (cantiga, voz de bebê, tema infantil) (2)
@@ -88,14 +90,14 @@ def movimento_gancho(mp4: Path) -> float:
 def zona_segura(ep_id: str, comp: str, frames: list[int]) -> list[str]:
     """Renderiza quadros no modo auditoria (só interface/texto sobre preto) e procura pixels nas zonas do TikTok."""
     from PIL import Image
-    props = ROOT / "out" / (f"props-{ep_id}.json" if comp == "Licao" else f"props-{ep_id}-esquete-{comp.split(':')[1]}.json")
+    props = ROOT / "out" / (f"props-{ep_id}.json" if ":" not in comp else f"props-{ep_id}-esquete-{comp.split(':')[1]}.json")
     if not props.exists():
         return [f"zona segura: props não encontrados ({props.name})"]
     falhas = []
     with tempfile.TemporaryDirectory() as tmp:
         pa = Path(tmp) / "props.json"
         pa.write_text(json.dumps({**json.loads(props.read_text()), "auditoria": True}))
-        nome = "Licao" if comp == "Licao" else "LicaoEsquete"
+        nome = comp.split(":")[0]
         ultimo = max(frames)
         todos = sorted({min(f, ultimo) for x in frames for f in (x, x + ZONA_PERSISTE)})
         r = subprocess.run(["node", "scripts/stills.mjs", nome, str(pa), tmp, *map(str, todos)], cwd=ROOT,
@@ -136,12 +138,12 @@ def loudness(mp4: Path) -> tuple[float, float]:
     return round(float(lufs), 2), round(float(tp), 2)
 
 
-def checar_arquivo(mp4: Path, faixa: str) -> tuple[list[str], dict]:
+def checar_arquivo(mp4: Path, faixa: str, cafe: bool = False) -> tuple[list[str], dict]:
     falhas = []
     if not mp4.exists():
         return [f"MP4 não existe: {mp4.name}"], {}
     m = probe(mp4)
-    lo, hi = FAIXA[faixa]
+    lo, hi = (FAIXA_CAFE if cafe else FAIXA)[faixa]
     if not lo <= m["duracao"] <= hi:
         falhas.append(f"duração {m['duracao']} s fora da faixa {faixa} ({lo}–{hi} s)")
     if (m["largura"], m["altura"]) != (1080, 1920):
@@ -174,7 +176,52 @@ def falas(node):
             yield from falas(v)
 
 
+def checar_roteiro_cafe(ep: dict) -> list[str]:
+    """Regras do formato Sitcom do Café (formato-ensino-video.md §5)."""
+    falhas = []
+    beats = ep.get("beats") or []
+    if not (ep.get("serie") or {}).get("codigo"):
+        falhas.append("sem selo de série (serie.codigo)")
+    if len((ep.get("hookTitle") or "").split()) > 6:
+        falhas.append("hookTitle com mais de 6 palavras")
+    alvo = (ep.get("alvo") or {}).get("en", "").lower().rstrip("?.!")
+    falas_ = [b for b in beats if "text" in b and "lang" in b]
+    exatas = [b for b in falas_ if b.get("alvo") is True]
+    if len(exatas) < 5:
+        falhas.append(f"frase-alvo só {len(exatas)}× com alvo:true (mínimo 5)")
+    bocas = {b.get("speaker") for b in falas_ if b.get("alvo")}
+    if len(bocas) < 3:
+        falhas.append(f"frase-alvo em só {len(bocas)} boca(s) (mínimo 3)")
+    for b in exatas:
+        if alvo and alvo.replace(",", "") not in b["text"].lower().replace("...", "").replace(",", "").replace("  ", " "):
+            falhas.append(f"fala marcada como alvo não contém a frase-alvo: {b['text']!r}")
+    for b in falas_:
+        n = len(b["text"].replace("...", " ").split())
+        if b["lang"] == "en" and n > (8 if ep.get("level", "A1") == "A1" else 12):
+            falhas.append(f"fala em inglês longa demais ({n} palavras): {b['text']!r}")
+        if b["lang"] == "pt" and n > 14:
+            falhas.append(f"fala em português longa demais ({n} palavras): {b['text']!r}")
+        if PROIBIDO.search(b["text"]):
+            falhas.append(f"termo proibido/estatística sem fonte: {b['text']!r}")
+    if sum(1 for b in beats if b.get("errado")) > 1:
+        falhas.append("a forma errada aparece mais de 1 vez")
+    if falas_ and falas_[-1].get("errado"):
+        falhas.append("a última fala é a forma errada")
+    if sum(1 for b in beats if b.get("tipo") == "pergunta") > 1:
+        falhas.append("mais de 1 pergunta no vídeo")
+    if any(b.get("tipo") in TIPOS_APP for b in beats) or "licao" in ep:
+        falhas.append("tem exercício de app (formato abandonado)")
+    en = [b for b in falas_ if b["lang"] == "en"]
+    pal_en = sum(len(b["text"].split()) for b in en)
+    pal_tot = sum(len(b["text"].split()) for b in falas_) or 1
+    if pal_en / pal_tot < 0.35:
+        falhas.append(f"inglês só {pal_en / pal_tot:.0%} das palavras faladas (mínimo 35%)")
+    return sorted(set(falhas))
+
+
 def checar_roteiro(ep: dict) -> list[str]:
+    if ep.get("format") == "cafe":
+        return checar_roteiro_cafe(ep)
     falhas = []
     serie = ep.get("serie") or {}
     if not serie.get("codigo"):
@@ -203,6 +250,20 @@ def checar_roteiro(ep: dict) -> list[str]:
 
 # ---------------------------------------------------------------- camada 2: juiz
 def roteiro_texto(ep: dict) -> str:
+    if ep.get("format") == "cafe":
+        linhas = [f"{ep['serie']['codigo']} — objetivo: {ep.get('canDo', '')}",
+                  f"frase-alvo: {ep['alvo']['en']} = {ep['alvo']['pt']} · forma errada: {ep.get('errado', {}).get('en', '-')}"]
+        for b in ep["beats"]:
+            if b.get("tipo") == "pausa":
+                linhas.append(f"[reação muda {b['s']} s: {b.get('react', {})}]")
+            elif b.get("tipo") == "pergunta":
+                linhas.append(f"[PERGUNTA na tela, {b['s']} s de silêncio: {b['text']}]")
+            else:
+                marca = " (ALVO)" if b.get("alvo") is True else " (variação)" if b.get("alvo") else ""
+                marca += " (ERRADO, riscado)" if b.get("errado") else ""
+                marca += " [pausa para o espectador repetir]" if b.get("repita") else ""
+                linhas.append(f"{b['speaker']} ({b['lang']}){marca}: {b['text']}")
+        return "\n".join(linhas)
     linhas = [f"{ep.get('serie', {}).get('codigo', ep['id'])} — objetivo: {ep.get('canDo', '')}",
               f"erro de brasileiro: {ep.get('erroBrasileiro', '')}"]
     for bloco in ("cena", "licao", "volta"):
@@ -237,6 +298,9 @@ def juiz_api(ep: dict) -> dict | None:
 
 # ---------------------------------------------------------------- veredito
 def videos(ep: dict) -> list[tuple[Path, str]]:
+    if ep.get("format") == "cafe":
+        return [(ROOT / "out" / f"{ep['id']}.mp4", "episodio")] + [
+            (ROOT / "out" / f"{ep['id']}-esquete-{e['id']}.mp4", "esquete") for e in ep.get("esquetes") or []]
     out = [(ROOT / "out" / f"{ep['id']}.mp4", "episodio")]
     out += [(ROOT / "out" / f"{ep['id']}-esquete-{e['id']}.mp4", "esquete") for e in ep.get("esquetes") or []]
     return out
@@ -274,10 +338,12 @@ def main() -> None:
         juiz = juiz_api(ep)
     aprovados = 0
     for mp4, faixa in videos(ep):
-        falhas_arq, medidas = checar_arquivo(mp4, faixa)
+        cafe = ep.get("format") == "cafe"
+        falhas_arq, medidas = checar_arquivo(mp4, faixa, cafe)
         if mp4.exists():
             dur_f = int(medidas.get("duracao", 0) * 30)
-            comp = "Licao" if faixa == "episodio" else f"LicaoEsquete:{mp4.stem.rsplit('-', 1)[-1]}"
+            base = "Cafe" if cafe else "Licao"
+            comp = base if faixa == "episodio" else f"{base}Esquete:{mp4.stem.rsplit('-', 1)[-1]}"
             fim = max(dur_f - 2, 31)
             falhas_arq += zona_segura(ep["id"], comp, sorted({f for f in (0, 15, 30, *range(60, fim, 90)) if f <= fim}))
         c1 = {"ok": not (falhas_arq or falhas_roteiro), "falhas": falhas_arq + falhas_roteiro, "medidas": medidas}
