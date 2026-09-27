@@ -64,7 +64,7 @@ Nada foi gravado, renderizado ou sintetizado.
 |---|---|---|---|---|
 | 1 | 0–2 s | Close na Capy parada na porta do café Bean There, a mão na maçaneta. Texto: **"você já sabe essa. sério."** | Capy (pensa) PT: "Primeiro dia de trabalho. E se alguém falar comigo?" | sino da porta |
 | 2 | 2–3 s | **Corte seco** para o Hank no balcão, olhando para ela | ⏸ reação muda | — |
-| 3 | 3–6 s | Card: **CONSIGO… cumprimentar e dizer meu nome** | Lazy PT (em off): "Hoje você sai daqui dizendo isso. Em inglês." | — |
+| 3 | 3–6 s | O Hank segue olhando, pano na mão. A Capy engole em seco (sem card: o objetivo é dito por cima da ação) | Lazy PT (em off): "Hoje você sai daqui conseguindo dizer oi e o seu nome. Em inglês." | — |
 | 4 | 6–8 s | O Hank acena com 1 dedo | Hank EN: "Hi." | — |
 | 5 | 8–11 s | A Capy congela, com um fio de suor | Capy (pensa) PT: "Eu sei essa. Por que eu travei?" | — |
 | 6 | 11–14 s | A Duda entra animada | Duda EN: ⭐ "Hi! I'm Duda!" · legenda EN + PT "Oi! Eu sou a Duda!" | — |
@@ -117,7 +117,7 @@ Nada foi gravado, renderizado ou sintetizado.
 |---|---|---|---|---|
 | 1 | 0–2 s | A Poppy entra no café segurando 2 ingressos (desenhados, sem marca). Texto: **"estreia de filme gringo = fila cheia de gringo"** | Poppy PT: "Capy! Pré-estreia hoje! Filme de luta gringo!" | — |
 | 2 | 2–5 s | A Capy, de avental | Capy PT: "Eu? No meio de um monte de americano?" | — |
-| 3 | 5–7 s | Faixa no topo: **consigo cumprimentar e dizer meu nome, numa fila de verdade** | — | — |
+| 3 | 5–7 s | A Poppy já puxa a Capy pela porta (ação contínua, sem faixa) | Poppy PT: "Hoje você vai se apresentar pra um gringo de verdade. Bora!" | — |
 | 4 | 7–10 s | Corte: fila do cinema à noite, luzes de letreiro (sem logo). Gente fantasiada de lutador genérico | Poppy PT: "Regra da fila: todo mundo se apresenta. É a trend." | burburinho |
 | 5 | 10–13 s | Um fã gringo (figurante: um guaxinim fantasiado de lutador) vira para trás | Fã EN: "Hi! I'm Rick!" | — |
 | 6 | 13–16 s | A Capy congela | Capy (pensa) PT: "Ele se apresentou. Eu sei isso. Eu aprendi isso." | — |
@@ -154,7 +154,7 @@ Nada foi gravado, renderizado ou sintetizado.
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | Duas xícaras no balcão, **A** e **B**. Texto: **"uma tem o H. a outra não. você ouve?"** | — | — |
-| 2 | 2–5 s | Faixa: **consigo ouvir o H e dizer meu nome sem travar** | Lazy PT: "Primeiro só escuta." | — |
+| 2 | 2–5 s | O Lazy encosta nas xícaras, bem devagar (sem faixa) | Lazy PT: "Hoje você vai ouvir o H e dizer seu nome sem travar. Primeiro só escuta." | — |
 | 3 | 5–8 s | A xícara **A** acende | Lazy EN: ⭐ "Hi! I'm Lazy." (com H) | — |
 | 4 | 8–11 s | A xícara **B** acende | Lazy EN: "Ai, I'm Lazy." (sem H, 1 vez só) | — |
 | 5 | 11–14 s | **Rodada 1:** "qual tem o H? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |

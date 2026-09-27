@@ -98,6 +98,9 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   internacional no Brasil, NBA/NFL, trend gringa do TikTok, turista gringo, lançamento de jogo, Oscar/Grammy, Halloween,
   Thanksgiving, Black Friday); quem traz é quem faz sentido (Poppy = trend; cliente gringo; Dona Jaca só quando couber);
   reserva atemporal = turista gringo no café. Selos: "T1 E0N", "parte 2/3", "parte 3/3". Assunto 1 v5 APROVADO (v6 = V2 novo).
+  Regras de roteiro (Felipe, 27/09): **sem card "CONSIGO…" parado no início** (objetivo falado por cima da ação; card só no
+  FIM); **primeiros 3 s variam** (nada de fórmula fixa gancho+corte+card+Lazy em off); **1 coisa só por vídeo** para quem
+  começa do zero. Assuntos 1 e 2 APROVADOS; novos assuntos PAUSADOS até o teste cego de voz e o protótipo do assunto 1.
   O ALCANCE fica com os **CORTES curtos (5–28 s)** tirados dos 3 (C1–C5) + 1 compilação longa semanal no YouTube com
   capítulos. Grade: `docs/grade-t1.md` (2 assuntos/semana, ~15 posts/semana no TikTok; teste 3/semana nas semanas 3–4).
 
