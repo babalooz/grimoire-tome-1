@@ -292,6 +292,10 @@ def main() -> None:
         from publicar import hospedar
         urls = hospedar(aprovados_mp4, dt.date.today())
         print(f"midia: commit {urls['_commit'][:7]} · " + ", ".join(m.name for m in aprovados_mp4))
+        cod = (ep.get("serie") or {}).get("codigo", ep["id"])
+        subprocess.run(["bash", str(ROOT / "scripts" / "aviso.sh"), f"portão {cod}: {len(aprovados_mp4)} vídeo(s) aprovado(s) no branch midia",
+                        f"commit {urls['_commit']}: " + ", ".join(m.name for m in aprovados_mp4),
+                        "PC auditar (duração, cor, movimento 0–1 s, zona segura)"], check=False)
     if juiz is None:
         print("Camada 2 pendente: rode com --pedido-juiz, avalie e grave com --juiz <nota> --motivos \"a; b\".")
     elif juiz["nota"] < NOTA_MIN:
