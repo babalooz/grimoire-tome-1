@@ -15,15 +15,23 @@ export const Caption: React.FC<{
   pop?: number; // 0..1 (entrada)
   bars?: number; // exercício de ouvir: esconde o texto (não entrega a resposta) e mostra ondas de som animadas (valor = frame)
   minTop?: number; // balão "above": topo mínimo (abaixo do título/gancho de tela que está no topo)
-}> = ({ anchor, text: rawText, lang, progress, thought = false, side = "above", maxW = SAFE.x1 - SAFE.x0, fontSize = 58, pop = 1, bars, minTop = SAFE.y0 + 90 }) => {
+  // Sitcom do Café (src/Cafe.tsx) — opcionais, não mudam o Licao:
+  highlight?: [number, number]; // palavras [de, até) da frase-alvo: fundo AMARELO (único elemento amarelo do quadro)
+  sub?: string; // linha PT menor embaixo (legenda dupla na 1ª ocorrência da frase-alvo)
+  subOpacity?: number;
+  strike?: number; // 0..1: risco vermelho animado sobre a frase errada
+}> = ({ anchor, text: rawText, lang, progress, thought = false, side = "above", maxW = SAFE.x1 - SAFE.x0, fontSize = 58, pop = 1, bars, minTop = SAFE.y0 + 90,
+  highlight, sub, subOpacity = 1, strike = 0 }) => {
   const text = bars !== undefined ? "~~~~~~~~~~" : rawText;
   const words = text.split(/\s+/);
   const active = progress >= 1 ? -1 : Math.max(0, Math.min(words.length - 1, Math.floor(progress * words.length)));
   const padX = 34;
   const est = text.length * fontSize * 0.5 + (lang === "en" ? 90 : 0) + padX * 2;
-  const w = Math.min(maxW, Math.max(260, est));
+  const subSize = Math.round(fontSize * 0.62);
+  const subEst = sub ? sub.length * subSize * 0.56 + padX * 2 : 0;
+  const w = Math.min(maxW, Math.max(260, est, subEst));
   const lines = Math.max(1, Math.ceil(est / w));
-  const h = lines * fontSize * 1.14 + 44;
+  const h = lines * fontSize * 1.14 + 44 + (sub ? Math.ceil(subEst / w) * subSize * 1.2 + 8 : 0);
   const bg = thought ? "#EFE8FF" : "#fff";
 
   // rabicho: preenchimento sem contorno (entra 10 px no balão e apaga a borda) + 2 traços laterais
@@ -84,9 +92,26 @@ export const Caption: React.FC<{
               <span key={i} style={{ display: "inline-block", width: 12, borderRadius: 6, background: i % 2 ? C.roxo : C.tangerina, height: 12 + Math.abs(Math.sin(bars / 3.2 + i * 0.8)) * fontSize * 0.8 }} />
             ))}
           </span>
-        ) : words.map((wd, i) => (
-          <span key={i} style={{ color: i === active ? C.tangerina : C.tinta }}>{wd}{i < words.length - 1 ? " " : ""}</span>
-        ))}
+        ) : words.map((wd, i) => {
+          const hl = !!highlight && i >= highlight[0] && i < highlight[1];
+          const sp = i < words.length - 1 ? " " : "";
+          if (!hl) return <span key={i} style={{ color: i === active ? C.tangerina : C.tinta }}>{wd}{sp}</span>;
+          // frase-alvo: marca-texto amarelo contínuo; a palavra falada ganha sublinhado grosso (sem trocar de cor)
+          const edgeL = i === highlight![0], edgeR = i === highlight![1] - 1;
+          return (
+            <span key={i} style={{
+              background: C.amarelo, color: C.tinta, padding: `0 ${edgeR ? 10 : 0}px 0 ${edgeL ? 10 : 0}px`, borderRadius: `${edgeL ? 12 : 0}px ${edgeR ? 12 : 0}px ${edgeR ? 12 : 0}px ${edgeL ? 12 : 0}px`,
+              boxDecorationBreak: "clone" as any, WebkitBoxDecorationBreak: "clone" as any,
+              textDecoration: i === active ? "underline" : "none", textDecorationThickness: 6, textUnderlineOffset: 8,
+            }}>{wd}{edgeR ? "" : sp}</span>
+          );
+        }).flatMap((el, i) => highlight && i === highlight[1] - 1 && i < words.length - 1 ? [el, " "] : [el])}
+        {sub && (
+          <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: subSize, lineHeight: 1.2, color: C.roxo, marginTop: 8, opacity: subOpacity }}>{sub}</div>
+        )}
+        {strike > 0 && (
+          <div style={{ position: "absolute", left: padX - 8, top: "50%", height: 10, width: `calc(${strike} * (100% - ${2 * padX - 16}px))`, background: C.errado, borderRadius: 5, transform: "rotate(-4deg)", transformOrigin: "0 50%", boxShadow: `0 0 0 3px ${C.tinta}` }} />
+        )}
       </div>
       {tail}
     </div>

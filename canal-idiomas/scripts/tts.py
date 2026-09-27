@@ -17,6 +17,9 @@ Saída (formato sitcom, `beats`): public/audio/<id>/b<n>.wav (1 por fala) + timi
 Saída (formato lição, `format: "licao"`): public/audio/<id>/l<hash>.wav (1 por fala única) + timings.json
   = {chave: {audio, duration}}, chave = line_key() (mesma conta de src/lesson/timeline.ts: lineKey).
   Velocidades mais calmas (feedback do piloto: "muito rápido"): Capy PT 1.0 · EN 0.9; `speed` na fala sobrescreve.
+Saída (formato Sitcom do Café, `format: "cafe"`): public/audio/<id>/c<n>.wav (1 por beat de fala) + timings.json
+  = lista alinhada com `beats` (null em pausa/pergunta), cada item {audio, duration, parts[{text,start,end}], speed, wpm}.
+  `parts` = pedaços separados por pausa real (reticências / núcleo da 1ª frase-alvo) -> karaokê em src/cafe/timeline.ts.
 """
 import hashlib
 import json
@@ -185,10 +188,119 @@ def render_licao(episode: dict, out_dir: Path) -> dict:
     return timings
 
 
+# ---------------------------------------------------------------- formato "cafe" (Sitcom do Café, passivo)
+# Ritmo (queixa do Felipe: "muito acelerado"; docs/pesquisas/formato-novo/voz-audio-didatico.md regras 1–2):
+# velocidades calmas por padrão; `speed` no beat sobrescreve. A lentidão vem de PAUSA, não de esticar o som:
+#   - "..." no texto vira pausa real de CAFE_PAUSE (400–700 ms);
+#   - na 1ª ocorrência da frase-alvo (`alvo: true`) sem reticências, o núcleo (`alvo.nucleo`, ex. "Can I get")
+#     é sintetizado separado e seguido de CAFE_PAUSE ("Can I get · a coffee?") — a legenda continua com o texto original.
+# Dona Jaca fala por videochamada: filtro de telefone (passa-banda 300–3400 Hz) aplicado aqui, no próprio WAV.
+CAFE_SPEED = {
+    ("capi", "pt"): 1.0, ("capi", "en"): 0.85,
+    ("hank", "pt"): 0.92, ("hank", "en"): 0.85,
+    ("lazy", "pt"): 0.86, ("lazy", "en"): 0.75,
+    ("duda", "pt"): 1.0, ("duda", "en"): 0.9,
+    ("poppy", "pt"): 1.05, ("poppy", "en"): 0.9,
+    ("bolinha", "pt"): 1.05, ("bolinha", "en"): 0.9,
+    ("donajaca", "pt"): 0.95, ("donajaca", "en"): 0.9,
+    ("narrador", "pt"): 1.0, ("narrador", "en"): 0.9,
+}
+CAFE_PAUSE = 0.5
+CAFE_THOUGHT = 1.05  # monólogo interno um pouco mais rápido, sem correria
+PHONE_BAND = (300, 3400)
+WORD = re.compile(r"[A-Za-z0-9À-ÿ']+")
+
+
+def _cafe_pieces(beat: dict, first_alvo: bool, nucleo: str | None) -> list[str]:
+    """Pedaços do TEXTO DE TELA separados por pausa real (a legenda karaokê usa os mesmos pedaços)."""
+    text = beat["text"].replace("…", "...")
+    if "..." in text:
+        return [t.strip() for t in ELLIPSIS.split(text) if re.search(r"\w", t)]
+    if first_alvo and nucleo and text.lower().startswith(nucleo.lower()) and len(text) > len(nucleo) + 1:
+        return [text[: len(nucleo)], text[len(nucleo):].strip()]
+    return [text]
+
+
+def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: float = CAFE_PAUSE):
+    """Sintetiza cada pedaço e cola com silêncio medido. Devolve (áudio, sr, partes com início/fim em s)."""
+    global _kokoro
+    _kokoro = _kokoro or Kokoro(str(ROOT / "voices/kokoro-v1.0.onnx"), str(ROOT / "voices/voices-v1.0.bin"))
+    speaker = ALIAS.get(speaker, speaker)
+    voice, _, gain = VOICES.get((speaker, lang), VOICES[("capi", lang)])
+    chunks, parts, cursor, sr = [], [], 0, SR
+    for i, piece in enumerate(pieces):
+        last = i == len(pieces) - 1
+        say = speech_text(piece, lang)
+        if not last and not say.rstrip().endswith("..."):
+            say = say.rstrip(" ,") + "..."  # entonação suspensa antes da pausa
+        a, sr = _kokoro.create(say, voice=voice, speed=speed, lang=LANG_CODE[lang])
+        a = _trim(a, head=i > 0, tail=True)
+        idx = np.flatnonzero(np.abs(a) > SILENCE_THR)
+        s0 = cursor + (int(idx[0]) if len(idx) else 0)
+        s1 = cursor + (int(idx[-1]) if len(idx) else len(a))
+        parts.append({"text": piece, "start": round(s0 / sr, 3), "end": round(s1 / sr, 3)})
+        chunks.append(a)
+        cursor += len(a)
+        if not last:
+            gap = np.zeros(int(pause * sr), dtype=a.dtype)
+            chunks.append(gap)
+            cursor += len(gap)
+    audio = np.concatenate(chunks) * gain
+    if speaker == "donajaca":
+        from scipy.signal import butter, sosfiltfilt
+        sos = butter(4, PHONE_BAND, btype="band", fs=sr, output="sos")
+        rms0 = float(np.sqrt(np.mean(audio ** 2)) + 1e-9)
+        audio = sosfiltfilt(sos, audio)
+        audio *= rms0 / float(np.sqrt(np.mean(audio ** 2)) + 1e-9)  # mesma energia da voz sem filtro
+        audio = np.clip(audio, -0.98, 0.98)
+    return audio.astype(np.float32), sr, parts
+
+
+def render_cafe(episode: dict, out_dir: Path) -> list:
+    """Formato cafe: 1 .wav por beat de fala (c<n>.wav); pausa/pergunta = null na lista de timings."""
+    for old in out_dir.glob("c*.wav"):
+        old.unlink()
+    alvo = episode.get("alvo") or {}
+    first = next((i for i, b in enumerate(episode["beats"]) if b.get("alvo") is True), -1)
+    timings = []
+    for i, b in enumerate(episode["beats"]):
+        if b.get("tipo") in ("pausa", "pergunta") or "text" not in b:
+            timings.append(None)
+            continue
+        speaker = ALIAS.get(b.get("speaker", "capi"), b.get("speaker", "capi"))
+        lang, mode = b["lang"], b.get("mode", "fala")
+        speed = b.get("speed")
+        if speed is None:
+            speed = CAFE_SPEED.get((speaker, lang), 1.0) * (CAFE_THOUGHT if mode == "pensamento" else 1.0)
+        pieces = _cafe_pieces(b, i == first, alvo.get("nucleo"))
+        audio, sr, parts = synth_cafe(pieces, lang, speaker, speed)
+        sf.write(out_dir / f"c{i}.wav", audio, sr)
+        span = parts[-1]["end"] - parts[0]["start"]
+        words = len(WORD.findall(b["text"]))
+        wpm = round(words / span * 60) if span > 0 else 0
+        timings.append({"audio": f"audio/{out_dir.name}/c{i}.wav", "duration": len(audio) / sr, "parts": parts,
+                        "speed": speed, "wpm": wpm})
+        if lang == "en" and b.get("alvo"):
+            aviso = "  <- ACIMA de 190!" if wpm > 190 else ""
+            print(f"  alvo b{i} {speaker} speed {speed}: {words} palavras em {span:.2f} s = {wpm} palavras/min{aviso}")
+    return timings
+
+
 def main(episode_path: str) -> None:
     episode = json.loads(Path(episode_path).read_text())
     out_dir = ROOT / "public/audio" / episode["id"]
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    if episode.get("format") == "cafe":
+        timings = render_cafe(episode, out_dir)
+        (out_dir / "timings.json").write_text(json.dumps(timings, ensure_ascii=False, indent=2))
+        import pyloudnorm as pyln
+        voice = np.concatenate([sf.read(ROOT / "public" / t["audio"])[0] for t in timings if t])
+        voice_lufs = round(float(pyln.Meter(SR).integrated_loudness(voice)), 2)
+        (out_dir / "mix.json").write_text(json.dumps({"voiceLufs": voice_lufs}))
+        n = sum(1 for t in timings if t)
+        print(f"ok: {n} falas, {sum(t['duration'] for t in timings if t):.1f}s de fala, voz {voice_lufs} LUFS -> {out_dir}")
+        return
 
     if episode.get("format") == "licao":
         timings = render_licao(episode, out_dir)

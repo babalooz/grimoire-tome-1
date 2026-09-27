@@ -72,7 +72,7 @@
       "lang": "en",
       "emotion": "smile",
       "alvo": true,
-      "speed": 0.8,
+      "speed": 0.7,
       "text": "Can I get a coffee?"
     },
     {
@@ -108,7 +108,7 @@
       "lang": "en",
       "emotion": "whisper",
       "alvo": true,
-      "speed": 0.75,
+      "speed": 0.9,
       "text": "Can... I get... a coffee?"
     },
     {
@@ -122,7 +122,7 @@
       "lang": "en",
       "emotion": "neutral",
       "alvo": true,
-      "speed": 0.85,
+      "speed": 0.6,
       "repita": true,
       "text": "Can I get a coffee?"
     },
@@ -131,7 +131,7 @@
       "lang": "en",
       "emotion": "happy",
       "alvo": "variacao",
-      "speed": 1.05,
+      "speed": 0.85,
       "text": "Can I get an iced latte?"
     },
     {
@@ -145,7 +145,7 @@
       "lang": "en",
       "emotion": "happy",
       "alvo": true,
-      "speed": 0.95,
+      "speed": 0.7,
       "text": "Can I get a coffee, please?"
     },
     {
@@ -181,7 +181,8 @@
       "lang": "en",
       "emotion": "bored",
       "alvo": "variacao",
-      "text": "Can I get your name?"
+      "text": "Can I get your name?",
+      "speed": 0.75
     },
     {
       "speaker": "capi",
@@ -208,7 +209,8 @@
       "emotion": "happy",
       "alvo": true,
       "bolinha": true,
-      "text": "Can I get a coffee?"
+      "text": "Can I get a coffee?",
+      "speed": 0.78
     },
     {
       "speaker": "bolinha",
