@@ -75,6 +75,11 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Plano: `docs/plano-formato-cafe.md`. Estudos: `docs/pesquisas/formato-novo/`. Regras-chave: 1 frase-alvo nova por vídeo,
   ≥ 5 vezes em ≥ 3 bocas, legenda EN sempre e PT só na 1ª vez, erro dito 1× e riscado, 1 pergunta com pausa e resposta no
   mesmo vídeo, pausa de repetição = fala + 1 s, inglês 120→170 palavras/min, hype só no cenário, nunca na frase-alvo.
+- Gatilhos (só verdadeiros, 27/09): erro real 0–2 s + "tá errado. sabe por quê?"; pergunta 3 s "pensa aí... ou chuta nos
+  comentários"; selo com progresso real ("você já sabe N frases"); Bolinha "lembra dessa?"; laço "amanhã: EP N" só se o EP
+  existe e está agendado; #TimeLazy/#TimeHank. PROIBIDO (portão reprova): "fluente em X dias", "método secreto", urgência
+  inventada, número zerado de seguidores/views, "trava na hora de falar". Bio "inglês do básico em episódios, na ordem do
+  padrão CEFR. grátis." só depois que a T1 no ar seguir o CEFR (constantes em `scripts/roteirista.py` GATILHOS e `portao.py`).
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.

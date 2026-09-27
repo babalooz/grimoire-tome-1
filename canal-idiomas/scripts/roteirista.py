@@ -114,6 +114,17 @@ TIKTOK_NATIVO = """Versão TikTok (nativa, NÃO repost do Short):
 - Legenda do post: minúscula, irônica, 1 frase; 3–5 hashtags de nicho, com #capyfala e #capybara; preguiça = #sloth.
 - Nada de promessa de prazo ou "método"; CTA = escolha nos comentários ou "link no perfil" (teste de nível)."""
 
+# Gatilhos mentais permitidos (só os verdadeiros; regra do Felipe, 27/09) — o portão reprova os proibidos.
+GATILHOS = """Gatilhos (use só estes, sempre verdadeiros):
+1. 0–2 s: erro REAL da Capy acontecendo + texto de tela "tá errado. sabe por quê?"; a resposta vem no mesmo vídeo.
+2. Pergunta de 3 s com contador: "pensa aí... ou chuta nos comentários".
+3. Selo com progresso real: "T1 E07 · você já sabe 7 frases" (número = frases já ensinadas de verdade).
+4. Revisão espaçada do Bolinha abre com "lembra dessa?".
+5. Laço aberto ("amanhã: ... EP 08") SÓ se o EP 08 já existe e está agendado; senão, nenhuma promessa.
+6. Pertencimento pelo elenco: "#TimeLazy ou #TimeHank?".
+PROIBIDO: "fluente em X dias", "método secreto", urgência inventada ("só hoje", "últimas vagas"), mostrar número
+zerado de seguidores/views, e a frase "trava na hora de falar" (é chamada de concorrente)."""
+
 # Contexto por faixa (decisão do Felipe, 26/09): todo vídeo é contextualizado com tendência.
 #   esquete  -> 1 hype do DIA que passou no filtro de segurança; sem hype seguro -> calendário; sem nada -> atemporal.
 #   episódio -> a lição do currículo NÃO muda; o TEMA DA SEMANA (radar semanal) vira cenário, fala de apoio
@@ -644,7 +655,7 @@ def montar_system(quadro: str) -> str:
     ordem = [quadro] + [q for q in MODELOS if q != quadro] if quadro in MODELOS else list(MODELOS)
     exemplos = "\n".join(f'<exemplo quadro="{q}">\n{json.dumps(MODELOS[q], ensure_ascii=False)}\n</exemplo>' for q in ordem)
     extra = f"\n\n{TIKTOK_NATIVO}" if quadro in DURACAO else ""  # quadros com duração própria = versão TikTok
-    return (f"{PERSONAGEM}\n\n{REGRAS}{extra}\nDuração-alvo deste quadro: {lo}–{hi} s. A duração é conferida por código "
+    return (f"{PERSONAGEM}\n\n{REGRAS}\n\n{GATILHOS}{extra}\nDuração-alvo deste quadro: {lo}–{hi} s. A duração é conferida por código "
             "(fala + timer + revelação); roteiro fora da faixa volta para você.\n\n"
             "Roteiros-modelo abaixo: copie ritmo, tamanho de fala, tipo de piada e a separação pt/en; NUNCA copie as "
             f"perguntas nem os temas (o conteúdo vem do currículo).\n{exemplos}")

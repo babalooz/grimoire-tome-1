@@ -41,6 +41,11 @@ ZONA_PERSISTE = 12      # só reprova se a invasão continuar 12 quadros (0,4 s)
 NOTA_MIN = 8.0
 FAIXA = {"episodio": (61.0, 140.0), "esquete": (5.0, 20.0)}
 FAIXA_CAFE = {"episodio": (61.0, 95.0), "esquete": (20.0, 35.0)}  # Sitcom do Café (docs/plano-formato-cafe.md)
+# Gatilhos proibidos (regra do Felipe, 27/09): promessa milagrosa, urgência inventada, número zerado, frase do concorrente
+GATILHO_PROIBIDO = re.compile(
+    r"fluente em \d+|flu[eê]ncia em \d+|m[eé]todo secreto|segredo que ningu[eé]m|[uú]ltimas vagas|s[oó] hoje|corre que|"
+    r"antes que (?:acabe|saia)|\b0 (?:seguidores|views|visualiza)|zero (?:seguidores|views|visualiza)|trava na hora de falar", re.I)
+PROMESSA = re.compile(r"\bEP ?(\d{1,2})\b|\bamanh[ãa]\b", re.I)
 TIPOS_APP = {"ouvir", "traducao", "montar", "ligar", "completar", "cartoes", "revisao", "repetir"}
 LUFS_ALVO, LUFS_TOL, TP_MAX = -14.0, 1.0, -1.0
 PROIBIDO = re.compile(r"\bduolingo\b|\bduo\b|\bcoruja\b|\bowl\b|%|\bpor ?cento\b", re.I)
@@ -211,12 +216,47 @@ def checar_roteiro_cafe(ep: dict) -> list[str]:
         falhas.append("mais de 1 pergunta no vídeo")
     if any(b.get("tipo") in TIPOS_APP for b in beats) or "licao" in ep:
         falhas.append("tem exercício de app (formato abandonado)")
+    textos = [b.get("text", "") for b in beats] + [b.get("cardTexto", "") for b in beats] + [
+        ep.get("hookTitle", ""), ep.get("title", "")] + [x.get(k, "") for x in ep.get("esquetes") or [] for k in ("gancho", "cta")]
+    for t in textos:
+        if GATILHO_PROIBIDO.search(t):
+            falhas.append(f"gatilho proibido: {t!r}")
+    falhas += promessas(ep, textos)
+    en_vocab = {w.lower() for b in falas_ if b["lang"] == "en" for w in re.findall(r"[A-Za-z']+", b["text"])}
+    en_vocab -= {"capy", "lazy", "hank", "duda", "poppy", "bolinha", "jaca", "a", "i", "o", "e", "time"}
+    for b in falas_:
+        if b["lang"] == "pt":
+            ing = sorted({w.lower() for w in re.findall(r"[A-Za-z']+", b["text"])} & en_vocab & EN_COMUNS - {"no", "a"})
+            if ing:
+                falhas.append(f"inglês dentro de fala pt ({', '.join(ing)}): {b['text']!r}")
     en = [b for b in falas_ if b["lang"] == "en"]
     pal_en = sum(len(b["text"].split()) for b in en)
     pal_tot = sum(len(b["text"].split()) for b in falas_) or 1
     if pal_en / pal_tot < 0.35:
         falhas.append(f"inglês só {pal_en / pal_tot:.0%} das palavras faladas (mínimo 35%)")
     return sorted(set(falhas))
+
+
+def promessas(ep: dict, textos: list[str]) -> list[str]:
+    """Laço aberto ('amanhã', 'EP 08') só se o episódio prometido existe E está na grade (config/grade.json)."""
+    atual = (ep.get("serie") or {}).get("episodio")
+    temp = (ep.get("serie") or {}).get("temporada", 1)
+    grade = ROOT / "config" / "grade.json"
+    agendados = set()
+    if grade.exists():
+        agendados = {p.get("episodio") for g in json.loads(grade.read_text()).get("grade", []) for p in g["posts"]}
+    eps = [json.loads(f.read_text()) for f in (ROOT / "episodes").glob("*.json")]
+    existentes = {(x.get("serie") or {}).get("codigo") for x in eps if x.get("format") == ep.get("format")}
+    falhas = []
+    for t in textos:
+        for m in PROMESSA.finditer(t or ""):
+            n = int(m.group(1)) if m.group(1) else (atual or 0) + 1
+            if n == atual:
+                continue  # "aula completa no EP 01" dentro do próprio EP 01
+            cod = f"T{temp} E{n:02d}"
+            if cod not in existentes or cod not in agendados:
+                falhas.append(f"promete {cod} ({t!r}) mas ele não existe ou não está agendado na grade")
+    return falhas
 
 
 def checar_roteiro(ep: dict) -> list[str]:
