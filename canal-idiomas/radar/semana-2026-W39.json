@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "date": "2026-09-26",
+  "date": "2026-09-27",
   "janela": [
-    "2026-09-20",
-    "2026-09-26"
+    "2026-09-21",
+    "2026-09-27"
   ],
-  "radares_lidos": 1,
+  "radares_lidos": 2,
   "tema_da_semana": null,
   "temas_persistentes": [],
   "calendario_proxima_semana": [
@@ -24,8 +24,8 @@
         "no worries",
         "g'day"
       ],
-      "status": "fonte única (a confirmar)",
-      "faltam_dias": 2
+      "status": "verificado 27/09 (3 fontes: Exame, Olympics.com, Band)",
+      "faltam_dias": 1
     },
     {
       "id": "amistoso-brasil-india",
@@ -42,10 +42,71 @@
         "friendly match",
         "Kolkata"
       ],
-      "status": "fonte única (a confirmar)",
+      "status": "fonte única (a confirmar) — sem 2ª fonte encontrada em 27/09",
+      "faltam_dias": 5
+    },
+    {
+      "id": "eleicoes-1turno",
+      "evento": "Eleições, 1º turno — SEM hype",
+      "data_inicio": "2026-10-04",
+      "data_fim": "2026-10-04",
+      "categoria": "bloqueio",
+      "seguro": false,
+      "block_hype": true,
+      "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais (Nível, Pegadinha).",
+      "ganchos_ingles": [],
+      "status": "verificado (TSE)",
       "faltam_dias": 6
     }
   ],
-  "dias_bloqueados": [],
-  "fallback": "sem tema persistente: episódios contextualizam com o calendário da semana"
+  "dias_bloqueados": [
+    "2026-10-04"
+  ],
+  "fallback": "sem tema persistente: episódios contextualizam com o calendário da semana",
+  "tema_da_semana_motivo": "não medido: só 2/7 radares diários existem (a fábrica começou 26/09); com 2 dias é impossível atingir o limiar de 3+ dias, mesmo que houvesse repetição. Não confundir com 'sem tema' (que seria um resultado medido).",
+  "feriados_checados": {
+    "BR": [],
+    "EUA": [],
+    "fonte": "busca web 27/09; nenhum feriado BR ou EUA entre 2026-09-28 e 2026-10-04",
+    "proximo_feriado_br": "2026-10-12 (Dia das Crianças + N. Sra. Aparecida, fora da janela)"
+  },
+  "estreias_cinema_na_janela": "não medido: lançamentos de outubro citados na imprensa (Street Fighter 15/10, A Queda 2, O Outro Lado das Redes, Jogos Vorazes, BTS Arirang ao vivo) não têm data confirmada dentro de 28/09-04/10",
+  "eventos_tiktok_na_janela": "não medido: nenhum challenge/sound oficial específico e verificável (com URL) encontrado para esta semana",
+  "girias": {
+    "vencidas_nesta_checagem": [],
+    "ja_marcadas_vencidas_antes": ["Tu, finish"],
+    "vencendo_em_breve_fora_da_janela": [
+      {"termo": "é um nervosismo surreal", "validoAte": "2026-10-31"}
+    ],
+    "propostas_novas": [
+      {
+        "termo": "delulu",
+        "origem": "delusional",
+        "sentido": "otimismo irrealista assumido de propósito",
+        "prova": {"descricao": "hashtag com 2,6 bilhões de views no TikTok", "fonte": "https://www.cnnbrasil.com.br/entretenimento/ser-delusional-ou-delulu-e-a-nova-onda-do-momento-entenda-viral-do-tiktok/", "rotulo": "terceiros"},
+        "usar_na_capy": "sim, só ironia da Capy; nunca prometer resultado irreal"
+      },
+      {
+        "termo": "NPC",
+        "origem": "non-playable character",
+        "sentido": "agir de forma robótica/repetitiva, sem reação própria",
+        "prova": {"descricao": "vídeo do trend NPC live com mais de 100 milhões de views", "fonte": "https://forbes.com.br/forbes-tech/2023/09/o-que-e-npc-a-nova-lucrativa-e-perigosa-febre-do-tiktok/", "rotulo": "terceiros"},
+        "usar_na_capy": "sim, série 'gíria que vem do inglês' — Hank com cara de NPC repetindo a frase"
+      }
+    ],
+    "descartada_por_falta_de_prova": [
+      {"termo": "rizz", "motivo": "sem número de views/BR verificável hoje; já está na tabela só para texto de tela"}
+    ]
+  },
+  "instrucao_roteirista": [
+    {"data": "2026-09-28", "dia": "seg", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 28/09 (ainda não existe)"},
+    {"data": "2026-09-29", "dia": "ter", "episodio_contexto": "Amistoso Brasil x Austrália: gírias australianas x americanas (mate, arvo, no worries, g'day)", "esquete_hype": "mesmo evento — hype anglófono, prioridade sobre o hype genérico do dia"},
+    {"data": "2026-09-30", "dia": "qua", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 30/09"},
+    {"data": "2026-10-01", "dia": "qui", "episodio_contexto": "sem evento seguro do dia (fim de propaganda paga não é tema); contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 01/10"},
+    {"data": "2026-10-02", "dia": "sex", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 02/10"},
+    {"data": "2026-10-03", "dia": "sáb", "episodio_contexto": "Amistoso Brasil x Índia (Calcutá): pronúncia de nomes e 'Kolkata', vocabulário de jogo (score, draw) — status fonte única, confirmar antes de usar como gancho de peso", "esquete_hype": "mesmo evento se confirmado; senão hype genérico do dia"},
+    {"data": "2026-10-04", "dia": "dom", "episodio_contexto": "BLOQUEIO (eleição 1º turno): zero hype, zero política; só quadros neutros/atemporais", "esquete_hype": "nenhum — bloqueio vale para episódio e esquete"}
+  ],
+  "aviso_bloqueio_producao": "formato novo (Sitcom do Café) sem aprovação do Felipe (regra 27/09): nenhuma rotina de produção renderiza/faz TTS/publica esta semana. Instruções acima valem para quando a produção for liberada.",
+  "nota_confianca": "campos girias/instrucao_roteirista/feriados_checados/estreias_cinema_na_janela/eventos_tiktok_na_janela são extras desta rotina, não fazem parte do schema lido por scripts/roteirista.py hoje."
 }
