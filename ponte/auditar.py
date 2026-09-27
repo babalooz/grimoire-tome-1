@@ -73,7 +73,7 @@ def veredito(nome: str, m: dict):
 def main():
     git("fetch", "-q", "origin", "midia", "ponte")
     git("checkout", "-q", "ponte")
-    git("pull", "-q", "--rebase", "origin", "ponte")
+    git("fetch", "-q", "origin", "ponte"); git("rebase", "-q", "origin/ponte")
     commit = git("rev-parse", "--short", "origin/midia").strip()
     feitos = LOG.read_text(encoding="utf-8") if LOG.exists() else "# Auditoria do PC (branch midia)\n\n"
     nomes = [n for n in git("ls-tree", "-r", "--name-only", "origin/midia").split() if n.endswith(".mp4")]
@@ -100,7 +100,7 @@ def main():
     for _ in range(4):  # a nuvem também escreve no ponte: rebase e tenta de novo
         if subprocess.run(["git", "-C", str(W), "push", "-q", "origin", "ponte"]).returncode == 0:
             break
-        git("pull", "-q", "--rebase", "origin", "ponte")
+        git("fetch", "-q", "origin", "ponte"); git("rebase", "-q", "origin/ponte")
     for r in reprovados:
         print(f"AUDITORIA REPROVOU {r}", flush=True)
 
