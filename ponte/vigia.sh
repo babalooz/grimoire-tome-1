@@ -19,6 +19,11 @@ while true; do
     python "$W/ponte/auditar.py" 2>&1 | grep --line-buffered -E "REPROVOU|Traceback|Error"
     lastm="$m"
   fi
+  e=$(git -C "$W" rev-parse -q --verify origin/main 2>/dev/null)$(git -C "$W" rev-parse -q --verify origin/ponte 2>/dev/null)
+  if [ "$e" != "$laste" ]; then
+    python "$W/ponte/espelhar.py" >/dev/null 2>&1
+    laste="$e"
+  fi
   now=$(sig)
   if [ "$now" != "$last" ]; then
     if git -C "$W" diff "${last#*|}" "${now#*|}" 2>/dev/null | grep -qiE "trav|falh|erro|bloque|pedido|PC fa|conclu|termin|todos os|fim d|Felipe"; then
