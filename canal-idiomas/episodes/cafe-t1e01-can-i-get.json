@@ -1,0 +1,49 @@
+{
+  "id": "cafe-t1e01-can-i-get",
+  "format": "cafe",
+  "serie": { "temporada": 1, "capitulo": 1, "episodio": 1, "codigo": "T1 E01", "tituloCapitulo": "Primeiro dia no café" },
+  "level": "A1",
+  "canDo": "Consigo pedir alguma coisa no balcão com educação.",
+  "title": "T1 E01 · Como pedir um café em inglês sem parecer mandona ☕",
+  "hookTitle": "pedi café e ele nem piscou",
+  "alvo": {
+    "en": "Can I get a coffee?",
+    "pt": "Pode me ver um café?",
+    "nucleo": "Can I get",
+    "variacoes": ["Can I get an iced latte?", "Can I get your name?"]
+  },
+  "errado": { "en": "Give me a coffee.", "pt": "me dá um café (soa como ordem)" },
+  "cast": ["capi", "hank", "duda", "lazy", "poppy", "donajaca", "bolinha"],
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#inglesparaviagem", "#aprenderingles"],
+  "notebook": 1,
+  "beats": [
+    { "speaker": "capi", "lang": "en", "emotion": "zen", "errado": true, "text": "Give me a coffee." },
+    { "tipo": "pausa", "s": 0.8, "react": { "hank": "eyebrow", "capi": "zen" } },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "sweat", "text": "Ele não se mexeu. Nem piscou." },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "speed": 0.8, "text": "Can I get a coffee?" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "sfx": ["pop"], "text": "Sure." },
+    { "tipo": "pausa", "s": 0.6, "react": { "capi": "surprised" } },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "shock", "text": "Ela pediu o mesmo café. E ganhou na hora." },
+    { "tipo": "pergunta", "s": 3, "text": "qual foi a diferença?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "speed": 0.75, "text": "Can... I get... a coffee?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Give me é ordem. Can I get é pedido." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "speed": 0.85, "repita": true, "text": "Can I get a coffee?" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": "variacao", "speed": 1.05, "text": "Can I get an iced latte?" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Sure." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "speed": 0.95, "text": "Can I get a coffee, please?" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Sure. For here or to go?" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "panic", "react": { "hank": "eyebrow" }, "text": "Tem pergunta extra?!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "neutral", "text": "Filha, pra levar! Fala do jeito que o Lazy ensinou." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "To go, please." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "alvo": "variacao", "text": "Can I get your name?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Capy!" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Got it. Happy." },
+    { "tipo": "pausa", "s": 0.7, "react": { "capi": "fail" } },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "alvo": true, "bolinha": true, "text": "Can I get a coffee?" },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei na bochecha. Devolvo daqui a três dias." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "card": true, "hold": 1.0, "text": "Qual café você pediria? Comenta em inglês." }
+  ],
+  "esquetes": [
+    { "id": "A", "de": 0, "ate": 13, "gancho": "pedi café e ele nem piscou", "cta": "aula completa no EP 01" }
+  ]
+}

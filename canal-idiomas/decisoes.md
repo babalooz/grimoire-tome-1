@@ -43,3 +43,14 @@ Regras comuns dos A/B: métricas do TikTok Studio 72 h após postar; mínimo 5 v
 | 2026-09-27 | Compressão crf 26 no render | E01 com crf 22 = 18,2 MB, perto do limite de 20 MB do jsDelivr; desenho chapado não perde qualidade visível | Não |
 | 2026-09-27 | Portão com juiz em 2 modos (API ou o próprio Claude da rotina) | API da Anthropic sem acesso nesta nuvem (401); a rotina de produção já é Claude — custo zero extra | Não |
 | 2026-09-27 | Métricas pela API do Buffer (`scripts/metricas.py`, rotina das 23:00) | Mesma credencial; sem OAuth do YouTube. LIMITE: a doc do Buffer só fornece `saves` e `follows` para Instagram/Pinterest → no TikTok e no YouTube os critérios de salvamento/seguidores do "Teste Duas faixas" dependem de leitura do TikTok Studio/YouTube Studio pelo PC (ponte), 1x antes da decisão de 28/10 | Não |
+
+### Decisões de 27/09 — formato novo (Felipe + estudos da ponte)
+| Data | Decisão | Evidência | Teste? |
+|---|---|---|---|
+| 2026-09-27 | Formato "app" abandonado; espinha = Sitcom do Café (F1) | Feedback do Felipe (acelerado, sem interação); Peters & Webb 2018 (+5 aparições = chance 3×); Extra English 10,5 mi | Sim · A/B F1 × F4 abaixo |
+| 2026-09-27 | "Teste Duas faixas" SUBSTITUÍDO: esquete 20–35 s (seg–sex) + EP 60–90 s (sáb) | formato-ensino-video.md §4 | — |
+| 2026-09-27 | A/B espinha F1 Sitcom × F4 Brasileiro×Nativo, 4 pares (12/10–25/10), leitura 72 h | Critério: vence mediana de "assistiu até o fim" ≥ 15% maior, sem salvamentos/mil > 20% abaixo; empate → F1; aprendizado (comentários com a frase no vídeo do Bolinha) pior pela metade → os dois viram quadros e repete com +4 pares | Sim |
+| 2026-09-27 | Testes F5 Repete no Ritmo (18/10, 29/10), F3 Adivinha (22/10, 04/11), F6 Novela (31/10, 07/11) | Critérios da tabela "Métrica e corte de cada teste" em formato-ensino-video.md §7 | Sim |
+| 2026-09-27 | A/B visuais: legenda PT só no alvo × em toda fala; cena limpa × cheia; gesto+metáfora × ícone | didatica-visual.md §5 (cortes 10%, 15%, 20% relativos) | Sim · 1 por vez no mesmo quadro |
+| 2026-09-27 | Voz: teste cego Gemini 3.8 / ElevenLabs v3 / Azure (Kokoro como âncora) antes de trocar | voz-audio-didatico.md §4 (pronúncia 100% nos alvos, MOS ≥ 4, consistência ≥ 0,80) | Sim · custo < US$5 |
+| 2026-09-27 | Marca CapyFala e personagem Capy mantidas apesar do app Comigo (capivara "Capy") | INPI: CapyFala 0 registros; decisão do Felipe | Não · bio sem "trava na hora de falar" |

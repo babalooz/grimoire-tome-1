@@ -63,7 +63,18 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   (axolote influencer, gírias; só temas adultos) · **Bolinha** (hamster, guarda frases nas bochechas e devolve = revisão
   espaçada) · **Dona Jaca** (capivara, mãe da Capy, por videochamada).
 - Speakers no JSON/TTS: capi, lazy, hank, duda, poppy, bolinha, donajaca, narrador ("leo" = alias antigo de lazy).
-- Bio aprovada como recomendação: "Inglês pra quem trava na hora de falar. / 1 minuto por dia com a Capy 🐹" (EUA fica só como cenário).
+- ~~Bio "Inglês pra quem trava na hora de falar"~~ — DESCARTADA 27/09: é a chamada do app Comigo. Bio nova (proposta): "O café mais
+  confuso dos EUA ☕ / 1 frase de inglês por dia com a Capy 🐹".
+- **Comigo (usecomigo.com/pt)** tem uma capivara chamada "Capy" que ensina inglês a brasileiros (verificado 27/09). Decisão do
+  Felipe (27/09): marca CapyFala e personagem Capy continuam. INPI (base 22/09): "CapyFala" 0 registros; "Capy" 42 (classe 41:
+  CAPY BOX em vigor; CAPY, I-CAPY, Mr. Capy em exame). Regras: nunca citar nem imitar o Comigo; diferenciar pelo visual, pelo
+  elenco, pelo Café Bean There e pelas temporadas; NÃO usar "trava na hora de falar" como chamada principal.
+
+## Formato atual (27/09): SITCOM DO CAFÉ (passivo, sem interação)
+- O formato "app" (exercícios A/B/C, ligar, lacuna, corações, XP) foi ABANDONADO (Felipe: acelerado + vídeo não é interativo).
+- Plano: `docs/plano-formato-cafe.md`. Estudos: `docs/pesquisas/formato-novo/`. Regras-chave: 1 frase-alvo nova por vídeo,
+  ≥ 5 vezes em ≥ 3 bocas, legenda EN sempre e PT só na 1ª vez, erro dito 1× e riscado, 1 pergunta com pausa e resposta no
+  mesmo vídeo, pausa de repetição = fala + 1 s, inglês 120→170 palavras/min, hype só no cenário, nunca na frase-alvo.
 
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
