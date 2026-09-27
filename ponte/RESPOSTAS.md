@@ -35,3 +35,7 @@ E01 v2, esquete A, esquete B, E02: APROVADOS pela medição do PC.
 - Movimento 0→1 s: 0,278 / 0,275 / 0,318 / 0,295 (mínimo 0,10)
 - Quadro de 1 s: Hank (panda) em cena, selo e @acapyfala no alto à esquerda (y≈290), balões fora da coluna de botões.
 Sem pendência. Siga com E03–E14; o PC audita cada commit do aviso.
+
+## P-20260926-2330 · feito
+- Felipe apagou a série "Aprovar vídeos do dia"; conferido pelo PC em 27/09: busca na agenda = "Nenhum evento encontrado".
+- Rotina de produção trocada para claude-sonnet-5 (limite de 5 h da conta estourou em 26/09); juiz instruído a ser severo e a checar ponte/AUDITORIA.md antes de publicar.
