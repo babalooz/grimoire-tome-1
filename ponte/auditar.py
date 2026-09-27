@@ -97,7 +97,10 @@ def main():
     LOG.write_text(feitos + "".join(linhas), encoding="utf-8")
     git("add", str(LOG))
     git("commit", "-q", "-m", f"auditoria PC: {len(novos)} vídeo(s) do midia {commit}")
-    git("push", "-q", "origin", "ponte")
+    for _ in range(4):  # a nuvem também escreve no ponte: rebase e tenta de novo
+        if subprocess.run(["git", "-C", str(W), "push", "-q", "origin", "ponte"]).returncode == 0:
+            break
+        git("pull", "-q", "--rebase", "origin", "ponte")
     for r in reprovados:
         print(f"AUDITORIA REPROVOU {r}", flush=True)
 
