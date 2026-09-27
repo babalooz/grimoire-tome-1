@@ -54,7 +54,7 @@ done
 duration() { npx remotion ffprobe -v error -show_entries format=duration -of csv=p=0 "$1" 2>/dev/null | tail -1; }
 
 if [ "$VIDEO" = 1 ]; then
-  npx remotion render src/index.ts Licao "out/$ID.mp4" --props="out/props-$ID.json" --audio-bitrate=320k --crf=26 $BROWSER_FLAG
+  npx remotion render src/index.ts Licao "out/$ID.mp4" --props="out/props-$ID.json" --audio-bitrate=320k --crf=26 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG
   .venv/bin/python scripts/loudnorm.py "out/$ID.mp4"
   D=$(duration "out/$ID.mp4")
   echo "vídeo: out/$ID.mp4 (${D} s)"
@@ -63,7 +63,7 @@ if [ "$VIDEO" = 1 ]; then
   fi
   for X in "${ESQUETES[@]}"; do
     OUT="out/$ID-esquete-$X.mp4"
-    npx remotion render src/index.ts LicaoEsquete "$OUT" --props="out/props-$ID-esquete-$X.json" --audio-bitrate=320k --crf=26 $BROWSER_FLAG
+    npx remotion render src/index.ts LicaoEsquete "$OUT" --props="out/props-$ID-esquete-$X.json" --audio-bitrate=320k --crf=26 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG
     .venv/bin/python scripts/loudnorm.py "$OUT"
     D=$(duration "$OUT")
     echo "esquete $X: $OUT (${D} s)"

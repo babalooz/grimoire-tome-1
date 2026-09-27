@@ -27,6 +27,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FFPROBE = ROOT / "node_modules/@remotion/compositor-linux-x64-gnu/ffprobe"
+FFMPEG = FFPROBE.parent / "ffmpeg"
+GANCHO_DIF_MIN = 0.10   # diferença visual média mínima entre o quadro 0 e o de 1 s (0–1); abaixo = gancho parado
+# Zonas cobertas pela interface do TikTok (auditoria do PC em 27/09, tela 1080x1920)
+ZONAS = {"coluna de botões (x>920, y 900–1700)": (920, 900, 1080, 1700),
+         "abas do topo (y<260)": (0, 0, 1080, 260),
+         "legenda do app (y>1500)": (0, 1500, 1080, 1920)}
+ZONA_MAX = 0.002        # fração máxima de pixels de interface/texto dentro de uma zona (modo auditoria)
 NOTA_MIN = 8.0
 FAIXA = {"episodio": (61.0, 140.0), "esquete": (5.0, 20.0)}
 LUFS_ALVO, LUFS_TOL, TP_MAX = -14.0, 1.0, -1.0
@@ -47,13 +54,57 @@ Responda SÓ JSON: {"nota": <0-10>, "criterios": {"1": n, ...}, "motivos": ["...
 
 # ---------------------------------------------------------------- camada 1: arquivo
 def probe(mp4: Path) -> dict:
-    out = subprocess.run([str(FFPROBE), "-v", "error", "-show_entries", "format=duration:stream=codec_type,width,height",
+    out = subprocess.run([str(FFPROBE), "-v", "error", "-show_entries",
+                          "format=duration:stream=codec_type,width,height,pix_fmt,color_range,color_space",
                           "-of", "json", str(mp4)], capture_output=True, text=True, check=True,
                          env={**os.environ, "LD_LIBRARY_PATH": str(FFPROBE.parent)}).stdout
     d = json.loads(out)
     v = next(s for s in d["streams"] if s["codec_type"] == "video")
     return {"duracao": round(float(d["format"]["duration"]), 2), "largura": v["width"], "altura": v["height"],
+            "cor": f"{v.get('pix_fmt')}/{v.get('color_range')}/{v.get('color_space')}",
             "tem_audio": any(s["codec_type"] == "audio" for s in d["streams"])}
+
+
+def quadro(mp4: Path, t: float, tmp: Path):
+    from PIL import Image
+    png = tmp / f"q{t}.png"
+    subprocess.run([str(FFMPEG), "-v", "error", "-y", "-ss", str(t), "-i", str(mp4), "-frames:v", "1", str(png)],
+                   check=True, env={**os.environ, "LD_LIBRARY_PATH": str(FFMPEG.parent)})
+    return Image.open(png).convert("L").resize((108, 192))
+
+
+def movimento_gancho(mp4: Path) -> float:
+    """Diferença média (0–1) entre o quadro 0 e o quadro de 1 s: mede se há corte/zoom/ação no 1º segundo."""
+    with tempfile.TemporaryDirectory() as tmp:
+        a, b = quadro(mp4, 0, Path(tmp)), quadro(mp4, 1.0, Path(tmp))
+    pa, pb = list(a.getdata()), list(b.getdata())
+    return round(sum(abs(x - y) for x, y in zip(pa, pb)) / (255 * len(pa)), 3)
+
+
+def zona_segura(ep_id: str, comp: str, frames: list[int]) -> list[str]:
+    """Renderiza quadros no modo auditoria (só interface/texto sobre preto) e procura pixels nas zonas do TikTok."""
+    from PIL import Image
+    props = ROOT / "out" / (f"props-{ep_id}.json" if comp == "Licao" else f"props-{ep_id}-esquete-{comp.split(':')[1]}.json")
+    if not props.exists():
+        return [f"zona segura: props não encontrados ({props.name})"]
+    falhas = []
+    with tempfile.TemporaryDirectory() as tmp:
+        pa = Path(tmp) / "props.json"
+        pa.write_text(json.dumps({**json.loads(props.read_text()), "auditoria": True}))
+        nome = "Licao" if comp == "Licao" else "LicaoEsquete"
+        r = subprocess.run(["node", "scripts/stills.mjs", nome, str(pa), tmp, *map(str, frames)], cwd=ROOT,
+                           capture_output=True, text=True)
+        if r.returncode:
+            return [f"zona segura: falha ao renderizar auditoria ({r.stderr.strip()[-200:]})"]
+        for png in sorted(Path(tmp).glob("*.png")):
+            im = Image.open(png).convert("L")
+            for nomez, (x0, y0, x1, y1) in ZONAS.items():
+                reg = im.crop((x0, y0, x1, y1))
+                n = sum(1 for v in reg.getdata() if v > 40)
+                frac = n / ((x1 - x0) * (y1 - y0))
+                if frac > ZONA_MAX:
+                    falhas.append(f"zona segura: {nomez} com {frac:.1%} de interface no quadro {png.stem.split('-f')[-1]}")
+    return sorted(set(falhas))
 
 
 def loudness(mp4: Path) -> tuple[float, float]:
@@ -81,6 +132,11 @@ def checar_arquivo(mp4: Path, faixa: str) -> tuple[list[str], dict]:
         falhas.append(f"duração {m['duracao']} s fora da faixa {faixa} ({lo}–{hi} s)")
     if (m["largura"], m["altura"]) != (1080, 1920):
         falhas.append(f"resolução {m['largura']}x{m['altura']} (esperado 1080x1920)")
+    if m["cor"] != "yuv420p/tv/bt709":
+        falhas.append(f"cor {m['cor']} (esperado yuv420p/tv/bt709: full range lava ou estoura no app)")
+    m["movimento_1s"] = movimento_gancho(mp4)
+    if m["movimento_1s"] < GANCHO_DIF_MIN:
+        falhas.append(f"gancho parado: diferença entre 0 s e 1 s = {m['movimento_1s']} (mín. {GANCHO_DIF_MIN})")
     if not m["tem_audio"]:
         falhas.append("sem trilha de áudio")
     else:
@@ -204,6 +260,10 @@ def main() -> None:
     aprovados = 0
     for mp4, faixa in videos(ep):
         falhas_arq, medidas = checar_arquivo(mp4, faixa)
+        if mp4.exists():
+            dur_f = int(medidas.get("duracao", 0) * 30)
+            comp = "Licao" if faixa == "episodio" else f"LicaoEsquete:{mp4.stem.rsplit('-', 1)[-1]}"
+            falhas_arq += zona_segura(ep["id"], comp, sorted({0, 15, 30, *range(60, max(dur_f - 1, 61), 90)}))
         c1 = {"ok": not (falhas_arq or falhas_roteiro), "falhas": falhas_arq + falhas_roteiro, "medidas": medidas}
         v = gravar(mp4, c1, juiz)
         aprovados += v["aprovado"]
