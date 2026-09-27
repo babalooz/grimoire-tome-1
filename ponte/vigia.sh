@@ -1,22 +1,32 @@
 #!/bin/sh
-# Vigia da ponte: a cada 60s busca o GitHub e imprime UMA linha quando a nuvem
-# muda ponte/PEDIDOS.md, ponte/AVISOS.md (branch ponte) ou docs/tarefas-*.md (main).
-# Silêncio = nada novo (zero token).
+# Vigia da ponte (a cada 60 s):
+#  - vídeo novo no branch midia -> roda auditar.py em silêncio; só imprime se REPROVAR
+#  - mudança em ponte/PEDIDOS.md ou ponte/AVISOS.md -> imprime 1 linha (acorda o Claude local)
+# Silêncio = nada que exija ação (zero token).
 W="/c/Users/felip/.claude/grimoire-ponte"
 sig() {
   a=$(git -C "$W" rev-parse -q --verify origin/ponte:ponte/PEDIDOS.md 2>/dev/null)
   v=$(git -C "$W" rev-parse -q --verify origin/ponte:ponte/AVISOS.md 2>/dev/null)
-  b=$(git -C "$W" ls-tree origin/main docs/ 2>/dev/null | grep 'tarefas-' | awk '{print $3}' | tr '\n' ' ')
-  echo "$a|$v|$b"
+  echo "$a|$v"
 }
-git -C "$W" fetch -q origin ponte main 2>/dev/null
+git -C "$W" fetch -q origin ponte main midia 2>/dev/null
 last=$(sig)
+lastm=""
 while true; do
-  sleep 60
-  git -C "$W" fetch -q origin ponte main 2>/dev/null || continue
+  git -C "$W" fetch -q origin ponte main midia 2>/dev/null || { sleep 60; continue; }
+  m=$(git -C "$W" rev-parse -q --verify origin/midia 2>/dev/null)
+  if [ "$m" != "$lastm" ]; then
+    python "$W/ponte/auditar.py" 2>&1 | grep --line-buffered -E "REPROVOU|Traceback|Error"
+    lastm="$m"
+  fi
   now=$(sig)
   if [ "$now" != "$last" ]; then
-    echo "PONTE: novidade da nuvem $(date '+%H:%M') — ler origin/ponte:ponte/AVISOS.md, PEDIDOS.md e docs/tarefas-*.md"
+    if git -C "$W" diff "${last#*|}" "${now#*|}" 2>/dev/null | grep -qiE "trav|falh|erro|bloque|pedido|PC fa|conclu|termin|todos os|fim d|Felipe"; then
+      echo "PONTE: aviso da nuvem pede atenção $(date '+%H:%M') — ler origin/ponte:ponte/AVISOS.md e PEDIDOS.md"
+    fi
+    a_old=${last%%|*}; a_new=${now%%|*}
+    [ "$a_old" != "$a_new" ] && echo "PONTE: pedido novo da nuvem $(date '+%H:%M') — ler origin/ponte:ponte/PEDIDOS.md"
     last="$now"
   fi
+  sleep 60
 done
