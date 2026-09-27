@@ -12,7 +12,7 @@ Versão 1 · 27/09/2026. Segue o padrão aprovado no assunto 1 (v5/v6):
 
 **G + V + P** (a estrutura de toda lição do English File):
 - **G (gramática):** o bloco pronto "See you!" (sem explicar gramática).
-- **V (vocabulário):** bye, goodbye, see you. "Good night" aparece como contraste suave.
+- **V (vocabulário):** bye, see you. ("Good night" só aparece no V3, como reconhecimento; o V1 ensina 1 coisa só.)
 - **P (pronúncia):** a vogal longa de "see" (/iː/, EF 1A–1B). O brasileiro encurta para "si".
 
 **Som da vez (Sound Bank CapyFala):** /iː/ longo = **o bocejo comprido do Lazy**. Quando alguém diz "seeee", o Lazy boceja no mesmo tempo. O ícone volta sempre que houver vogal longa (see, three, meet, please).
@@ -47,31 +47,31 @@ Versão 1 · 27/09/2026. Segue o padrão aprovado no assunto 1 (v5/v6):
 
 **Exercício:** repita comigo, primeiro em coro com a Capy, depois sozinho (drill do Headway/Empower).
 
-**Gancho verdadeiro:** paga o gancho do assunto 1 ("como a Capy se despede?").
+**Gancho verdadeiro:** paga o gancho do assunto 1 ("como a Capy se despede?"). Abre com a frase-alvo já acontecendo (a Duda saindo), e não com a fórmula porta + corte + card.
 
 **Vitória:** a Capy sai do primeiro turno se despedindo em inglês.
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | Fim do turno. A Capy, de avental, parada na porta, sem saber como sair. Texto: **"ir embora também tem frase"** | Capy (pensa) PT: "Acabou meu turno. Como eu saio sem ser mal-educada?" | relógio |
-| 2 | 2–3 s | **Corte seco** para o Hank limpando o balcão, olhando para ela | ⏸ reação muda | — |
-| 3 | 3–6 s | Card: **CONSIGO… me despedir de um jeito simples** | Lazy PT (em off): "Hoje você aprende a sair. Em inglês." | — |
-| 4 | 6–9 s | A Duda termina o café, levanta e acena para o Hank | Duda EN: ⭐ "Bye! See you!" · legenda EN + PT: "Tchau! Até mais!" | sino da porta |
-| 5 | 9–11 s | | Hank EN: "Bye." | — |
-| 6 | 11–15 s | O Lazy chega devagar ao lado da Capy | Lazy PT: "Tchau, e até mais. Duas partes." / Lazy EN: ⭐ "Bye!... See... you!" | — |
-| 7 | 15–21 s | Close no Lazy dizendo "seeee", com um **bocejo comprido** (som da vez) | Lazy PT: "O 'see' é comprido, igual meu bocejo. Não é 'si'." | bocejo |
+| 1 | 0–2 s | **Abre no meio da ação** (1ª fala já é a frase-alvo): a Duda, já de casaco, passa pela porta e acena para o balcão. Texto: **"ela saiu em 2 palavras"** | Duda EN: ⭐ "Bye! See you!" · legenda EN + PT: "Tchau! Até mais!" | sino da porta |
+| 2 | 2–4 s | O Hank acena de volta sem tirar os olhos do café que prepara | Hank EN: "Bye." | — |
+| 3 | 4–8 s | Close na Capy, de avental, o relógio marcando fim do turno. Ela olha a porta, depois o Hank | Capy (pensa) PT: "Acabou meu turno. Como eu saio sem ser mal-educada?" | relógio |
+| 4 | 8–11 s | O Lazy chega devagar ao lado dela (objetivo dito por cima da ação, sem card) | Lazy PT: "Hoje você aprende a ir embora em inglês. Tchau, e até mais." | — |
+| 5 | 11–15 s | O Lazy repete o que a Duda disse, em blocos | Lazy EN: ⭐ "Bye!... See... you!" | — |
+| 6 | 15–18 s | Close no Lazy dizendo "seeee", com o **bocejo comprido** (som da vez) | Lazy PT: "O 'see' é comprido, igual meu bocejo. Não é 'si'." | bocejo |
+| 7 | 18–21 s | O Lazy boceja de novo, de propósito, e a Capy ri (respiro de humor) | ⏸ 0,8 s | bocejo |
 | 8 | 21–23 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos." | — |
 | 9 | 23–26 s | **Em coro:** a Capy fala e o karaokê acende. Na tela: "fala JUNTO" | Capy EN: ⭐ "Bye! See you!" | bocejo curto do Lazy ao fundo |
 | 10 | 26–29 s | De novo em coro, mais natural | Capy EN: ⭐ "Bye! See you!" | — |
 | 11 | 29–33 s | **Sozinho:** a Capy fica em silêncio e aponta para a câmera | 🎤 **SUA VEZ** ("Bye! See you!") | trilha em zero |
 | 12 | 33–36 s | **Para conferir** | Lazy EN: ⭐ "Bye! See you!" + joinha lento | acerto baixinho |
-| 13 | 36–42 s | **Contraste suave** (o erro típico do assunto, sem vergonha): na tela, "Good night" com um relógio de 8 da manhã | Lazy PT: "E good night? Só pra ir embora à noite ou dormir. Agora é de manhã." | — |
+| 13 | 36–42 s | **Mais uma no coro, com o Lazy** (sem conteúdo novo: 1 coisa só por vez para quem começa do zero) | Lazy EN: ⭐ "Bye!... See you!" · Capy EN (junto): ⭐ "Bye! See you!" | bocejo curto |
 | 14 | 42–47 s | De volta à porta. A Capy respira e acena para o Hank | Capy EN: ⭐ "Bye! See you!" | sino da porta |
 | 15 | 47–51 s | ⏸ 0,6 s. O Hank levanta a mão, quase sorrindo | Hank EN: "See you, Capy." | — |
 | 16 | 51–57 s | ⭐ **VITÓRIA DO DIA**: card "1ª saída em inglês". Selo: **"T1 E02 · você já sabe 2 frases"** | Capy PT: "Ele disse 'see you'. Quer dizer que eu volto amanhã." | acerto |
 | 17 | 57–66 s | Card final: **CONSIGO… me despedir ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Se despede da Capy aqui: Bye! See you!" | — |
 
-**Frase-alvo: 6×** (Duda, Lazy ×2, Capy ×3). O aluno fala 1×. A variação do Hank ("See you, Capy.") dá mais 1 exposição.
+**Frase-alvo: 8×** (Duda, Lazy ×3, Capy ×4). O aluno fala 1×. A variação do Hank ("See you, Capy.") dá mais 1 exposição.
 
 ---
 
@@ -89,7 +89,7 @@ Continua o capítulo do assunto 1 (a fila da estreia). **Hype de exemplo:** a es
 |---|---|---|---|---|
 | 1 | 0–2 s | Saída do cinema, à noite. Os fãs fantasiados saem empolgados. Texto: **"fim da estreia: hora de dar tchau em inglês"** | burburinho, sem áudio do filme | — |
 | 2 | 2–5 s | A Poppy, eufórica, grava o "depois do filme" | Poppy PT: "Melhor noite do ano! E agora todo mundo vai embora..." | — |
-| 3 | 5–7 s | Faixa no topo: **consigo me despedir, numa saída de verdade** | — | — |
+| 3 | 5–7 s | A Poppy vira a câmera do celular para a Capy (sem faixa) | Poppy PT: "Hoje você vai se despedir de gringo de verdade. Tá gravando!" | — |
 | 4 | 7–10 s | O Rick, o fã gringo do capítulo anterior, se despede dos amigos | Rick EN: "Bye, guys!" / Fã 2 EN: ⭐ "Bye! See you!" | — |
 | 5 | 10–13 s | A Capy percebe: o Rick vai passar por ela | Capy (pensa) PT: "Ele vai falar tchau. E dessa vez eu sei." | — |
 | 6 | 13–16 s | O Lazy, na calçada (como sempre, do nada) | Lazy EN: ⭐ "Bye!... See... you!" (lembrete, com o bocejo) | bocejo |
@@ -130,7 +130,7 @@ Continua o capítulo do assunto 1 (a fila da estreia). **Hype de exemplo:** a es
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | A porta do café, com o sino. Texto: **"chegando ou saindo? só pelo som"** | — | — |
-| 2 | 2–5 s | Faixa: **consigo reconhecer quem chega e quem sai, e me despedir** | Lazy PT: "Primeiro só escuta." | — |
+| 2 | 2–5 s | O sino balança sozinho; o Lazy aparece atrás do balcão (sem faixa) | Lazy PT: "Hoje você vai reconhecer quem chega e quem sai. Primeiro só escuta." | — |
 | 3 | 5–8 s | Tela escura, só a voz | Voz (Duda) EN: "Hi! I'm Duda!" | sino |
 | 4 | 8–11 s | **Rodada 1:** "chegando ou saindo? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
 | 5 | 11–14 s | **Resposta:** a cena acende, a Duda ENTRANDO | Lazy PT: "Chegando. 'Hi' é oi." | — |
@@ -160,7 +160,7 @@ Continua o capítulo do assunto 1 (a fila da estreia). **Hype de exemplo:** a es
 | | V1 APRENDER (aula) | V2 PRATICAR (história + hype anglófono) | V3 FIXAR | Total |
 |---|---|---|---|---|
 | Duração | ~66 s | ~68 s | ~67 s | ~3 min 20 s |
-| ⭐ no áudio | 6 | 5 | 4 (+1 do aluno no diálogo) | **15** (meta ≥ 10) ✓ |
+| ⭐ no áudio | 8 | 5 | 4 (+1 do aluno no diálogo) | **17** (meta ≥ 10) ✓ |
 | O aluno fala | 1 | 2 | 3 | **6** |
 | Reconhecimentos | — | — | 3 | 3 |
 | Revisão do assunto 1 | — | — | Bolinha "lembra dessa?" + mini-diálogo | ✓ |
@@ -170,13 +170,15 @@ Continua o capítulo do assunto 1 (a fila da estreia). **Hype de exemplo:** a es
 
 | Corte | De onde | Duração | Gancho de 1 s |
 |---|---|---|---|
-| C1 | V1, cenas 1–6 + 14–16 (a Capy não sabe ir embora → consegue) | ~25 s | "ir embora também tem frase" |
-| C2 | V1, cena 13 (good night de manhã) | ~8 s | "good night: a hora certa de usar" |
+| C1 | V1, cenas 1–5 + 14–16 (a Duda sai em 2 palavras → a Capy consegue) | ~25 s | "ela saiu em 2 palavras" |
+| C2 | V1, cenas 5–7 (o "seeee" do bocejo do Lazy) | ~9 s | "o see que o brasileiro encurta" |
 | C3 | V2, cenas 1–11 (a saída da estreia, você é a Capy) | ~28 s | "fim da estreia: hora de dar tchau em inglês" |
 | C4 | V3, cenas 1–8 ("chegando ou saindo?") | ~23 s | "chegando ou saindo? só pelo som" |
 | C5 | V2, cenas 17–18 (o gringo perguntou o nome) | ~12 s | "um gringo perguntou seu nome. e agora?" |
 
-## Para o Felipe decidir antes do assunto 3
-1. **O contraste "good night"** (dito 1 vez, com relógio, sem vergonha) entra no V1 e no V3? Ou fica só no V3?
-2. **Som da vez /iː/ = bocejo comprido do Lazy.** Aprovado como 2º símbolo do Sound Bank?
-3. **A continuidade da história** (fila da estreia → saída → comentário perguntando o nome) serve de modelo para ligar os V2 entre assuntos?
+## Status
+- **Aprovado pelo Felipe (27/09), com 2 ajustes que viram regra para todos os assuntos:**
+  1. nada de card "CONSIGO…" parado no começo: o objetivo é falado por cima da ação e o card fica só no FIM; os primeiros 3 s mudam de vídeo para vídeo;
+  2. o V1 ensina 1 coisa só (o "good night" saiu do V1 e ficou só no V3, como reconhecimento).
+- **Bocejo do Lazy = /iː/** e a continuidade dos V2 entre assuntos: seguem como propostos, salvo ajuste do Felipe.
+- **Assuntos novos: PAUSADOS.** Próximo passo: teste cego de voz → protótipo do assunto 1.
