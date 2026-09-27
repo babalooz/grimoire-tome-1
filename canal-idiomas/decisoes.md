@@ -34,3 +34,11 @@ Regras comuns dos A/B: métricas do TikTok Studio 72 h após postar; mínimo 5 v
   4. Nenhuma regra dispara → mantém a grade atual.
   5. O freio automático tem prioridade sobre tudo.
 - **Pré-requisito:** o E14 (25/10) promete o E15 → roteirizar o Cap. 4 (E15–19) antes de 25/10.
+
+### Decisões de 27/09 (Claude, sem aprovação humana — regra da fábrica autônoma)
+| Data | Decisão | Evidência | Teste? |
+|---|---|---|---|
+| 2026-09-27 | REPITA: pausa depois de cada cartão sobe de ~0,6 s para 1,5 s (+0,3 s por palavra além de 2), regra no motor (`src/lesson/timeline.ts`, `repitaHold`) | Shadowing exige pausa ≥ duração da fala + tempo de reação; 0,6 s não dá para repetir nem "good morning" (≈0,8 s de fala). Custo: +4 a 8 s por episódio, todos seguem ≤ 140 s | Sim · até 02/11 · se a retenção cair > 10% no trecho de cartões (curva do YouTube) versus os exercícios vizinhos, voltar para 1,0 s |
+| 2026-09-27 | Hospedagem dos vídeos: branch órfão `midia` no repo público + jsDelivr fixado no commit | Custo zero, sem conta nova; jsDelivr serve `video/mp4` (raw do GitHub serve `application/octet-stream`); testado 27/09 com HTTP 200 | Não (troca só se o Buffer recusar a URL) |
+| 2026-09-27 | Compressão crf 26 no render | E01 com crf 22 = 18,2 MB, perto do limite de 20 MB do jsDelivr; desenho chapado não perde qualidade visível | Não |
+| 2026-09-27 | Portão com juiz em 2 modos (API ou o próprio Claude da rotina) | API da Anthropic sem acesso nesta nuvem (401); a rotina de produção já é Claude — custo zero extra | Não |

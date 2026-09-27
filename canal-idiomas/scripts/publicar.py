@@ -12,24 +12,26 @@ Uso (a partir de canal-idiomas/):
       Monta os posts do dia a partir de config/grade.json e mostra o que seria enviado. Não envia nada.
   python3 scripts/publicar.py --data 2026-10-12
       Agenda os posts do dia (mode=customScheduled, schedulingType=automatic, horário da grade em BRT).
+  python3 scripts/publicar.py --teste-rascunho out/<id>.mp4
+      Teste real SEM publicar: cria rascunho no YouTube e no TikTok com o vídeo, mostra se carregou e apaga.
 
 Um post só é enviado se TUDO for verdade (docs/plano-de-acao.md §4):
   data >= 2026-10-12 · acesso ao Buffer OK (--listar) · MP4 existe · portão aprovou (out/<arquivo>.portao.json com "aprovado": true)
-  · URL pública do vídeo (Cloudinary via CLOUDINARY_URL, ou --url-base) · canal da rede conectado no Buffer.
+  · canal da rede conectado no Buffer. O vídeo é hospedado no branch órfão "midia" (repo público) e servido pelo jsDelivr.
 Se algo faltar, o post vai para fila/<data>_<rede>_<faixa>_<episodio>.json com o motivo. Arquivo FREIO existe = não faz nada.
 Enviado com sucesso -> linha nova em publicados.csv.
 """
 import argparse
 import csv
 import datetime as dt
-import hashlib
 import json
 import os
+import shutil
+import subprocess
+import tempfile
 import sys
-import time
 import urllib.error
 import urllib.request
-import uuid
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -126,57 +128,77 @@ def canal_id(rede: str) -> str | None:
     return None
 
 
-# ---------------------------------------------------------------- hospedagem do vídeo (URL pública e estável)
-def subir_cloudinary(mp4: Path) -> str:
-    """Upload assinado para o Cloudinary (CLOUDINARY_URL=cloudinary://KEY:SECRET@CLOUD). URL de entrega pública."""
-    cred = os.environ["CLOUDINARY_URL"].split("://", 1)[1]
-    chave, resto = cred.split(":", 1)
-    segredo, nuvem = resto.split("@", 1)
-    public_id = f"capyfala/{mp4.stem}"
-    ts = str(int(time.time()))
-    assinatura = hashlib.sha1(f"overwrite=true&public_id={public_id}&timestamp={ts}{segredo}".encode()).hexdigest()
-    campos = {"public_id": public_id, "timestamp": ts, "overwrite": "true", "api_key": chave, "signature": assinatura}
-    limite = uuid.uuid4().hex
-    corpo = b""
-    for k, v in campos.items():
-        corpo += f"--{limite}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode()
-    corpo += (f"--{limite}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{mp4.name}\"\r\n"
-              "Content-Type: video/mp4\r\n\r\n").encode() + mp4.read_bytes() + f"\r\n--{limite}--\r\n".encode()
-    req = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{nuvem}/video/upload", data=corpo, method="POST",
-                                 headers={"Content-Type": f"multipart/form-data; boundary={limite}"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return json.loads(r.read())["secure_url"]
+# ---------------------------------------------------------------- hospedagem do vídeo (branch órfão "midia")
+# O repo é público. Cada publicação reescreve o branch "midia" como 1 commit órfão só com os vídeos ainda úteis
+# (novos + publicados há menos de MIDIA_DIAS dias): o histórico não cresce e o GitHub descarta os blobs antigos.
+# URL: jsDelivr fixado no SHA do commit (serve Content-Type video/mp4 e não sofre cache de branch);
+# se o arquivo passar do limite do jsDelivr, usa raw.githubusercontent.com (serve application/octet-stream).
+REPO = "babalooz/grimoire-tome-1"
+MIDIA_DIAS = 7
+JSDELIVR_MAX = 20 * 1024 * 1024
+GIT_ROOT = ROOT.parent
 
 
-def subir_cloudinary_sem_segredo(mp4: Path) -> str:
-    """Upload com "upload preset" NÃO assinado: só nome da nuvem + nome do preset (nenhum segredo na sessão).
-    Variáveis: CLOUDINARY_CLOUD e CLOUDINARY_PRESET (preset unsigned, pasta capyfala, só vídeo)."""
-    campos = {"upload_preset": os.environ["CLOUDINARY_PRESET"], "public_id": mp4.stem}
-    limite = uuid.uuid4().hex
-    corpo = b""
-    for k, v in campos.items():
-        corpo += f"--{limite}\r\nContent-Disposition: form-data; name=\"{k}\"\r\n\r\n{v}\r\n".encode()
-    corpo += (f"--{limite}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{mp4.name}\"\r\n"
-              "Content-Type: video/mp4\r\n\r\n").encode() + mp4.read_bytes() + f"\r\n--{limite}--\r\n".encode()
-    req = urllib.request.Request(f"https://api.cloudinary.com/v1_1/{os.environ['CLOUDINARY_CLOUD']}/video/upload",
-                                 data=corpo, method="POST",
-                                 headers={"Content-Type": f"multipart/form-data; boundary={limite}"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        return json.loads(r.read())["secure_url"]
+def _git(*args: str, cwd: Path = GIT_ROOT) -> str:
+    return subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True, text=True).stdout.strip()
 
 
-def tem_hospedagem() -> bool:
-    return bool(os.environ.get("CLOUDINARY_URL") or (os.environ.get("CLOUDINARY_CLOUD") and os.environ.get("CLOUDINARY_PRESET")))
+def midia_manter(hoje: dt.date) -> set[str]:
+    """Arquivos que continuam no branch: publicados há menos de MIDIA_DIAS dias."""
+    if not PUBLICADOS.exists():
+        return set()
+    manter = set()
+    for row in csv.DictReader(PUBLICADOS.open()):
+        if row.get("arquivo") and (hoje - dt.date.fromisoformat(row["data"])).days < MIDIA_DIAS:
+            manter.add(row["arquivo"])
+    return manter
 
 
-def url_publica(mp4: Path, url_base: str | None) -> str | None:
-    if url_base:
-        return url_base.rstrip("/") + "/" + mp4.name
-    if os.environ.get("CLOUDINARY_CLOUD") and os.environ.get("CLOUDINARY_PRESET"):
-        return subir_cloudinary_sem_segredo(mp4)
-    if os.environ.get("CLOUDINARY_URL"):
-        return subir_cloudinary(mp4)
-    return None
+def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
+    """Sobe os MP4 para o branch midia e devolve {nome: url pública}."""
+    tmp = Path(tempfile.mkdtemp(prefix="midia-"))
+    wt = tmp / "wt"
+    antigos = tmp / "antigos"
+    antigos.mkdir()
+    manter = midia_manter(hoje) - {m.name for m in mp4s}
+    try:
+        _git("fetch", "-q", "origin", "midia")
+        for nome in manter:  # recupera do branch atual os vídeos que ainda precisam ficar no ar
+            try:
+                blob = subprocess.run(["git", "show", f"origin/midia:{nome}"], cwd=GIT_ROOT, check=True,
+                                      capture_output=True).stdout
+                (antigos / nome).write_bytes(blob)
+            except subprocess.CalledProcessError:
+                pass
+    except subprocess.CalledProcessError:
+        pass  # branch ainda não existe
+    _git("worktree", "add", "-q", "--detach", str(wt))
+    try:
+        _git("checkout", "-q", "--orphan", "midia-novo", cwd=wt)
+        _git("rm", "-rqf", "--cached", ".", cwd=wt)
+        for f in wt.iterdir():
+            if f.name != ".git":
+                shutil.rmtree(f) if f.is_dir() else f.unlink()
+        (wt / "README.md").write_text("Vídeos temporários do CapyFala para o Buffer buscar. Branch reescrito a cada "
+                                      f"publicação (scripts/publicar.py); vídeos saem {MIDIA_DIAS} dias depois de publicados.\n")
+        for f in list(antigos.iterdir()) + list(mp4s):
+            shutil.copy2(f, wt / f.name)
+        _git("add", "-A", cwd=wt)
+        _git("-c", "user.name=CapyFala", "-c", "user.email=capyfala@users.noreply.github.com",
+             "commit", "-qm", f"midia {hoje.isoformat()}", cwd=wt)
+        sha = _git("rev-parse", "HEAD", cwd=wt)
+        _git("push", "-q", "-f", "origin", "HEAD:midia", cwd=wt)
+    finally:
+        _git("worktree", "remove", "--force", str(wt))
+        subprocess.run(["git", "branch", "-D", "midia-novo"], cwd=GIT_ROOT, capture_output=True)
+        shutil.rmtree(tmp, ignore_errors=True)
+    urls = {}
+    for m in mp4s:
+        if m.stat().st_size <= JSDELIVR_MAX:
+            urls[m.name] = f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/{m.name}"
+        else:
+            urls[m.name] = f"https://raw.githubusercontent.com/{REPO}/{sha}/{m.name}"
+    return urls
 
 
 # ---------------------------------------------------------------- montagem dos posts
@@ -232,30 +254,32 @@ def para_fila(dia: str, p: dict, motivo: list[str], extra: dict) -> None:
     print(f"  FILA {p['hora']} {p['rede']:9} {p['faixa']:8} {p['episodio']}: {'; '.join(motivo)}")
 
 
-def registrar(dia: str, p: dict, post: dict) -> None:
-    novo = not PUBLICADOS.exists()
+CAMPOS_PUB = ["data", "hora", "rede", "faixa", "episodio", "corte", "post_id", "url", "status", "arquivo", "midia_url"]
+
+
+def registrar(dia: str, p: dict, post: dict, arquivo: str, midia_url: str) -> None:
+    novo = not PUBLICADOS.exists() or not PUBLICADOS.read_text().strip()
     with PUBLICADOS.open("a", newline="") as f:
         w = csv.writer(f)
         if novo:
-            w.writerow(["data", "hora", "rede", "faixa", "episodio", "corte", "post_id", "url", "status"])
+            w.writerow(CAMPOS_PUB)
         w.writerow([dia, p["hora"], p["rede"], p["faixa"], p["episodio"], p.get("corte", ""), post["id"], "",
-                    post.get("status", "scheduled")])
+                    post.get("status", "scheduled"), arquivo, midia_url])
 
 
-def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
+def publicar_dia(dia: dt.date, dry: bool) -> int:
     grade = {g["data"]: g for g in json.loads(GRADE.read_text())["grade"]}
     if dia.isoformat() not in grade:
         print(f"{dia}: sem posts na grade (config/grade.json).")
         return 0
     eps = episodios()
-    enviados = 0
     acesso, acesso_msg = acesso_ok()
+    prontos = []  # (post da grade, mp4, entrada GraphQL)
     for p in grade[dia.isoformat()]["posts"]:
         if p["faixa"] == "longo":
             para_fila(dia.isoformat(), p, ["vídeo longo: sem render nem publicador ainda"], {})
             continue
         ep = eps.get(p["episodio"])
-        motivo = []
         if ep is None:
             para_fila(dia.isoformat(), p, [f"episódio {p['episodio']} não encontrado em episodes/"], {})
             continue
@@ -263,6 +287,7 @@ def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
         t = textos(ep, p)
         hh, mm = map(int, p["hora"].split(":"))
         due = dt.datetime(dia.year, dia.month, dia.day, hh, mm, tzinfo=BRT).astimezone(dt.timezone.utc)
+        motivo = []
         if dia < INICIO:
             motivo.append(f"antes de {INICIO}")
         if not acesso:
@@ -271,18 +296,16 @@ def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
             motivo.append(f"MP4 não renderizado ({mp4.relative_to(ROOT)})")
         portao = mp4.with_suffix(".portao.json")
         if not (portao.exists() and json.loads(portao.read_text()).get("aprovado") is True):
-            motivo.append("portão não aprovou (scripts/portao.py ainda não existe)")
+            motivo.append("portão não aprovou (rode scripts/portao.py)")
         cid = canal_id(p["rede"])
         if not cid:
-            motivo.append(f"canal {p['rede']} não conectado/listado (rode --listar)")
+            motivo.append(f"canal {p['rede']} não conectado no Buffer")
         if due <= dt.datetime.now(dt.timezone.utc):
             motivo.append("horário já passou")
-        if not tem_hospedagem() and not url_base:
-            motivo.append("sem hospedagem pública do vídeo (CLOUDINARY_CLOUD + CLOUDINARY_PRESET, ou --url-base)")
         entrada = {"input": {"channelId": cid or "?", "text": t["texto"], "schedulingType": "automatic",
                              "mode": "customScheduled", "dueAt": due.isoformat().replace("+00:00", "Z"),
                              "aiAssisted": True, "metadata": metadata(p["rede"], t),
-                             "assets": [{"video": {"url": "<url pública do mp4>", "metadata": {"thumbnailOffset": 0}}}]}}
+                             "assets": [{"video": {"url": "<url do branch midia>", "metadata": {"thumbnailOffset": 0}}}]}}
         if dry:
             print(f"\n[dry-run] {p['hora']} {p['rede']} {p['faixa']} {p['episodio']} -> {mp4.name}")
             print("  bloqueios: " + ("; ".join(motivo) or "nenhum"))
@@ -291,15 +314,49 @@ def publicar_dia(dia: dt.date, dry: bool, url_base: str | None) -> int:
         if motivo:
             para_fila(dia.isoformat(), p, motivo, {"titulo": t["titulo"], "texto": t["texto"]})
             continue
-        entrada["input"]["assets"][0]["video"]["url"] = url_publica(mp4, url_base)
+        prontos.append((p, mp4, entrada))
+    if dry or not prontos:
+        return 0
+    urls = hospedar(sorted({m for _, m, _ in prontos}), dia)
+    enviados = 0
+    for p, mp4, entrada in prontos:
+        entrada["input"]["assets"][0]["video"]["url"] = urls[mp4.name]
         r = gql(M_POST, entrada)["createPost"]
         if "post" not in r:
-            para_fila(dia.isoformat(), p, [f"Buffer recusou: {r.get('message')}"], {"titulo": t["titulo"]})
+            para_fila(dia.isoformat(), p, [f"Buffer recusou: {r.get('message')}"], {"url": urls[mp4.name]})
             continue
-        registrar(dia.isoformat(), p, r["post"])
+        registrar(dia.isoformat(), p, r["post"], mp4.name, urls[mp4.name])
         enviados += 1
         print(f"  OK   {p['hora']} {p['rede']:9} {p['faixa']:8} {p['episodio']} -> post {r['post']['id']}")
     return enviados
+
+
+M_DRAFT = """mutation P($input: CreatePostInput!) { createPost(input: $input) {
+  ... on PostActionSuccess { post { id status assets { mimeType source thumbnail type } } }
+  ... on MutationError { message } } }"""
+M_DELETE = """mutation D($input: DeletePostInput!) { deletePost(input: $input) {
+  ... on DeletePostSuccess { id } ... on VoidMutationError { message } } }"""
+
+
+def teste_rascunho(mp4: Path) -> None:
+    """Teste real sem publicar: hospeda o MP4, cria RASCUNHO no YouTube e no TikTok, mostra se o vídeo carregou, apaga."""
+    url = hospedar([mp4], dt.datetime.now(BRT).date())[mp4.name]
+    print(f"vídeo hospedado: {url}")
+    for rede in ("youtube", "tiktok"):
+        t = {"titulo": "TESTE rascunho CapyFala (apagar)", "texto": "TESTE rascunho CapyFala (apagar)"}
+        meta = metadata(rede, t)
+        if rede == "youtube":
+            meta["youtube"]["privacy"] = "private"
+        inp = {"channelId": canal_id(rede), "text": t["texto"], "schedulingType": "automatic", "mode": "addToQueue",
+               "saveToDraft": True, "metadata": meta, "assets": [{"video": {"url": url}}]}
+        r = gql(M_DRAFT, {"input": inp})["createPost"]
+        if "post" not in r:
+            print(f"{rede}: RECUSADO -> {r.get('message')}")
+            continue
+        post = r["post"]
+        print(f"{rede}: rascunho {post['id']} status={post['status']} assets={json.dumps(post['assets'], ensure_ascii=False)}")
+        d = gql(M_DELETE, {"input": {"id": post["id"]}})["deletePost"]
+        print(f"{rede}: apagado -> {d}")
 
 
 def main() -> None:
@@ -307,7 +364,7 @@ def main() -> None:
     ap.add_argument("--listar", action="store_true", help="só leitura: organizações e canais do Buffer")
     ap.add_argument("--data", help="AAAA-MM-DD (padrão: hoje em BRT)")
     ap.add_argument("--dry-run", action="store_true", help="mostra os posts do dia sem enviar nada")
-    ap.add_argument("--url-base", help="URL pública onde os MP4 já estão hospedados (alternativa ao Cloudinary)")
+    ap.add_argument("--teste-rascunho", metavar="MP4", help="teste real sem publicar: rascunho no Buffer + apaga")
     args = ap.parse_args()
 
     if (ROOT / "FREIO").exists():
@@ -318,7 +375,10 @@ def main() -> None:
         print(("OK: " if ok else "FALHOU: ") + msg)
         sys.exit(0 if ok else 1)
     dia = dt.date.fromisoformat(args.data) if args.data else dt.datetime.now(BRT).date()
-    n = publicar_dia(dia, args.dry_run, args.url_base)
+    if args.teste_rascunho:
+        teste_rascunho(Path(args.teste_rascunho).resolve())
+        return
+    n = publicar_dia(dia, args.dry_run)
     if not args.dry_run:
         print(f"{dia}: {n} post(s) agendado(s) no Buffer.")
 

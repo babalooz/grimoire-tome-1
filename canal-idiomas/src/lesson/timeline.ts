@@ -137,6 +137,11 @@ export const validateLicao = (p: LicaoProps) => {
   });
 };
 
+// Tempo para o espectador repetir em voz alta depois de cada cartão com `repita` (decisão 27/09, canal-idiomas/decisoes.md):
+// shadowing precisa de pausa ≥ duração da fala + tempo de reação; 1,5 s cobre palavra/chunk curto, +0,3 s por palavra extra.
+export const REPITA_MIN = 1.5;
+export const repitaHold = (text: string) => REPITA_MIN + 0.3 * Math.max(0, text.trim().split(/\s+/).length - 2);
+
 export const buildSchedule = (p: LicaoProps, fps: number): Step[] => {
   validateLicao(p);
   const steps: Step[] = [];
@@ -151,7 +156,9 @@ export const buildSchedule = (p: LicaoProps, fps: number): Step[] => {
       if (!t) throw new Error(`sem áudio para a fala: ${lineKey(passo)} (rode scripts/tts.py)`);
       audio = t.audio;
       audioFrames = Math.ceil(t.duration * fps);
-      body = Math.max(audioFrames + Math.round(GAP * fps), onScreen(phase, passo) ? 0 : Math.ceil(minShow(passo.text) * fps)) + Math.round((passo.hold ?? 0) * fps);
+      const exObj = phase === "licao" ? p.licao.exercicios[ex] : undefined;
+      const hold = exObj?.repita && passo.evento === "cartao" ? Math.max(passo.hold ?? 0, repitaHold(passo.text)) : passo.hold ?? 0;
+      body = Math.max(audioFrames + Math.round(GAP * fps), onScreen(phase, passo) ? 0 : Math.ceil(minShow(passo.text) * fps)) + Math.round(hold * fps);
     } else {
       pauseFrames = Math.round(passo.s * fps);
       body = pauseFrames + Math.round((passo.pausa === "respiro" ? 0 : GAP * 0.75) * fps);
