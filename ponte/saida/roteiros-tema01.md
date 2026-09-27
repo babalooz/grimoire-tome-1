@@ -1,10 +1,10 @@
 # CapyFala · T1 · ASSUNTO 1 · "Hi! I'm Capy." · 3 vídeos (papel, sem vídeo)
 
-Versão 5 · 27/09/2026 · padrão fechado com o Felipe:
+Versão 6 · 27/09/2026 · aprovada pelo Felipe (v5), com o V2 refeito: o hype tem que puxar o inglês · padrão:
 - **cada assunto vira 3 vídeos, todos com ≥ 61 s** (entram no Creator Rewards e ensinam com calma); cada um gira em volta de um
   exercício feito para vídeo (pausa → o aluno fala em voz alta ou na cabeça → resposta logo depois);
 - **Vídeo 1, APRENDER:** aula no café + repita comigo (em coro → sozinho);
-- **Vídeo 2, PRATICAR:** STORYTELLING com o hype. A Dona Jaca liga do Brasil comentando o assunto em alta, a Capy usa a frase
+- **Vídeo 2, PRATICAR:** STORYTELLING com hype do mundo que fala inglês (filme/série gringa, show internacional, NBA/NFL, trend gringa, turista, jogo, Oscar/Grammy, Halloween, Thanksgiving, Black Friday). Quem traz é quem faz sentido (Poppy, cliente gringo; a Dona Jaca só quando couber). A Capy usa a frase
   dentro da história, o "você é a Capy" acontece no enredo e o fim tem gancho verdadeiro para o próximo capítulo;
 - **Vídeo 3, FIXAR:** ouça e reconheça + personalize;
 - **o ALCANCE fica com os CORTES curtos (5–28 s)** tirados dos 3 vídeos, sem produção nova.
@@ -88,44 +88,58 @@ Nada foi gravado, renderizado ou sintetizado.
 
 ---
 
-## VÍDEO 2 · PRATICAR · STORYTELLING COM O HYPE · ≥ 61 s · "Mãe no telefone, cliente no balcão" · ~68 s
+## VÍDEO 2 · PRATICAR · STORYTELLING COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "a fila da estreia" · ~68 s · parte 2/3
 
-**O que é:** um capítulo da história. A Dona Jaca liga do Brasil comentando o assunto em alta da semana, que vem do radar já filtrado. A Capy precisa usar a frase da aula dentro da história. O exercício "você é a Capy" acontece no meio do enredo, e o capítulo termina com um gancho verdadeiro para o próximo.
+**Regra do hype (Felipe, 27/09, v6):** o hype do V2 **tem que puxar o inglês**. Só entram assuntos ligados ao mundo anglófono:
+- estreia de filme ou série gringa;
+- show ou turnê de artista internacional no Brasil;
+- NBA ou NFL;
+- trend gringa do TikTok;
+- turista gringo;
+- lançamento de jogo;
+- Oscar ou Grammy;
+- Halloween, Thanksgiving, Black Friday.
 
-**Regras do hype:**
-- entra no cenário, na fala da Dona Jaca e no figurino;
-- **a frase-alvo nunca muda por causa dele;**
-- sem pessoa real, marca ou imagem de transmissão;
-- bloqueado em dia de eleição (aí usa o calendário ou um tema atemporal).
+**Quem traz o hype:** quem fizer mais sentido no enredo.
+- **Poppy:** gíria e trend.
+- **Cliente gringo no café.**
+- **Dona Jaca:** só quando fizer sentido.
 
-**Exemplo abaixo com o hype da semana 1 do calendário:** semifinal da Libertadores (14–15/10), sem citar time nem jogador reais. No vídeo, `[HYPE]` é trocado pelo item do radar semanal.
+**O que o hype não muda:** a frase-alvo. Ele muda o cenário, o figurino e o motivo da cena.
+
+**Sem:** imagem, trailer, áudio ou personagem da obra, pessoa real e marca.
+
+**Exemplo com o calendário da semana 1:** estreia de *Street Fighter* nos cinemas, em 15/10 (item "seguro" do `calendario.json`). O título aparece só em texto, sem imagem nem som do filme. No vídeo, o roteirista troca pelo hype anglófono da semana, vindo do radar.
+
+**Sem hype anglófono seguro na semana:** entra o reserva atemporal, um turista americano perdido que entra no café.
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | O celular da Capy vibra no balcão: "MÃE 📞". Texto: **"a mãe ligou no pior momento"** | toque de chamada | toque |
-| 2 | 2–6 s | Videochamada da Dona Jaca, de camisa de torcedora e com a TV ao fundo (desenhada, sem marca) | Dona Jaca PT: "Filha! Hoje tem jogo da semifinal! Aí nos Estados Unidos passa?" | filtro de telefone |
-| 3 | 6–9 s | A Capy, cochichando | Capy PT: "Mãe, eu tô no trabalho!" | — |
-| 4 | 9–11 s | Faixa no topo: **consigo cumprimentar e dizer meu nome, dentro de uma conversa de verdade** | — | — |
-| 5 | 11–14 s | Entra um cliente novo: um guaxinim de camisa de futebol genérica (figurante) | Cliente EN: "Hi!" | sino da porta |
-| 6 | 14–17 s | A Capy congela entre o celular e o cliente | Capy (pensa) PT: "Ele disse 'hi'. E agora? Minha mãe tá vendo." | — |
-| 7 | 17–20 s | A Dona Jaca, animada, pela câmera | Dona Jaca PT: "Filha, é torcedor! Fala com ele! Do jeito que você aprendeu!" | — |
-| 8 | 20–23 s | Lembrete rápido da aula (vapor no H) | Lazy (de canto) EN: ⭐ "Hi! I'm Lazy." | vapor |
-| 9 | 23–25 s | Tela: **"você é a Capy"**. O balão dela fica **vazio e piscando**. O cliente espera | Cliente EN: "Hi!" | — |
-| 10 | 25–28 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** (responda ao cliente) | trilha em zero |
-| 11 | 28–31 s | **Resposta:** o balão se preenche | Capy EN: ⭐ "Hi! I'm Capy." | vapor |
-| 12 | 31–34 s | O cliente sorri e aponta para a própria camisa | Cliente EN: "Hi, Capy!" | — |
-| 13 | 34–38 s | A Dona Jaca vibra na chamada | Dona Jaca PT: "Minha filha falou inglês com um torcedor gringo!" | — |
-| 14 | 38–41 s | O Hank, seco, entrega o café do cliente | Hank EN: "Hi." (para o cliente) | — |
-| 15 | 41–46 s | **2ª vez no enredo:** a Duda chega atrasada para ver o jogo com a Capy e se apresenta ao cliente | Duda EN: ⭐ "Hi! I'm Duda!" | — |
-| 16 | 46–49 s | O cliente olha para a Capy, que agora apresenta a si mesma de novo, mais solta | Capy EN: ⭐ "Hi! I'm Capy!" (natural, ~160 palavras/min) | vapor |
-| 17 | 49–53 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você falou com um cliente de verdade (quase)" + **consigo ✓** | Capy PT: "Mãe, eu falei. Ele entendeu." | acerto |
-| 18 | 53–58 s | O jogo começa na TV. O cliente se levanta para ir embora e acena. A Capy trava de novo: como se despede? | Capy (pensa) PT: "Espera... e como eu digo tchau?" | apito de início de jogo |
-| 19 | 58–64 s | **Gancho verdadeiro para o próximo capítulo:** congela na Capy de boca aberta. Texto: **"como a Capy se despede? no próximo assunto: Bye! See you!"** (verdadeiro: o assunto 2 já está na grade, 2 dias depois) | Dona Jaca PT: "Filha, e o tchau?!" | — |
-| 20 | 64–68 s | Card: "aula do assunto 1 no perfil · segue a Capy pra ver o próximo capítulo" | — | — |
+| 1 | 0–2 s | A Poppy entra no café segurando 2 ingressos (desenhados, sem marca). Texto: **"estreia de filme gringo = fila cheia de gringo"** | Poppy PT: "Capy! Pré-estreia hoje! Filme de luta gringo!" | — |
+| 2 | 2–5 s | A Capy, de avental | Capy PT: "Eu? No meio de um monte de americano?" | — |
+| 3 | 5–7 s | Faixa no topo: **consigo cumprimentar e dizer meu nome, numa fila de verdade** | — | — |
+| 4 | 7–10 s | Corte: fila do cinema à noite, luzes de letreiro (sem logo). Gente fantasiada de lutador genérico | Poppy PT: "Regra da fila: todo mundo se apresenta. É a trend." | burburinho |
+| 5 | 10–13 s | Um fã gringo (figurante: um guaxinim fantasiado de lutador) vira para trás | Fã EN: "Hi! I'm Rick!" | — |
+| 6 | 13–16 s | A Capy congela | Capy (pensa) PT: "Ele se apresentou. Eu sei isso. Eu aprendi isso." | — |
+| 7 | 16–19 s | O Lazy aparece na fila (inexplicavelmente, como sempre) e cochicha o lembrete | Lazy EN: ⭐ "Hi!... I'm... Lazy." | vapor no H |
+| 8 | 19–21 s | Tela: **"você é a Capy"**. O balão dela fica **vazio, piscando**. O fã espera | Fã EN: "Hi!" | — |
+| 9 | 21–24 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** (responda ao fã) | trilha em zero |
+| 10 | 24–27 s | **Resposta:** o balão se preenche | Capy EN: ⭐ "Hi! I'm Capy." | vapor |
+| 11 | 27–30 s | O fã faz um "high five" com a Capy | Fã EN: "Nice, Capy!" | tapa de mão |
+| 12 | 30–33 s | A Poppy grava tudo para a trend (celular com o ícone "REC" genérico) | Poppy EN: ⭐ "Hi! I'm Poppy!" (para a câmera dela, nativa, ~160 palavras/min) | — |
+| 13 | 33–37 s | Mais 2 fãs se apresentam em sequência, rápido, como "trend" (só o "Hi! I'm…", legenda EN) | Fã 2 EN: "Hi! I'm Jen!" · Fã 3 EN: "Hi! I'm Sam!" | — |
+| 14 | 37–40 s | A fila olha para a Capy, esperando a vez dela na "trend" | ⏸ 0,8 s (reação) | — |
+| 15 | 40–44 s | A Capy, agora solta, para a câmera da Poppy | Capy EN: ⭐ "Hi! I'm Capy!" (mais natural) | vapor |
+| 16 | 44–48 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você se apresentou na fila da estreia" + **consigo ✓** | Capy PT: "Eu me apresentei pra uma fila inteira de gringo." | acerto |
+| 17 | 48–54 s | As portas do cinema abrem. O Rick acena e entra. A Capy trava de novo | Capy (pensa) PT: "Espera... e como eu me despeço dele depois?" | porta abrindo |
+| 18 | 54–61 s | **Gancho verdadeiro para o próximo capítulo:** congela na Capy. Texto: **"como a Capy se despede? próximo assunto: Bye! See you!"** (verdadeiro: o assunto 2 já está na grade, 1 dia depois) | Poppy PT: "E aí, vai dar tchau como?" | — |
+| 19 | 61–68 s | Card: "aula do assunto 1 no perfil · segue a Capy pra ver o próximo capítulo" | — | — |
 
-**Frase-alvo:** 4× no áudio (Lazy, Capy ×2, Duda) + 1× o aluno.
+**Frase-alvo:** 4× no áudio (Lazy, Capy ×2, Poppy) + 1× o aluno.
+**Variações que reforçam o padrão:** "Hi! I'm Rick/Jen/Sam!" → **7 exposições do bloco "Hi! I'm…"**.
+**Por que funciona como hype:** estreia gringa = fila de fã falando inglês. É o lugar real onde o brasileiro ouve "Hi! I'm…".
 
-**Se não houver hype seguro na semana:** a Dona Jaca liga por um item do calendário (ex.: Dia do Professor) ou por um motivo atemporal ("tô com saudade, cadê você?"). O enredo continua igual.
+**Reserva atemporal (semana sem hype anglófono seguro):** o mesmo enredo, trocando a fila por um turista americano perdido no café, que se apresenta ao Hank e depois à Capy. Os mesmos exercícios, na mesma ordem.
 
 ---
 
@@ -165,7 +179,7 @@ Nada foi gravado, renderizado ou sintetizado.
 
 ## Soma do assunto 1 (todos com ≥ 61 s)
 
-| | V1 APRENDER (aula) | V2 PRATICAR (storytelling + hype) | V3 FIXAR | Total |
+| | V1 APRENDER (aula) | V2 PRATICAR (storytelling + hype anglófono) | V3 FIXAR | Total |
 |---|---|---|---|---|
 | Duração | ~65 s | ~68 s | ~66 s | ~3 min 20 s |
 | Creator Rewards do TikTok (≥ 61 s) | ✓ | ✓ | ✓ | 3 de 3 |
@@ -179,16 +193,16 @@ Nada foi gravado, renderizado ou sintetizado.
 |---|---|---|---|---|
 | C1 | V1, cenas 1–9 + 16–18 (o medo → a Duda → o Lazy → a Capy consegue) | ~28 s | "você já sabe essa. sério." | "aula completa no perfil · segue a Capy" |
 | C2 | V1, cenas 9–15 (o H de vapor + repete comigo + "deu pra entender") | ~20 s | "o H que o brasileiro engole" | idem |
-| C3 | V2, cenas 1–3 + 5–13 (a mãe liga, o torcedor, a Capy responde) | ~25 s | "a mãe ligou no pior momento" | "o capítulo inteiro tá no perfil" |
+| C3 | V2, cenas 4–15 (a fila da estreia, a trend, a Capy se apresenta) | ~26 s | "estreia de filme gringo = fila cheia de gringo" | "o capítulo inteiro tá no perfil" |
 | C4 | V3, cenas 1–7 ("qual tem o H?") | ~18 s | "uma tem o H. a outra não." | "resposta e aula no perfil" |
-| C5 | V2, cena 18–19 (a Capy trava no tchau) | ~6 s | "e como diz tchau?" | "próximo assunto no perfil" |
+| C5 | V2, cenas 17–18 (a Capy trava no tchau) | ~7 s | "e como diz tchau?" | "próximo assunto no perfil" |
 
 **Compilação semanal no YouTube (domingo):** os 6 vídeos da semana (2 assuntos × 3), cerca de 6–7 min, com capítulos. É vídeo longo, então paga mais que Short.
 
 ---
 
-## Para o Felipe decidir antes do assunto 2
-1. **Exercícios do assunto 1:** repita comigo / você é a Capy / ouça e reconheça o H + personalize. Servem?
-2. **O "ouça e reconheça" com a versão sem H** (dita 1 vez, pelo Lazy, sem vergonha) pode ficar? Se não, troco por "qual nome você ouviu: Duda ou Poppy?".
-3. **Selo dos vídeos 2 e 3:** "T1 E01 · capítulo" / "T1 E01 · fixar"? O figurante do V2 (guaxinim torcedor) pode ficar, ou o cliente deve ser alguém do elenco?
-4. **O ícone do /h/ = vapor de café**: aprovado como o 1º símbolo do nosso Sound Bank?
+## Status
+- **Aprovado pelo Felipe (v5):** exercícios, versão sem H no "qual tem o H?", H = vapor de café, ~15 posts/semana.
+- **Selo:** "T1 E01", "T1 E01 · parte 2/3" e "T1 E01 · parte 3/3".
+- **v6:** V2 refeito com hype anglófono.
+- **Pergunta aberta:** fãs e turistas gringos serão figurantes de silhueta simples ou bichos genéricos (o guaxinim Rick)? Nenhum deles entra no elenco fixo.
