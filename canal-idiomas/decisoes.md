@@ -54,3 +54,9 @@ Regras comuns dos A/B: métricas do TikTok Studio 72 h após postar; mínimo 5 v
 | 2026-09-27 | A/B visuais: legenda PT só no alvo × em toda fala; cena limpa × cheia; gesto+metáfora × ícone | didatica-visual.md §5 (cortes 10%, 15%, 20% relativos) | Sim · 1 por vez no mesmo quadro |
 | 2026-09-27 | Voz: teste cego Gemini 3.8 / ElevenLabs v3 / Azure (Kokoro como âncora) antes de trocar | voz-audio-didatico.md §4 (pronúncia 100% nos alvos, MOS ≥ 4, consistência ≥ 0,80) | Sim · custo < US$5 |
 | 2026-09-27 | Marca CapyFala e personagem Capy mantidas apesar do app Comigo (capivara "Capy") | INPI: CapyFala 0 registros; decisão do Felipe | Não · bio sem "trava na hora de falar" |
+
+### Rotina diária de análise (23:00, automática — sem aprovação humana)
+
+| Data | Resultado |
+|---|---|
+| 2026-09-27 | **Sem dados ainda.** `canal-idiomas/publicados.csv` sem nenhuma linha (só cabeçalho); `metricas/posts.csv` e `metricas/resumo.json` vazios. Motivo: formato ainda não aprovado pelo Felipe (regra 27/09 — sem render/TTS/protótipo antes da decisão dele), então nenhum vídeo foi publicado. Rodada barata: não chamei a API do Buffer (nada com 48h de publicado), nenhuma decisão tomada, freio não avaliado (nada a avaliar). Próxima rodada repete o mesmo teste. |
