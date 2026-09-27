@@ -37,6 +37,9 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Branch `ponte`: pedidos em `ponte/PEDIDOS.md` (push no branch ponte), respostas em `ponte/RESPOSTAS.md`
   (`git fetch origin ponte && git show origin/ponte:ponte/RESPOSTAS.md`). O Claude local tem navegador, Drive, Railway, arquivos.
   Não faz login/senha/código/chave nem publica/altera conta sem o Felipe no teclado. Ver ponte/README.md.
+- **REGRA DO FELIPE (vale sempre): a nuvem é ATIVA.** Ao terminar QUALQUER tarefa/bloco de trabalho, ou ao travar,
+  acrescentar 1 linha em `ponte/AVISOS.md` no branch `ponte` e dar push: `data-hora UTC · o que terminou · resultado ·
+  próximo passo`. Comando: `bash canal-idiomas/scripts/aviso.sh "o que" "resultado" "próximo passo"`. O PC vigia a cada 60 s.
 - YouTube: canal existente "Felipe Pazini" (UCE46GzcE1XXYcn0y1O0i3JA), 3 Shorts antigos de futebol a tornar privados.
 
 ## Estrutura de série (decisão do Felipe, 26/09)
