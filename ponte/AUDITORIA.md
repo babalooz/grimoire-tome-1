@@ -1,0 +1,8 @@
+# Auditoria do PC (branch midia)
+
+- `licao-s01e01-hi-hello-esquete-A.mp4` · midia 0df1ac7 · 6.8 s · -14.0 LUFS · pico -1.5 · mov 0.275 · ok
+- `licao-s01e01-hi-hello-esquete-B.mp4` · midia 0df1ac7 · 9.5 s · -14.0 LUFS · pico -1.5 · mov 0.318 · ok
+- `licao-s01e01-hi-hello.mp4` · midia 0df1ac7 · 69.3 s · -14.0 LUFS · pico -1.2 · mov 0.278 · ok
+- `licao-s01e02-please-thank-you.mp4` · midia 0df1ac7 · 70.6 s · -14.0 LUFS · pico -1.1 · mov 0.295 · ok
+- `licao-s01e03-im-capy-esquete-A.mp4` · midia 0df1ac7 · 11.4 s · -14.0 LUFS · pico -1.5 · mov 0.285 · ok
+- `licao-s01e03-im-capy.mp4` · midia 0df1ac7 · 75.8 s · -14.0 LUFS · pico -1.3 · mov 0.287 · ok
