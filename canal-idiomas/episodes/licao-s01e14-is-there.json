@@ -396,7 +396,7 @@
         "react": {
           "capi": "panic"
         },
-        "text": "Yes. Near the bank. And tomorrow, be here at six."
+        "text": "Yes. Near the bank."
       },
       {
         "speaker": "capi",
@@ -404,11 +404,10 @@
         "emotion": "happy",
         "card": true,
         "hold": 1.0,
-        "text": "Seis? Que horas? Comenta se tem mercado perto de você."
+        "text": "Pertinho. Comenta se tem mercado perto de você."
       }
     ]
   },
-  "nextEpisodeId": "licao-s01e15-what-time",
   "esquetes": [
     {
       "id": "A",
@@ -424,5 +423,6 @@
       "gancho": "Perguntei do mercado. Ganhei hora extra",
       "cta": "aula completa no EP 14"
     }
-  ]
+  ],
+  "nextEpisodeIdPendente": "licao-s01e15-what-time"
 }
