@@ -94,7 +94,11 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - **Foco (Felipe, 27/09): VIEWS e SEGUIDORES por vídeo.** Os 3 vídeos de cada assunto têm **≥ 61 s** (Creator Rewards; ensinar
   com calma): V1 APRENDER (aula), V2 PRATICAR = **STORYTELLING com o hype** (Dona Jaca liga do Brasil comentando o assunto em
   alta do radar filtrado; a Capy usa a frase na história; "você é a Capy" no enredo; gancho verdadeiro pro próximo capítulo),
-  V3 FIXAR. O ALCANCE fica com os **CORTES curtos (5–28 s)** tirados dos 3 (C1–C5) + 1 compilação longa semanal no YouTube com
+  V3 FIXAR. **Hype do V2 TEM que puxar o inglês (Felipe, 27/09):** só assuntos do mundo anglófono (filme/série gringa, show/turnê
+  internacional no Brasil, NBA/NFL, trend gringa do TikTok, turista gringo, lançamento de jogo, Oscar/Grammy, Halloween,
+  Thanksgiving, Black Friday); quem traz é quem faz sentido (Poppy = trend; cliente gringo; Dona Jaca só quando couber);
+  reserva atemporal = turista gringo no café. Selos: "T1 E0N", "parte 2/3", "parte 3/3". Assunto 1 v5 APROVADO (v6 = V2 novo).
+  O ALCANCE fica com os **CORTES curtos (5–28 s)** tirados dos 3 (C1–C5) + 1 compilação longa semanal no YouTube com
   capítulos. Grade: `docs/grade-t1.md` (2 assuntos/semana, ~15 posts/semana no TikTok; teste 3/semana nas semanas 3–4).
 
 ## Formato atual (27/09): SITCOM DO CAFÉ (passivo, sem interação)

@@ -5,7 +5,7 @@
 ## Longo × curto (decisão do Felipe, 27/09)
 - **Os 3 vídeos de cada assunto têm ≥ 61 s:**
   - V1 APRENDER (aula);
-  - V2 PRATICAR (storytelling com o hype, a Dona Jaca liga);
+  - V2 PRATICAR (storytelling com hype do mundo que fala inglês: filme/série gringa, show internacional, NBA/NFL, trend gringa, turista, Halloween, Black Friday…);
   - V3 FIXAR.
 
   Todos entram no Creator Rewards do TikTok.
@@ -72,4 +72,4 @@
 2. **`config/grade.json`:** refazer com esta grade (hoje ainda está com a do formato antigo).
 3. **Compilação com capítulos:** composição nova no Remotion que junta renders prontos e escreve os capítulos na descrição. É só código, sem cena nova.
 4. **Cortes C1–C5:** o mecanismo de cortar trechos já existe (`CafeEsquete`); falta marcar os trechos em cada roteiro.
-5. **Hype no V2:** o roteirista lê o radar semanal (já filtrado); em semana sem hype seguro, usa o calendário ou um motivo atemporal da Dona Jaca.
+5. **Hype no V2:** o roteirista lê o radar semanal (já filtrado) e usa SÓ hype anglófono; sem hype anglófono seguro, usa o reserva atemporal (turista gringo no café). O radar precisa marcar quais itens são do mundo que fala inglês.

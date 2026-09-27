@@ -133,7 +133,10 @@ REGRA_CONTEXTO = """Contexto de tendência (obrigatório):
 - Use o CONTEXTO abaixo como cenário, piada ou exemplo. Ele NUNCA troca a lição: erro, forma certa e frases em inglês
   do currículo ficam iguais. Cite o assunto, não a pessoa: nada de nome, rosto, voz ou bordão de pessoa real.
 - Nada de política, crime, tragédia, morte, religião, aposta ou conteúdo infantil (o radar já filtrou; na dúvida, ignore).
-- Se o contexto não couber naturalmente em 1 fala, use-o só no texto de tela/legenda. Forçar é pior que não usar."""
+- Se o contexto não couber naturalmente em 1 fala, use-o só no texto de tela/legenda. Forçar é pior que não usar.
+- V2 (storytelling): o hype TEM que puxar o inglês — só mundo anglófono (filme/série gringa, show ou turnê internacional no
+  Brasil, NBA/NFL, trend gringa do TikTok, turista gringo, lançamento de jogo, Oscar/Grammy, Halloween, Thanksgiving, Black
+  Friday). Futebol brasileiro, novela, BBB etc. NÃO servem. Sem hype anglófono seguro → reserva: turista gringo no café."""
 MAX_FALAS_CONTEXTO = 3  # episódio: no máximo 3 falas pt reescritas pelo contexto
 
 # ---------------------------------------------------------------- 3 roteiros-modelo (seção 7), limpos:
