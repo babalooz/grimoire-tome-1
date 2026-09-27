@@ -144,18 +144,22 @@ def _git(*args: str, cwd: Path = GIT_ROOT) -> str:
 
 
 def midia_manter(hoje: dt.date) -> set[str]:
-    """Arquivos que continuam no branch: publicados há menos de MIDIA_DIAS dias."""
-    if not PUBLICADOS.exists():
+    """Arquivos atuais do branch midia que continuam: tudo, menos os publicados há MIDIA_DIAS dias ou mais."""
+    try:
+        _git("fetch", "-q", "origin", "midia")
+        atuais = {n for n in _git("ls-tree", "--name-only", "origin/midia").splitlines() if n.endswith(".mp4")}
+    except subprocess.CalledProcessError:
         return set()
-    manter = set()
-    for row in csv.DictReader(PUBLICADOS.open()):
-        if row.get("arquivo") and (hoje - dt.date.fromisoformat(row["data"])).days < MIDIA_DIAS:
-            manter.add(row["arquivo"])
-    return manter
+    velhos = set()
+    if PUBLICADOS.exists():
+        for row in csv.DictReader(PUBLICADOS.open()):
+            if row.get("arquivo") and (hoje - dt.date.fromisoformat(row["data"])).days >= MIDIA_DIAS:
+                velhos.add(row["arquivo"])
+    return atuais - velhos
 
 
 def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
-    """Sobe os MP4 para o branch midia e devolve {nome: url pública}."""
+    """Sobe os MP4 para o branch midia (substitui os de mesmo nome) e devolve {nome: url pública} + "_commit"."""
     tmp = Path(tempfile.mkdtemp(prefix="midia-"))
     wt = tmp / "wt"
     antigos = tmp / "antigos"
@@ -198,6 +202,7 @@ def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
             urls[m.name] = f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/{m.name}"
         else:
             urls[m.name] = f"https://raw.githubusercontent.com/{REPO}/{sha}/{m.name}"
+    urls["_commit"] = sha
     return urls
 
 

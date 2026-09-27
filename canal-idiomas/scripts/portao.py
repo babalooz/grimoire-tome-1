@@ -28,6 +28,7 @@ from pathlib import Path
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 FFPROBE = ROOT / "node_modules/@remotion/compositor-linux-x64-gnu/ffprobe"
 FFMPEG = FFPROBE.parent / "ffmpeg"
 GANCHO_DIF_MIN = 0.10   # diferença visual média mínima entre o quadro 0 e o de 1 s (0–1); abaixo = gancho parado
@@ -254,6 +255,7 @@ def main() -> None:
     ap.add_argument("--pedido-juiz", action="store_true")
     ap.add_argument("--juiz", type=float, metavar="NOTA")
     ap.add_argument("--motivos", default="")
+    ap.add_argument("--sem-midia", action="store_true", help="não sobe os aprovados para o branch midia")
     args = ap.parse_args()
     ep = json.loads(Path(args.episodio).read_text())
 
@@ -284,6 +286,12 @@ def main() -> None:
         print(f"{status:9} {mp4.name} ({faixa}, {medidas.get('duracao', '?')} s, {medidas.get('lufs', '?')} LUFS, {nota})")
         for f in c1["falhas"]:
             print(f"   - {f}")
+    aprovados_mp4 = [m for m, _ in videos(ep) if m.with_suffix(".portao.json").exists()
+                     and json.loads(m.with_suffix(".portao.json").read_text()).get("aprovado")]
+    if aprovados_mp4 and not args.sem_midia:  # regra do PC: aprovado vai pro branch midia no mesmo passo
+        from publicar import hospedar
+        urls = hospedar(aprovados_mp4, dt.date.today())
+        print(f"midia: commit {urls['_commit'][:7]} · " + ", ".join(m.name for m in aprovados_mp4))
     if juiz is None:
         print("Camada 2 pendente: rode com --pedido-juiz, avalie e grave com --juiz <nota> --motivos \"a; b\".")
     elif juiz["nota"] < NOTA_MIN:
