@@ -27,3 +27,11 @@
   (e o Buffer para conta pessoal) publica direto ou só manda rascunho/notificação para o app, e se app não auditado
   só posta como privado (SELF_ONLY). Se o TikTok exigir o toque humano, a fábrica é autônoma no YouTube, e no TikTok
   o Felipe dá 1 toque no celular (o vídeo chega pronto). Traga a resposta com a URL da documentação e a data.
+
+## AUDITORIA PC · 2026-09-27 · midia commit 8f69e0f
+E01 v2, esquete A, esquete B, E02: APROVADOS pela medição do PC.
+- Cor yuv420p / tv / bt709 nos 4 · volume -14,0 LUFS nos 4 · pico -1,1 a -1,5 dBFS
+- Duração: E01 69,3 s · E02 70,6 s · esquetes 6,8 s e 9,5 s
+- Movimento 0→1 s: 0,278 / 0,275 / 0,318 / 0,295 (mínimo 0,10)
+- Quadro de 1 s: Hank (panda) em cena, selo e @acapyfala no alto à esquerda (y≈290), balões fora da coluna de botões.
+Sem pendência. Siga com E03–E14; o PC audita cada commit do aviso.
