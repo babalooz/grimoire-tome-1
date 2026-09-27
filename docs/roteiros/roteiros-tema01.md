@@ -1,133 +1,176 @@
-# CapyFala · T1 · TEMA 1 · "Hi! I'm Capy." · 1 aula com 3 exercícios (papel, sem vídeo)
+# CapyFala · T1 · ASSUNTO 1 · "Hi! I'm Capy." · 3 vídeos (papel, sem vídeo)
 
-Versão 2 · 27/09/2026. Refeita com a correção do Felipe: as "3 formas" são **3 maneiras de praticar dentro da mesma aula**, e não 3 vídeos. Cada exercício funciona sem tocar na tela: o vídeo faz uma pausa, o aluno responde em voz alta ou na cabeça, e a resposta aparece logo depois. É só texto para ler e ajustar. Nada foi gravado, renderizado ou sintetizado.
+Versão 3 · 27/09/2026 · padrão fechado com o Felipe:
+- **cada assunto vira 3 vídeos**, e cada vídeo gira em volta de um exercício diferente, feito para vídeo (pausa → o aluno fala em voz alta ou na cabeça → resposta logo depois);
+- **Vídeo 1, APRENDER:** cena + repita comigo;
+- **Vídeo 2, PRATICAR:** você é a Capy, ou complete falando;
+- **Vídeo 3, FIXAR:** ouça e reconheça + personalize.
 
-## De onde vem
+Nada foi gravado, renderizado ou sintetizado.
 
-**Tema:** tópico #1 do consenso Oxford/Cambridge, "Cumprimentar e se apresentar: Hello/Hi, I'm…" (posição 1,0 nos 4 livros). Fonte: `sequencia-oxford-cambridge.md` §3–4.
+**Base do assunto:**
+- **Origem:** tópico #1 do consenso Oxford/Cambridge, "Cumprimentar e se apresentar: Hello/Hi, I'm…" (posição 1,0 nos 4 livros; `sequencia-oxford-cambridge.md` §3–4).
+- **"Consigo…" (CEFR Companion Volume 2020, Pre-A1, Conversation, p. 73):** consigo cumprimentar alguém e dizer meu nome de um jeito simples.
+- **G + V + P (English File):**
+  - **G:** o bloco pronto "I'm + nome", sem explicar gramática.
+  - **V:** hi e hello.
+  - **P:** o **h soprado**.
+- **Som da vez (Sound Bank CapyFala, desenho nosso):** /h/ = **xícara de café soltando vapor**. Quando alguém diz o "h", sai uma nuvenzinha de vapor.
+- **Frase-alvo:** ⭐ "Hi! I'm Capy." Quem fala troca "Capy" pelo próprio nome.
 
-**"Consigo…" (CEFR Companion Volume 2020, Pre-A1, Conversation, p. 73):** consigo cumprimentar alguém e dizer meu nome de um jeito simples.
+**Como ler:**
 
-**G + V + P (English File):**
-- **G:** o bloco pronto "I'm + nome", sem explicar gramática.
-- **V:** hi e hello.
-- **P:** o **h soprado** (EF 1A).
-
-**Som da vez (Sound Bank CapyFala, desenho nosso):** /h/ = **xícara de café soltando vapor**. Quando alguém diz o "h", sai uma nuvenzinha de vapor. O mesmo ícone volta toda vez que o /h/ aparecer na série.
-
-**Frase-alvo:** ⭐ "Hi! I'm Capy." Quem fala troca pelo próprio nome.
-
-## Os 3 exercícios escolhidos para este tema, e por quê
-
-| Exercício (lista do Felipe) | Por que serve a ESTE tema | Base nos livros |
-|---|---|---|
-| **(a) Repita comigo: em coro com a Capy, depois sozinho** | Primeira frase da vida em inglês: o aluno precisa ouvir e dizer várias vezes antes de qualquer coisa. Também treina o som da vez (o H) | Drill do Headway e do Empower: coro, depois individual, com foco na pronúncia |
-| **(d) Você e a Capy: a fala dela fica vazia e você responde ao Hank** | Cumprimentar é interação. O aluno ensaia a situação real (alguém diz "Hi." e espera a resposta) sem o medo da situação real | Everyday/Practical English (EF, EMP): função de sobrevivência em cena com personagens fixos |
-| **(e) Personalize: agora você diz o SEU nome** | É o único tema em que o aluno fala de si desde o 1º dia. Dizer o próprio nome fecha a aula com a vitória mais pessoal possível | "Talking about you" do Headway; "Time to speak" da Evolve |
-
-**Ficaram para outros temas:**
-- **(b) Complete falando:** aqui ele se confunde com o (e), porque o espaço vazio seria o próprio nome. Entra no tema 3 ("What's your name? My name's ___").
-- **(c) Adivinhe antes:** "como se diz oi?" não tem surpresa real. Entra no tema 8, alfabeto: "qual letra é 'i'?".
-- **(f) Ouvir e reconhecer:** no tema 1 não existe um par confuso forte. Entra no tema 4 ou no 12 (thirteen × thirty).
-- **(g) Shadowing com velocidade subindo:** "Hi! I'm Capy." é curta demais para acelerar em etapas. Entra no tema 7 ("How are you? I'm fine, thanks.").
-
-## Como ler o roteiro
-
-| Marca | Significado |
+| Marca | Significa |
 |---|---|
-| EN | fala em inglês, com karaokê; na 1ª vez da frase-alvo, com a tradução embaixo |
+| EN | fala em inglês, com karaokê. Na 1ª vez da frase no vídeo, a tradução aparece embaixo |
 | PT | fala em português |
 | (pensa) | balão de pensamento |
 | ⏸ | pausa |
 | ⭐ | frase-alvo |
-| 🎤 **SUA VEZ** | silêncio para o aluno falar em voz alta ou na cabeça (duração da frase + 1,5 s), com barra de tempo e trilha em zero; a resposta vem logo depois |
+| 🎤 SUA VEZ | silêncio para o aluno falar (duração da frase + 1,5 s), com barra de tempo e trilha em zero. A resposta vem logo depois |
 | cinza na tela | "você vai OUVIR" |
 | cor da Capy na tela | "você vai DIZER" |
 
----
+**Regras para os 3 vídeos:**
+- inglês só na frase-alvo e em reações de 1 palavra;
+- no máximo 4 palavras por fala em inglês;
+- frase-alvo a ~100 palavras/min na 1ª vez;
+- pausa de pelo menos 0,6 s entre as falas;
+- o Hank é seco, mas nunca humilha;
+- sem música de ritmo, palminha ou voz fina.
 
-## A AULA (vídeo único, ~75 s · selo "T1 E01")
+**Ordem de publicação sugerida:**
 
-### Bloco 1 · Gancho e objetivo (0–6 s)
-
-| # | Tempo | Cena | Fala | Som |
-|---|---|---|---|---|
-| 1 | 0–2 s | Close na Capy parada na porta do café Bean There, com a mão na maçaneta. Texto: **"você já sabe essa. sério."** (gatilho verdadeiro: o "hi" é conhecido de filme) | Capy (pensa) PT: "Primeiro dia de trabalho. E se alguém falar comigo?" | sino da porta |
-| 2 | 2–3 s | **Corte seco** para o Hank no balcão, olhando para ela | ⏸ reação muda | — |
-| 3 | 3–6 s | Card: **CONSIGO… cumprimentar e dizer meu nome** | Lazy PT (voz em off): "Hoje você sai daqui dizendo isso. Em inglês." | — |
-
-### Bloco 2 · Cena: apresentar em contexto (6–26 s)
-
-| # | Tempo | Cena | Fala | Som |
-|---|---|---|---|---|
-| 4 | 6–8 s | O Hank acena com 1 dedo, seco mas educado | Hank EN: "Hi." | — |
-| 5 | 8–11 s | A Capy congela, com um fio de suor | Capy (pensa) PT: "Ele disse 'hi'. Eu sei essa. Por que eu travei?" | — |
-| 6 | 11–14 s | A Duda entra animada e fala com o Hank. A Capy observa | Duda EN: ⭐ "Hi! I'm Duda!" · legenda EN + PT: "Oi! Eu sou a Duda!" | — |
-| 7 | 14–15 s | | Hank EN: "Hi, Duda." | — |
-| 8 | 15–20 s | O Lazy aparece ao lado da Capy (bem devagar) e aponta para si mesmo: a imagem explica o "I'm" | Lazy PT: "Viu? Oi, e eu sou. Três palavras." / Lazy EN: ⭐ "Hi!... I'm... Lazy." | — |
-| 9 | 20–26 s | Close na boca do Lazy no "H", com o **ícone do vapor** (som da vez) | Lazy PT: "Esse H é um sopro, igual vapor de café. Não é 'rái'." | vapor |
-
-### Bloco 3 · EXERCÍCIO (a): Repita comigo, em coro e depois sozinho (26–40 s)
-
-| # | Tempo | Cena | Fala | Som |
-|---|---|---|---|---|
-| 10 | 26–28 s | Tela: **"EXERCÍCIO 1 · repete comigo"** | Capy PT: "Vamos juntos. Eu também tô aprendendo." | — |
-| 11 | 28–31 s | **Em coro:** a Capy fala e o karaokê acende junto. Na tela: "fala JUNTO" | Capy EN: ⭐ "Hi! I'm Capy." (devagar, ~100 palavras/min) | vapor no H |
-| 12 | 31–34 s | **Sozinho:** a Capy fica em silêncio e aponta para a câmera. A legenda fica acesa | 🎤 **SUA VEZ** (fale "Hi! I'm Capy." ou já com o seu nome) | trilha em zero |
-| 13 | 34–36 s | **Resposta para conferir:** o Lazy repete | Lazy EN: ⭐ "Hi! I'm Capy." (e dá um joinha lento) | acerto baixinho |
-| 14 | 36–40 s | Balão pequeno do Hank ao fundo | Hank PT: "Com sotaque? Tudo bem. Deu pra entender." (o antídoto oficial: CEFR 2020, p. 133, inteligibilidade e não sotaque perfeito) | — |
-
-### Bloco 4 · EXERCÍCIO (d): Você e a Capy, responda ao Hank (40–54 s)
-
-| # | Tempo | Cena | Fala | Som |
-|---|---|---|---|---|
-| 15 | 40–42 s | Tela: **"EXERCÍCIO 2 · você é a Capy"**. A cena do balcão volta, e o balão da Capy está **vazio e piscando** | Lazy PT: "Agora é você no balcão. O Hank vai falar com você." | — |
-| 16 | 42–44 s | O Hank olha direto para a câmera, ou seja, para o aluno | Hank EN: "Hi." | — |
-| 17 | 44–47 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** (responda ao Hank) | trilha em zero |
-| 18 | 47–50 s | **Resposta:** o balão se preenche e a Capy fala | Capy EN: ⭐ "Hi! I'm Capy." | vapor no H |
-| 19 | 50–54 s | O Hank pega um crachá, escreve **CAPY** e empurra pelo balcão | Hank EN: "Hi, Capy." | caneta |
-
-### Bloco 5 · EXERCÍCIO (e): Personalize, diga o SEU nome (54–64 s)
-
-| # | Tempo | Cena | Fala | Som |
-|---|---|---|---|---|
-| 20 | 54–56 s | Tela: **"EXERCÍCIO 3 · agora com o SEU nome"**. Um crachá em branco na tela: "Hi! I'm ____." | Capy PT: "O crachá agora é seu." | — |
-| 21 | 56–60 s | O espaço do nome pisca. O Hank espera, paciente | 🎤 **SUA VEZ** (2,5 s): "Hi! I'm… e o seu nome" | trilha em zero |
-| 22 | 60–64 s | O Hank acena para a câmera como se tivesse ouvido. O crachá ganha um ✓ | Hank EN: "Hi!" (pela 1ª vez com um quase sorriso) | acerto |
-
-### Bloco 6 · Vitória, objetivo cumprido e fecho (64–75 s)
-
-| # | Tempo | Cena | Fala | Som |
-|---|---|---|---|---|
-| 23 | 64–67 s | ⭐ **VITÓRIA DO DIA**: card "você disse seu nome em inglês". O selo vira **"T1 E01 · você já sabe 1 frase"** | Capy PT: "Eu falei. Você falou. A gente falou inglês." | acerto maior |
-| 24 | 67–70 s | O Bolinha entra, com as bochechas enchendo | Bolinha EN: ⭐ "Hi! I'm Capy." / Bolinha PT: "Guardei. Devolvo daqui a uns dias." | — |
-| 25 | 70–75 s | Card final: **CONSIGO… cumprimentar e dizer meu nome ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Escreve aqui: Hi, I'm… e o seu nome." | — |
-
----
-
-## Contagem e checagens
-
-| Item | Onde | Total |
+| Dia | Vídeo | Observação |
 |---|---|---|
-| ⭐ no áudio | Duda (6), Lazy (8), Capy coro (11), Lazy confere (13), Capy resposta (18), Bolinha (24) | **6 vezes, 4 bocas** |
-| Variações ouvidas | Hank: "Hi.", "Hi, Duda.", "Hi, Capy.", "Hi!" | 4 exposições do "Hi" |
-| O aluno fala | exercícios (a), (d) e (e) | **3 vezes em voz alta** (ou na cabeça) |
-| Somando com a revisão | o Bolinha devolve a frase no tema 3 e no "Revise & Check" do tema 5 | passa de 10 exposições em 3 vídeos (Webb 2007) |
-| Palavras em inglês por fala | ≤ 4 | limite dos E01–E05 respeitado |
-| Inglês só em fala EN | falas PT sem inglês dentro; o "hi" citado no pensamento da cena 5 vai entre aspas | a conferir no portão |
-| Ritmo | frase-alvo ~100 palavras/min na 1ª vez; pausa entre falas ≥ 0,6 s; SUA VEZ = frase + 1,5 s | |
-| Consigo | no começo (3) e cobrado no fim (25) | ✓ |
-| Gatilhos (só verdadeiros) | "você já sabe essa"; selo com progresso real; vitória; personalização nos comentários | sem laço aberto, sem urgência |
-| Hank nunca humilha | seco ("Hi."), mas responde, escreve o nome, diz "Deu pra entender" e quase sorri | ✓ |
-| Anti-infantil | sem música de ritmo, sem palminha, sem voz fina; situação de trabalho adulta | ✓ |
+| Dia 1 | Vídeo 1 | |
+| Dia 2 | Vídeo 2 | |
+| Dia 4 | Vídeo 3 | a última volta fica espaçada (Cepeda 2006) |
 
-**Duração estimada:** ~75 s. Passa de 61 s, então conta para o Creator Rewards do TikTok.
+---
 
-**Esquete do dia (seg–sex, ~25 s):** blocos 1 e 2 (cenas 1–9) + o exercício (d) curto (cenas 16–18) + o card "aula completa no EP 01".
+## VÍDEO 1 · APRENDER · "o primeiro 'oi' da Capy" · T1 E01 · ~65 s
 
-## Para o Felipe decidir antes do tema 2
+**Exercício do vídeo:** repita comigo, primeiro em coro com a Capy e depois sozinho (drill do Headway e do Empower).
 
-1. **Os 3 exercícios deste tema,** (a) repita comigo, (d) você é a Capy e (e) personalize, servem? Se trocar, qual?
-2. **Como os exercícios aparecem na tela:** "EXERCÍCIO 1/2/3", ou só um ícone (🎤) sem número?
-3. **O ícone do /h/ = vapor de café**: aprovado como o 1º símbolo do nosso Sound Bank?
-4. **O card "sotaque não é erro: o objetivo é ser entendido"** (CEFR 2020) vira a assinatura fixa da série?
+**Gancho verdadeiro:** "você já sabe essa. sério." (o "hi" é conhecido de filme).
+
+**Vitória:** o 1º "oi" da Capy e do aluno.
+
+| # | Tempo | Cena | Fala | Som |
+|---|---|---|---|---|
+| 1 | 0–2 s | Close na Capy parada na porta do café Bean There, a mão na maçaneta. Texto: **"você já sabe essa. sério."** | Capy (pensa) PT: "Primeiro dia de trabalho. E se alguém falar comigo?" | sino da porta |
+| 2 | 2–3 s | **Corte seco** para o Hank no balcão, olhando para ela | ⏸ reação muda | — |
+| 3 | 3–6 s | Card: **CONSIGO… cumprimentar e dizer meu nome** | Lazy PT (em off): "Hoje você sai daqui dizendo isso. Em inglês." | — |
+| 4 | 6–8 s | O Hank acena com 1 dedo | Hank EN: "Hi." | — |
+| 5 | 8–11 s | A Capy congela, com um fio de suor | Capy (pensa) PT: "Eu sei essa. Por que eu travei?" | — |
+| 6 | 11–14 s | A Duda entra animada | Duda EN: ⭐ "Hi! I'm Duda!" · legenda EN + PT "Oi! Eu sou a Duda!" | — |
+| 7 | 14–15 s | | Hank EN: "Hi, Duda." | — |
+| 8 | 15–20 s | O Lazy chega devagar e aponta para si (a imagem explica o "I'm") | Lazy PT: "Oi, e eu sou. Três palavras." / Lazy EN: ⭐ "Hi!... I'm... Lazy." | — |
+| 9 | 20–25 s | Close na boca do Lazy no "H", com o **ícone do vapor** | Lazy PT: "Esse H é um sopro, igual vapor de café." | vapor |
+| 10 | 25–27 s | Tela: **"REPETE COMIGO"** (sem número, sem pontos) | Capy PT: "Vamos juntos. Eu também tô aprendendo." | — |
+| 11 | 27–30 s | **Em coro:** a Capy fala e o karaokê acende junto. Na tela: "fala JUNTO" | Capy EN: ⭐ "Hi! I'm Capy." | vapor no H |
+| 12 | 30–33 s | Outra vez em coro, um pouco mais natural | Capy EN: ⭐ "Hi! I'm Capy." | vapor no H |
+| 13 | 33–37 s | **Sozinho:** a Capy fica em silêncio e aponta para a câmera | 🎤 **SUA VEZ** ("Hi! I'm Capy.") | trilha em zero |
+| 14 | 37–40 s | **Resposta para conferir** | Lazy EN: ⭐ "Hi! I'm Capy." + joinha lento | acerto baixinho |
+| 15 | 40–44 s | Balão do Hank ao fundo | Hank PT: "Com sotaque? Tudo bem. Deu pra entender." | — |
+| 16 | 44–50 s | De volta ao balcão. A Capy respira fundo e fala com o Hank | Capy EN: ⭐ "Hi! I'm... Capy." | vapor |
+| 17 | 50–54 s | O Hank escreve **CAPY** num crachá e empurra pelo balcão | Hank EN: "Hi, Capy." | caneta |
+| 18 | 54–59 s | ⭐ **VITÓRIA DO DIA**: card "1º oi em inglês". O selo vira **"T1 E01 · você já sabe 1 frase"** | Capy PT: "Ele escreveu meu nome. Eu falei inglês." | acerto |
+| 19 | 59–65 s | Card final: **CONSIGO… cumprimentar e dizer meu nome ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Escreve aqui: Hi, I'm… e o seu nome." | — |
+
+**Frase-alvo no áudio: 6 vezes** (Duda, Lazy ×2, Capy ×3). O aluno fala 1 vez.
+
+**Esquete do dia (~25 s):** cenas 1, 2, 4–9, 16–18 + "aula completa no EP 01".
+
+---
+
+## VÍDEO 2 · PRATICAR · "você é a Capy" · T1 E01 · parte 2 · ~40 s
+
+**Exercício do vídeo:** você é a Capy. A fala dela some e o aluno responde ao Hank (Everyday/Practical English: ensaiar a situação real sem o medo da situação real).
+
+**Por que este, e não o "complete falando":** cumprimentar é interação, e alguém precisa dizer "Hi." primeiro. O "complete falando" vira o exercício do assunto 3 ("My name's ___").
+
+**Gancho verdadeiro:** "o Hank vai falar com VOCÊ agora."
+
+**Vitória:** o aluno "conversa" com o Hank 2 vezes.
+
+| # | Tempo | Cena | Fala | Som |
+|---|---|---|---|---|
+| 1 | 0–2 s | O Hank olha direto para a câmera, braços cruzados. Texto: **"o Hank vai falar com VOCÊ"** | ⏸ | — |
+| 2 | 2–5 s | Card: **CONSIGO… responder quando alguém me cumprimenta** | Capy PT: "Ontem fui eu. Hoje é você no balcão." | — |
+| 3 | 5–8 s | Lembrete rápido (revisão do vídeo 1): a Capy diz a frase com o vapor no H | Capy EN: ⭐ "Hi! I'm Capy." · legenda EN + PT | vapor |
+| 4 | 8–10 s | A Capy sai de cena. O balão dela fica **vazio e piscando** em frente ao balcão | Lazy PT: "Você é a Capy. Responde ao Hank." | — |
+| 5 | 10–12 s | | Hank EN: "Hi." | — |
+| 6 | 12–15 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** (responda ao Hank) | trilha em zero |
+| 7 | 15–18 s | **Resposta:** o balão se preenche e a Capy volta para dizer | Capy EN: ⭐ "Hi! I'm Capy." | vapor |
+| 8 | 18–20 s | O Hank acena de leve | Hank EN: "Hi, Capy." | — |
+| 9 | 20–23 s | **2ª rodada, agora com outro personagem:** a Poppy chega ao balcão e o balão dela também fica vazio | Lazy PT: "De novo. Agora você é a Poppy." | — |
+| 10 | 23–25 s | | Hank EN: "Hi." | — |
+| 11 | 25–28 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
+| 12 | 28–31 s | **Resposta** | Poppy EN: ⭐ "Hi! I'm Poppy." (normal, ~160 palavras/min) | vapor rápido |
+| 13 | 31–35 s | ⭐ **VITÓRIA**: card "você conversou com o Hank". O selo continua "você já sabe 1 frase" (a frase é a mesma) | Hank PT: "Duas conversas. Nada mal." (o quase sorriso dele) | acerto |
+| 14 | 35–40 s | Card final: **CONSIGO… responder quando alguém me cumprimenta ✓** | Capy PT: "Time Lazy ou time Hank? Comenta." | — |
+
+**Frase-alvo no áudio: 3 vezes** (Capy ×2, Poppy). O aluno fala 2 vezes.
+
+---
+
+## VÍDEO 3 · FIXAR · "ouviu o H?" · T1 E01 · parte 3 · ~45 s
+
+**Exercícios do vídeo:**
+1. **Ouça e reconheça:** qual das duas versões tem o H soprado? Pausa, depois a resposta.
+2. **Personalize:** agora diga o SEU nome ("Talking about you", do Headway).
+
+**Por que o "ouça e reconheça" usa o H:** é o som da vez do assunto e o erro mais comum do brasileiro aqui ("ai" ou "rái" no lugar do "hai"). O contraste é gentil: as duas versões são entendidas, só uma é a do inglês.
+
+**Gancho verdadeiro:** "uma tem o H. a outra não. você ouve?"
+
+**Vitória:** o aluno diz o próprio nome em inglês.
+
+| # | Tempo | Cena | Fala | Som |
+|---|---|---|---|---|
+| 1 | 0–2 s | Duas xícaras no balcão: **A** e **B**. Texto: **"uma tem o H. a outra não. você ouve?"** | ⏸ | — |
+| 2 | 2–5 s | Card: **CONSIGO… ouvir o H e dizer meu nome** | Lazy PT: "Só escuta. Não precisa falar ainda." | — |
+| 3 | 5–8 s | Xícara **A** acende | Lazy EN: ⭐ "Hi! I'm Lazy." (com o H) | — |
+| 4 | 8–11 s | Xícara **B** acende | Lazy EN: "Ai, I'm Lazy." (sem o H, de propósito) | — |
+| 5 | 11–14 s | Pergunta: **"qual tem o H? pensa aí... ou chuta nos comentários"** + contador | ⏸ 3 s | trilha em zero |
+| 6 | 14–18 s | **Resposta:** a xícara **A** solta vapor. A **B** fica parada | Lazy PT: "A. O H sai como vapor." / Lazy EN: ⭐ "Hi! I'm Lazy." | vapor |
+| 7 | 18–21 s | O Hank dá o recado anti-medo | Hank PT: "A B também dá pra entender. A A é mais inglês." | — |
+| 8 | 21–23 s | Tela: **"AGORA COM O SEU NOME"**. Um crachá em branco: "Hi! I'm ____." | Capy PT: "O crachá agora é seu." | — |
+| 9 | 23–25 s | A Capy mostra como faz | Capy EN: ⭐ "Hi! I'm Capy." | vapor |
+| 10 | 25–29 s | O espaço do nome pisca e o Hank espera, paciente | 🎤 **SUA VEZ** (2,5 s): "Hi! I'm… e o seu nome" | trilha em zero |
+| 11 | 29–32 s | O Hank acena para a câmera e o crachá ganha um ✓ | Hank EN: "Hi!" | acerto |
+| 12 | 32–35 s | O Bolinha entra, com as bochechas enchendo | Bolinha EN: ⭐ "Hi! I'm Capy." / Bolinha PT: "Guardei. Devolvo daqui a uns dias." | — |
+| 13 | 35–40 s | ⭐ **VITÓRIA DO ASSUNTO**: card "você disse seu nome em inglês" + **CONSIGO ✓** | Capy PT: "Três vídeos. Uma frase. Ela é sua." | acerto maior |
+| 14 | 40–45 s | Card final | Capy PT: "Escreve aqui: Hi, I'm… e o seu nome." | — |
+
+**Frase-alvo no áudio: 4 vezes** (Lazy ×2, Capy, Bolinha). O aluno fala 1 vez, com o próprio nome, e ainda escolhe A ou B na cabeça.
+
+**Atenção para o portão:** a versão "Ai, I'm Lazy." (sem H) é a única forma "errada" do assunto. Aparece 1 vez, nunca é a última coisa ouvida e é marcada como contraste de pronúncia, não como vergonha.
+
+---
+
+## Soma do assunto 1 (3 vídeos)
+
+| | Vídeo 1 APRENDER | Vídeo 2 PRATICAR | Vídeo 3 FIXAR | Total |
+|---|---|---|---|---|
+| Duração estimada | ~65 s | ~40 s | ~45 s | ~2 min 30 s |
+| ⭐ no áudio | 6 | 3 | 4 | **13** (meta: ≥ 10) ✓ |
+| O aluno fala | 1 | 2 | 1 + 1 escolha | **4 falas + 1 reconhecimento** |
+| Bocas | Duda, Lazy, Capy | Capy, Poppy | Lazy, Capy, Bolinha | **5 personagens** |
+| Exercício | repita comigo (coro → sozinho) | você é a Capy (2 rodadas) | ouça e reconheça (H) + personalize | 4 exercícios |
+| Consigo início/fim | ✓ / ✓ | ✓ / ✓ | ✓ / ✓ | |
+| Som /h/ = vapor | ✓ | ✓ | tema do exercício | |
+
+**Revisão espaçada:**
+- o Bolinha devolve "Hi! I'm Capy." no assunto 3 ("lembra dessa?");
+- volta de novo no "Revise & Check" depois do assunto 5.
+
+**T1 completa:** 20 assuntos × 3 vídeos = **60 vídeos**.
+
+## Para o Felipe decidir antes do assunto 2
+1. **Exercícios do assunto 1:** repita comigo / você é a Capy / ouça e reconheça o H + personalize. Servem?
+2. **O "ouça e reconheça" com a versão sem H** (dita 1 vez, pelo Lazy, sem vergonha) pode ficar? Se não, troco por "qual nome você ouviu: Duda ou Poppy?".
+3. **Selo dos vídeos 2 e 3:** "T1 E01 · parte 2/3" ou outro nome ("praticar", "fixar")?
+4. **O ícone do /h/ = vapor de café**: aprovado como o 1º símbolo do nosso Sound Bank?

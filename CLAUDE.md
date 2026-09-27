@@ -85,12 +85,12 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   Pre-A1/A1 (só a ordem; nunca copiar texto dos livros). Cognatos = apoio dentro dessa ordem, não espinha. Mapa: PC em
   `ponte/saida/sequencia-oxford-cambridge.md`. Roteiros dos 10 (`docs/roteiros/roteiros-t1-zero.md`) SUSPENSOS até o mapa.
   Episódio "ção vira tion" descartado.
-- **APROVADO (27/09): T1 = 20 episódios na ordem de consenso** (`docs/pesquisas/sequencia-oxford-cambridge.md` §4) + lista
-  "COPIAR JÁ" (§9). Cada tema = 1 aula em vídeo com **~3 EXERCÍCIOS diferentes adaptados a vídeo** (pausa → aluno fala em voz
-  alta ou na cabeça → resposta logo depois): repita comigo (coro → sozinho), complete falando, adivinhe antes, você é a Capy
-  (fala vazia, responde ao Hank), personalize, ouvir e reconhecer, shadowing com velocidade subindo. Escolher os 3 que melhor
-  servem ao tema e justificar. Roteiros no papel, 1 tema por vez, Felipe aprova antes do próximo (tema 1:
-  `docs/roteiros/roteiros-tema01.md`).
+- **APROVADO (27/09): T1 = 20 ASSUNTOS na ordem de consenso** (`docs/pesquisas/sequencia-oxford-cambridge.md` §4) + lista
+  "COPIAR JÁ" (§9). **Cada assunto = 3 VÍDEOS**, cada um em volta de 1 exercício feito para vídeo (pausa → aluno fala em voz
+  alta/na cabeça → resposta logo depois): V1 APRENDER (cena no café + repita comigo, coro → sozinho), V2 PRATICAR (você é a
+  Capy: a fala some e você responde ao Hank, ou complete falando), V3 FIXAR (ouça e reconheça + personalize). Pode trocar o
+  exercício de um vídeo se outro servir melhor ao assunto, justificando. Frase-alvo ≥ 10× somando os 3. T1 = 60 vídeos.
+  Roteiros no papel, 1 assunto por vez, Felipe aprova antes do próximo (assunto 1: `docs/roteiros/roteiros-tema01.md`).
 
 ## Formato atual (27/09): SITCOM DO CAFÉ (passivo, sem interação)
 - O formato "app" (exercícios A/B/C, ligar, lacuna, corações, XP) foi ABANDONADO (Felipe: acelerado + vídeo não é interativo).
