@@ -9,3 +9,6 @@
 - `licao-s01e04-spell-esquete-A.mp4` · midia 4877fb6 · 13.0 s · -14.0 LUFS · pico -1.5 · mov 0.284 · ok
 - `licao-s01e04-spell-esquete-B.mp4` · midia 4877fb6 · 9.5 s · -14.0 LUFS · pico -1.5 · mov 0.279 · ok
 - `licao-s01e04-spell.mp4` · midia 4877fb6 · 78.4 s · -14.0 LUFS · pico -1.2 · mov 0.286 · ok
+- `licao-s01e05-phone-number-esquete-A.mp4` · midia bd2d232 · 12.3 s · -14.0 LUFS · pico -1.5 · mov 0.266 · ok
+- `licao-s01e05-phone-number-esquete-B.mp4` · midia bd2d232 · 10.1 s · -14.0 LUFS · pico -1.5 · mov 0.278 · ok
+- `licao-s01e05-phone-number.mp4` · midia bd2d232 · 78.7 s · -14.0 LUFS · pico -1.2 · mov 0.273 · ok
