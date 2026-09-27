@@ -1,26 +1,27 @@
 import React from "react";
 import { Easing, interpolate, spring } from "remotion";
 import { BODY, C, SAFE, TITLE } from "../theme";
+import { useAudit } from "./audit";
 
 // Interface de "app de idiomas" própria da CapyFala (nada de Duolingo: roxo/amarelo/creme, turquesa = certo, coral = errado).
-// Tudo em coordenadas de tela 1080x1920, dentro da zona segura x 60–940 / y 200–1436.
+// Tudo em coordenadas de tela 1080x1920, dentro da zona segura x 60–920 / y 260–1436 (theme.ts SAFE).
+// Linha 264–308 = selo da série + @acapyfala (src/Watermark.tsx); a barra de progresso vem logo abaixo.
 
 export const L = {
-  sealY: SAFE.y0, // selo da série "T1 E01 · capítulo" (SeriesSeal), acima da barra
-  barY: 252,
-  chipY: 326,
-  cardY: 406,
-  optY: 676,
-  optH: 120,
-  optGap: 24,
-  capi: { left: 0, top: 1116, size: 340 },
-  capiMouth: [350, 1282] as [number, number], // ponta do focinho da Capy na lição (âncora do balão lateral)
+  barY: 318,
+  chipY: 392,
+  cardY: 472,
+  optY: 742,
+  optH: 108,
+  optGap: 20, // 3 opções: 742 → 1106 (a Capy da lição começa em 1136)
+  capi: { left: 0, top: 1136, size: 340 },
+  capiMouth: [350, 1302] as [number, number], // ponta do focinho da Capy na lição (âncora do balão lateral)
 };
 const W = SAFE.x1 - SAFE.x0;
 const CARD_SHADOW = `0 10px 0 ${C.tinta}`;
 
 // ---------- fundo ----------
-export const LessonBg: React.FC<{ frame: number }> = ({ frame }) => (
+export const LessonBg: React.FC<{ frame: number }> = ({ frame }) => useAudit() ? null : (
   <div style={{ position: "absolute", inset: 0, background: C.roxo, overflow: "hidden" }}>
     <div style={{ position: "absolute", inset: -200, backgroundImage: `radial-gradient(${"rgba(255,255,255,0.07)"} 7px, transparent 8px)`, backgroundSize: "72px 72px", transform: `translate(${(frame * 0.5) % 72}px, ${(frame * 0.35) % 72}px)` }} />
     <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 38%, rgba(140,108,255,0.45) 0%, transparent 60%)" }} />
@@ -79,7 +80,7 @@ export const TopBar: React.FC<{ frame: number; fps: number; progress: number; he
       </div>
       <div style={{
         marginLeft: "auto", display: "flex", alignItems: "center", gap: 6, background: C.creme, border: `6px solid ${C.tinta}`, borderRadius: 32,
-        padding: "2px 16px 2px 8px", boxShadow: `0 6px 0 ${C.tinta}`, transform: `scale(${bump})`,
+        padding: "2px 16px 2px 8px", boxShadow: `0 6px 0 ${C.tinta}`, transform: `scale(${bump})`, transformOrigin: "100% 50%", // cresce para a esquerda: nunca passa de SAFE.x1
       }}>
         <Bolt />
         <div style={{ fontFamily: TITLE, fontSize: 40, color: C.tinta, lineHeight: "54px", whiteSpace: "nowrap" }}>{xp} XP</div>
@@ -93,7 +94,7 @@ export const XpPop: React.FC<{ since: number; amount: number; fps: number }> = (
   if (since < 0 || since > 42) return null;
   const s = spring({ frame: since, fps, config: { damping: 10, mass: 0.7 } });
   const fly = interpolate(since, [22, 40], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
-  const x = interpolate(fly, [0, 1], [640, 850]), y = interpolate(fly, [0, 1], [760, 250]);
+  const x = interpolate(fly, [0, 1], [640, 820]), y = interpolate(fly, [0, 1], [810, L.barY + 30]);
   return (
     <div style={{
       position: "absolute", left: x - 150, top: y - 50, width: 300, textAlign: "center", fontFamily: TITLE, fontSize: 84, color: C.amarelo,
@@ -122,7 +123,7 @@ export const PromptCard: React.FC<{ children: React.ReactNode; top?: number; min
 );
 
 // Timer circular: 3–4 s, tique por segundo (SFX no motor), vermelho no último.
-export const Timer: React.FC<{ remaining: number; total: number; since: number; fps: number; x?: number; y?: number }> = ({ remaining, total, since, fps, x = SAFE.x1 - 118, y = 306 }) => {
+export const Timer: React.FC<{ remaining: number; total: number; since: number; fps: number; x?: number; y?: number }> = ({ remaining, total, since, fps, x = SAFE.x1 - 124, y = L.chipY - 20 }) => {
   const r = 50, circ = 2 * Math.PI * r;
   const inS = spring({ frame: since, fps, config: { damping: 12 } });
   const last = remaining <= 1;
@@ -149,6 +150,7 @@ export const Cross: React.FC<{ size?: number; color?: string }> = ({ size = 40, 
 );
 
 // ---------- opções (escolha / ouça) ----------
+const OPT_INSET = 14; // pop de 3% no acerto cresce ~13 px para cada lado: a opção nunca passa de SAFE.x1
 export const Options: React.FC<{
   options: string[]; answer: number; since: number; revealT: number; fps: number; top?: number; chute?: number; chuteT?: number; frame: number;
 }> = ({ options, answer, since, revealT, fps, top = L.optY, chute, chuteT = -1, frame }) => {
@@ -162,12 +164,12 @@ export const Options: React.FC<{
         const s = spring({ frame: since - 8 - i * 7, fps, config: { damping: 14 } });
         const shake = wrongPick ? Math.sin(revealT * 1.5) * interpolate(revealT, [0, 16], [16, 0], { extrapolateRight: "clamp" }) : 0;
         const float = !revealed ? Math.sin((frame + i * 20) / 18) * 2 : 0;
-        const okPop = revealed && ok ? 1 + Math.max(0, Math.sin(Math.min(1, revealT / 10) * Math.PI)) * 0.05 : 1;
+        const okPop = revealed && ok ? 1 + Math.max(0, Math.sin(Math.min(1, revealT / 10) * Math.PI)) * 0.03 : 1;
         const bg = revealed ? (ok ? C.certo : wrongPick ? C.errado : "#E6DDF5") : picked ? "#FFE680" : "#fff";
         const fg = revealed && (ok || wrongPick) ? "#fff" : revealed ? "#7D6FA8" : C.tinta;
         return (
           <div key={i} style={{
-            position: "absolute", left: SAFE.x0, top: top + i * (L.optH + L.optGap), width: W, height: L.optH, boxSizing: "border-box",
+            position: "absolute", left: SAFE.x0 + OPT_INSET, top: top + i * (L.optH + L.optGap), width: W - 2 * OPT_INSET, height: L.optH, boxSizing: "border-box",
             display: "flex", alignItems: "center", gap: 20, padding: "0 26px", borderRadius: 30, border: `7px solid ${C.tinta}`, boxShadow: `0 8px 0 ${C.tinta}`,
             background: bg, opacity: Math.min(1, s * 1.4),
             transform: `translateX(${(1 - s) * 120 + shake}px) translateY(${float}px) scale(${okPop})`,
@@ -179,7 +181,7 @@ export const Options: React.FC<{
             <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 46, lineHeight: 1.05, color: fg }}>{opt}</div>
             {picked && (
               <div style={{
-                position: "absolute", right: -14, top: -30, fontFamily: TITLE, fontSize: 32, color: C.tinta, background: C.tangerina, border: `5px solid ${C.tinta}`,
+                position: "absolute", right: 16, top: -30, fontFamily: TITLE, fontSize: 32, color: C.tinta, background: C.tangerina, border: `5px solid ${C.tinta}`,
                 borderRadius: 16, padding: "0 14px", transform: `rotate(6deg) scale(${spring({ frame: chuteT, fps, config: { damping: 9 } })})`,
               }}>CAPY: ESSA!</div>
             )}
@@ -215,7 +217,7 @@ const flow = (words: string[], x0: number, y0: number, maxW: number, rowH: numbe
 export const TileBoard: React.FC<{
   tiles: string[]; order: number[]; since: number; flyT: number; revealT: number; fps: number; frame: number;
 }> = ({ tiles, order, since, flyT, revealT, fps, frame }) => {
-  const ANS_Y = 676, BANK_Y = 948;
+  const ANS_Y = L.optY, BANK_Y = L.optY + 262;
   const ansWords = order.map((i) => tiles[i]);
   const ans = flow(ansWords, SAFE.x0 + 10, ANS_Y, W - 20, 120);
   const bank = flow(tiles, SAFE.x0, BANK_Y, W, TILE_H + 22, true);
@@ -312,7 +314,7 @@ export const ListenPanel: React.FC<{ since: number; fps: number; frame: number; 
 export const MicPanel: React.FC<{ frame: number; fps: number; since: number; micT: number; micFrames: number; active: boolean; after?: boolean }> = ({ frame, fps, since, micT, micFrames, active, after = false }) => {
   const s = spring({ frame: since, fps, config: { damping: 12 } });
   const k = active ? micT / micFrames : 0;
-  const cx = 540, cy = 850;
+  const cx = 490, cy = 900;
   return (
     <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920, transform: `scale(${s})`, transformOrigin: `${cx}px ${cy}px` }}>
       {active && [0, 1].map((j) => {
@@ -347,7 +349,7 @@ export const MicPanel: React.FC<{ frame: number; fps: number; since: number; mic
 };
 
 // Faixa de lição completa.
-export const CompleteBanner: React.FC<{ since: number; fps: number; xp: number; top?: number }> = ({ since, fps, xp, top = 820 }) => {
+export const CompleteBanner: React.FC<{ since: number; fps: number; xp: number; top?: number }> = ({ since, fps, xp, top = 880 }) => {
   if (since < 0) return null;
   const s = spring({ frame: since, fps, config: { damping: 10 } });
   return (

@@ -7,6 +7,7 @@ import { Emotion } from "../chars/common";
 import { CafeBack, CafeCounter, ThoughtOverlay } from "../sets/CafeSet";
 import { Cam, CharId, STAGE, clampCam } from "../Sitcom";
 import { C, TITLE } from "../theme";
+import { useAudit } from "./audit";
 
 // Palco do Bean There Café para o formato lição (mesmo elenco/cenário/câmera do Sitcom, mais calmo:
 // troca de plano em 12 frames em vez de 8 e push-in mais lento). Inclui o desmaio da Capy.
@@ -27,6 +28,8 @@ export const CafeStage: React.FC<{
   capiArmUp?: boolean;
   capiHop?: number;
 }> = ({ frame, cam, blur, emo, capiMood, talking, overlay, tremor, faintT, lazy = false, capiArmUp = false, capiHop = 0 }) => {
+  const audit = useAudit();
+  if (audit) return <AbsoluteFill>{faintT >= 18 && <Ploft since={faintT - 18} textOnly />}</AbsoluteFill>;
   const tr = tremor ? [Math.sin(frame * 2.3) * tremor, Math.cos(frame * 1.9) * tremor] : [0, 0];
   const worldT = `translate(${540 + tr[0]}px, ${960 + tr[1]}px) scale(${cam.z}) translate(${-cam.cx}px, ${-cam.cy}px)`;
   const parallax = `translate(${(cam.cx - 540) * 0.12}px, ${(cam.cy - 960) * 0.08}px)`;
@@ -62,7 +65,7 @@ export const CafeStage: React.FC<{
 };
 
 // Onomatopeia da queda + estrelinhas girando onde a cabeça estava.
-const Ploft: React.FC<{ since: number }> = ({ since }) => {
+const Ploft: React.FC<{ since: number; textOnly?: boolean }> = ({ since, textOnly = false }) => {
   const s = interpolate(since, [0, 6], [0.3, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.back(3)) });
   return (
     <>
@@ -70,7 +73,7 @@ const Ploft: React.FC<{ since: number }> = ({ since }) => {
         position: "absolute", left: 110, top: 1230, fontFamily: TITLE, fontSize: 130, color: C.amarelo, WebkitTextStroke: `12px ${C.tinta}`, paintOrder: "stroke fill",
         textShadow: `0 10px 0 ${C.tinta}`, transform: `rotate(-10deg) scale(${s})`,
       }}>PLOFT!</div>
-      <svg width={420} height={200} style={{ position: "absolute", left: 90, top: 1130, overflow: "visible" }}>
+      {!textOnly && <svg width={420} height={200} style={{ position: "absolute", left: 90, top: 1130, overflow: "visible" }}>
         {[0, 1, 2, 3].map((i) => {
           const a = since / 7 + (i * Math.PI) / 2;
           const x = 200 + Math.cos(a) * 150, y = 60 + Math.sin(a) * 36;
@@ -79,7 +82,7 @@ const Ploft: React.FC<{ since: number }> = ({ since }) => {
               d="M0 -26 L7 -8 L26 -8 L11 4 L17 24 L0 12 L-17 24 L-11 4 L-26 -8 L-7 -8 Z" fill={C.amarelo} stroke={C.tinta} strokeWidth={5} strokeLinejoin="round" />
           );
         })}
-      </svg>
+      </svg>}
     </>
   );
 };

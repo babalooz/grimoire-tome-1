@@ -11,7 +11,8 @@ import {
 import {
   Exercicio, LIGAR_STAG, Line, LicaoProps, Pause, Step, buildSchedule, exerciseMarks, isLine, phaseBounds,
 } from "./lesson/timeline";
-import { Cam, CharId, DayBadge, Notebook, STAGE, Sfx, TWO, closeOn, toScreen } from "./Sitcom";
+import { Cam, CharId, DayBadge, Notebook, STAGE, Sfx, TWO, clampCam, closeOn, toScreen } from "./Sitcom";
+import { AUDIT_BG, AuditCtx } from "./lesson/audit";
 import { BODY, C, SAFE, TITLE } from "./theme";
 import { STAG } from "./lesson/LessonUI";
 import { CardsBoard, COMPLETAR_CARD_H, GapSentence, MatchBoard, ReviewBoard, SeriesSeal, ligarDone } from "./lesson/ExerciseBoards";
@@ -20,7 +21,10 @@ import { MUSIC, musicEnvelope } from "./lesson/music";
 export type { LicaoProps } from "./lesson/timeline";
 // Flags de render (usadas pela faixa ESQUETE, src/LicaoEsquete.tsx): o corte reaproveita este componente.
 // corteDe = frame em que a esquete começa: o plano desse passo entra já pronto (sem chicote de câmera no frame 0).
-export type LicaoRenderProps = LicaoProps & { semAudio?: boolean; semTrilha?: boolean; semGancho?: boolean; corteDe?: number };
+// auditoria = fundo preto, só interface/texto (src/lesson/audit.ts): o portão confere a zona segura por pixel.
+export type LicaoRenderProps = LicaoProps & { semAudio?: boolean; semTrilha?: boolean; semGancho?: boolean; corteDe?: number; auditoria?: boolean;
+  ganchoAte?: number; // esquete: frame (deste componente) até o qual o cartão de gancho da esquete ocupa o topo
+};
 export { licaoFrames } from "./lesson/timeline";
 
 // "LIÇÃO EM VÍDEO" (CapyFala): CENA (a Capy erra e desmaia) → LIÇÃO (4 exercícios de app, com pausa real
@@ -32,6 +36,8 @@ const MOOD: Record<Emotion, Mood> = {
   panic: "sweat", happy: "happy", smile: "happy", whisper: "thinking",
 };
 const FLY = (n: number) => n * STAG + 20; // frames do voo dos blocos (montar)
+export const TITLE_TOP = 330; // título de tela (hookTitle / gancho da esquete), logo abaixo da linha selo + @acapyfala
+export const TITLE_BOTTOM = 560; // reserva até aqui (título de até 2 linhas + sombra + folga)
 
 // Só capi/hank/lazy têm lugar no palco do café; outros falantes (narrador, elenco novo) usam o plano aberto.
 export const onStage = (sp: string): sp is CharId => sp in STAGE;
@@ -42,7 +48,49 @@ export const shotFor = (s: Step): Cam => {
   return closeOn(p.speaker);
 };
 
-export const Licao: React.FC<LicaoRenderProps> = (p) => {
+// ---- GANCHO DE CÂMERA (regra do motor, vale para TODO episódio e esquete) ----
+// Auditoria no celular (E01): 0 s, 1 s e 2 s eram o mesmo plano aberto (só o karaokê mudava) e o Hank ficava atrás do balão.
+// Agora a primeira fala abre NO MEIO DA AÇÃO:
+//   [h0, cutA)   close apertado em quem fala (inteiro, balão acima da cabeça) com punch-in contínuo;
+//   [cutA, cutB) CORTE SECO para a reação do outro (Capy congelada/suando ou Hank encarando), punch-in forte + tremor;
+//   [cutB, fim)  corte seco de volta ao close de quem fala (o `shot: "two"` do 1º passo é ignorado).
+// h0 = 0 no episódio, = corteDe na esquete (se o corte começar numa fala do café) e = 0 na abertura da esquete.
+export const HOOK = { cut: 16, insert: 22, zoom: 1.1, punch: 1.3 };
+export type HookPlan = { step: Step; a: CharId; b: CharId; h0: number; cutA: number; cutB: number };
+export const hookPlan = (steps: Step[], h0: number, cast?: string[]): HookPlan | null => {
+  const s = steps.find((x) => h0 >= x.from && h0 < x.from + x.dur);
+  if (!s || s.phase === "licao" || !isLine(s.passo) || s.passo.card) return null;
+  const sp = s.passo.speaker;
+  const a: CharId = onStage(sp) && (sp !== "lazy" || !!cast?.includes("lazy")) ? sp : "capi";
+  const b: CharId = a === "capi" ? "hank" : "capi";
+  const end = s.from + s.dur;
+  const cutA = Math.min(end, h0 + HOOK.cut);
+  const cutB = end - cutA >= 12 ? Math.min(end, cutA + HOOK.insert) : cutA;
+  return { step: s, a, b, h0, cutA, cutB };
+};
+const zoomCam = (c: Cam, k: number): Cam => clampCam({ ...c, z: c.z * k });
+// Plano forçado pelo gancho neste frame (null = segue a câmera normal).
+export const hookCam = (h: HookPlan | null, frame: number): { cam: Cam; insert: boolean } | null => {
+  if (!h || frame < h.h0) return null;
+  if (frame < h.cutA) return { cam: zoomCam(closeOn(h.a), HOOK.zoom * (1 + (0.06 * (frame - h.h0)) / HOOK.cut)), insert: false };
+  if (frame < h.cutB) {
+    // Capy: enquadra o rosto no centro (desce a câmera) para a reação ficar abaixo do título de tela
+    const base = h.b === "capi" ? { ...closeOn("capi"), cy: STAGE.capi.head[1] - 20 } : closeOn(h.b);
+    return { cam: zoomCam(base, HOOK.punch * (1 + (0.06 * (frame - h.cutA)) / HOOK.insert)), insert: true };
+  }
+  return null;
+};
+// Plano do passo com o gancho aplicado (o passo do gancho fica no close de quem fala).
+export const shotWithHook = (h: HookPlan | null) => (s: Step): Cam => (h && s === h.step ? closeOn(h.a) : shotFor(s));
+// Reação no insert: Hank encara (sobrancelha), Capy congela suando.
+export const hookEmo = (emo: Record<CharId, Emotion>, b: CharId): Record<CharId, Emotion> =>
+  b === "hank" && ["bored", "neutral", "zen", "smile"].includes(emo.hank) ? { ...emo, hank: "eyebrow" } : b === "capi" ? { ...emo, capi: "panic" } : emo;
+
+export const Licao: React.FC<LicaoRenderProps> = (p) => (
+  <AuditCtx.Provider value={!!p.auditoria}><LicaoInner {...p} /></AuditCtx.Provider>
+);
+
+const LicaoInner: React.FC<LicaoRenderProps> = (p) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const steps = useMemo(() => buildSchedule(p, fps), [p, fps]);
@@ -100,18 +148,22 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
 
   // ---- câmera do café ----
   const cafeSteps = steps.filter((s) => s.phase !== "licao");
+  const hook = useMemo(() => hookPlan(steps, p.corteDe ?? 0, p.cast), [steps, p.corteDe, p.cast]);
+  const shotOf = shotWithHook(hook);
   const cafeCur = cur.phase === "licao" ? (frame < bounds.licao.from + T ? cafeSteps.filter((s) => s.phase === "cena").pop()! : cafeSteps.find((s) => s.phase === "volta")!) : cur;
   const ci = cafeSteps.indexOf(cafeCur);
-  const target = shotFor(cafeCur);
+  const target = shotOf(cafeCur);
   const cutHere = p.corteDe !== undefined && cafeCur.from <= p.corteDe && p.corteDe < cafeCur.from + cafeCur.dur;
   const prevStep = ci > 0 && cafeSteps[ci - 1].phase === cafeCur.phase && !cutHere ? cafeSteps[ci - 1] : null;
-  const prev = prevStep ? shotFor(prevStep) : target;
+  const prev = prevStep ? shotOf(prevStep) : target;
   const lf = frame - cafeCur.from;
   const changed = prev.cx !== target.cx || prev.cy !== target.cy || prev.z !== target.z;
   const k = changed ? interpolate(lf, [0, WHIP], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) }) : 1;
   const push = 1 + 0.018 * Math.min(1, Math.max(0, lf) / (cafeCur.dur || 1));
-  const cam = camLerp(prev, target, k, push);
-  const blur = changed ? Math.sin(k * Math.PI) * 5 : 0;
+  const hc = cur === cafeCur ? hookCam(hook, frame) : null;
+  const cam = hc ? hc.cam : camLerp(prev, target, k, push);
+  const blur = !hc && changed ? Math.sin(k * Math.PI) * 5 : 0;
+  const hookInsert = !!hc?.insert;
   const faint = steps.find((s) => !isLine(s.passo) && (s.passo as Pause).evento === "desmaio");
   const faintT = faint && frame >= faint.start && frame < bounds.cena.to + T ? frame - faint.start : -1;
   const cafeLine = isLine(cafeCur.passo) ? (cafeCur.passo as Line) : null;
@@ -169,7 +221,7 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
         <>
           {header}
           <ListenPanel since={since} fps={fps} frame={frame} playing={playing} />
-          <Options options={e.opcoes!} answer={e.resposta!} since={since} revealT={revealT} fps={fps} frame={frame} top={L.optY + 20} chute={e.chute} chuteT={chuteT} />
+          <Options options={e.opcoes!} answer={e.resposta!} since={since} revealT={revealT} fps={fps} frame={frame} top={L.optY} chute={e.chute} chuteT={chuteT} />
           {timer}
         </>
       );
@@ -204,7 +256,7 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
             {e.enunciado && <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 38, lineHeight: 1.12, color: C.tinta }}>{e.enunciado}</div>}
             <GapSentence frase={e.frase!} lacuna={e.lacuna ?? "___"} answer={e.opcoes![e.resposta!]} revealT={revealT} fps={fps} frame={frame} />
           </PromptCard>
-          <Options options={e.opcoes!} answer={e.resposta!} since={since} revealT={revealT} fps={fps} frame={frame} top={L.cardY + COMPLETAR_CARD_H + 34} chute={e.chute} chuteT={chuteT} />
+          <Options options={e.opcoes!} answer={e.resposta!} since={since} revealT={revealT} fps={fps} frame={frame} top={L.cardY + COMPLETAR_CARD_H + 24} chute={e.chute} chuteT={chuteT} />
           {timer}
         </>
       );
@@ -270,7 +322,10 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
     } else {
       const id: CharId = onStage(line.speaker) ? line.speaker : "capi";
       const [ax, ay] = toScreen(cam, STAGE[id].head[0] + (id === "capi" && thinking ? 60 : 0), STAGE[id].headTop);
-      caption = <Caption anchor={[ax, ay]} text={line.text} lang={line.lang} progress={lineProgress} thought={line.mode === "pensamento"} pop={cur.i === 0 ? 1 : capPop} />;
+      // título/gancho de tela no topo (330–~530): o balão desce para baixo dele em vez de ficar escondido atrás
+      const titleOn = (cur.i === 0 && !!p.hookTitle && !p.semGancho) || (p.ganchoAte !== undefined && frame < p.ganchoAte);
+      caption = <Caption anchor={[ax, ay]} text={line.text} lang={line.lang} progress={lineProgress} thought={line.mode === "pensamento"} pop={cur.i === 0 ? 1 : capPop}
+        minTop={titleOn ? TITLE_BOTTOM : undefined} />;
     }
   }
 
@@ -282,8 +337,8 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
     if (isLine(ps) && ps.card) sfx.push(<Sfx key={`st${s.i}`} at={s.from + 10} name="stamp" vol={0.55} />);
   });
   cafeSteps.forEach((s, j) => {
-    const pv = j > 0 && cafeSteps[j - 1].phase === s.phase ? shotFor(cafeSteps[j - 1]) : null;
-    const sb = shotFor(s);
+    const pv = j > 0 && cafeSteps[j - 1].phase === s.phase ? shotOf(cafeSteps[j - 1]) : null;
+    const sb = shotOf(s);
     if (pv && (pv.cx !== sb.cx || pv.cy !== sb.cy || pv.z !== sb.z)) sfx.push(<Sfx key={`w${s.i}`} at={s.from} name="whoosh" vol={0.16} />);
   });
   sfx.push(<Sfx key="tin" at={bounds.licao.from} name="whoosh" vol={0.35} />);
@@ -314,8 +369,11 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
   const cardStep = steps.find((s) => isLine(s.passo) && (s.passo as Line).card);
   const lastLessonStep = steps.filter((s) => s.phase === "licao").pop()!;
 
+  const emoView = hookInsert ? hookEmo(emo, hook!.b) : emo;
+  const brandLead = p.serie ? <SeriesSeal serie={p.serie} /> : <DayBadge day={p.day} inline />;
+
   return (
-    <AbsoluteFill style={{ background: C.noite, overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: p.auditoria ? AUDIT_BG : C.noite, overflow: "hidden" }}>
       {!p.semAudio && steps.filter((s) => s.audio).map((s) => (
         <Sequence key={`a${s.i}`} from={s.start} durationInFrames={s.audioFrames + 2}>
           <Audio src={staticFile(s.audio!)} />
@@ -331,12 +389,11 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
 
       {showCafe && (
         <AbsoluteFill>
-          <CafeStage frame={frame} cam={cam} blur={blur} emo={emo} capiMood={MOOD[emo.capi]} talking={cur.phase !== "licao" ? talking : null}
-            overlay={overlay} tremor={panic ? 2 : 0} faintT={cur.phase === "volta" ? -1 : faintT} capiHop={cur.phase === "volta" ? hop : 0}
+          <CafeStage frame={frame} cam={cam} blur={blur} emo={emoView} capiMood={MOOD[emoView.capi]} talking={cur.phase !== "licao" ? talking : null}
+            overlay={overlay} tremor={hookInsert ? 3 : panic ? 2 : 0} faintT={cur.phase === "volta" ? -1 : faintT} capiHop={cur.phase === "volta" ? hop : 0}
             lazy={!!p.cast?.includes("lazy")} />
-          {!p.serie && <DayBadge day={p.day} />}
           {cur.i === 0 && p.hookTitle && !p.semGancho && (
-            <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 256, transform: "rotate(-2deg)" }}>
+            <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: TITLE_TOP, transform: "rotate(-2deg)" }}>
               <div style={{
                 background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 36, boxShadow: `0 10px 0 ${C.tinta}`, padding: "18px 26px",
                 textAlign: "center", fontFamily: TITLE, fontSize: p.hookTitle.length > 16 ? 64 : 84, lineHeight: 1.02, color: C.tinta, textWrap: "balance" as any,
@@ -359,19 +416,20 @@ export const Licao: React.FC<LicaoRenderProps> = (p) => {
             const x = ei === exNow ? (1 - kin) * 1100 : -kin * 1100;
             return <AbsoluteFill key={ei} style={{ transform: `translateX(${x}px)` }}>{renderEx(ei)}</AbsoluteFill>;
           })}
-          <div style={{ position: "absolute", left: L.capi.left, top: L.capi.top + capiBob - hop * 36 }}>
-            <Capi frame={frame} talking={cur.phase === "licao" && talking === "capi"} mood={capiLessonMood} size={L.capi.size}
-              sweat={capiLessonMood === "sweat" ? 2 : 0} armUp={micOn} />
-          </div>
+          {!p.auditoria && (
+            <div style={{ position: "absolute", left: L.capi.left, top: L.capi.top + capiBob - hop * 36 }}>
+              <Capi frame={frame} talking={cur.phase === "licao" && talking === "capi"} mood={capiLessonMood} size={L.capi.size}
+                sweat={capiLessonMood === "sweat" ? 2 : 0} armUp={micOn} />
+            </div>
+          )}
           {exInfo.map((x, ei) => x.xp ? <XpPop key={ei} since={frame - x.doneAt} amount={x.xp} fps={fps} /> : null)}
           {/* revisão no fim: a faixa espera o último item aparecer e fica sobre o Bolinha, sem tampar os cartões */}
           <CompleteBanner since={frame - (exs[exs.length - 1].tipo === "revisao" ? Math.max(lastLessonStep.start + lastLessonStep.audioFrames, lastLessonStep.start + 15) : lastLessonStep.start)}
-            fps={fps} xp={xpTotal} top={exs[exs.length - 1].tipo === "revisao" ? 610 : 820} />
+            fps={fps} xp={xpTotal} top={exs[exs.length - 1].tipo === "revisao" ? 660 : 880} />
           {cur.phase === "licao" && caption}
         </AbsoluteFill>
       )}
-      {p.serie && <SeriesSeal serie={p.serie} />}
-      <Watermark />
+      <Watermark lead={brandLead} />
     </AbsoluteFill>
   );
 };

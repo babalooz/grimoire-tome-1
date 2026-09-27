@@ -31,8 +31,10 @@ export const BODY = "Rubik";
 loadFont({ family: TITLE, url: staticFile("fonts/LilitaOne.woff2") });
 loadFont({ family: BODY, url: staticFile("fonts/Rubik-800.woff2"), weight: "800" });
 
-// Zona segura 1080x1920: fora disso a interface do TikTok/Shorts/Reels cobre o conteúdo.
-export const SAFE = { x0: 60, x1: 940, y0: 200, y1: 1436 };
+// Zona segura 1080x1920 (auditoria no celular, TikTok 27/09): coluna de botões cobre x>940 entre y≈900–1700,
+// legenda/descrição cobre y>1500, abas "Seguindo | Para você" cobrem y<~250. Margem direita ≥ 160 px.
+// Nenhum texto/cartão/opção/balão/marca pode sair desta caixa (modo `auditoria` das lições confere por pixel).
+export const SAFE = { x0: 60, x1: 920, y0: 260, y1: 1436 };
 
 // Contorno grosso + sombra dura: lê em cima de qualquer fundo.
 export const outline = (px = 10) => ({

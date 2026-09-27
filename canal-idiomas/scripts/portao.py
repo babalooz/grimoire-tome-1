@@ -34,6 +34,7 @@ ZONAS = {"coluna de botões (x>920, y 900–1700)": (920, 900, 1080, 1700),
          "abas do topo (y<260)": (0, 0, 1080, 260),
          "legenda do app (y>1500)": (0, 1500, 1080, 1920)}
 ZONA_MAX = 0.002        # fração máxima de pixels de interface/texto dentro de uma zona (modo auditoria)
+ZONA_PERSISTE = 12      # só reprova se a invasão continuar 12 quadros (0,4 s) depois: entradas/saídas animadas passam
 NOTA_MIN = 8.0
 FAIXA = {"episodio": (61.0, 140.0), "esquete": (5.0, 20.0)}
 LUFS_ALVO, LUFS_TOL, TP_MAX = -14.0, 1.0, -1.0
@@ -92,18 +93,27 @@ def zona_segura(ep_id: str, comp: str, frames: list[int]) -> list[str]:
         pa = Path(tmp) / "props.json"
         pa.write_text(json.dumps({**json.loads(props.read_text()), "auditoria": True}))
         nome = "Licao" if comp == "Licao" else "LicaoEsquete"
-        r = subprocess.run(["node", "scripts/stills.mjs", nome, str(pa), tmp, *map(str, frames)], cwd=ROOT,
+        todos = sorted({f for x in frames for f in (x, x + ZONA_PERSISTE)})
+        r = subprocess.run(["node", "scripts/stills.mjs", nome, str(pa), tmp, *map(str, todos)], cwd=ROOT,
                            capture_output=True, text=True)
         if r.returncode:
             return [f"zona segura: falha ao renderizar auditoria ({r.stderr.strip()[-200:]})"]
-        for png in sorted(Path(tmp).glob("*.png")):
+
+        def invasoes(png: Path) -> dict:
             im = Image.open(png).convert("L")
+            out = {}
             for nomez, (x0, y0, x1, y1) in ZONAS.items():
                 reg = im.crop((x0, y0, x1, y1))
-                n = sum(1 for v in reg.getdata() if v > 40)
-                frac = n / ((x1 - x0) * (y1 - y0))
+                frac = sum(1 for v in reg.getdata() if v > 40) / ((x1 - x0) * (y1 - y0))
                 if frac > ZONA_MAX:
-                    falhas.append(f"zona segura: {nomez} com {frac:.1%} de interface no quadro {png.stem.split('-f')[-1]}")
+                    out[nomez] = frac
+            return out
+        por_quadro = {int(p.stem.split("-f")[-1]): invasoes(p) for p in Path(tmp).glob("*.png")}
+        for f in frames:
+            depois = por_quadro.get(f + ZONA_PERSISTE, {})
+            for nomez, frac in por_quadro.get(f, {}).items():
+                if nomez in depois:  # parado na zona, não é só transição
+                    falhas.append(f"zona segura: {nomez} com {frac:.1%} de interface no quadro {f}")
     return sorted(set(falhas))
 
 

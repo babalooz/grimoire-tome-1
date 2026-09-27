@@ -14,7 +14,8 @@ export const Caption: React.FC<{
   fontSize?: number;
   pop?: number; // 0..1 (entrada)
   bars?: number; // exercício de ouvir: esconde o texto (não entrega a resposta) e mostra ondas de som animadas (valor = frame)
-}> = ({ anchor, text: rawText, lang, progress, thought = false, side = "above", maxW = SAFE.x1 - SAFE.x0, fontSize = 58, pop = 1, bars }) => {
+  minTop?: number; // balão "above": topo mínimo (abaixo do título/gancho de tela que está no topo)
+}> = ({ anchor, text: rawText, lang, progress, thought = false, side = "above", maxW = SAFE.x1 - SAFE.x0, fontSize = 58, pop = 1, bars, minTop = SAFE.y0 + 90 }) => {
   const text = bars !== undefined ? "~~~~~~~~~~" : rawText;
   const words = text.split(/\s+/);
   const active = progress >= 1 ? -1 : Math.max(0, Math.min(words.length - 1, Math.floor(progress * words.length)));
@@ -50,7 +51,7 @@ export const Caption: React.FC<{
     );
   } else {
     left = Math.min(SAFE.x1 - w, Math.max(SAFE.x0, anchor[0] - w / 2));
-    bottomY = Math.min(SAFE.y1, Math.max(SAFE.y0 + 90 + h, anchor[1] - (thought ? 70 : 34)));
+    bottomY = Math.min(SAFE.y1, Math.max(minTop + h, anchor[1] - (thought ? 70 : 34)));
     const tx = Math.min(w - 50, Math.max(50, anchor[0] - left));
     const dx = anchor[0] - left > tx ? 34 : anchor[0] - left < tx ? -34 : 0;
     tail = (
@@ -64,7 +65,7 @@ export const Caption: React.FC<{
       </svg>
     );
   }
-  const scale = 0.88 + 0.12 * pop;
+  const scale = 0.88 + 0.12 * Math.min(1, pop); // sem overshoot: o balão encostado em SAFE.x1 não pode crescer para fora
   return (
     <div style={{
       position: "absolute", left, top: bottomY, width: w, transform: `translateY(-100%) scale(${scale})`, opacity: Math.min(1, pop * 2),

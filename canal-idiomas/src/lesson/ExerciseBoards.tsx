@@ -3,11 +3,13 @@ import { Easing, interpolate, spring } from "remotion";
 import { Bolinha } from "../chars/Bolinha";
 import { BODY, C, SAFE, TITLE } from "../theme";
 import { Check, L } from "./LessonUI";
+import { useAudit } from "./audit";
 import { Cartao, LIGAR_DRAW, LIGAR_STAG, Serie } from "./timeline";
 
 // Exercícios do percurso do zero (docs/percurso-do-zero.md): cartoes · ligar · completar · revisao + selo da série.
 // Mesmo vocabulário visual do LessonUI (creme + contorno tinta + sombra dura; turquesa = certo). Coordenadas 1080x1920,
-// conteúdo entre L.cardY (406) e ~1090 (a Capy da lição ocupa o canto inferior esquerdo a partir de y 1116).
+// conteúdo entre L.cardY (472) e ~1110 (a Capy da lição ocupa o canto inferior esquerdo a partir de y 1136).
+// Nada passa de SAFE.x1 (920): a coluna de botões do TikTok cobre x>940 entre y≈900 e 1700.
 
 const W = SAFE.x1 - SAFE.x0;
 const SHADOW = `0 10px 0 ${C.tinta}`;
@@ -21,14 +23,14 @@ export const fit = (text: string, width: number, max: number, min = 26, em = 0.5
   Math.max(min, Math.min(max, Math.floor(width / Math.max(1, text.length * em))));
 
 // ---------- selo da série: "T1 E01 · Primeiro contato" ----------
-// Discreto, no topo da zona segura, o episódio inteiro (a marca d'água fica embaixo à direita: sem colisão).
+// Pílula inline: vai como `lead` da marca d'água (src/Watermark.tsx), na mesma linha do topo esquerdo (y 264–308).
 export const SeriesSeal: React.FC<{ serie: Serie }> = ({ serie }) => (
   <div style={{
-    position: "absolute", left: SAFE.x0, top: L.sealY, height: 42, maxWidth: W, display: "flex", alignItems: "center", gap: 10,
+    height: 42, minWidth: 0, display: "flex", alignItems: "center", gap: 10,
     background: "rgba(26,11,69,0.78)", borderRadius: 21, padding: "0 16px 0 4px", boxSizing: "border-box",
   }}>
-    <div style={{ fontFamily: TITLE, fontSize: 28, color: C.tinta, background: C.amarelo, borderRadius: 17, padding: "0 12px", lineHeight: "34px" }}>{serie.codigo}</div>
-    <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 24, color: C.creme, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+    <div style={{ flexShrink: 0, fontFamily: TITLE, fontSize: 28, color: C.tinta, background: C.amarelo, borderRadius: 17, padding: "0 12px", lineHeight: "34px", whiteSpace: "nowrap" }}>{serie.codigo}</div>
+    <div style={{ minWidth: 0, fontFamily: BODY, fontWeight: 800, fontSize: 24, color: C.creme, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
       Cap. {serie.capitulo} · {serie.tituloCapitulo}
     </div>
   </div>
@@ -46,8 +48,8 @@ const MicIcon: React.FC<{ size: number; on: boolean }> = ({ size, on }) => (
 // ---------- cartoes: APRESENTAR ----------
 // 1 cartão grande por vez (emoji + inglês + tradução); os já vistos viram uma pilha de fichas no topo = progresso.
 const STACK_Y = L.cardY;
-const BIG_Y = 506;
-const BIG_H = 560;
+const BIG_Y = L.cardY + 96;
+const BIG_H = 540;
 
 const BigCard: React.FC<{ c: Cartao; n: number; total: number; style?: React.CSSProperties; children?: React.ReactNode }> = ({ c, n, total, style, children }) => (
   <div style={{
@@ -92,11 +94,11 @@ export const CardsBoard: React.FC<{
       </div>
       {active < 0 && (
         // baralho fechado enquanto a Capy apresenta o exercício
-        <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920, transform: `scale(${deckIn})`, transformOrigin: `540px ${BIG_Y + BIG_H / 2}px` }}>
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920, transform: `scale(${deckIn})`, transformOrigin: `490px ${BIG_Y + BIG_H / 2}px` }}>
           {[2, 1, 0].map((j) => (
             <div key={j} style={{
-              position: "absolute", left: SAFE.x0 + j * 14, top: BIG_Y - j * 16, width: W - j * 28, height: BIG_H, boxSizing: "border-box", background: j ? C.lilas : C.roxo,
-              border: `8px solid ${C.tinta}`, borderRadius: 44, boxShadow: SHADOW, transform: `rotate(${(j - 1) * 2.2 + Math.sin(frame / 20) * 0.6}deg)`,
+              position: "absolute", left: SAFE.x0 + 12 + j * 14, top: BIG_Y - j * 16, width: W - 24 - j * 28, height: BIG_H, boxSizing: "border-box", background: j ? C.lilas : C.roxo,
+              border: `8px solid ${C.tinta}`, borderRadius: 44, boxShadow: SHADOW, transform: `rotate(${(j - 1) * 1.6 + Math.sin(frame / 20) * 0.6}deg)`,
               display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
             }}>
               {j === 0 && (
@@ -118,7 +120,7 @@ export const CardsBoard: React.FC<{
           style={{ transform: `translateX(${(1 - inK) * 1000}px) rotate(${(1 - inK) * 12}deg)` }}>
           {repita && repitaOn && (
             <div style={{
-              position: "absolute", right: -18, bottom: -26, display: "flex", alignItems: "center", gap: 8, background: C.amarelo, border: `6px solid ${C.tinta}`,
+              position: "absolute", right: 36, bottom: -26, display: "flex", alignItems: "center", gap: 8, background: C.amarelo, border: `6px solid ${C.tinta}`,
               borderRadius: 40, boxShadow: `0 6px 0 ${C.tinta}`, padding: "4px 20px 4px 6px",
               transform: `scale(${spring({ frame: repitaT, fps, config: { damping: 9 } }) * (1 + Math.sin(frame / 3) * 0.04)}) rotate(-4deg)`,
             }}>
@@ -134,16 +136,16 @@ export const CardsBoard: React.FC<{
 
 // ---------- ligar: RECONHECER (pares) ----------
 const COL_W = 350;
-const ROW_Y0 = 500;
+const ROW_Y0 = L.cardY + 94;
 const ROW_H = 132;
 const ROW_PITCH = 186;
-const LX = SAFE.x0, RX = SAFE.x1 - COL_W;
+const LX = SAFE.x0, RX = SAFE.x1 - COL_W - 12; // folga: o pop de 6% no acerto não passa de SAFE.x1
 
 export const MatchBoard: React.FC<{
   pares: { en: string; pt: string }[]; direita: number[]; since: number; revealT: number; frame: number; fps: number;
 }> = ({ pares, direita, since, revealT, frame, fps }) => {
   const n = pares.length;
-  const pitch = n > 3 ? Math.min(ROW_PITCH, (1060 - ROW_Y0) / n) : ROW_PITCH;
+  const pitch = n > 3 ? Math.min(ROW_PITCH, (1120 - ROW_Y0) / n) : ROW_PITCH;
   const rowY = (r: number) => ROW_Y0 + r * pitch;
   const drawn = (i: number) => (revealT < 0 ? 0 : interpolate(revealT - i * LIGAR_STAG, [0, LIGAR_DRAW], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) }));
   const box = (text: string, x: number, y: number, k: number, ok: number, key: string, lang: "en" | "pt") => {
@@ -229,35 +231,36 @@ export const GapSentence: React.FC<{ frase: string; lacuna: string; answer: stri
 // ---------- revisao: REVISÃO ESPAÇADA (quadro do Bolinha) ----------
 // O Bolinha (hamster arquivista) guarda as frases nas bochechas: os cartões saem dele, o inglês fica borrado
 // e cada fala `evento:"lembra"` revela o item `alvo`.
-const REV_Y = 752;
-const REV_H = 320;
+const REV_Y = 800;
+const REV_H = 300;
 export const ReviewBoard: React.FC<{
   itens: (Cartao & { de: string })[]; since: number; revealedAt: number[]; timerOn: boolean; frame: number; fps: number;
 }> = ({ itens, since, revealedAt, timerOn, frame, fps }) => {
   const n = itens.length;
   const gap = 20;
-  const cw = (W - gap * (n - 1)) / n;
+  const cw = (W - 12 - gap * (n - 1)) / n; // folga de 6 px por lado: a inclinação de ±1,2° não passa de SAFE.x1
   const nRev = revealedAt.filter((t) => t >= 0 && frame >= t).length;
   const lastRev = Math.max(-1, ...revealedAt.filter((t) => t >= 0 && frame >= t));
   const puff = lastRev >= 0 && frame - lastRev < 10 ? Math.sin(((frame - lastRev) / 10) * Math.PI) : 0;
   const cheeks = Math.max(0.2, 1 - (nRev / n) * 0.8) + puff * 0.15;
   const bIn = spring({ frame: since, fps, config: { damping: 12 } });
-  const bx = 540, bw = 330;
+  const audit = useAudit();
+  const bx = 490, bw = 330;
   return (
     <>
-      <div style={{ position: "absolute", left: bx - bw / 2 - 150, top: 388, transform: `scale(${bIn})`, transformOrigin: "50% 100%" }}>
-        <Bolinha frame={frame} talking={false} emotion={puff > 0 ? "happy" : timerOn ? "neutral" : "smile"} size={bw} cheeks={cheeks} />
+      <div style={{ position: "absolute", left: bx - bw / 2 - 150, top: 440, transform: `scale(${bIn})`, transformOrigin: "50% 100%" }}>
+        {!audit && <Bolinha frame={frame} talking={false} emotion={puff > 0 ? "happy" : timerOn ? "neutral" : "smile"} size={bw} cheeks={cheeks} />}
       </div>
       <div style={{
-        position: "absolute", left: bx + 60, top: 470, transform: `rotate(5deg) scale(${spring({ frame: since - 10, fps, config: { damping: 10 } })})`,
+        position: "absolute", left: bx + 60, top: 522, transform: `rotate(5deg) scale(${spring({ frame: since - 10, fps, config: { damping: 10 } })})`,
         fontFamily: TITLE, fontSize: 40, color: C.tinta, background: C.amarelo, border: `6px solid ${C.tinta}`, borderRadius: 20, boxShadow: `0 6px 0 ${C.tinta}`,
         padding: "4px 18px", lineHeight: 1.05, textAlign: "center",
       }}>O BOLINHA<br />GUARDOU!</div>
       {itens.map((it, i) => {
-        const x = SAFE.x0 + i * (cw + gap);
+        const x = SAFE.x0 + 6 + i * (cw + gap);
         // sai da bochecha do Bolinha e cai no lugar
         const k = spring({ frame: since - 12 - i * 6, fps, config: { damping: 14, mass: 0.7 } });
-        const fromX = bx - cw / 2 + (i - (n - 1) / 2) * 60, fromY = 560;
+        const fromX = bx - cw / 2 + (i - (n - 1) / 2) * 60, fromY = 612;
         const tx = fromX + (x - fromX) * k, ty = fromY + (REV_Y - fromY) * k;
         const rt = revealedAt[i] >= 0 ? frame - revealedAt[i] : -1;
         const shown = rt >= 0;

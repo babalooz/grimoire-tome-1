@@ -162,7 +162,15 @@ export const Balloon: React.FC<{
 };
 
 // ---- elementos de interface ----
-export const DayBadge: React.FC<{ day: number }> = ({ day }) => (
+// inline = pílula compacta (44 px) para ir como `lead` da marca d'água, na linha do topo esquerdo.
+export const DayBadge: React.FC<{ day: number; inline?: boolean }> = ({ day, inline = false }) => inline ? (
+  <div style={{
+    height: 44, boxSizing: "border-box", display: "flex", alignItems: "center", gap: 8, whiteSpace: "nowrap",
+    background: C.amarelo, border: `4px solid ${C.tinta}`, borderRadius: 22, padding: "0 16px 0 8px",
+  }}>
+    <div style={{ fontFamily: TITLE, fontSize: 26, color: C.tinta }}>DIA {day} NOS EUA</div>
+  </div>
+) : (
   <div style={{
     position: "absolute", left: SAFE.x0, top: SAFE.y0, display: "flex", alignItems: "center", gap: 12,
     background: C.amarelo, border: `6px solid ${C.tinta}`, borderRadius: 40, padding: "8px 24px 8px 12px", boxShadow: `0 6px 0 ${C.tinta}`,
@@ -194,7 +202,7 @@ const QuizPanel: React.FC<{
   const revealed = revealT >= 0;
   const inS = spring({ frame: since, fps, config: { damping: 14 } });
   return (
-    <div style={{ position: "absolute", left: SAFE.x0, width: SAFE.x1 - SAFE.x0, top: 300, transform: `translateY(${(1 - inS) * -260 - exit * 700}px)`, opacity: Math.min(1, inS * 1.5) }}>
+    <div style={{ position: "absolute", left: SAFE.x0, width: SAFE.x1 - SAFE.x0, top: 330, transform: `translateY(${(1 - inS) * -260 - exit * 700}px)`, opacity: Math.min(1, inS * 1.5) }}>
       <div style={{
         background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 40, padding: "26px 150px 26px 30px", boxShadow: `0 10px 0 ${C.tinta}`,
         fontFamily: TITLE, fontSize: 60, lineHeight: 1.05, color: C.tinta, position: "relative",
@@ -249,7 +257,7 @@ export const Notebook: React.FC<{ n: number; chunk: SitcomProps["chunk"]; since:
   const st = spring({ frame: since - 10, fps, config: { damping: 8, mass: 0.6 } });
   const num = `#${String(n).padStart(3, "0")}`;
   return (
-    <div style={{ position: "absolute", left: SAFE.x0 + 20, width: SAFE.x1 - SAFE.x0 - 40, top: 300, transform: `translateY(${(1 - s) * 900}px) rotate(${(1 - s) * 8 - 1.5}deg)` }}>
+    <div style={{ position: "absolute", left: SAFE.x0 + 20, width: SAFE.x1 - SAFE.x0 - 40, top: 340, transform: `translateY(${(1 - s) * 900}px) rotate(${(1 - s) * 8 - 1.5}deg)` }}>
       <div style={{
         background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 28, boxShadow: `0 12px 0 ${C.tinta}`, padding: "70px 40px 40px 90px", position: "relative",
         backgroundImage: `repeating-linear-gradient(transparent 0 58px, #C9B8F5 58px 62px)`, backgroundPosition: "0 40px",
@@ -268,8 +276,8 @@ export const Notebook: React.FC<{ n: number; chunk: SitcomProps["chunk"]; since:
           </div>
         )}
         <div style={{
-          position: "absolute", right: -20, top: -40, fontFamily: TITLE, fontSize: 64, color: C.errado, border: `8px solid ${C.errado}`, borderRadius: 20,
-          padding: "0 18px", background: "rgba(255,244,224,0.9)", transform: `rotate(-12deg) scale(${interpolate(st, [0, 1], [2.4, 1])})`, opacity: Math.min(1, st * 2),
+          position: "absolute", right: 0, top: -40, fontFamily: TITLE, fontSize: 64, color: C.errado, border: `8px solid ${C.errado}`, borderRadius: 20,
+          padding: "0 18px", background: "rgba(255,244,224,0.9)", transform: `rotate(-12deg) scale(${interpolate(st, [0, 1], [1.8, 1])})`, opacity: Math.min(1, st * 2),
         }}>{num}</div>
       </div>
     </div>
@@ -378,9 +386,8 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
       </AbsoluteFill>
 
       {/* interface (espaço de tela, zona segura) */}
-      <DayBadge day={p.day} />
       {cur.i === 0 && p.hookTitle && (
-        <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 318, transform: "rotate(-2deg)" }}>
+        <div style={{ position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: 330, transform: "rotate(-2deg)" }}>
           <div style={{
             background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 36, boxShadow: `0 10px 0 ${C.tinta}`, padding: "18px 26px",
             textAlign: "center", fontFamily: TITLE, fontSize: 84, lineHeight: 1.02, color: C.tinta,
@@ -399,7 +406,7 @@ export const Sitcom: React.FC<SitcomProps> = (p) => {
       {beat.card && inAudio && (
         <Balloon anchor={toScreen(cam, STAGE.capi.head[0], STAGE.capi.headTop) as [number, number]} words={cap.words} active={cap.active} thought={false} lang={beat.lang} pop={1} />
       )}
-    <Watermark />
+    <Watermark lead={<DayBadge day={p.day} inline />} />
     </AbsoluteFill>
   );
 };

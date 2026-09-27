@@ -2,7 +2,8 @@ import React, { useMemo } from "react";
 import { AbsoluteFill, Audio, Easing, Freeze, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Mood } from "./Capi";
 import { Emotion } from "./chars/common";
-import { Licao, onStage, shotFor } from "./Licao";
+import { Licao, TITLE_BOTTOM, TITLE_TOP, hookCam, hookEmo, hookPlan, onStage, shotWithHook } from "./Licao";
+import { AUDIT_BG, AuditCtx, useAudit } from "./lesson/audit";
 import { CafeStage, WHIP, camLerp } from "./lesson/CafeStage";
 import { Caption } from "./lesson/Caption";
 import { SeriesSeal } from "./lesson/ExerciseBoards";
@@ -17,7 +18,7 @@ import { Watermark } from "./Watermark";
 //   + [corte `de`→`ate` do episódio] + [card final "aula completa no EP 0N"].
 // Props = episódio (com `esquetes`) + timings + `esquete: "A" | "B" | "C"`. Render: scripts/make-licao.sh.
 
-export type LicaoEsqueteProps = LicaoProps & { esquete: string };
+export type LicaoEsqueteProps = LicaoProps & { esquete: string; auditoria?: boolean };
 
 export const licaoEsqueteFrames = (p: LicaoEsqueteProps, fps: number) =>
   !p.timings || !Object.keys(p.timings).length || !p.esquetes?.length ? 1 : esqueteWindow(p, p.esquete, fps).total;
@@ -29,14 +30,18 @@ const MOOD: Record<Emotion, Mood> = {
 const GANCHO_S = 2.6;
 
 // Abertura: falas curtas no palco do café (mesmo palco/câmera/legenda da cena do episódio).
+// Mesmo gancho de câmera do episódio (src/Licao.tsx, HOOK): close em quem fala → corte seco para a reação → volta.
 const Abertura: React.FC<{ steps: Step[]; lazy: boolean }> = ({ steps, lazy }) => {
   const frame = useCurrentFrame();
   const cur = steps.find((s) => frame >= s.from && frame < s.from + s.dur) ?? steps[steps.length - 1];
   const ci = steps.indexOf(cur);
-  const target = shotFor(cur);
-  const prev = ci > 0 ? shotFor(steps[ci - 1]) : target;
+  const hook = useMemo(() => hookPlan(steps, 0, lazy ? ["lazy"] : []), [steps, lazy]);
+  const shotOf = shotWithHook(hook);
+  const target = shotOf(cur);
+  const prev = ci > 0 ? shotOf(steps[ci - 1]) : target;
   const k = interpolate(frame - cur.from, [0, WHIP], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
-  const cam = camLerp(prev, target, k, 1 + 0.018 * Math.min(1, Math.max(0, frame - cur.from) / (cur.dur || 1)));
+  const hc = hookCam(hook, frame);
+  const cam = hc ? hc.cam : camLerp(prev, target, k, 1 + 0.018 * Math.min(1, Math.max(0, frame - cur.from) / (cur.dur || 1)));
   const emo: Record<CharId, Emotion> = { capi: "zen", hank: "bored", lazy: "neutral" };
   steps.forEach((s) => {
     if (s.i > cur.i || !isLine(s.passo)) return;
@@ -44,6 +49,7 @@ const Abertura: React.FC<{ steps: Step[]; lazy: boolean }> = ({ steps, lazy }) =
     if (onStage(l.speaker) && l.emotion) emo[l.speaker] = l.emotion;
     if (l.react) Object.assign(emo, l.react);
   });
+  const emoView = hc?.insert ? hookEmo(emo, hook!.b) : emo;
   const line = isLine(cur.passo) ? (cur.passo as Line) : null;
   const inAudio = !!line && frame >= cur.start && frame < cur.start + cur.audioFrames;
   const talking = inAudio && line!.mode !== "pensamento" && onStage(line!.speaker) ? line!.speaker : null;
@@ -52,11 +58,12 @@ const Abertura: React.FC<{ steps: Step[]; lazy: boolean }> = ({ steps, lazy }) =
     const id: CharId = onStage(line.speaker) ? line.speaker : "capi";
     const [ax, ay] = toScreen(cam, STAGE[id].head[0], STAGE[id].headTop);
     caption = <Caption anchor={[ax, ay]} text={line.text} lang={line.lang} progress={(frame - cur.start) / Math.max(1, cur.audioFrames)}
-      thought={line.mode === "pensamento"} pop={spring({ frame: frame - cur.start, fps: 30, config: { damping: 14 } })} />;
+      thought={line.mode === "pensamento"} pop={spring({ frame: frame - cur.start, fps: 30, config: { damping: 14 } })}
+      minTop={frame < Math.round(GANCHO_S * 30) + 8 ? TITLE_BOTTOM : undefined} />;
   }
   return (
     <AbsoluteFill>
-      <CafeStage frame={frame} cam={cam} blur={0} emo={emo} capiMood={MOOD[emo.capi]} talking={talking} overlay={0} tremor={0} faintT={-1} lazy={lazy} />
+      <CafeStage frame={frame} cam={cam} blur={0} emo={emoView} capiMood={MOOD[emoView.capi]} talking={talking} overlay={0} tremor={hc?.insert ? 3 : 0} faintT={-1} lazy={lazy} />
       {caption}
       {steps.filter((s) => s.audio).map((s) => (
         <Sequence key={s.i} from={s.start} durationInFrames={s.audioFrames + 2}><Audio src={staticFile(s.audio!)} /></Sequence>
@@ -74,7 +81,7 @@ const Gancho: React.FC<{ text: string; frame: number; fps: number }> = ({ text, 
   const out = interpolate(frame, [end, end + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
   return (
     <div style={{
-      position: "absolute", left: SAFE.x0 + 20, width: SAFE.x1 - SAFE.x0 - 40, top: 268,
+      position: "absolute", left: SAFE.x0 + 30, width: SAFE.x1 - SAFE.x0 - 60, top: TITLE_TOP, // wobble de 5% cabe em x ≤ 920
       transform: `rotate(-2deg) scale(${wob * (1 - out * 0.6)}) translateY(${-out * 160}px)`, opacity: 1 - out,
     }}>
       <div style={{
@@ -90,7 +97,7 @@ const Gancho: React.FC<{ text: string; frame: number; fps: number }> = ({ text, 
 const CtaCard: React.FC<{ text: string; since: number; fps: number; serie?: LicaoProps["serie"] }> = ({ text, since, fps, serie }) => {
   if (since < 0) return null;
   const s = spring({ frame: since, fps, config: { damping: 11 } });
-  const dim = interpolate(since, [0, 8], [0, 0.72], { extrapolateRight: "clamp" });
+  const dim = interpolate(since, [0, 8], [0, 0.72], { extrapolateRight: "clamp" }) * (useAudit() ? 0 : 1);
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ background: `rgba(30,15,77,${dim})` }} />
@@ -110,7 +117,11 @@ const CtaCard: React.FC<{ text: string; since: number; fps: number; serie?: Lica
   );
 };
 
-export const LicaoEsquete: React.FC<LicaoEsqueteProps> = (p) => {
+export const LicaoEsquete: React.FC<LicaoEsqueteProps> = (p) => (
+  <AuditCtx.Provider value={!!p.auditoria}><LicaoEsqueteInner {...p} /></AuditCtx.Provider>
+);
+
+const LicaoEsqueteInner: React.FC<LicaoEsqueteProps> = (p) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const w = useMemo(() => esqueteWindow(p, p.esquete, fps), [p, fps]);
@@ -137,12 +148,12 @@ export const LicaoEsquete: React.FC<LicaoEsqueteProps> = (p) => {
   }, [p, fps, durationInFrames, lufs, w]);
 
   return (
-    <AbsoluteFill style={{ background: C.noite, overflow: "hidden" }}>
+    <AbsoluteFill style={{ background: p.auditoria ? AUDIT_BG : C.noite, overflow: "hidden" }}>
       {w.ab > 0 && (
         <Sequence durationInFrames={w.ab}><Abertura steps={w.abertura} lazy={!!p.cast?.includes("lazy")} /></Sequence>
       )}
       <Sequence from={w.ab} durationInFrames={w.cut}>
-        <Sequence from={-w.from}><Licao {...p} semTrilha semGancho corteDe={w.from} /></Sequence>
+        <Sequence from={-w.from}><Licao {...p} semTrilha semGancho corteDe={w.from} ganchoAte={w.from - w.ab + Math.round(GANCHO_S * fps) + 8} /></Sequence>
       </Sequence>
       <Sequence from={w.ab + w.cut}>
         <Freeze frame={w.to - 1}><Licao {...p} semAudio semTrilha semGancho /></Freeze>
@@ -155,8 +166,7 @@ export const LicaoEsquete: React.FC<LicaoEsqueteProps> = (p) => {
         </Sequence>
       ))}
       <Gancho text={w.esquete.gancho} frame={frame} fps={fps} />
-      {w.ab > 0 && frame < w.ab && p.serie && <SeriesSeal serie={p.serie} />}
-      {w.ab > 0 && frame < w.ab && <Watermark />}
+      {w.ab > 0 && frame < w.ab && <Watermark lead={p.serie ? <SeriesSeal serie={p.serie} /> : undefined} />}
     </AbsoluteFill>
   );
 };

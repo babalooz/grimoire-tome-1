@@ -281,7 +281,7 @@ export const Episode: React.FC<EpisodeProps> = ({ format, scenes, timings }) => 
         if (scene.answer !== undefined) done += 1;
         return el;
       })}
-    <Watermark />
+    <Watermark top={SAFE.y1 - 50} />
     </AbsoluteFill>
   );
 };
