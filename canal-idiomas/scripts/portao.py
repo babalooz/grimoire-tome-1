@@ -96,7 +96,8 @@ def zona_segura(ep_id: str, comp: str, frames: list[int]) -> list[str]:
         pa = Path(tmp) / "props.json"
         pa.write_text(json.dumps({**json.loads(props.read_text()), "auditoria": True}))
         nome = "Licao" if comp == "Licao" else "LicaoEsquete"
-        todos = sorted({f for x in frames for f in (x, x + ZONA_PERSISTE)})
+        ultimo = max(frames)
+        todos = sorted({min(f, ultimo) for x in frames for f in (x, x + ZONA_PERSISTE)})
         r = subprocess.run(["node", "scripts/stills.mjs", nome, str(pa), tmp, *map(str, todos)], cwd=ROOT,
                            capture_output=True, text=True)
         if r.returncode:
@@ -113,7 +114,7 @@ def zona_segura(ep_id: str, comp: str, frames: list[int]) -> list[str]:
             return out
         por_quadro = {int(p.stem.split("-f")[-1]): invasoes(p) for p in Path(tmp).glob("*.png")}
         for f in frames:
-            depois = por_quadro.get(f + ZONA_PERSISTE, {})
+            depois = por_quadro.get(min(f + ZONA_PERSISTE, ultimo), {})
             for nomez, frac in por_quadro.get(f, {}).items():
                 if nomez in depois:  # parado na zona, não é só transição
                     falhas.append(f"zona segura: {nomez} com {frac:.1%} de interface no quadro {f}")
@@ -277,7 +278,8 @@ def main() -> None:
         if mp4.exists():
             dur_f = int(medidas.get("duracao", 0) * 30)
             comp = "Licao" if faixa == "episodio" else f"LicaoEsquete:{mp4.stem.rsplit('-', 1)[-1]}"
-            falhas_arq += zona_segura(ep["id"], comp, sorted({0, 15, 30, *range(60, max(dur_f - 1, 61), 90)}))
+            fim = max(dur_f - 2, 31)
+            falhas_arq += zona_segura(ep["id"], comp, sorted({f for f in (0, 15, 30, *range(60, fim, 90)) if f <= fim}))
         c1 = {"ok": not (falhas_arq or falhas_roteiro), "falhas": falhas_arq + falhas_roteiro, "medidas": medidas}
         v = gravar(mp4, c1, juiz)
         aprovados += v["aprovado"]
