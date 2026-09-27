@@ -12,3 +12,6 @@
 - `licao-s01e05-phone-number-esquete-A.mp4` · midia bd2d232 · 12.3 s · -14.0 LUFS · pico -1.5 · mov 0.266 · ok
 - `licao-s01e05-phone-number-esquete-B.mp4` · midia bd2d232 · 10.1 s · -14.0 LUFS · pico -1.5 · mov 0.278 · ok
 - `licao-s01e05-phone-number.mp4` · midia bd2d232 · 78.7 s · -14.0 LUFS · pico -1.2 · mov 0.273 · ok
+- `licao-s01e06-are-you-tired-esquete-A.mp4` · midia 8d85441 · 10.4 s · -14.0 LUFS · pico -1.5 · mov 0.286 · ok
+- `licao-s01e06-are-you-tired-esquete-B.mp4` · midia 8d85441 · 8.5 s · -14.0 LUFS · pico -1.5 · mov 0.273 · ok
+- `licao-s01e06-are-you-tired.mp4` · midia 8d85441 · 75.1 s · -14.1 LUFS · pico -1.2 · mov 0.287 · ok
