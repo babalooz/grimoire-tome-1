@@ -88,6 +88,7 @@ mostra, 20% explora novidade.
 # OPERAÇÃO DIÁRIA — fonte da verdade das rotinas (atualizado 26/09)
 
 As rotinas da nuvem leem esta seção + `CLAUDE.md` + `docs/tiktok-nativo.md`. Caminhos relativos à raiz do repo.
+**BLOQUEIO (27/09): formato novo (Sitcom do Café) AINDA NÃO APROVADO pelo Felipe → nenhuma rotina renderiza, roda TTS ou publica até ele decidir (ver CLAUDE.md).**
 **Regra de ouro: só executar etapa marcada ✅ EXISTE. Etapa ⛔ NÃO EXISTE AINDA = pular e registrar "pendente" no commit.**
 
 ## 1. Rotinas (criadas pelo Felipe no claude.ai — não criar outras)

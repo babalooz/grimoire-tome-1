@@ -49,6 +49,11 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   erro de brasileiro é tempero dentro do objetivo. Ensinar palavras ANTES de frases (apresentar → reconhecer → usar → mini-cena).
   Sempre em contexto adulto (evitar classificação "feito para crianças"). Percurso em canal-idiomas/curriculo/do-zero.json.
 
+## REGRA DO FELIPE (27/09): formato, elenco, marca e voz são decisão DELE
+- Nada de gerar vídeo (render, TTS pago, protótipo) antes de o Felipe decidir o formato. Fluxo: plano → Felipe decide →
+  só então render. A autonomia da fábrica vale só para a produção diária DEPOIS do formato aprovado. Mudança de formato,
+  elenco, marca ou voz = decisão do Felipe (apresentar plano e esperar).
+
 ## Fábrica autônoma (decisão do Felipe, 26/09)
 - Felipe NÃO aprova vídeos. Portão automático em 3 camadas (código → juiz LLM nota ≥8, máx. 2 reescritas → publica).
   Freio automático (strike, remoção, 3 vídeos seguidos < 50% da mediana) pausa tudo e avisa o Felipe. Detalhes em docs/plano-de-acao.md.
