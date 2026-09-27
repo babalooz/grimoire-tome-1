@@ -2,37 +2,42 @@
 
 **Foco (decisão do Felipe):** views e seguidores ganhos por vídeo. Essas são as métricas prioritárias do analista.
 
-## O que é longo e o que é curto
-- **Longo:** o Vídeo 1 APRENDER de cada assunto (60–90 s, aula, ≥ 61 s no TikTok) e a compilação semanal do YouTube (4–6 min, com capítulos).
-- **Curto:** o Vídeo 2 PRATICAR, o Vídeo 3 FIXAR e os cortes C1/C2 do longo (até ~35 s, feitos para alcance, terminando com convite verdadeiro para seguir e ver a aula completa).
-- **Produção nova por semana:** só 2 assuntos × 3 vídeos. Cortes e compilação saem do mesmo render, sem cena nova.
+## Longo × curto (decisão do Felipe, 27/09)
+- **Os 3 vídeos de cada assunto têm ≥ 61 s:**
+  - V1 APRENDER (aula);
+  - V2 PRATICAR (storytelling com o hype, a Dona Jaca liga);
+  - V3 FIXAR.
+
+  Todos entram no Creator Rewards do TikTok.
+- **Curtos (alcance):** só os CORTES de 5–28 s tirados dos 3 vídeos (C1–C5 por assunto), com gancho no 1º segundo e convite verdadeiro para ver o vídeo inteiro no perfil.
+- **YouTube longo:** a compilação semanal com capítulos (6 vídeos, ~6–7 min).
+- **Produção nova por semana:** só 2 assuntos × 3 vídeos. Cortes e compilação saem do mesmo render.
 
 ## Semana-tipo (2 assuntos por semana)
 
-| Dia | Post principal | Extra (reaproveitado) | Redes |
+| Dia | Post principal (≥ 61 s) | Cortes do dia (5–28 s) | Redes |
 |---|---|---|---|
-| seg | **A · V1 APRENDER (LONGO)** | — | TikTok, YouTube, Instagram |
-| ter | A · V2 PRATICAR (curto) | — | TikTok, Shorts, Reels |
-| qua | **B · V1 APRENDER (LONGO)** | A · corte C1 (curto) | TikTok, YouTube, Instagram |
-| qui | A · V3 FIXAR (curto) · é o dia 4 do A (volta espaçada) | B · V2 PRATICAR (curto) | TikTok, Shorts, Reels |
-| sex | B · corte C1 (curto) | A · corte C2 (curto) | TikTok, Shorts, Reels |
-| sáb | B · V3 FIXAR (curto) · dia 4 do B | — | TikTok, Shorts, Reels |
-| dom | **Compilação da semana (YouTube, LONGA, capítulos A + B)** | B · corte C2 (curto) | YouTube (compilação); TikTok e Reels (corte) |
+| seg | **A · V1 APRENDER** | — | TikTok, YouTube, Instagram |
+| ter | **A · V2 PRATICAR** (capítulo com o hype da semana) | A · C1 | TikTok, YouTube/Shorts, Instagram |
+| qua | **B · V1 APRENDER** | A · C3 | idem |
+| qui | **A · V3 FIXAR** (dia 4 do A) | A · C2 · B · C1 | idem |
+| sex | **B · V2 PRATICAR** (capítulo; o gancho do A · V2 é pago aqui) | A · C4 | idem |
+| sáb | **B · V3 FIXAR** (dia 4 do B) | B · C3 · A · C5 | idem |
+| dom | **Compilação da semana (YouTube, ~6–7 min, capítulos)** | B · C2 · B · C4 | YouTube (compilação); TikTok e Reels (cortes) |
 
-**Contas da semana:**
-- TikTok: ~11 posts (2 longos + 4 curtos + 4 cortes + 1 corte no domingo).
-- YouTube: 1 vídeo longo de verdade (a compilação) + ~10 Shorts.
+**Números da semana:**
+- TikTok: 6 vídeos de ≥ 61 s + ~9 cortes, cerca de 15 posts (acima dos 11 por semana da referência do Buffer);
+- YouTube: 1 vídeo longo de verdade (a compilação) + 6 vídeos de 61–70 s (sobem como Shorts, até 3 min) + os cortes.
+- B · C5 (o gancho do capítulo seguinte) sai na segunda seguinte, junto com o próximo V1.
 
-A referência do Buffer (11 ou mais posts por semana = +34% de views por post) está em `docs/pesquisas/2026-09-26-tiktok-campeoes.md` §5 regra 11.
+**Gancho verdadeiro:** o V2 do assunto A termina em "como a Capy se despede? no próximo assunto". Isso só vai ao ar se o V1 do assunto B já estiver agendado na grade (o portão confere).
 
-**Horários:** os mesmos da grade anterior (`docs/conselho/2026-09-26/growth-algoritmo.md` §3):
-- TikTok: 19:07 (seg–sex), 12:07 (sáb–dom);
-- Shorts: 12:10;
-- Reels: 18:40;
-- extra do dia: 12:37 no TikTok;
-- compilação: domingo, 10:00, no YouTube.
+**Horários:**
+- principal: 19:07 no TikTok (seg–sex) e 12:07 (sáb–dom); Shorts 12:10; Reels 18:40;
+- cortes: 12:37 e 21:37 no TikTok;
+- compilação: domingo, 10:00.
 
-**Plano Free do Buffer:** no máximo 10 posts agendados por canal. A rotina agenda um dia de cada vez, então a grade cabe.
+**Buffer Free:** até 10 agendados por canal. A rotina agenda 1 dia por vez, então a grade cabe.
 
 ## A T1 inteira
 
@@ -49,7 +54,7 @@ A referência do Buffer (11 ou mais posts por semana = +34% de views por post) e
 | 9 | 17 · A coffee, please. / How much is it? | 18 · This is my mother. |
 | 10 | 19 · I'm a doctor. | 20 · What time is it? |
 
-- **Quantidades:** 60 vídeos de aula + ~80 cortes + 10 compilações.
+- **Quantidades:** 60 vídeos de ≥ 61 s + ~100 cortes (5 por assunto) + 10 compilações.
 - **Revise & Check** (English File, a cada ~5 assuntos): entra na compilação das semanas 3, 5, 8 e 10, sem vídeo novo.
 
 ## Teste de cadência (critério definido antes)
@@ -66,4 +71,5 @@ A referência do Buffer (11 ou mais posts por semana = +34% de views por post) e
 1. **Formato aprovado pelo Felipe** e **render liberado.** Até lá, nada é gerado.
 2. **`config/grade.json`:** refazer com esta grade (hoje ainda está com a do formato antigo).
 3. **Compilação com capítulos:** composição nova no Remotion que junta renders prontos e escreve os capítulos na descrição. É só código, sem cena nova.
-4. **Cortes C1/C2:** o mecanismo de cortar trechos do longo já existe (`CafeEsquete`); falta marcar os trechos em cada roteiro.
+4. **Cortes C1–C5:** o mecanismo de cortar trechos já existe (`CafeEsquete`); falta marcar os trechos em cada roteiro.
+5. **Hype no V2:** o roteirista lê o radar semanal (já filtrado); em semana sem hype seguro, usa o calendário ou um motivo atemporal da Dona Jaca.
