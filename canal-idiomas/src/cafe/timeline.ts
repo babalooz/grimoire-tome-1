@@ -1,6 +1,24 @@
-import { Emotion } from "../chars/common";
-import { Cam, STAGE, TWO, clampCam, closeOn } from "../Sitcom";
-import { MUSIC, DEFAULT_VOICE_LUFS } from "../lesson/music";
+import type { Emotion } from "../chars/common";
+import type { Cam } from "../Sitcom";
+
+// Sem imports de módulos com fonte/React (theme.ts, Sitcom.tsx): este arquivo também roda no node (scripts/cafe-frames.ts).
+// Geometria copiada de src/Sitcom.tsx (STAGE, TWO, clampCam, closeOn) e níveis de src/lesson/music.ts (MUSIC) — manter iguais.
+const STAGE = {
+  capi: { left: 20, top: 900, size: 520, head: [293, 1177] as [number, number], headTop: 1034, zoom: 1.3 },
+  hank: { left: 480, top: 560, size: 560, head: [680, 800] as [number, number], headTop: 626, zoom: 1.3 },
+  lazy: { left: 276, top: 751, size: 340, head: [440, 890] as [number, number], headTop: 765, zoom: 1.6 },
+};
+const TWO: Cam = { cx: 540, cy: 960, z: 1 };
+const clampCam = (c: Cam): Cam => {
+  const hw = 540 / c.z, hh = 960 / c.z;
+  return { z: c.z, cx: Math.min(1080 - hw, Math.max(hw, c.cx)), cy: Math.min(1920 - hh, Math.max(hh, c.cy)) };
+};
+const closeOn = (id: keyof typeof STAGE): Cam => {
+  const st = STAGE[id];
+  return clampCam({ cx: st.head[0], cy: st.head[1] - (id === "capi" ? 150 : 90), z: st.zoom });
+};
+const MUSIC = { fileLufs: -16, attack: 3, release: 10, lookahead: 3, fadeOut: 30 };
+const DEFAULT_VOICE_LUFS = -22;
 
 // Formato "SITCOM DO CAFÉ" (passivo, sem interação) — docs/pesquisas/formato-novo/formato-ensino-video.md §3 F1.
 // Roteiro = lista de beats (episodes/cafe-*.json, `format: "cafe"`). Esta agenda é a fonte da verdade do tempo:
@@ -241,8 +259,15 @@ const camOf = (subj: Actor[] | "wide"): Cam => {
   if (subj.length === 1) return closeOnActor(subj[0]);
   return pairCam(subj[0], subj[1]);
 };
-const same = (a: Actor[] | "wide", b: Actor[] | "wide") =>
-  a === "wide" || b === "wide" ? a === b : b.every((x) => a.includes(x));
+const eqSubj = (a: Actor[] | "wide", b: Actor[] | "wide") =>
+  a === "wide" || b === "wide" ? a === b : a.length === b.length && b.every((x) => a.includes(x));
+const within = (a: Actor[] | "wide", b: Actor[] | "wide") => a === "wide" || (b !== "wide" && b.every((x) => a.includes(x)));
+// reenquadramento de plano longo: close ↔ plano com quem escuta (a Capy; ou o Hank se a Capy fala)
+const altCam = (sh: Shot): Cam => {
+  if (sh.subjects === "wide") return punch(sh.cam);
+  if (sh.subjects.length === 1) return pairCam(sh.subjects[0], sh.subjects[0] === "capi" ? "hank" : "capi");
+  return closeOnActor(sh.subjects[0]);
+};
 
 export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
   const total = cafeTotal(steps);
@@ -263,8 +288,10 @@ export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
   for (const s of steps) {
     if (s.from <= cur.from || s.from < h0) continue;
     const subj = subjectOf(s);
-    if (same(cur.subjects, subj)) continue;
-    if (s.from - cur.from >= CAM_MIN) {
+    if (eqSubj(cur.subjects, subj)) continue;
+    const early = s.from - cur.from < CAM_MIN;
+    if (early && within(cur.subjects, subj)) continue; // quem fala já está no plano aberto
+    if (!early) {
       cur.to = s.from;
       shots.push(cur);
       cur = { from: s.from, to: -1, cam: TWO, subjects: subj };
@@ -288,11 +315,11 @@ export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
     while (sh.to - pos > CAM_MAX + 9) {
       const cands = bounds.filter((f) => f >= pos + CAM_MIN && f <= pos + CAM_MAX && sh.to - f >= CAM_MIN);
       const cut = cands.length ? cands.reduce((a, b) => (Math.abs(b - pos - 70) < Math.abs(a - pos - 70) ? b : a)) : Math.min(pos + 72, sh.to - CAM_MIN);
-      out.push({ ...sh, from: pos, to: cut, cam: alt ? punch(sh.cam) : sh.cam });
+      out.push({ ...sh, from: pos, to: cut, cam: alt ? altCam(sh) : sh.cam });
       pos = cut;
       alt = !alt;
     }
-    out.push({ ...sh, from: pos, to: sh.to, cam: alt ? punch(sh.cam) : sh.cam });
+    out.push({ ...sh, from: pos, to: sh.to, cam: alt ? altCam(sh) : sh.cam });
   });
   return out;
 };

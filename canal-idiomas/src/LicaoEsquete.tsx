@@ -94,7 +94,7 @@ const Gancho: React.FC<{ text: string; frame: number; fps: number }> = ({ text, 
 };
 
 // Card final: "AULA COMPLETA NO EP 01" + selo da série.
-const CtaCard: React.FC<{ text: string; since: number; fps: number; serie?: LicaoProps["serie"] }> = ({ text, since, fps, serie }) => {
+export const CtaCard: React.FC<{ text: string; since: number; fps: number; serie?: LicaoProps["serie"] }> = ({ text, since, fps, serie }) => {
   if (since < 0) return null;
   const s = spring({ frame: since, fps, config: { damping: 11 } });
   const dim = interpolate(since, [0, 8], [0, 0.72], { extrapolateRight: "clamp" }) * (useAudit() ? 0 : 1);

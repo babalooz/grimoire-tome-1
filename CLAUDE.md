@@ -79,7 +79,12 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Série começa do ZERO (pré-A1): 10 primeiros episódios com cognatos e palavras que o brasileiro já usa, frases de 1–3 palavras,
   explicação em PT, ritmo bem lento, 1 vitória celebrada por episódio. Gancho: "você já sabe mais inglês do que pensa".
   A Capy é o espelho do medo (trava e consegue); o Hank nunca humilha; errar é normal e engraçado. Lista em
-  `docs/plano-formato-cafe.md` §0 (aguardando aprovação do Felipe).
+  `docs/plano-formato-cafe.md` §0 (rumo aprovado; lista não final).
+- **Currículo (Felipe, 27/09): COPIAR a sequência dos métodos consagrados**, não inventar: consenso da ordem de temas e
+  gramática de English File Beginner, Headway Beginner (Oxford), Empower Starter, Evolve Starter (Cambridge) + descritores CEFR
+  Pre-A1/A1 (só a ordem; nunca copiar texto dos livros). Cognatos = apoio dentro dessa ordem, não espinha. Mapa: PC em
+  `ponte/saida/sequencia-oxford-cambridge.md`. Roteiros dos 10 (`docs/roteiros/roteiros-t1-zero.md`) SUSPENSOS até o mapa.
+  Episódio "ção vira tion" descartado.
 
 ## Formato atual (27/09): SITCOM DO CAFÉ (passivo, sem interação)
 - O formato "app" (exercícios A/B/C, ligar, lacuna, corações, XP) foi ABANDONADO (Felipe: acelerado + vídeo não é interativo).
