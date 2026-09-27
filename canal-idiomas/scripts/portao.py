@@ -16,6 +16,7 @@ Uso (a partir de canal-idiomas/, com .venv/bin/python):
 Saída: out/<arquivo>.portao.json por MP4 = {aprovado, camada1: {ok, falhas, medidas}, juiz: {nota, motivos, fonte}, data}.
 """
 import argparse
+import warnings
 import datetime as dt
 import json
 import os
@@ -25,6 +26,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 ROOT = Path(__file__).resolve().parent.parent
 FFPROBE = ROOT / "node_modules/@remotion/compositor-linux-x64-gnu/ffprobe"
 FFMPEG = FFPROBE.parent / "ffmpeg"
