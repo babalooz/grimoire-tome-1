@@ -91,10 +91,11 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   Capy: a fala some e você responde ao Hank, ou complete falando), V3 FIXAR (ouça e reconheça + personalize). Pode trocar o
   exercício de um vídeo se outro servir melhor ao assunto, justificando. Frase-alvo ≥ 10× somando os 3. T1 = 60 vídeos.
   Roteiros no papel, 1 assunto por vez, Felipe aprova antes do próximo (assunto 1: `docs/roteiros/roteiros-tema01.md`).
-- **Foco (Felipe, 27/09): VIEWS e SEGUIDORES por vídeo.** V1 = LONGO (60–90 s, aula, ≥ 61 s TikTok); V2 e V3 = CURTOS (≤ ~35 s,
-  gancho no 1º segundo, 1 prática, convite verdadeiro pra seguir/ver a aula). Reaproveitar sem produção nova: cortes C1/C2
-  dos longos viram curtos extras + 1 compilação longa semanal no YouTube com capítulos. Grade: `docs/grade-t1.md`
-  (2 assuntos/semana, ~11 posts/semana no TikTok; teste de 3/semana nas semanas 3–4).
+- **Foco (Felipe, 27/09): VIEWS e SEGUIDORES por vídeo.** Os 3 vídeos de cada assunto têm **≥ 61 s** (Creator Rewards; ensinar
+  com calma): V1 APRENDER (aula), V2 PRATICAR = **STORYTELLING com o hype** (Dona Jaca liga do Brasil comentando o assunto em
+  alta do radar filtrado; a Capy usa a frase na história; "você é a Capy" no enredo; gancho verdadeiro pro próximo capítulo),
+  V3 FIXAR. O ALCANCE fica com os **CORTES curtos (5–28 s)** tirados dos 3 (C1–C5) + 1 compilação longa semanal no YouTube com
+  capítulos. Grade: `docs/grade-t1.md` (2 assuntos/semana, ~15 posts/semana no TikTok; teste 3/semana nas semanas 3–4).
 
 ## Formato atual (27/09): SITCOM DO CAFÉ (passivo, sem interação)
 - O formato "app" (exercícios A/B/C, ligar, lacuna, corações, XP) foi ABANDONADO (Felipe: acelerado + vídeo não é interativo).
