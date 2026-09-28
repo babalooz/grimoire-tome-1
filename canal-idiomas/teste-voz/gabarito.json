@@ -1,0 +1,92 @@
+{
+  "fala1-A": {
+    "motor": "gemini-B",
+    "fala": 1,
+    "voz": "Sulafat",
+    "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  "fala1-B": {
+    "motor": "kokoro",
+    "fala": 1,
+    "voz": "",
+    "modelo": ""
+  },
+  "fala1-C": {
+    "motor": "gemini-A",
+    "fala": 1,
+    "voz": "Kore",
+    "modelo": "gemini-3.8-flash-tts"
+  },
+  "fala2-A": {
+    "motor": "gemini-A",
+    "fala": 2,
+    "voz": "Charon",
+    "modelo": "gemini-3.8-flash-tts"
+  },
+  "fala2-B": {
+    "motor": "gemini-B",
+    "fala": 2,
+    "voz": "Algenib",
+    "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  "fala2-C": {
+    "motor": "kokoro",
+    "fala": 2,
+    "voz": "",
+    "modelo": ""
+  },
+  "fala3-A": {
+    "motor": "kokoro",
+    "fala": 3,
+    "voz": "",
+    "modelo": ""
+  },
+  "fala3-B": {
+    "motor": "gemini-A",
+    "fala": 3,
+    "voz": "Algieba",
+    "modelo": "gemini-3.8-flash-tts"
+  },
+  "fala3-C": {
+    "motor": "gemini-B",
+    "fala": 3,
+    "voz": "Umbriel",
+    "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  "fala4-A": {
+    "motor": "gemini-A",
+    "fala": 4,
+    "voz": "Algieba",
+    "modelo": "gemini-3.8-flash-tts"
+  },
+  "fala4-B": {
+    "motor": "gemini-B",
+    "fala": 4,
+    "voz": "Umbriel",
+    "modelo": "gemini-3.8-flash-lite-tts"
+  },
+  "fala4-C": {
+    "motor": "kokoro",
+    "fala": 4,
+    "voz": "",
+    "modelo": ""
+  },
+  "fala5-A": {
+    "motor": "gemini-A",
+    "fala": 5,
+    "voz": "Leda",
+    "modelo": "gemini-3.8-flash-tts"
+  },
+  "fala5-B": {
+    "motor": "kokoro",
+    "fala": 5,
+    "voz": "",
+    "modelo": ""
+  },
+  "fala5-C": {
+    "motor": "gemini-B",
+    "fala": 5,
+    "voz": "Zephyr",
+    "modelo": "gemini-3.8-flash-lite-tts"
+  }
+}

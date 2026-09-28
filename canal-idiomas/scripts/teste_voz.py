@@ -256,23 +256,37 @@ def gerar(motores: list[str], repeticoes: int, modelo: str, modelo_b: str | None
     print(f"medidas: {OUT / 'medidas.csv'}")
 
 
-def embaralhar() -> None:
+def embaralhar(mp3: bool = True) -> None:
+    """Nomeia por fala (fala1-A/B/C…) com a letra sorteada por fala, pra dar pra comparar os motores
+    lado a lado sem revelar qual é qual. Se mp3=True, também converte com ffmpeg (128 kbps) e some com o wav."""
     import shutil
+    import subprocess
     brutos = sorted(p for p in (OUT / "brutos").rglob("*_r1.wav"))
+    por_fala: dict[int, list[Path]] = {}
+    for p in brutos:
+        por_fala.setdefault(int(p.stem[1]), []).append(p)
     random.seed()
-    ids = random.sample(range(1000, 9999), len(brutos))
     cego = OUT / "cego"
     cego.mkdir(parents=True, exist_ok=True)
     gabarito, notas = {}, []
-    for i, p in zip(ids, brutos):
-        nome = f"{i}.wav"
-        shutil.copy2(p, cego / nome)
-        motor, fala = p.parent.name, int(p.stem[1])
-        gabarito[nome] = {"motor": motor, "fala": fala}
-        notas.append({"arquivo": nome, "fala": fala, "texto": FALAS[fala - 1]["texto"],
-                      "alvos": " | ".join(FALAS[fala - 1]["alvos"]), "naturalidade_1a5": "",
-                      "alvos_certos_s_n": "", "ouvinte": ""})
-    random.shuffle(notas)
+    for fala, caminhos in sorted(por_fala.items()):
+        letras = list("ABCDEFGH")[: len(caminhos)]
+        random.shuffle(caminhos)
+        for letra, p in zip(letras, caminhos):
+            nome_base = f"fala{fala}-{letra}"
+            wav = cego / f"{nome_base}.wav"
+            shutil.copy2(p, wav)
+            if mp3:
+                subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav),
+                                "-codec:a", "libmp3lame", "-b:a", "128k", str(cego / f"{nome_base}.mp3")],
+                               check=True)
+                wav.unlink()
+            motor = p.parent.name
+            gabarito[nome_base] = {"motor": motor, "fala": fala}
+            notas.append({"arquivo": f"{nome_base}.{'mp3' if mp3 else 'wav'}", "fala": fala,
+                          "texto": FALAS[fala - 1]["texto"], "alvos": " | ".join(FALAS[fala - 1]["alvos"]),
+                          "naturalidade_1a5": "", "alvos_certos_s_n": "", "ouvinte": ""})
+    notas.sort(key=lambda n: n["arquivo"])
     (OUT / "gabarito.json").write_text(json.dumps(gabarito, ensure_ascii=False, indent=2))
     with (OUT / "notas.csv").open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(notas[0]))
@@ -294,6 +308,7 @@ def main() -> None:
                      help="modelo p/ a voz candidata B, se precisar fugir da cota diária do modelo principal")
     ap.add_argument("--repeticoes", type=int, default=5, help="vezes que a fala 2 é gerada (consistência)")
     ap.add_argument("--embaralhar", action="store_true")
+    ap.add_argument("--sem-mp3", action="store_true", help="--embaralhar mantém .wav em vez de converter pra mp3")
     a = ap.parse_args()
 
     if a.dry_run:
@@ -320,7 +335,7 @@ def main() -> None:
             print(f"{quem:6} {v:34} {'OK' if v in nomes else 'NÃO EXISTE nesta região'}")
         return
     if a.embaralhar:
-        embaralhar()
+        embaralhar(mp3=not a.sem_mp3)
         return
     if a.motores:
         gerar(a.motores, a.repeticoes, a.modelo_gemini, a.modelo_gemini_b)
