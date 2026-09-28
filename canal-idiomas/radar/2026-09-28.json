@@ -1,0 +1,462 @@
+{
+  "version": 2,
+  "date": "2026-09-28",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "amistoso-brasil-australia",
+        "evento": "Amistoso Brasil x Austrália (Brisbane)",
+        "data_inicio": "2026-09-29",
+        "data_fim": "2026-09-29",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Por que australiano fala 'mate' e 'arvo'? Gírias australianas x americanas.",
+        "ganchos_ingles": [
+          "mate",
+          "arvo",
+          "no worries",
+          "g'day"
+        ],
+        "status": "fonte única (a confirmar)",
+        "faltam_dias": 1
+      }
+    ],
+    "proximos": [
+      {
+        "id": "amistoso-brasil-india",
+        "evento": "Amistoso Brasil x Índia (Calcutá)",
+        "data_inicio": "2026-10-03",
+        "data_fim": "2026-10-03",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Pronúncia em inglês de nomes de jogadores e de 'Kolkata'; vocabulário de jogo (score, draw).",
+        "ganchos_ingles": [
+          "score",
+          "draw",
+          "friendly match",
+          "Kolkata"
+        ],
+        "status": "fonte única (a confirmar)",
+        "faltam_dias": 5
+      },
+      {
+        "id": "eleicoes-1turno",
+        "evento": "Eleições, 1º turno — SEM hype",
+        "data_inicio": "2026-10-04",
+        "data_fim": "2026-10-04",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais (Nível, Pegadinha).",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 6
+      },
+      {
+        "id": "zayn-sp",
+        "evento": "Show do Zayn Malik em SP",
+        "data_inicio": "2026-10-10",
+        "data_fim": "2026-10-10",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Zayn saiu do One Direction: quit x leave x drop out.",
+        "ganchos_ingles": [
+          "quit",
+          "leave",
+          "drop out",
+          "fanboy/fangirl"
+        ],
+        "status": "fonte única",
+        "faltam_dias": 12
+      },
+      {
+        "id": "dia-das-criancas",
+        "evento": "Dia das Crianças + N. Sra. Aparecida (feriado)",
+        "data_inicio": "2026-10-12",
+        "data_fim": "2026-10-12",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Palavras que criança gringa sabe e você não (humor adulto, sem visual infantil).",
+        "ganchos_ingles": [
+          "toddler",
+          "tantrum",
+          "sippy cup"
+        ],
+        "status": "fixo",
+        "faltam_dias": 14
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Erling Haaland",
+      "score": 6.73,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.895 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "erling haaland em inglês"
+      ],
+      "contexto": "futebolista norueguês",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Erling Haaland' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Erling_Haaland"
+    },
+    {
+      "termo": "Antonio Nusa",
+      "score": 5.7,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "6.356 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista norueguês",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Antonio Nusa' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Antonio_Nusa"
+    },
+    {
+      "termo": "Taylor Swift - Patient Zero",
+      "score": 5.52,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#131 Spotify BR. 238.981 streams/dia. 2 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [
+        "taylor swift em inglês",
+        "frases taylor swift em inglês",
+        "biografia da taylor swift em inglês",
+        "história da taylor swift em inglês",
+        "música da taylor swift em inglês",
+        "como se escreve taylor swift em inglês",
+        "discurso da taylor swift formatura em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#131)",
+      "sugestao_aula": "'Taylor Swift - Patient Zero': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Mell Muzzillo",
+      "score": 5.47,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "4.404 views na Wikipédia",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [],
+      "contexto": "atriz e dançarina brasileira",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Mell Muzzillo' (título original, bordões) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Mell_Muzzillo"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.19,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#108 Spotify BR. 267.243 streams/dia. 191 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "nome bts em inglês",
+        "bts significado em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#108)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "A Hipótese do Amor",
+      "score": 3.75,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": false,
+      "aula": [
+        "a hipótese do amor em inglês",
+        "a hipótese do amor livro em inglês",
+        "a hipotese do amor nome em ingles",
+        "a hipotese do amor titulo em ingles"
+      ],
+      "contexto": "Ator de 'A Hipótese do Amor' revela dificuldade para interpretar cientista",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'A Hipótese do Amor' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYnpYYkgwNkZHTG9wSmgyaG9HaWtMT09CQ0U3QVZ5SE00a1JHdXM3XzJxQXA5Mkpmb1F0eFB4TUt5UUFrREpVdTlkcWxSMTVIeVNyYU9mQlJXQXM5ZGc5T0pXZWN5NVJhbnlvR081TW1EUHhfSUw5TmJqRDRNRW40Uml5eGlMa09PUVREWHBGRGtXa1hEaTdxLW9aNEhjSTlFaTNSS2dadzlZNUh6YTZZYzRSQ0ZQX3dkMzUxdQ?oc=5"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.59,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#189 Spotify BR. 194.970 streams/dia. 11 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#189)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Copa do Nordeste de Futebol de 2026",
+      "score": 3.53,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.393 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "23.ª edição da Copa do Nordeste",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Copa do Nordeste de Futebol de 2026' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Copa_do_Nordeste_de_Futebol_de_2026"
+    },
+    {
+      "termo": "Rogério Flausino",
+      "score": 3.14,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.084 views na Wikipédia",
+      "categoria": "música BR",
+      "subindo": true,
+      "aula": [],
+      "contexto": "cantor brasileiro",
+      "sugestao_aula": "Como se diz 'Rogério Flausino' em inglês + 2 palavras ligadas (só se o contexto for leve).",
+      "url": "https://pt.wikipedia.org/wiki/Rog%C3%A9rio_Flausino"
+    },
+    {
+      "termo": "Lincoln Tornado",
+      "score": 3.12,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "2.911 views na Wikipédia",
+      "categoria": "música BR",
+      "subindo": true,
+      "aula": [],
+      "contexto": "ator e cantor brasileiro",
+      "sugestao_aula": "Como se diz 'Lincoln Tornado' em inglês + 2 palavras ligadas (só se o contexto for leve).",
+      "url": "https://pt.wikipedia.org/wiki/Lincoln_Tornado"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "inteligência artificial",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"mortes\" em \"Bill Gates alerta que IA pode causar 'um bilhão de mortes' e defende legislação para a tec\""
+    },
+    {
+      "termo": "maricá",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"acidente\" em \"Acidente na RJ-106 deixa uma mulher morta e 9 feridos em Maricá, no RJ\""
+    },
+    {
+      "termo": "taiwan",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"trump\" em \"Taiwan pushes back after Xi seeks to win over Trump on World War Two narrative\""
+    },
+    {
+      "termo": "santos futebol clube",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"morta\" em \"Influencer morta aos 39 anos ‘travou’ ao ser abordada por Neymar; entenda\""
+    },
+    {
+      "termo": "salário",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"eleicao\" em \"Sindicalistas recusam reajuste acima da inflação e forçam greve às vésperas da eleição\""
+    },
+    {
+      "termo": "Ted Kaczynski",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"criminoso\" em \"matemático e criminoso norte-americano (1942–2023)\""
+    },
+    {
+      "termo": "Lizzie Borden",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"suspeita\" em \"norte-americana suspeita de cometer assassinato (1860–1927)\""
+    },
+    {
+      "termo": "Cosme e Damião",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: \"morreram\" em \"Os Santos Cosme e Damião, irmãos gêmeos, morreram por volta de 300 d.C. Crê-se que foram m\""
+    },
+    {
+      "termo": "Fotos dos Mamonas Assassinas mortos",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassinas\" em \"Fotos dos Mamonas Assassinas mortos\""
+    },
+    {
+      "termo": "Tony Tornado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"Tony Tornado OMC, nome artístico de Antônio Viana Gomes, (Presidente Prudente, 26 de maio \""
+    },
+    {
+      "termo": "Aileen Wuornos",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassina\" em \"assassina em série\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Rick Sollo",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"cantor, compositor e produtor brasileiro (1966–2026)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Augusto Cury",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Augusto Jorge Cury (Colina, 2 de outubro de 1958) é um médico, psiquiatra, escritor, profe\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Ronaldo Caiado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"caiado\" em \"Ronaldo Caiado\""
+    },
+    {
+      "termo": "Lei das Bets",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"bets\" em \"Lei das Bets\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "a hipotese do amor",
+    "adela - nicole kidman",
+    "aileen wuornos",
+    "antonio nusa",
+    "augusto cury",
+    "bts - swim",
+    "cheia de historias para contar",
+    "copa do nordeste de futebol de 2026",
+    "cosme e damiao",
+    "dua lipa training season manifestation",
+    "eleicao presidencial no brasil em 2026",
+    "erling haaland",
+    "flavio bolsonaro",
+    "fotos dos mamonas assassinas mortos",
+    "guess the number challenge",
+    "guns n' roses - sweet child o' mine",
+    "habeas corpus",
+    "idoso",
+    "inteligencia artificial",
+    "jair bolsonaro",
+    "jorge jesus",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "lei das bets",
+    "liga das nacoes da uefa",
+    "liga das nacoes da uefa de 202627",
+    "lincoln tornado",
+    "lista de filmes de maior bilheteria",
+    "lista de presidentes do brasil",
+    "lizzie borden",
+    "lola melnick",
+    "luiz inacio lula da silva",
+    "machado de assis",
+    "marica",
+    "mell muzzillo",
+    "michael jackson - billie jean",
+    "mr. olympia",
+    "nikolas ferreira",
+    "nossa senhora da conceicao aparecida",
+    "oasis - wonderwall - remastered",
+    "pepita",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "previsao do tempo",
+    "previsao do tempo curitiba",
+    "real madrid club de futbol",
+    "renan santos",
+    "renner",
+    "rick & renner",
+    "rick sollo",
+    "ricky martin",
+    "rogerio flausino",
+    "ronaldo caiado",
+    "rosa mota",
+    "salario",
+    "santos futebol clube",
+    "ship",
+    "shoe kick transition",
+    "silvia pfeifer",
+    "spider-man brand new day makeup transition",
+    "taiwan",
+    "taylor swift - patient zero",
+    "taylor swift - the fate of ophelia",
+    "ted kaczynski",
+    "the police - every breath you take",
+    "tony tornado",
+    "trace brasil",
+    "unethical",
+    "veiculo"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 9 itens",
+    "tiktok: 4 itens",
+    "manual: 4 itens"
+  ]
+}
