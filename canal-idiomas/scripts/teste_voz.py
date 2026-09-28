@@ -26,6 +26,7 @@ import os
 import random
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -62,7 +63,14 @@ ESTILO = {
             "milliseconds between each word or block: ",
     "poppy": "Say casually and fast like a young Gen Z influencer, General American: ",
 }
-GEMINI_VOZ = {"capy": "Kore", "hank": "Charon", "lazy": "Algieba", "poppy": "Leda"}  # vozes prontas (conferir no --dry-run)
+# Teste cego pede 2 vozes candidatas de estilo diferente por personagem (pedido do Felipe, teste-voz.md).
+# Rótulo A = escolha original do script; B = 2ª candidata de timbre contrastante (docs do Gemini TTS).
+GEMINI_VOZ = {
+    "capy": [("A", "Kore"), ("B", "Sulafat")],      # A firme · B calorosa (warm)
+    "hank": [("A", "Charon"), ("B", "Algenib")],    # A informativo · B grave/áspera ("Hank grave")
+    "lazy": [("A", "Algieba"), ("B", "Umbriel")],   # A suave · B tranquila — ambas com a instrução "fale devagar"
+    "poppy": [("A", "Leda"), ("B", "Zephyr")],      # A jovem · B brilhante/enérgica
+}
 
 # Azure: vozes prontas do catálogo (conferidas com --listar-vozes antes de gerar).
 AZURE_VOZ = {"capy": "pt-BR-ThalitaMultilingualNeural", "hank": "en-US-GuyNeural", "lazy": "en-US-DavisNeural",
@@ -97,30 +105,58 @@ def ssml(f: dict) -> str:
 
 
 # ---------------------------------------------------------------- chamadas
+_ULTIMA_CHAMADA_GEMINI = 0.0
+
+
 def http(url: str, body: bytes | None, headers: dict, metodo: str = "POST") -> bytes:
+    global _ULTIMA_CHAMADA_GEMINI
+    if "generativelanguage.googleapis.com" in url:
+        # free tier: 3 req/min por modelo — espaça em 22s (margem sobre os 20s teóricos)
+        falta = _ULTIMA_CHAMADA_GEMINI + 22 - time.monotonic()
+        if falta > 0:
+            time.sleep(falta)
+        _ULTIMA_CHAMADA_GEMINI = time.monotonic()
     req = urllib.request.Request(url, data=body, method=metodo, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=120) as r:
-            return r.read()
-    except urllib.error.HTTPError as e:  # sem headers no erro: a chave nunca aparece
-        raise SystemExit(f"HTTP {e.code} em {url.split('?')[0]}: {e.read()[:300].decode(errors='replace')}")
+    for tentativa in range(6):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:  # sem headers no erro: a chave nunca aparece
+            corpo = e.read()
+            if e.code == 429 and tentativa < 5:  # free tier: poucas req/min por modelo — respeita o retryDelay
+                espera = 15.0
+                m = re.search(rb'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', corpo)
+                if m:
+                    espera = float(m.group(1)) + 2
+                print(f"  429 (limite de taxa), esperando {espera:.0f}s…")
+                time.sleep(espera)
+                continue
+            raise SystemExit(f"HTTP {e.code} em {url.split('?')[0]}: {corpo[:300].decode(errors='replace')}")
+    raise SystemExit(f"HTTP 429 repetido em {url.split('?')[0]}: limite de taxa não liberou a tempo")
 
 
-def gemini_req(f: dict, modelo: str) -> tuple[str, dict]:
+def gemini_req(f: dict, modelo: str, voz: str) -> tuple[str, dict]:
     url = f"{GEMINI_API}/models/{modelo}:generateContent"
     body = {"contents": [{"parts": [{"text": ESTILO[f["quem"]] + f["texto"]}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
-                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOZ[f["quem"]]}}}}}
+                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voz}}}}}
     return url, body
 
 
-def gemini(f: dict, modelo: str):
+def gemini(f: dict, modelo: str, voz: str):
+    import io
     import numpy as np
-    url, body = gemini_req(f, modelo)
+    import soundfile as sf
+    url, body = gemini_req(f, modelo, voz)
     d = json.loads(http(url, json.dumps(body).encode(), {"Content-Type": "application/json"}))
     parte = d["candidates"][0]["content"]["parts"][0]["inlineData"]
-    taxa = int(re.search(r"rate=(\d+)", parte.get("mimeType", "rate=24000")).group(1))
-    pcm = np.frombuffer(base64.b64decode(parte["data"]), dtype="<i2").astype("float32") / 32768
+    bruto = base64.b64decode(parte["data"])
+    mime = parte.get("mimeType", "")
+    if "wav" in mime:  # gemini-3.8-flash-tts devolve um WAV completo, não mais PCM cru
+        pcm, taxa = sf.read(io.BytesIO(bruto), dtype="float32")
+    else:  # modelos antigos (preview): PCM cru com a taxa no mimeType, ex. audio/L16;rate=24000
+        taxa = int(re.search(r"rate=(\d+)", mime or "rate=24000").group(1))
+        pcm = np.frombuffer(bruto, dtype="<i2").astype("float32") / 32768
     return pcm, taxa
 
 
@@ -171,21 +207,46 @@ def medir(audio, taxa: int, f: dict) -> dict:
 
 
 # ---------------------------------------------------------------- execução
-def gerar(motores: list[str], repeticoes: int, modelo: str) -> None:
+def _motores_reais(motores: list[str]) -> list[tuple[str, str | None]]:
+    """Expande 'gemini' nas 2 vozes candidatas (A/B); 'kokoro' e 'azure' seguem como estão hoje."""
+    reais = []
+    for motor in motores:
+        if motor == "gemini":
+            reais += [("gemini-A", "A"), ("gemini-B", "B")]
+        else:
+            reais.append((motor, None))
+    return reais
+
+
+def gerar(motores: list[str], repeticoes: int, modelo: str, modelo_b: str | None = None) -> None:
     import soundfile as sf
     OUT.mkdir(exist_ok=True)
     linhas = []
-    for motor in motores:
+    for motor, rotulo in _motores_reais(motores):
         pasta = OUT / "brutos" / motor
         pasta.mkdir(parents=True, exist_ok=True)
+        modelo_motor = modelo_b if (rotulo == "B" and modelo_b) else modelo
         for f in FALAS:
             n_rep = repeticoes if f["n"] == 2 else 1  # métrica D: consistência na fala 2, gerada várias vezes
+            voz = dict(GEMINI_VOZ[f["quem"]]).get(rotulo) if rotulo else None
             for k in range(1, n_rep + 1):
-                audio, taxa = gemini(f, modelo) if motor == "gemini" else azure(f) if motor == "azure" else kokoro(f)
                 arq = pasta / f"f{f['n']}_r{k}.wav"
-                sf.write(arq, audio, taxa)
+                if arq.exists():  # retomada após 429/queda: não regera o que já está pronto
+                    audio, taxa = sf.read(arq, dtype="float32")
+                    print(f"-- {motor} fala {f['n']} r{k}: já existe, pulando")
+                else:
+                    if motor.startswith("gemini"):
+                        audio, taxa = gemini(f, modelo_motor, voz)
+                    elif motor == "azure":
+                        audio, taxa = azure(f)
+                    else:
+                        audio, taxa = kokoro(f)
+                    sf.write(arq, audio, taxa)
                 m = medir(audio, taxa, f)
-                linhas.append({"motor": motor, "fala": f["n"], "rep": k, "arquivo": str(arq.relative_to(OUT)), **m,
+                linhas.append({"motor": motor, "voz": voz or "",
+                               "modelo": modelo_motor if motor.startswith("gemini") else "",
+                               "fala": f["n"], "rep": k,
+                               "arquivo": str(arq.relative_to(OUT)), **m,
                                "wpm_alvo": f.get("wpm_alvo", ""), "pausa_alvo_ms": f.get("pausa_ms", "")})
                 print(f"ok {motor} fala {f['n']} r{k}: {m}")
     with (OUT / "medidas.csv").open("w", newline="") as fh:
@@ -225,20 +286,25 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--listar-modelos", action="store_true")
     ap.add_argument("--listar-vozes", action="store_true")
-    ap.add_argument("--motores", nargs="+", choices=["gemini", "azure", "kokoro"])
+    ap.add_argument("--motores", nargs="+", choices=["gemini", "azure", "kokoro"],
+                     default=["gemini", "kokoro"],
+                     help="azure fica de fora por padrão (sem assinatura no ambiente atual)")
     ap.add_argument("--modelo-gemini", default=GEMINI_MODELOS[0])
+    ap.add_argument("--modelo-gemini-b", default=None,
+                     help="modelo p/ a voz candidata B, se precisar fugir da cota diária do modelo principal")
     ap.add_argument("--repeticoes", type=int, default=5, help="vezes que a fala 2 é gerada (consistência)")
     ap.add_argument("--embaralhar", action="store_true")
     a = ap.parse_args()
 
     if a.dry_run:
-        chars = sum(len(f["texto"]) for f in FALAS) + 4 * len(FALAS[1]["texto"])
-        print(f"Região Azure: {REGIAO} · modelo Gemini: {a.modelo_gemini} · ~{chars} caracteres por motor (centavos)\n")
+        chars_por_voz = sum(len(f["texto"]) for f in FALAS) + 4 * len(FALAS[1]["texto"])
+        print(f"modelo Gemini: {a.modelo_gemini} · ~{chars_por_voz} caracteres por voz candidata "
+              f"× 2 vozes × {a.repeticoes - 1} reps extras na fala 2 (centavos)\n")
         for f in FALAS:
-            url, body = gemini_req(f, a.modelo_gemini)
             print(f"[fala {f['n']} · {f['quem']}] {f['texto']}")
-            print(f"  GEMINI POST {url}\n    {json.dumps(body, ensure_ascii=False)[:260]}")
-            print(f"  AZURE  POST https://{REGIAO}.tts.speech.microsoft.com/cognitiveservices/v1\n    {ssml(f)[:260]}")
+            for rotulo, voz in GEMINI_VOZ[f["quem"]]:
+                url, body = gemini_req(f, a.modelo_gemini, voz)
+                print(f"  GEMINI [{rotulo}={voz}] POST {url}\n    {json.dumps(body, ensure_ascii=False)[:260]}")
             print(f"  KOKORO local {KOKORO[f['quem']]}\n")
         return
     if a.listar_modelos:
@@ -257,7 +323,7 @@ def main() -> None:
         embaralhar()
         return
     if a.motores:
-        gerar(a.motores, a.repeticoes, a.modelo_gemini)
+        gerar(a.motores, a.repeticoes, a.modelo_gemini, a.modelo_gemini_b)
         return
     ap.print_help()
 
