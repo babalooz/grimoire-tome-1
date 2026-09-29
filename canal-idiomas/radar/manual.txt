@@ -1,4 +1,7 @@
-Spider-Man Brand New Day makeup transition
-Dua Lipa Training Season manifestation
-shoe kick transition
-guess the number challenge
+# TikTok BR — camada manual (rotina radar diário, 2026-09-29). Views/vídeos: não medido
+# (endpoint público /api/challenge/detail sem resposta a partir da nuvem, ver docstring do radar.py).
+# Fonte de cada termo = busca web feita hoje pela rotina; descartados por segurança/gancho não entram aqui.
+Gucci Morty aura edit Rick and Morty meme
+aura farming rizz trend
+Dua Lipa Training Season manifestation trend
+kinda chic Young Hearts Run Free trend
