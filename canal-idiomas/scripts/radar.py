@@ -284,10 +284,11 @@ def fonte_manual() -> list[dict]:
         return []
     out = []
     for line in f.read_text().splitlines():
-        line = line.strip().lstrip("#").strip()
-        if line and not line.startswith("//"):
-            out.append({"termo": line, "fonte": "manual (TikTok)", "volume": 0, "volume_txt": "colado à mão",
-                        "forca": 3.0, "contexto": "", "url": ""})
+        line = line.strip()
+        if not line or line.startswith("#") or line.startswith("//"):
+            continue
+        out.append({"termo": line, "fonte": "manual (TikTok)", "volume": 0, "volume_txt": "colado à mão",
+                    "forca": 3.0, "contexto": "", "url": ""})
     return out
 
 

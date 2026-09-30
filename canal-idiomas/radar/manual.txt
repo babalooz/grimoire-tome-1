@@ -1,7 +1,8 @@
-# TikTok BR — camada manual (rotina radar diário, 2026-09-29). Views/vídeos: não medido
-# (endpoint público /api/challenge/detail sem resposta a partir da nuvem, ver docstring do radar.py).
-# Fonte de cada termo = busca web feita hoje pela rotina; descartados por segurança/gancho não entram aqui.
-Gucci Morty aura edit Rick and Morty meme
-aura farming rizz trend
-Dua Lipa Training Season manifestation trend
-kinda chic Young Hearts Run Free trend
+# TikTok BR — camada manual (rotina radar diário, 2026-09-30). Views/vídeos: não medido
+# (endpoint público /api/challenge/detail sem resposta a partir da nuvem, ver docstring do radar.py;
+# testado hoje: chikisha, resenhanalaje, shoekicktransition, guessthenumberchallenge — todos vazios).
+# Fonte de cada termo = busca web feita hoje (WebSearch, sem link de notícia datada; qualidade baixa,
+# ver ressalva no resumo da rotina). Descartados por segurança/gancho não entram aqui.
+shoe kick transition trend
+chiki sha aura brazilian dance trend (coreografia Arthur Lima)
+dua lipa training season manifestation trend
