@@ -1,6 +1,13 @@
-# TikTok Brasil (buscas web 01/10/2026, views não medidas: endpoint público não responde da nuvem)
+# TikTok Brasil (buscas web 02/10/2026). Views: endpoint público /api/challenge/detail respondeu
+# HTTP 200 com corpo vazio para todos os termos testados (babylaughdance, chikisha, everythinghallelujah)
+# -> "não medido" em todos, igual ao registrado no radar.py (falha conhecida a partir da nuvem).
+# Fontes fracas (páginas "discover" do próprio TikTok / agregadores, sem contagem objetiva) — tratar como
+# sinal fraco (estimativa), não como dado confirmado. Persistência: Baby Laugh e Chiki Sha já apareciam no
+# radar de 01/10 e continuam aparecendo hoje (2º dia seguido).
 Baby Laugh Brazilian Dance
 Chiki Sha dance trend
-Shoe kick transition
-Training Season manifestation Dua Lipa
-Cristiano Ronaldo CR7
+Resenha na Laje dance
+Everything Hallelujah Justin Bieber trend
+Es la hora del cafe audio viral
+Galo Pera meme
+Tatu do Bem meme

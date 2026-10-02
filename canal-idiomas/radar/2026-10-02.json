@@ -1,0 +1,626 @@
+{
+  "version": 2,
+  "date": "2026-10-02",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "amistoso-brasil-india",
+        "evento": "Amistoso Brasil x Índia (Calcutá)",
+        "data_inicio": "2026-10-03",
+        "data_fim": "2026-10-03",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Pronúncia em inglês de nomes de jogadores e de 'Kolkata'; vocabulário de jogo (score, draw).",
+        "ganchos_ingles": [
+          "score",
+          "draw",
+          "friendly match",
+          "Kolkata"
+        ],
+        "status": "fonte única (a confirmar)",
+        "faltam_dias": 1
+      }
+    ],
+    "proximos": [
+      {
+        "id": "eleicoes-1turno",
+        "evento": "Eleições, 1º turno — SEM hype",
+        "data_inicio": "2026-10-04",
+        "data_fim": "2026-10-04",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais (Nível, Pegadinha).",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 2
+      },
+      {
+        "id": "zayn-sp",
+        "evento": "Show do Zayn Malik em SP",
+        "data_inicio": "2026-10-10",
+        "data_fim": "2026-10-10",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Zayn saiu do One Direction: quit x leave x drop out.",
+        "ganchos_ingles": [
+          "quit",
+          "leave",
+          "drop out",
+          "fanboy/fangirl"
+        ],
+        "status": "fonte única",
+        "faltam_dias": 8
+      },
+      {
+        "id": "dia-das-criancas",
+        "evento": "Dia das Crianças + N. Sra. Aparecida (feriado)",
+        "data_inicio": "2026-10-12",
+        "data_fim": "2026-10-12",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Palavras que criança gringa sabe e você não (humor adulto, sem visual infantil).",
+        "ganchos_ingles": [
+          "toddler",
+          "tantrum",
+          "sippy cup"
+        ],
+        "status": "fixo",
+        "faltam_dias": 10
+      },
+      {
+        "id": "libertadores-semis-ida",
+        "evento": "Libertadores semis (ida): Fluminense x Palmeiras (14/10) e Estudiantes x Flamengo (15/10)",
+        "data_inicio": "2026-10-14",
+        "data_fim": "2026-10-15",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Futebol em inglês: goal, penalty, offside, extra time; 'the match was very emotioned' (erro) -> exciting/thrilling.",
+        "ganchos_ingles": [
+          "goal",
+          "penalty",
+          "offside",
+          "extra time",
+          "thrilling"
+        ],
+        "status": "verificado",
+        "faltam_dias": 12
+      },
+      {
+        "id": "dia-do-professor",
+        "evento": "Dia do Professor",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-15",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Capy homenageia os professores: frases de sala de aula; como o aluno BR chama o professor ('Teacher!') x nativo (Mr./Ms. + sobrenome); 'teacher's pet'.",
+        "ganchos_ingles": [
+          "teacher's pet",
+          "Mr./Ms.",
+          "homework",
+          "pop quiz"
+        ],
+        "status": "fixo",
+        "faltam_dias": 13
+      },
+      {
+        "id": "street-fighter-estreia",
+        "evento": "Estreia de Street Fighter nos cinemas",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-16",
+        "categoria": "cinema",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Vocabulário de games/luta: 'Round 1, Fight!', K.O. = knockout, combo, 'you win'. Sem imagem/áudio do filme.",
+        "ganchos_ingles": [
+          "knockout",
+          "round",
+          "combo",
+          "fight"
+        ],
+        "status": "fonte única",
+        "faltam_dias": 13
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Nirvana - Smells Like Teen Spirit - Remastered",
+      "score": 7.9,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#197 Spotify BR. 161.687 streams/dia. 25 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [
+        "nirvana em inglês",
+        "o que significa nirvana em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#197)",
+      "sugestao_aula": "'Nirvana - Smells Like Teen Spirit - Remastered': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Evanescence - Bring Me To Life",
+      "score": 6.64,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#167 Spotify BR. 173.356 streams/dia. 58 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [
+        "evanescence em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#167)",
+      "sugestao_aula": "'Evanescence - Bring Me To Life': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "vingadores doutor destino",
+      "score": 6.19,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "2.000+ buscas",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "vingadores doutor destino em inglês"
+      ],
+      "contexto": "A pré-venda de ingressos para ‘Vingadores: Doutor Destino’ já tem data para começar no Brasil",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'vingadores doutor destino' (título original, bordões) + 1 pergunta.",
+      "url": "https://www.ingresso.com/noticias/filme-vingadores-doutor-destino-data-de-inicio-da-pre-venda-de-ingressos-no-brasil"
+    },
+    {
+      "termo": "Cristiano Ronaldo",
+      "score": 5.86,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "8.022 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [
+        "cristiano ronaldo em inglês",
+        "cristiano ronaldo biografia em inglês",
+        "cristiano ronaldo falando em inglês",
+        "nome cristiano ronaldo em inglês",
+        "cristiano ronaldo nacionalidade em inglês",
+        "música do cristiano ronaldo em inglês",
+        "rotina do cristiano ronaldo em inglês",
+        "como escreve cristiano ronaldo em inglês",
+        "história do cristiano ronaldo em inglês",
+        "características do cristiano ronaldo em inglês",
+        "como se diz cristiano ronaldo em inglês",
+        "como se escreve cristiano ronaldo em inglês",
+        "como se pronuncia cristiano ronaldo em inglês",
+        "como se chama cristiano ronaldo em inglês"
+      ],
+      "contexto": "futebolista português",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Cristiano Ronaldo' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Cristiano_Ronaldo"
+    },
+    {
+      "termo": "Taylor Swift - Patient Zero",
+      "score": 5.61,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#62 Spotify BR. 273.380 streams/dia. 6 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [
+        "taylor swift em inglês",
+        "frases taylor swift em inglês",
+        "biografia da taylor swift em inglês",
+        "história da taylor swift em inglês",
+        "música da taylor swift em inglês",
+        "como se escreve taylor swift em inglês",
+        "discurso da taylor swift formatura em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#62)",
+      "sugestao_aula": "'Taylor Swift - Patient Zero': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.2,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#63 Spotify BR. 272.408 streams/dia. 195 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "nome bts em inglês",
+        "bts significado em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#63)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Justin Bieber - Beauty And A Beat (w/ Nicki Minaj)",
+      "score": 3.99,
+      "fontes": [
+        "manual (TikTok)",
+        "spotify-br"
+      ],
+      "volume_txt": "#162 Spotify BR. 174.398 streams/dia. 155 dias no chart · colado à mão",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "justin bieber em inglês",
+        "música justin bieber em inglês",
+        "frases do justin bieber em inglês",
+        "biografia do justin bieber em inglês",
+        "justin bieber baby letra em inglês",
+        "como se escreve justin bieber em inglês",
+        "como se fala justin bieber em inglês",
+        "o que significa justin bieber em inglês",
+        "letra da música do justin bieber em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#162)",
+      "sugestao_aula": "'Justin Bieber - Beauty And A Beat (w/ Nicki Minaj)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "BTS - NORMAL",
+      "score": 3.97,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#176 Spotify BR. 168.963 streams/dia. 157 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "nome bts em inglês",
+        "bts significado em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#176)",
+      "sugestao_aula": "'BTS - NORMAL': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Sérgio Hondjakoff",
+      "score": 3.68,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "4.740 views na Wikipédia",
+      "categoria": "cultura pop",
+      "subindo": false,
+      "aula": [],
+      "contexto": "ator e cantor brasilo-estadunidense",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Sérgio Hondjakoff' (título original, bordões) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/S%C3%A9rgio_Hondjakoff"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.63,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#108 Spotify BR. 214.531 streams/dia. 15 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#108)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "embaixada dos estados unidos da américa",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"eleicoes\" em \"Serviços na Embaixada e consulados dos EUA no Brasil são suspensos antes do 1° turno das e\""
+    },
+    {
+      "termo": "karina zeviani",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"morre\" em \"Morre a cantora Karina Zeviani, ex-participante do 'The Voice Brasil', aos 51 anos\""
+    },
+    {
+      "termo": "empresário",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"assassinado\" em \"Empresário assassinado na frente da filha e esposa em bairro nobre de SC: o que se sabe e \""
+    },
+    {
+      "termo": "bomba",
+      "fonte": "google-trends",
+      "motivo": "violência: \"bomba\" em \"bomba\""
+    },
+    {
+      "termo": "lidio lopes",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"deputado\" em \"Assessor de deputado é flagrado com R$ 127 mil em papelotes e preso após oferecer R$ 5 mil\""
+    },
+    {
+      "termo": "Lito Sousa",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"especialista em aviação brasileiro (1967–2026)\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Ted Kaczynski",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"criminoso\" em \"matemático e criminoso norte-americano (1942–2023)\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Augusto Cury",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Augusto Jorge Cury (Colina, 2 de outubro de 1958) é um médico, psiquiatra, escritor, profe\""
+    },
+    {
+      "termo": "Lizzie Borden",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"suspeita\" em \"norte-americana suspeita de cometer assassinato (1860–1927)\""
+    },
+    {
+      "termo": "Ronaldo Caiado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"caiado\" em \"Ronaldo Caiado\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "André do Prado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e presidente da Assembleia Legislativa do Estado de São Paulo\""
+    },
+    {
+      "termo": "Guilherme Derrite",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Secretário de Segurança Pública do Estado de São Paulo no governo Tarcísio (2023–2025) e D\""
+    },
+    {
+      "termo": "Outubro Rosa",
+      "fonte": "wikipedia",
+      "motivo": "saúde grave: \"cancer\" em \"campanha de prevenção ao câncer de mama\""
+    },
+    {
+      "termo": "Anthony Garotinho",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Conrad Lant",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"Conrad Thomas Lant, mais conhecido pelo nome artístico Cronos (Kensington, Londres, 15 de \""
+    },
+    {
+      "termo": "Caso Ana Clara Machado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Caso Ana Clara Machado trata-se da morte da menina Ana Clara Gomes Machado, de cinco anos,\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Tarcísio de Freitas",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"tarcisio\" em \"Tarcísio de Freitas\""
+    },
+    {
+      "termo": "Cleitinho",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro, senador do Brasil por Minas Gerais\""
+    },
+    {
+      "termo": "Simone Tebet",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"tebet\" em \"Simone Tebet\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Partido Missão",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido Missão\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "#FAKE",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"bolsonaro\" em \"É #FAKE vídeo de Virginia Fonseca declarando apoio a Flávio Bolsonaro; gravação foi manipu\""
+    },
+    {
+      "termo": "não deixa o Leão cair",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"eleitor\" em \"Eleitor encurrala Helder no Ver-o-Peso: “não deixa o Leão cair”\""
+    },
+    {
+      "termo": "1 de outubro",
+      "fonte": "wikipedia",
+      "motivo": "ligado a assunto descartado ('Outubro Rosa')"
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "#fake",
+    "1 de outubro",
+    "6 e onibus",
+    "adela - nicole kidman",
+    "alerta amarelo: tempestade",
+    "alex warren - ordinary",
+    "andre do prado",
+    "anthony garotinho",
+    "antonio tabet",
+    "augusto cury",
+    "baby laugh brazilian dance",
+    "bomba",
+    "bts - normal",
+    "bts - swim",
+    "caso ana clara machado",
+    "chiki sha dance trend",
+    "cleitinho",
+    "combinou com ele",
+    "conrad lant",
+    "cringe",
+    "cristiano ronaldo",
+    "daniel vorcaro",
+    "daniella marques",
+    "decidiu que era meu dia",
+    "doenca de creutzfeldt-jakob",
+    "dominic fike - babydoll",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "embaixada dos estados unidos da america",
+    "empresario",
+    "erika hilton",
+    "es la hora del cafe audio viral",
+    "evanescence - bring me to life",
+    "everything hallelujah justin bieber trend",
+    "farmar aura",
+    "fatal fans corinthians",
+    "flavio bolsonaro",
+    "galo pera meme",
+    "guilherme derrite",
+    "guns n' roses - sweet child o' mine",
+    "hannah montana",
+    "harry styles - sign of the times",
+    "jair bolsonaro",
+    "jorge jesus",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "karina zeviani",
+    "katseye",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "lidio lopes",
+    "liga das nacoes da uefa",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "lito sousa",
+    "lizzie borden",
+    "luiz inacio lula da silva",
+    "malcolm todd - earrings",
+    "michael jackson - billie jean",
+    "mudancas climaticas",
+    "nao deixa o leao cair",
+    "nikolas ferreira",
+    "nirvana - smells like teen spirit - remastered",
+    "oasis - wonderwall - remastered",
+    "outubro rosa",
+    "partido missao",
+    "pedra da feiticeira",
+    "pentobarbital",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "pis/pasep",
+    "radiohead - creep",
+    "renan santos",
+    "resenha na laje dance",
+    "ronaldo caiado",
+    "rosangela lula da silva",
+    "sergio hondjakoff",
+    "shawn mendes - treat you better",
+    "simone tebet",
+    "six-seven",
+    "tarcisio de freitas",
+    "tatu do bem meme",
+    "taylor swift - patient zero",
+    "taylor swift - the fate of ophelia",
+    "ted kaczynski",
+    "temper city - self aware",
+    "teresa de lisieux",
+    "the goo goo dolls - iris",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "trace brasil",
+    "vingadores doutor destino"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 23 itens",
+    "tiktok: 9 itens",
+    "manual: 7 itens"
+  ]
+}
