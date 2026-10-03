@@ -1,0 +1,62 @@
+{
+  "id": "cafe-t1e01-hi-im-capy-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 1,
+    "codigo": "T1 E01 · parte 2/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 1,
+    "progresso": "você já sabe 1 frase"
+  },
+  "level": "A1",
+  "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
+  "title": "T1 E01 · parte 2/3 · um gringo de verdade no café ☕",
+  "hookTitle": "um turista de verdade entrou",
+  "alvo": {
+    "en": "Hi! I'm Capy.",
+    "pt": "Oi! Eu sou a Capy.",
+    "nucleo": "Hi! I'm",
+    "variacoes": [
+      "Hi! I'm Rick!",
+      "Hi!... I'm... Lazy.",
+      "Hi. I'm Hank."
+    ]
+  },
+  "cast": ["capi", "hank", "lazy", "turista"],
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 1,
+  "beats": [
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "surprised",
+      "text": "Um cliente diferente. Será que ele é gringo mesmo?" },
+    { "tipo": "pausa", "s": 0.5, "react": { "hank": "neutral" } },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": "variacao", "vapor": true,
+      "text": "Hi! I'm Rick!" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Hi." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "shock",
+      "text": "Ele se apresentou. Eu sei isso. Eu aprendi isso." },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": "variacao", "vapor": true,
+      "text": "Hi!... I'm... Lazy." },
+    { "speaker": "turista", "lang": "en", "emotion": "smile", "repita": true, "text": "Hi!" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "vapor": true,
+      "text": "Hi! I'm Capy!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "sfx": ["pop"], "text": "Nice, Capy!" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "alvo": "variacao", "text": "Hi. I'm Hank." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "vapor": true,
+      "text": "Hi! I'm Capy!" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy",
+      "text": "Eu me apresentei pra um gringo de verdade." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "panic",
+      "text": "Espera... e como eu me despeço dele depois?" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.4, "emotion": "happy",
+      "text": "Consigo cumprimentar e dizer meu nome, até pra um gringo de verdade.",
+      "cardTexto": "como a Capy se despede? próximo assunto: Bye! See you!" }
+  ],
+  "gatilhos": [
+    "hype anglófono: turista americano de verdade no café (reserva atemporal, roteiro v6)",
+    "o Hank nunca humilha: seco com o turista, nunca debocha",
+    "gancho verdadeiro pro próximo capítulo: como a Capy se despede (assunto 2 já na grade)",
+    "variações reforçam o padrão 'Hi! I'm ___' (Rick, Lazy, Hank) antes da Capy repetir"
+  ]
+}

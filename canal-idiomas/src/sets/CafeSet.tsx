@@ -171,6 +171,24 @@ export const CafeCounter: React.FC<{ frame: number }> = ({ frame }) => {
   );
 };
 
+// Som da vez (assunto 1, docs/roteiros/roteiros-tema01.md): /h/ = xícara soltando vapor. Mesmo traço do steam()
+// do balcão, só que perto da boca de quem fala o "H" — nasce, sobe e some em ~0,8 s (sem som: é só a pista visual).
+export const VaporPuff: React.FC<{ x: number; y: number; frame: number; since: number }> = ({ x, y, frame, since }) => {
+  const k = since / 24; // 0..1 em ~0,8 s (30 fps)
+  if (k < 0 || k > 1) return null;
+  const rise = k * 70;
+  const fade = k < 0.15 ? k / 0.15 : 1 - (k - 0.15) / 0.85;
+  return (
+    <svg width={90} height={110} style={{ position: "absolute", left: x - 45, top: y - 110 - rise, overflow: "visible", pointerEvents: "none" }}>
+      {[0, 1].map((i) => (
+        <path key={i} d={`M${30 + i * 20} ${90 - i * 14} q-14 -24 0 -48 q14 -24 0 -48`} fill="none" stroke="#fff" strokeWidth={9}
+          strokeLinecap="round" opacity={fade * (0.75 - i * 0.2)}
+          transform={`translate(${Math.sin(frame / 6 + i) * 5} 0)`} />
+      ))}
+    </svg>
+  );
+};
+
 // Regra 2 do mundo: monólogo interno = tela roxa + vinheta (o balão de pensamento fica no motor).
 export const ThoughtOverlay: React.FC<{ amount: number; frame: number }> = ({ amount, frame }) => {
   if (amount <= 0) return null;

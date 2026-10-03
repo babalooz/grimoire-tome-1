@@ -1,0 +1,67 @@
+{
+  "id": "cafe-t1e01-hi-im-capy-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 1,
+    "codigo": "T1 E01 · parte 3/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 1,
+    "progresso": "você já sabe 1 frase"
+  },
+  "level": "A1",
+  "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
+  "title": "T1 E01 · parte 3/3 · ouviu? agora é você ☕",
+  "hookTitle": "você ouve o H?",
+  "alvo": {
+    "en": "Hi! I'm Capy.",
+    "pt": "Oi! Eu sou a Capy.",
+    "nucleo": "Hi! I'm",
+    "variacoes": [
+      "Hi! I'm Lazy.",
+      "Hi! I'm Poppy."
+    ]
+  },
+  "cast": ["capi", "hank", "lazy", "poppy", "bolinha"],
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 1,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você ouve o H e diz seu nome sem travar. Só escuta." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": "variacao", "vapor": true,
+      "text": "Hi! I'm Lazy." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "text": "Ai, I'm Lazy." },
+    { "tipo": "pergunta", "s": 3, "text": "qual tem o H? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "A. O H é um sopro." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": "variacao", "vapor": true,
+      "text": "Hi! I'm Lazy." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "A B também dá pra entender. A A é mais inglês." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "alvo": "variacao", "vapor": true,
+      "text": "Hi! I'm Poppy." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "thinking",
+      "text": "Quem foi? Eu conheço essa voz." },
+    { "tipo": "pausa", "s": 1.0, "react": { "poppy": "happy" } },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": "variacao", "vapor": true,
+      "text": "Hi! I'm Poppy." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Com o seu nome." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "vapor": true, "repita": true,
+      "text": "Hi! I'm Capy." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "repita": true, "text": "Hi." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "sfx": ["tick"], "text": "Hi!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "alvo": true, "bolinha": true, "vapor": true,
+      "text": "Hi! I'm Capy." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.4, "emotion": "happy",
+      "text": "Três vídeos. Uma frase. Ela é sua.",
+      "cardTexto": "CONSIGO cumprimentar e dizer meu nome ✓" }
+  ],
+  "gatilhos": [
+    "reconhecer antes de produzir (EF: entender × dizer)",
+    "rodada 2 (quem falou?) sem o cartão de pergunta formal: só 1 pergunta por vídeo no portão",
+    "2 SUA VEZ (nome com a Capy, cumprimentar o Hank) fecham o assunto 1",
+    "revisão espaçada: Bolinha guarda e devolve"
+  ]
+}

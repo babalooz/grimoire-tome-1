@@ -192,8 +192,13 @@ def checar_roteiro_cafe(ep: dict) -> list[str]:
     alvo = (ep.get("alvo") or {}).get("en", "").lower().rstrip("?.!")
     falas_ = [b for b in beats if "text" in b and "lang" in b]
     exatas = [b for b in falas_ if b.get("alvo") is True]
-    if len(exatas) < 5:
-        falhas.append(f"frase-alvo só {len(exatas)}× com alvo:true (mínimo 5)")
+    # padrão = exata + "variacao" (ex.: "Hi! I'm <nome>"): roteiros com troca de nome (docs/roteiros/roteiros-tema01.md
+    # V2, "variações que reforçam o padrão") reforçam o bloco por variação, não só repetindo a frase idêntica.
+    padrao = [b for b in falas_ if b.get("alvo")]
+    if len(padrao) < 5:
+        falhas.append(f"frase-alvo (exata ou variação) só {len(padrao)}× (mínimo 5)")
+    if len(exatas) < 2:
+        falhas.append(f"frase-alvo exata só {len(exatas)}× com alvo:true (mínimo 2)")
     bocas = {b.get("speaker") for b in falas_ if b.get("alvo")}
     if len(bocas) < 3:
         falhas.append(f"frase-alvo em só {len(bocas)} boca(s) (mínimo 3)")
@@ -232,8 +237,12 @@ def checar_roteiro_cafe(ep: dict) -> list[str]:
     en = [b for b in falas_ if b["lang"] == "en"]
     pal_en = sum(len(b["text"].split()) for b in en)
     pal_tot = sum(len(b["text"].split()) for b in falas_) or 1
-    if pal_en / pal_tot < 0.35:
-        falhas.append(f"inglês só {pal_en / pal_tot:.0%} das palavras faladas (mínimo 35%)")
+    # docs/plano-formato-cafe.md v2 §0.4 (decisão do Felipe, 27/09): mínimo cai de 35% pra 20% até o E10 (do zero,
+    # mais português no começo). portao.py ainda não tinha sido atualizado com essa régua mais baixa.
+    ep_n = (ep.get("serie") or {}).get("episodio", 99)
+    en_min = 0.20 if ep_n <= 10 else 0.35
+    if pal_en / pal_tot < en_min:
+        falhas.append(f"inglês só {pal_en / pal_tot:.0%} das palavras faladas (mínimo {en_min:.0%})")
     return sorted(set(falhas))
 
 

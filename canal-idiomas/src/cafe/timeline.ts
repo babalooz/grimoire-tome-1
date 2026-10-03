@@ -24,7 +24,8 @@ const DEFAULT_VOICE_LUFS = -22;
 // Roteiro = lista de beats (episodes/cafe-*.json, `format: "cafe"`). Esta agenda é a fonte da verdade do tempo:
 // a composição (src/Cafe.tsx), a esquete (src/CafeEsquete.tsx), a trilha e o script de quadros (scripts/cafe-frames.ts).
 
-export type Actor = "capi" | "hank" | "lazy" | "duda" | "poppy" | "bolinha" | "donajaca";
+// "turista" = figurante genérico (reserva atemporal do assunto 1), nunca elenco fixo (src/chars/Turista.tsx).
+export type Actor = "capi" | "hank" | "lazy" | "duda" | "poppy" | "bolinha" | "donajaca" | "turista";
 export type CafeSpeaker = Actor | "narrador";
 export type CafeLine = {
   speaker: CafeSpeaker;
@@ -42,6 +43,7 @@ export type CafeLine = {
   errado?: boolean;
   repita?: boolean;
   bolinha?: boolean;
+  vapor?: boolean; // regra visual do assunto 1: ícone de vapor de café no som do "H" (docs/roteiros/roteiros-tema01.md)
 };
 export type CafePausa = { tipo: "pausa"; s: number; react?: Partial<Record<Actor, Emotion>> };
 export type CafePergunta = { tipo: "pergunta"; s: number; text: string };
@@ -189,6 +191,8 @@ export const CAFE_STAGE: Record<Exclude<Actor, "donajaca">, Spot> = {
   duda: { left: 560, top: 1010, size: 420, head: [690, 1195], headTop: 1070, zoom: 1.35 },
   poppy: { left: 560, top: 1020, size: 430, head: [712, 1185], headTop: 1060, zoom: 1.35 },
   bolinha: { left: 610, top: 826, size: 270, head: [735, 960], headTop: 880, zoom: 1.55 },
+  // mesma marcação de "cliente" da Duda/Poppy (nunca em cena junto com elas nos roteiros atuais)
+  turista: { left: 560, top: 1010, size: 420, head: [690, 1195], headTop: 1070, zoom: 1.35 },
 };
 export const PHONE = { left: 560, top: 690, size: 300 }; // Dona Jaca: moldura de celular (espaço de tela, x ≤ 920)
 
@@ -213,7 +217,7 @@ export const presences = (steps: CafeStep[]): Partial<Record<Actor, Presence>> =
   const out: Partial<Record<Actor, Presence>> = {};
   const first = (id: Actor) => steps.find((s) => isLine(s.beat) && s.beat.speaker === id);
   const end = cafeTotal(steps) + 999;
-  (["duda", "poppy"] as Actor[]).forEach((id) => {
+  (["duda", "poppy", "turista"] as Actor[]).forEach((id) => {
     const f = first(id);
     if (!f) return;
     // cliente sai com o café: depois da 1ª resposta do Hank que vem depois da fala dela

@@ -6,12 +6,13 @@ import { Duda } from "./chars/Duda";
 import { Hank } from "./chars/Hank";
 import { Lazy } from "./chars/Lazy";
 import { Poppy } from "./chars/Poppy";
+import { Turista } from "./chars/Turista";
 import { Emotion } from "./chars/common";
 import { HOOK, TITLE_BOTTOM, TITLE_TOP } from "./Licao";
 import { AUDIT_BG, AuditCtx, useAudit } from "./lesson/audit";
 import { Caption } from "./lesson/Caption";
 import { MUSIC } from "./lesson/music";
-import { CafeBack, CafeCounter, ThoughtOverlay } from "./sets/CafeSet";
+import { CafeBack, CafeCounter, ThoughtOverlay, VaporPuff } from "./sets/CafeSet";
 import { CAPI_MOOD, Cam, Notebook, Sfx, clampCam, toScreen } from "./Sitcom";
 import { C } from "./theme";
 import { Watermark } from "./Watermark";
@@ -62,7 +63,7 @@ const CafeInner: React.FC<CafeRenderProps> = (p) => {
   const line = isLine(beat) ? beat : null;
 
   // ---- emoções acumuladas (último valor até o beat atual) ----
-  const emo: Record<Actor, string> = { capi: "zen", hank: "bored", lazy: "neutral", duda: "neutral", poppy: "neutral", bolinha: "neutral", donajaca: "neutral" };
+  const emo: Record<Actor, string> = { capi: "zen", hank: "bored", lazy: "neutral", duda: "neutral", poppy: "neutral", bolinha: "neutral", donajaca: "neutral", turista: "neutral" };
   steps.forEach((s) => {
     if (s.i > cur.i) return;
     const b = s.beat;
@@ -118,7 +119,7 @@ const CafeInner: React.FC<CafeRenderProps> = (p) => {
   );
   const cardStep = steps.find((s) => isLine(s.beat) && s.beat.card);
   const onCard = !!cardStep && cur === cardStep;
-  const lazyK = kIn("lazy"), dudaK = kIn("duda"), poppyK = kIn("poppy"), bolK = kIn("bolinha"), jacaK = kIn("donajaca");
+  const lazyK = kIn("lazy"), dudaK = kIn("duda"), poppyK = kIn("poppy"), bolK = kIn("bolinha"), jacaK = kIn("donajaca"), turistaK = kIn("turista");
   const world = audit ? null : (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: worldT, transformOrigin: "0 0" }}>
@@ -132,6 +133,7 @@ const CafeInner: React.FC<CafeRenderProps> = (p) => {
         <ThoughtOverlay amount={overlay} frame={frame} />
         {dudaK > 0 && place("duda", <Duda frame={frame} talking={talking("duda")} emotion={asEmotion(emo.duda, "neutral")} size={CAFE_STAGE.duda.size} />, `translateX(${(1 - dudaK) * 540}px)`)}
         {poppyK > 0 && place("poppy", <Poppy frame={frame} talking={talking("poppy")} emotion={asEmotion(emo.poppy, "neutral")} size={CAFE_STAGE.poppy.size} />, `translateX(${(1 - poppyK) * 540}px)`)}
+        {turistaK > 0 && place("turista", <Turista frame={frame} talking={talking("turista")} emotion={asEmotion(emo.turista, "neutral")} size={CAFE_STAGE.turista.size} />, `translateX(${(1 - turistaK) * 540}px)`)}
         {place("capi", <Capi frame={frame} talking={talking("capi")} mood={capiMood(emo.capi)} size={CAFE_STAGE.capi.size}
           sweat={emo.capi === "panic" || emo.capi === "sweat" ? 2 : 0} armUp={onCard} />)}
       </AbsoluteFill>
@@ -202,6 +204,15 @@ const CafeInner: React.FC<CafeRenderProps> = (p) => {
   if (pres.bolinha) sfx.push(<Sfx key="bol" at={pres.bolinha.in + 4} name="pop" vol={0.35} />);
   if (pres.donajaca) sfx.push(<Sfx key="jaca" at={pres.donajaca.in} name="pop" vol={0.3} />);
 
+  // ---- vapor do H (regra visual do assunto 1): nuvenzinha perto da boca de quem fala, enquanto a fala toca ----
+  let vapor: React.ReactNode = null;
+  if (line?.vapor && lf >= 0 && lf < Math.max(24, cur.audioFrames)) {
+    const vid = (line.speaker === "narrador" ? "capi" : line.speaker) as Exclude<Actor, "donajaca">;
+    const vst = CAFE_STAGE[vid];
+    const [vx, vy] = toScreen(cam, vst.head[0] + 46, vst.headTop + 70) as [number, number];
+    vapor = <VaporPuff x={vx} y={vy} frame={frame} since={lf} />;
+  }
+
   const bolHead = bolStep ? toScreen(cam, CAFE_STAGE.bolinha.head[0], CAFE_STAGE.bolinha.headTop) : [0, 0];
   const lembra = !!bolStep && (p.serie?.episodio ?? 1) > 1 && cur === bolStep;
   const cardTexto = cardStep && (cardStep.beat as CafeLine).cardTexto;
@@ -228,6 +239,7 @@ const CafeInner: React.FC<CafeRenderProps> = (p) => {
       {lembra && <LembraTag x={bolHead[0]} y={bolHead[1]} since={lf} fps={fps} />}
       {block}
       {!block && caption}
+      {!block && vapor}
       <Watermark lead={<CafeSeal serie={p.serie} />} />
     </AbsoluteFill>
   );

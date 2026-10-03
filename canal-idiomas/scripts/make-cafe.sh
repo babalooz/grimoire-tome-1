@@ -4,29 +4,32 @@
 # -> master −14 LUFS / ≤ −1 dBTP (scripts/loudnorm.py). Cada item de `esquetes` vira out/<id>-esquete-<X>.mp4
 # (composição CafeEsquete: beats de..ate + card "aula completa no EP N" de 2 s), com a mesma masterização.
 # Mesmas flags de cor/qualidade do make-licao.sh (o portão exige yuv420p/tv/bt709).
-# Uso: scripts/make-cafe.sh episodes/cafe-t1e01-can-i-get.json [--stills] [--auditoria] [--no-video] [--no-esquetes] [--no-tts]
+# Uso: scripts/make-cafe.sh episodes/cafe-t1e01-can-i-get.json [--stills] [--auditoria] [--no-video] [--no-esquetes] [--no-tts] [--motor gemini|kokoro]
 #   --stills     quadros-chave em out/<id>-stills/ e out/<id>-esquete-<X>-stills/ (agenda de src/cafe/timeline.ts)
 #   --auditoria  os mesmos quadros no modo auditoria (fundo preto, só interface) em out/<id>-auditoria/
 #   --no-video   pula o render dos MP4 · --no-esquetes só o episódio · --no-tts reaproveita o áudio já gerado
+#   --motor      gemini (padrão: kokoro, aposentado no formato cafe) ou kokoro
 set -euo pipefail
 cd "$(dirname "$0")/.."
 EP="$1"; shift
-STILLS=0; AUDIT=0; VIDEO=1; ESQ=1; TTS=1
-for a in "$@"; do
-  case "$a" in
+STILLS=0; AUDIT=0; VIDEO=1; ESQ=1; TTS=1; MOTOR=kokoro
+while [ $# -gt 0 ]; do
+  case "$1" in
     --stills) STILLS=1 ;;
     --auditoria) AUDIT=1 ;;
     --no-video) VIDEO=0 ;;
     --no-esquetes) ESQ=0 ;;
     --no-tts) TTS=0 ;;
+    --motor) MOTOR="$2"; shift ;;
   esac
+  shift
 done
 ID=$(node -e "console.log(require('./$EP').id)")
 BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell
 BROWSER_FLAG=$([ -x "$BROWSER" ] && echo "--browser-executable=$BROWSER" || true)
 RENDER_FLAGS="--audio-bitrate=320k --crf=26 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG"
 
-[ "$TTS" = 1 ] && .venv/bin/python scripts/tts.py "$EP"
+[ "$TTS" = 1 ] && .venv/bin/python scripts/tts.py "$EP" --motor "$MOTOR"
 [ -f public/music/cafe-loop.wav ] || .venv/bin/python scripts/music.py
 mkdir -p out
 node -e "

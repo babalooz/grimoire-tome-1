@@ -21,6 +21,8 @@ Saída (formato Sitcom do Café, `format: "cafe"`): public/audio/<id>/c<n>.wav (
   = lista alinhada com `beats` (null em pausa/pergunta), cada item {audio, duration, parts[{text,start,end}], speed, wpm}.
   `parts` = pedaços separados por pausa real (reticências / núcleo da 1ª frase-alvo) -> karaokê em src/cafe/timeline.ts.
 """
+import argparse
+import base64
 import hashlib
 import json
 import re
@@ -210,6 +212,73 @@ CAFE_THOUGHT = 1.05  # monólogo interno um pouco mais rápido, sem correria
 PHONE_BAND = (300, 3400)
 WORD = re.compile(r"[A-Za-z0-9À-ÿ']+")
 
+# ---------------------------------------------------------------- motor Gemini (docs/pesquisas/formato-novo/voz-audio-didatico.md
+# + teste cego, docs/teste-voz.md): Felipe escolheu Sulafat pra Capy (fala1-A do gabarito) em 03/10. Kokoro aposentado no
+# formato "cafe". Modelo travado em flash-LITE-tts: o flash-tts normal só libera 10 pedidos/dia no plano grátis.
+GEMINI_MODEL_CAFE = "gemini-3.8-flash-lite-tts"
+GEMINI_VOICE = {  # vozes bem diferentes entre si (grave/seco, lento, animada, jovem/rápida, leve)
+    "capi": "Sulafat", "hank": "Algenib", "lazy": "Umbriel", "duda": "Autonoe", "poppy": "Zephyr",
+    "bolinha": "Despina", "donajaca": "Gacrux", "narrador": "Enceladus", "turista": "Orus",
+}
+# DESCOBERTA no teste manual de 03/10 (ver docs/vozes-gemini.md): com o gemini-3.8-flash-LITE-tts, um prefixo de
+# instrução em texto ("Say in a gruff voice: Hi.") NÃO funciona como direção de cena — o modelo fala o prefixo
+# inteiro em voz alta (testado: "Hi." sozinho = 0,68 s; com instrução na frente = 11,5 s, lendo a instrução toda).
+# Testei variações (aspas, "TTS the following line"); todas ainda liam parte do texto extra. Por isso o motor manda
+# SÓ o texto da fala (igual ao Kokoro): a voz (GEMINI_VOICE) carrega a personalidade, e a pausa vem da PONTUAÇÃO
+# real do roteiro ("..." já usado pelo Lazy), nunca de instrução falada. Fica registrado pra não repetir o teste.
+GEMINI_CACHE = ROOT / "public/audio/_cache_gemini"
+
+
+class GeminiQuotaError(RuntimeError):
+    """429 persistente: a rotina deve parar e avisar quantas falas faltaram (nunca cair pro Kokoro em silêncio)."""
+
+
+def _gemini_key(speaker: str, lang: str, mode: str, speed: float, text: str, voice: str) -> str:
+    return hashlib.sha256("|".join([speaker, lang, mode, _num(speed), text, voice, GEMINI_MODEL_CAFE]).encode()).hexdigest()[:16]
+
+
+_gemini_pedidos = 0  # contador de chamadas reais (fora do cache) nesta execução
+
+
+def synth_gemini(text: str, lang: str, speaker: str, speed: float) -> tuple["np.ndarray", int]:
+    """1 chamada por FALA (não por pedaço): o Gemini lê a pontuação/instrução como pausa, sem stitching manual.
+    Cacheada por hash em public/audio/_cache_gemini/ (reaproveita entre V1/V2/V3 e entre re-renders)."""
+    global _gemini_pedidos
+    import io
+    import numpy as np
+    import soundfile as sf
+    speaker = ALIAS.get(speaker, speaker)
+    voice = GEMINI_VOICE.get(speaker, GEMINI_VOICE["capi"])
+    GEMINI_CACHE.mkdir(parents=True, exist_ok=True)
+    key = _gemini_key(speaker, lang, "fala", speed, text, voice)
+    cache_f = GEMINI_CACHE / f"{key}.wav"
+    if cache_f.exists():
+        audio, sr = sf.read(cache_f, dtype="float32")
+        return audio, sr
+    from teste_voz import GEMINI_API, http  # import tardio: evita import circular (teste_voz importa tts.synth em runtime)
+    corpo = speech_text(text, lang)  # só o texto da fala: instrução em prefixo é lida em voz alta (ver nota acima)
+    url = f"{GEMINI_API}/models/{GEMINI_MODEL_CAFE}:generateContent"
+    body = {"contents": [{"parts": [{"text": corpo}]}],
+            "generationConfig": {"responseModalities": ["AUDIO"],
+                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
+    try:
+        resp = http(url, json.dumps(body).encode(), {"Content-Type": "application/json"})
+    except SystemExit as e:  # teste_voz.http vira SystemExit em HTTP erro (inclui 429 depois de esgotar as tentativas)
+        raise GeminiQuotaError(str(e)) from e
+    d = json.loads(resp)
+    parte = d["candidates"][0]["content"]["parts"][0]["inlineData"]
+    bruto = base64.b64decode(parte["data"])
+    mime = parte.get("mimeType", "")
+    if "wav" in mime:
+        audio, sr = sf.read(io.BytesIO(bruto), dtype="float32")
+    else:
+        sr = int(re.search(r"rate=(\d+)", mime or "rate=24000").group(1))
+        audio = np.frombuffer(bruto, dtype="<i2").astype("float32") / 32768
+    audio = _trim(audio)
+    sf.write(cache_f, audio, sr)
+    _gemini_pedidos += 1
+    return audio, sr
+
 
 def _cafe_pieces(beat: dict, first_alvo: bool, nucleo: str | None) -> list[str]:
     """Pedaços do TEXTO DE TELA separados por pausa real (a legenda karaokê usa os mesmos pedaços)."""
@@ -221,31 +290,43 @@ def _cafe_pieces(beat: dict, first_alvo: bool, nucleo: str | None) -> list[str]:
     return [text]
 
 
-def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: float = CAFE_PAUSE):
-    """Sintetiza cada pedaço e cola com silêncio medido. Devolve (áudio, sr, partes com início/fim em s)."""
-    global _kokoro
-    _kokoro = _kokoro or Kokoro(str(ROOT / "voices/kokoro-v1.0.onnx"), str(ROOT / "voices/voices-v1.0.bin"))
-    speaker = ALIAS.get(speaker, speaker)
-    voice, _, gain = VOICES.get((speaker, lang), VOICES[("capi", lang)])
-    chunks, parts, cursor, sr = [], [], 0, SR
-    for i, piece in enumerate(pieces):
-        last = i == len(pieces) - 1
-        say = speech_text(piece, lang)
-        if not last and not say.rstrip().endswith("..."):
-            say = say.rstrip(" ,") + "..."  # entonação suspensa antes da pausa
-        a, sr = _kokoro.create(say, voice=voice, speed=speed, lang=LANG_CODE[lang])
-        a = _trim(a, head=i > 0, tail=True)
-        idx = np.flatnonzero(np.abs(a) > SILENCE_THR)
-        s0 = cursor + (int(idx[0]) if len(idx) else 0)
-        s1 = cursor + (int(idx[-1]) if len(idx) else len(a))
-        parts.append({"text": piece, "start": round(s0 / sr, 3), "end": round(s1 / sr, 3)})
-        chunks.append(a)
-        cursor += len(a)
-        if not last:
-            gap = np.zeros(int(pause * sr), dtype=a.dtype)
-            chunks.append(gap)
-            cursor += len(gap)
-    audio = np.concatenate(chunks) * gain
+def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: float = CAFE_PAUSE, engine: str = "kokoro"):
+    """Sintetiza cada pedaço e cola com silêncio medido. Devolve (áudio, sr, partes com início/fim em s).
+    engine="gemini": 1 chamada por FALA (ignora o split em pedaços; o Gemini lê "..." como pausa pela instrução)."""
+    if engine == "gemini":
+        texto = " ".join(p.rstrip(" ,") + ("..." if i < len(pieces) - 1 and not p.rstrip().endswith("...") else "")
+                          for i, p in enumerate(pieces))
+        audio, sr = synth_gemini(texto, lang, speaker, speed)
+        gain = 1.0
+    else:
+        global _kokoro
+        _kokoro = _kokoro or Kokoro(str(ROOT / "voices/kokoro-v1.0.onnx"), str(ROOT / "voices/voices-v1.0.bin"))
+        speaker_k = ALIAS.get(speaker, speaker)
+        voice, _, gain = VOICES.get((speaker_k, lang), VOICES[("capi", lang)])
+        chunks, cursor, sr = [], 0, SR
+        parts = []
+        for i, piece in enumerate(pieces):
+            last = i == len(pieces) - 1
+            say = speech_text(piece, lang)
+            if not last and not say.rstrip().endswith("..."):
+                say = say.rstrip(" ,") + "..."  # entonação suspensa antes da pausa
+            a, sr = _kokoro.create(say, voice=voice, speed=speed, lang=LANG_CODE[lang])
+            a = _trim(a, head=i > 0, tail=True)
+            idx = np.flatnonzero(np.abs(a) > SILENCE_THR)
+            s0 = cursor + (int(idx[0]) if len(idx) else 0)
+            s1 = cursor + (int(idx[-1]) if len(idx) else len(a))
+            parts.append({"text": piece, "start": round(s0 / sr, 3), "end": round(s1 / sr, 3)})
+            chunks.append(a)
+            cursor += len(a)
+            if not last:
+                gap = np.zeros(int(pause * sr), dtype=a.dtype)
+                chunks.append(gap)
+                cursor += len(gap)
+        audio = np.concatenate(chunks)
+    if engine != "gemini":
+        audio = audio * gain
+    else:
+        parts = [{"text": " ".join(pieces), "start": 0.0, "end": round(len(audio) / sr, 3)}]
     if speaker == "donajaca":
         from scipy.signal import butter, sosfiltfilt
         sos = butter(4, PHONE_BAND, btype="band", fs=sr, output="sos")
@@ -256,7 +337,7 @@ def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: 
     return audio.astype(np.float32), sr, parts
 
 
-def render_cafe(episode: dict, out_dir: Path) -> list:
+def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro") -> list:
     """Formato cafe: 1 .wav por beat de fala (c<n>.wav); pausa/pergunta = null na lista de timings."""
     for old in out_dir.glob("c*.wav"):
         old.unlink()
@@ -273,7 +354,14 @@ def render_cafe(episode: dict, out_dir: Path) -> list:
         if speed is None:
             speed = CAFE_SPEED.get((speaker, lang), 1.0) * (CAFE_THOUGHT if mode == "pensamento" else 1.0)
         pieces = _cafe_pieces(b, i == first, alvo.get("nucleo"))
-        audio, sr, parts = synth_cafe(pieces, lang, speaker, speed)
+        try:
+            audio, sr, parts = synth_cafe(pieces, lang, speaker, speed, engine=engine)
+        except GeminiQuotaError as e:
+            feitas = sum(1 for t in timings if t is not None)
+            faltam = len(episode["beats"]) - i
+            print(f"PAROU em 429 no beat {i} ({episode['id']}): {feitas} falas prontas, {faltam} faltando. {e}",
+                  file=sys.stderr)
+            raise
         sf.write(out_dir / f"c{i}.wav", audio, sr)
         span = parts[-1]["end"] - parts[0]["start"]
         words = len(WORD.findall(b["text"]))
@@ -286,20 +374,21 @@ def render_cafe(episode: dict, out_dir: Path) -> list:
     return timings
 
 
-def main(episode_path: str) -> None:
+def main(episode_path: str, motor: str = "kokoro") -> None:
     episode = json.loads(Path(episode_path).read_text())
     out_dir = ROOT / "public/audio" / episode["id"]
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if episode.get("format") == "cafe":
-        timings = render_cafe(episode, out_dir)
+        timings = render_cafe(episode, out_dir, engine=motor)
         (out_dir / "timings.json").write_text(json.dumps(timings, ensure_ascii=False, indent=2))
         import pyloudnorm as pyln
         voice = np.concatenate([sf.read(ROOT / "public" / t["audio"])[0] for t in timings if t])
         voice_lufs = round(float(pyln.Meter(SR).integrated_loudness(voice)), 2)
         (out_dir / "mix.json").write_text(json.dumps({"voiceLufs": voice_lufs}))
         n = sum(1 for t in timings if t)
-        print(f"ok: {n} falas, {sum(t['duration'] for t in timings if t):.1f}s de fala, voz {voice_lufs} LUFS -> {out_dir}")
+        pedidos = f", {_gemini_pedidos} pedidos Gemini novos (resto veio do cache)" if motor == "gemini" else ""
+        print(f"ok: {n} falas, {sum(t['duration'] for t in timings if t):.1f}s de fala, voz {voice_lufs} LUFS -> {out_dir}{pedidos}")
         return
 
     if episode.get("format") == "licao":
@@ -329,4 +418,8 @@ def main(episode_path: str) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    ap = argparse.ArgumentParser()
+    ap.add_argument("episodio")
+    ap.add_argument("--motor", choices=["kokoro", "gemini"], default="kokoro")
+    a = ap.parse_args()
+    main(a.episodio, a.motor)
