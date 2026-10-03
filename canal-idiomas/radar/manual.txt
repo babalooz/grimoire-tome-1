@@ -1,9 +1,14 @@
-# TikTok Brasil (buscas web 02/10/2026). Views: endpoint público /api/challenge/detail respondeu
-# HTTP 200 com corpo vazio para todos os termos testados (babylaughdance, chikisha, everythinghallelujah)
-# -> "não medido" em todos, igual ao registrado no radar.py (falha conhecida a partir da nuvem).
-# Fontes fracas (páginas "discover" do próprio TikTok / agregadores, sem contagem objetiva) — tratar como
-# sinal fraco (estimativa), não como dado confirmado. Persistência: Baby Laugh e Chiki Sha já apareciam no
-# radar de 01/10 e continuam aparecendo hoje (2º dia seguido).
+# TikTok Brasil (buscas web 03/10/2026). Views: endpoint público /api/challenge/detail respondeu
+# corpo vazio para todos os termos testados hoje (djbabylaughbr, babylaughbrazilliandancebr, babylaugh)
+# -> "não medido" em todos, igual ao registrado no radar.py (falha conhecida a partir da nuvem) e nos dias
+# anteriores. Fontes fracas (páginas "discover" do próprio TikTok / agregadores de SEO, sem contagem
+# objetiva nem data clara) — tratar como sinal fraco (estimativa), não como dado confirmado.
+# Persistência: "Baby Laugh Brazilian Dance" aparece pelo 3º dia seguido (01, 02 e 03/10) em buscas
+# distintas -> sinal mais forte que os demais. "Chiki Sha dance trend" (com Arthur Lima) reapareceu hoje.
+# Não resurgiram hoje em busca nova (mantidos do radar de 02/10 por falta de dado contrário, não por
+# confirmação nova): Resenha na Laje, Everything Hallelujah, Es la hora del cafe, Galo Pera, Tatu do Bem.
+# Descartados hoje (não entram): "E o Caba Vai En-Doidar" / TiruLipa (bordão de pessoa real = proibido);
+# "Ai pai, para!" (sem gancho de inglês, fonte única fraca); #capcutpioneer (tag de ferramenta, não de tema).
 Baby Laugh Brazilian Dance
 Chiki Sha dance trend
 Resenha na Laje dance
