@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "date": "2026-10-04",
+  "janela": ["2026-09-28", "2026-10-04"],
+  "radares_lidos": 7,
+  "tema_da_semana": "Taylor Swift - Patient Zero",
+  "temas_persistentes": [
+    {
+      "tema": "Taylor Swift - Patient Zero",
+      "dias": 6,
+      "dias_presentes": ["2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03"],
+      "fonte": "spotify-br",
+      "numeros_por_dia": [
+        {"data": "2026-09-28", "posicao": 131, "streams_dia": 238981},
+        {"data": "2026-09-29", "posicao": 197, "streams_dia": 154816},
+        {"data": "2026-09-30", "posicao": 18, "streams_dia": 428115},
+        {"data": "2026-10-01", "posicao": 43, "streams_dia": 311884},
+        {"data": "2026-10-02", "posicao": 62, "streams_dia": 273380},
+        {"data": "2026-10-03", "posicao": 97, "streams_dia": 232955}
+      ],
+      "anglofono": true,
+      "anglofono_motivo": "artista americana, categoria 'show/artista internacional' da lista aprovada pelo Felipe"
+    },
+    {
+      "tema": "BTS - SWIM",
+      "dias": 5,
+      "dias_presentes": ["2026-09-28", "2026-09-29", "2026-10-01", "2026-10-02", "2026-10-03"],
+      "fonte": "spotify-br",
+      "numeros_por_dia": [
+        {"data": "2026-09-28", "posicao": 108, "streams_dia": 267243},
+        {"data": "2026-09-29", "posicao": 93, "streams_dia": 244739},
+        {"data": "2026-10-01", "posicao": 56, "streams_dia": 280414},
+        {"data": "2026-10-02", "posicao": 63, "streams_dia": 272408},
+        {"data": "2026-10-03", "posicao": 60, "streams_dia": 290641}
+      ],
+      "anglofono": false,
+      "anglofono_motivo": "grupo sul-coreano; não encaixa na lista fechada do Felipe (filme/série gringa, show internacional, NBA/NFL, trend gringa, turista, jogo, Oscar/Grammy, Halloween, Thanksgiving, Black Friday) mesmo cantando trechos em inglês; risco se usado como hype anglófono sem decisão do Felipe"
+    },
+    {
+      "tema": "ADÉLA - Nicole Kidman",
+      "dias": 5,
+      "dias_presentes": ["2026-09-28", "2026-09-29", "2026-10-01", "2026-10-02", "2026-10-03"],
+      "fonte": "spotify-br",
+      "numeros_por_dia": [
+        {"data": "2026-09-28", "posicao": 189, "streams_dia": 194970, "dias_no_chart": 11},
+        {"data": "2026-09-29", "posicao": 173, "streams_dia": 162954, "dias_no_chart": 12},
+        {"data": "2026-10-01", "posicao": 97, "streams_dia": 213867, "dias_no_chart": 14},
+        {"data": "2026-10-02", "posicao": 108, "streams_dia": 214531, "dias_no_chart": 15},
+        {"data": "2026-10-03", "posicao": 129, "streams_dia": 202019, "dias_no_chart": 16}
+      ],
+      "anglofono": null,
+      "anglofono_motivo": "não verificado: nacionalidade/idioma da artista 'ADÉLA' não confirmada; possível coincidência de nome com o som de TikTok 'Ain't In LA' achado na busca de hoje - não assumir sem confirmar"
+    }
+  ],
+  "mencao_honrosa_sem_volume_medido": [
+    {
+      "tema": "Baby Laugh Brazilian Dance",
+      "dias": 4,
+      "dias_presentes": ["2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04"],
+      "fonte": "manual.txt (busca web manual, camada TikTok nativo)",
+      "views": "não medido (endpoint público /api/challenge/detail retornou corpo vazio em todos os dias testados)",
+      "categoria": "trend de dança/formato, não assunto de gancho de inglês"
+    },
+    {
+      "tema": "Chiki Sha dance trend (coreografia Arthur Lima)",
+      "dias": 2,
+      "dias_presentes": ["2026-10-03", "2026-10-04"],
+      "fonte": "manual.txt",
+      "views": "não medido",
+      "categoria": "trend de dança/formato, não assunto de gancho de inglês"
+    }
+  ],
+  "calendario_proxima_semana": [
+    {
+      "id": "zayn-sp",
+      "evento": "Show do Zayn Malik (ex-One Direction), The Konnakol Tour, primeiro show solo no Brasil",
+      "data_inicio": "2026-10-10",
+      "data_fim": "2026-10-10",
+      "local": "Allianz Parque / Nubank Parque, São Paulo",
+      "categoria": "musica",
+      "seguro": true,
+      "block_hype": false,
+      "tema_aula": "Zayn saiu do One Direction: quit x leave x drop out.",
+      "ganchos_ingles": ["quit", "leave", "drop out", "fanboy/fangirl"],
+      "status": "verificado hoje, 5+ fontes (Billboard BR, Rio Times, Omelete, Shazam, Antena 1) - upgrade de 'fonte única' na semana passada",
+      "fontes": [
+        "https://billboard.com.br/zayn-anuncia-show-inedito-no-brasil-detalhes/",
+        "https://www.riotimesonline.com/zayn-sao-paulo-brazil-concert-october-10-2026-nubank-parque-konnakol-tour/",
+        "https://www.omelete.com.br/musica/zayn-malik-show-brasil-data",
+        "https://www.shazam.com/en-us/event/f0f9fc6b-0d20-4ed4-9fed-611de3efa4b6",
+        "https://www.antena1.com.br/noticias/zayn-anuncia-show-unico-em-sao-paulo"
+      ],
+      "faltam_dias": 6
+    },
+    {
+      "id": "estreias-cinema-08-10",
+      "evento": "Estreias de cinema (quinta padrão BR): Carros (relançamento Pixar/Disney), Outra Mamãe (Jessica Chastain), Hope: O Primeiro Impacto (coreano), 5 Centímetros por Segundo (japonês), comédias nacionais",
+      "data_inicio": "2026-10-08",
+      "data_fim": "2026-10-08",
+      "categoria": "cinema",
+      "seguro": true,
+      "block_hype": false,
+      "tema_aula": "'Carros' (anglófono de origem): vocabulário de carro/corrida em inglês (pit stop, race, finish line), sem citar cena/trilha.",
+      "ganchos_ingles": ["pit stop", "race", "finish line"],
+      "status": "verificado hoje (AdoroCinema, Ingresso.com)",
+      "fontes": [
+        "https://www.adorocinema.com/filmes/agenda/",
+        "https://www.ingresso.com/noticias/lista-filmes-estreias-lancamentos-cinema-mes-outubro-2026"
+      ],
+      "faltam_dias": 4
+    }
+  ],
+  "dias_bloqueados": [],
+  "feriados_checados": {
+    "BR": [],
+    "EUA": [],
+    "fonte": "busca web 04/10; nenhum feriado BR ou EUA entre 2026-10-05 e 2026-10-11 (https://www.melhoresdestinos.com.br/feriados-2026-calendario.html)",
+    "proximo_feriado_br": "2026-10-12 (Dia das Crianças + N. Sra. Aparecida, fora da janela)",
+    "segundo_turno_eleicao_contingencia": "2026-10-25 (fora da janela)"
+  },
+  "eventos_tiktok_na_janela": "não medido como evento datado desta semana especifica; achados genéricos de outubro/2026 sem data fixa: trend 'Someone's gotta hold it down' com som 'Ain't In LA' de artista ADÉLA (possível mesma do tema persistente #3, não confirmado); trends de Halloween aparecendo cedo mas a data (31/10) fica fora da janela",
+  "girias": {
+    "vencidas_nesta_checagem": [],
+    "ja_marcadas_vencidas_antes": ["Tu, finish"],
+    "vencendo_em_breve_dentro_de_1_mes": [
+      {"termo": "é um nervosismo surreal", "validoAte": "2026-10-31", "dias_restantes": 27, "fallback": "Respondi o que ninguém perguntou. Deu branco."}
+    ],
+    "propostas_novas": [],
+    "propostas_descartadas_por_falta_de_prova_numerica": [
+      {"termo": "God (elogio)", "fonte": "https://hbrbr.com.br/10-girias-mais-usadas.html", "motivo": "listicle genérico sem número de views ou vídeo específico"},
+      {"termo": "clout", "fonte": "https://hbrbr.com.br/10-girias-mais-usadas.html", "motivo": "listicle genérico sem número de views ou vídeo específico"},
+      {"termo": "farmar view", "fonte": "https://hbrbr.com.br/10-girias-mais-usadas.html", "motivo": "variante de 'farmar aura' já coberta; sem número novo"}
+    ]
+  },
+  "instrucao_roteirista": [
+    {"data": "2026-10-05", "dia": "seg", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "tema da semana (Taylor Swift Patient Zero) como vocabulário atemporal, se radar diário de 05/10 confirmar volume; senão hype genérico do dia"},
+    {"data": "2026-10-06", "dia": "ter", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 06/10"},
+    {"data": "2026-10-07", "dia": "qua", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 07/10"},
+    {"data": "2026-10-08", "dia": "qui", "episodio_contexto": "estreia de 'Carros' (relançamento Pixar) em cartaz; vocabulário de carro/corrida em inglês, sem citar cena/trilha", "esquete_hype": "mesmo gancho se radar diário de 08/10 confirmar volume; é anglófono de origem"},
+    {"data": "2026-10-09", "dia": "sex", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal", "esquete_hype": "a definir pelo radar diário de 09/10"},
+    {"data": "2026-10-10", "dia": "sáb", "episodio_contexto": "Show do Zayn Malik em SP: quit x leave x drop out (ele saiu da banda)", "esquete_hype": "mesmo evento - hype anglófono forte, agora verificado em 5+ fontes, prioridade sobre hype genérico do dia"},
+    {"data": "2026-10-11", "dia": "dom", "episodio_contexto": "sem evento seguro do dia; contexto neutro/atemporal (sem bloqueio nesta data)", "esquete_hype": "a definir pelo radar diário de 11/10"}
+  ],
+  "aviso_bloqueio_producao": "formato novo (Sitcom do Café) continua sem aprovação do Felipe e config/grade.json ainda não atualizado (docs/grade-t1.md lista dependências pendentes); nenhuma rotina de produção renderiza/faz TTS/publica esta semana.",
+  "erro_oculto": "'ADÉLA - Nicole Kidman' (tema persistente) e o som de TikTok 'Ain't In LA' de uma artista ADÉLA apareceram na mesma semana por coincidência ou são a mesma pessoa - isso muda a elegibilidade do tema pra hype anglófono do V2; confirmar antes de roteirizar, não assumir.",
+  "nota_confianca": "campos girias/instrucao_roteirista/feriados_checados/eventos_tiktok_na_janela/mencao_honrosa_sem_volume_medido são extras desta rotina, não fazem parte do schema lido por scripts/roteirista.py hoje."
+}
