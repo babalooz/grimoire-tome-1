@@ -1,18 +1,19 @@
-# TikTok Brasil (buscas web 03/10/2026). Views: endpoint público /api/challenge/detail respondeu
-# corpo vazio para todos os termos testados hoje (djbabylaughbr, babylaughbrazilliandancebr, babylaugh)
-# -> "não medido" em todos, igual ao registrado no radar.py (falha conhecida a partir da nuvem) e nos dias
-# anteriores. Fontes fracas (páginas "discover" do próprio TikTok / agregadores de SEO, sem contagem
-# objetiva nem data clara) — tratar como sinal fraco (estimativa), não como dado confirmado.
-# Persistência: "Baby Laugh Brazilian Dance" aparece pelo 3º dia seguido (01, 02 e 03/10) em buscas
-# distintas -> sinal mais forte que os demais. "Chiki Sha dance trend" (com Arthur Lima) reapareceu hoje.
-# Não resurgiram hoje em busca nova (mantidos do radar de 02/10 por falta de dado contrário, não por
-# confirmação nova): Resenha na Laje, Everything Hallelujah, Es la hora del cafe, Galo Pera, Tatu do Bem.
-# Descartados hoje (não entram): "E o Caba Vai En-Doidar" / TiruLipa (bordão de pessoa real = proibido);
-# "Ai pai, para!" (sem gancho de inglês, fonte única fraca); #capcutpioneer (tag de ferramenta, não de tema).
+# TikTok Brasil (buscas web 04/10/2026 — HOJE É DIA DE ELEIÇÃO: calendario.json já bloqueia hype inteiro
+# hoje; esta camada roda mesmo assim só para manter o registro de persistência pros próximos dias).
+# Views: endpoint público /api/challenge/detail testado para chikisha, babylaugh, trendbrasil, copa2026,
+# tendencias2026, julianofloss, bondedobrunao, mctuto -> corpo vazio em todos (mesma falha conhecida da
+# nuvem, igual aos dias anteriores) -> "não medido" em todos.
+# Fontes de hoje são fracas: na maioria páginas "discover" do próprio TikTok e blogs de SEO (ex.:
+# clipchamp.com, dashsocial.com) sem contagem objetiva nem data verificável — tratar como estimativa.
+# Persistência: "Baby Laugh Brazilian Dance" resurgiu pelo 4º dia seguido (01–04/10) em buscas distintas;
+# "Chiki Sha dance trend" (Arthur Lima) resurgiu pelo 2º dia seguido (03 e 04/10) -> mantidos os dois.
+# Removidos hoje (não resurgiram em busca nova nem em 03 nem em 04/10; eram carregados só por falta de
+# dado contrário desde 02/10, agora sem sustentação): Resenha na Laje, Everything Hallelujah, Es la hora
+# del cafe, Galo Pera, Tatu do Bem.
+# Descartados hoje (não entram): "AI dance effect for the World Cup 2026" (filtro de IA/CapCut, não é
+# tema com gancho de inglês real — é promoção de ferramenta, e Copa do Mundo não está na lista aprovada
+# de hype anglófono); "Juliano Floss", "Bonde do Brunão", "MC Tuto" (apareceram só em calendário de memes
+# de SEO sem fonte de notícia atual; são pessoas/artistas reais sem verificação de trend corrente — risco
+# de citar pessoa real sem confirmação, fora do escopo "hype do dia").
 Baby Laugh Brazilian Dance
 Chiki Sha dance trend
-Resenha na Laje dance
-Everything Hallelujah Justin Bieber trend
-Es la hora del cafe audio viral
-Galo Pera meme
-Tatu do Bem meme
