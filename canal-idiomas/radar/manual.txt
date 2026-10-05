@@ -1,19 +1,24 @@
-# TikTok Brasil (buscas web 04/10/2026 — HOJE É DIA DE ELEIÇÃO: calendario.json já bloqueia hype inteiro
-# hoje; esta camada roda mesmo assim só para manter o registro de persistência pros próximos dias).
-# Views: endpoint público /api/challenge/detail testado para chikisha, babylaugh, trendbrasil, copa2026,
-# tendencias2026, julianofloss, bondedobrunao, mctuto -> corpo vazio em todos (mesma falha conhecida da
-# nuvem, igual aos dias anteriores) -> "não medido" em todos.
-# Fontes de hoje são fracas: na maioria páginas "discover" do próprio TikTok e blogs de SEO (ex.:
-# clipchamp.com, dashsocial.com) sem contagem objetiva nem data verificável — tratar como estimativa.
-# Persistência: "Baby Laugh Brazilian Dance" resurgiu pelo 4º dia seguido (01–04/10) em buscas distintas;
-# "Chiki Sha dance trend" (Arthur Lima) resurgiu pelo 2º dia seguido (03 e 04/10) -> mantidos os dois.
-# Removidos hoje (não resurgiram em busca nova nem em 03 nem em 04/10; eram carregados só por falta de
-# dado contrário desde 02/10, agora sem sustentação): Resenha na Laje, Everything Hallelujah, Es la hora
-# del cafe, Galo Pera, Tatu do Bem.
-# Descartados hoje (não entram): "AI dance effect for the World Cup 2026" (filtro de IA/CapCut, não é
-# tema com gancho de inglês real — é promoção de ferramenta, e Copa do Mundo não está na lista aprovada
-# de hype anglófono); "Juliano Floss", "Bonde do Brunão", "MC Tuto" (apareceram só em calendário de memes
-# de SEO sem fonte de notícia atual; são pessoas/artistas reais sem verificação de trend corrente — risco
-# de citar pessoa real sem confirmação, fora do escopo "hype do dia").
+# TikTok Brasil (buscas web 05/10/2026 — 6 buscas: "trend tiktok brasil hoje outubro 2026", "meme do
+# momento tiktok brasil", "áudio viral tiktok semana outubro 2026", "hashtag viralizou tiktok brasil
+# últimas 48 horas", "o que está bombando no tiktok esta semana", "tiktok trending brasil challenge
+# outubro 2026").
+# Views: endpoint público /api/challenge/detail testado hoje para babylaughbraziliandance, chikisha,
+# windowsinbrazil, twofishes, trainingseason, shoekicktransition, ramalama, stopthewedding, abraakadabra
+# -> corpo vazio (HTTP 200, 0 bytes) em todos os 9 -> "não medido" em todos (mesma falha conhecida da
+# nuvem documentada no radar.py; medição real fica para o PC/ponte).
+# Fontes de hoje continuam fracas: majoritariamente páginas "discover" do próprio TikTok e blogs de SEO
+# (clipchamp.com, newengen.com, revid.ai, buffer.com) sem contagem objetiva nem data verificável por
+# fonte independente -> tratar tudo como estimativa, nunca como número.
+# Persistência: "Baby Laugh Brazilian Dance" resurgiu pelo 5º dia seguido (01–05/10) -> mantido.
+# "Chiki Sha dance trend" (Arthur Lima) resurgiu pelo 3º dia seguido (03–05/10) -> mantido.
+# Candidatos NOVOS hoje (1ª aparição, fonte única fraca cada, sem 2º dia de confirmação ainda ->
+# NÃO promovidos; ficam em observação para amanhã; se resurgirem em busca nova entram como aprovados):
+# "Windows in Brazil" (trend funk com som de inicialização do Windows), "Two Fishes" (áudio do Love
+# Island USA, Corbin Mims — ligado a reality gringo, vale checar de novo pelo potencial de gancho em
+# inglês), "Training Season manifestation" (lip sync com "Training Season" da Dua Lipa — música em
+# inglês, gancho possível), "Shoe kick transition" (transição de look, genérico), "Ramalama Costume Walk"
+# (caminhada de fantasia com "Ramalama" de Róisín Murphy — pode ligar a Halloween), "Stop the Wedding"
+# (carrossel de arrependimento de casamento), "Abraa kadabra" (dança).
+# Nenhum dos 9 candidatos de hoje envolve política, tragédia, crime ou pessoa privada.
 Baby Laugh Brazilian Dance
 Chiki Sha dance trend
