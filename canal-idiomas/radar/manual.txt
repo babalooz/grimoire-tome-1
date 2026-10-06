@@ -1,24 +1,33 @@
-# TikTok Brasil (buscas web 05/10/2026 — 6 buscas: "trend tiktok brasil hoje outubro 2026", "meme do
-# momento tiktok brasil", "áudio viral tiktok semana outubro 2026", "hashtag viralizou tiktok brasil
-# últimas 48 horas", "o que está bombando no tiktok esta semana", "tiktok trending brasil challenge
-# outubro 2026").
-# Views: endpoint público /api/challenge/detail testado hoje para babylaughbraziliandance, chikisha,
-# windowsinbrazil, twofishes, trainingseason, shoekicktransition, ramalama, stopthewedding, abraakadabra
-# -> corpo vazio (HTTP 200, 0 bytes) em todos os 9 -> "não medido" em todos (mesma falha conhecida da
-# nuvem documentada no radar.py; medição real fica para o PC/ponte).
+# TikTok Brasil (buscas web 06/10/2026 — 6 buscas: "trend tiktok brasil hoje outubro 2026", "meme do
+# momento tiktok brasil outubro 2026", "áudio viral tiktok semana brasil outubro 2026", "trend tiktok
+# brasil viralizou essa semana", '"viralizou no tiktok" outubro 2026 -discover', "bordão viral tiktok
+# brasil setembro outubro 2026 notícia").
+# Views: endpoint público /api/challenge/detail testado hoje para twofishes, ramalamacostumewalk,
+# pumpkinheadillusion, patientzerowedding -> corpo vazio (HTTP 200, 0 bytes) nos 4 -> "não medido" em
+# todos (mesma falha conhecida da nuvem, documentada no radar.py; medição real fica para o PC/ponte).
 # Fontes de hoje continuam fracas: majoritariamente páginas "discover" do próprio TikTok e blogs de SEO
-# (clipchamp.com, newengen.com, revid.ai, buffer.com) sem contagem objetiva nem data verificável por
-# fonte independente -> tratar tudo como estimativa, nunca como número.
-# Persistência: "Baby Laugh Brazilian Dance" resurgiu pelo 5º dia seguido (01–05/10) -> mantido.
-# "Chiki Sha dance trend" (Arthur Lima) resurgiu pelo 3º dia seguido (03–05/10) -> mantido.
-# Candidatos NOVOS hoje (1ª aparição, fonte única fraca cada, sem 2º dia de confirmação ainda ->
-# NÃO promovidos; ficam em observação para amanhã; se resurgirem em busca nova entram como aprovados):
-# "Windows in Brazil" (trend funk com som de inicialização do Windows), "Two Fishes" (áudio do Love
-# Island USA, Corbin Mims — ligado a reality gringo, vale checar de novo pelo potencial de gancho em
-# inglês), "Training Season manifestation" (lip sync com "Training Season" da Dua Lipa — música em
-# inglês, gancho possível), "Shoe kick transition" (transição de look, genérico), "Ramalama Costume Walk"
-# (caminhada de fantasia com "Ramalama" de Róisín Murphy — pode ligar a Halloween), "Stop the Wedding"
-# (carrossel de arrependimento de casamento), "Abraa kadabra" (dança).
-# Nenhum dos 9 candidatos de hoje envolve política, tragédia, crime ou pessoa privada.
+# (clipchamp.com, newengen.com) sem contagem objetiva nem data verificável por fonte independente ->
+# tratar tudo como estimativa, nunca como número.
+# Persistência (regra de ontem: 2º dia de busca independente = promovido):
+# "Baby Laugh Brazilian Dance" resurgiu pelo 6º dia seguido -> mantido. ATENÇÃO: a palavra "baby" aciona
+# o filtro de conteúdo infantil do radar (--testar-filtro confirma [infantil]); não é bloqueio automático
+# na camada manual, mas o roteirista/portão deve tratar como aula adulta e nunca usar linguagem de bebê.
+# "Chiki Sha dance trend" (Arthur Lima) resurgiu pelo 4º dia seguido -> mantido.
+# "Two Fishes" (áudio do Love Island USA, Corbin Mims — já estava em observação desde 05/10) resurgiu
+# hoje em fonte independente -> PROMOVIDO. Gancho em inglês real (frase do áudio é em inglês).
+# "Ramalama Costume Walk" (fantasia + "Ramalama" de Róisín Murphy, ligado a Halloween — em observação
+# desde 05/10) resurgiu hoje -> PROMOVIDO.
+# Candidatos NOVOS hoje (1ª aparição, NÃO promovidos; ficam em observação para amanhã):
+# "Pumpkin Head Illusion" (ilusão de fantasia de abóbora, ligado a Halloween — tema atemporal do mundo
+# anglófono, bom potencial de gancho), "Patient Zero wedding edits" (edição de vídeo de casamento com
+# arrependimento — termo "patient zero" é só nome do formato, não doença real; manter em observação por
+# ambiguidade do nome), "gangster não sério" (meme citado por um blog — NÃO promovido por precaução: a
+# palavra "gangster" soa adjacente a crime mesmo sendo humor/ironia; precisa de 2ª fonte independente e
+# confirmação de que é só formato de piada antes de qualquer promoção), "Filhos da Fé" (trend musical
+# religioso — não promovido: sem gancho de inglês e fora do escopo de segurança claro, baixa prioridade).
+# Todos os termos passaram no filtro de segurança (--testar-filtro): sem política, crime, tragédia ou
+# pessoa privada. Nenhum dos 9 termos de hoje envolve eleição, tragédia, crime ou pessoa privada.
 Baby Laugh Brazilian Dance
 Chiki Sha dance trend
+Two Fishes
+Ramalama Costume Walk
