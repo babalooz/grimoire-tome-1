@@ -1,33 +1,43 @@
-# TikTok Brasil (buscas web 06/10/2026 — 6 buscas: "trend tiktok brasil hoje outubro 2026", "meme do
-# momento tiktok brasil outubro 2026", "áudio viral tiktok semana brasil outubro 2026", "trend tiktok
-# brasil viralizou essa semana", '"viralizou no tiktok" outubro 2026 -discover', "bordão viral tiktok
-# brasil setembro outubro 2026 notícia").
+# TikTok Brasil (buscas web 07/10/2026 — 6 buscas de descoberta: "trend tiktok brasil hoje outubro
+# 2026", "meme do momento tiktok brasil", "áudio viral tiktok semana brasil", "trend tiktok viralizou
+# hoje", "tiktok brasil assunto viral outubro 2026", "hashtag viral tiktok brasil essa semana" + 4
+# buscas de verificação/persistência de candidatos específicos).
 # Views: endpoint público /api/challenge/detail testado hoje para twofishes, ramalamacostumewalk,
-# pumpkinheadillusion, patientzerowedding -> corpo vazio (HTTP 200, 0 bytes) nos 4 -> "não medido" em
-# todos (mesma falha conhecida da nuvem, documentada no radar.py; medição real fica para o PC/ponte).
-# Fontes de hoje continuam fracas: majoritariamente páginas "discover" do próprio TikTok e blogs de SEO
-# (clipchamp.com, newengen.com) sem contagem objetiva nem data verificável por fonte independente ->
-# tratar tudo como estimativa, nunca como número.
-# Persistência (regra de ontem: 2º dia de busca independente = promovido):
-# "Baby Laugh Brazilian Dance" resurgiu pelo 6º dia seguido -> mantido. ATENÇÃO: a palavra "baby" aciona
-# o filtro de conteúdo infantil do radar (--testar-filtro confirma [infantil]); não é bloqueio automático
-# na camada manual, mas o roteirista/portão deve tratar como aula adulta e nunca usar linguagem de bebê.
-# "Chiki Sha dance trend" (Arthur Lima) resurgiu pelo 4º dia seguido -> mantido.
-# "Two Fishes" (áudio do Love Island USA, Corbin Mims — já estava em observação desde 05/10) resurgiu
-# hoje em fonte independente -> PROMOVIDO. Gancho em inglês real (frase do áudio é em inglês).
-# "Ramalama Costume Walk" (fantasia + "Ramalama" de Róisín Murphy, ligado a Halloween — em observação
-# desde 05/10) resurgiu hoje -> PROMOVIDO.
-# Candidatos NOVOS hoje (1ª aparição, NÃO promovidos; ficam em observação para amanhã):
-# "Pumpkin Head Illusion" (ilusão de fantasia de abóbora, ligado a Halloween — tema atemporal do mundo
-# anglófono, bom potencial de gancho), "Patient Zero wedding edits" (edição de vídeo de casamento com
-# arrependimento — termo "patient zero" é só nome do formato, não doença real; manter em observação por
-# ambiguidade do nome), "gangster não sério" (meme citado por um blog — NÃO promovido por precaução: a
-# palavra "gangster" soa adjacente a crime mesmo sendo humor/ironia; precisa de 2ª fonte independente e
-# confirmação de que é só formato de piada antes de qualquer promoção), "Filhos da Fé" (trend musical
-# religioso — não promovido: sem gancho de inglês e fora do escopo de segurança claro, baixa prioridade).
-# Todos os termos passaram no filtro de segurança (--testar-filtro): sem política, crime, tragédia ou
-# pessoa privada. Nenhum dos 9 termos de hoje envolve eleição, tragédia, crime ou pessoa privada.
-Baby Laugh Brazilian Dance
-Chiki Sha dance trend
+# pumpkinheadillusion, patientzerowedding, babylaughbraziliandance, chikishadance -> corpo vazio
+# (HTTP 200, 0 bytes) em todos -> "não medido" em todos (mesma falha conhecida da nuvem, documentada
+# no radar.py; medição real fica para o PC/ponte).
+# As 6 buscas de descoberta de hoje vieram majoritariamente FRACAS: retrospectivas de 2025 e notícias
+# de meses atrás de 2026 (nada verificável como "últimas 24-48h"). Mesmo padrão do dia anterior.
+#
+# PROMOVIDOS hoje (2ª+ confirmação independente, gancho em inglês real, filtro de segurança OK):
+# "Two Fishes" (áudio de Love Island USA, Corbin Mims — confirmado de novo hoje em fonte independente
+# além do roundup newengen.com/insights/october-tiktok-trends; frase do áudio é em inglês real).
+# "Ramalama Costume Walk" (fantasia + "Ramalama (Bang Bang)" de Róisín Murphy, tema Halloween —
+# confirmado de novo hoje; usamos só o CONCEITO do hype na história, nunca a música de terceiro no render).
+# "Pumpkin Head Illusion" (ilusão de abóbora + frase do áudio "it's just a bunch of hocus pocus",
+# tema Halloween — confirmado hoje em 2ª fonte independente (dexerto.com) além do newengen.com;
+# promovido após observação iniciada em 06/10).
+#
+# DESCARTADOS hoje (nunca vão para o roteirista):
+# "Patient Zero wedding edits" — verificado hoje: NÃO é trend de edição de vídeo, é o single novo da
+# Taylor Swift após o casamento com Travis Kelce -> pessoa real (regra do projeto: nada de rosto/nome/
+# voz de terceiro real). Removido da observação.
+# "Baby Laugh Brazilian Dance" — sem confirmação independente de verdade hoje: as únicas fontes que
+# aparecem são páginas de marketing de uma ferramenta de IA (media.io), não cobertura de trend real;
+# além disso soa infantil ("baby") e não tem gancho de inglês. Retirado da lista (vinha de 6 dias).
+# "Chiki Sha dance trend" (Arthur Lima) — zero resultado hoje em qualquer fonte; não foi possível
+# confirmar que ainda é real. Retirado da lista (vinha de 4 dias).
+# "six seven" / "67" (meme de sala de aula, de uma música chamada "Doot Doot") — apareceu em notícia
+# brasileira (Folha PE) sobre invadir aulas de inglês, MAS é explicitamente o tipo de meme marcado como
+# risco de conteúdo infantil nas regras do projeto (docs/tiktok-nativo.md §4: "skibidi, 67, voz fina");
+# não promovido por essa trava, mesmo tendo gancho de inglês.
+# "Será?" (trend de perguntas, mar/2026), "A Seleção Chegou" (canção de futebol, jun/2026), "Guiana
+# Brasileira" (sátira Brasil-Portugal), "Garçom, tem Pitú?" (meme musical), "morango do amor" /
+# "bobbie goods" (2025) — sem gancho de inglês E sem data verificável de últimas 24-48h; não promovidos.
+# "Caso ela diga não" — descartado por conteúdo misógino/polêmico (ofício do Ministério da Justiça
+# citado em notícia), fora do escopo de segurança do canal.
+# Todos os termos abaixo passaram no filtro de segurança (--testar-filtro): sem política, crime,
+# tragédia ou pessoa privada.
 Two Fishes
 Ramalama Costume Walk
+Pumpkin Head Illusion
