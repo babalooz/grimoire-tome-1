@@ -1,0 +1,603 @@
+{
+  "version": 2,
+  "date": "2026-10-08",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [],
+    "proximos": [
+      {
+        "id": "zayn-sp",
+        "evento": "Show do Zayn Malik em SP",
+        "data_inicio": "2026-10-10",
+        "data_fim": "2026-10-10",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Zayn saiu do One Direction: quit x leave x drop out.",
+        "ganchos_ingles": [
+          "quit",
+          "leave",
+          "drop out",
+          "fanboy/fangirl"
+        ],
+        "status": "fonte única",
+        "faltam_dias": 2
+      },
+      {
+        "id": "dia-das-criancas",
+        "evento": "Dia das Crianças + N. Sra. Aparecida (feriado)",
+        "data_inicio": "2026-10-12",
+        "data_fim": "2026-10-12",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Palavras que criança gringa sabe e você não (humor adulto, sem visual infantil).",
+        "ganchos_ingles": [
+          "toddler",
+          "tantrum",
+          "sippy cup"
+        ],
+        "status": "fixo",
+        "faltam_dias": 4
+      },
+      {
+        "id": "libertadores-semis-ida",
+        "evento": "Libertadores semis (ida): Fluminense x Palmeiras (14/10) e Estudiantes x Flamengo (15/10)",
+        "data_inicio": "2026-10-14",
+        "data_fim": "2026-10-15",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Futebol em inglês: goal, penalty, offside, extra time; 'the match was very emotioned' (erro) -> exciting/thrilling.",
+        "ganchos_ingles": [
+          "goal",
+          "penalty",
+          "offside",
+          "extra time",
+          "thrilling"
+        ],
+        "status": "verificado",
+        "faltam_dias": 6
+      },
+      {
+        "id": "dia-do-professor",
+        "evento": "Dia do Professor",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-15",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Capy homenageia os professores: frases de sala de aula; como o aluno BR chama o professor ('Teacher!') x nativo (Mr./Ms. + sobrenome); 'teacher's pet'.",
+        "ganchos_ingles": [
+          "teacher's pet",
+          "Mr./Ms.",
+          "homework",
+          "pop quiz"
+        ],
+        "status": "fixo",
+        "faltam_dias": 7
+      },
+      {
+        "id": "street-fighter-estreia",
+        "evento": "Estreia de Street Fighter nos cinemas",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-16",
+        "categoria": "cinema",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Vocabulário de games/luta: 'Round 1, Fight!', K.O. = knockout, combo, 'you win'. Sem imagem/áudio do filme.",
+        "ganchos_ingles": [
+          "knockout",
+          "round",
+          "combo",
+          "fight"
+        ],
+        "status": "fonte única",
+        "faltam_dias": 7
+      },
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado",
+        "faltam_dias": 13
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Lionel Messi",
+      "score": 8.84,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "8.478 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "lionel messi em inglês",
+        "biografia de lionel messi em inglês",
+        "nacionalidade de lionel messi em inglês",
+        "como fala lionel messi em inglês",
+        "como se escreve lionel messi em inglês",
+        "como se diz lionel messi em inglês"
+      ],
+      "contexto": "futebolista argentino",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Lionel Messi' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Lionel_Messi"
+    },
+    {
+      "termo": "NBA",
+      "score": 6.75,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "nba em inglês",
+        "o que significa nba em inglês",
+        "como se escreve nba em inglês",
+        "nba 2k26 tem legenda em inglês"
+      ],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "Nico Paz",
+      "score": 5.45,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "4.268 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista argentino",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Nico Paz' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Nico_Paz"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.22,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#53 Spotify BR. 282.090 streams/dia. 201 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "nome bts em inglês",
+        "bts significado em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#53)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "BTS - NORMAL",
+      "score": 3.99,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#154 Spotify BR. 174.874 streams/dia. 162 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "nome bts em inglês",
+        "bts significado em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#154)",
+      "sugestao_aula": "'BTS - NORMAL': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.63,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#99 Spotify BR. 212.568 streams/dia. 21 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#99)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Harry Styles - Sign of the Times",
+      "score": 3.28,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#199 Spotify BR. 155.892 streams/dia. 248 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "harry styles em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#199)",
+      "sugestao_aula": "'Harry Styles - Sign of the Times': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Oasis - Wonderwall - Remastered",
+      "score": 2.69,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#124 Spotify BR. 194.830 streams/dia. 357 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "oasis em inglês",
+        "oasis em ingles tradução",
+        "plural de oasis em inglês",
+        "como se pronuncia oasis em inglês",
+        "o que significa oasis em inglês",
+        "como se fala oasis em inglês",
+        "como se escreve oasis em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#124)",
+      "sugestao_aula": "'Oasis - Wonderwall - Remastered': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Guns N' Roses - Sweet Child O' Mine",
+      "score": 2.69,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#125 Spotify BR. 194.814 streams/dia. 609 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "guns n roses em inglês",
+        "frases guns n roses em inglês com tradução",
+        "frases guns n roses em inglês",
+        "o que significa guns n roses em inglês",
+        "como se escreve guns n roses em inglês",
+        "como se pronuncia guns n roses em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#125)",
+      "sugestao_aula": "'Guns N' Roses - Sweet Child O' Mine': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Lady Gaga - Die With A Smile (w/ Bruno Mars)",
+      "score": 2.67,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#143 Spotify BR. 180.529 streams/dia. 704 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "lady gaga em inglês",
+        "frases lady gaga em inglês",
+        "lady gaga legendado em inglês",
+        "música lady gaga em inglês",
+        "lady gaga shallow letra em inglês",
+        "biografia de lady gaga em inglês",
+        "como fala lady gaga em inglês",
+        "filme lady gaga em ingles",
+        "como se escreve lady gaga em inglês",
+        "o que significa lady gaga em inglês",
+        "como se fala lady gaga em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#143)",
+      "sugestao_aula": "'Lady Gaga - Die With A Smile (w/ Bruno Mars)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "dia de sorte",
+      "fonte": "google-trends",
+      "motivo": "apostas/marcas de risco: \"loterias\" em \"G1 | Loterias - Dia de Sorte 1311\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Eduarda Campopiano",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Lucas Pavanato",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e vereador da cidade de São Paulo desde 2025\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Cleitinho",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro, senador do Brasil por Minas Gerais\""
+    },
+    {
+      "termo": "Christa Pike",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassina\" em \"assassina americana\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Michelle Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Michelle Bolsonaro\""
+    },
+    {
+      "termo": "Douglas Ruas",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e presidente da Assembleia Legislativa do estado do Rio de Janeiro\""
+    },
+    {
+      "termo": "Partido Liberal",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido Liberal\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Partido dos Trabalhadores",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido dos Trabalhadores\""
+    },
+    {
+      "termo": "Juarez Machado",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"Artista plástico brasileiro (1941 - 2026)\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "Rogério Marinho",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Político e economista brasileiro\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Benim",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"O Benim, oficialmente República do Benim (em francês:  République du Bénin) e anteriorment\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Ronaldo Caiado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"caiado\" em \"Ronaldo Caiado\""
+    },
+    {
+      "termo": "Lizzie Borden",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"suspeita\" em \"norte-americana suspeita de cometer assassinato (1860–1927)\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Alfredo Gaspar",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Alfredo Gaspar de Mendonça Neto (Maceió, 13 de Agosto de 1970), é um ex-promotor de justiç\""
+    },
+    {
+      "termo": "Eduardo Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Eduardo Bolsonaro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2018",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2018\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2002",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2002\""
+    },
+    {
+      "termo": "Bolsa Família",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"programa de transferência de renda do governo brasileiro\""
+    },
+    {
+      "termo": "Jair Renan Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Renan Bolsonaro\""
+    },
+    {
+      "termo": "Partido Missão",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido Missão\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "a diplomata",
+    "adela - nicole kidman",
+    "alex warren - ordinary",
+    "alfredo gaspar",
+    "andre janones",
+    "anita harley",
+    "benim",
+    "bolsa familia",
+    "bts",
+    "bts - normal",
+    "bts - swim",
+    "che guevara",
+    "christa pike",
+    "cleitinho",
+    "clima sp",
+    "daniel vorcaro",
+    "daniella marques",
+    "dia de sorte",
+    "dominic fike - babydoll",
+    "douglas ruas",
+    "eduarda campopiano",
+    "eduardo bolsonaro",
+    "eleicao presidencial no brasil em 2002",
+    "eleicao presidencial no brasil em 2018",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "erika hilton",
+    "evanescence - bring me to life",
+    "fernando henrique cardoso",
+    "flavio bolsonaro",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "harry styles - sign of the times",
+    "horoscopo",
+    "jair bolsonaro",
+    "jair renan bolsonaro",
+    "juarez machado",
+    "justica",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lionel messi",
+    "lista de presidentes do brasil",
+    "lizzie borden",
+    "luana martau",
+    "lucas pavanato",
+    "luiz inacio lula da silva",
+    "lupin",
+    "malcolm todd - earrings",
+    "michael jackson - billie jean",
+    "michelle bolsonaro",
+    "nba",
+    "nico paz",
+    "nikolas ferreira",
+    "nosferatu",
+    "oasis - wonderwall - remastered",
+    "partido dos trabalhadores",
+    "partido liberal",
+    "partido missao",
+    "pedro scooby",
+    "pernambucanas",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "por voce",
+    "previsao do tempo porto alegre",
+    "primeiro drink",
+    "renan santos",
+    "robbie williams",
+    "rogerio marinho",
+    "ronaldo caiado",
+    "rosangela lula da silva",
+    "seu chico",
+    "sombr - back to friends",
+    "temper city - self aware",
+    "tempestade",
+    "the goo goo dolls - iris",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "veja",
+    "world series"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 19 itens",
+    "tiktok: 2 itens",
+    "manual: 8 itens"
+  ]
+}

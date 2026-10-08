@@ -1,43 +1,10 @@
-# TikTok Brasil (buscas web 07/10/2026 — 6 buscas de descoberta: "trend tiktok brasil hoje outubro
-# 2026", "meme do momento tiktok brasil", "áudio viral tiktok semana brasil", "trend tiktok viralizou
-# hoje", "tiktok brasil assunto viral outubro 2026", "hashtag viral tiktok brasil essa semana" + 4
-# buscas de verificação/persistência de candidatos específicos).
-# Views: endpoint público /api/challenge/detail testado hoje para twofishes, ramalamacostumewalk,
-# pumpkinheadillusion, patientzerowedding, babylaughbraziliandance, chikishadance -> corpo vazio
-# (HTTP 200, 0 bytes) em todos -> "não medido" em todos (mesma falha conhecida da nuvem, documentada
-# no radar.py; medição real fica para o PC/ponte).
-# As 6 buscas de descoberta de hoje vieram majoritariamente FRACAS: retrospectivas de 2025 e notícias
-# de meses atrás de 2026 (nada verificável como "últimas 24-48h"). Mesmo padrão do dia anterior.
-#
-# PROMOVIDOS hoje (2ª+ confirmação independente, gancho em inglês real, filtro de segurança OK):
-# "Two Fishes" (áudio de Love Island USA, Corbin Mims — confirmado de novo hoje em fonte independente
-# além do roundup newengen.com/insights/october-tiktok-trends; frase do áudio é em inglês real).
-# "Ramalama Costume Walk" (fantasia + "Ramalama (Bang Bang)" de Róisín Murphy, tema Halloween —
-# confirmado de novo hoje; usamos só o CONCEITO do hype na história, nunca a música de terceiro no render).
-# "Pumpkin Head Illusion" (ilusão de abóbora + frase do áudio "it's just a bunch of hocus pocus",
-# tema Halloween — confirmado hoje em 2ª fonte independente (dexerto.com) além do newengen.com;
-# promovido após observação iniciada em 06/10).
-#
-# DESCARTADOS hoje (nunca vão para o roteirista):
-# "Patient Zero wedding edits" — verificado hoje: NÃO é trend de edição de vídeo, é o single novo da
-# Taylor Swift após o casamento com Travis Kelce -> pessoa real (regra do projeto: nada de rosto/nome/
-# voz de terceiro real). Removido da observação.
-# "Baby Laugh Brazilian Dance" — sem confirmação independente de verdade hoje: as únicas fontes que
-# aparecem são páginas de marketing de uma ferramenta de IA (media.io), não cobertura de trend real;
-# além disso soa infantil ("baby") e não tem gancho de inglês. Retirado da lista (vinha de 6 dias).
-# "Chiki Sha dance trend" (Arthur Lima) — zero resultado hoje em qualquer fonte; não foi possível
-# confirmar que ainda é real. Retirado da lista (vinha de 4 dias).
-# "six seven" / "67" (meme de sala de aula, de uma música chamada "Doot Doot") — apareceu em notícia
-# brasileira (Folha PE) sobre invadir aulas de inglês, MAS é explicitamente o tipo de meme marcado como
-# risco de conteúdo infantil nas regras do projeto (docs/tiktok-nativo.md §4: "skibidi, 67, voz fina");
-# não promovido por essa trava, mesmo tendo gancho de inglês.
-# "Será?" (trend de perguntas, mar/2026), "A Seleção Chegou" (canção de futebol, jun/2026), "Guiana
-# Brasileira" (sátira Brasil-Portugal), "Garçom, tem Pitú?" (meme musical), "morango do amor" /
-# "bobbie goods" (2025) — sem gancho de inglês E sem data verificável de últimas 24-48h; não promovidos.
-# "Caso ela diga não" — descartado por conteúdo misógino/polêmico (ofício do Ministério da Justiça
-# citado em notícia), fora do escopo de segurança do canal.
-# Todos os termos abaixo passaram no filtro de segurança (--testar-filtro): sem política, crime,
-# tragédia ou pessoa privada.
-Two Fishes
-Ramalama Costume Walk
-Pumpkin Head Illusion
+# TikTok BR — candidatas do radar de 08/10/2026 (pesquisa web, endpoint de views não respondeu da nuvem; medir no PC se quiser confirmar)
+# descartada por risco de classificação infantil: #sixseven / 6 7 (meme ligado a crianças/pré-adolescentes em sala de aula)
+BTS
+Robbie Williams
+NBA
+Halloween
+A Diplomata
+Nosferatu
+Lupin
+World Series
