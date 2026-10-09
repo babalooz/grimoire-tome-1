@@ -123,14 +123,19 @@ def http(url: str, body: bytes | None, headers: dict, metodo: str = "POST") -> b
                 return r.read()
         except urllib.error.HTTPError as e:  # sem headers no erro: a chave nunca aparece
             corpo = e.read()
-            if e.code == 429 and tentativa < 5:  # free tier: poucas req/min por modelo — respeita o retryDelay
+            if e.code == 429:
                 espera = 15.0
                 m = re.search(rb'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', corpo)
                 if m:
                     espera = float(m.group(1)) + 2
-                print(f"  429 (limite de taxa), esperando {espera:.0f}s…")
-                time.sleep(espera)
-                continue
+                if espera > 60:  # retryDelay longo = cota DIÁRIA esgotada, não limite de taxa: não dá pra esperar
+                    raise SystemExit(
+                        f"HTTP 429 (cota diária, retryDelay {espera:.0f}s) em {url.split('?')[0]}: "
+                        f"{corpo[:300].decode(errors='replace')}")
+                if tentativa < 5:  # free tier: poucas req/min por modelo — respeita o retryDelay curto
+                    print(f"  429 (limite de taxa), esperando {espera:.0f}s…")
+                    time.sleep(espera)
+                    continue
             raise SystemExit(f"HTTP {e.code} em {url.split('?')[0]}: {corpo[:300].decode(errors='replace')}")
     raise SystemExit(f"HTTP 429 repetido em {url.split('?')[0]}: limite de taxa não liberou a tempo")
 
