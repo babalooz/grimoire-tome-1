@@ -6,3 +6,4 @@ public/audio/
 __pycache__/
 fila/*.mp4
 teste-voz/
+voz-gota-resumo.json
