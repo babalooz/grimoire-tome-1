@@ -1,10 +1,12 @@
-# TikTok BR — candidatas do radar de 08/10/2026 (pesquisa web, endpoint de views não respondeu da nuvem; medir no PC se quiser confirmar)
-# descartada por risco de classificação infantil: #sixseven / 6 7 (meme ligado a crianças/pré-adolescentes em sala de aula)
+# TikTok BR — pesquisa web de 10/10/2026 (rotina radar diário).
+# 6 buscas feitas (trend tiktok brasil hoje / meme do momento / áudio viral da semana / viralizou essa semana /
+# bordão viral / hashtag trending now): nenhuma trouxe tendência do TikTok Brasil datada e verificável para
+# esta semana — só resultados genéricos, sem data ou de anos anteriores (limitação de rede conhecida, ver CLAUDE.md).
+# Endpoint https://www.tiktok.com/api/challenge/detail/ testado de novo hoje: HTTP 200, corpo vazio (0 bytes) —
+# mesmo resultado de 26/09. Nenhuma hashtag pôde ser medida; tudo abaixo = "não medido".
+# Removidas hoje por falta de confirmação de atualidade (podem estar vencidas): Robbie Williams, A Diplomata,
+# Nosferatu, Lupin. Mantidas por serem atemporais/plausíveis para outubro (sem medição real):
 BTS
-Robbie Williams
 NBA
 Halloween
-A Diplomata
-Nosferatu
-Lupin
 World Series
