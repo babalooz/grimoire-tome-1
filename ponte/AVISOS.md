@@ -47,3 +47,4 @@
 - 2026-10-09T02:09Z · rotina métricas 23:00 (09/10) · sem vídeo publicado ainda; publicados.csv só cabeçalho; sem FREIO; log em decisoes.md · repete rotina até 1º post (meta 12/10)
 - 2026-10-10T00:45Z · voz gota a gota · 15/42 falas prontas, +12 hoje (quase toda a Capy; faltam 3 dela + lazy/hank/duda/bolinha/turista/poppy) · continua amanhã 21:30
 - 2026-10-10T02:09Z · rotina de métricas 23:00 (10/10) · sem vídeo publicado ainda (meta 12/10, faltam 2 dias); log atualizado e push ok · próxima rotina repete até haver 1º post
+- 2026-10-11T00:44Z · voz gota a gota · 25 de 42 falas prontas, +10 hoje · continua amanhã 21:30
