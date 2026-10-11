@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "semana": "2026-W42",
+  "periodo": { "inicio": "2026-10-12", "fim": "2026-10-18" },
+  "gerado_em": "2026-10-11",
+  "fontes_radares_diarios": [
+    "canal-idiomas/radar/2026-10-05.json",
+    "canal-idiomas/radar/2026-10-06.json",
+    "canal-idiomas/radar/2026-10-07.json",
+    "canal-idiomas/radar/2026-10-08.json",
+    "canal-idiomas/radar/2026-10-09.json",
+    "canal-idiomas/radar/2026-10-10.json",
+    "canal-idiomas/radar/2026-10-11.json"
+  ],
+  "freio_ativo": false,
+  "tema_da_semana": [
+    {
+      "termo": "BTS - SWIM",
+      "dias_aparicao": 7,
+      "dias_total": 7,
+      "datas": ["2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09","2026-10-10","2026-10-11"],
+      "fontes": ["spotify-br"],
+      "volume_medido": "streams/dia subindo de 234.038 (05/10) para 289.108 (10/10); posição Spotify BR entre #49 e #95",
+      "mundo_anglofono_v2": false,
+      "nota": "K-pop (coreano), não cumpre a regra de hype anglófono do Felipe para V2 (storytelling). Usar só em V1/vocabulário."
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "dias_aparicao": 6,
+      "dias_total": 7,
+      "datas": ["2026-10-05","2026-10-06","2026-10-07","2026-10-08","2026-10-09","2026-10-11"],
+      "fontes": ["spotify-br"],
+      "volume_medido": "streams/dia subindo de 146.217 (06/10) para 263.114 (11/10); posição #175 a #96-103",
+      "mundo_anglofono_v2": false,
+      "nota": "Música internacional, origem do artista não confirmada como anglófona. Usar só em V1/vocabulário."
+    },
+    {
+      "termo": "BTS - NORMAL",
+      "dias_aparicao": 5,
+      "dias_total": 7,
+      "datas": ["2026-10-06","2026-10-07","2026-10-08","2026-10-09","2026-10-10"],
+      "fontes": ["spotify-br"],
+      "volume_medido": "streams/dia 140.618-178.744; posição #143-#190",
+      "mundo_anglofono_v2": false,
+      "nota": "Mesma ressalva de BTS - SWIM."
+    }
+  ],
+  "candidato_anglofono_fora_do_top3": {
+    "termo": "NBA",
+    "dias_aparicao": 4,
+    "dias_total": 7,
+    "datas": ["2026-10-08","2026-10-09","2026-10-10","2026-10-11"],
+    "fontes": ["manual (TikTok)"],
+    "volume_medido": "não medido por API; entrada manual, score fixo 6.75-4.5",
+    "mundo_anglofono_v2": true,
+    "evento_confirmado": {
+      "descricao": "Abertura da temporada NBA 2026-27 (Knicks x 76ers)",
+      "data": "2026-10-20",
+      "fonte": "https://www.band.com.br/esportes/calendario-da-nba-veja-datas-horarios-e-jogos-da-temporada-202627-202608131645"
+    },
+    "nota": "Fora da semana coberta (abre 20/10, 2 dias depois do fim desta semana). Recomenda-se contagem regressiva nesta semana e hype pesado na semana seguinte."
+  },
+  "calendario": [
+    {
+      "data": "2026-10-12",
+      "dia_semana": "segunda",
+      "evento": "Dia das Crianças + Dia de Nossa Senhora Aparecida (feriado nacional)",
+      "bloqueio": false,
+      "url": null
+    },
+    {
+      "data": "2026-10-14",
+      "dia_semana": "quarta",
+      "evento": "Libertadores semifinal, ida: Fluminense x Palmeiras, 21h30, Maracanã",
+      "bloqueio": false,
+      "url": "https://m.imirante.com/esporte/brasil/2026/09/21/conmebol-define-datas-das-semifinais-da-libertadores-2026"
+    },
+    {
+      "data": "2026-10-15",
+      "dia_semana": "quinta",
+      "evento": "Libertadores semifinal, ida: Estudiantes x Flamengo, 21h30, Argentina (estádio a definir)",
+      "bloqueio": false,
+      "url": "https://m.imirante.com/esporte/brasil/2026/09/21/conmebol-define-datas-das-semifinais-da-libertadores-2026"
+    },
+    {
+      "data": "2026-10-15",
+      "dia_semana": "quinta",
+      "evento": "Dia do Professor (BR)",
+      "bloqueio": false,
+      "url": null
+    },
+    {
+      "data": "2026-10-15",
+      "dia_semana": "quinta",
+      "evento": "Estreia de Street Fighter (live-action) nos cinemas do Brasil (pré-estreia 14/10; outras fontes citam 16/10 como data global)",
+      "bloqueio": false,
+      "url": "https://www.omelete.com.br/filmes/street-fighter-ganha-data-para-pre-venda-de-ingressos-confira"
+    },
+    {
+      "data": "2026-10-18",
+      "dia_semana": "domingo",
+      "evento": "Sem evento específico; 2 dias antes da abertura da NBA 2026-27 (20/10)",
+      "bloqueio": false,
+      "url": "https://www.band.com.br/esportes/calendario-da-nba-veja-datas-horarios-e-jogos-da-temporada-202627-202608131645"
+    }
+  ],
+  "fora_da_semana_relevante": [
+    {
+      "data": "2026-10-20",
+      "evento": "Abertura temporada NBA 2026-27 (Knicks x 76ers)",
+      "url": "https://www.dunkest.com/en/nba/news/244243/nba-schedule-opening-night-key-dates"
+    },
+    {
+      "data": "2026-10-21/22",
+      "evento": "Libertadores semis, jogos de volta (Palmeiras x Fluminense no Nubank Parque; Flamengo x Estudiantes no Maracanã)",
+      "url": "https://m.imirante.com/esporte/brasil/2026/09/21/conmebol-define-datas-das-semifinais-da-libertadores-2026"
+    },
+    {
+      "data": "2026-10-25",
+      "evento": "Eleições, 2º turno - bloqueio já registrado (sem hype)",
+      "url": null
+    }
+  ],
+  "tiktok_calendario_oficial": {
+    "medido": false,
+    "nota": "Busca não encontrou calendário oficial TikTok Brasil out/2026 com datas de campanha confiáveis em português; só calendários genéricos em inglês e blogs de qualidade incerta. Não citar datas de campanha sem confirmar no TikTok for Business."
+  },
+  "girias": {
+    "vencendo": [
+      {
+        "termo": "é um nervosismo surreal",
+        "valido_ate": "2026-10-31",
+        "dias_restantes": 20,
+        "fallback": "Respondi o que ninguém perguntou. Deu branco."
+      }
+    ],
+    "validas_sem_mudanca": ["buffado", "flopou/flopado", "amassou", "hypeado/estourado", "comeu", "farmar aura"],
+    "reprovadas_mantidas": ["Tu, finish", "Neysexual / Bichos Escrotos", "skibidi", "67 (six seven)", "brain rot"],
+    "novas_propostas": [],
+    "novas_propostas_nota": "Tentativa de busca por prova de uso (URL + views) de 'delulu', 'sigma', 'mid' no TikTok BR 2026 não encontrou fonte com números. Não medido. Nenhuma gíria nova proposta nesta semana."
+  },
+  "instrucao_roteirista": [
+    {
+      "data": "2026-10-12",
+      "episodio_contexto": "T1 E01 - feriado (Dia das Crianças/Aparecida) citado em 1 linha, sem mudar a lição",
+      "hype_esquete_v2": "Nenhum hype anglófono forte hoje; evitar ângulo 'criança' (risco 'feito para crianças'); reserva atemporal = turista gringo no café"
+    },
+    {
+      "data": "2026-10-13",
+      "episodio_contexto": "T1 E02 - currículo normal",
+      "hype_esquete_v2": "Sem evento do dia; música internacional (BTS/ADÉLA) só como V1 extra, não como abertura de esquete storytelling"
+    },
+    {
+      "data": "2026-10-14",
+      "episodio_contexto": "T1 E03",
+      "hype_esquete_v2": "Libertadores Fluminense x Palmeiras (ida) - ângulo narrador gringo: What a goal!, beat, win"
+    },
+    {
+      "data": "2026-10-15",
+      "episodio_contexto": "T1 E04 - Dia do Professor citado rápido (Mr./Ms., teacher's pet), sem trocar a lição",
+      "hype_esquete_v2": "Estreia Street Fighter (lançamento de filme/game gringo, aprovado): Round 1 Fight!, K.O. = knockout, combo"
+    },
+    {
+      "data": "2026-10-16",
+      "episodio_contexto": "T1 E05",
+      "hype_esquete_v2": "Street Fighter ainda fresco (data global segundo outras fontes); variar o corte"
+    },
+    {
+      "data": "2026-10-17",
+      "episodio_contexto": "Compilação longa da semana (YouTube)",
+      "hype_esquete_v2": "Sem hype novo; fechar citando contagem regressiva pra NBA (abre 20/10)"
+    },
+    {
+      "data": "2026-10-18",
+      "episodio_contexto": "T1 E06/E07 conforme grade",
+      "hype_esquete_v2": "Contagem regressiva NBA (2 dias) - ponte pra semana seguinte"
+    }
+  ]
+}
