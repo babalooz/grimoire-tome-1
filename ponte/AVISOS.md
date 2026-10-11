@@ -48,3 +48,4 @@
 - 2026-10-10T00:45Z · voz gota a gota · 15/42 falas prontas, +12 hoje (quase toda a Capy; faltam 3 dela + lazy/hank/duda/bolinha/turista/poppy) · continua amanhã 21:30
 - 2026-10-10T02:09Z · rotina de métricas 23:00 (10/10) · sem vídeo publicado ainda (meta 12/10, faltam 2 dias); log atualizado e push ok · próxima rotina repete até haver 1º post
 - 2026-10-11T00:44Z · voz gota a gota · 25 de 42 falas prontas, +10 hoje · continua amanhã 21:30
+- 2026-10-11T16:50Z · pacote de postagem assunto 1 concluído · ponte/saida/pacote-postagem-assunto1.md (commit 8ebbe38 em ponte): textos TikTok+YT Shorts (2 variantes/vídeo), pesquisa de hashtags/horários com fontes; Buffer OK (acapyfala+CapyFala); publicar.py: faltava ler episódios formato cafe (lia só licao, ignorava o aprovado) e tinha título YT duplicado — corrigido e enviado a main (029074a) · Felipe lê o pacote; postagem automática só depois de aprovar o protótipo
