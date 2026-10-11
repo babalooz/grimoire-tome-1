@@ -1,0 +1,2009 @@
+{
+  "version": 2,
+  "date": "2026-10-11",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "dia-das-criancas",
+        "evento": "Dia das Crianças + N. Sra. Aparecida (feriado)",
+        "data_inicio": "2026-10-12",
+        "data_fim": "2026-10-12",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Palavras que criança gringa sabe e você não (humor adulto, sem visual infantil).",
+        "ganchos_ingles": [
+          "toddler",
+          "tantrum",
+          "sippy cup"
+        ],
+        "status": "fixo",
+        "faltam_dias": 1
+      },
+      {
+        "id": "libertadores-semis-ida",
+        "evento": "Libertadores semis (ida): Fluminense x Palmeiras (14/10) e Estudiantes x Flamengo (15/10)",
+        "data_inicio": "2026-10-14",
+        "data_fim": "2026-10-15",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Futebol em inglês: goal, penalty, offside, extra time; 'the match was very emotioned' (erro) -> exciting/thrilling.",
+        "ganchos_ingles": [
+          "goal",
+          "penalty",
+          "offside",
+          "extra time",
+          "thrilling"
+        ],
+        "status": "verificado",
+        "faltam_dias": 3
+      }
+    ],
+    "proximos": [
+      {
+        "id": "dia-do-professor",
+        "evento": "Dia do Professor",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-15",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Capy homenageia os professores: frases de sala de aula; como o aluno BR chama o professor ('Teacher!') x nativo (Mr./Ms. + sobrenome); 'teacher's pet'.",
+        "ganchos_ingles": [
+          "teacher's pet",
+          "Mr./Ms.",
+          "homework",
+          "pop quiz"
+        ],
+        "status": "fixo",
+        "faltam_dias": 4
+      },
+      {
+        "id": "street-fighter-estreia",
+        "evento": "Estreia de Street Fighter nos cinemas",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-16",
+        "categoria": "cinema",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Vocabulário de games/luta: 'Round 1, Fight!', K.O. = knockout, combo, 'you win'. Sem imagem/áudio do filme.",
+        "ganchos_ingles": [
+          "knockout",
+          "round",
+          "combo",
+          "fight"
+        ],
+        "status": "fonte única",
+        "faltam_dias": 4
+      },
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado",
+        "faltam_dias": 10
+      },
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 14
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "v",
+      "score": 6.75,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "1.000+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "v em inglês",
+        "v em inglês pronúncia",
+        "v em inglês tradutor",
+        "letra v em inglês",
+        "gta v em inglês",
+        "gola v em inglês",
+        "composto v em inglês",
+        "v vaz em inglês",
+        "decote v em inglês",
+        "palavra v em inglês"
+      ],
+      "contexto": "Arsenal 2-1 Leeds: A decisive moment of real quality - but Mikel Arteta still has issues to address",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'v' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://www.bbc.com/sport/football/articles/c63r5w20ez3do"
+    },
+    {
+      "termo": "TV Globinho",
+      "score": 5.66,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "5.897 views na Wikipédia",
+      "categoria": "TV/reality",
+      "subindo": true,
+      "aula": [
+        "tv globinho em inglês"
+      ],
+      "contexto": "programa de televisão infantil brasileiro",
+      "sugestao_aula": "Como se diz o vocabulário de 'TV Globinho' em inglês (eviction, to be voted out, challenge).",
+      "url": "https://pt.wikipedia.org/wiki/TV_Globinho"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 5.58,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#103 Spotify BR. 263.114 streams/dia. 24 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#103)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "f1 horarios",
+      "score": 5.55,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "5.000+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "GP de Singapura da F1 2026: horários e onde assistir ao vivo",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'f1 horarios' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://ge.globo.com/motor/formula-1/noticia/2026/10/11/gp-de-singapura-da-f1-2026-horarios-e-onde-assistir-ao-vivo.ghtml"
+    },
+    {
+      "termo": "sbt",
+      "score": 5.4,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "1.000+ buscas",
+      "categoria": "TV/reality",
+      "subindo": true,
+      "aula": [
+        "sbt em inglês",
+        "como se fala sbt em inglês"
+      ],
+      "contexto": "Filhas de Silvio Santos moldam o futuro do SBT entre gestão e entretenimento",
+      "sugestao_aula": "Como se diz o vocabulário de 'sbt' em inglês (eviction, to be voted out, challenge).",
+      "url": "https://fatopaulista.com.br/filhas-silvio-santos-futuro-sbt-gestao-entretenimento/"
+    },
+    {
+      "termo": "mcdonald's",
+      "score": 5.18,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "200+ buscas",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "mcdonald's em inglês",
+        "quarteirão mcdonald's em inglês",
+        "seu mcdonald's em inglês",
+        "fala mcdonald's em inglês",
+        "como escreve mcdonald's em inglês",
+        "slogan do mcdonald's em inglês",
+        "como pronuncia mcdonald's em inglês",
+        "propaganda do mcdonald's em inglês",
+        "música do mcdonald's em inglês",
+        "cardápio do mcdonald's em inglês",
+        "como se diz mcdonald's em inglês",
+        "como se escreve mcdonald's em inglês",
+        "como se fala mcdonald's em inglês",
+        "como se pronuncia mcdonald's em inglês"
+      ],
+      "contexto": "A Tempestade (ou O Livro dos Dias): 30 anos da despedida",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'mcdonald's' (título original, bordões) + 1 pergunta.",
+      "url": "https://whiplash.net/materias/cds/383710-legiaourbana.html"
+    },
+    {
+      "termo": "motogp",
+      "score": 5.06,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "500+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "motogp em inglês"
+      ],
+      "contexto": "Assistir a Mundial de Motovelocidade: GP da Indonesia - Sprint Moto GP",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'motogp' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://www.disneyplus.com/pt-br/browse/entity-c0627209-bce8-46da-8d0e-7df840e530eb"
+    },
+    {
+      "termo": "NBA temporada 2026-27 (estreia 20/10)",
+      "score": 4.5,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA temporada 2026-27 (estreia 20/10)' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.21,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#95 Spotify BR. 277.373 streams/dia. 204 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#95)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ultimate fighting championship",
+      "score": 3.0,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Bonus Coverage | UFC Fight Night: Allen vs Duncan",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'ultimate fighting championship' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://www.ufc.com/news/bonus-coverage-ufc-fight-night-allen-vs-duncan"
+    }
+  ],
+  "duvidas_em_alta": [
+    {
+      "query": "como se fala em inglês",
+      "score": 8.18,
+      "validos": 13,
+      "median_views": 1192773,
+      "stale_pct": 85,
+      "recent": 0,
+      "top": {
+        "title": "NÍVEL 0 - AULA 1 - INGLÊS PARA INICIANTES 🟣 CURSO COMPLETO",
+        "views": 28852213,
+        "age": 2555,
+        "id": "S45kHeWnT0M"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como falar em inglês no roblox",
+      "score": 8.07,
+      "validos": 6,
+      "median_views": 239649,
+      "stale_pct": 100,
+      "recent": 0,
+      "top": {
+        "title": "Roblox - SÓ POSSO FALAR INGLÊS NA PIGGY!",
+        "views": 5560605,
+        "age": 2190,
+        "id": "Ts2ETC8cTlE"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como se fala em inglês os números",
+      "score": 8.03,
+      "validos": 15,
+      "median_views": 399826,
+      "stale_pct": 93,
+      "recent": 0,
+      "top": {
+        "title": "Contar de 1 a 100 em Inglês | Aprenda os Números em Inglês",
+        "views": 7830313,
+        "age": 2190,
+        "id": "UYnA7W0vHeQ"
+      },
+      "infantil": true
+    },
+    {
+      "query": "como falar em inglês para iniciantes",
+      "score": 7.98,
+      "validos": 6,
+      "median_views": 966489,
+      "stale_pct": 83,
+      "recent": 0,
+      "top": {
+        "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+        "views": 6643275,
+        "age": 1825,
+        "id": "IN5g35oUHNM"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como se fala em inglês os animais",
+      "score": 7.75,
+      "validos": 13,
+      "median_views": 280668,
+      "stale_pct": 92,
+      "recent": 0,
+      "top": {
+        "title": "Animais em Inglês | Inglês Infantil | Aprender Inglês",
+        "views": 2180638,
+        "age": 1825,
+        "id": "qc2-lUoUJM0"
+      },
+      "infantil": true
+    },
+    {
+      "query": "como falar ingles em 1 ano",
+      "score": 7.7,
+      "validos": 15,
+      "median_views": 834458,
+      "stale_pct": 80,
+      "recent": 0,
+      "top": {
+        "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+        "views": 6643275,
+        "age": 1825,
+        "id": "IN5g35oUHNM"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como se fala em inglês boa noite",
+      "score": 7.55,
+      "validos": 9,
+      "median_views": 107346,
+      "stale_pct": 100,
+      "recent": 0,
+      "top": {
+        "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+        "views": 6643275,
+        "age": 1825,
+        "id": "IN5g35oUHNM"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como se fala em inglês bom dia",
+      "score": 7.17,
+      "validos": 12,
+      "median_views": 115040,
+      "stale_pct": 92,
+      "recent": 0,
+      "top": {
+        "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+        "views": 6643275,
+        "age": 1825,
+        "id": "IN5g35oUHNM"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como se fala em inglês boa tarde",
+      "score": 7.05,
+      "validos": 10,
+      "median_views": 108313,
+      "stale_pct": 90,
+      "recent": 0,
+      "top": {
+        "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+        "views": 6643275,
+        "age": 1825,
+        "id": "IN5g35oUHNM"
+      },
+      "infantil": false
+    },
+    {
+      "query": "como falar em inglês",
+      "score": 6.91,
+      "validos": 15,
+      "median_views": 834458,
+      "stale_pct": 67,
+      "recent": 0,
+      "top": {
+        "title": "1000 FRASES PARA APRENDER INGLÊS - PARTE 1 - ( ÁUDIO: PORTUGUÊS x INGLÊS)",
+        "views": 7171496,
+        "age": 2190,
+        "id": "8wx6MUDIT4I"
+      },
+      "infantil": false
+    }
+  ],
+  "descartados": [
+    {
+      "termo": "daniel vorcaro",
+      "fonte": "google-trends",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"daniel vorcaro\""
+    },
+    {
+      "termo": "riade",
+      "fonte": "google-trends",
+      "motivo": "violência: \"ataque\" em \"Ataque de grupo aliado do Irã deixa ao menos 12 mortos e mais de 300 feridos em aeroporto \""
+    },
+    {
+      "termo": "polícia",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"policia\" em \"polícia\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Douglas Ruas",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governador\" em \"Governador eleito do Rio de Janeiro\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Eduarda Campopiano",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Lucas Pavanato",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e vereador da cidade de São Paulo desde 2025\""
+    },
+    {
+      "termo": "Ana Elisa",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"influenciadora e política brasileira\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Cleitinho",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro, senador do Brasil por Minas Gerais\""
+    },
+    {
+      "termo": "Nidal Hasan",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassino\" em \"oficial do Exército dos EUA e assassino em massa (1970-)\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Michelle Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Michelle Bolsonaro\""
+    },
+    {
+      "termo": "Lizzie Borden",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"suspeita\" em \"norte-americana suspeita de cometer assassinato (1860–1927)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Ted Kaczynski",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"criminoso\" em \"matemático e criminoso norte-americano (1942–2023)\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Eduardo Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Eduardo Bolsonaro\""
+    },
+    {
+      "termo": "Otoni de Paula",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro, Vereador da Cidade do Rio de Janeiro (2017–2019) e Deputado federal d\""
+    },
+    {
+      "termo": "Partido Liberal",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido Liberal\""
+    },
+    {
+      "termo": "José Sarney",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"31.º presidente do Brasil (1985–1990)\""
+    },
+    {
+      "termo": "Alfredo Gaspar",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Alfredo Gaspar de Mendonça Neto (Maceió, 13 de Agosto de 1970), é um ex-promotor de justiç\""
+    },
+    {
+      "termo": "Fotos dos Mamonas Assassinas mortos",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassinas\" em \"Fotos dos Mamonas Assassinas mortos\""
+    },
+    {
+      "termo": "Christa Pike",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassina\" em \"assassina americana\""
+    },
+    {
+      "termo": "Carlos Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Carlos Bolsonaro\""
+    },
+    {
+      "termo": "Fernando Collor",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"32.º presidente do Brasil (1990–1992)\""
+    },
+    {
+      "termo": "Jair Renan Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Renan Bolsonaro\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "Dilma Rousseff",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"36.ª presidente do Brasil (2011–2016)\""
+    },
+    {
+      "termo": "six seven",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"eleicoes\" em \"As marcas do meme \"six seven\" nas Eleições 2026, mais de 3 mil eleitores votaram por engan\""
+    },
+    {
+      "termo": "erros de gravação stranger things ingles",
+      "fonte": "autocomplete-BR",
+      "motivo": "ruído: busca de clipe/série/música, não de aula"
+    },
+    {
+      "termo": "aprender portugues asmr",
+      "fonte": "autocomplete-MX",
+      "motivo": "ruído: busca de clipe/série/música, não de aula"
+    },
+    {
+      "termo": "portugues brasileño musica",
+      "fonte": "autocomplete-MX",
+      "motivo": "ruído: busca de clipe/série/música, não de aula"
+    },
+    {
+      "termo": "portugues brasileño canciones",
+      "fonte": "autocomplete-MX",
+      "motivo": "ruído: busca de clipe/série/música, não de aula"
+    }
+  ],
+  "demanda": {
+    "en-para-brasileiros": [
+      {
+        "query": "como se fala em inglês",
+        "score": 8.18,
+        "validos": 13,
+        "median_views": 1192773,
+        "stale_pct": 85,
+        "recent": 0,
+        "top": {
+          "title": "NÍVEL 0 - AULA 1 - INGLÊS PARA INICIANTES 🟣 CURSO COMPLETO",
+          "views": 28852213,
+          "age": 2555,
+          "id": "S45kHeWnT0M"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como falar em inglês no roblox",
+        "score": 8.07,
+        "validos": 6,
+        "median_views": 239649,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Roblox - SÓ POSSO FALAR INGLÊS NA PIGGY!",
+          "views": 5560605,
+          "age": 2190,
+          "id": "Ts2ETC8cTlE"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como se fala em inglês os números",
+        "score": 8.03,
+        "validos": 15,
+        "median_views": 399826,
+        "stale_pct": 93,
+        "recent": 0,
+        "top": {
+          "title": "Contar de 1 a 100 em Inglês | Aprenda os Números em Inglês",
+          "views": 7830313,
+          "age": 2190,
+          "id": "UYnA7W0vHeQ"
+        },
+        "infantil": true
+      },
+      {
+        "query": "como falar em inglês para iniciantes",
+        "score": 7.98,
+        "validos": 6,
+        "median_views": 966489,
+        "stale_pct": 83,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como se fala em inglês os animais",
+        "score": 7.75,
+        "validos": 13,
+        "median_views": 280668,
+        "stale_pct": 92,
+        "recent": 0,
+        "top": {
+          "title": "Animais em Inglês | Inglês Infantil | Aprender Inglês",
+          "views": 2180638,
+          "age": 1825,
+          "id": "qc2-lUoUJM0"
+        },
+        "infantil": true
+      },
+      {
+        "query": "como falar ingles em 1 ano",
+        "score": 7.7,
+        "validos": 15,
+        "median_views": 834458,
+        "stale_pct": 80,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como se fala em inglês boa noite",
+        "score": 7.55,
+        "validos": 9,
+        "median_views": 107346,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como se fala em inglês bom dia",
+        "score": 7.17,
+        "validos": 12,
+        "median_views": 115040,
+        "stale_pct": 92,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como se fala em inglês boa tarde",
+        "score": 7.05,
+        "validos": 10,
+        "median_views": 108313,
+        "stale_pct": 90,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como falar em inglês",
+        "score": 6.91,
+        "validos": 15,
+        "median_views": 834458,
+        "stale_pct": 67,
+        "recent": 0,
+        "top": {
+          "title": "1000 FRASES PARA APRENDER INGLÊS - PARTE 1 - ( ÁUDIO: PORTUGUÊS x INGLÊS)",
+          "views": 7171496,
+          "age": 2190,
+          "id": "8wx6MUDIT4I"
+        },
+        "infantil": false
+      },
+      {
+        "query": "como se fala em inglês as cores",
+        "score": 6.86,
+        "validos": 13,
+        "median_views": 565907,
+        "stale_pct": 69,
+        "recent": 0,
+        "top": {
+          "title": "As Cores em Inglês | Aprender as Cores em Inglês",
+          "views": 9488662,
+          "age": 2190,
+          "id": "f-AuQ_Afg8w"
+        }
+      },
+      {
+        "query": "erros de ingles",
+        "score": 6.52,
+        "validos": 19,
+        "median_views": 47260,
+        "stale_pct": 89,
+        "recent": 0,
+        "top": {
+          "title": "15 \"erros\" de pronúncia mais comuns em inglês | English in Brazil",
+          "views": 896974,
+          "age": 3650,
+          "id": "XRmmKI-L8yA"
+        }
+      },
+      {
+        "query": "como se fala em inglês oi",
+        "score": 6.42,
+        "validos": 11,
+        "median_views": 169417,
+        "stale_pct": 73,
+        "recent": 0,
+        "top": {
+          "title": "APRENDA A FALAR \"OI\" EM OUTROS IDIOMAS #shorts",
+          "views": 25280248,
+          "age": 300,
+          "id": "2oOPwKlK50g"
+        }
+      },
+      {
+        "query": "como se fala em inglês tudo bem",
+        "score": 6.4,
+        "validos": 10,
+        "median_views": 18575,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        }
+      },
+      {
+        "query": "girias e abreviações em ingles",
+        "score": 6.19,
+        "validos": 17,
+        "median_views": 19776,
+        "stale_pct": 94,
+        "recent": 0,
+        "top": {
+          "title": "ABREVIAÇÕES E SIGLAS DA INTERNET EM INGLÊS - AULA 76 PARA INICIANTES - PROFESSOR KENNY",
+          "views": 193819,
+          "age": 2555,
+          "id": "nYPA6uiL0fU"
+        }
+      },
+      {
+        "query": "como se fala em inglês posso ir ao banheiro",
+        "score": 6.03,
+        "validos": 6,
+        "median_views": 10427,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "COMO PEDIR PARA IR AO BANHEIRO EM INGLÊS?",
+          "views": 20567,
+          "age": 730,
+          "id": "2yU9rn3Jji8"
+        }
+      },
+      {
+        "query": "como falar em ingles sozinho",
+        "score": 5.85,
+        "validos": 12,
+        "median_views": 252939,
+        "stale_pct": 58,
+        "recent": 0,
+        "top": {
+          "title": "Conversa Em Inglês Com Tradução | Aprenda Inglês de Graça",
+          "views": 6643275,
+          "age": 1825,
+          "id": "IN5g35oUHNM"
+        }
+      },
+      {
+        "query": "como falar em ingles em 6 minutos",
+        "score": 5.72,
+        "validos": 13,
+        "median_views": 888019,
+        "stale_pct": 46,
+        "recent": 0,
+        "top": {
+          "title": "1000 FRASES PARA APRENDER INGLÊS - PARTE 1 - ( ÁUDIO: PORTUGUÊS x INGLÊS)",
+          "views": 7171496,
+          "age": 2190,
+          "id": "8wx6MUDIT4I"
+        }
+      },
+      {
+        "query": "girias e expressoes em ingles",
+        "score": 5.72,
+        "validos": 18,
+        "median_views": 29805,
+        "stale_pct": 78,
+        "recent": 0,
+        "top": {
+          "title": "12 GÍRIAS EM INGLÊS QUE VOCÊ PRECISA SABER (legendado) | English Time",
+          "views": 129084,
+          "age": 3285,
+          "id": "Bxigv31cbv4"
+        }
+      },
+      {
+        "query": "como falar em ingles fluentemente",
+        "score": 5.71,
+        "validos": 16,
+        "median_views": 513640,
+        "stale_pct": 50,
+        "recent": 0,
+        "top": {
+          "title": "1000 FRASES PARA APRENDER INGLÊS - PARTE 1 - ( ÁUDIO: PORTUGUÊS x INGLÊS)",
+          "views": 7171496,
+          "age": 2190,
+          "id": "8wx6MUDIT4I"
+        }
+      },
+      {
+        "query": "girias em ingles",
+        "score": 5.59,
+        "validos": 17,
+        "median_views": 74131,
+        "stale_pct": 65,
+        "recent": 0,
+        "top": {
+          "title": "ENTENDA MAIS INGLÊS EM 15MIN com o CHRIS",
+          "views": 886502,
+          "age": 365,
+          "id": "kEXiUwdEuOk"
+        }
+      },
+      {
+        "query": "girias em ingles rap",
+        "score": 5.52,
+        "validos": 12,
+        "median_views": 53389,
+        "stale_pct": 67,
+        "recent": 0,
+        "top": {
+          "title": "How rap sounds to non-english speakers",
+          "views": 12435360,
+          "age": 1095,
+          "id": "BdOtR2A5agc"
+        }
+      },
+      {
+        "query": "como falar em inglês na imigração",
+        "score": 5.45,
+        "validos": 19,
+        "median_views": 111378,
+        "stale_pct": 58,
+        "recent": 0,
+        "top": {
+          "title": "INGLÊS NO AEROPORTO, AVIÃO E IMIGRAÇÃO: aprenda a \"se virar\" | Survival English #2",
+          "views": 1556980,
+          "age": 3285,
+          "id": "h0Yz4StSGJc"
+        }
+      },
+      {
+        "query": "ingles para iniciantes",
+        "score": 5.44,
+        "validos": 5,
+        "median_views": 1098520,
+        "stale_pct": 40,
+        "recent": 0,
+        "top": {
+          "title": "🔴🗽 Me dê SÓ 33 minutos, e vou te ensinar a PENSAR em INGLÊS! AULA COMPLETA [INICIANTE]",
+          "views": 2007195,
+          "age": 240,
+          "id": "xJbafWYbUlI"
+        }
+      },
+      {
+        "query": "girias da internet em ingles",
+        "score": 5.24,
+        "validos": 17,
+        "median_views": 4321,
+        "stale_pct": 94,
+        "recent": 0,
+        "top": {
+          "title": "ABREVIAÇÕES E SIGLAS DA INTERNET EM INGLÊS - AULA 76 PARA INICIANTES - PROFESSOR KENNY",
+          "views": 193819,
+          "age": 2555,
+          "id": "nYPA6uiL0fU"
+        }
+      },
+      {
+        "query": "como falar em inglês no instagram",
+        "score": 5.18,
+        "validos": 10,
+        "median_views": 5014,
+        "stale_pct": 90,
+        "recent": 0,
+        "top": {
+          "title": "Instagram em INGLÊS COMO MUDAR? - iPhone e Android",
+          "views": 178226,
+          "age": 730,
+          "id": "RtgxMuY_HFo"
+        }
+      },
+      {
+        "query": "girias em ingles americano",
+        "score": 5.01,
+        "validos": 17,
+        "median_views": 74131,
+        "stale_pct": 53,
+        "recent": 0,
+        "top": {
+          "title": "ENTENDA MAIS INGLÊS EM 15MIN com o CHRIS",
+          "views": 886502,
+          "age": 365,
+          "id": "kEXiUwdEuOk"
+        }
+      },
+      {
+        "query": "girias ingles britanico",
+        "score": 4.49,
+        "validos": 17,
+        "median_views": 1784,
+        "stale_pct": 88,
+        "recent": 0,
+        "top": {
+          "title": "12 Gírias em Inglês para você falar como um Nativo 🤯😎🇺🇸 | Teacher Elza",
+          "views": 89340,
+          "age": 730,
+          "id": "RDnyEkxkeHg"
+        }
+      },
+      {
+        "query": "ingles para iniciantes conversação",
+        "score": 1.79,
+        "validos": 12,
+        "median_views": 736364,
+        "stale_pct": 42,
+        "recent": 2,
+        "top": {
+          "title": "1000 FRASES PARA APRENDER INGLÊS - PARTE 1 - ( ÁUDIO: PORTUGUÊS x INGLÊS)",
+          "views": 7171496,
+          "age": 2190,
+          "id": "8wx6MUDIT4I"
+        }
+      },
+      {
+        "query": "como falar ingles em 6 meses",
+        "score": 1.76,
+        "validos": 17,
+        "median_views": 134729,
+        "stale_pct": 53,
+        "recent": 2,
+        "top": {
+          "title": "Aprenda Inglês em 2 Horas: Todo o Básico Que Você Precisa",
+          "views": 3934388,
+          "age": 730,
+          "id": "JxHiuCI2Xro"
+        }
+      }
+    ],
+    "pt-para-hispanofalantes": [
+      {
+        "query": "como se dice hola en portugues brasileño",
+        "score": 8.06,
+        "validos": 13,
+        "median_views": 235341,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "cómo se dice en portugués hola",
+        "score": 8.04,
+        "validos": 11,
+        "median_views": 229288,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "como se dice qr en portugues",
+        "score": 7.82,
+        "validos": 5,
+        "median_views": 162245,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "cómo se dice en portugués",
+        "score": 7.58,
+        "validos": 11,
+        "median_views": 112593,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "como se dice ola en portugues",
+        "score": 6.53,
+        "validos": 7,
+        "median_views": 22540,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "cómo se dice en portugués buenos días",
+        "score": 6.45,
+        "validos": 13,
+        "median_views": 20067,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "cómo se dice en portugués buenas noches",
+        "score": 6.27,
+        "validos": 8,
+        "median_views": 15088,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "cómo se dice en portugués gracias",
+        "score": 5.69,
+        "validos": 11,
+        "median_views": 6259,
+        "stale_pct": 100,
+        "recent": 0,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "portugues brasileño para principiantes",
+        "score": 3.87,
+        "validos": 12,
+        "median_views": 290635,
+        "stale_pct": 92,
+        "recent": 1,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "portugues brasileño hablando",
+        "score": 3.82,
+        "validos": 13,
+        "median_views": 236815,
+        "stale_pct": 92,
+        "recent": 1,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "frases en portugues brasileño",
+        "score": 3.65,
+        "validos": 19,
+        "median_views": 109364,
+        "stale_pct": 95,
+        "recent": 1,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "portugues brasileño pronunciacion",
+        "score": 3.64,
+        "validos": 16,
+        "median_views": 116681,
+        "stale_pct": 94,
+        "recent": 1,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "frases en portugues para turistas",
+        "score": 3.37,
+        "validos": 19,
+        "median_views": 45216,
+        "stale_pct": 95,
+        "recent": 1,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "como se dice si en portugues",
+        "score": 3.09,
+        "validos": 11,
+        "median_views": 23936,
+        "stale_pct": 91,
+        "recent": 1,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "portugues brasil podcast",
+        "score": 2.9,
+        "validos": 5,
+        "median_views": 28694,
+        "stale_pct": 80,
+        "recent": 1,
+        "top": {
+          "title": "Nossa língua portuguesa-PODCAST Não Ficção",
+          "views": 156442,
+          "age": 9999,
+          "id": "ByPU2iRlq1E"
+        }
+      },
+      {
+        "query": "portugues brasileño",
+        "score": 2.4,
+        "validos": 16,
+        "median_views": 170509,
+        "stale_pct": 88,
+        "recent": 2,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "aprender portugués brasil",
+        "score": 2.34,
+        "validos": 13,
+        "median_views": 162245,
+        "stale_pct": 85,
+        "recent": 2,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "aprender portugues de portugal",
+        "score": 2.23,
+        "validos": 11,
+        "median_views": 119285,
+        "stale_pct": 82,
+        "recent": 2,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "portugues brasileño aprender",
+        "score": 1.74,
+        "validos": 17,
+        "median_views": 183302,
+        "stale_pct": 82,
+        "recent": 3,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "aprender portugués desde cero",
+        "score": 1.73,
+        "validos": 11,
+        "median_views": 451275,
+        "stale_pct": 73,
+        "recent": 3,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "aprender portugues",
+        "score": 1.72,
+        "validos": 12,
+        "median_views": 317288,
+        "stale_pct": 75,
+        "recent": 3,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "portugues brasileño basico",
+        "score": 1.71,
+        "validos": 15,
+        "median_views": 183302,
+        "stale_pct": 80,
+        "recent": 3,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "cómo se dice en portugués te amo",
+        "score": 1.64,
+        "validos": 9,
+        "median_views": 7267,
+        "stale_pct": 78,
+        "recent": 2,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "aprender portugues en un mes",
+        "score": 1.63,
+        "validos": 15,
+        "median_views": 104271,
+        "stale_pct": 80,
+        "recent": 3,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "frases en portugues",
+        "score": 1.61,
+        "validos": 18,
+        "median_views": 69606,
+        "stale_pct": 83,
+        "recent": 3,
+        "top": {
+          "title": "Aprende portugués básico para principiantes | Conversación lenta y fácil en portugués",
+          "views": 2953779,
+          "age": 9999,
+          "id": "oAmmv8qg4Kg"
+        }
+      },
+      {
+        "query": "aprender portugues desde 0",
+        "score": 1.35,
+        "validos": 13,
+        "median_views": 451275,
+        "stale_pct": 69,
+        "recent": 4,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "aprender portugues para niños",
+        "score": 1.14,
+        "validos": 11,
+        "median_views": 104271,
+        "stale_pct": 64,
+        "recent": 4,
+        "top": {
+          "title": "Clases de Portugués 🇧🇷 Clase 1.1 - Saludos y Números",
+          "views": 6810375,
+          "age": 9999,
+          "id": "cwY85S1O0vk"
+        }
+      },
+      {
+        "query": "aprender portugues con historias",
+        "score": 0.2,
+        "validos": 14,
+        "median_views": 2101,
+        "stale_pct": 21,
+        "recent": 11,
+        "top": {
+          "title": "📚APRENDE PORTUGUÉS ENTRETENIÉNDOTE CON HISTORIAS CORTAS | 📚 ESTUDIANTES NIVEL BÁSICO",
+          "views": 145090,
+          "age": 9999,
+          "id": "jkR46k8JKts"
+        }
+      },
+      {
+        "query": "aprender portugues brasileiro",
+        "score": 0,
+        "validos": 4
+      },
+      {
+        "query": "portugues brasileño y de portugal",
+        "score": 0,
+        "validos": 0
+      }
+    ],
+    "pt-para-anglofonos": [
+      {
+        "query": "how to say in portuguese",
+        "score": 7.85,
+        "validos": 17,
+        "median_views": 281393,
+        "stale_pct": 94,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624712,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese alphabet",
+        "score": 7.08,
+        "validos": 12,
+        "median_views": 100101,
+        "stale_pct": 92,
+        "recent": 0,
+        "top": {
+          "title": "Learn Brazilian Portuguese // Lesson 1: Building sentences",
+          "views": 628480,
+          "age": 1095,
+          "id": "b0gHn6q0OgI"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese in 5 days",
+        "score": 6.97,
+        "validos": 14,
+        "median_views": 76192,
+        "stale_pct": 93,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to speak in portuguese brazil",
+        "score": 6.76,
+        "validos": 15,
+        "median_views": 159135,
+        "stale_pct": 80,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624712,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese phrases",
+        "score": 6.46,
+        "validos": 17,
+        "median_views": 76088,
+        "stale_pct": 82,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to say 67 in portuguese",
+        "score": 6.39,
+        "validos": 5,
+        "median_views": 81864,
+        "stale_pct": 80,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624712,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to say numbers in portuguese",
+        "score": 6.18,
+        "validos": 20,
+        "median_views": 25866,
+        "stale_pct": 90,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Numbers 1-20 | Learn to Count in Portuguese",
+          "views": 305133,
+          "age": 2190,
+          "id": "NTmyTyLDi-A"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese conversation",
+        "score": 6.11,
+        "validos": 11,
+        "median_views": 94909,
+        "stale_pct": 73,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese grammar",
+        "score": 5.65,
+        "validos": 9,
+        "median_views": 26621,
+        "stale_pct": 78,
+        "recent": 0,
+        "top": {
+          "title": "Learn Brazilian Portuguese // Lesson 1: Building sentences",
+          "views": 628480,
+          "age": 1095,
+          "id": "b0gHn6q0OgI"
+        }
+      },
+      {
+        "query": "portuguese phrases brazil",
+        "score": 5.64,
+        "validos": 17,
+        "median_views": 47960,
+        "stale_pct": 71,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese intermediate",
+        "score": 5.61,
+        "validos": 11,
+        "median_views": 37515,
+        "stale_pct": 73,
+        "recent": 0,
+        "top": {
+          "title": "Learn Brazilian Portuguese // Lesson 1: Building sentences",
+          "views": 628480,
+          "age": 1095,
+          "id": "b0gHn6q0OgI"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese while you sleep",
+        "score": 5.32,
+        "validos": 19,
+        "median_views": 19914,
+        "stale_pct": 74,
+        "recent": 0,
+        "top": {
+          "title": "Learn Portuguese While You Sleep // Learn Portuguese 130 BASIC Phrases \\\\  Subtitles",
+          "views": 1385539,
+          "age": 2920,
+          "id": "t5DjVN-bBh4"
+        }
+      },
+      {
+        "query": "brazilian slang words",
+        "score": 5.29,
+        "validos": 14,
+        "median_views": 42737,
+        "stale_pct": 64,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "portuguese phrases restaurant",
+        "score": 5.18,
+        "validos": 19,
+        "median_views": 15417,
+        "stale_pct": 74,
+        "recent": 0,
+        "top": {
+          "title": "European Portuguese for Beginners | Easy Phrases for Tourists",
+          "views": 636795,
+          "age": 1095,
+          "id": "iDsD0jLF63g"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese for beginners",
+        "score": 5.07,
+        "validos": 13,
+        "median_views": 35127,
+        "stale_pct": 62,
+        "recent": 0,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to say goodnight in portuguese",
+        "score": 4.96,
+        "validos": 14,
+        "median_views": 4501,
+        "stale_pct": 86,
+        "recent": 0,
+        "top": {
+          "title": "Learn  Brazilian Portuguese - How to Greet People in Brazilian Portuguese",
+          "views": 556787,
+          "age": 5110,
+          "id": "pc0GRj-ec9s"
+        }
+      },
+      {
+        "query": "brazilian slang",
+        "score": 4.55,
+        "validos": 14,
+        "median_views": 35156,
+        "stale_pct": 50,
+        "recent": 0,
+        "top": {
+          "title": "Singer Anitta Teaches You Brazilian-Portuguese Slang | Vanity Fair",
+          "views": 1147189,
+          "age": 2190,
+          "id": "d0Us0dXedTk"
+        }
+      },
+      {
+        "query": "how to say yes in portuguese",
+        "score": 3.6,
+        "validos": 15,
+        "median_views": 582,
+        "stale_pct": 80,
+        "recent": 0,
+        "top": {
+          "title": "How To Say Yes in European Portuguese like a native speaker!",
+          "views": 26459,
+          "age": 1825,
+          "id": "4PG7u1LGIlA"
+        }
+      },
+      {
+        "query": "portuguese phrases for beginners",
+        "score": 3.53,
+        "validos": 17,
+        "median_views": 216098,
+        "stale_pct": 82,
+        "recent": 1,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to speak in portuguese",
+        "score": 3.4,
+        "validos": 14,
+        "median_views": 391224,
+        "stale_pct": 71,
+        "recent": 1,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624712,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "portuguese common phrases",
+        "score": 3.36,
+        "validos": 17,
+        "median_views": 121316,
+        "stale_pct": 82,
+        "recent": 1,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese",
+        "score": 2.99,
+        "validos": 10,
+        "median_views": 18765,
+        "stale_pct": 20,
+        "recent": 0,
+        "top": {
+          "title": "Learn Brazilian Portuguese // Lesson 1: Building sentences",
+          "views": 628480,
+          "age": 1095,
+          "id": "b0gHn6q0OgI"
+        }
+      },
+      {
+        "query": "portuguese phrases for tourists brazil",
+        "score": 2.62,
+        "validos": 17,
+        "median_views": 22018,
+        "stale_pct": 71,
+        "recent": 1,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to say no in portuguese",
+        "score": 2.51,
+        "validos": 15,
+        "median_views": 4748,
+        "stale_pct": 87,
+        "recent": 1,
+        "top": {
+          "title": "Brazilians don’t say NO (NÃO) | Brazilian Portuguese",
+          "views": 105484,
+          "age": 1460,
+          "id": "5em2rhzvSjQ"
+        }
+      },
+      {
+        "query": "how to say goodbye in portuguese",
+        "score": 2.33,
+        "validos": 19,
+        "median_views": 2958,
+        "stale_pct": 84,
+        "recent": 1,
+        "top": {
+          "title": "Learn  Brazilian Portuguese - How to Greet People in Brazilian Portuguese",
+          "views": 556787,
+          "age": 5110,
+          "id": "pc0GRj-ec9s"
+        }
+      },
+      {
+        "query": "portuguese phrases for tourists",
+        "score": 2.31,
+        "validos": 18,
+        "median_views": 23493,
+        "stale_pct": 56,
+        "recent": 1,
+        "top": {
+          "title": "European Portuguese for Beginners | Easy Phrases for Tourists",
+          "views": 636795,
+          "age": 1095,
+          "id": "iDsD0jLF63g"
+        }
+      },
+      {
+        "query": "portuguese phrases",
+        "score": 2.12,
+        "validos": 17,
+        "median_views": 187761,
+        "stale_pct": 71,
+        "recent": 2,
+        "top": {
+          "title": "Portuguese Conversation for Beginners | BR Portuguese",
+          "views": 2624717,
+          "age": 1825,
+          "id": "RkOqjkero10"
+        }
+      },
+      {
+        "query": "how to say sorry in portuguese",
+        "score": 1.81,
+        "validos": 15,
+        "median_views": 859,
+        "stale_pct": 73,
+        "recent": 1,
+        "top": {
+          "title": "HOW TO SAY I'M SORRY IN BRAZILIAN PORTUGUESE",
+          "views": 8672,
+          "age": 2920,
+          "id": "mmvdDh2awhc"
+        }
+      },
+      {
+        "query": "portuguese phrases portugal",
+        "score": 1.56,
+        "validos": 18,
+        "median_views": 49018,
+        "stale_pct": 50,
+        "recent": 2,
+        "top": {
+          "title": "Learn Portuguese: A 1-HOUR Beginner Conversation Course 🇵🇹",
+          "views": 810711,
+          "age": 730,
+          "id": "JoaGC5BIh9s"
+        }
+      },
+      {
+        "query": "learn brazilian portuguese podcast",
+        "score": 0,
+        "validos": 4
+      }
+    ]
+  },
+  "coletados": [
+    "4",
+    "adela - nicole kidman",
+    "alex warren - ordinary",
+    "alfredo gaspar",
+    "ana elisa",
+    "andre janones",
+    "bts - swim",
+    "carlos bolsonaro",
+    "che guevara",
+    "christa pike",
+    "cleitinho",
+    "daniel vorcaro",
+    "daniella marques",
+    "dilma rousseff",
+    "dominic fike - babydoll",
+    "douglas ruas",
+    "eduarda campopiano",
+    "eduardo bolsonaro",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "erika hilton",
+    "f1 horarios",
+    "fernando collor",
+    "fernando henrique cardoso",
+    "flash",
+    "flavio bolsonaro",
+    "fotos dos mamonas assassinas mortos",
+    "giulia be",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "herdar os genes",
+    "jair bolsonaro",
+    "jair renan bolsonaro",
+    "jose sarney",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "lizzie borden",
+    "lucas pavanato",
+    "luiz inacio lula da silva",
+    "malcolm todd - earrings",
+    "mcdonald's",
+    "melhor dia da vida dele",
+    "michael jackson - billie jean",
+    "michelle bolsonaro",
+    "motogp",
+    "nba temporada 2026-27 (estreia 20/10)",
+    "nidal hasan",
+    "nikolas ferreira",
+    "nossa senhora da conceicao aparecida",
+    "oasis - wonderwall - remastered",
+    "otoni de paula",
+    "partido liberal",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "policia",
+    "que loucura!",
+    "renan santos",
+    "riade",
+    "rosangela lula da silva",
+    "sbt",
+    "seu chico",
+    "six seven",
+    "sobem de prateleira",
+    "ted kaczynski",
+    "the goo goo dolls - iris",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "trace brasil",
+    "tv globinho",
+    "ultimate fighting championship",
+    "v"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 14 itens",
+    "tiktok: 7 itens",
+    "manual: 2 itens",
+    "demanda en-para-brasileiros: 30 buscas, 30 com amostra válida",
+    "demanda pt-para-hispanofalantes: 30 buscas, 28 com amostra válida",
+    "demanda pt-para-anglofonos: 30 buscas, 29 com amostra válida"
+  ]
+}

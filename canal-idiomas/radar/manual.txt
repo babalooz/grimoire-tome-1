@@ -1,12 +1,10 @@
-# TikTok BR — pesquisa web de 10/10/2026 (rotina radar diário).
-# 6 buscas feitas (trend tiktok brasil hoje / meme do momento / áudio viral da semana / viralizou essa semana /
-# bordão viral / hashtag trending now): nenhuma trouxe tendência do TikTok Brasil datada e verificável para
-# esta semana — só resultados genéricos, sem data ou de anos anteriores (limitação de rede conhecida, ver CLAUDE.md).
-# Endpoint https://www.tiktok.com/api/challenge/detail/ testado de novo hoje: HTTP 200, corpo vazio (0 bytes) —
-# mesmo resultado de 26/09. Nenhuma hashtag pôde ser medida; tudo abaixo = "não medido".
-# Removidas hoje por falta de confirmação de atualidade (podem estar vencidas): Robbie Williams, A Diplomata,
-# Nosferatu, Lupin. Mantidas por serem atemporais/plausíveis para outubro (sem medição real):
-BTS
-NBA
+# TikTok BR — camada manual do radar (gerada pela rotina 2026-10-11)
+# 6 buscas web (trend tiktok brasil hoje / meme do momento / áudio viral da semana / "6 7" skrilla doot doot /
+# halloween trend tiktok brasil 2026 / NBA temporada 2026-27 estreia). Views/vídeos: endpoint público
+# /api/challenge/detail não responde a partir da nuvem (mesma falha já documentada no radar.py) -> "não medido".
+# Descartado: "6 7" / "six seven" (meme de sala de aula, ainda ativo) — já reprovado em docs/tiktok-nativo.md §2
+# ("puxa para 'feito para crianças'"), mantém descartado.
+# BTS e World Series (herdados do manual.txt de 09/10) NÃO foram re-verificados hoje; removidos por falta de
+# busca nova que os confirme ainda em alta — não é reprovação, é ausência de dado novo.
 Halloween
-World Series
+NBA temporada 2026-27 (estreia 20/10)
