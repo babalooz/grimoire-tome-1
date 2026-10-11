@@ -208,13 +208,16 @@ def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
 
 # ---------------------------------------------------------------- montagem dos posts
 def episodios() -> dict:
-    """'T1 E01' -> JSON do episódio."""
+    """'T1 E01' -> JSON do episódio. Formato "cafe" (Sitcom do Café, aprovado) é lido depois de "licao" (formato
+    antigo, abandonado): em caso de mesmo código, o episódio "cafe" vence (ex.: cafe-t1e01-hi-im-capy.json sobre
+    licao-s01e01-hi-hello.json, ambos "T1 E01")."""
     out = {}
-    for f in sorted((ROOT / "episodes").glob("licao-*.json")):
-        ep = json.loads(f.read_text())
-        cod = (ep.get("serie") or {}).get("codigo")
-        if cod:
-            out[cod] = ep
+    for padrao in ("licao-*.json", "cafe-*.json"):
+        for f in sorted((ROOT / "episodes").glob(padrao)):
+            ep = json.loads(f.read_text())
+            cod = (ep.get("serie") or {}).get("codigo")
+            if cod:
+                out[cod] = ep
     return out
 
 
@@ -231,7 +234,8 @@ def textos(ep: dict, p: dict) -> dict:
         tags += " #capybara"
     ctx = ep.get("contexto") or {}
     if p["faixa"] == "episodio":
-        titulo = f"{cod} · {ep['title']}"[:100]
+        # title já vem com o código no formato "cafe" (ex.: "T1 E01 · o primeiro..."); no formato "licao" não vem.
+        titulo = (ep["title"] if ep["title"].startswith(cod) else f"{cod} · {ep['title']}")[:100]
         legenda = ctx.get("legenda") or ep.get("canDo") or ep["title"]
         texto = f"{titulo}\n\n{legenda}\n\n{tags}" if p["rede"] != "tiktok" else f"{cod} | {legenda.lower()} {tags}"
     else:
