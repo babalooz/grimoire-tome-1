@@ -4,10 +4,16 @@ Chave: "Credencial de API" do ambiente Default (nome "Buffer", Bearer, site api.
 o header Authorization sozinho: o script NÃO lê nem vê a chave. (Fallback local: BUFFER_TOKEN/BUFFER_API_KEY, se existir.)
 Teste de acesso = consulta de leitura (listar canais) responde 200 e contém TikTok "acapyfala" e YouTube "CapyFala".
 
+Instagram é canal OPCIONAL (3º canal, `--listar` só exige TikTok + YouTube): se não estiver conectado no Buffer,
+o script segue normal com os outros dois e avisa "Instagram ainda não conectado" sem falhar (código de saída
+continua baseado só em TikTok + YouTube); quando alguém conectar o Instagram no Buffer, ele entra sozinho no próximo
+--listar/publicação, com legenda própria (textos()) — sem ID fixo no código, descoberto pelo `service` do canal.
+
 Uso (a partir de canal-idiomas/):
   python3 scripts/publicar.py --listar
       Só leitura: lista organizações e canais, grava os IDs em config/buffer-canais.json e diz se o acesso está OK
-      (sai com código 0 = OK; 1 = sem acesso ou canais faltando). É o teste que as rotinas usam.
+      (sai com código 0 = OK; 1 = sem acesso ou canais faltando). É o teste que as rotinas usam. Mostra também o
+      status do Instagram (opcional), sem afetar o código de saída.
   python3 scripts/publicar.py --data 2026-10-12 --dry-run
       Monta os posts do dia a partir de config/grade.json e mostra o que seria enviado. Não envia nada.
   python3 scripts/publicar.py --data 2026-10-12
@@ -115,6 +121,12 @@ def acesso_ok() -> tuple[bool, str]:
               if not any(c["service"] == srv and nome in f"{c.get('name', '')} {c.get('displayName', '')}".lower()
                          for c in canais)]
     return (not faltam), ("acesso OK" if not faltam else "faltam canais: " + ", ".join(faltam))
+
+
+def status_instagram() -> str:
+    """Linha informativa pro --listar: Instagram é opcional, nunca derruba o acesso OK de TikTok/YouTube."""
+    cid = canal_id("instagram")
+    return f"conectado ({cid})" if cid else "ainda não conectado (opcional; TikTok + YouTube seguem normal)"
 
 
 def canal_id(rede: str) -> str | None:
@@ -237,13 +249,22 @@ def textos(ep: dict, p: dict) -> dict:
         # title já vem com o código no formato "cafe" (ex.: "T1 E01 · o primeiro..."); no formato "licao" não vem.
         titulo = (ep["title"] if ep["title"].startswith(cod) else f"{cod} · {ep['title']}")[:100]
         legenda = ctx.get("legenda") or ep.get("canDo") or ep["title"]
-        texto = f"{titulo}\n\n{legenda}\n\n{tags}" if p["rede"] != "tiktok" else f"{cod} | {legenda.lower()} {tags}"
+        if p["rede"] == "tiktok":
+            texto = f"{cod} | {legenda.lower()} {tags}"
+        elif p["rede"] == "instagram":
+            # legenda própria do Instagram: sem o prefixo de código do YouTube, sem o "cod |" do TikTok.
+            texto = f"{legenda}\n\n{tags}"
+        else:
+            texto = f"{titulo}\n\n{legenda}\n\n{tags}"
     else:
         esq = next((e for e in ep.get("esquetes") or [] if e.get("id") == p.get("corte")), {})
         cta = esq.get("cta") or f"aula completa no {cod.split()[-1].replace('E', 'EP ')}"
         gancho = esq.get("gancho") or ep.get("hookTitle") or ep["title"]
         titulo = f"{gancho} · {cod}"[:100]
-        texto = f"{gancho.lower()} · {cta} {tags}"
+        if p["rede"] == "instagram":
+            texto = f"{gancho}\n\n{cta} {tags}"
+        else:
+            texto = f"{gancho.lower()} · {cta} {tags}"
     return {"titulo": titulo, "texto": texto[:2200]}
 
 
@@ -382,6 +403,7 @@ def main() -> None:
     if args.listar:
         ok, msg = acesso_ok()
         print(("OK: " if ok else "FALHOU: ") + msg)
+        print(f"Instagram: {status_instagram()}")
         sys.exit(0 if ok else 1)
     dia = dt.date.fromisoformat(args.data) if args.data else dt.datetime.now(BRT).date()
     if args.teste_rascunho:
