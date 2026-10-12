@@ -233,31 +233,36 @@ class GeminiQuotaError(RuntimeError):
     """429 persistente: a rotina deve parar e avisar quantas falas faltaram (nunca cair pro Kokoro em silêncio)."""
 
 
-def _gemini_key(speaker: str, lang: str, mode: str, speed: float, text: str, voice: str) -> str:
-    return hashlib.sha256("|".join([speaker, lang, mode, _num(speed), text, voice, GEMINI_MODEL_CAFE]).encode()).hexdigest()[:16]
+def _gemini_key(speaker: str, lang: str, mode: str, speed: float, text: str, voice: str,
+                 model: str = GEMINI_MODEL_CAFE) -> str:
+    return hashlib.sha256("|".join([speaker, lang, mode, _num(speed), text, voice, model]).encode()).hexdigest()[:16]
 
 
 _gemini_pedidos = 0  # contador de chamadas reais (fora do cache) nesta execução
 
 
-def synth_gemini(text: str, lang: str, speaker: str, speed: float) -> tuple["np.ndarray", int]:
+def synth_gemini(text: str, lang: str, speaker: str, speed: float,
+                  model: str = GEMINI_MODEL_CAFE, cache_dir: Path | None = None) -> tuple["np.ndarray", int]:
     """1 chamada por FALA (não por pedaço): o Gemini lê a pontuação/instrução como pausa, sem stitching manual.
-    Cacheada por hash em public/audio/_cache_gemini/ (reaproveita entre V1/V2/V3 e entre re-renders)."""
+    Cacheada por hash em public/audio/_cache_gemini/ (reaproveita entre V1/V2/V3 e entre re-renders).
+    `model`/`cache_dir` permitem reaproveitar esta função com outro modelo Gemini (cota separada) e outra
+    pasta de cache, sem misturar com a cota/arquivos do motor padrão (GEMINI_MODEL_CAFE/GEMINI_CACHE)."""
     global _gemini_pedidos
     import io
     import numpy as np
     import soundfile as sf
+    cache = cache_dir or GEMINI_CACHE
     speaker = ALIAS.get(speaker, speaker)
     voice = GEMINI_VOICE.get(speaker, GEMINI_VOICE["capi"])
-    GEMINI_CACHE.mkdir(parents=True, exist_ok=True)
-    key = _gemini_key(speaker, lang, "fala", speed, text, voice)
-    cache_f = GEMINI_CACHE / f"{key}.wav"
+    cache.mkdir(parents=True, exist_ok=True)
+    key = _gemini_key(speaker, lang, "fala", speed, text, voice, model)
+    cache_f = cache / f"{key}.wav"
     if cache_f.exists():
         audio, sr = sf.read(cache_f, dtype="float32")
         return audio, sr
     from teste_voz import GEMINI_API, http  # import tardio: evita import circular (teste_voz importa tts.synth em runtime)
     corpo = speech_text(text, lang)  # só o texto da fala: instrução em prefixo é lida em voz alta (ver nota acima)
-    url = f"{GEMINI_API}/models/{GEMINI_MODEL_CAFE}:generateContent"
+    url = f"{GEMINI_API}/models/{model}:generateContent"
     body = {"contents": [{"parts": [{"text": corpo}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}

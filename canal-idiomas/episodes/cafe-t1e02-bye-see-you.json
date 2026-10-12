@@ -1,0 +1,61 @@
+{
+  "id": "cafe-t1e02-bye-see-you",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 2,
+    "codigo": "T1 E02",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 2,
+    "progresso": "você já sabe 2 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo me despedir de alguém usando fórmulas simples e educadas.",
+  "title": "T1 E02 · a Capy não sabe ir embora ☕",
+  "hookTitle": "ela saiu em 2 palavras",
+  "alvo": {
+    "en": "Bye! See you!",
+    "pt": "Tchau! Até mais!",
+    "variacoes": ["See you, Capy."]
+  },
+  "cast": ["capi", "hank", "lazy", "duda"],
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 2,
+  "beats": [
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Bye." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Acabou meu turno. Como eu saio sem ser mal-educada?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você aprende a ir embora em inglês. Tchau, e até mais." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true,
+      "text": "Bye!... See... you!" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "O 'see' é comprido, igual meu bocejo. Não é 'si'." },
+    { "tipo": "pausa", "s": 0.8, "react": { "capi": "happy" } },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true,
+      "text": "Bye! See you!" },
+    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: Bye! See you!" },
+    { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye!... See you!" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "tipo": "pausa", "s": 0.6, "react": { "hank": "smile" } },
+    { "speaker": "hank", "lang": "en", "emotion": "smile", "alvo": "variacao", "text": "See you, Capy." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy",
+      "text": "Ele disse 'see you'. Quer dizer que eu volto amanhã." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.4, "emotion": "happy",
+      "text": "Se despede da Capy aqui: Bye! See you!",
+      "cardTexto": "CONSIGO me despedir ✓" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 1 (como a Capy se despede): abre já no meio da ação, não na fórmula porta+corte+card",
+    "sem card CONSIGO parado no início: objetivo dito pelo Lazy por cima da ação, card só no fim",
+    "som da vez: o bocejo comprido do Lazy = /iː/ longo (see/three/meet)",
+    "vitória do dia: 1ª saída em inglês, selo 'T1 E02 · você já sabe 2 frases'",
+    "variação do Hank ('See you, Capy.') dá exposição extra sem ensinar vocabulário novo"
+  ]
+}

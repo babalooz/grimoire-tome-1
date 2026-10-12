@@ -7,3 +7,4 @@ __pycache__/
 fila/*.mp4
 teste-voz/
 voz-gota-resumo.json
+estoque-voz-*-resumo.json

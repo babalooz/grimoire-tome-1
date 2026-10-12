@@ -1,0 +1,60 @@
+{
+  "id": "cafe-t1e02-bye-see-you-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 2,
+    "codigo": "T1 E02 · parte 2/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 2,
+    "progresso": "você já sabe 2 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo me despedir de alguém usando fórmulas simples e educadas.",
+  "title": "T1 E02 · parte 2/3 · a noite da estreia ☕",
+  "hookTitle": "fim da estreia: hora de dar tchau em inglês",
+  "alvo": {
+    "en": "Bye! See you!",
+    "pt": "Tchau! Até mais!",
+    "variacoes": ["Bye, guys!", "Bye, Capy!", "See you, Poppy!", "Bye!"]
+  },
+  "cast": ["capi", "lazy", "poppy", "turista"],
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 2,
+  "beats": [
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy",
+      "text": "Melhor noite do ano! E agora todo mundo vai embora..." },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy",
+      "text": "Hoje você vai se despedir de gringo de verdade. Tá gravando!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye, guys!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "surprised",
+      "text": "Ele vai falar tchau. E dessa vez eu sei." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye!... See... you!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye, Capy!" },
+    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: despeça-se do Rick" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "See you, Poppy!" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye!" },
+    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: de novo, você é a Capy" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy",
+      "text": "Você se despediu de metade da fila!" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.2, "emotion": "happy",
+      "text": "Cheguei com medo. Saí dando tchau em inglês.",
+      "cardTexto": "você se despediu de 3 gringos · CONSIGO ✓" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "excited",
+      "text": "Olha! Um gringo perguntou seu nome!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Perguntar o nome... isso eu ainda não sei." }
+  ],
+  "gatilhos": [
+    "hype anglófono: saída de uma estreia gringa (ex. Street Fighter 15/10), reserva atemporal = turista no café",
+    "'você é a Capy' no enredo: a fala dela some e o aluno responde ao Rick",
+    "gancho verdadeiro pro próximo capítulo: 'What's your name?' aparece só como texto de comentário, sem voz",
+    "variações (Bye guys / Bye Capy / See you Poppy / Bye!) dão 4 exposições extras do bloco",
+    "o Hank não aparece neste vídeo: quem traz o hype é a Poppy + os fãs gringos"
+  ]
+}
