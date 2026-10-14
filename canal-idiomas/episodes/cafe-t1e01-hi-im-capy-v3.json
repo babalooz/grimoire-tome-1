@@ -40,9 +40,9 @@
       "text": "A B também dá pra entender. A A é mais inglês." },
     { "speaker": "poppy", "lang": "en", "emotion": "neutral", "alvo": "variacao", "vapor": true,
       "text": "Hi! I'm Poppy." },
-    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "thinking",
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "thinking", "hold": 0.6,
       "text": "Quem foi? Eu conheço essa voz." },
-    { "tipo": "pausa", "s": 1.0, "react": { "poppy": "happy" } },
+    { "tipo": "pausa", "s": 3.0, "react": { "poppy": "happy" } },
     { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": "variacao", "vapor": true,
       "text": "Hi! I'm Poppy." },
     { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Com o seu nome." },
@@ -53,15 +53,19 @@
     { "speaker": "hank", "lang": "en", "emotion": "neutral", "sfx": ["tick"], "text": "Hi!" },
     { "speaker": "bolinha", "lang": "en", "emotion": "happy", "alvo": true, "bolinha": true, "vapor": true,
       "text": "Hi! I'm Capy." },
-    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
-    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.4, "emotion": "happy",
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "hold": 0.4, "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.8, "emotion": "happy",
       "text": "Três vídeos. Uma frase. Ela é sua.",
-      "cardTexto": "CONSIGO cumprimentar e dizer meu nome ✓" }
+      "cardTexto": "CONSIGO cumprimentar e dizer meu nome ✓" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.4, "emotion": "happy",
+      "text": "Sotaque não é erro: o objetivo é ser entendido.",
+      "cardTexto": "próximo assunto: Bye! See you! · segue a Capy" }
   ],
   "gatilhos": [
     "reconhecer antes de produzir (EF: entender × dizer)",
-    "rodada 2 (quem falou?) sem o cartão de pergunta formal: só 1 pergunta por vídeo no portão",
+    "rodada 2 (quem falou?) sem o cartão de pergunta formal: só 1 pergunta por vídeo no portão (a pausa de 3 s substitui o contador)",
     "2 SUA VEZ (nome com a Capy, cumprimentar o Hank) fecham o assunto 1",
-    "revisão espaçada: Bolinha guarda e devolve"
+    "revisão espaçada: Bolinha guarda e devolve",
+    "card final reaproveita a fala 'Sotaque não é erro: o objetivo é ser entendido.' já sintetizada no V1 (mesmo hash, cota zero; sem inglês dentro da fala pt)"
   ]
 }
