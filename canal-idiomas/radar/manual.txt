@@ -1,15 +1,17 @@
-# TikTok BR — camada manual do radar (gerada pela rotina 2026-10-12)
-# 6 buscas web (trend tiktok brasil hoje / meme do momento tiktok brasil outubro 2026 / áudio viral tiktok semana
-# outubro 2026 brasil / NBA temporada 2026-27 início outubro 2026 / lançamento filme série Netflix Hollywood
-# outubro 2026 viral brasil / bordão viral tiktok brasil essa semana). Nenhuma deu dado novo e confiável de
-# tendência das últimas 24-48h (resultados genéricos, antigos ou sem data); ver radar/2026-10-12.md para o
-# que o filtro de segurança já descartou sozinho hoje. Views/vídeos: endpoint público /api/challenge/detail
-# testado hoje (halloween, sixseven) -> HTTP 200, corpo vazio = "não medido" (mesma falha já documentada no
-# radar.py; confirma que a medição via nuvem continua indisponível, só o PC mede).
-# Descartado: "6 7" / "six seven" — o próprio radar.py já descartou hoje por motivo novo (ligação com as
-# Eleições 2026, "mais de 3 mil eleitores votaram por engano"); mantém descartado, agora também por eleição,
-# além do risco de "feito para crianças" já registrado em docs/tiktok-nativo.md §2.
-# Netflix BR tem estreias em inglês este mês (A Diplomata T4 em 15/10, Lupin parte 4 em 23/10) — achado por
-# busca, sem confirmação de viralização no TikTok agora; não é hashtag, não entra aqui. Avaliar perto da data.
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-14)
+# 2026-10-14: 6 buscas web (trend tiktok brasil hoje outubro 2026 / meme do momento tiktok brasil semana /
+# áudio viral tiktok brasil essa semana / tiktok trending hashtags brazil october 2026 / "six seven"+"67" meme
+# tiktok origem Skrilla views / Halloween 2026 tiktok trend brasil outubro). Nenhuma achou tendência nova e
+# confiável das últimas 24-48h no TikTok BR (resultados genéricos, sem data ou de 2025). Endpoint público
+# /api/challenge/detail testado de novo hoje (67, sixseven, halloween, halloweentiktok) -> sem resposta =
+# "não medido" (mesma falha já documentada no radar.py; confirma que a medição via nuvem continua
+# indisponível, só o PC mede).
+# "6 7" / "six seven": confirmado por fonte (Know Your Meme) que é meme de origem americana (música "Doot
+# Doot" do Skrilla, dez/2024; viralizou nos EUA via edits de basquete/LaMelo Ball em jan/2025) — pulxa inglês
+# em tese, mas CONTINUA FORA: já tem quase 2 anos (Dictionary.com Word of the Year 2025, não é trend fresca),
+# o próprio radar já o descartou em 2026-10-12 por ligação com as Eleições 2026, e carrega risco de "feito
+# para crianças" (geração Alpha, escolas proibindo) — ver docs/tiktok-nativo.md §2/§4.
+# Sem novidade segura e fresca hoje -> mantidos os 2 aprovados anteriores (ainda válidos: eventos futuros,
+# não passaram da data).
 Halloween
 NBA temporada 2026-27 (estreia 20/10)
