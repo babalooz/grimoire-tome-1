@@ -1,16 +1,12 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-14)
-# 2026-10-14: 6 buscas web (trend tiktok brasil hoje outubro 2026 / meme do momento tiktok brasil semana /
-# áudio viral tiktok brasil essa semana / tiktok trending hashtags brazil october 2026 / "six seven"+"67" meme
-# tiktok origem Skrilla views / Halloween 2026 tiktok trend brasil outubro). Nenhuma achou tendência nova e
-# confiável das últimas 24-48h no TikTok BR (resultados genéricos, sem data ou de 2025). Endpoint público
-# /api/challenge/detail testado de novo hoje (67, sixseven, halloween, halloweentiktok) -> sem resposta =
-# "não medido" (mesma falha já documentada no radar.py; confirma que a medição via nuvem continua
-# indisponível, só o PC mede).
-# "6 7" / "six seven": confirmado por fonte (Know Your Meme) que é meme de origem americana (música "Doot
-# Doot" do Skrilla, dez/2024; viralizou nos EUA via edits de basquete/LaMelo Ball em jan/2025) — pulxa inglês
-# em tese, mas CONTINUA FORA: já tem quase 2 anos (Dictionary.com Word of the Year 2025, não é trend fresca),
-# o próprio radar já o descartou em 2026-10-12 por ligação com as Eleições 2026, e carrega risco de "feito
-# para crianças" (geração Alpha, escolas proibindo) — ver docs/tiktok-nativo.md §2/§4.
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-15)
+# 2026-10-15: 6 buscas web (trend tiktok brasil hoje outubro 2026 / meme do momento tiktok brasil semana /
+# áudio viral tiktok semana outubro 2026 / tiktok trending hashtags brazil october 2026 / viralizou no tiktok
+# essa semana brasil / Halloween 2026 tiktok trend brasil outubro). Nenhuma achou tendência nova e confiável
+# das últimas 24-48h no TikTok BR: resultados genéricos, sem data, de 2025 ou anteriores (ex.: "six seven" segue
+# sendo citado, mas como meme antigo de meses atrás, já descartado por ligação com as Eleições 2026 — ver
+# radar/2026-10-15.md descartados). Endpoint público /api/challenge/detail testado de novo hoje (halloween,
+# halloweentiktok, nba, nbabrasil, sixseven) -> resposta vazia = "não medido" (mesma falha documentada no
+# radar.py; confirma que a medição via nuvem continua indisponível, só o PC mede).
 # Sem novidade segura e fresca hoje -> mantidos os 2 aprovados anteriores (ainda válidos: eventos futuros,
 # não passaram da data).
 Halloween

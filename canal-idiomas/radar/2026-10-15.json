@@ -1,0 +1,563 @@
+{
+  "version": 2,
+  "date": "2026-10-15",
+  "evento_do_dia": {
+    "hoje": [
+      {
+        "id": "libertadores-semis-ida",
+        "evento": "Libertadores semis (ida): Fluminense x Palmeiras (14/10) e Estudiantes x Flamengo (15/10)",
+        "data_inicio": "2026-10-14",
+        "data_fim": "2026-10-15",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Futebol em inglês: goal, penalty, offside, extra time; 'the match was very emotioned' (erro) -> exciting/thrilling.",
+        "ganchos_ingles": [
+          "goal",
+          "penalty",
+          "offside",
+          "extra time",
+          "thrilling"
+        ],
+        "status": "verificado"
+      },
+      {
+        "id": "dia-do-professor",
+        "evento": "Dia do Professor",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-15",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Capy homenageia os professores: frases de sala de aula; como o aluno BR chama o professor ('Teacher!') x nativo (Mr./Ms. + sobrenome); 'teacher's pet'.",
+        "ganchos_ingles": [
+          "teacher's pet",
+          "Mr./Ms.",
+          "homework",
+          "pop quiz"
+        ],
+        "status": "fixo"
+      },
+      {
+        "id": "street-fighter-estreia",
+        "evento": "Estreia de Street Fighter nos cinemas",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-16",
+        "categoria": "cinema",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Vocabulário de games/luta: 'Round 1, Fight!', K.O. = knockout, combo, 'you win'. Sem imagem/áudio do filme.",
+        "ganchos_ingles": [
+          "knockout",
+          "round",
+          "combo",
+          "fight"
+        ],
+        "status": "fonte única"
+      }
+    ],
+    "preparar": [],
+    "proximos": [
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado",
+        "faltam_dias": 6
+      },
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 10
+      },
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 13
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Montevideo City Torque",
+      "score": 5.64,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "5.763 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "clube de futebol uruguaio",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Montevideo City Torque' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Montevideo_City_Torque"
+    },
+    {
+      "termo": "Copa do Nordeste de Futebol de 2026",
+      "score": 5.25,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.150 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "23.ª edição da Copa do Nordeste",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Copa do Nordeste de Futebol de 2026' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Copa_do_Nordeste_de_Futebol_de_2026"
+    },
+    {
+      "termo": "Antonio Rüdiger",
+      "score": 5.16,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "2.750 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista alemão",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Antonio Rüdiger' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Antonio_R%C3%BCdiger"
+    },
+    {
+      "termo": "novo byd dolphin",
+      "score": 4.5,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "1.000+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "BYD Dolphin Mini 2027 já está nas lojas, mas guarda novidades para quem paga mais",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'novo byd dolphin' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://motor1.uol.com.br/news/811833/byd-dolphin-mini-2027-concessionaria/"
+    },
+    {
+      "termo": "Clarence Seedorf",
+      "score": 4.19,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "15.511 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "treinador e ex-futebolista neerlandês",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Clarence Seedorf' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Clarence_Seedorf"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.19,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#61 Spotify BR. 265.833 streams/dia. 208 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#61)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Justin Bieber - Beauty And A Beat (w/ Nicki Minaj)",
+      "score": 4.0,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#137 Spotify BR. 180.694 streams/dia. 163 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "justin bieber em inglês",
+        "justin bieber música em inglês",
+        "frases do justin bieber em inglês",
+        "biografia do justin bieber em inglês",
+        "justin bieber baby letra em inglês",
+        "como se escreve justin bieber em inglês",
+        "como se fala justin bieber em inglês",
+        "o que significa justin bieber em inglês",
+        "letra da música do justin bieber em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#137)",
+      "sugestao_aula": "'Justin Bieber - Beauty And A Beat (w/ Nicki Minaj)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "BTS - NORMAL",
+      "score": 3.96,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#164 Spotify BR. 164.006 streams/dia. 165 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#164)",
+      "sugestao_aula": "'BTS - NORMAL': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Linkin Park - In the End",
+      "score": 3.31,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#156 Spotify BR. 168.599 streams/dia. 668 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "linkin park em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#156)",
+      "sugestao_aula": "'Linkin Park - In the End': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "NBA temporada 2026-27 (estreia 20/10)",
+      "score": 3.0,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA temporada 2026-27 (estreia 20/10)' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "exército dos estados unidos",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"trump\" em \"Trump envia centenas de soldados à América Latina e amplia pressão militar dos EUA sobre a\""
+    },
+    {
+      "termo": "giorgian de arrascaeta",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"candidato\" em \"Candidato à presidência do Peñarol diz que fará o \"impossível\" para tirar Arrascaeta do Fl\""
+    },
+    {
+      "termo": "irã",
+      "fonte": "google-trends",
+      "motivo": "violência: \"bombas\" em \"Exclusivo: EUA avaliam “mãe de todas as bombas” contra Irã, dizem fontes\""
+    },
+    {
+      "termo": "test",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"president\" em \"Live updates: President Trump campaigns in Kalispell\""
+    },
+    {
+      "termo": "supermercado",
+      "fonte": "google-trends",
+      "motivo": "violência: \"ataque\" em \"Ataque hacker sem precedentes causa prejuízo milionário a mais de 500 supermercados na Fra\""
+    },
+    {
+      "termo": "lito sousa",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"luto\" em \"Viúva de Lito Sousa fala sobre luto e 'sinal' que recebeu do influenciador\""
+    },
+    {
+      "termo": "Netinho",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"Netinho, nome artístico de Ernesto de Souza Andrade Júnior (Santo Antônio de Jesus, 12 de \""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "TV Senado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"senado\" em \"TV Senado\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "RJ Mitte",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"ator norte-americano (1992–2026)\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "Keiko Fujimori",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política peruana, Presidente do Peru\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Paulo Marinho",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Paulo Roberto Franco Marinho (Rio de Janeiro, 5 de março de 1952) é um empresário, executi\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Lizzie Borden",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"suspeita\" em \"norte-americana suspeita de cometer assassinato (1860–1927)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Eduarda Campopiano",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Carlo Acutis",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: \"morte\" em \"Carlo Acutis (Londres, 3 de maio de 1991 – Monza, 12 de outubro de 2006) foi um adolescent\""
+    },
+    {
+      "termo": "7Games",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"apostas\" em \"Empresa brasileira de apostas esportivas e jogos de cassino online\""
+    },
+    {
+      "termo": "Lucas Pavanato",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e vereador da cidade de São Paulo desde 2025\""
+    },
+    {
+      "termo": "Nunes Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"ministro\" em \"magistrado brasileiro, ministro do Supremo Tribunal Federal\""
+    },
+    {
+      "termo": "Papa João Paulo I",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: \"morte\" em \"João Paulo I (em latim: Ioannes Paulus I; em italiano: Giovanni Paolo I), nascido Albino L\""
+    },
+    {
+      "termo": "six seven",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"presidente\" em \"Meme “six seven” coincide com 3.539 votos nulos para presidente em 2026\""
+    },
+    {
+      "termo": "Sua banda é horrível",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"renan santos\" em \"“Sua banda é horrível”: Encontro entre Duda Hidalgo e Renan Santos viraliza nas redes soci\""
+    },
+    {
+      "termo": "Eu sou o mais forte",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"prisao\" em \"Quando um bordão vira prisão: dublador de Gojo lamenta “Eu sou o mais forte” e joga luz na\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "7games",
+    "aeroporto",
+    "alex warren - ordinary",
+    "andre janones",
+    "antonio rudiger",
+    "aposentadoria especial",
+    "avengers: doomsday",
+    "bts - normal",
+    "bts - swim",
+    "carlo acutis",
+    "che guevara",
+    "clarence seedorf",
+    "copa do nordeste de futebol de 2026",
+    "daniel vorcaro",
+    "daniella marques",
+    "dominic fike - babydoll",
+    "eduarda campopiano",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "erika hilton",
+    "eu sou o mais forte",
+    "evanescence - bring me to life",
+    "exercito dos estados unidos",
+    "fernando henrique cardoso",
+    "flash",
+    "flavio bolsonaro",
+    "giorgian de arrascaeta",
+    "giulia be",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "harry styles - sign of the times",
+    "ira",
+    "jair bolsonaro",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "keiko fujimori",
+    "la na minha terra",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "lito sousa",
+    "lizzie borden",
+    "lucas pavanato",
+    "luiz gonzaga",
+    "luiz inacio lula da silva",
+    "malcolm todd - earrings",
+    "marco veio",
+    "martim sousa tavares",
+    "michael jackson - billie jean",
+    "montevideo city torque",
+    "nba temporada 2026-27 (estreia 20/10)",
+    "netinho",
+    "nikolas ferreira",
+    "novo byd dolphin",
+    "nunes marques",
+    "oasis - wonderwall - remastered",
+    "papa joao paulo i",
+    "papa leao xiv",
+    "paulo marinho",
+    "pedro emanuel",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "petrobras",
+    "renan santos",
+    "rj mitte",
+    "shawn mendes - treat you better",
+    "six seven",
+    "sobrinho meme",
+    "sombr - back to friends",
+    "sua banda e horrivel",
+    "supermercado",
+    "taylor swift - the fate of ophelia",
+    "test",
+    "the goo goo dolls - iris",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "tom morello",
+    "trace brasil",
+    "tv senado",
+    "wellington de queiroz vieira"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 19 itens",
+    "tiktok: 7 itens",
+    "manual: 2 itens"
+  ]
+}
