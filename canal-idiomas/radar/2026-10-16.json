@@ -1,0 +1,518 @@
+{
+  "version": 2,
+  "date": "2026-10-16",
+  "evento_do_dia": {
+    "hoje": [
+      {
+        "id": "street-fighter-estreia",
+        "evento": "Estreia de Street Fighter nos cinemas",
+        "data_inicio": "2026-10-15",
+        "data_fim": "2026-10-16",
+        "categoria": "cinema",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Vocabulário de games/luta: 'Round 1, Fight!', K.O. = knockout, combo, 'you win'. Sem imagem/áudio do filme.",
+        "ganchos_ingles": [
+          "knockout",
+          "round",
+          "combo",
+          "fight"
+        ],
+        "status": "fonte única"
+      }
+    ],
+    "preparar": [],
+    "proximos": [
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado",
+        "faltam_dias": 5
+      },
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 9
+      },
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 12
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Marlon Freitas",
+      "score": 5.26,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.225 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista brasileiro",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Marlon Freitas' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Marlon_Freitas"
+    },
+    {
+      "termo": "Paulo Henrique Ganso",
+      "score": 5.13,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "2.650 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista brasileiro",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Paulo Henrique Ganso' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Paulo_Henrique_Ganso"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.21,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#61 Spotify BR. 275.718 streams/dia. 209 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#61)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Avenida Brasil 2",
+      "score": 4.1,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "2.617 views na Wikipédia",
+      "categoria": "TV/reality",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Telenovela brasileira de 2027 produzida pela TV Globo",
+      "sugestao_aula": "Como se diz o vocabulário de 'Avenida Brasil 2' em inglês (eviction, to be voted out, challenge).",
+      "url": "https://pt.wikipedia.org/wiki/Avenida_Brasil_2"
+    },
+    {
+      "termo": "BTS - NORMAL",
+      "score": 3.98,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#170 Spotify BR. 170.785 streams/dia. 166 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#170)",
+      "sugestao_aula": "'BTS - NORMAL': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Clarence Seedorf",
+      "score": 3.96,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "9.102 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "treinador e ex-futebolista neerlandês",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Clarence Seedorf' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Clarence_Seedorf"
+    },
+    {
+      "termo": "The Neighbourhood - Reflections",
+      "score": 3.6,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#125 Spotify BR. 200.394 streams/dia. 4 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#125)",
+      "sugestao_aula": "'The Neighbourhood - Reflections': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Antonio Rüdiger",
+      "score": 3.54,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.486 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "futebolista alemão",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Antonio Rüdiger' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Antonio_R%C3%BCdiger"
+    },
+    {
+      "termo": "atp shanghai",
+      "score": 3.0,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Licensable picture: ATP Masters 1000 - Shanghai Masters",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'atp shanghai' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://www.reutersconnect.com/item/atp-masters-1000-shanghai-masters/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQUcwTUZVVzA"
+    },
+    {
+      "termo": "rafael jodar",
+      "score": 3.0,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Hot Shot: Ruud desborda a Jódar con un gran intercambio en Shanghái",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'rafael jodar' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://www.atptour.com/es/video/hot-shot-ruud-outrallies-jodar-in-absorbing-opening-point-to-shanghai-2026-qf"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "mãe",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"acusada\" em \"Mãe acusada de matar marido e filho de 3 anos em resort nos EUA teria usado aposentadoria \""
+    },
+    {
+      "termo": "idoso",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"preso\" em \"Idoso de 72 anos é resgatado em situação de abandono e homem é preso em Coroatá\""
+    },
+    {
+      "termo": "test",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"trump\" em \"At Kalispell Rally, Trump Urges Montanans to ‘Get Out and Vote’\""
+    },
+    {
+      "termo": "calendário do bolsa família 2026",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"governo\" em \"Governo aguarda designação do relator do Orçamento para enviar ajustes na proposta ao Cong\""
+    },
+    {
+      "termo": "br-232",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"morre\" em \"Mulher morre após carreta tombar em cima de carro na BR-232; duas pessoas ficam feridas\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Hamilton Mourão",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"militar e político brasileiro, 25.º vice-presidente do Brasil (2019–2023) e Senador da Rep\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Márcio Canella",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro; prefeito de Belford Roxo\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Netinho",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"Netinho, nome artístico de Ernesto de Souza Andrade Júnior (Santo Antônio de Jesus, 12 de \""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Rick Azevedo",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político e ativista brasileiro\""
+    },
+    {
+      "termo": "TV Senado",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"senado\" em \"TV Senado\""
+    },
+    {
+      "termo": "RJ Mitte",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"ator norte-americano (1992–2026)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "7Games",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"apostas\" em \"Empresa brasileira de apostas esportivas e jogos de cassino online\""
+    },
+    {
+      "termo": "União Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"uniao brasil\" em \"União Brasil\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Davi Alcolumbre",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro; 66º e 68° presidente do Senado Federal do Brasil (2019–2021; 2025–pre\""
+    },
+    {
+      "termo": "Paulo Paim",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Fernando Collor",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"32.º presidente do Brasil (1990–1992)\""
+    },
+    {
+      "termo": "Lucas Pavanato",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e vereador da cidade de São Paulo desde 2025\""
+    },
+    {
+      "termo": "O Assunto",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"congresso\" em \"Fim da escala 6x1: como reclamação de balconista de farmácia nas redes virou pauta aprovad\""
+    },
+    {
+      "termo": "six seven",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"presidente\" em \"Meme “six seven” coincide com 3.539 votos nulos para presidente em 2026\""
+    },
+    {
+      "termo": "Eu sou o mais forte",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"prisao\" em \"Quando um bordão vira prisão: dublador de Gojo lamenta “Eu sou o mais forte” e joga luz na\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "7games",
+    "alex warren - ordinary",
+    "andre janones",
+    "antonio rudiger",
+    "atp shanghai",
+    "avenida brasil 2",
+    "br-232",
+    "bts - normal",
+    "bts - swim",
+    "calendario do bolsa familia 2026",
+    "che guevara",
+    "clarence seedorf",
+    "daniel vorcaro",
+    "daniella marques",
+    "davi alcolumbre",
+    "dia do professor",
+    "dominic fike - babydoll",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "erika hilton",
+    "eu sou o mais forte",
+    "evanescence - bring me to life",
+    "fernando collor",
+    "fernando henrique cardoso",
+    "flash",
+    "flavio bolsonaro",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "hamilton mourao",
+    "harry styles - sign of the times",
+    "idoso",
+    "jair bolsonaro",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "la na minha terra",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "lucas pavanato",
+    "luiz inacio lula da silva",
+    "mae",
+    "malcolm todd - earrings",
+    "marcio canella",
+    "marco veio",
+    "marlon freitas",
+    "meus meninos",
+    "michael jackson - billie jean",
+    "nba temporada 2026-27 (estreia 20/10)",
+    "nelson tanure",
+    "netinho",
+    "nikolas ferreira",
+    "o assunto",
+    "oasis - wonderwall - remastered",
+    "paulo henrique ganso",
+    "paulo paim",
+    "pec do fim da escala 6x1",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "previsao do tempo belo horizonte",
+    "previsao do tempo para hoje",
+    "provoca",
+    "quem autorizou essa obra?",
+    "rafael camara",
+    "rafael jodar",
+    "renan santos",
+    "rick azevedo",
+    "rj mitte",
+    "rosangela lula da silva",
+    "sera que aguenta?",
+    "shawn mendes - treat you better",
+    "six seven",
+    "sombr - back to friends",
+    "teresa de avila",
+    "test",
+    "the goo goo dolls - iris",
+    "the neighbourhood - reflections",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "trace brasil",
+    "tv senado",
+    "uniao brasil",
+    "wsl"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 19 itens",
+    "tiktok: 9 itens",
+    "manual: 2 itens"
+  ]
+}
