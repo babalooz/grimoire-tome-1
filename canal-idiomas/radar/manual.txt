@@ -1,14 +1,13 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-16)
-# 2026-10-16: 6 buscas web (trend tiktok brasil hoje 16 outubro 2026 / meme do momento tiktok brasil semana
-# outubro 2026 / áudio viral tiktok semana outubro 2026 brasil / tiktok trending hashtags brazil october 2026 /
-# viralizou no tiktok essa semana brasil outubro 2026 / bordão viral tiktok brasil essa semana). Nenhuma achou
-# tendência nova e confiável das últimas 24-48h no TikTok BR: resultados sem data, genéricos ou de meses/anos
-# anteriores (ex.: "six seven"/"6 7" ainda citado, mas como meme antigo, e já descartado por ligação com as
-# Eleições 2026 — ver radar/2026-10-16.md descartados; "A Seleção Chegou" e "Garçom, tem Pitú?" sem fonte de
-# 24-48h). Endpoint público /api/challenge/detail testado de novo hoje (streetfighter, nba, halloweentiktok,
-# bts, arirang, sixseven) -> resposta vazia para todos = "não medido" (mesma falha documentada no radar.py;
-# confirma que a medição via nuvem continua indisponível, só o PC mede).
-# Sem novidade segura e fresca hoje -> mantidos os 2 aprovados anteriores (ainda válidos: eventos futuros,
-# não passaram da data).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-17)
+# 2026-10-17: 6 buscas web (trend tiktok brasil hoje 17 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / hashtag viral tiktok brasil esta semana outubro 2026 / "viralizou no
+# tiktok" outubro 2026 / tiktok trending hashtags brazil october 2026 news). Nenhuma achou tendência nova e
+# confiável das últimas 24-48h no TikTok BR: resultados sem data, genéricos ou de meses/anos anteriores (ex.:
+# "six seven"/"6 7" ainda citado, mas como meme antigo de abril/2026, já descartado antes por overlap com conteúdo
+# sensível; nenhuma fonte de 24-48h encontrada hoje). Endpoint público /api/challenge/detail testado de novo hoje
+# (halloweentiktok, nba, libertadores, bts) -> HTTP 200 mas corpo vazio para todos = "não medido" (mesma falha
+# documentada no radar.py e no dia 16/10; confirma que a medição via nuvem continua indisponível, só o PC mede).
+# Sem novidade segura e fresca hoje -> mantidos os 2 aprovados anteriores (ainda válidos: eventos futuros, não
+# passaram da data).
 Halloween
 NBA temporada 2026-27 (estreia 20/10)
