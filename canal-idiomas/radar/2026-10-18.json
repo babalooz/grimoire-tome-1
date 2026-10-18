@@ -1,0 +1,371 @@
+{
+  "version": 2,
+  "date": "2026-10-18",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado",
+        "faltam_dias": 3
+      }
+    ],
+    "proximos": [
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 7
+      },
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 10
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 13
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "tédio",
+      "score": 5.62,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "tédio em inglês",
+        "tédio em inglês divertidamente",
+        "tedio em inglês tradutor",
+        "como fala tédio em inglês",
+        "como escreve tédio em inglês",
+        "morrer de tédio em inglês",
+        "estou com tédio em inglês",
+        "como se diz tédio em inglês",
+        "como se escreve tédio em inglês",
+        "como se fala tédio em inglês",
+        "como se chama tédio em inglês"
+      ],
+      "contexto": "Uma usuária do TikTok viraliza com uma série de vídeos constrangedores: tudo começa com a sensação de \"tédio\".",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'tédio' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0xkQnRyNXZ0eTkyWUR2OS10QTR3aWlaRjMwcUZmdUttUmFySzdHQmQzQlBTdVR3QWpobl8wazZOcmdNWVpnQUI2N3lONmdoTFMzMXdqT1J4eVZuUjhZaXdtNHBLaUVtQmhSUTdJaEgtaTc3NEQ4bFMxMFcyNGhDcG4tTTNseHlMckkzX2ZvRHJ2QURyR0Y0ZmFma3BfUjNlWWVHWg?oc=5"
+    },
+    {
+      "termo": "mcdonald's",
+      "score": 4.5,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "mcdonald's em inglês",
+        "quarteirão mcdonald's em inglês",
+        "seu mcdonald's em inglês",
+        "fala mcdonald's em inglês",
+        "como escreve mcdonald's em inglês",
+        "slogan do mcdonald's em inglês",
+        "como pronuncia mcdonald's em inglês",
+        "propaganda do mcdonald's em inglês",
+        "música do mcdonald's em inglês",
+        "cardápio do mcdonald's em inglês",
+        "como se diz mcdonald's em inglês",
+        "como se escreve mcdonald's em inglês",
+        "como se fala mcdonald's em inglês",
+        "como se pronuncia mcdonald's em inglês"
+      ],
+      "contexto": "F1: McDonald’s e Red Bull lançam ‘O Pit Stop Perfeito' com novas miniaturas colecionáveis",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'mcdonald's' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://motorsport.uol.com.br/f1/news/f1-mcdonalds-e-red-bull-lancam-o-pit-stop-perfeito-com-novas-miniaturas-colecionaveis-/10865052/"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.2,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#93 Spotify BR. 271.987 streams/dia. 211 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#93)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.74,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#89 Spotify BR. 277.300 streams/dia. 31 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#89)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "The Neighbourhood - Reflections",
+      "score": 3.6,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#158 Spotify BR. 200.927 streams/dia. 6 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#158)",
+      "sugestao_aula": "'The Neighbourhood - Reflections': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "NBA temporada 2026-27 (estreia 20/10)",
+      "score": 3.0,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA temporada 2026-27 (estreia 20/10)' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "veja globo",
+      "score": 2.76,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "200+ buscas",
+      "categoria": "TV/reality",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Como a Globo criou a maior fake news da campanha presidencial",
+      "sugestao_aula": "Como se diz o vocabulário de 'veja globo' em inglês (eviction, to be voted out, challenge).",
+      "url": "https://veja.abril.com.br/brasil/como-a-globo-criou-a-maior-fake-news-da-campanha-presidencial/"
+    },
+    {
+      "termo": "Lady Gaga - Die With A Smile (w/ Bruno Mars)",
+      "score": 2.73,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#129 Spotify BR. 220.190 streams/dia. 713 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "lady gaga em inglês",
+        "frases lady gaga em inglês",
+        "lady gaga legendado em inglês",
+        "lady gaga música em inglês",
+        "lady gaga shallow letra em inglês",
+        "biografia de lady gaga em inglês",
+        "como fala lady gaga em inglês",
+        "filme lady gaga em ingles",
+        "como se escreve lady gaga em inglês",
+        "o que significa lady gaga em inglês",
+        "como se fala lady gaga em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#129)",
+      "sugestao_aula": "'Lady Gaga - Die With A Smile (w/ Bruno Mars)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Oasis - Wonderwall - Remastered",
+      "score": 2.73,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#130 Spotify BR. 219.600 streams/dia. 367 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "oasis em inglês",
+        "oasis em ingles tradução",
+        "plural de oasis em inglês",
+        "como se pronuncia oasis em inglês",
+        "como se fala oasis em inglês",
+        "como se escreve oasis em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#130)",
+      "sugestao_aula": "'Oasis - Wonderwall - Remastered': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Guns N' Roses - Sweet Child O' Mine",
+      "score": 2.72,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#137 Spotify BR. 212.535 streams/dia. 619 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "guns n roses em inglês",
+        "frases guns n roses em inglês com tradução",
+        "frases guns n roses em inglês",
+        "o que significa guns n roses em inglês",
+        "como se escreve guns n roses em inglês",
+        "como se pronuncia guns n roses em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#137)",
+      "sugestao_aula": "'Guns N' Roses - Sweet Child O' Mine': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "rafael jodar",
+      "fonte": "google-trends",
+      "motivo": "apostas/marcas de risco: \"loteria\" em \"Al tenis español le toca la lotería: Jódar firma una histórica final en Shanghai\""
+    },
+    {
+      "termo": "vorcaro e lula",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"lula\" em \"vorcaro e lula\""
+    },
+    {
+      "termo": "menino",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"delegado\" em \"Menino teve corpo esquartejado e algumas partes não foram encontradas, diz delegado\""
+    },
+    {
+      "termo": "andré janones",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"lula\" em \"Apoiadores de Lula mobilizam redes usando verde e amarelo após convocação de Janones\""
+    },
+    {
+      "termo": "colômbia",
+      "fonte": "google-trends",
+      "motivo": "tragédia/morte: \"terremoto\" em \"Primeira-dama da Colômbia nega irregularidades em doações de US$ 17 milhões após terremoto\""
+    },
+    {
+      "termo": "Ministro da economia",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"ministro\" em \"Ministro da economia\""
+    },
+    {
+      "termo": "picanha de ônibus",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Piada de Flávio Bolsonaro sobre ‘picanha de ônibus’ rende cortes e repercute nas redes - B\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "adela - nicole kidman",
+    "andre janones",
+    "bts - swim",
+    "cantor",
+    "colombia",
+    "dominic fike - babydoll",
+    "flash",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "malcolm todd - earrings",
+    "mcdonald's",
+    "menino",
+    "ministro da economia",
+    "nba temporada 2026-27 (estreia 20/10)",
+    "oasis - wonderwall - remastered",
+    "penalti mais ridiculo da historia",
+    "picanha de onibus",
+    "previsao do tempo salvador",
+    "rafael jodar",
+    "sobrinho meme",
+    "tedio",
+    "test",
+    "the goo goo dolls - iris",
+    "the neighbourhood - reflections",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "truque",
+    "veja globo",
+    "vorcaro e lula"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 0 itens",
+    "spotify-br: 13 itens",
+    "tiktok: 7 itens",
+    "manual: 2 itens"
+  ]
+}

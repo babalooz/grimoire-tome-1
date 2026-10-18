@@ -1,12 +1,13 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-17)
-# 2026-10-17: 6 buscas web (trend tiktok brasil hoje 17 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / hashtag viral tiktok brasil esta semana outubro 2026 / "viralizou no
-# tiktok" outubro 2026 / tiktok trending hashtags brazil october 2026 news). Nenhuma achou tendência nova e
-# confiável das últimas 24-48h no TikTok BR: resultados sem data, genéricos ou de meses/anos anteriores (ex.:
-# "six seven"/"6 7" ainda citado, mas como meme antigo de abril/2026, já descartado antes por overlap com conteúdo
-# sensível; nenhuma fonte de 24-48h encontrada hoje). Endpoint público /api/challenge/detail testado de novo hoje
-# (halloweentiktok, nba, libertadores, bts) -> HTTP 200 mas corpo vazio para todos = "não medido" (mesma falha
-# documentada no radar.py e no dia 16/10; confirma que a medição via nuvem continua indisponível, só o PC mede).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-18)
+# 2026-10-18: 6 buscas web (trend tiktok brasil hoje 18 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / "viralizou no tiktok" outubro 2026 / hashtag viral tiktok brasil esta
+# semana outubro 2026 / tiktok trending hashtags brazil october 2026 news). Nenhuma achou tendência nova e confiável
+# das últimas 24-48h no TikTok BR: resultados genéricos, sem data, ou antigos (ex.: #bobbiegoods, #morangodoamor,
+# áudio "Jet2 Holiday", #funk, "six seven"/papa Leão — todos sem data de 24-48h, descartados por frescor; "six
+# seven" também já descartado antes por overlap com conteúdo sensível). Endpoint público /api/challenge/detail
+# testado de novo hoje (halloweentiktok, nba, libertadores, bts, bobbiegoods) -> corpo vazio para todos = "não
+# medido" (mesma falha documentada no radar.py e nos dias anteriores; confirma que a medição via nuvem continua
+# indisponível, só o PC mede).
 # Sem novidade segura e fresca hoje -> mantidos os 2 aprovados anteriores (ainda válidos: eventos futuros, não
 # passaram da data).
 Halloween
