@@ -1,0 +1,180 @@
+{
+  "version": 1,
+  "semana": "2026-W43",
+  "periodo": { "inicio": "2026-10-19", "fim": "2026-10-25" },
+  "gerado_em": "2026-10-18",
+  "fontes_radares_diarios": [
+    "canal-idiomas/radar/2026-10-12.json",
+    "canal-idiomas/radar/2026-10-14.json",
+    "canal-idiomas/radar/2026-10-15.json",
+    "canal-idiomas/radar/2026-10-16.json",
+    "canal-idiomas/radar/2026-10-17.json",
+    "canal-idiomas/radar/2026-10-18.json"
+  ],
+  "gap_radar_diario": {
+    "data_faltante": "2026-10-13",
+    "nota": "Arquivo não existe na pasta canal-idiomas/radar/; contagens de persistência são sobre 6 dias, não 7. Não medido."
+  },
+  "freio_ativo": false,
+  "contexto_operacional": {
+    "nota": "Nenhum vídeo publicado ainda. 3 vídeos do assunto 1 (V1/V2/V3) aprovados no portão e no branch midia desde 2026-10-14; decisão de publicar é só do Felipe (regra 27/09). Alertas urgentes registrados em canal-idiomas/decisoes.md em 2026-10-16 e 2026-10-17, sem resposta em ponte/RESPOSTAS.md até 2026-10-18."
+  },
+  "tema_da_semana": [
+    {
+      "termo": "BTS - SWIM",
+      "dias_aparicao": 6,
+      "dias_total": 6,
+      "datas": ["2026-10-12","2026-10-14","2026-10-15","2026-10-16","2026-10-17","2026-10-18"],
+      "fontes": ["spotify-br"],
+      "volume_medido": "streams/dia entre 244.907 (12/10) e 275.718 (16/10); posição Spotify BR entre #61 e #121",
+      "mundo_anglofono_v2": false,
+      "nota": "K-pop (coreano), não cumpre a regra de hype anglófono do Felipe para V2 (storytelling). Usar só em V1/vocabulário."
+    },
+    {
+      "termo": "Futebol internacional / Libertadores (Clarence Seedorf + jogos reais)",
+      "dias_aparicao": 5,
+      "dias_total": 6,
+      "datas": ["2026-10-12","2026-10-14","2026-10-15","2026-10-16","2026-10-17"],
+      "fontes": ["wikipedia", "verificado (Conmebol/imprensa)"],
+      "volume_medido": "Seedorf: 83.624 views na Wikipédia em 12/10 caindo para 9.102 em 17/10; jogos de volta confirmados 21-22/10",
+      "mundo_anglofono_v2": true,
+      "nota": "Cumpre a regra de hype anglófono (narração de futebol em inglês). Evento real cai dentro desta semana (21-22/10)."
+    },
+    {
+      "termo": "NBA temporada 2026-27",
+      "dias_aparicao": 5,
+      "dias_total": 6,
+      "datas": ["2026-10-12","2026-10-14","2026-10-15","2026-10-17","2026-10-18"],
+      "fontes": ["manual (TikTok)", "verificado (Band/Dunkest)"],
+      "volume_medido": "score fixo 3,0 (entrada manual, não API); abertura confirmada 20/10",
+      "mundo_anglofono_v2": true,
+      "nota": "Ausente só no radar de 16/10. Cumpre a regra de hype anglófono. Abertura cai dentro desta semana (20/10)."
+    }
+  ],
+  "candidato_fora_do_top3": {
+    "termo": "ADÉLA - Nicole Kidman",
+    "dias_aparicao": 4,
+    "dias_total": 6,
+    "datas": ["2026-10-12","2026-10-14","2026-10-17","2026-10-18"],
+    "fontes": ["spotify-br"],
+    "mundo_anglofono_v2": false,
+    "nota": "Música internacional, origem do artista não confirmada como anglófona. #1 no radar de 17/10 (score 5,62). Usar só em V1/vocabulário."
+  },
+  "calendario": [
+    {
+      "data": "2026-10-19",
+      "dia_semana": "segunda",
+      "evento": "Sem evento específico encontrado",
+      "bloqueio": false,
+      "url": null
+    },
+    {
+      "data": "2026-10-20",
+      "dia_semana": "terça",
+      "evento": "Abertura da temporada NBA 2026-27: Celtics @ Pistons (16h BRT), 76ers @ Knicks (20h BRT, estreia de LeBron James pelo Philadelphia), Thunder @ Spurs (22h30 BRT)",
+      "bloqueio": false,
+      "url": "https://www.dunkest.com/en/nba/news/244243/nba-schedule-opening-night-key-dates"
+    },
+    {
+      "data": "2026-10-21",
+      "dia_semana": "quarta",
+      "evento": "Libertadores semifinal, volta: Palmeiras x Fluminense, 21h30, Nubank Parque (SP)",
+      "bloqueio": false,
+      "url": "https://www.gazetaesportiva.com/campeonatos/libertadores-da-america/libertadores-tudo-sobre-as-semifinais/"
+    },
+    {
+      "data": "2026-10-22",
+      "dia_semana": "quinta",
+      "evento": "Libertadores semifinal, volta: Flamengo x Estudiantes, 21h30, Maracanã (RJ)",
+      "bloqueio": false,
+      "url": "https://www.gazetaesportiva.com/campeonatos/libertadores-da-america/libertadores-tudo-sobre-as-semifinais/"
+    },
+    {
+      "data": "2026-10-25",
+      "dia_semana": "domingo",
+      "evento": "Eleições, 2º turno (presidente + governadores)",
+      "bloqueio": true,
+      "url": "https://www.correiobraziliense.com.br/cbradar/feriados-nacionais-calendario-2026-folgas/"
+    }
+  ],
+  "tiktok_calendario_oficial": {
+    "medido": false,
+    "nota": "Busca não encontrou evento de TikTok for Business com data confirmada nesta semana; endpoint de hashtag/challenge continua sem resposta da nuvem (ver manual.txt). Não citar sem confirmar."
+  },
+  "girias": {
+    "vencendo": [
+      {
+        "termo": "é um nervosismo surreal",
+        "valido_ate": "2026-10-31",
+        "dias_restantes": 13,
+        "fallback": "Respondi o que ninguém perguntou. Deu branco."
+      }
+    ],
+    "validas_sem_mudanca": ["buffado", "flopou/flopado", "amassou", "hypeado/estourado", "comeu", "farmar aura"],
+    "reprovadas_mantidas": ["Tu, finish", "Neysexual / Bichos Escrotos", "skibidi", "67 (six seven)", "brain rot", "cringe/rizz/chat/IYKYK (só texto de tela)"],
+    "novas_propostas": [
+      {
+        "termo": "gag / fiquei gagada",
+        "origem": "inglês \"to gag\" (choque/surpresa, cultura drag)",
+        "fonte": "https://opovo.com.br/trends/as-girias-gag-aura-e-camp-estao-por-toda-parte-nas-redes-sociais-e-a-maioria-das-pessoas-que-usa-nao-sabe-exatamente-o-que-cada-uma-significa/",
+        "data_fonte": "2026-05",
+        "views": "não medido",
+        "usar": "sim, com moderação"
+      },
+      {
+        "termo": "tankar",
+        "origem": "inglês \"tank\" (gíria gamer, aguentar/suportar)",
+        "fonte": "https://www.correio24horas.com.br/em-alta/gag-tankar-e-old-o-que-significam-as-girias-usadas-pela-geracao-z-na-internet-0426",
+        "data_fonte": "2026",
+        "views": "não medido",
+        "usar": "sim"
+      },
+      {
+        "termo": "locked in / #LockedIn",
+        "origem": "inglês, direto",
+        "fonte": "https://www.band.com.br/lifestyle/noticias/fim-da-era-delulu-a-tendencia-locked-in-que-domina-o-tiktok-em-2026-202602021711",
+        "data_fonte": "2026-02",
+        "views": "terceiros: \"centenas de milhões\" agregado na hashtag (não é view de 1 vídeo; não medido com precisão)",
+        "usar": "sim"
+      }
+    ],
+    "novas_propostas_nota": "Nenhuma das 3 tem view count por vídeo confirmado; registrado 'não medido' em vez de inventar número (regra do CLAUDE.md)."
+  },
+  "instrucao_roteirista": [
+    {
+      "data": "2026-10-19",
+      "episodio_contexto": "Currículo segue conforme a grade (T1 E0N do dia)",
+      "hype_esquete_v2": "Sem evento do dia; contagem regressiva pra abertura da NBA (amanhã) ou reserva atemporal (turista gringo no café)"
+    },
+    {
+      "data": "2026-10-20",
+      "episodio_contexto": "Currículo segue",
+      "hype_esquete_v2": "Abertura da NBA 2026-27 - ângulo comentarista gringo de basquete (buzzer beater, slam dunk, he's on fire); roteiro já existe em ponte/saida/roteiros-tema03.md e roteiros-tema04.md, aguardando decisão do Felipe"
+    },
+    {
+      "data": "2026-10-21",
+      "episodio_contexto": "Currículo segue",
+      "hype_esquete_v2": "Libertadores semis volta - Palmeiras x Fluminense, Nubank Parque - ângulo narrador gringo: What a goal!, beat, win"
+    },
+    {
+      "data": "2026-10-22",
+      "episodio_contexto": "Currículo segue",
+      "hype_esquete_v2": "Libertadores semis volta - Flamengo x Estudiantes, Maracanã - mesmo ângulo, variar o corte"
+    },
+    {
+      "data": "2026-10-23",
+      "episodio_contexto": "Currículo segue",
+      "hype_esquete_v2": "Sem evento do dia; vocabulário de pós-jogo (final score, highlights, who's going to the final) citando quem se classificou"
+    },
+    {
+      "data": "2026-10-24",
+      "episodio_contexto": "Compilação longa da semana (YouTube), conforme grade",
+      "hype_esquete_v2": "Sem hype novo; fechar citando quem vai pra final da Libertadores e a 1ª semana completa de NBA"
+    },
+    {
+      "data": "2026-10-25",
+      "episodio_contexto": "BLOQUEIO - eleições, 2º turno. Nenhum tema do dia; só quadros neutros/atemporais",
+      "hype_esquete_v2": "Nenhum hype - regra de bloqueio de eleição"
+    }
+  ]
+}
