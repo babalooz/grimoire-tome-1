@@ -1,0 +1,403 @@
+{
+  "version": 2,
+  "date": "2026-10-19",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado",
+        "faltam_dias": 2
+      }
+    ],
+    "proximos": [
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 6
+      },
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 9
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 12
+      },
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 14
+      },
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 14
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Olivia Rodrigo - expectations (w/ Chappell Roan)",
+      "score": 8.08,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#176 Spotify BR. 195.294 streams/dia. 2 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [
+        "frases da olivia rodrigo em inglês",
+        "biografia da olívia rodrigo em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#176)",
+      "sugestao_aula": "'Olivia Rodrigo - expectations (w/ Chappell Roan)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "1",
+      "score": 6.75,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "1.000+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "1 em inglês",
+        "1 em inglês tradutor",
+        "1 em inglês como se escreve",
+        "número 1 em inglês",
+        "1 milhão em inglês",
+        "dia 1 em inglês",
+        "1 ano em inglês",
+        "1 hora em inglês",
+        "1 mês em inglês",
+        "1 bilhão em inglês",
+        "como se diz 1 em inglês",
+        "como se diz 1 milhão em inglês",
+        "como se diz número 1 em inglês",
+        "como se diz 1 hora em inglês",
+        "como se diz 1 2 em inglês",
+        "como se diz 1 bilhão em inglês",
+        "como se diz formula 1 em inglês",
+        "como se diz 1 15 em inglês",
+        "como se diz 1 trilhão em inglês",
+        "como se diz 1 ano em inglês"
+      ],
+      "contexto": "Goleada de 23 a 1 em Minas entra para lista de maiores placares do Brasil; relembre outros",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de '1' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://ge.globo.com/mg/futebol/noticia/2026/10/18/goleada-de-23-a-1-em-minas-entra-para-lista-de-maiores-placares-do-brasil-relembre-outros.ghtml"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.14,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#120 Spotify BR. 238.504 streams/dia. 212 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#120)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "tédio",
+      "score": 3.75,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": false,
+      "aula": [
+        "tédio em inglês",
+        "tédio em inglês divertidamente",
+        "tedio em inglês tradutor",
+        "como fala tédio em inglês",
+        "como escreve tédio em inglês",
+        "morrer de tédio em inglês",
+        "estou com tédio em inglês",
+        "como se diz tédio em inglês",
+        "como se escreve tédio em inglês",
+        "como se fala tédio em inglês",
+        "como se chama tédio em inglês"
+      ],
+      "contexto": "Uma usuária do TikTok viraliza com uma série de vídeos constrangedores: tudo começa com a sensação de \"tédio\".",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'tédio' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT0xkQnRyNXZ0eTkyWUR2OS10QTR3aWlaRjMwcUZmdUttUmFySzdHQmQzQlBTdVR3QWpobl8wazZOcmdNWVpnQUI2N3lONmdoTFMzMXdqT1J4eVZuUjhZaXdtNHBLaUVtQmhSUTdJaEgtaTc3NEQ4bFMxMFcyNGhDcG4tTTNseHlMckkzX2ZvRHJ2QURyR0Y0ZmFma3BfUjNlWWVHWg?oc=5"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.69,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#112 Spotify BR. 246.807 streams/dia. 32 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#112)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "NBA temporada 2026-27 (estreia 20/10)",
+      "score": 3.0,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA temporada 2026-27 (estreia 20/10)' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "Guns N' Roses - Sweet Child O' Mine",
+      "score": 2.71,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#158 Spotify BR. 204.550 streams/dia. 620 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "guns n roses em inglês",
+        "frases guns n roses em inglês com tradução",
+        "frases guns n roses em inglês",
+        "o que significa guns n roses em inglês",
+        "como se escreve guns n roses em inglês",
+        "como se pronuncia guns n roses em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#158)",
+      "sugestao_aula": "'Guns N' Roses - Sweet Child O' Mine': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Oasis - Wonderwall - Remastered",
+      "score": 2.71,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#165 Spotify BR. 202.447 streams/dia. 368 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "oasis em inglês",
+        "oasis em ingles tradução",
+        "plural de oasis em inglês",
+        "como se pronuncia oasis em inglês",
+        "como se fala oasis em inglês",
+        "como se escreve oasis em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#165)",
+      "sugestao_aula": "'Oasis - Wonderwall - Remastered': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Lady Gaga - Die With A Smile (w/ Bruno Mars)",
+      "score": 2.7,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#167 Spotify BR. 202.056 streams/dia. 714 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": false,
+      "aula": [
+        "lady gaga em inglês",
+        "frases lady gaga em inglês",
+        "lady gaga legendado em inglês",
+        "música lady gaga em inglês",
+        "lady gaga shallow letra em inglês",
+        "biografia de lady gaga em inglês",
+        "como fala lady gaga em inglês",
+        "filme lady gaga em ingles",
+        "como se escreve lady gaga em inglês",
+        "o que significa lady gaga em inglês",
+        "como se fala lady gaga em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#167)",
+      "sugestao_aula": "'Lady Gaga - Die With A Smile (w/ Bruno Mars)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "temperatura",
+      "score": 2.02,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "1.000+ buscas",
+      "categoria": "outro",
+      "subindo": true,
+      "aula": [
+        "temperatura em inglês",
+        "temperatura em inglês graus",
+        "temperatura em inglês como se escreve",
+        "temperatura em inglês para português",
+        "temperatura em inglês tradução",
+        "temperatura ambiente em inglês",
+        "temperatura alta em inglês",
+        "temperatura baixa em inglês",
+        "temperatura quente em inglês",
+        "temperatura máxima em inglês",
+        "como se diz temperatura em inglês",
+        "como se diz temperatura ambiente em inglês"
+      ],
+      "contexto": "Alertas de tempestade abrangem áreas do Norte, Nordeste, Centro-Oeste e Sudeste",
+      "sugestao_aula": "Responder a busca real: 'temperatura em inglês'.",
+      "url": "https://www.agrolink.com.br/noticias/alertas-de-tempestade-abrangem-areas-do-norte--nordeste--centro-oeste-e-sudeste_519906.html"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "deputado marcelo aguiar",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"deputado\" em \"deputado marcelo aguiar\""
+    },
+    {
+      "termo": "metrópoles",
+      "fonte": "google-trends",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Vorcaro encomendou vídeos apócrifos difamando Malu Gaspar e Lauro Jardim, diz jornal\""
+    },
+    {
+      "termo": "Por um Brasil cada vez melhor",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"eleicoes2026\" em \"#Eleições2026: “Por um Brasil cada vez melhor”, destaca prefeita de Ruy Barbosa ao aderir \""
+    },
+    {
+      "termo": "#Eleições2026",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"eleicoes2026\" em \"#Eleições2026\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "#eleicoes2026",
+    "1",
+    "adela - nicole kidman",
+    "brainrot",
+    "bts - swim",
+    "cinderella",
+    "clanker",
+    "deputado marcelo aguiar",
+    "greve",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "metropoles",
+    "nba temporada 2026-27 (estreia 20/10)",
+    "oasis - wonderwall - remastered",
+    "olivia rodrigo - expectations (w/ chappell roan)",
+    "por um brasil cada vez melhor",
+    "previsao do tempo",
+    "previsao do tempo curitiba",
+    "previsao do tempo guarulhos",
+    "taca-le pau, marco veio",
+    "tedio",
+    "temperatura",
+    "tempo agora",
+    "tempo sao paulo",
+    "the neighbourhood - sweater weather"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 0 itens",
+    "spotify-br: 7 itens",
+    "tiktok: 7 itens",
+    "manual: 2 itens"
+  ]
+}
