@@ -1,14 +1,18 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-19)
-# 2026-10-19: 6 buscas web (trend tiktok brasil hoje 19 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / tendência tiktok brasil viralizou essa semana / "viralizou no tiktok"
-# outubro 2026 / tiktok trending hashtags brazil october 2026 news). Nenhuma achou tendência nova e confiável das
-# últimas 24-48h no TikTok BR: resultados genéricos, sem data, ou antigos (retrospectivas 2025/2023, guias de "como
-# viralizar", #morangodoamor, áudio "Jet2 Holiday" — todos de 2025 ou sem data de 24-48h). "Six seven" apareceu de
-# novo (Papa Leão XIV em vídeo viral, >15 mi views) mas sem data de 24-48h e ligado a pessoa real/figura religiosa
-# → mantido descartado (mesma decisão de dias anteriores). Endpoint público /api/challenge/detail testado de novo
-# hoje (halloweentiktok, nba) -> HTTP 200 com corpo vazio para os dois = "não medido" (mesma falha documentada no
-# radar.py e nos dias anteriores; confirma que a medição via nuvem continua indisponível, só o PC mede).
-# Sem novidade segura e fresca hoje -> mantidos os 2 aprovados anteriores (ainda válidos: eventos futuros, não
-# passaram da data).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-20)
+# 2026-10-20: 6 buscas web (trend tiktok brasil hoje 20 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 brasil / "six seven" OR "6 7" tiktok hashtag views outubro 2026 /
+# hashtag tiktok em alta brasil "libertadores" OR "clássico" OR "BTS" outubro 2026 / tiktok creative center top
+# hashtags brazil). Nenhuma achou tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data clara:
+# resultados genéricos, guias "como viralizar" sem data, ou retrospectivas antigas (2023/2025). "Six seven"/#67
+# segue aparecendo (fonte: STV News, sem data exata de 24-48h, >2 mi posts citados sem mês confirmado) — mantido
+# descartado: regra do CLAUDE.md/docs/tiktok-nativo.md §2 classifica #67/skibidi/brain rot como risco de
+# "feito para crianças", nunca aprovar. Endpoint público /api/challenge/detail testado hoje para 7 candidatas
+# (halloweentiktok, nba, libertadores, avengersdoomsday, bts, viniciusjr, elclassico) -> HTTP 200 com corpo vazio
+# para todas = "não medido" (mesma falha documentada no radar.py e nos dias anteriores; a medição via nuvem
+# continua indisponível, só o PC mede).
+# Aprovados hoje (seguros, com fonte/evento real, sem número inventado — todos "não medido" em views/vídeos):
+# Halloween e NBA mantidos do dia anterior (eventos futuros, ainda válidos); Libertadores novo (jogo real de
+# amanhã 21/10, já no calendário verificado).
 Halloween
 NBA temporada 2026-27 (estreia 20/10)
+Libertadores semis (volta) 21/10
