@@ -1,18 +1,16 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-20)
-# 2026-10-20: 6 buscas web (trend tiktok brasil hoje 20 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 brasil / "six seven" OR "6 7" tiktok hashtag views outubro 2026 /
-# hashtag tiktok em alta brasil "libertadores" OR "clássico" OR "BTS" outubro 2026 / tiktok creative center top
-# hashtags brazil). Nenhuma achou tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data clara:
-# resultados genéricos, guias "como viralizar" sem data, ou retrospectivas antigas (2023/2025). "Six seven"/#67
-# segue aparecendo (fonte: STV News, sem data exata de 24-48h, >2 mi posts citados sem mês confirmado) — mantido
-# descartado: regra do CLAUDE.md/docs/tiktok-nativo.md §2 classifica #67/skibidi/brain rot como risco de
-# "feito para crianças", nunca aprovar. Endpoint público /api/challenge/detail testado hoje para 7 candidatas
-# (halloweentiktok, nba, libertadores, avengersdoomsday, bts, viniciusjr, elclassico) -> HTTP 200 com corpo vazio
-# para todas = "não medido" (mesma falha documentada no radar.py e nos dias anteriores; a medição via nuvem
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-21)
+# 2026-10-21: 6 buscas web (trend tiktok brasil hoje outubro 2026 / meme do momento tiktok brasil / áudio viral
+# tiktok semana brasil outubro 2026 / hashtag viral tiktok brasil essa semana / "viral" tiktok brasil 20 outubro
+# 2026 / TikTok Creative Center trending hashtags Brazil this week). Nenhuma achou tendência NOVA e confiável das
+# últimas 24-48h no TikTok BR com fonte/data clara: resultados genéricos sem data, guias "como viralizar", ou
+# retrospectivas antigas (2020/2023/2025). Endpoint público /api/challenge/detail testado hoje para 8 candidatas
+# (libertadores, halloweentiktok, nba, bts, anitta, envolver, stopthewedding, viniciusjr) -> HTTP 200 com corpo
+# vazio para todas = "não medido" (mesma falha documentada no radar.py e nos dias anteriores; a medição via nuvem
 # continua indisponível, só o PC mede).
 # Aprovados hoje (seguros, com fonte/evento real, sem número inventado — todos "não medido" em views/vídeos):
-# Halloween e NBA mantidos do dia anterior (eventos futuros, ainda válidos); Libertadores novo (jogo real de
-# amanhã 21/10, já no calendário verificado).
+# Libertadores (jogo real de hoje 21/10, já no calendário verificado) e Halloween (evento fixo, 10 dias). NBA
+# removido (temporada já estreou 20/10, hype de "estreia" vencido). Envolver (Anitta, Top 5 Spotify Global) e
+# Stop The Wedding (Ashe) já cobertos pela camada automática do radar.py (fonte "tiktok (notícias)", ver
+# hype_seguro #2 e #10 do radar de hoje) — não duplicar aqui.
 Halloween
-NBA temporada 2026-27 (estreia 20/10)
 Libertadores semis (volta) 21/10

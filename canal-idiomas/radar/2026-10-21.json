@@ -1,0 +1,377 @@
+{
+  "version": 2,
+  "date": "2026-10-21",
+  "evento_do_dia": {
+    "hoje": [
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado"
+      }
+    ],
+    "preparar": [],
+    "proximos": [
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 4
+      },
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 7
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 10
+      },
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 12
+      },
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 12
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Olivia Rodrigo - expectations (w/ Chappell Roan)",
+      "score": 8.27,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#80 Spotify BR. 237.803 streams/dia. 3 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [
+        "frases da olivia rodrigo em inglês",
+        "biografia da olívia rodrigo em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#80)",
+      "sugestao_aula": "'Olivia Rodrigo - expectations (w/ Chappell Roan)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Envolver",
+      "score": 5.62,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "envolver em inglês",
+        "como se diz envolver em inglês"
+      ],
+      "contexto": "'Envolver', de Anitta, alcança Top 5 no Spotify Global",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Envolver' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMVNaeWI4MDk0cE1lMXEwM1FOUE92c2Q4UUFOUXRvcHo3ZXp5dm45SFA2OFBsUkgtQkpFWHdjNFVSdUdXVW9mYldaMTd5MTVoSGZQN1V4SG84dnRFRXRaSS12TmFsTDRPNUxMWUotMmJaWl92RDJPZU1DOWQwYk13TWloVTg0LWhrdWtyUE5nQlZ4ZWF5TEZmUTFSalBZYmZzY1Bz0gGoAUFVX3lxTFBpS3FDOE9nQnp4d3RSdXM0aTJHemZZd1JoWnhCNmY4RVlGSkVUYzZ4SXI5VzgtcjI0RVZsUWFrVkhzSUVZWFpwYWRBa1NqcnRVM1pQS1g4eDhQS1oxN2xxTlR2ZTZUa2ZxZ293QXp2NHdkdjB0NGRnd1N3N3Zsak9VYkNXVGE4X2hhZDdjSDZZNldFLU5XUGJ5d0wzYWt3OXlWYkFPZGNnaA?oc=5"
+    },
+    {
+      "termo": "xbox",
+      "score": 5.18,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "200+ buscas",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "xbox em inglês",
+        "xbox 360 em inglês",
+        "controle de xbox em inglês",
+        "o que significa xbox em inglês"
+      ],
+      "contexto": "Novo Xbox pode custar quase 2 mil dólares e chegar em 2028",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'xbox' (título original, bordões) + 1 pergunta.",
+      "url": "https://veja.abril.com.br/tecnologia/novo-xbox-pode-custar-quase-2-mil-dolares-e-chegar-em-2028/"
+    },
+    {
+      "termo": "nintendo",
+      "score": 4.5,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "nintendo em inglês",
+        "nintendo switch em inglês",
+        "super nintendo em inglês",
+        "como falar nintendo em inglês",
+        "console tablet da nintendo em inglês",
+        "como se escreve nintendo em inglês",
+        "console portátil da nintendo em inglês"
+      ],
+      "contexto": "Riders Republic Coming to Nintendo Switch 2, Hosts Free Weekend, Premieres Henri PFR In-Game Concert, and More to Celebrate 5th Anniversary",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'nintendo' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.ubisoft.com/en-us/article/7g0kbRirX5WXZFJrDHx186/riders-republic-coming-to-nintendo-switch-2-hosts-free-weekend-premieres-henri-pfr-ingame-concert-and-more-to-celebrate-5th-anniversary"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.2,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#60 Spotify BR. 271.499 streams/dia. 214 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#60)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "xuxa",
+      "score": 4.14,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "200+ buscas",
+      "categoria": "TV/reality",
+      "subindo": true,
+      "aula": [
+        "xuxa em inglês",
+        "alfabeto xuxa em inglês",
+        "xuxa cantando em inglês",
+        "xuxa de cabelo em inglês",
+        "música da xuxa em inglês",
+        "parabéns da xuxa em inglês",
+        "abc da xuxa em inglês",
+        "como escrever xuxa em inglês",
+        "como se chama xuxa em inglês",
+        "como se diz xuxa em inglês",
+        "como se escreve xuxa em inglês"
+      ],
+      "contexto": "Outro Canal: Virginia Fonseca volta ao SBT após nove meses para participar do Teleton 2026",
+      "sugestao_aula": "Como se diz o vocabulário de 'xuxa' em inglês (eviction, to be voted out, challenge).",
+      "url": "https://f5.folha.uol.com.br/colunistas/outro-canal/2026/10/virginia-fonseca-volta-ao-sbt-apos-nove-meses-para-participar-do-teleton-2026.shtml"
+    },
+    {
+      "termo": "Oasis - Wonderwall - Remastered",
+      "score": 3.98,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#154 Spotify BR. 172.376 streams/dia. 369 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "oasis em inglês",
+        "oasis em ingles tradução",
+        "plural de oasis em inglês",
+        "como se pronuncia oasis em inglês",
+        "como se fala oasis em inglês",
+        "como se escreve oasis em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#154)",
+      "sugestao_aula": "'Oasis - Wonderwall - Remastered': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Stop The Wedding!",
+      "score": 3.75,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Quem é Ashe? Conheça a estrela que viralizou com a música 'Stop The Wedding!' e lançou novo álbum",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Stop The Wedding!' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZ3RQV3htWmE0LVhVcXlWdVFodUR6cnBZc3ZwX0ZOWlg1SGcxbFVWWXFlSGVvNjM5VUVaTGw2MUU3LXBCbENkRWtEV1lBakRIY1JnNHNwUXZIUkh4Z19IZEhOdFUybk5NZTV4MldMaFJUTlozT1hNYnowOFd1akE0NkNZZzYtNGgzZTdNZkE3dlM1X3J6Q0VLa1hsRXpMbFBGOHhRS1JOODc5STlyd0h5OFBVaFAzaF9DVWlNMG5GNDZCRXpjc2dYelNhVjZqTU8yZE1ucUs5OG9YVFJDM3c0?oc=5"
+    },
+    {
+      "termo": "Avengers: Doomsday",
+      "score": 3.75,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Brinde de “Avengers: Doomsday” antecipa Reed Richards x Doutor Destino e coloca Robert Downey Jr. no centro da virada da Fase 6",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Avengers: Doomsday' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkVrYkp0NmVoTWI5SEVfbzNaSk1XUVA4aVpZMVJGaHgtVGVtdzFMeWpGVFB0bUllNXhmaUdEeFZOcm1KeW1yU2JyMGJFWWgxcU9ibm4xdGVBZDJDTWMtOERVd2ZybEE1WU9abUJERzY0dHBsTUpJbXl4M2M3dnhOZUxwS1pCMnM?oc=5"
+    },
+    {
+      "termo": "The Neighbourhood - Reflections",
+      "score": 3.52,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#172 Spotify BR. 166.276 streams/dia. 7 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#172)",
+      "sugestao_aula": "'The Neighbourhood - Reflections': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "Smalltown Boy",
+      "fonte": "tiktok (notícias)",
+      "motivo": "violência: \"bombar\" em \"\"Smalltown Boy\", do Bronski Beat, volta a bombar após série sobre Lizzie Borden - VAGALUME\""
+    },
+    {
+      "termo": "corrupto",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Palavra ‘corrupto’ na mão de Flávio Bolsonaro vira meme e inspira trend nas redes\""
+    },
+    {
+      "termo": "Eu sou o mais forte",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"prisao\" em \"Quando um bordão vira prisão: dublador de Gojo lamenta “Eu sou o mais forte” e joga luz na\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "#booktok",
+    "avengers: doomsday",
+    "barbara palvin",
+    "bismillah, c",
+    "bts - normal",
+    "bts - swim",
+    "corrupto",
+    "dominic fike - babydoll",
+    "embrasando, envolvendo",
+    "envolver",
+    "eu sou o mais forte",
+    "flash",
+    "foi um desespero",
+    "gravava no carro da minha mae",
+    "greve de onibus em sp hoje",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "harry styles - sign of the times",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "libertadores semis (volta) 21/10",
+    "linkin park - in the end",
+    "luis castro",
+    "malcolm todd - earrings",
+    "michael jackson - billie jean",
+    "ney gaucho",
+    "nintendo",
+    "oasis - wonderwall - remastered",
+    "olivia rodrigo - expectations (w/ chappell roan)",
+    "papo de nunca mais voltar",
+    "petroleo",
+    "restituicao",
+    "smalltown boy",
+    "starlink",
+    "stop the wedding!",
+    "the goo goo dolls - iris",
+    "the neighbourhood - reflections",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "vou fazer faculdade de ia",
+    "weather tomorrow",
+    "xbox",
+    "xuxa"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: FALHOU (HTTP Error 429: Too many requests (f061ab2))",
+    "spotify-br: 16 itens",
+    "tiktok: 15 itens",
+    "manual: 2 itens"
+  ]
+}
