@@ -1,0 +1,517 @@
+{
+  "version": 2,
+  "date": "2026-10-22",
+  "evento_do_dia": {
+    "hoje": [
+      {
+        "id": "libertadores-semis-volta",
+        "evento": "Libertadores semis (volta), Nubank Parque e Maracanã",
+        "data_inicio": "2026-10-21",
+        "data_fim": "2026-10-22",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como narrador gringo fala: 'What a goal!', 'Let's go!'; beat x win ('Palmeiras won Fluminense' é erro).",
+        "ganchos_ingles": [
+          "What a goal!",
+          "beat",
+          "win",
+          "equalizer",
+          "stoppage time"
+        ],
+        "status": "verificado"
+      }
+    ],
+    "preparar": [],
+    "proximos": [
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 3
+      },
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 6
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 9
+      },
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 11
+      },
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 11
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Leandro Paredes",
+      "score": 6.02,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "10.391 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista argentino",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Leandro Paredes' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Leandro_Paredes"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 5.69,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#55 Spotify BR. 310.390 streams/dia. 35 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#55)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Tate McRae - Housewife",
+      "score": 5.52,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#96 Spotify BR. 240.214 streams/dia. 3 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#96)",
+      "sugestao_aula": "'Tate McRae - Housewife': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Olivia Rodrigo - expectations (w/ Chappell Roan)",
+      "score": 5.46,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#114 Spotify BR. 217.796 streams/dia. 4 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [
+        "frases da olivia rodrigo em inglês",
+        "biografia da olívia rodrigo em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#114)",
+      "sugestao_aula": "'Olivia Rodrigo - expectations (w/ Chappell Roan)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Nico Paz",
+      "score": 5.44,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "4.259 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista argentino",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Nico Paz' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Nico_Paz"
+    },
+    {
+      "termo": "LASK",
+      "score": 5.42,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "4.086 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "clube esportivo sediado em Pasching, Áustria",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'LASK' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/LASK"
+    },
+    {
+      "termo": "Thiago Mendes",
+      "score": 5.35,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.715 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista brasileiro",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Thiago Mendes' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Thiago_Mendes"
+    },
+    {
+      "termo": "Mary on a Cross",
+      "score": 4.69,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "música em inglês mary on a cross"
+      ],
+      "contexto": "\"Mary on a Cross\", do Ghost, está prestes a alcançar 1 bilhão de plays no Spotify",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Mary on a Cross' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBMYVBPSU9FTGI1MW1ZMVczdlhFT0g0N2FyX3FUOS1wa2lTMlllVzctdmJpT1BraHk1cTN2eFpQMUE0ZTU0R2tGMklwZlpjWVBYWTd4SnYxS1Z2cTRKWVhwZEkyR3FvWE0?oc=5"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.19,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#73 Spotify BR. 265.082 streams/dia. 215 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#73)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "gta 6",
+      "score": 3.75,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "gta 6 em inglês"
+      ],
+      "contexto": "Entrevista sobre GTA 6 revela a verdade sobre testículos dos cavalos em Red Dead Redemption 2",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'gta 6' (título original, bordões) + 1 pergunta.",
+      "url": "https://www.estadao.com.br/tecmundo/voxel/entrevista-sobre-gta-6-revela-a-verdade-sobre-testiculos-dos-cavalos-em-red-dead-redemption-2/"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "fcc",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"trump\" em \"With Trump polling at new lows, FCC chair issues warning about ‘fake polls’\""
+    },
+    {
+      "termo": "crime organizado",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"crime\" em \"crime organizado\""
+    },
+    {
+      "termo": "crime",
+      "fonte": "google-trends",
+      "motivo": "crime/polícia: \"crime\" em \"crime\""
+    },
+    {
+      "termo": "Lua Blanco",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"atriz, cantora, compositora e escritora brasileira (1987–2026)\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Caso Ana Clara Machado",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassinato\" em \"assassinato da criança brasileira Ana Clara Machado, no Rio de Janeiro\""
+    },
+    {
+      "termo": "Benito di Paula",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"cantor, compositor e pianista brasileiro (1941–2026)\""
+    },
+    {
+      "termo": "Kim Jong-un",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Kim Jong-un (em coreano: 김정은; hanja: 金正恩; Pyongyang, 8 de janeiro de 1982) é um político n\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "José Sarney",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"31.º presidente do Brasil (1985–1990)\""
+    },
+    {
+      "termo": "Fernando Collor",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"32.º presidente do Brasil (1990–1992)\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Pablo Marçal",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"marcal\" em \"Pablo Marçal\""
+    },
+    {
+      "termo": "Lucas Pavanato",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e vereador da cidade de São Paulo desde 2025\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Enéas Carneiro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"cardiologista e político brasileiro (1938–2007)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Banco do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Banco do Brasil (BB) é uma instituição financeira brasileira, sendo também o banco tradici\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "corrupto",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Palavra ‘corrupto’ na mão de Flávio Bolsonaro vira meme e inspira trend nas redes\""
+    },
+    {
+      "termo": "Eu sou o mais forte",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"prisao\" em \"Quando um bordão vira prisão: dublador de Gojo lamenta “Eu sou o mais forte” e joga luz na\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "adela - nicole kidman",
+    "andre janones",
+    "apple",
+    "avengers: doomsday",
+    "banco do brasil",
+    "benito di paula",
+    "bronny james",
+    "bruno mars - locked out of heaven",
+    "bts - normal",
+    "bts - swim",
+    "caso ana clara machado",
+    "chatgpt",
+    "che guevara",
+    "como 1907",
+    "corrupto",
+    "crime",
+    "crime organizado",
+    "daniella marques",
+    "decimo terceiro salario",
+    "dominic fike - babydoll",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "eneas carneiro",
+    "epic games",
+    "erika hilton",
+    "eu sou o mais forte",
+    "evanescence - bring me to life",
+    "facebook",
+    "fcc",
+    "fernando collor",
+    "fernando henrique cardoso",
+    "flash",
+    "flavio bolsonaro",
+    "foi um desespero",
+    "google",
+    "google gemini",
+    "gravava no carro da minha mae",
+    "gta 6",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "harry styles - sign of the times",
+    "jair bolsonaro",
+    "jose sarney",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "kim jong-un",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "lask",
+    "leandro paredes",
+    "libertadores semis (volta) 21-22/10",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "lua blanco",
+    "lucas pavanato",
+    "luiz inacio lula da silva",
+    "malcolm todd - earrings",
+    "malevola alves",
+    "mary on a cross",
+    "michael jackson - billie jean",
+    "ney gaucho",
+    "nico paz",
+    "nikolas ferreira",
+    "oasis - wonderwall - remastered",
+    "olivia rodrigo - expectations (w/ chappell roan)",
+    "pablo marcal",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "previsao do tempo campinas",
+    "renan santos",
+    "rosangela lula da silva",
+    "rubel",
+    "shawn mendes - treat you better",
+    "sobrinho meme",
+    "sombr - back to friends",
+    "tate mcrae - housewife",
+    "thais carla",
+    "the goo goo dolls - iris",
+    "the neighbourhood - reflections",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "thiago mendes",
+    "trace brasil",
+    "uol",
+    "vou fazer faculdade de ia",
+    "whatsapp",
+    "youtube"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 22 itens",
+    "tiktok: 10 itens",
+    "manual: 2 itens"
+  ]
+}

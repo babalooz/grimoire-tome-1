@@ -1,16 +1,19 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-21)
-# 2026-10-21: 6 buscas web (trend tiktok brasil hoje outubro 2026 / meme do momento tiktok brasil / áudio viral
-# tiktok semana brasil outubro 2026 / hashtag viral tiktok brasil essa semana / "viral" tiktok brasil 20 outubro
-# 2026 / TikTok Creative Center trending hashtags Brazil this week). Nenhuma achou tendência NOVA e confiável das
-# últimas 24-48h no TikTok BR com fonte/data clara: resultados genéricos sem data, guias "como viralizar", ou
-# retrospectivas antigas (2020/2023/2025). Endpoint público /api/challenge/detail testado hoje para 8 candidatas
-# (libertadores, halloweentiktok, nba, bts, anitta, envolver, stopthewedding, viniciusjr) -> HTTP 200 com corpo
-# vazio para todas = "não medido" (mesma falha documentada no radar.py e nos dias anteriores; a medição via nuvem
-# continua indisponível, só o PC mede).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-22)
+# 2026-10-22: 7 buscas web (trend tiktok brasil hoje 22 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / tiktok brasil viralizou essa semana / "tiktok" trend brasil "esta
+# semana" outubro 2026 hashtag / tiktok creative center brasil trending hashtags this week / bordão viral tiktok
+# brasil semana passada). Nenhuma achou tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data
+# clara: resultados genéricos sem data, guias "como viralizar" ou retrospectivas antigas (2020/2023/2024/2025).
+# Um achado teve fonte e data (Folha PE/Tribuna do Sertão, abr/2026): meme "six seven"/"6 7" ainda citado como
+# duradouro — DESCARTADO: já está na lista PROIBIDA do projeto (skibidi/67/brain rot = risco "feito para
+# crianças", ver docs/tiktok-nativo.md §4). Outros achados (bordão "Judite", "esqueci IB", "prendeu"/"matou") sem
+# data clara ou de categoria bloqueada (crime) — descartados.
+# Endpoint público /api/challenge/detail testado hoje para 7 candidatas (libertadores, halloweentiktok, gta6, bts,
+# marcadocross, halloween, nicolekidman) -> corpo vazio para todas = "não medido" (mesma falha documentada desde
+# 26/09; a medição via nuvem continua indisponível, só o PC mede).
 # Aprovados hoje (seguros, com fonte/evento real, sem número inventado — todos "não medido" em views/vídeos):
-# Libertadores (jogo real de hoje 21/10, já no calendário verificado) e Halloween (evento fixo, 10 dias). NBA
-# removido (temporada já estreou 20/10, hype de "estreia" vencido). Envolver (Anitta, Top 5 Spotify Global) e
-# Stop The Wedding (Ashe) já cobertos pela camada automática do radar.py (fonte "tiktok (notícias)", ver
-# hype_seguro #2 e #10 do radar de hoje) — não duplicar aqui.
+# Libertadores (semis volta, jogo(s) 21-22/10, já no calendário verificado) e Halloween (evento fixo, 9 dias).
+# Mary on a Cross (Ghost) e demais itens de música/esporte já cobertos pela camada automática do radar.py (ver
+# hype_seguro de hoje) — não duplicar aqui.
 Halloween
-Libertadores semis (volta) 21/10
+Libertadores semis (volta) 21-22/10
