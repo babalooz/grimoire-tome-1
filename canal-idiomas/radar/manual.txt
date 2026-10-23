@@ -1,19 +1,16 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-22)
-# 2026-10-22: 7 buscas web (trend tiktok brasil hoje 22 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / tiktok brasil viralizou essa semana / "tiktok" trend brasil "esta
-# semana" outubro 2026 hashtag / tiktok creative center brasil trending hashtags this week / bordão viral tiktok
-# brasil semana passada). Nenhuma achou tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data
-# clara: resultados genéricos sem data, guias "como viralizar" ou retrospectivas antigas (2020/2023/2024/2025).
-# Um achado teve fonte e data (Folha PE/Tribuna do Sertão, abr/2026): meme "six seven"/"6 7" ainda citado como
-# duradouro — DESCARTADO: já está na lista PROIBIDA do projeto (skibidi/67/brain rot = risco "feito para
-# crianças", ver docs/tiktok-nativo.md §4). Outros achados (bordão "Judite", "esqueci IB", "prendeu"/"matou") sem
-# data clara ou de categoria bloqueada (crime) — descartados.
-# Endpoint público /api/challenge/detail testado hoje para 7 candidatas (libertadores, halloweentiktok, gta6, bts,
-# marcadocross, halloween, nicolekidman) -> corpo vazio para todas = "não medido" (mesma falha documentada desde
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-23)
+# 2026-10-23: 6 buscas web (trend tiktok brasil hoje 23 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / trend tiktok viralizou hoje / bordão viral tiktok brasil semana /
+# hashtag tiktok em alta brasil essa semana). Nenhuma achou tendência NOVA e confiável das últimas 24-48h no
+# TikTok BR com fonte/data clara: resultados genéricos sem data ou guias "como viralizar". Único achado com fonte
+# e data (Folha PE/Tribuna do Sertão, abr/2026) foi de novo "six seven"/"6 7" — DESCARTADO: já está na lista
+# PROIBIDA do projeto (skibidi/67/brain rot = risco "feito para crianças", ver docs/tiktok-nativo.md §4).
+# Endpoint público /api/challenge/detail testado hoje para 6 candidatas (nba, lebronjames, sixers, knicks,
+# libertadores, halloween) -> HTTP 200, corpo vazio para todas = "não medido" (mesma falha documentada desde
 # 26/09; a medição via nuvem continua indisponível, só o PC mede).
 # Aprovados hoje (seguros, com fonte/evento real, sem número inventado — todos "não medido" em views/vídeos):
-# Libertadores (semis volta, jogo(s) 21-22/10, já no calendário verificado) e Halloween (evento fixo, 9 dias).
-# Mary on a Cross (Ghost) e demais itens de música/esporte já cobertos pela camada automática do radar.py (ver
-# hype_seguro de hoje) — não duplicar aqui.
+# NBA (temporada 2026-27 começou 20/10; LeBron James estreou pelo Sixers; fonte: ohoje.com 20/10/2026,
+# spacemoney.com.br) e Halloween (evento fixo, 31/10, 8 dias). Libertadores: SEM evento iminente hoje — semis
+# terminaram 21/10, final só em 28/11 (Conmebol/Tupi.fm); removido da lista até entrar na antecedência.
+NBA
 Halloween
-Libertadores semis (volta) 21-22/10
