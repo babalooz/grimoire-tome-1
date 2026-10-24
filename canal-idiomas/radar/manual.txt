@@ -1,16 +1,14 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-23)
-# 2026-10-23: 6 buscas web (trend tiktok brasil hoje 23 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / trend tiktok viralizou hoje / bordão viral tiktok brasil semana /
-# hashtag tiktok em alta brasil essa semana). Nenhuma achou tendência NOVA e confiável das últimas 24-48h no
-# TikTok BR com fonte/data clara: resultados genéricos sem data ou guias "como viralizar". Único achado com fonte
-# e data (Folha PE/Tribuna do Sertão, abr/2026) foi de novo "six seven"/"6 7" — DESCARTADO: já está na lista
-# PROIBIDA do projeto (skibidi/67/brain rot = risco "feito para crianças", ver docs/tiktok-nativo.md §4).
-# Endpoint público /api/challenge/detail testado hoje para 6 candidatas (nba, lebronjames, sixers, knicks,
-# libertadores, halloween) -> HTTP 200, corpo vazio para todas = "não medido" (mesma falha documentada desde
-# 26/09; a medição via nuvem continua indisponível, só o PC mede).
-# Aprovados hoje (seguros, com fonte/evento real, sem número inventado — todos "não medido" em views/vídeos):
-# NBA (temporada 2026-27 começou 20/10; LeBron James estreou pelo Sixers; fonte: ohoje.com 20/10/2026,
-# spacemoney.com.br) e Halloween (evento fixo, 31/10, 8 dias). Libertadores: SEM evento iminente hoje — semis
-# terminaram 21/10, final só em 28/11 (Conmebol/Tupi.fm); removido da lista até entrar na antecedência.
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-24)
+# 6 buscas web (trend tiktok brasil hoje 24 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / trend tiktok viralizou hoje brasil / bordão viral tiktok brasil semana /
+# hashtag tiktok em alta brasil essa semana outubro 2026). Nenhuma achou tendência NOVA e confiável das últimas
+# 24-48h no TikTok BR com fonte/data clara: resultados eram guias genéricos ("como viralizar", listas de hashtags
+# atemporais) ou tendências antigas (six seven/abr-2026 — já PROIBIDA por risco "feito para crianças"; "Será?"/mar-2026;
+# Morango do Amor/2025; Garçom tem Pitú/2025; Asoka/2024). Nenhuma nova candidata aprovada hoje.
+# Endpoint público /api/challenge/detail testado hoje para 10 candidatas (nba, lebronjames, sixers, knicks,
+# halloween, libertadores, rayan, flamengo, bts, sixseven) -> HTTP 200, corpo vazio para todas = "não medido"
+# (mesma falha documentada desde 26/09 e repetida em 23/10; a medição via nuvem continua indisponível, só o PC mede).
+# Mantidos da rotina anterior (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
+# NBA (temporada 2026-27 em andamento desde 20/10) e Halloween (evento fixo, 31/10, faltam 7 d).
 NBA
 Halloween

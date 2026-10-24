@@ -1,0 +1,542 @@
+{
+  "version": 2,
+  "date": "2026-10-24",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 4
+      }
+    ],
+    "proximos": [
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado",
+        "faltam_dias": 1
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 7
+      },
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 9
+      },
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 9
+      },
+      {
+        "id": "f1-interlagos",
+        "evento": "F1 GP São Paulo, Interlagos (corrida dom 08/11)",
+        "data_inicio": "2026-11-06",
+        "data_fim": "2026-11-08",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Rádio de equipe em inglês: 'box box', pit stop, pole position, overtake, podium; make x do ('did a great career' é erro).",
+        "ganchos_ingles": [
+          "box box",
+          "pit stop",
+          "pole position",
+          "overtake",
+          "podium"
+        ],
+        "status": "verificado",
+        "faltam_dias": 13
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "rayan",
+      "score": 8.32,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "5.000+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "rayan em inglês",
+        "nome rayan em inglês",
+        "música do rayan em inglês"
+      ],
+      "contexto": "Com Rayan, Bournemouth vence o Milan e mantém 100% na Europa League",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'rayan' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://www.lance.com.br/futebol-internacional/com-rayan-bournemouth-vence-o-milan-e-mantem-100-na-europa-league.html"
+    },
+    {
+      "termo": "NBA",
+      "score": 6.75,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "nba em inglês",
+        "o que significa nba em inglês",
+        "como se escreve nba em inglês",
+        "nba 2k26 tem legenda em inglês"
+      ],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "Clube de Regatas do Flamengo",
+      "score": 6.68,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.660 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "clube de regatas do flamengo em inglês"
+      ],
+      "contexto": "clube poliesportivo brasileiro",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Clube de Regatas do Flamengo' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Clube_de_Regatas_do_Flamengo"
+    },
+    {
+      "termo": "Club Estudiantes de La Plata",
+      "score": 6.56,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "23.517 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "clube de futebol argentino",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Club Estudiantes de La Plata' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Club_Estudiantes_de_La_Plata"
+    },
+    {
+      "termo": "Fernando Muslera",
+      "score": 6.4,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "18.529 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "Futebolista uruguaio",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Fernando Muslera' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Fernando_Muslera"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 5.68,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#56 Spotify BR. 304.111 streams/dia. 37 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#56)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Olivia Rodrigo - expectations (w/ Chappell Roan)",
+      "score": 5.47,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#108 Spotify BR. 222.815 streams/dia. 6 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [
+        "frases da olivia rodrigo em inglês",
+        "biografia da olívia rodrigo em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#108)",
+      "sugestao_aula": "'Olivia Rodrigo - expectations (w/ Chappell Roan)': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Alexander Medina",
+      "score": 5.46,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "4.363 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [],
+      "contexto": "futebolista uruguaio",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Alexander Medina' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Alexander_Medina"
+    },
+    {
+      "termo": "Copa Libertadores da América",
+      "score": 5.01,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "10.141 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [
+        "copa libertadores da américa em inglês"
+      ],
+      "contexto": "competição entre clubes de futebol sul-americana",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Copa Libertadores da América' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Copa_Libertadores_da_Am%C3%A9rica"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.19,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#77 Spotify BR. 262.724 streams/dia. 217 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#77)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "starlink",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"trump\" em \"Trump Asked Musk to Reverse Starshield Restrictions on Ukraine\""
+    },
+    {
+      "termo": "câncer colorretal",
+      "fonte": "google-trends",
+      "motivo": "saúde grave: \"cancer\" em \"câncer colorretal\""
+    },
+    {
+      "termo": "dark horse",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"lula\" em \"Lula pede cassação de Flávio por ligação de verba de Dark Horse ao PCC\""
+    },
+    {
+      "termo": "lula exército",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"lula\" em \"lula exército\""
+    },
+    {
+      "termo": "Joice Hasselmann",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"jornalista, radialista, escritora, comentarista, ativista, política brasileira e ex-deputa\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Kim Jong-un",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Kim Jong-un (em coreano: 김정은; hanja: 金正恩; Pyongyang, 8 de janeiro de 1982) é um político n\""
+    },
+    {
+      "termo": "Lua Blanco",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"atriz, cantora, compositora e escritora brasileira (1987–2026)\""
+    },
+    {
+      "termo": "Caso Ana Clara Machado",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassinato\" em \"assassinato da criança brasileira Ana Clara Machado, no Rio de Janeiro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "Fernando Collor",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"32.º presidente do Brasil (1990–1992)\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Deltan Dallagnol",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Deltan Martinazzo Dallagnol (Pato Branco, 15 de janeiro de 1980) é um jurista e político b\""
+    },
+    {
+      "termo": "Enéas Carneiro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"cardiologista e político brasileiro (1938–2007)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 1989",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 1989\""
+    },
+    {
+      "termo": "Banco do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Banco do Brasil (BB) é uma instituição financeira brasileira, sendo também o banco tradici\""
+    },
+    {
+      "termo": "João Amoêdo",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"banqueiro e político brasileiro\""
+    },
+    {
+      "termo": "Gostosos com Lula",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"lula\" em \"Gostosos com Lula\""
+    },
+    {
+      "termo": "Cutelo & Corvo",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"assassino\" em \"'Cutelo & Corvo': Emma Laird e Thomas Doherty vão estrelar adaptação de popular romance as\""
+    },
+    {
+      "termo": "morto-vivo",
+      "fonte": "tiktok (notícias)",
+      "motivo": "tragédia/morte: \"morto\" em \"morto-vivo\""
+    },
+    {
+      "termo": "Bismillah, são as trevas",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"policias\" em \"\"Bismillah, são as trevas\": o slogan viral que se espalha nos protestos em França e ridicu\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "#andteam",
+    "#harua",
+    "adela - nicole kidman",
+    "alexander medina",
+    "andre janones",
+    "avengers: doomsday",
+    "avenida brasil",
+    "banco do brasil",
+    "bismillah, sao as trevas",
+    "bts - swim",
+    "caixa seguridade",
+    "cancer colorretal",
+    "caso ana clara machado",
+    "chatgpt",
+    "che guevara",
+    "club estudiantes de la plata",
+    "clube de regatas do flamengo",
+    "copa libertadores da america",
+    "copa libertadores da america de 1968",
+    "copa libertadores da america de 2026",
+    "cutelo & corvo",
+    "daniel vorcaro",
+    "daniella marques",
+    "dark horse",
+    "deltan dallagnol",
+    "desculpa",
+    "dominic fike - babydoll",
+    "economizei us$ 400",
+    "eleicao presidencial no brasil em 1989",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "eneas carneiro",
+    "erika hilton",
+    "essa sou eu quando era crianca",
+    "esse e o meu jeito ninja",
+    "evanescence - bring me to life",
+    "facebook",
+    "fernando collor",
+    "fernando henrique cardoso",
+    "fernando muslera",
+    "flavio bolsonaro",
+    "gado",
+    "google",
+    "gostosos com lula",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "harry styles - sign of the times",
+    "i",
+    "jair bolsonaro",
+    "joao amoedo",
+    "joice hasselmann",
+    "kim jong-un",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lista de campeoes da copa libertadores da america",
+    "lista de presidentes do brasil",
+    "lua blanco",
+    "luiz inacio lula da silva",
+    "lula exercito",
+    "malcolm todd - earrings",
+    "morto-vivo",
+    "nba",
+    "nikolas ferreira",
+    "oasis - wonderwall - remastered",
+    "olhar congelante",
+    "olivia rodrigo - expectations (w/ chappell roan)",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "pobre e assim?",
+    "rayan",
+    "renan santos",
+    "rosangela lula da silva",
+    "starlink",
+    "suplemento do tiktok",
+    "the goo goo dolls - iris",
+    "the police - every breath you take",
+    "uol",
+    "virginia fonseca",
+    "whatsapp",
+    "youtube"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 13 itens",
+    "tiktok: 14 itens",
+    "manual: 2 itens"
+  ]
+}
