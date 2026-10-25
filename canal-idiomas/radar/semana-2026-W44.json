@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "semana": "2026-W44",
+  "periodo": {
+    "inicio": "2026-10-26",
+    "fim": "2026-11-01"
+  },
+  "gerado_em": "2026-10-25",
+  "fontes_radares_diarios": [
+    "canal-idiomas/radar/2026-10-19.json",
+    "canal-idiomas/radar/2026-10-20.json",
+    "canal-idiomas/radar/2026-10-21.json",
+    "canal-idiomas/radar/2026-10-22.json",
+    "canal-idiomas/radar/2026-10-23.json",
+    "canal-idiomas/radar/2026-10-24.json",
+    "canal-idiomas/radar/2026-10-25.json"
+  ],
+  "gap_radar_diario": {
+    "data_faltante": null,
+    "nota": "7/7 dias disponíveis, sem gap. 2026-10-25 teve bloqueio total de hype (dia de eleição, 2º turno) — conta como 1 dos 7 dias medidos, mas contribui 0 aparição a qualquer termo."
+  },
+  "freio_ativo": false,
+  "contexto_operacional": {
+    "nota": "Nenhum vídeo publicado ainda (13ª rodada diária seguida, canal-idiomas/decisoes.md 2026-10-25). 3 vídeos do assunto 1 aprovados no portão e parados no branch midia desde 2026-10-14 (11 dias parado), à espera da decisão do Felipe (regra 27/09). Alerta urgente já reenviado em 2026-10-24 (push notification); não repetido hoje por falta de fato novo sobre o atraso em si.",
+    "fato_novo_desta_rotina": "decisoes.md registra 3 testes A/B com início agendado para 2026-10-26 (1º dia desta semana): capítulos 'parte N', CTA A/B/erro-de-propósito, gíria TikTok x situação útil, todos com janela 26/10-08/11. Sem publicação, nenhum começa como planejado.",
+    "prazo_credito": "Crédito Claude Code com prazo até 2026-11-05 (faltam 11 dias a partir de 2026-10-25); uso excedente desligado."
+  },
+  "tema_da_semana": [
+    {
+      "termo": "BTS - SWIM",
+      "dias_aparicao": 5,
+      "dias_total": 7,
+      "datas": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-24"
+      ],
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_medido": "streams/dia entre 225.926 (20/10) e 271.499 (21/10); posição Spotify BR entre #60 e #120",
+      "mundo_anglofono_v2": false,
+      "nota": "K-pop (catálogo), não cumpre a regra de hype anglófono do Felipe para V2 (streaming chart não é show no Brasil). Usar só em V1/vocabulário. Separado do show real do BTS no Brasil esta semana (ver calendário)."
+    },
+    {
+      "termo": "Olivia Rodrigo - expectations (w/ Chappell Roan)",
+      "dias_aparicao": 5,
+      "dias_total": 7,
+      "datas": [
+        "2026-10-19",
+        "2026-10-21",
+        "2026-10-22",
+        "2026-10-23",
+        "2026-10-24"
+      ],
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_medido": "streams/dia entre 195.294 (19/10) e 239.887 (23/10); posição Spotify BR entre #80 e #176, subindo",
+      "mundo_anglofono_v2": false,
+      "nota": "Música internacional em inglês, mas presença em chart de streaming não está na lista aprovada do Felipe (só show/turnê internacional NO BRASIL conta). Usar só em V1/vocabulário."
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "dias_aparicao": 4,
+      "dias_total": 7,
+      "datas": [
+        "2026-10-19",
+        "2026-10-20",
+        "2026-10-22",
+        "2026-10-24"
+      ],
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_medido": "streams/dia entre 185.526 (20/10) e 310.390 (22/10); posição Spotify BR entre #55 e #146",
+      "mundo_anglofono_v2": false,
+      "nota": "Música internacional, origem do artista não confirmada como anglófona. Usar só em V1/vocabulário."
+    }
+  ],
+  "candidatos_fora_do_top3": [
+    {
+      "termo": "NBA",
+      "dias_aparicao": 3,
+      "dias_total": 7,
+      "datas": [
+        "2026-10-19",
+        "2026-10-23",
+        "2026-10-24"
+      ],
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "mundo_anglofono_v2": true,
+      "nota": "Cumpre a regra do Felipe (NBA/NFL está na lista aprovada). Evento real dentro desta semana: abertura da fase de grupos da Emirates NBA Cup em 30/10."
+    },
+    {
+      "termo": "Copa Libertadores da America / clubes finalistas (Flamengo, Estudiantes)",
+      "dias_aparicao": 3,
+      "dias_total": 7,
+      "datas": [
+        "2026-10-20",
+        "2026-10-23",
+        "2026-10-24"
+      ],
+      "fontes": [
+        "wikipedia",
+        "manual (TikTok)"
+      ],
+      "mundo_anglofono_v2": "interpretacao_herdada_da_semana_passada",
+      "nota": "Nao esta na lista literal do Felipe (cita NBA/NFL, nao futebol sul-americano); semana passada (2026-W43) tratou o angulo 'narrador gringo' como suficiente e esta rotina manteve a mesma leitura por continuidade, mas e interpretacao, nao regra escrita - sinalizado para o Felipe decidir. Sem evento novo nesta semana: final Flamengo x Estudiantes so em 2026-11-28 (Montevideu). Resultado do jogo de volta de 22/10 nao confirmado por fonte com data posterior - nao medido."
+    }
+  ],
+  "calendario": [
+    {
+      "data": "2026-10-25",
+      "dia_semana": "domingo",
+      "evento": "Eleicoes, 2o turno - resultado ainda nao confirmado por fonte com data posterior ao pleito",
+      "bloqueio": null,
+      "url": null,
+      "nota": "nao medido; dia ja passou, fora da semana que comeca amanha"
+    },
+    {
+      "data": "2026-10-26",
+      "dia_semana": "segunda",
+      "evento": "Sem evento especifico encontrado. Possivel repercussao do resultado eleitoral de ontem - sem fonte confirmando risco de tragedia/violencia",
+      "bloqueio": false,
+      "url": null,
+      "nota": "checagem manual do noticiario recomendada antes de publicar; regra automatica de bloqueio do CLAUDE.md so cobre o dia da eleicao em si"
+    },
+    {
+      "data": "2026-10-27",
+      "dia_semana": "terca",
+      "evento": "Sem evento especifico; vespera do show do BTS",
+      "bloqueio": false,
+      "url": null
+    },
+    {
+      "data": "2026-10-28",
+      "dia_semana": "quarta",
+      "evento": "BTS 'Arirang' World Tour, Dia 1 - Estadio do MorumBIS, Sao Paulo (portoes 16h, show 20h)",
+      "bloqueio": false,
+      "url": "https://rollingstone.com.br/?p=291820"
+    },
+    {
+      "data": "2026-10-29",
+      "dia_semana": "quinta",
+      "evento": "Sem show do BTS hoje - datas confirmadas sao 28, 30 e 31/10, nao 29 (resolve divergencia 'a confirmar' dos radares diarios anteriores)",
+      "bloqueio": false,
+      "url": "https://billboard.com.br/aniversario-bts-programacao-festa/"
+    },
+    {
+      "data": "2026-10-30",
+      "dia_semana": "sexta",
+      "evento": "BTS 'Arirang' World Tour, Dia 2 (MorumBIS) E abertura da fase de grupos da Emirates NBA Cup 2026: 76ers x Knicks (20h30 BRT), Warriors x Lakers (23h BRT)",
+      "bloqueio": false,
+      "url": "https://pr.nba.com/2026-27-nba-regular-season-schedule/"
+    },
+    {
+      "data": "2026-10-31",
+      "dia_semana": "sabado",
+      "evento": "Halloween + Dia do Saci (fixo) E BTS 'Arirang' World Tour, Dia 3 (fechamento, MorumBIS)",
+      "bloqueio": false,
+      "url": null
+    },
+    {
+      "data": "2026-11-01",
+      "dia_semana": "domingo",
+      "evento": "Sem feriado nem evento de TikTok for Business confirmado - nao medido (endpoint de hashtag/challenge nao responde da nuvem). Vespera de Finados (02/11, fora da semana)",
+      "bloqueio": false,
+      "url": null
+    }
+  ],
+  "tiktok_calendario_oficial": {
+    "medido": false,
+    "nota": "Busca nao encontrou evento de TikTok for Business com data confirmada nesta semana; endpoint de hashtag/challenge continua sem resposta da nuvem (ver manual.txt). Nao citar sem confirmar."
+  },
+  "girias": {
+    "vencendo": [
+      {
+        "termo": "e um nervosismo surreal",
+        "valido_ate": "2026-10-31",
+        "dias_restantes": 6,
+        "vence_dentro_da_semana": true,
+        "fallback": "Respondi o que ninguem perguntou. Deu branco."
+      }
+    ],
+    "validas_sem_mudanca": [
+      "buffado",
+      "flopou/flopado",
+      "amassou",
+      "hypeado/estourado",
+      "comeu",
+      "farmar aura"
+    ],
+    "reprovadas_mantidas": [
+      "Tu, finish",
+      "Neysexual / Bichos Escrotos",
+      "skibidi",
+      "67 (six seven)",
+      "brain rot",
+      "cringe/rizz/chat/IYKYK (so texto de tela)"
+    ],
+    "novas_propostas": [
+      {
+        "termo": "gag / fiquei gagada",
+        "origem": "ingles \"to gag\" (choque/surpresa, cultura drag)",
+        "fonte": "https://opovo.com.br/trends/as-girias-gag-aura-e-camp-estao-por-toda-parte-nas-redes-sociais-e-a-maioria-das-pessoas-que-usa-nao-sabe-exatamente-o-que-cada-uma-significa/",
+        "data_fonte": "2026-05",
+        "views": "nao medido",
+        "usar": "sim, com moderacao",
+        "repetida_da_semana_passada": true
+      },
+      {
+        "termo": "tankar",
+        "origem": "ingles \"tank\" (giria gamer, aguentar/suportar)",
+        "fonte": "https://www.correio24horas.com.br/em-alta/gag-tankar-e-old-o-que-significam-as-girias-usadas-pela-geracao-z-na-internet-0426",
+        "data_fonte": "2026",
+        "views": "nao medido",
+        "usar": "sim",
+        "repetida_da_semana_passada": true
+      },
+      {
+        "termo": "locked in / #LockedIn",
+        "origem": "ingles, direto",
+        "fonte": "https://www.band.com.br/lifestyle/noticias/fim-da-era-delulu-a-tendencia-locked-in-que-domina-o-tiktok-em-2026-202602021711",
+        "data_fonte": "2026-02",
+        "views": "agregado de hashtag, nao por video - nao medido com precisao",
+        "usar": "sim",
+        "repetida_da_semana_passada": true
+      }
+    ],
+    "novas_propostas_nota": "Busca desta rotina (6 queries) nao achou giria nova com prova de uso por video alem das 3 ja propostas na rotina de 2026-W43 e ainda nao incorporadas/decididas. Mantidas sem inventar numero novo (regra do CLAUDE.md)."
+  },
+  "instrucao_roteirista": [
+    {
+      "data": "2026-10-26",
+      "video_grade": "A . V1 APRENDER",
+      "episodio_contexto": "Curriculo segue, sem hype estruturado neste slot",
+      "hype_esquete_v2": "Nenhum hype estruturado (V1 nao carrega storytelling); corte/esquete pode abrir com reserva atemporal (turista gringo no cafe)"
+    },
+    {
+      "data": "2026-10-27",
+      "video_grade": "A . V2 PRATICAR (dia de hype estruturado)",
+      "episodio_contexto": "Curriculo segue",
+      "hype_esquete_v2": "BTS 'Arirang' Tour - vespera (show e amanha): angulo fa gringo chegando a SP, vocabulario de show (fan chant, setlist, sold out, line up, merch; ARMY, comeback, era). Sem letra nem audio original do grupo"
+    },
+    {
+      "data": "2026-10-28",
+      "video_grade": "B . V1 APRENDER",
+      "episodio_contexto": "Curriculo segue",
+      "hype_esquete_v2": "Dia real do show (MorumBIS) - sem hype estruturado neste slot, mas o corte/esquete do dia pode citar 'hoje e o show' como gancho de abertura"
+    },
+    {
+      "data": "2026-10-29",
+      "video_grade": "A . V3 FIXAR",
+      "episodio_contexto": "Curriculo segue",
+      "hype_esquete_v2": "Sem evento do dia (BTS nao tem show hoje); reserva atemporal ou revisao do vocabulario de show usado na terca"
+    },
+    {
+      "data": "2026-10-30",
+      "video_grade": "B . V2 PRATICAR (dia de hype estruturado)",
+      "episodio_contexto": "Curriculo segue",
+      "hype_esquete_v2": "Abertura da Emirates NBA Cup (76ers x Knicks, Warriors x Lakers) - angulo comentarista gringo de basquete (buzzer beater, slam dunk, 'he's on fire'); cumpre a regra do Felipe mais diretamente que o BTS (NBA esta na lista aprovada). BTS Dia 2 acontece no mesmo dia - variar se preferir"
+    },
+    {
+      "data": "2026-10-31",
+      "video_grade": "B . V3 FIXAR",
+      "episodio_contexto": "Curriculo segue",
+      "hype_esquete_v2": "Halloween + Dia do Saci (fixo): trick or treat, jack-o'-lantern, haunted, spooky + Saci em ingles (one-legged imp). BTS Dia 3 tambem cai hoje - variar o corte. Atencao: giria 'nervosismo surreal' vence hoje"
+    },
+    {
+      "data": "2026-11-01",
+      "video_grade": "Compilacao da semana (YouTube, com capitulos)",
+      "episodio_contexto": "Fecha a semana",
+      "hype_esquete_v2": "Sem hype novo; fechar citando o show do BTS (28-31/10) e a abertura da NBA Cup (30/10) como recapitulacao, se a compilacao ja estiver rodando"
+    }
+  ]
+}
