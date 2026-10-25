@@ -1,0 +1,409 @@
+{
+  "version": 2,
+  "date": "2026-10-25",
+  "evento_do_dia": {
+    "hoje": [
+      {
+        "id": "eleicoes-2turno",
+        "evento": "Eleições, 2º turno — SEM hype",
+        "data_inicio": "2026-10-25",
+        "data_fim": "2026-10-25",
+        "categoria": "bloqueio",
+        "seguro": false,
+        "block_hype": true,
+        "tema_aula": "Nenhum tema do dia. Publicar só quadros neutros/atemporais.",
+        "ganchos_ingles": [],
+        "status": "verificado"
+      }
+    ],
+    "preparar": [
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 3
+      }
+    ],
+    "proximos": [
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 6
+      },
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 8
+      },
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 8
+      },
+      {
+        "id": "f1-interlagos",
+        "evento": "F1 GP São Paulo, Interlagos (corrida dom 08/11)",
+        "data_inicio": "2026-11-06",
+        "data_fim": "2026-11-08",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Rádio de equipe em inglês: 'box box', pit stop, pole position, overtake, podium; make x do ('did a great career' é erro).",
+        "ganchos_ingles": [
+          "box box",
+          "pit stop",
+          "pole position",
+          "overtake",
+          "podium"
+        ],
+        "status": "verificado",
+        "faltam_dias": 12
+      },
+      {
+        "id": "enem-dia1",
+        "evento": "ENEM dia 1 (Linguagens, 5 questões de língua estrangeira)",
+        "data_inicio": "2026-11-08",
+        "data_fim": "2026-11-08",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês do ENEM: palavras e cognatos que mais aparecem nas provas anteriores do INEP (conferir nas provas).",
+        "ganchos_ingles": [
+          "cognates",
+          "false friends",
+          "reading comprehension"
+        ],
+        "status": "verificado",
+        "faltam_dias": 14
+      }
+    ],
+    "block_hype": true
+  },
+  "hype_seguro": [],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "passaporte",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"bolsonaro\" em \"PF suspeita de sociedade entre Willer Tomaz e Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Caso Ana Clara Machado",
+      "fonte": "wikipedia",
+      "motivo": "crime/polícia: \"assassinato\" em \"assassinato da criança brasileira Ana Clara Machado, no Rio de Janeiro\""
+    },
+    {
+      "termo": "Pesquisas de opinião para a eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Pesquisas de opinião para a eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Fortune Tiger",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"fortune tiger\" em \"Fortune Tiger\""
+    },
+    {
+      "termo": "Joice Hasselmann",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"jornalista, radialista, escritora, comentarista, ativista, política brasileira e ex-deputa\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Fernando Collor",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"32.º presidente do Brasil (1990–1992)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Lua Blanco",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"atriz, cantora, compositora e escritora brasileira (1987–2026)\""
+    },
+    {
+      "termo": "Enéas Carneiro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"cardiologista e político brasileiro (1938–2007)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 1989",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 1989\""
+    },
+    {
+      "termo": "Daniel Vorcaro",
+      "fonte": "wikipedia",
+      "motivo": "apostas/marcas de risco: \"vorcaro\" em \"Daniel Vorcaro\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Carlos Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Carlos Bolsonaro\""
+    },
+    {
+      "termo": "Dilma Rousseff",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"36.ª presidente do Brasil (2011–2016)\""
+    },
+    {
+      "termo": "Eduardo Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Eduardo Bolsonaro\""
+    },
+    {
+      "termo": "Histórico eleitoral de Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleitoral\" em \"Histórico eleitoral de Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2002",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2002\""
+    },
+    {
+      "termo": "Daniella Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"Daniella Marques Consentino (Barra Mansa, 16 de outubro de 1979) é uma administradora bras\""
+    },
+    {
+      "termo": "Michelle Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Michelle Bolsonaro\""
+    },
+    {
+      "termo": "Tarcísio de Freitas",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"tarcisio\" em \"Tarcísio de Freitas\""
+    },
+    {
+      "termo": "Geraldo Alckmin",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"alckmin\" em \"Geraldo Alckmin\""
+    },
+    {
+      "termo": "Transposição do rio São Francisco",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governo\" em \"obra do Governo Federal Brasileiro\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Marisa Letícia Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Marisa Letícia Lula da Silva\""
+    },
+    {
+      "termo": "Rogéria Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Rogéria Bolsonaro\""
+    },
+    {
+      "termo": "Pai do Bebê",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"debate\" em \"Richarlison \"Pai do Bebê\": entenda o apelido citado em debate\""
+    },
+    {
+      "termo": "Cutelo & Corvo",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"assassino\" em \"'Cutelo & Corvo': Emma Laird e Thomas Doherty vão estrelar adaptação de popular romance as\""
+    },
+    {
+      "termo": "morto-vivo",
+      "fonte": "tiktok (notícias)",
+      "motivo": "tragédia/morte: \"morto\" em \"morto-vivo\""
+    },
+    {
+      "termo": "Bismillah, são as trevas",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"policias\" em \"\"Bismillah, são as trevas\": o slogan viral que se espalha nos protestos em França e ridicu\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "#ato",
+    "#naze",
+    "#turn",
+    "adela - nicole kidman",
+    "andre janones",
+    "bismillah, sao as trevas",
+    "brandon williams",
+    "bts - swim",
+    "cacto saltador",
+    "carlos bolsonaro",
+    "caso ana clara machado",
+    "chatgpt",
+    "che guevara",
+    "clarence seedorf",
+    "copa do nordeste de futebol de 2026",
+    "cutelo & corvo",
+    "daniel vorcaro",
+    "daniella marques",
+    "dilma rousseff",
+    "dominic fike - babydoll",
+    "economizei us$ 400",
+    "eduardo bolsonaro",
+    "eleicao presidencial no brasil em 1989",
+    "eleicao presidencial no brasil em 2002",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "eneas carneiro",
+    "erika hilton",
+    "essa sou eu quando era crianca",
+    "ethan klein",
+    "fernando collor",
+    "fernando henrique cardoso",
+    "fight do milhao",
+    "flavio bolsonaro",
+    "fortune tiger",
+    "gabriel bortoleto",
+    "geraldo alckmin",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "historico eleitoral de luiz inacio lula da silva",
+    "jair bolsonaro",
+    "joice hasselmann",
+    "k/da - firestarter (w/ league of legends, i-dle, mimi webb, sophie powers, miyeon, soyeon)",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "lua blanco",
+    "luiz inacio lula da silva",
+    "marisa leticia lula da silva",
+    "michael jackson",
+    "michelle bolsonaro",
+    "morto-vivo",
+    "moto gp",
+    "nba",
+    "nikolas ferreira",
+    "oasis - wonderwall - remastered",
+    "olivia rodrigo - expectations (w/ chappell roan)",
+    "pai do bebe",
+    "passaporte",
+    "pesquisas de opiniao para a eleicao presidencial no brasil em 2026",
+    "previsao do tempo rio de janeiro",
+    "renan santos",
+    "rogeria bolsonaro",
+    "rosangela lula da silva",
+    "tarcisio de freitas",
+    "tate mcrae - housewife",
+    "the goo goo dolls - iris",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "trace brasil",
+    "transposicao do rio sao francisco",
+    "trevon brazile",
+    "warriors",
+    "yaxel lendeborg",
+    "youtube"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 13 itens",
+    "tiktok: 10 itens",
+    "manual: 2 itens"
+  ]
+}
