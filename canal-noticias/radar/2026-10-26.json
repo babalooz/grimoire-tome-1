@@ -1,0 +1,305 @@
+{
+  "data": "2026-10-26",
+  "total_manchetes": 333,
+  "pautas": [
+    {
+      "manchete": "Estudo de cientistas revela por que os dedos ficam enrugados depois de um banho demorado e qual é a verdadeira função dessa reação",
+      "nota": 13,
+      "veiculos": [
+        "Aliados Brasil",
+        "Correio Braziliense",
+        "Terra"
+      ],
+      "fontes": [
+        {
+          "titulo": "Estudo de cientistas revela por que os dedos ficam enrugados depois de um banho demorado e qual é a verdadeira função dessa reação",
+          "veiculo": "Correio Braziliense",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQajVValF4R00yaGtkR0ZJN2ZyY2xMaFZnSHdub2NmUFFyV3QzQVVGeUNEQ2hUakc3SzJacHV5Qzl3bF91VHRTakdKenM3SFdMZkF6N1BsTkdoUFQ1ZXZDeDU5V1ViVW5GSS01dmUtMHhpVUVyYjI4UWRwb3pjQWdBck5iVmU5dDhzNHQzc3ZxYkhFT2lLSUMweldLSDRGcHFYRmNUTUhmUUFLWDY3SXcwQ3d0OWhFMmlVQlF0MDZhTFVSZ181NVh0T1VBcGZ3YUVuQVdTS1ZTZHdZT1dXN2RQVVYyOVpLaTd3RHpILWo0YWZyRjNaVzZMMmRlZXI4RG5oNDVxWXk1Zmo?oc=5"
+        },
+        {
+          "titulo": "Ex-agente da CIA revela qual é o andar mais seguro para reservar um quarto de hotel",
+          "veiculo": "Aliados Brasil",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPc3ZzSlgtTmpYQXhvWGx1ZXFLZm9wSUhnRERtdzZxcnJWQjRxMUdoSzJ6Nmw0aHZSZlVGeEV4eXRMeWI3RGtuUjZmYmRsNWo0N2luSG9SbjhfOGZFRVozTDZ5S0pfTnRsbTNra0NVeUl2NjhDeGtuTVEteDRWUUl0T2RvWC02UnR3V0RPVTc1NDdCenhCRlRJS0tZQWk5Z3lvRHBzNE0zRWVfZ1NfR1NMZ2xIeHU2SlZkS0xPY0xSNmRON2w3bmpWandhaw?oc=5"
+        },
+        {
+          "titulo": "Escondido nas águas profundas do Rio Tefé, peixe elétrico revela uma nova espécie na Amazônia e atrai a atenção dos cientistas",
+          "veiculo": "Terra",
+          "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQa0I4UC1MNWF3M1FUODNjMmd3dnFlc1UzdlUzRXdOZWVUYmtvU3BkaXJ4VDlRZ1JOZnNBWUo1eVV2VW5OSTZJWXNmYkk0R3B0al9Zc2FvaEZpWV9scVYyMlFPX0U5eUEtVkJ3SjlEd2xRaVh6ejFmSWE0ZTJQNC02dExzUW1pZE5GQkoycEs5ZXdnNkZHNmcxV1I0Tnk4UW9teEpnWXJTSlVpa1ZsVGhxcWJNQ3RyTHp6Q0JYY3ZxTW1nRFF2RDdxTVppUzh3MFVwY29xSHpfeTN3UUt5U3JxeHl6aHBuQWlOaDN3QmJJcW5UMklhRzRkdlFGYWlMWk5Jb2pQNDF6Qk1Xdkd4T2cwQU9STUI1Wll0MWlvQU5zcUR4aFJmVlR5NllFd0RuU1E0Y3Jr?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "No Domingão, José Loreto entrega apelido inusitado da namorada, Nanda Marques",
+      "nota": 12,
+      "veiculos": [
+        "Jornal Correio",
+        "Portal UAI",
+        "R7"
+      ],
+      "fontes": [
+        {
+          "titulo": "No Domingão, José Loreto entrega apelido inusitado da namorada, Nanda Marques",
+          "veiculo": "Jornal Correio",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcm1oR0N6VkJEUlkxYkF3LTRkOVh1Wks5Y2JqSUF0SVhDNHNPV1VkT04welVFeGluN0RCd3prbW1qNkFSNjZNeVZnRkZ1MmFoWlJCX1cyZkVJcHU0SFZtNllHUXJyRHlBci1MNGl1SUN5UTZ0LVI1T2F1bmxQYlpYblJ6bHc4dlhsa0dpYXFNa3laamtVYUYyTVpSUUJDZXZETjhJQ2ZHanZBYmd4ZzRvenB3dEdjcXBsZUwxcFMxQQ?oc=5"
+        },
+        {
+          "titulo": "José Loreto revela apelido inusitado de Nanda Marques na TV",
+          "veiculo": "Portal UAI",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPOE5RRHZpV0E2anFEZE4xVzF2eGFZNllUaWw0Z1Boa1BheURsdUlETGJWNTliV0RheGwxOGlUbzJ4WFJudU9iWEloNC10SmZadXJYYWV2OTRRbmVCUE9sTjVYSFRVMXI4X1VSUGhhemx0UmpVZWZqMHl4eVJLYjdGdDRCeU5NQlhnZ3NiM1hGZlBhM1V1d2VNOGxnWGlnQl9Ua3ZFMXdYYnJNcXU2ektTWi0wZ1lrM3otaFJDUk1RX19ZaWI0Q3Vpb2JuQXB4d1FJR2tGdlJzbnRLdk5zdGfSAd4BQVVfeXFMUElfUXVNQnVCc1AzQWNzUVdwdDJUbi1WV1RPYi0tVlEwMF9QWXlidWZ3RU9iTTh1Z1VSdm05S3BtWEZ0NDZnOFVJbzJQblVNd0hFU0hXWHVtak41V0UxOFptZTdXTTFmcWRSUkdHLWJYZ0JMS2RHY0RsdV9JSW1KVjY3a1NNc1haVlJ5dmxxQ3hVQ2wyRk55a3dFUG5UQWJfcTl5OXRXWkhUeFVlaU9aRzVZZnhZemVnQXJCcklidDAwaFBoWm52dUhqcEpEZFhDS09XQ1BtYmlPQThwaTFn?oc=5"
+        },
+        {
+          "titulo": "Entenda o motivo do apelido inusitado dado por Mônica Fonseca a Ana Bruna em A Fazenda",
+          "veiculo": "R7",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQUlhpanBHTnpBamVYYzlOb0NWVE1zdmh3amtOUE1JM25HeTctN2s4WVBjbmxTbDQzY0ROLUFMR0hWVFBoNGgtVm94N2RsV1FFTjM4N1EtYWxVR0d2NnVsYVdmRTZ6SG9XS1F5b28teXpZVGNJRHMzR196NFpyNFctUVNsVnJZWHI4SVRoRTg1MDl5Z0lHejc4TTlSUmNqaU9vRWhZZDA2ZmtVdGNRelRzV20xTGdITmVPdWduMlFtRnFDWW1odXpDaXZVS2E4dFl6ZkhKTWZtYjcyV3d5bVpQOTVzVExfdw?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "Quase três décadas depois, o epílogo esquecido de Dragon Ball GT ainda é a despedida definitiva de Goku",
+      "nota": 10,
+      "veiculos": [
+        "Euronews.com",
+        "Rádio Geek"
+      ],
+      "fontes": [
+        {
+          "titulo": "Quase três décadas depois, o epílogo esquecido de Dragon Ball GT ainda é a despedida definitiva de Goku",
+          "veiculo": "Rádio Geek",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPQ3ZjVTBXejk1V2Q5WWVyaUFJQjJRLWktNDZXS2stQU1qVFlxQ2dWckJXNGx6UThiWmsxanU3YXhvWERwZm9GZEI3ODBRYlNBR0ZPMkhYVUw5ell6eF9BZmlrMG5XcGt2bEY0R2tsSVpSZ2NhbEs5MWJvUG5zTlVCWUU1MFhtSlpYU19tLWl2T3NSclU?oc=5"
+        },
+        {
+          "titulo": "16 vilões depois, o Homem-Aranha de Tom Holland ainda não tem um nêmesis — e isso virou o maior dilema da Fase 6",
+          "veiculo": "Rádio Geek",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNjcta2U1c3J4am9ETS0xbzRLNWI3bkpzZnFsUG1penNKNmxDVnBiZzZ5MGZrQmc0NHFvemdXeVNaUG5aZjkyRDhmeDBZTWNfcVpmT1BCczROQ3pKWkpBUWUyZlBXVHh5cklhd1diMHdFcHVLQzM4VEJTdFNLWThfdV9rVGotNkpQT0U5eg?oc=5"
+        },
+        {
+          "titulo": "Pescador alemão captura peixe-gato de quase três metros na Polónia",
+          "veiculo": "Euronews.com",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTEIzeEJJaVA1U0xjdVlfOWpRSUZYeDBZQUViZk14aFcwRno2Zy0zV09ncUF2VUdzY3M5M0JiNlZPN0RYYmpfaUxNYXd3bTh3bVFaX1N4S09kSnFjbHRIWFJyaEVWOWdBbzNlVTJnU25yUEZHTjdYbjl2VGdaVE1RXzBZRTlQb1JRSnFfME9veTdoTGNYZEE?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "Atriz que interpreta Lucia em GTA 6 viraliza respondendo fãs: 'Eu não sou rica'",
+      "nota": 9,
+      "veiculos": [
+        "Estadão",
+        "games.gg"
+      ],
+      "fontes": [
+        {
+          "titulo": "Atriz que interpreta Lucia em GTA 6 viraliza respondendo fãs: 'Eu não sou rica'",
+          "veiculo": "Estadão",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVE94Q09qNlpTLW11ZmdJVVl5bUlPWGM5cG9GRFlmTm5yN1A2Wk9rRVQ3R2dxbXhuRG1sajN1Z3R0M0x0UkJaRXBsQV8zREhhQkFzeml6a19SX2JHcHFhdHdKZV9HWEt0Z1RobEZveGluVFpvZVI3LUNxcmg3N093d0hoYW4zRVRHU0lKemszdjRvX0hoTkN1eWtOQU9KWU1RNG9rSWxGdlFZcHpESWFUTXVkUC03LU0?oc=5"
+        },
+        {
+          "titulo": "Atriz cotada para Lucia em GTA 6 viraliza ao evitar perguntas de fãs",
+          "veiculo": "games.gg",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVWE1WklRcDFyMVpOV3dqcTZaVUtraWgzek1vdEowZlNoT1FNZmVPenpOZTdiQWdlU2pVT3BNU01Mdy11SmFDMXctU2szY3ZCdHBIbkVsNVRKcjVIRFhZR2p3bDRsNi1uam9Oa3F5blhKMGxLcHlEOHNoZGpfenNody1iRlMySHhXek5wNmFqNnI3S3l3YXJYcGJaY0JwTnRacVZkUQ?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "Alien Archeologist Chega ao Steam com Demo Gratuita: Prepare-se para Desenterrar Segredos em Marte com um Robô Curioso",
+      "nota": 7,
+      "veiculos": [
+        "Gamerscore Brasil"
+      ],
+      "fontes": [
+        {
+          "titulo": "Alien Archeologist Chega ao Steam com Demo Gratuita: Prepare-se para Desenterrar Segredos em Marte com um Robô Curioso",
+          "veiculo": "Gamerscore Brasil",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQYXBBR3V1QTNkTTM0bUxsQUkzMl8xUFRKOHRyZHdGY19HMk1LdDJTVUpaYzJkRTlxd09SZDlmQUpPczc4a1BhUWFJdTRmRGdsNHlNRlVlZzlnSG5VdzlGMzRQbVJ4VlU1VU4xU3JJOU5CUHlFZEF0MkJjenJMbW5ER3FETk01cGk1TC1BVXN1Sm5wU3FKQXYtYmJ4ZkU2VmpuLUo4SHU1Yl9tTFA3UGhKWUg2VmtMLU9ZM0EyaXpwSi1KZ2Z0eG1QWnluRl9IS09BSDMwTnp2RUJQNUxHcHAtMGlB?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "Globo descobre detalhe contratual e só poderá transmitir Recopa a partir de 2028",
+      "nota": 7,
+      "veiculos": [
+        "Diario de Cuiabá"
+      ],
+      "fontes": [
+        {
+          "titulo": "Globo descobre detalhe contratual e só poderá transmitir Recopa a partir de 2028",
+          "veiculo": "Diario de Cuiabá",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWlZCR3gxM1pNX3g1QUczTjR6V3psbDdMU083SnVvVGZyR3l1Qm1jc0hXQl9hTUJfY3MwU01LNXVJTFotcmtvQ05TYXUtdkVFWkNkcE10MXVxR3FYYmV3T3locDR4MGphN2JUbDBNbWliQThVR0JMbS1BVExGakZCVG4zVGxRSEljSUJ0clV0c0w1OGpfdnBZM0s4UmU0MDh2Q2ZOelN2ZHNlc2ZTMFlYN2ZCUXc2NFpzRXNONmNfRmRtWmM3a3NjOTlobw?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "Pessoas que caminham com as mãos atrás das costas podem transmitir algo curioso, segundo a psicologia",
+      "nota": 7,
+      "veiculos": [
+        "Gizmodo Brasil"
+      ],
+      "fontes": [
+        {
+          "titulo": "Pessoas que caminham com as mãos atrás das costas podem transmitir algo curioso, segundo a psicologia",
+          "veiculo": "Gizmodo Brasil",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObnNoS1oxRGhpbTZReWZjOFdqLXp4T3JpSGVZLWtlMEFRRGxhRGpRcndqTkJ4bGFlM0dmZHJfTjFDS3lvekdCT0VaWlVCclA3Sy1ickdMQXJXV2JKZUhJQi1SaHU4X0ttNWp5aFM3OFR3ckRFeGpSR2cwMEh4Smt1bWlmZk9WR19zNURsVGg2MC1sMkJZekxLb2F3NEJfWWE4LWp5bUlvY19zZFlEYnAtendTY290ZmJKNTI5aC1aVnh0UlpoQUhHQWN1YURfUQ?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    },
+    {
+      "manchete": "Por que esta nova planta homenageia Lionel Messi",
+      "nota": 7,
+      "veiculos": [
+        "National Geographic Portugal"
+      ],
+      "fontes": [
+        {
+          "titulo": "Por que esta nova planta homenageia Lionel Messi",
+          "veiculo": "National Geographic Portugal",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNVRkYjdiYmpYWWZfc29DZkR2aUdiNFNBQ2dOeDNmLWRIXzMxemxIMDlmWlJqLTR6a29SdWxTRml2TTFEQm54WHl4VFVaYThoekJlNmN6YkFXNzVLd0Z2ckFocFIwSDEwWU9maU5xSnFyb3c0ZUMwOU01elYzUFM5RjFQM2RyNk5wdW9KWXBpSEI3V1ExQW9hSDJPT2VKdGVPV2hJMi1FLTEtTnBuVjhnNEhha2x6RU1lMDBUeHprMGJycENITU1F?oc=5"
+        }
+      ],
+      "em_alta_no_trends": null
+    }
+  ],
+  "descartados": [
+    {
+      "manchete": "“No mínimo curioso”, afirma Thiago Medina sobre decisão do STF de prorrogar horário de votação",
+      "motivo": "política/eleição: \"stf\" em \"“No mínimo curioso”, afirma Thiago Medina sobre decisão do STF de prorrogar horário de vot\""
+    },
+    {
+      "manchete": "Eleições 2026: veja como foi a votação na sua urna",
+      "motivo": "política/eleição: \"eleicoes\" em \"Eleições 2026: veja como foi a votação na sua urna\""
+    },
+    {
+      "manchete": "Lula e Flávio Bolsonaro trocam acusações sobre a alta dos alimentos. Quem tem razão?",
+      "motivo": "política/eleição: \"lula\" em \"Lula e Flávio Bolsonaro trocam acusações sobre a alta dos alimentos. Quem tem razão?\""
+    },
+    {
+      "manchete": "Presidente do Teresina confirma Wallace Lemos para 2027; técnico nega acerto com clube",
+      "motivo": "política/eleição: \"presidente\" em \"Presidente do Teresina confirma Wallace Lemos para 2027; técnico nega acerto com clube\""
+    },
+    {
+      "manchete": "Crunchyroll exibe sucessores de Haikyu!! e deixa exposta sua nova rota no anime de esportes",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "Episódio de “Lanterns” refilma cena lendária do Arrowverse e muda o tom do novo DCU",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "Homem quebra porta do quartel da PM no chute e pede para “apanhar” e ser preso em Codó",
+      "motivo": "crime/polícia: \"pm\" em \"Homem quebra porta do quartel da PM no chute e pede para “apanhar” e ser preso em Codó\""
+    },
+    {
+      "manchete": "O registo impressionante de Luis Suárez com a camisola do Sporting: a série goleadora e um dado curioso",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "Home troca susto gigante por mistério curto e vira aposta curiosa da Epic no celular",
+      "motivo": "apostas/marcas de risco: \"aposta\" em \"Home troca susto gigante por mistério curto e vira aposta curiosa da Epic no celular\""
+    },
+    {
+      "manchete": "Centrão acena a Lula e tentará manter cargos em novo governo",
+      "motivo": "política/eleição: \"lula\" em \"Centrão acena a Lula e tentará manter cargos em novo governo\""
+    },
+    {
+      "manchete": "Fábrica dos Sonhos de Natal apresenta quatro Guardiões em musical infantil que estreia em novembro",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "Efeito gangorra: ranking oficial de verão derruba Mushoku Tensei e coroa anime “estranho” como favorito do Japão",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "APUCARANA – Foragido por tráfico é preso ao tentar consertar moto",
+      "motivo": "crime/polícia: \"foragido\" em \"APUCARANA – Foragido por tráfico é preso ao tentar consertar moto\""
+    },
+    {
+      "manchete": "Gata é flagrada 'votando' em urna eletrônica durante o 2º turno no interior de SP",
+      "motivo": "política/eleição: \"urna\" em \"Gata é flagrada 'votando' em urna eletrônica durante o 2º turno no interior de SP\""
+    },
+    {
+      "manchete": "Trator bate em objeto enterrado numa fazenda a 200 quilômetros do mar e desenterra mina usada na Segunda Guerra Mundial",
+      "motivo": "violência: \"guerra\" em \"Trator bate em objeto enterrado numa fazenda a 200 quilômetros do mar e desenterra mina us\""
+    },
+    {
+      "manchete": "Prorrogação do 2º turno muda planos de cobertura da Globo: 'Situação inusitada'",
+      "motivo": "política/eleição: \"2o turno\" em \"Prorrogação do 2º turno muda planos de cobertura da Globo: 'Situação inusitada'\""
+    },
+    {
+      "manchete": "Resumo de Quem Ama Cuida",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "Abordagem acidental da PM resulta na prisão de três suspeitos com armas e drogas em Timon",
+      "motivo": "crime/polícia: \"pm\" em \"Abordagem acidental da PM resulta na prisão de três suspeitos com armas e drogas em Timon\""
+    },
+    {
+      "manchete": "Apuração começa, com informação de extensão da votação pelo STF",
+      "motivo": "política/eleição: \"stf\" em \"Apuração começa, com informação de extensão da votação pelo STF\""
+    },
+    {
+      "manchete": "ELEITOR VOTA CARREGANDO URNA FUNERÁRIA DO PT E VIRALIZA",
+      "motivo": "política/eleição: \"eleitor\" em \"ELEITOR VOTA CARREGANDO URNA FUNERÁRIA DO PT E VIRALIZA\""
+    },
+    {
+      "manchete": "Membros de comitê eleitoral democrata são vistos fazendo ‘vodu’ com boneco de Trump",
+      "motivo": "política/eleição: \"eleitoral\" em \"Membros de comitê eleitoral democrata são vistos fazendo ‘vodu’ com boneco de Trump\""
+    },
+    {
+      "manchete": "URGENTE: Deputado petista, sobrinho de Dilma, sofre grave acidente",
+      "motivo": "política/eleição: \"deputado\" em \"URGENTE: Deputado petista, sobrinho de Dilma, sofre grave acidente\""
+    },
+    {
+      "manchete": "Imagem de 'água-viva' colorida formada por lançamento espacial na China viraliza",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "#Hashtag: Deepfake feita por IA gera memes de políticos e viraliza em meio à corrida presidencial",
+      "motivo": "política/eleição: \"politicos\" em \"#Hashtag: Deepfake feita por IA gera memes de políticos e viraliza em meio à corrida presi\""
+    },
+    {
+      "manchete": "É #FAKE que assinatura de eleitor em caderno de votação pode servir para comprovar eventual fraude nas urnas",
+      "motivo": "política/eleição: \"eleitor\" em \"É #FAKE que assinatura de eleitor em caderno de votação pode servir para comprovar eventua\""
+    },
+    {
+      "manchete": "Urnas fechadas não serão reabertas, informa TRE",
+      "motivo": "política/eleição: \"urnas\" em \"Urnas fechadas não serão reabertas, informa TRE\""
+    },
+    {
+      "manchete": "STF prorroga votação até as 19 horas",
+      "motivo": "política/eleição: \"stf\" em \"STF prorroga votação até as 19 horas\""
+    },
+    {
+      "manchete": "Horóscopo semanal: veja previsão de Márcia Sensitiva para todos os signos de hoje até o dia 1º de novembro",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "Tarcísio nega redução de transporte e critica decisão de Zanin: ‘inacreditável’",
+      "motivo": "política/eleição: \"tarcisio\" em \"Tarcísio nega redução de transporte e critica decisão de Zanin: ‘inacreditável’\""
+    },
+    {
+      "manchete": "Prefeito denuncia adesivos do PT em ônibus de Salvador",
+      "motivo": "política/eleição: \"prefeito\" em \"Prefeito denuncia adesivos do PT em ônibus de Salvador\""
+    },
+    {
+      "manchete": "Vivo apresenta oficialmente celular com bateria de 10.000mAh e tela AMOLED de 120Hz",
+      "motivo": "fora do formato (divulgação de novela/filme/produto)"
+    },
+    {
+      "manchete": "IA analisa foto do rosto e prevê chances de sobrevivência de pacientes com câncer",
+      "motivo": "saúde grave: \"cancer\" em \"IA analisa foto do rosto e prevê chances de sobrevivência de pacientes com câncer\""
+    },
+    {
+      "manchete": "Evangelion cruza com Godzilla em kit mutante e acirra a guerra dos colecionáveis premium",
+      "motivo": "violência: \"guerra\" em \"Evangelion cruza com Godzilla em kit mutante e acirra a guerra dos colecionáveis premium\""
+    },
+    {
+      "manchete": "Eleitores denunciam ônibus parados em canaviais de Boca da Mata (AL)",
+      "motivo": "política/eleição: \"eleitores\" em \"Eleitores denunciam ônibus parados em canaviais de Boca da Mata (AL)\""
+    }
+  ]
+}
