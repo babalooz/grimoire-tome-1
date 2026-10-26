@@ -1,6 +1,5 @@
 {
   "id": "001-dedos-enrugados",
-  "marca_provisoria": "Plantão Absurdo",
   "pauta": "Estudo de cientistas revela por que os dedos ficam enrugados depois de um banho demorado",
   "fonte": "Correio Braziliense + 2 veículos (radar 2026-10-26)",
   "checar_antes_de_publicar": [
@@ -16,8 +15,8 @@
       "bloco": "plantao",
       "inicio": 0,
       "fim": 2,
-      "tarja": "URGENTE: SEUS DEDOS ESTÃO ESCONDENDO UM SEGREDO",
-      "narracao": "Interrompemos sua rolagem para um plantão.",
+      "tarja": "SEUS DEDOS ESTÃO ESCONDENDO UM SEGREDO",
+      "narracao": "Interrompemos sua rolagem pra um plantão urgente.",
       "imagem": "close-up of a shocked young man staring at his own wrinkled fingertips after a shower, bathroom steam, dramatic light, expressive face",
       "sfx": "vinheta de plantão"
     },
@@ -89,7 +88,7 @@
       "bloco": "cliffhanger",
       "inicio": 54,
       "fim": 62,
-      "narracao": "Mas espera, acabou de chegar: por que só a mão e o pé enrugam, e o resto do corpo não? Comenta PARTE 2 que eu conto amanhã.",
+      "narracao": "Mas espera, acabou de chegar: por que só a mão e o pé enrugam, e o resto do corpo não? Sabia não, né? Comenta parte dois e segue o Sabia Não pra não ficar sem saber.",
       "texto_tela": "URGENTE: PARTE 2 AMANHÃ 👇 comenta PARTE 2",
       "imagem": "news anchor desk in a dark studio with a red URGENT light flashing, empty chair, cinematic",
       "sfx": "vinheta de plantão cortada"
@@ -97,5 +96,6 @@
   ],
   "legenda_post": "Seu dedo enruga no banho por causa do… cérebro? 🧠🛁 Comenta PARTE 2. #curiosidades #vocesabia #ciencia #fyp",
   "comentario_fixado": "Você sabia disso ou caiu no 'a pele bebe água'? 👇",
-  "fonte_no_fim": "Fonte: Correio Braziliense e estudos sobre enrugamento dos dedos"
+  "fonte_no_fim": "Fonte: Correio Braziliense e estudos sobre enrugamento dos dedos",
+  "marca": "Sabia Não?"
 }
