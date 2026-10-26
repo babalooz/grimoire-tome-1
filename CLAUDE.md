@@ -28,10 +28,15 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Marca **CapyFala** (@capyfala) — confirmada 26/09. Família: CapyFala (inglês p/ brasileiros), CapyHabla (português p/ hispanofalantes),
   CapyParla (futuro). Personagem: **Capi**, voz feminina. 'Capi Lingo' descartado (app 'Capilingo' na App Store BR desde 03/2026).
 
-## Canal de notícias (26/09)
-- 2º canal TikTok automatizado: **notícia leve/curiosa do dia**, lúdica e didática, sem rosto. **Marca separada — NÃO tem a ver com a Capi/CapyFala.**
-- Molde de 62s e referências em `docs/pesquisas/2026-09-26-campeoes-noticia-ludica-sem-rosto.md`.
-- Filtro obrigatório: sem crime, menores, tragédia ou política (eleições 04/10 e 25/10).
+## Canal de notícias — portal "Sabia Não?" (26/10)
+- 2º canal TikTok automatizado, **marca Sabia Não?** (confirmada 26/10). **Separada da Capi/CapyFala.**
+- Formato (Felipe, 26/10): **portal de notícias contadas** — "As 3 do dia" (60–90s) + "A semana em 5" (domingo, 3–5 min).
+  Só **pauta segura**: bolso/economia, tecnologia, ciência, saúde do dia a dia, esporte, cultura. Nada de política, crime, tragédia.
+  (Curiosidade solta foi a v1 — substituída.) Visual: **foto realista por IA com selo SIMULAÇÃO** (desenho reprovado).
+- Código em `canal-noticias/`: `scripts/radar.py` (dia e `--semana`), `scripts/make.sh` (voz Kokoro pm_alex + Remotion),
+  `scripts/imagem.py` (Cloudflare Workers AI — falta Felipe salvar `CF_ACCOUNT_ID` e `CF_API_TOKEN` no ambiente).
+- Postagem: **nada de bot imitando humano** (viola termos do TikTok, risco de ban). Caminho: agendar no TikTok Studio 1x/semana
+  ou agendador oficial; API própria após auditoria. Ciclo diário em `canal-noticias/CICLO.md`.
 
 ## Integrações ativas (26/09)
 - Conectores: Gmail, Google Drive, Google Calendar, **vidIQ** (Free: 150 créditos/mês, renova dia 25 — usar só em pesquisa semanal).
