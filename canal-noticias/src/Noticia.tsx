@@ -23,7 +23,8 @@ const contorno = (px: number) => ({ WebkitTextStroke: `${px}px ${C.pr}`, paintOr
 export type Cena = {
   bloco: string; narracao: string; editoria?: string; tarja?: string; texto_tela?: string; imagem?: string; sfx?: string; timer?: number;
 };
-export type Timing = { audio: string; duration: number };
+export type Palavra = { w: string; t: number; fim: number };
+export type Timing = { audio: string; duration: number; palavras?: Palavra[] };
 export type NoticiaProps = {
   id: string; cenas: Cena[]; timings: Timing[]; imagens: (string | null)[];
   fonte_no_fim?: string; selo_imagem?: string;
@@ -96,17 +97,25 @@ const Tarja: React.FC<{ manchete: string; cor: string; entra: boolean }> = ({ ma
 };
 
 // Legenda em blocos de 3 palavras, distribuídos ao longo da fala (aproximação sem alinhamento fonético).
-const Legenda: React.FC<{ texto: string; dur: number }> = ({ texto, dur }) => {
+// Legenda em blocos de 3 palavras. Com "palavras" (tempo real de cada palavra, motor edge) fica sincronizada
+// com a fala; sem isso, distribui os blocos ao longo da duração (aproximação).
+const Legenda: React.FC<{ texto: string; dur: number; palavras?: Palavra[] }> = ({ texto, dur, palavras }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const palavras = texto.split(/\s+/);
-  const blocos: string[] = [];
-  for (let i = 0; i < palavras.length; i += 3) blocos.push(palavras.slice(i, i + 3).join(" "));
-  const idx = Math.min(blocos.length - 1, Math.floor((f / fps / Math.max(dur, 0.1)) * blocos.length));
+  const agora = f / fps;
+  const ws = palavras?.length ? palavras.map((p) => p.w) : texto.split(/\s+/);
+  let idx: number;
+  if (palavras?.length) {
+    const atual = palavras.reduce((acc, p, k) => (p.t <= agora ? k : acc), 0);
+    idx = Math.floor(atual / 3);
+  } else {
+    idx = Math.floor((agora / Math.max(dur, 0.1)) * Math.ceil(ws.length / 3));
+  }
+  const bloco = ws.slice(idx * 3, idx * 3 + 3).join(" ");
   return (
     <div style={{ position: "absolute", left: SAFE.x0, right: 140, top: 1270, textAlign: "center",
       font: `70px/1.05 ${TITULO}`, color: C.br, textTransform: "uppercase", ...contorno(12) }}>
-      {blocos[idx]}
+      {bloco}
     </div>
   );
 };
@@ -163,7 +172,7 @@ const CenaView: React.FC<{
       <Audio src={staticFile(t.audio)} />
       {efeito ? <Audio src={staticFile(`sfx/${efeito}.ogg`)} volume={0.5} /> : null}
       {c.texto_tela ? <TextoTela texto={c.texto_tela} cor={cor} /> : null}
-      <Legenda texto={c.narracao} dur={t.duration} />
+      <Legenda texto={c.narracao} dur={t.duration} palavras={t.palavras} />
       <Tarja manchete={manchete} cor={cor} entra={entra} />
       {c.timer ? (
         <>

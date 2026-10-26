@@ -6,27 +6,19 @@
   "selo_imagem": "SIMULAÇÃO",
   "kit_editorias": {
     "abertura": {
-      "cor": "#FFD400",
-      "voz": "pm_alex",
-      "velocidade": 1.0
+      "cor": "#FFD400"
     },
     "bolso": {
       "cor": "#18C964",
-      "icone": "💸",
-      "voz": "pm_santa",
-      "velocidade": 0.95
+      "icone": "💸"
     },
     "tecnologia": {
       "cor": "#00C8FF",
-      "icone": "🤖",
-      "voz": "pf_dora",
-      "velocidade": 1.05
+      "icone": "🤖"
     },
     "ciencia": {
       "cor": "#8C5CFF",
-      "icone": "🧪",
-      "voz": "pf_dora",
-      "velocidade": 0.95
+      "icone": "🧪"
     }
   },
   "checagem": [
@@ -133,5 +125,6 @@
   "legenda_post": "As 3 do dia (26/10): dólar fez a Bolsa apertar o botão de pânico 💸, celular pegando direto do satélite 🤖 e a verdade sobre aspirina e demência 🧪. Qual te pegou? #noticias #economia #tecnologia #ciencia #fyp",
   "comentario_fixado": "Qual te afeta mais: 1, 2 ou 3?",
   "fonte_no_fim": "Fontes: InfoMoney, Itatiaia, Tecnoblog, Tele.Síntese, ScienceDaily (26/10/2026)",
-  "regras_texto": "Sem bordão e sem gíria forçada. Frase curta, como alguém contando a notícia pra um amigo. Humor só quando sai natural do fato."
+  "regras_texto": "Sem bordão e sem gíria forçada. Frase curta, como alguém contando a notícia pra um amigo. Humor só quando sai natural do fato.",
+  "voz": "Thalita (pt-BR-ThalitaMultilingualNeural) em todas as editorias; a editoria se distingue pela cor"
 }
