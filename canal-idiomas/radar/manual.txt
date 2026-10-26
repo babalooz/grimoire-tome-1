@@ -1,17 +1,17 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-25)
-# 6 buscas web (trend tiktok brasil hoje 25 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / bordão viral tiktok brasil essa semana / tiktok trending hashtag
-# brazil october 2026 / "viralizou no tiktok" essa semana brasil). Nenhuma achou tendência NOVA e confiável das
-# últimas 24-48h no TikTok BR com fonte/data clara: resultados eram guias genéricos ("como viralizar", listas de
-# hashtags atemporais) ou tendências antigas e já descartadas (six seven/abr-2026 — PROIBIDA por risco "feito
-# para crianças"; Garçom tem Pitú/dez-2025; Asoka/2024; Morango do Amor/sem data clara). Nenhuma nova candidata
-# aprovada hoje — mesmo resultado da rotina de 24/10.
-# Endpoint público /api/challenge/detail testado hoje para nba e halloween -> HTTP 200, corpo vazio para as duas
-# = "não medido" (mesma falha documentada desde 26/09, repetida em 23/10 e 24/10; a medição via nuvem continua
-# indisponível, só o PC mede).
-# Hoje é dia de eleição (2º turno, calendario.json block_hype=true): mesmo com candidata aprovada, a seção de
-# hype do radar sai vazia por regra. Mantidos da rotina anterior (seguros, com fonte/evento real, ainda
-# vigentes, "não medido" em views/vídeos): NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10,
-# faltam 6 d).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-26)
+# 6 buscas web (trend tiktok brasil hoje 26 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / tiktok brasil trending hashtag challenge outubro de 2026 /
+# Halloween 2026 tiktok trend Brasil / "viralizou no tiktok" notícia 25 outubro 2026). Nenhuma achou
+# tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data clara: resultados eram guias
+# genéricos, rankings sem data ou tendências antigas/já descartadas (six seven/abr-2026 — PROIBIDA por
+# risco "feito para crianças"; Virginia Fonseca/jan-2026; Morango do Amor/sem data clara; tendências de
+# Halloween encontradas são dos EUA, sem confirmação de uso no TikTok BR). Nenhuma nova candidata aprovada
+# hoje — mesmo resultado das rotinas de 24/10 e 25/10.
+# Endpoint público /api/challenge/detail testado hoje para NBA e halloween -> HTTP 200, corpo vazio para as
+# duas = "não medido" (mesma falha documentada desde 26/09, repetida em 23/10, 24/10 e 25/10; a medição via
+# nuvem continua indisponível, só o PC mede).
+# Mantidos da rotina anterior (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
+# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, faltam 5 d — já consta também no
+# calendário/evento do dia do radar).
 NBA
 Halloween
