@@ -1,6 +1,7 @@
 """Narração de cada cena do episódio com Kokoro (local, grátis, Apache-2.0).
 
-Voz do "Sabia Não?": locutor masculino de plantão (pm_alex), ritmo de locutor (0.93 para fechar 60s+).
+Voz por editoria: o episódio pode trazer "kit_editorias" {editoria: {voz, velocidade}} e cada cena um
+"editoria". Sem kit, usa o locutor padrão (pm_alex). Vozes PT do Kokoro: pf_dora, pm_alex, pm_santa.
 Uso: .venv/bin/python scripts/tts.py episodios/<id>.json
 Saída: public/audio/<id>/<n>.wav + public/audio/<id>/timings.json
 """
@@ -13,7 +14,7 @@ import soundfile as sf
 from kokoro_onnx import Kokoro
 
 ROOT = Path(__file__).resolve().parent.parent
-VOZ, IDIOMA, VELOCIDADE = "pm_alex", "pt-br", 0.93
+VOZ, IDIOMA, VELOCIDADE = "pm_alex", "pt-br", 0.93  # padrão (ritmo de locutor; fecha 60s+)
 
 
 def main(ep_path: str) -> None:
@@ -23,7 +24,8 @@ def main(ep_path: str) -> None:
     out.mkdir(parents=True, exist_ok=True)
     timings = []
     for i, cena in enumerate(ep["cenas"]):
-        audio, sr = k.create(cena["narracao"], voice=VOZ, speed=VELOCIDADE, lang=IDIOMA)
+        kit = ep.get("kit_editorias", {}).get(cena.get("editoria", ""), {})
+        audio, sr = k.create(cena["narracao"], voice=kit.get("voz", VOZ), speed=kit.get("velocidade", VELOCIDADE), lang=IDIOMA)
         sf.write(out / f"{i}.wav", audio, sr)
         timings.append({"audio": f"audio/{ep['id']}/{i}.wav", "duration": len(audio) / sr})
     (out / "timings.json").write_text(json.dumps(timings, indent=2))

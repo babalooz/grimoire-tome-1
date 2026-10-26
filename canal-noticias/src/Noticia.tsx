@@ -13,15 +13,21 @@ loadFont({ family: CORPO, url: staticFile("fonts/Rubik-800.woff2"), weight: "800
 
 // Zona segura 1080x1920: fora disso a interface do TikTok cobre o conteúdo.
 const SAFE = { x0: 60, x1: 940, y0: 200, y1: 1436 };
+// Texto preto em cor clara, branco em cor escura (o roxo da ciência com texto preto não lia).
+const tinta = (hex: string) => {
+  const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.45 ? C.pr : C.br;
+};
 const contorno = (px: number) => ({ WebkitTextStroke: `${px}px ${C.pr}`, paintOrder: "stroke fill" as const });
 
 export type Cena = {
-  bloco: string; narracao: string; tarja?: string; texto_tela?: string; imagem?: string; sfx?: string; timer?: number;
+  bloco: string; narracao: string; editoria?: string; tarja?: string; texto_tela?: string; imagem?: string; sfx?: string; timer?: number;
 };
 export type Timing = { audio: string; duration: number };
 export type NoticiaProps = {
   id: string; cenas: Cena[]; timings: Timing[]; imagens: (string | null)[];
   fonte_no_fim?: string; selo_imagem?: string;
+  kit_editorias?: Record<string, { cor?: string; icone?: string }>; comentario_fixado?: string;
 };
 
 const RESPIRO = 0.3;
@@ -68,18 +74,22 @@ const Fundo: React.FC<{ src: string | null; descricao?: string; selo?: string; d
 };
 
 // Tarja fixa no topo o vídeo inteiro (regra do Bruno Sub News).
-const Tarja: React.FC<{ manchete: string }> = ({ manchete }) => {
+// Cada notícia troca a manchete e a cor da faixa (kit de editorias); a marca "SABIA NÃO?" nunca muda.
+const Tarja: React.FC<{ manchete: string; cor: string; entra: boolean }> = ({ manchete, cor, entra }) => {
   const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const s = entra ? spring({ frame: f, fps, config: { damping: 13 } }) : 1;
   const piscar = Math.floor(f / 15) % 2 === 0 ? 1 : 0.35;
   return (
     <div style={{ position: "absolute", left: 0, right: 0, top: SAFE.y0 }}>
       <div style={{ display: "flex", height: 92 }}>
         <div style={{ background: C.pr, color: C.am, font: `64px ${TITULO}`, padding: "8px 30px 0 60px" }}>SABIA NÃO?</div>
         <div style={{ background: C.vm, color: C.br, font: `800 38px ${CORPO}`, display: "flex", alignItems: "center", gap: 12, padding: "0 24px" }}>
-          <span style={{ width: 20, height: 20, borderRadius: 10, background: C.br, opacity: piscar }} />URGENTE
+          <span style={{ width: 20, height: 20, borderRadius: 10, background: C.br, opacity: piscar }} />HOJE
         </div>
       </div>
-      <div style={{ background: C.am, color: C.pr, font: `800 50px/1.1 ${CORPO}`, padding: "18px 60px 22px",
+      <div style={{ background: cor, color: tinta(cor), font: `800 50px/1.1 ${CORPO}`, padding: "18px 60px 22px",
+        transform: `translateX(${(1 - s) * -1100}px)`,
         borderTop: `8px solid ${C.pr}`, borderBottom: `8px solid ${C.pr}`, textTransform: "uppercase" }}>{manchete}</div>
     </div>
   );
@@ -101,14 +111,14 @@ const Legenda: React.FC<{ texto: string; dur: number }> = ({ texto, dur }) => {
   );
 };
 
-const TextoTela: React.FC<{ texto: string }> = ({ texto }) => {
+const TextoTela: React.FC<{ texto: string; cor: string }> = ({ texto, cor }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = spring({ frame: f - 4, fps, config: { damping: 9, mass: 0.6 } });
   return (
     <div style={{ position: "absolute", left: SAFE.x0, right: 140, top: 920, display: "flex", justifyContent: "center" }}>
       <div style={{ transform: `scale(${0.6 + s * 0.4}) rotate(${(1 - s) * -6}deg)`, opacity: Math.min(1, s * 1.5),
-        background: C.am, color: C.pr, font: `800 60px/1.1 ${CORPO}`, padding: "16px 28px", borderRadius: 14,
+        background: cor, color: tinta(cor), font: `800 60px/1.1 ${CORPO}`, padding: "16px 28px", borderRadius: 14,
         border: `6px solid ${C.pr}`, textAlign: "center", textTransform: "uppercase", boxShadow: `10px 10px 0 ${C.pr}` }}>
         {texto}
       </div>
@@ -141,7 +151,9 @@ const Letreiro: React.FC<{ texto: string }> = ({ texto }) => {
   );
 };
 
-const CenaView: React.FC<{ c: Cena; t: Timing; img: string | null; selo?: string; dur: number }> = ({ c, t, img, selo, dur }) => {
+const CenaView: React.FC<{
+  c: Cena; t: Timing; img: string | null; selo?: string; dur: number; cor: string; manchete: string; entra: boolean;
+}> = ({ c, t, img, selo, dur, cor, manchete, entra }) => {
   const { fps } = useVideoConfig();
   const efeito = sfxDe(c.sfx);
   // Tudo que o quiz revela só aparece depois do timer.
@@ -150,8 +162,9 @@ const CenaView: React.FC<{ c: Cena; t: Timing; img: string | null; selo?: string
       <Fundo src={img} descricao={c.imagem} selo={selo} dur={dur} />
       <Audio src={staticFile(t.audio)} />
       {efeito ? <Audio src={staticFile(`sfx/${efeito}.ogg`)} volume={0.5} /> : null}
-      {c.texto_tela ? <TextoTela texto={c.texto_tela} /> : null}
+      {c.texto_tela ? <TextoTela texto={c.texto_tela} cor={cor} /> : null}
       <Legenda texto={c.narracao} dur={t.duration} />
+      <Tarja manchete={manchete} cor={cor} entra={entra} />
       {c.timer ? (
         <>
           <Timer inicio={t.duration} seg={c.timer} />
@@ -168,22 +181,24 @@ const CenaView: React.FC<{ c: Cena; t: Timing; img: string | null; selo?: string
 
 export const Noticia: React.FC<NoticiaProps> = (p) => {
   const { fps } = useVideoConfig();
-  const manchete = p.cenas[0]?.tarja ?? "";
   let from = 0;
+  let manchete = "";
   return (
     <AbsoluteFill style={{ background: C.pr }}>
       {p.cenas.map((c, i) => {
         const dur = duracaoCena(c, p.timings[i], fps);
+        const entra = Boolean(c.tarja) && i > 0;
+        manchete = c.tarja ?? manchete; // a manchete vale até a próxima notícia
+        const cor = p.kit_editorias?.[c.editoria ?? ""]?.cor ?? C.am;
         const el = (
           <Sequence key={i} from={from} durationInFrames={dur}>
-            <CenaView c={c} t={p.timings[i]} img={p.imagens?.[i] ?? null} selo={p.selo_imagem} dur={dur} />
+            <CenaView c={c} t={p.timings[i]} img={p.imagens?.[i] ?? null} selo={p.selo_imagem} dur={dur} cor={cor} manchete={manchete} entra={entra} />
           </Sequence>
         );
         from += dur;
         return el;
       })}
-      <Tarja manchete={manchete} />
-      <Letreiro texto={`${p.fonte_no_fim ?? ""}   •   Imagens: simulação gerada por IA   •   Comenta PARTE 2 👇`} />
+      <Letreiro texto={`${p.fonte_no_fim ?? ""}   •   Imagens: simulação gerada por IA   •   ${p.comentario_fixado ?? "Comenta aí 👇"}`} />
     </AbsoluteFill>
   );
 };
