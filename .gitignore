@@ -1,3 +1,4 @@
 .vercel
 .guard-lessons.json
 .guard-stats.json
+__pycache__/
