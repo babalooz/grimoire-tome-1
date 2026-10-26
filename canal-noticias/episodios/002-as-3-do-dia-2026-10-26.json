@@ -16,15 +16,15 @@
       "cor": "#00C8FF",
       "icone": "🤖"
     },
-    "ciencia": {
-      "cor": "#8C5CFF",
-      "icone": "🧪"
+    "esporte": {
+      "cor": "#FF7A00",
+      "icone": "⚽"
     }
   },
   "checagem": [
     "BOLSO: Ibovespa caiu mais de 10% e a B3 acionou circuit breaker (pausa de 30 min), 1ª vez desde 2020; dólar subiu ~10% e chegou perto de R$ 5,60 (números variam por horário: falar 'cerca de'). Fontes: InfoMoney, Itatiaia, BPMoney (26/10). Citar a eleição só como fato de calendário, sem nome nem opinião.",
     "TECNOLOGIA: Vivo Satélite com Starlink lançado em 26/10; mensagem, áudio e localização sem gastar franquia; precisa de céu aberto e aparelho compatível; grátis por tempo limitado; vídeo e navegação ainda não. Fontes: Tecnoblog, Tele.Síntese.",
-    "CIÊNCIA: Universidade Monash (Alzheimer's & Dementia), dados do estudo ASPREE: -70% de risco RELATIVO só em ~20% dos idosos com um perfil genético; em número absoluto ~2,3 pontos; sangramento grave ~2x maior; exploratório, não é recomendação. Fontes: ScienceDaily, Brasil em Folhas."
+    "ESPORTE: Neymar (Santos) expulso no 1x1 com o Bahia, sábado 24/10, Vila Belmiro, 32ª rodada, após VAR: cobriu a boca ao discutir com adversário (protocolo da Lei Vini Jr.). Procuradoria do STJD vai denunciar; art. 258 CBJD = 1 a 6 jogos; julgamento previsto 29–30/10. Fontes: Gazeta Esportiva, Lance!, Terra. NÃO gerar imagem com o rosto do Neymar (pessoa real)."
   ],
   "cenas": [
     {
@@ -87,44 +87,43 @@
       "sfx": "pop"
     },
     {
-      "bloco": "quiz",
-      "editoria": "ciencia",
-      "tarja": "🧪 ASPIRINA CONTRA A DEMÊNCIA?",
-      "narracao": "Terceira: um estudo ligou a aspirina a setenta por cento menos risco de demência. Isso quer dizer que todo idoso deveria tomar? Verdade ou mentira?",
-      "texto_tela": "TODO IDOSO DEVE TOMAR? VERDADE ou MENTIRA",
-      "timer": 3,
-      "imagem": "elderly Brazilian grandmother holding a small white pill, curious skeptical expression, warm home light, realistic",
-      "sfx": "tique"
+      "bloco": "manchete",
+      "editoria": "esporte",
+      "tarja": "⚽ NEYMAR EXPULSO POR TAPAR A BOCA",
+      "narracao": "Terceira: o Neymar foi expulso por tapar a boca.",
+      "texto_tela": "EXPULSO POR TAPAR A BOCA ✋",
+      "imagem": "football player seen from behind covering his mouth with his hand while arguing with an opponent, stadium at night, realistic sports photo, face not visible",
+      "sfx": "whoosh"
     },
     {
-      "bloco": "revelacao",
-      "editoria": "ciencia",
-      "narracao": "Mentira. O efeito apareceu só em um grupo com um perfil genético específico, e nesse grupo o risco de sangramento grave dobrou.",
-      "texto_tela": "MENTIRA: SÓ 1 GRUPO E COM RISCO",
-      "imagem": "scientist in a lab looking at DNA results on a screen, serious expression, realistic",
-      "sfx": "bonk"
+      "bloco": "explica",
+      "editoria": "esporte",
+      "narracao": "Parece estranho, mas virou regra. Com a chamada Lei Vini Júnior, jogador que cobre a boca pra falar com o adversário pode levar vermelho. Foi o que o VAR pegou no empate do Santos com o Bahia, no sábado.",
+      "texto_tela": "TAPOU A BOCA = VERMELHO 🟥",
+      "imagem": "referee showing a red card on a Brazilian football pitch, VAR screen in the background, realistic sports photo",
+      "sfx": "carimbo"
     },
     {
       "bloco": "pra-voce",
-      "editoria": "ciencia",
-      "narracao": "Os próprios pesquisadores dizem que não é recomendação. Antes de tomar qualquer remédio, fale com o médico.",
-      "texto_tela": "FALE COM O MÉDICO ANTES",
-      "imagem": "friendly doctor talking with an elderly patient in a clinic, realistic",
-      "sfx": "carimbo"
+      "editoria": "esporte",
+      "narracao": "Agora o tribunal do futebol vai julgar, e ele pode pegar de um a seis jogos de suspensão. A decisão deve sair no fim da semana.",
+      "texto_tela": "1 A 6 JOGOS DE GANCHO",
+      "imagem": "empty football bench in a Brazilian stadium with a number 10 shirt hanging, dramatic light, realistic",
+      "sfx": "pop"
     },
     {
       "bloco": "fechamento",
       "editoria": "abertura",
       "tarja": "QUAL DOEU MAIS? COMENTA 1, 2 OU 3",
       "narracao": "Qual dessas te afeta mais? Comenta um, dois ou três. Amanhã tem mais.",
-      "texto_tela": "1️⃣ 💸   2️⃣ 🤖   3️⃣ 🧪",
-      "imagem": "news studio desk with three glowing screens showing money, satellite and pill icons, cinematic",
+      "texto_tela": "1️⃣ 💸   2️⃣ 🛰️   3️⃣ ⚽",
+      "imagem": "news studio desk with three glowing screens showing money, satellite and football icons, cinematic",
       "sfx": "vinheta"
     }
   ],
-  "legenda_post": "As 3 do dia (26/10): dólar fez a Bolsa apertar o botão de pânico 💸, celular pegando direto do satélite 🤖 e a verdade sobre aspirina e demência 🧪. Qual te pegou? #noticias #economia #tecnologia #ciencia #fyp",
+  "legenda_post": "As 3 do dia (26/10): dólar fez a Bolsa pausar 💸, celular pegando direto do satélite 🛰️ e o Neymar expulso por tapar a boca ⚽. Qual te pegou? #noticias #economia #tecnologia #futebol #fyp",
   "comentario_fixado": "Qual te afeta mais: 1, 2 ou 3?",
-  "fonte_no_fim": "Fontes: InfoMoney, Itatiaia, Tecnoblog, Tele.Síntese, ScienceDaily (26/10/2026)",
+  "fonte_no_fim": "Fontes: InfoMoney, Itatiaia, Tecnoblog, Tele.Síntese, Gazeta Esportiva, Lance! (26/10/2026)",
   "regras_texto": "Sem bordão e sem gíria forçada. Frase curta, como alguém contando a notícia pra um amigo. Humor só quando sai natural do fato.",
   "voz": "Thalita (pt-BR-ThalitaMultilingualNeural) em todas as editorias; a editoria se distingue pela cor"
 }
