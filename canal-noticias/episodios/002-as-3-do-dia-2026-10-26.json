@@ -14,22 +14,19 @@
       "cor": "#18C964",
       "icone": "💸",
       "voz": "pm_santa",
-      "velocidade": 0.95,
-      "bordao": "Doeu no bolso?"
+      "velocidade": 0.95
     },
     "tecnologia": {
       "cor": "#00C8FF",
       "icone": "🤖",
       "voz": "pf_dora",
-      "velocidade": 1.05,
-      "bordao": "Atualiza aí."
+      "velocidade": 1.05
     },
     "ciencia": {
       "cor": "#8C5CFF",
       "icone": "🧪",
       "voz": "pf_dora",
-      "velocidade": 0.95,
-      "bordao": "Sabia não, né?"
+      "velocidade": 0.95
     }
   },
   "checagem": [
@@ -42,7 +39,7 @@
       "bloco": "abertura",
       "editoria": "abertura",
       "tarja": "AS 3 DO DIA · SEGUNDA, 26/10",
-      "narracao": "Sabia Não? As três de hoje. Bora!",
+      "narracao": "As três notícias de hoje, em um minuto.",
       "texto_tela": "AS 3 DO DIA ☕",
       "imagem": "busy Brazilian city street at morning rush, people looking at phones in surprise, cinematic news photo",
       "sfx": "vinheta"
@@ -51,15 +48,15 @@
       "bloco": "manchete",
       "editoria": "bolso",
       "tarja": "💸 DÓLAR DISPAROU E A BOLSA FOI PAUSADA",
-      "narracao": "Notícia um, no seu bolso. O dólar acordou hoje e escolheu a violência: subiu uns dez por cento e encostou em cinco e sessenta.",
-      "texto_tela": "DÓLAR ≈ R$ 5,60 📈",
+      "narracao": "Primeira: o dólar subiu quase dez por cento hoje e chegou perto de cinco e sessenta.",
+      "texto_tela": "DÓLAR ≈ R$ 5,60",
       "imagem": "shocked middle-aged Brazilian man looking at a currency exchange board showing rising dollar rate, street, realistic",
       "sfx": "zoom"
     },
     {
       "bloco": "explica",
       "editoria": "bolso",
-      "narracao": "A Bolsa caiu tanto, mais de dez por cento, que apertou o botão de pânico: o tal circuit breaker. É o disjuntor da sua casa, só que do dinheiro. Primeira vez desde a pandemia.",
+      "narracao": "A Bolsa caiu tanto que as negociações foram pausadas por meia hora. O nome disso é circuit breaker, e não acontecia desde a pandemia.",
       "texto_tela": "CIRCUIT BREAKER = DISJUNTOR DA BOLSA ⚡",
       "imagem": "hand flipping a household circuit breaker switch, dramatic light, stock market screens blurred in background",
       "sfx": "carimbo"
@@ -67,8 +64,8 @@
     {
       "bloco": "pra-voce",
       "editoria": "bolso",
-      "narracao": "O que muda pra você? Viagem, celular importado e até o pãozinho podem subir. Doeu no bolso?",
-      "texto_tela": "✈️ 📱 🥖 PODEM SUBIR",
+      "narracao": "Na prática, viagem, celular importado e produto que depende de dólar podem ficar mais caros nas próximas semanas.",
+      "texto_tela": "VIAGEM · CELULAR · IMPORTADOS",
       "imagem": "Brazilian woman at a bakery counter looking surprised at the price of bread rolls, realistic",
       "sfx": "buzina"
     },
@@ -76,15 +73,15 @@
       "bloco": "manchete",
       "editoria": "tecnologia",
       "tarja": "🤖 CELULAR AGORA PEGA DIRETO DO SATÉLITE",
-      "narracao": "Notícia dois, tecnologia. Sabe onde o celular não pega nem com reza? Acabou.",
-      "texto_tela": "SEM SINAL? ACABOU 📵➡️📶",
+      "narracao": "Segunda: o celular agora pode pegar sinal direto do satélite.",
+      "texto_tela": "SINAL DIRETO DO SATÉLITE",
       "imagem": "person on a remote dirt road in rural Brazil holding a phone up to the sky searching for signal, frustrated face, realistic",
       "sfx": "whoosh"
     },
     {
       "bloco": "explica",
       "editoria": "tecnologia",
-      "narracao": "A Vivo ligou hoje o sinal por satélite com a Starlink: mensagem, áudio e localização no meio do nada, sem gastar franquia. Precisa de céu aberto e celular compatível.",
+      "narracao": "A Vivo ativou hoje o serviço com a Starlink. Em lugar sem sinal, dá pra mandar mensagem, áudio e localização sem gastar a franquia. Precisa estar a céu aberto e ter um aparelho compatível.",
       "texto_tela": "💬 🎤 📍 VIA SATÉLITE",
       "imagem": "smiling hiker in a Brazilian national park sending a message on a phone, satellite visible in clear sky, realistic",
       "sfx": "pop"
@@ -92,7 +89,7 @@
     {
       "bloco": "pra-voce",
       "editoria": "tecnologia",
-      "narracao": "No começo é de graça. Vídeo e internet livre ainda não. Atualiza aí.",
+      "narracao": "Por enquanto é de graça. Vídeo e navegação ainda não funcionam.",
       "texto_tela": "GRÁTIS (POR ENQUANTO) ✅",
       "imagem": "close-up of a phone screen showing a satellite signal icon, outdoors, shallow depth of field",
       "sfx": "pop"
@@ -101,7 +98,7 @@
       "bloco": "quiz",
       "editoria": "ciencia",
       "tarja": "🧪 ASPIRINA CONTRA A DEMÊNCIA?",
-      "narracao": "Notícia três, ciência. Estudo diz que aspirina corta setenta por cento do risco de demência. Então todo idoso deve tomar. Verdade ou mentira?",
+      "narracao": "Terceira: um estudo ligou a aspirina a setenta por cento menos risco de demência. Isso quer dizer que todo idoso deveria tomar? Verdade ou mentira?",
       "texto_tela": "TODO IDOSO DEVE TOMAR? VERDADE ou MENTIRA",
       "timer": 3,
       "imagem": "elderly Brazilian grandmother holding a small white pill, curious skeptical expression, warm home light, realistic",
@@ -110,16 +107,16 @@
     {
       "bloco": "revelacao",
       "editoria": "ciencia",
-      "narracao": "Mentira! O efeito apareceu só num grupo com um perfil genético específico, e nele o risco de sangramento grave dobrou.",
-      "texto_tela": "MENTIRA ❌ SÓ 1 GRUPO + RISCO DE SANGRAMENTO",
+      "narracao": "Mentira. O efeito apareceu só em um grupo com um perfil genético específico, e nesse grupo o risco de sangramento grave dobrou.",
+      "texto_tela": "MENTIRA: SÓ 1 GRUPO E COM RISCO",
       "imagem": "scientist in a lab looking at DNA results on a screen, serious expression, realistic",
       "sfx": "bonk"
     },
     {
       "bloco": "pra-voce",
       "editoria": "ciencia",
-      "narracao": "Ou seja: não tome por conta própria. Pergunta pro médico. Sabia não, né?",
-      "texto_tela": "⚠️ NÃO TOME POR CONTA PRÓPRIA",
+      "narracao": "Os próprios pesquisadores dizem que não é recomendação. Antes de tomar qualquer remédio, fale com o médico.",
+      "texto_tela": "FALE COM O MÉDICO ANTES",
       "imagem": "friendly doctor talking with an elderly patient in a clinic, realistic",
       "sfx": "carimbo"
     },
@@ -127,13 +124,14 @@
       "bloco": "fechamento",
       "editoria": "abertura",
       "tarja": "QUAL DOEU MAIS? COMENTA 1, 2 OU 3",
-      "narracao": "Qual te pegou? Comenta um, dois ou três. Segue o Sabia Não pra não ficar sem saber.",
+      "narracao": "Qual dessas te afeta mais? Comenta um, dois ou três. Amanhã tem mais.",
       "texto_tela": "1️⃣ 💸   2️⃣ 🤖   3️⃣ 🧪",
       "imagem": "news studio desk with three glowing screens showing money, satellite and pill icons, cinematic",
       "sfx": "vinheta"
     }
   ],
   "legenda_post": "As 3 do dia (26/10): dólar fez a Bolsa apertar o botão de pânico 💸, celular pegando direto do satélite 🤖 e a verdade sobre aspirina e demência 🧪. Qual te pegou? #noticias #economia #tecnologia #ciencia #fyp",
-  "comentario_fixado": "Qual doeu mais: 1, 2 ou 3? 👇",
-  "fonte_no_fim": "Fontes: InfoMoney, Itatiaia, Tecnoblog, Tele.Síntese, ScienceDaily (26/10/2026)"
+  "comentario_fixado": "Qual te afeta mais: 1, 2 ou 3?",
+  "fonte_no_fim": "Fontes: InfoMoney, Itatiaia, Tecnoblog, Tele.Síntese, ScienceDaily (26/10/2026)",
+  "regras_texto": "Sem bordão e sem gíria forçada. Frase curta, como alguém contando a notícia pra um amigo. Humor só quando sai natural do fato."
 }
