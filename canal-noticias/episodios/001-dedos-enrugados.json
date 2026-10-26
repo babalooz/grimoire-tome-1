@@ -1,0 +1,101 @@
+{
+  "id": "001-dedos-enrugados",
+  "marca_provisoria": "Plantão Absurdo",
+  "pauta": "Estudo de cientistas revela por que os dedos ficam enrugados depois de um banho demorado",
+  "fonte": "Correio Braziliense + 2 veículos (radar 2026-10-26)",
+  "checar_antes_de_publicar": [
+    "Enrugamento depende dos nervos: dedo com nervo lesionado não enruga (observado desde os anos 1930; usado como teste clínico de nervo)",
+    "Mecanismo: os vasos sob a pele se contraem por comando do sistema nervoso, e a pele 'afunda'",
+    "Hipótese do pneu de chuva: experimento de 2013 (Universidade de Newcastle) — objetos molhados movidos mais rápido com dedos enrugados; houve estudo depois que não repetiu o efeito -> dizer 'cientistas acham', nunca 'é comprovado'",
+    "Só pele sem pelo (palma da mão e sola do pé) enruga na água -> gancho da parte 2"
+  ],
+  "voz": "locutor de plantão, dramático e sério sobre um fato banal (kokoro pm_alex, velocidade 1.1)",
+  "selo_imagem": "SIMULAÇÃO",
+  "cenas": [
+    {
+      "bloco": "plantao",
+      "inicio": 0,
+      "fim": 2,
+      "tarja": "URGENTE: SEUS DEDOS ESTÃO ESCONDENDO UM SEGREDO",
+      "narracao": "Interrompemos sua rolagem para um plantão.",
+      "imagem": "close-up of a shocked young man staring at his own wrinkled fingertips after a shower, bathroom steam, dramatic light, expressive face",
+      "sfx": "vinheta de plantão"
+    },
+    {
+      "bloco": "fato",
+      "inicio": 2,
+      "fim": 9,
+      "narracao": "Milhões de brasileiros saem do banho todo dia com os dedos enrugados. E ninguém nunca perguntou por quê.",
+      "texto_tela": "TODO DIA. MILHÕES DE DEDOS.",
+      "imagem": "macro photo of wrinkled pruney fingertips with water droplets, ultra detailed skin texture",
+      "sfx": "zoom dramático"
+    },
+    {
+      "bloco": "quiz",
+      "inicio": 9,
+      "fim": 16,
+      "narracao": "Os dedos enrugam porque a pele bebe água e incha. Verdade ou mentira? Você tem três segundos.",
+      "texto_tela": "A PELE BEBE ÁGUA? VERDADE ou MENTIRA",
+      "timer": 3,
+      "imagem": "split image: a dry sponge and a soaked swollen sponge on a bathroom counter",
+      "sfx": "tique-taque"
+    },
+    {
+      "bloco": "revelacao",
+      "inicio": 16,
+      "fim": 22,
+      "narracao": "Mentira! Quem enruga seu dedo é o seu cérebro.",
+      "texto_tela": "MENTIRA ❌ É O CÉREBRO",
+      "imagem": "surprised woman covering her mouth with wrinkled fingers, bright bathroom, expressive face",
+      "sfx": "buzina de erro + bonk"
+    },
+    {
+      "bloco": "por_que_1",
+      "inicio": 22,
+      "fim": 28,
+      "narracao": "Quando a mão fica muito tempo molhada, os nervos mandam os vasos de sangue debaixo da pele se apertarem.",
+      "texto_tela": "NERVO → APERTA OS VASOS",
+      "imagem": "realistic medical-style visualization of blood vessels under fingertip skin constricting, clean blue background",
+      "sfx": "whoosh"
+    },
+    {
+      "bloco": "por_que_2",
+      "inicio": 28,
+      "fim": 34,
+      "narracao": "A pele fica sem sustentação e afunda. Vira essa uva-passa aí.",
+      "texto_tela": "DEDO = UVA-PASSA 🍇",
+      "imagem": "side by side photo of a pruney fingertip and a raisin, same angle, studio light",
+      "sfx": "pop"
+    },
+    {
+      "bloco": "por_que_3",
+      "inicio": 34,
+      "fim": 40,
+      "narracao": "A prova? Médicos notaram que, quando o nervo do dedo está lesionado, ele não enruga de jeito nenhum.",
+      "texto_tela": "SEM NERVO = SEM RUGA",
+      "imagem": "doctor examining a patient's hand in a clinic, patient looking surprised, realistic",
+      "sfx": "carimbo"
+    },
+    {
+      "bloco": "virada",
+      "inicio": 40,
+      "fim": 54,
+      "narracao": "E pra que serve? Cientistas acham que é um pneu de chuva. Num teste, pessoas com dedo enrugado pegavam objetos molhados mais rápido. Seu corpo troca de pneu sozinho quando chove.",
+      "texto_tela": "🛞 PNEU DE CHUVA DE FÁBRICA",
+      "imagem": "close-up of a car tire tread on wet asphalt next to wrinkled fingertips gripping a wet glass marble",
+      "sfx": "pneu cantando"
+    },
+    {
+      "bloco": "cliffhanger",
+      "inicio": 54,
+      "fim": 62,
+      "narracao": "Mas espera, acabou de chegar: por que só a mão e o pé enrugam, e o resto do corpo não? Comenta PARTE 2 que eu conto amanhã.",
+      "texto_tela": "URGENTE: PARTE 2 AMANHÃ 👇 comenta PARTE 2",
+      "imagem": "news anchor desk in a dark studio with a red URGENT light flashing, empty chair, cinematic",
+      "sfx": "vinheta de plantão cortada"
+    }
+  ],
+  "legenda_post": "Seu dedo enruga no banho por causa do… cérebro? 🧠🛁 Comenta PARTE 2. #curiosidades #vocesabia #ciencia #fyp",
+  "comentario_fixado": "Você sabia disso ou caiu no 'a pele bebe água'? 👇",
+  "fonte_no_fim": "Fonte: Correio Braziliense e estudos sobre enrugamento dos dedos"
+}
