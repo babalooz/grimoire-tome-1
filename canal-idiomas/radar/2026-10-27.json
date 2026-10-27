@@ -1,0 +1,601 @@
+{
+  "version": 2,
+  "date": "2026-10-27",
+  "evento_do_dia": {
+    "hoje": [],
+    "preparar": [
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)",
+        "faltam_dias": 1
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo",
+        "faltam_dias": 4
+      }
+    ],
+    "proximos": [
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 6
+      },
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 6
+      },
+      {
+        "id": "f1-interlagos",
+        "evento": "F1 GP São Paulo, Interlagos (corrida dom 08/11)",
+        "data_inicio": "2026-11-06",
+        "data_fim": "2026-11-08",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Rádio de equipe em inglês: 'box box', pit stop, pole position, overtake, podium; make x do ('did a great career' é erro).",
+        "ganchos_ingles": [
+          "box box",
+          "pit stop",
+          "pole position",
+          "overtake",
+          "podium"
+        ],
+        "status": "verificado",
+        "faltam_dias": 10
+      },
+      {
+        "id": "enem-dia1",
+        "evento": "ENEM dia 1 (Linguagens, 5 questões de língua estrangeira)",
+        "data_inicio": "2026-11-08",
+        "data_fim": "2026-11-08",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês do ENEM: palavras e cognatos que mais aparecem nas provas anteriores do INEP (conferir nas provas).",
+        "ganchos_ingles": [
+          "cognates",
+          "false friends",
+          "reading comprehension"
+        ],
+        "status": "verificado",
+        "faltam_dias": 12
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "Ballon d'Or",
+      "score": 7.35,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "8.296 views na Wikipédia",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "ballon d or em inglês"
+      ],
+      "contexto": "prêmio de futebol criado pela revista francesa France Football",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Ballon d'Or' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Ballon_d%27Or"
+    },
+    {
+      "termo": "NBA",
+      "score": 6.75,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "nba em inglês",
+        "o que significa nba em inglês",
+        "como se escreve nba em inglês",
+        "nba 2k26 tem legenda em inglês"
+      ],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.06,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#134 Spotify BR. 201.996 streams/dia. 220 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se diz bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#134)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.64,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#117 Spotify BR. 218.885 streams/dia. 40 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#117)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Tate McRae - Housewife",
+      "score": 3.6,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#141 Spotify BR. 198.596 streams/dia. 8 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#141)",
+      "sugestao_aula": "'Tate McRae - Housewife': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ChatGPT",
+      "score": 2.87,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "17.610 views na Wikipédia",
+      "categoria": "outro",
+      "subindo": true,
+      "aula": [
+        "chatgpt em inglês",
+        "chatgpt em ingles como mudar",
+        "chatgpt conversação em inglês",
+        "chatgpt está em inglês",
+        "como colocar chatgpt em inglês",
+        "chatgpt para conversar em inglês",
+        "como pronunciar chatgpt em inglês",
+        "como se escreve chatgpt em inglês",
+        "como se diz chatgpt em inglês"
+      ],
+      "contexto": "chatbot de inteligência artificial desenvolvido pela OpenAI",
+      "sugestao_aula": "Responder a busca real: 'chatgpt em inglês'.",
+      "url": "https://pt.wikipedia.org/wiki/ChatGPT"
+    },
+    {
+      "termo": "WhatsApp",
+      "score": 2.78,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "13.184 views na Wikipédia",
+      "categoria": "outro",
+      "subindo": true,
+      "aula": [
+        "whatsapp em inglês como mudar para o português",
+        "whatsapp em inglês",
+        "whatsapp em inglês como mudar para o português iphone",
+        "whatsapp em inglês o que significa",
+        "whatsapp em inglês tradução",
+        "whatsapp em inglês como tirar",
+        "whatsapp em inglês como mudar",
+        "tem whatsapp em inglês tradução",
+        "tem whatsapp em inglês",
+        "meu whatsapp em inglês",
+        "como se diz whatsapp em inglês",
+        "como se diz você tem whatsapp em inglês",
+        "como se diz figurinha de whatsapp em inglês",
+        "como se diz me chama no whatsapp em inglês",
+        "como se diz não tenho whatsapp em inglês",
+        "como se diz tens whatsapp em inglês",
+        "como se diz peço seu whatsapp em inglês"
+      ],
+      "contexto": "multiplataforma de mensagens instantâneas e chamadas de voz para smartphones",
+      "sugestao_aula": "Responder a busca real: 'whatsapp em inglês como mudar para o português'.",
+      "url": "https://pt.wikipedia.org/wiki/WhatsApp"
+    },
+    {
+      "termo": "pix",
+      "score": 2.7,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "10.000+ buscas",
+      "categoria": "outro",
+      "subindo": true,
+      "aula": [
+        "pix em inglês",
+        "pix em inglês tradução",
+        "pix em inglês significa",
+        "chave pix em inglês",
+        "manda pix em inglês",
+        "meu pix em inglês",
+        "quero pix em inglês",
+        "pedir pix em inglês",
+        "nome pix em inglês",
+        "pix primeiro em inglês",
+        "como se diz pix em inglês",
+        "como se diz chave pix em inglês",
+        "como se diz fazer um pix em inglês"
+      ],
+      "contexto": "Do alívio nas dívidas ao investimento no negócio, conheça as medidas do Prospera MEI para mulheres",
+      "sugestao_aula": "Responder a busca real: 'pix em inglês'.",
+      "url": "https://www.gov.br/mulheres/pt-br/central-de-conteudos/noticias/2026/outubro-defeso-eleitoral/do-alivio-nas-dividas-ao-investimento-no-negocio-conheca-as-medidas-do-prospera-mei-para-mulheres"
+    },
+    {
+      "termo": "Avengers: Doomsday",
+      "score": 2.5,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "esporte",
+      "subindo": false,
+      "aula": [],
+      "contexto": "Brinde de “Avengers: Doomsday” antecipa Reed Richards x Doutor Destino e coloca Robert Downey Jr. no centro da virada da Fase 6",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'Avengers: Doomsday' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORkVrYkp0NmVoTWI5SEVfbzNaSk1XUVA4aVpZMVJGaHgtVGVtdzFMeWpGVFB0bUllNXhmaUdEeFZOcm1KeW1yU2JyMGJFWWgxcU9ibm4xdGVBZDJDTWMtOERVd2ZybEE1WU9abUJERzY0dHBsTUpJbXl4M2M3dnhOZUxwS1pCMnM?oc=5"
+    },
+    {
+      "termo": "meteorologia",
+      "score": 2.02,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "1.000+ buscas",
+      "categoria": "outro",
+      "subindo": true,
+      "aula": [
+        "meteorologia em inglês",
+        "como se diz meteorologia em inglês"
+      ],
+      "contexto": "Chuvas atingem quatro regiões do país nesta terça-feira; veja a previsão",
+      "sugestao_aula": "Responder a busca real: 'meteorologia em inglês'.",
+      "url": "https://globorural.globo.com/previsao-do-tempo/noticia/2026/10/canal-de-umidade-provoca-chuvas-no-norte-centro-oeste-e-nordeste-nesta-terca-feira.ghtml"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "renata lo prete",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"eleitoral\" em \"Sem brilho, César Tralli fez cobertura eleitoral aquém do seu talento em 2026\""
+    },
+    {
+      "termo": "trabalho",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"eleitoral\" em \"Denúncias de assédio eleitoral no trabalho mais que dobram em outubro; veja como denunciar\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Geraldo Alckmin",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"alckmin\" em \"Geraldo Alckmin\""
+    },
+    {
+      "termo": "Rafael Fonteles",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"governador\" em \"governador do estado do Piauí (2023–presente)\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2022",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2022\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Histórico eleitoral de Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleitoral\" em \"Histórico eleitoral de Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Cristiano Zanin",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"ministro\" em \"magistrado brasileiro, Ministro do Supremo Tribunal Federal\""
+    },
+    {
+      "termo": "Dilma Rousseff",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"36.ª presidente do Brasil (2011–2016)\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2002",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2002\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2006",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2006\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2018",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2018\""
+    },
+    {
+      "termo": "Tarcísio de Freitas",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"tarcisio\" em \"Tarcísio de Freitas\""
+    },
+    {
+      "termo": "Eleições nos Estados Unidos em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicoes\" em \"Eleições nos Estados Unidos em 2026\""
+    },
+    {
+      "termo": "Nunes Marques",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"ministro\" em \"magistrado brasileiro, ministro do Supremo Tribunal Federal\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 1989",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 1989\""
+    },
+    {
+      "termo": "Marisa Letícia Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Marisa Letícia Lula da Silva\""
+    },
+    {
+      "termo": "Jones Manoel",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Jones Manoel da Silva (Recife, 9 de janeiro de 1990) é um historiador, professor, escritor\""
+    },
+    {
+      "termo": "Partido dos Trabalhadores",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido dos Trabalhadores\""
+    },
+    {
+      "termo": "Presidente do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"Presidente do Brasil\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2014",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2014\""
+    },
+    {
+      "termo": "Enéas Carneiro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"cardiologista e político brasileiro (1938–2007)\""
+    },
+    {
+      "termo": "Michelle Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Michelle Bolsonaro\""
+    },
+    {
+      "termo": "Donald Trump",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"trump\" em \"Donald Trump\""
+    },
+    {
+      "termo": "Carlos Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Carlos Bolsonaro\""
+    },
+    {
+      "termo": "Eduardo Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Eduardo Bolsonaro\""
+    },
+    {
+      "termo": "Fernando Collor",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"32.º presidente do Brasil (1990–1992)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2010",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2010\""
+    },
+    {
+      "termo": "remontada progressista",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"politico\" em \"O político mais viral do dia | Sánchez aplaude a vitória de Lula e a \"remontada progressis\""
+    },
+    {
+      "termo": "#Eleições2026",
+      "fonte": "tiktok (notícias)",
+      "motivo": "política/eleição: \"eleicoes2026\" em \"#Eleições2026\""
+    },
+    {
+      "termo": "Eu sou o mais forte",
+      "fonte": "tiktok (notícias)",
+      "motivo": "crime/polícia: \"prisao\" em \"Quando um bordão vira prisão: dublador de Gojo lamenta “Eu sou o mais forte” e joga luz na\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "#eleicoes2026",
+    "adela - nicole kidman",
+    "adota",
+    "andre janones",
+    "aposentadoria por idade",
+    "avengers: doomsday",
+    "backstabber",
+    "ballon d'or",
+    "bts - swim",
+    "carlos bolsonaro",
+    "chatgpt",
+    "che guevara",
+    "cristiano zanin",
+    "dilma rousseff",
+    "donald trump",
+    "eduardo bolsonaro",
+    "eleicao presidencial no brasil em 1989",
+    "eleicao presidencial no brasil em 2002",
+    "eleicao presidencial no brasil em 2006",
+    "eleicao presidencial no brasil em 2010",
+    "eleicao presidencial no brasil em 2014",
+    "eleicao presidencial no brasil em 2018",
+    "eleicao presidencial no brasil em 2022",
+    "eleicao presidencial no brasil em 2026",
+    "eleicoes nos estados unidos em 2026",
+    "eneas carneiro",
+    "eu sou o mais forte",
+    "fernando collor",
+    "fernando henrique cardoso",
+    "flavio bolsonaro",
+    "geraldo alckmin",
+    "halloween",
+    "historico eleitoral de luiz inacio lula da silva",
+    "iphone",
+    "jair bolsonaro",
+    "jones manoel",
+    "lista de presidentes do brasil",
+    "lua do cacador",
+    "luiz inacio lula da silva",
+    "mansao",
+    "marisa leticia lula da silva",
+    "meteorologia",
+    "michelle bolsonaro",
+    "nba",
+    "nikolas ferreira",
+    "nunes marques",
+    "onca-pintada",
+    "partido dos trabalhadores",
+    "pix",
+    "presidente do brasil",
+    "previsao do tempo hoje",
+    "rafael fonteles",
+    "remontada progressista",
+    "renan santos",
+    "renata lo prete",
+    "rosangela lula da silva",
+    "sobrinho meme",
+    "tarcisio de freitas",
+    "tate mcrae - housewife",
+    "the neighbourhood - sweater weather",
+    "trabalho",
+    "whatsapp",
+    "youtube"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 4 itens",
+    "tiktok: 7 itens",
+    "manual: 2 itens"
+  ]
+}

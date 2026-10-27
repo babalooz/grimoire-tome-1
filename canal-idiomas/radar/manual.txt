@@ -1,17 +1,20 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-26)
-# 6 buscas web (trend tiktok brasil hoje 26 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / tiktok brasil trending hashtag challenge outubro de 2026 /
-# Halloween 2026 tiktok trend Brasil / "viralizou no tiktok" notícia 25 outubro 2026). Nenhuma achou
-# tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data clara: resultados eram guias
-# genéricos, rankings sem data ou tendências antigas/já descartadas (six seven/abr-2026 — PROIBIDA por
-# risco "feito para crianças"; Virginia Fonseca/jan-2026; Morango do Amor/sem data clara; tendências de
-# Halloween encontradas são dos EUA, sem confirmação de uso no TikTok BR). Nenhuma nova candidata aprovada
-# hoje — mesmo resultado das rotinas de 24/10 e 25/10.
-# Endpoint público /api/challenge/detail testado hoje para NBA e halloween -> HTTP 200, corpo vazio para as
-# duas = "não medido" (mesma falha documentada desde 26/09, repetida em 23/10, 24/10 e 25/10; a medição via
-# nuvem continua indisponível, só o PC mede).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-27)
+# 6 buscas web (trend tiktok brasil hoje 27 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / viralizou no tiktok essa semana brasil /
+# tiktok trending hashtag brazil October 2026 / bordão viral tiktok 2026). Nenhuma achou tendência NOVA e
+# confiável das últimas 24-48h no TikTok BR com fonte/data clara: resultados eram guias genéricos sem data,
+# rankings de influenciador (não de trend) ou tendências antigas já descartadas (six seven — PROIBIDA por
+# risco "feito para crianças", carimbada assim desde 26/09; Garçom tem Pitú/2025, vencida; Morango do
+# Amor, sem data clara). Candidata nova avaliada e DESCARTADA: trend "Suspect" (out/2026, formato
+# "transforma parente em suspeito" com voz de investigação) — fonte só um guia de marketing (Gelato,
+# replicado em vários idiomas) sem data exata, sem confirmação de uso no TikTok BR e sem número; tom de
+# "investigação/suspeito" fica perto demais da categoria crime/polícia do filtro de segurança do projeto —
+# fica de fora por falta de fonte e por risco, não entra nem como "não medido".
+# Endpoint público /api/challenge/detail testado hoje para NBA, Halloween e suspect -> HTTP 200, corpo
+# vazio nas três = "não medido" (mesma falha documentada desde 26/09, repetida todo dia desde então; a
+# medição via nuvem continua indisponível, só o PC mede).
 # Mantidos da rotina anterior (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
-# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, faltam 5 d — já consta também no
+# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, faltam 4 d — já consta também no
 # calendário/evento do dia do radar).
 NBA
 Halloween
