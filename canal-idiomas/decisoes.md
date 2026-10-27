@@ -20,6 +20,7 @@ Formato: data · decisão · métrica/evidência que sustenta · se for teste: p
 | 2026-09-26 | A/B 3: capítulos "parte N" com gancho × avulsos | Views N+1/N e seguidores/mil views | Sim · 26/10–08/11 · +25% nos dois → capítulos no sábado; senão vira compilado |
 | 2026-09-26 | A/B 4: CTA escolha A/B × erro de propósito × sem CTA (adiado para não misturar com o teste de faixas) | Comentários/mil views | Sim · 26/10–08/11, 5 de cada · vencedor vira CTA padrão; nenhum +25% sobre controle → CTA sai |
 | 2026-09-26 | A/B 5: gíria do TikTok que é inglês × situação útil | Compartilhamentos/mil views | Sim · 26/10–08/11, 5 pares · A vence → quadro fixo 2x/semana; empate cruzado → A na faixa curta, B na longa |
+| 2026-10-27 | Legenda do TikTok V1 (T1 E01, post `6ae132d7d689807dda10d0f8`, agendado 28/10 22:07 UTC) trocada de "...sem travar (eu travei no 1º dia)..." para "primeiro dia da Capy no café e alguém fala com ela em inglês..." | Pedido direto do Felipe (27/10): "sem travar" chegava perto do gancho proibido "trava na hora de falar" (regra de 27/09, PROIBIDO no portão) | Não (correção de texto, sem teste) |
 
 Regras comuns dos A/B: métricas do TikTok Studio 72 h após postar; mínimo 5 vídeos por braço; compara MEDIANA; vence com +25% e em ≥4 de 5 pares; empate = opção mais barata; 1 variável por teste.
 
