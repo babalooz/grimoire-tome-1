@@ -9,6 +9,7 @@ import { Licao, LicaoProps, licaoFrames } from "./Licao";
 import { LicaoEsquete, LicaoEsqueteProps, licaoEsqueteFrames } from "./LicaoEsquete";
 import { Cafe, CafeProps, cafeFrames } from "./Cafe";
 import { CafeEsquete, CafeEsqueteProps, cafeEsqueteFrames } from "./CafeEsquete";
+import { Vocab, VocabProps, vocabFrames } from "./Vocab";
 
 // Ponte para o portão (scripts/portao.py renderiza o modo auditoria pelas composições "Licao"/"LicaoEsquete"):
 // props com `format: "cafe"` nessas composições vão para Cafe/CafeEsquete. Lições antigas seguem iguais.
@@ -94,6 +95,18 @@ const Root: React.FC = () =>
     durationInFrames: 1,
     defaultProps: { format: "cafe", alvo: { en: "", pt: "" }, beats: [], timings: [], esquete: "A" },
     calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, cafeEsqueteFrames(props, FPS)) }),
+  }),
+  // SÉRIE DE VOCABULÁRIO (passiva, 61–75 s): 1 tema = 1 JSON em vocab/ (palavras, objeto, quantidade, quem fala).
+  // Props = tema + clips (scripts/tts_vocab.py) + voiceLufs (scripts/make-vocab.sh).
+  React.createElement(Composition<any, VocabProps>, {
+    id: "Vocab",
+    component: Vocab,
+    fps: FPS,
+    width: 1080,
+    height: 1920,
+    durationInFrames: 1,
+    defaultProps: { format: "vocab", palavras: [], blocos: [], apresenta: "capi", dicas: "lazy", revisao: "bolinha", final: "hank", falas: {}, clips: {} },
+    calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, vocabFrames(props, FPS)) }),
   }));
 
 registerRoot(Root);

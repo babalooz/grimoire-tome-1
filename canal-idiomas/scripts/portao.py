@@ -41,6 +41,7 @@ ZONA_PERSISTE = 12      # só reprova se a invasão continuar 12 quadros (0,4 s)
 NOTA_MIN = 8.0
 FAIXA = {"episodio": (61.0, 140.0), "esquete": (5.0, 20.0)}
 FAIXA_CAFE = {"episodio": (61.0, 95.0), "esquete": (20.0, 35.0)}  # Sitcom do Café (docs/plano-formato-cafe.md)
+FAIXA_VOCAB = {"episodio": (61.0, 75.0)}  # série de vocabulário (decisão do Felipe, 27/10: 61–75 s)
 # Gatilhos proibidos (regra do Felipe, 27/09): promessa milagrosa, urgência inventada, número zerado, frase do concorrente
 GATILHO_PROIBIDO = re.compile(
     r"fluente em \d+|flu[eê]ncia em \d+|m[eé]todo secreto|segredo que ningu[eé]m|[uú]ltimas vagas|s[oó] hoje|corre que|"
@@ -60,6 +61,18 @@ Dê nota 0–10 para cada critério e uma nota final (média ponderada, pesos en
 4. Humor: pelo menos 1 piada que funciona sozinha (1)
 5. Adulto: nada que classifique como "feito para crianças" (cantiga, voz de bebê, tema infantil) (2)
 6. Autoral: não parece "conteúdo inautêntico"/repetitivo/produzido em massa sem valor (1)
+Responda SÓ JSON: {"nota": <0-10>, "criterios": {"1": n, ...}, "motivos": ["..."]}. Motivos curtos e acionáveis."""
+# Série de vocabulário (formato `vocab`): não tem história nem piada obrigatória; o critério é ensinar palavra.
+RUBRICA_VOCAB = """Você é o juiz de qualidade da série de VOCABULÁRIO do canal CapyFala (inglês para brasileiros adultos que começam
+do zero e têm medo de inglês; personagem Capy, capivara). Vídeo passivo de 61–75 s: palavras de um tema, cada uma com o
+objeto e a quantidade na tela, a palavra colada no objeto, pausa para o espectador repetir, revisão. Dê nota 0–10 por
+critério e uma nota final (média ponderada, pesos entre parênteses). Seja exigente.
+1. Inglês correto (americano), palavras certas, modelos de pronúncia confiáveis, armadilhas do brasileiro bem marcadas (3)
+2. Ensina sem interação: sentido óbvio pela imagem, palavra repetida em várias vozes, pausa para repetir, mini-revisões,
+   recuperação (desafio) e revisão final; português só de apoio (3)
+3. Retenção: gancho verdadeiro nos 2 primeiros s, ritmo que não arrasta, variação entre blocos (1)
+4. Adulto: nada que classifique como "feito para crianças" (cantiga, voz de bebê, tom de pré-escola) (2)
+5. Autoral: não parece "conteúdo inautêntico"/produzido em massa sem valor; não imita app concorrente (1)
 Responda SÓ JSON: {"nota": <0-10>, "criterios": {"1": n, ...}, "motivos": ["..."]}. Motivos curtos e acionáveis."""
 
 
@@ -143,12 +156,12 @@ def loudness(mp4: Path) -> tuple[float, float]:
     return round(float(lufs), 2), round(float(tp), 2)
 
 
-def checar_arquivo(mp4: Path, faixa: str, cafe: bool = False) -> tuple[list[str], dict]:
+def checar_arquivo(mp4: Path, faixa: str, cafe: bool = False, vocab: bool = False) -> tuple[list[str], dict]:
     falhas = []
     if not mp4.exists():
         return [f"MP4 não existe: {mp4.name}"], {}
     m = probe(mp4)
-    lo, hi = (FAIXA_CAFE if cafe else FAIXA)[faixa]
+    lo, hi = (FAIXA_VOCAB if vocab else FAIXA_CAFE if cafe else FAIXA)[faixa]
     if not lo <= m["duracao"] <= hi:
         falhas.append(f"duração {m['duracao']} s fora da faixa {faixa} ({lo}–{hi} s)")
     if (m["largura"], m["altura"]) != (1080, 1920):
@@ -268,7 +281,62 @@ def promessas(ep: dict, textos: list[str]) -> list[str]:
     return falhas
 
 
+def roteiro_vocab(ep: dict) -> dict:
+    """Roteiro linear do vídeo de vocabulário, exportado da MESMA agenda da composição (scripts/make-vocab.sh)."""
+    f = ROOT / "out" / f"{ep['id']}.roteiro.json"
+    if not f.exists():
+        raise SystemExit(f"falta {f.relative_to(ROOT)}: rode scripts/make-vocab.sh antes do portão")
+    return json.loads(f.read_text())
+
+
+def checar_roteiro_vocab(ep: dict) -> list[str]:
+    """Regras da série de vocabulário (pedido do Felipe, 27/10/2026)."""
+    falhas = []
+    rot = roteiro_vocab(ep)
+    linhas = rot["linhas"]
+    falas_ = [x for x in linhas if x["tipo"] == "fala"]
+    if not (ep.get("serie") or {}).get("codigo"):
+        falhas.append("sem selo de série (serie.codigo)")
+    if len((ep.get("hookTitle") or "").split()) > 6:
+        falhas.append("hookTitle com mais de 6 palavras")
+    pal = ep.get("palavras") or []
+    if not 5 <= len(pal) <= 10:
+        falhas.append(f"{len(pal)} palavras (faixa 5–10)")
+    for w in pal:
+        ditos = [x for x in falas_ if x["lang"] == "en" and x.get("palavra") == w["en"]]
+        bocas = {x["speaker"] for x in ditos}
+        if len(bocas) < 3:
+            falhas.append(f"{w['en']}: só {len(bocas)} boca(s) (mínimo 3)")
+        if ditos and ditos[-1]["speaker"] == "capi":
+            falhas.append(f"{w['en']}: a Capy é a última a dizer a palavra")
+        if not any(x["tipo"] == "suavez" and x.get("palavra") == w["en"] for x in linhas):
+            falhas.append(f"{w['en']}: sem pausa para o espectador repetir")
+    if not any(x["tipo"] == "pergunta" for x in linhas):
+        falhas.append("sem desafio (objeto sem a palavra, pausa, resposta)")
+    if not falas_ or falas_[0]["t"] > 0.5:
+        falhas.append("gancho: nenhuma voz até 0,5 s")
+    for x in falas_:
+        n = len(x["text"].split())
+        if x["lang"] == "en" and n > 4:
+            falhas.append(f"fala em inglês longa demais ({n} palavras): {x['text']!r}")
+        if x["lang"] == "pt" and n > 14:
+            falhas.append(f"fala em português longa demais ({n} palavras): {x['text']!r}")
+    textos = [x["text"] for x in falas_] + [ep.get("hookTitle", ""), (ep.get("card") or {}).get("titulo", ""),
+                                            (ep.get("card") or {}).get("sub", "")] + [
+        (w.get("armadilha") or {}).get("marca", "") for w in pal]
+    for t in textos:
+        if PROIBIDO.search(t or ""):
+            falhas.append(f"termo proibido/estatística sem fonte: {t!r}")
+        if GATILHO_PROIBIDO.search(t or "") or re.search(r"conta comigo|usecomigo|\bapp comigo\b", t or "", re.I):
+            falhas.append(f"gatilho proibido: {t!r}")
+    if any(x["tipo"] in TIPOS_APP for x in linhas):
+        falhas.append("tem exercício de app (formato abandonado)")
+    return sorted(set(falhas))
+
+
 def checar_roteiro(ep: dict) -> list[str]:
+    if ep.get("format") == "vocab":
+        return checar_roteiro_vocab(ep)
     if ep.get("format") == "cafe":
         return checar_roteiro_cafe(ep)
     falhas = []
@@ -299,6 +367,21 @@ def checar_roteiro(ep: dict) -> list[str]:
 
 # ---------------------------------------------------------------- camada 2: juiz
 def roteiro_texto(ep: dict) -> str:
+    if ep.get("format") == "vocab":
+        rot = roteiro_vocab(ep)
+        linhas = [f"{ep['serie']['codigo']} — tema: {ep['tema']['pt']} · {len(ep['palavras'])} palavras · {rot['duracao']} s",
+                  "palavras: " + ", ".join(f"{w['digito']} {w['en']} ({w['qtd']} {w['objeto']})" for w in ep["palavras"]),
+                  "armadilhas marcadas: " + "; ".join(f"{w['en']}: {w['armadilha']['marca']}" for w in ep["palavras"] if w.get("armadilha"))]
+        for x in rot["linhas"]:
+            if x["tipo"] == "objetos":
+                linhas.append(f"[{x['t']} s] objetos de '{x['palavra']}' entram no balcão (sem palavra ainda)")
+            elif x["tipo"] == "suavez":
+                linhas.append(f"[{x['t']} s] SUA VEZ: {x['dur']} s de pausa para o espectador dizer '{x['palavra']}'")
+            elif x["tipo"] == "pergunta":
+                linhas.append(f"[{x['t']} s] DESAFIO 'qual é?': objeto sem a palavra, {x['dur']} s de pausa")
+            elif x["tipo"] == "fala":
+                linhas.append(f"[{x['t']} s] {x['speaker']} ({x['lang']}, {x['papel']}): {x['text']}")
+        return "\n".join(linhas)
     if ep.get("format") == "cafe":
         linhas = [f"{ep['serie']['codigo']} — objetivo: {ep.get('canDo', '')}",
                   f"frase-alvo: {ep['alvo']['en']} = {ep['alvo']['pt']} · forma errada: {ep.get('errado', {}).get('en', '-')}"]
@@ -334,7 +417,7 @@ def juiz_api(ep: dict) -> dict | None:
         return None
     try:
         client = anthropic.Anthropic() if os.environ.get("ANTHROPIC_API_KEY") else anthropic.Anthropic(api_key="injetada")
-        r = client.messages.create(model="claude-opus-5", max_tokens=2000, system=RUBRICA,
+        r = client.messages.create(model="claude-opus-5", max_tokens=2000, system=RUBRICA_VOCAB if ep.get("format") == "vocab" else RUBRICA,
                                    messages=[{"role": "user", "content": roteiro_texto(ep)}])
         texto = next(b.text for b in r.content if b.type == "text")
         d = json.loads(texto[texto.index("{"): texto.rindex("}") + 1])
@@ -347,6 +430,8 @@ def juiz_api(ep: dict) -> dict | None:
 
 # ---------------------------------------------------------------- veredito
 def videos(ep: dict) -> list[tuple[Path, str]]:
+    if ep.get("format") == "vocab":
+        return [(ROOT / "out" / f"{ep['id']}.mp4", "episodio")]
     if ep.get("format") == "cafe":
         return [(ROOT / "out" / f"{ep['id']}.mp4", "episodio")] + [
             (ROOT / "out" / f"{ep['id']}-esquete-{e['id']}.mp4", "esquete") for e in ep.get("esquetes") or []]
@@ -374,7 +459,7 @@ def main() -> None:
     ep = json.loads(Path(args.episodio).read_text())
 
     if args.pedido_juiz:
-        print(RUBRICA + "\n\n=== ROTEIRO ===\n" + roteiro_texto(ep))
+        print((RUBRICA_VOCAB if ep.get("format") == "vocab" else RUBRICA) + "\n\n=== ROTEIRO ===\n" + roteiro_texto(ep))
         print(f"\nDepois grave: .venv/bin/python scripts/portao.py {args.episodio} --juiz <nota> --motivos \"...\"")
         return
 
@@ -388,10 +473,11 @@ def main() -> None:
     aprovados = 0
     for mp4, faixa in videos(ep):
         cafe = ep.get("format") == "cafe"
-        falhas_arq, medidas = checar_arquivo(mp4, faixa, cafe)
+        vocab = ep.get("format") == "vocab"
+        falhas_arq, medidas = checar_arquivo(mp4, faixa, cafe, vocab)
         if mp4.exists():
             dur_f = int(medidas.get("duracao", 0) * 30)
-            base = "Cafe" if cafe else "Licao"
+            base = "Vocab" if vocab else "Cafe" if cafe else "Licao"
             comp = base if faixa == "episodio" else f"{base}Esquete:{mp4.stem.rsplit('-', 1)[-1]}"
             fim = max(dur_f - 2, 31)
             falhas_arq += zona_segura(ep["id"], comp, sorted({f for f in (0, 15, 30, *range(60, fim, 90)) if f <= fim}))

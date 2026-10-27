@@ -1,0 +1,190 @@
+{
+  "id": "vocab-numeros-1a10",
+  "format": "vocab",
+  "audio": "audio/vocab/numeros",
+  "tema": {
+    "pt": "números de 1 a 10",
+    "en": "numbers"
+  },
+  "serie": {
+    "codigo": "VOCAB 01",
+    "titulo": "números"
+  },
+  "hookTitle": "1 a 10 em inglês",
+  "nota": "Mesma ordem e mesmos objetos da música 'One to Ten' (ponte/saida/musica-numeros-1a10.md) e do assunto 4.",
+  "palavras": [
+    {
+      "en": "one",
+      "pt": "um",
+      "digito": "1",
+      "objeto": "xicara",
+      "qtd": 1
+    },
+    {
+      "en": "two",
+      "pt": "dois",
+      "digito": "2",
+      "objeto": "croissant",
+      "qtd": 2
+    },
+    {
+      "en": "three",
+      "pt": "três",
+      "digito": "3",
+      "objeto": "semente",
+      "qtd": 3,
+      "armadilha": {
+        "id": "t3",
+        "marca": "th: língua entre os dentes · iii longo",
+        "dica": "Ponta da língua entre os dentes. E o i bem comprido.",
+        "voz": true
+      }
+    },
+    {
+      "en": "four",
+      "pt": "quatro",
+      "digito": "4",
+      "objeto": "acucar",
+      "qtd": 4
+    },
+    {
+      "en": "five",
+      "pt": "cinco",
+      "digito": "5",
+      "objeto": "pata",
+      "qtd": 1,
+      "contagem": 5,
+      "armadilha": {
+        "id": "t5",
+        "marca": "termina no v, sem i",
+        "dica": "Termina vibrando no v. Sem i no final.",
+        "voz": false
+      }
+    },
+    {
+      "en": "six",
+      "pt": "seis",
+      "digito": "6",
+      "objeto": "muffin",
+      "qtd": 6
+    },
+    {
+      "en": "seven",
+      "pt": "sete",
+      "digito": "7",
+      "objeto": "copo",
+      "qtd": 7,
+      "armadilha": {
+        "id": "t7",
+        "marca": "força no começo: SEV-en",
+        "dica": "A força fica no começo da palavra.",
+        "voz": false,
+        "enfase": "SEV"
+      }
+    },
+    {
+      "en": "eight",
+      "pt": "oito",
+      "digito": "8",
+      "objeto": "cookie",
+      "qtd": 8,
+      "armadilha": {
+        "id": "t8",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t, seco. Sem i no final.",
+        "voz": false
+      }
+    },
+    {
+      "en": "nine",
+      "pt": "nove",
+      "digito": "9",
+      "objeto": "canudo",
+      "qtd": 9
+    },
+    {
+      "en": "ten",
+      "pt": "dez",
+      "digito": "10",
+      "objeto": "pata-hank",
+      "qtd": 2,
+      "contagem": 10
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      7
+    ],
+    "vozes": [
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": false,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Contar até dez em inglês. Quatro números têm pegadinha."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "Dez números. Qual foi o mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 10 palavras",
+    "sub": "one → ten"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  }
+}
