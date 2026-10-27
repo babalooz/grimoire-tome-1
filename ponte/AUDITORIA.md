@@ -18,3 +18,4 @@
 - `cafe-t1e01-hi-im-capy-v2.mp4` · midia 188d69f · 63.0 s · -14.0 LUFS · pico -1.5 · mov 0.271 · ok
 - `cafe-t1e01-hi-im-capy-v3.mp4` · midia 188d69f · 65.0 s · -14.0 LUFS · pico -1.5 · mov 0.302 · ok
 - `cafe-t1e01-hi-im-capy.mp4` · midia 188d69f · 65.8 s · -14.0 LUFS · pico -1.5 · mov 0.277 · ok
+- `vocab-numeros-1a10.mp4` · midia 186fbee · 73.4 s · -14.0 LUFS · pico -1.5 · mov 0.249 · ok
