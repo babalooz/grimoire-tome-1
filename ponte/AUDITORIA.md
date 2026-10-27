@@ -15,3 +15,6 @@
 - `licao-s01e06-are-you-tired-esquete-A.mp4` · midia 8d85441 · 10.4 s · -14.0 LUFS · pico -1.5 · mov 0.286 · ok
 - `licao-s01e06-are-you-tired-esquete-B.mp4` · midia 8d85441 · 8.5 s · -14.0 LUFS · pico -1.5 · mov 0.273 · ok
 - `licao-s01e06-are-you-tired.mp4` · midia 8d85441 · 75.1 s · -14.1 LUFS · pico -1.2 · mov 0.287 · ok
+- `cafe-t1e01-hi-im-capy-v2.mp4` · midia 188d69f · 63.0 s · -14.0 LUFS · pico -1.5 · mov 0.271 · ok
+- `cafe-t1e01-hi-im-capy-v3.mp4` · midia 188d69f · 65.0 s · -14.0 LUFS · pico -1.5 · mov 0.302 · ok
+- `cafe-t1e01-hi-im-capy.mp4` · midia 188d69f · 65.8 s · -14.0 LUFS · pico -1.5 · mov 0.277 · ok
