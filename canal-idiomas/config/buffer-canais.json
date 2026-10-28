@@ -1,6 +1,6 @@
 {
   "_sobre": "IDs dos canais no Buffer (sem segredo). Gerado por scripts/publicar.py --listar.",
-  "atualizado": "2026-10-28T11:29-03:00",
+  "atualizado": "2026-10-28T11:59-03:00",
   "organizacoes": [
     {
       "id": "6a1599888465779c73b3235d",
