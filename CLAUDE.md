@@ -115,6 +115,18 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
   inventada, número zerado de seguidores/views, "trava na hora de falar". Bio "inglês do básico em episódios, na ordem do
   padrão CEFR. grátis." só depois que a T1 no ar seguir o CEFR (constantes em `scripts/roteirista.py` GATILHOS e `portao.py`).
 
+## Numeração dos posts (decisão do Felipe, 28/10) — TODAS as rotinas de publicação seguem
+- Objetivo: parecer sequência e o público ir atrás dos outros. Todo **título do YouTube** e toda **legenda do TikTok/Instagram
+  COMEÇAM pelo número da série**:
+  - **Sitcom:** `Ep. N (parte X/3) · ` — N = número do assunto (o mesmo do selo "T1 E0N" no vídeo); X = 1 (V1), 2 (V2), 3 (V3).
+  - **Vocabulário:** `Palavras #N · ` — N = número do tema na ordem em que foi ao ar (01 = números, 02 = Halloween,
+    03 = cumprimentos, e assim por diante; o número segue o VOCAB NN do `publicados.csv`).
+  - **Corte:** diz de onde vem: `do Ep. N · ` ou `das Palavras #N · ` no começo.
+  - **Longo do YouTube em tela cheia:** `Dia N · `.
+- A **descrição termina com `anterior: <número>`** quando houver anterior (ex.: `anterior: Ep. 2 (parte 3/3)`,
+  `anterior: Palavras #02`, `anterior: Dia 3`). Primeiro da série = sem essa linha.
+- Posts já agendados antes de 28/10 não são alterados por esta regra; vale para tudo agendado daqui em diante.
+
 ## Decisões técnicas já tomadas
 - WhatsApp: usar **API oficial (Cloud API)** para clientes pagantes. Evolution/Baileys = risco de banimento.
   Meta proíbe chatbot "de uso geral" desde 15/01/2026, mas no Brasil o CADE suspendeu (mantido em 04/03/2026);
