@@ -137,7 +137,7 @@ Para quando o hype de Natal não servir. Mesmos exercícios, mesma ordem. Mudam 
    - "A ou B?": "I'm doctor." (dito 1 vez só) e "I'm a doctor.".
 2. **Personalize**, em 2 rodadas: o aluno diz a profissão dele ("I'm a…"; quem estuda diz "I'm a student."; a tela mostra 6 profissões comuns com a palavra em inglês); e responde ao Hank "What do you do?".
 
-**Por que estes:** reconhecer outra profissão pelo som mostra que o molde serve para todas. A rodada 2 mira o erro do "a". A personalização é o "Talking about you" do Headway; a tela dá as palavras para o aluno não travar no vocabulário.
+**Por que estes:** reconhecer outra profissão pelo som mostra que o molde serve para todas. A rodada 2 mira o erro do "a". A personalização é o "Talking about you" do Headway; a tela dá as palavras para o vocabulário não virar obstáculo.
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
