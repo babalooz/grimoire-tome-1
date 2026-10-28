@@ -126,7 +126,7 @@ Para quando o hype de dezembro não servir, ou se o Felipe preferir a Dona Jaca 
 
 ---
 
-## VÍDEO 3 · FIXAR · ≥ 61 s · "amigo ou mãe? só pelo ouvido" · parte 3/3 · ~65 s
+## VÍDEO 3 · FIXAR · ≥ 61 s · "amigo ou mãe? só pelo ouvido" · parte 3/3 · ~67 s
 
 **Exercícios:**
 1. **Ouça e reconheça**, em 2 rodadas:
