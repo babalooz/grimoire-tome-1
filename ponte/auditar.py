@@ -43,6 +43,7 @@ def medir(mp4: Path, tmp: Path):
     return {
         "dur": seg,
         "res": "1080x1920" in vid,
+        "res_wide": "1920x1080" in vid,
         "cor": "yuv420p(tv, bt709" in vid,
         "lufs": float(i_lufs[-1]) if i_lufs else None,
         "peak": float(peak[-1]) if peak else None,
@@ -52,8 +53,12 @@ def medir(mp4: Path, tmp: Path):
 
 def veredito(nome: str, m: dict):
     falhas = []
-    esquete = "esquete" in nome
-    if not m["res"]:
+    wide = "wide" in nome  # longo do YouTube em tela cheia (16:9)
+    esquete = "esquete" in nome or nome.startswith("corte-")
+    if wide:
+        if not m["res_wide"]:
+            falhas.append("não é 1920x1080")
+    elif not m["res"]:
         falhas.append("não é 1080x1920")
     if not m["cor"]:
         falhas.append("cor fora de yuv420p/tv/bt709")
@@ -63,9 +68,15 @@ def veredito(nome: str, m: dict):
         falhas.append(f"pico {m['peak']} dBFS (máx -1)")
     if m["mov"] < MIN_MOV:
         falhas.append(f"movimento 0-1s {m['mov']:.3f} (mín {MIN_MOV})")
-    if esquete and not (5 <= m["dur"] <= 20):
+    if wide:
+        if not (120 <= m["dur"] <= 900):
+            falhas.append(f"longo com {m['dur']:.1f} s (120-900)")
+    elif nome.startswith("corte-"):
+        if not (15 <= m["dur"] <= 25):
+            falhas.append(f"corte com {m['dur']:.1f} s (15-25)")
+    elif esquete and not (5 <= m["dur"] <= 20):
         falhas.append(f"esquete com {m['dur']:.1f} s (5-20)")
-    if not esquete and not (61 <= m["dur"] <= 140):
+    elif not esquete and not (61 <= m["dur"] <= 140):
         falhas.append(f"episódio com {m['dur']:.1f} s (61-140)")
     return falhas
 
