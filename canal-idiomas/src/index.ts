@@ -10,6 +10,10 @@ import { LicaoEsquete, LicaoEsqueteProps, licaoEsqueteFrames } from "./LicaoEsqu
 import { Cafe, CafeProps, cafeFrames } from "./Cafe";
 import { CafeEsquete, CafeEsqueteProps, cafeEsqueteFrames } from "./CafeEsquete";
 import { Vocab, VocabProps, vocabFrames } from "./Vocab";
+import { CafeWide, CafeWideProps } from "./CafeWide";
+import { VocabWide, VocabWideProps } from "./VocabWide";
+import { DiaWide, diaFrames } from "./DiaWide";
+import { MiniaturaWide } from "./MiniaturaWide";
 
 // Ponte para o portão (scripts/portao.py renderiza o modo auditoria pelas composições "Licao"/"LicaoEsquete"):
 // props com `format: "cafe"` nessas composições vão para Cafe/CafeEsquete. Lições antigas seguem iguais.
@@ -107,6 +111,40 @@ const Root: React.FC = () =>
     durationInFrames: 1,
     defaultProps: { format: "vocab", palavras: [], blocos: [], apresenta: "capi", dicas: "lazy", revisao: "bolinha", final: "hank", falas: {}, clips: {} },
     calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, vocabFrames(props, FPS)) }),
-  }));
+  }),
+  // ---- TELA CHEIA 16:9 (YouTube longo, decisão do Felipe 28/10): mesmos JSONs/agenda/voz, cenário redesenhado ----
+  React.createElement(Composition<any, CafeWideProps>, {
+    id: "CafeWide",
+    component: CafeWide,
+    fps: FPS,
+    width: 1920,
+    height: 1080,
+    durationInFrames: 1,
+    defaultProps: { format: "cafe", alvo: { en: "", pt: "" }, beats: [], timings: [] },
+    calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, cafeFrames(props, FPS)) }),
+  }),
+  React.createElement(Composition<any, VocabWideProps>, {
+    id: "VocabWide",
+    component: VocabWide,
+    fps: FPS,
+    width: 1920,
+    height: 1080,
+    durationInFrames: 1,
+    defaultProps: { format: "vocab", palavras: [], blocos: [], apresenta: "capi", dicas: "lazy", revisao: "bolinha", final: "hank", falas: {}, clips: {} },
+    calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, vocabFrames(props, FPS)) }),
+  }),
+  // Longo do dia: abertura + sitcom + vocabulário + corte + encerramento. Props = scripts/dia-wide.ts (montar).
+  React.createElement(Composition<any, any>, {
+    id: "DiaWide",
+    component: DiaWide,
+    fps: FPS,
+    width: 1920,
+    height: 1080,
+    durationInFrames: 1,
+    defaultProps: { id: "dia", data: "", dataTexto: "", partes: [], recap: [] },
+    calculateMetadata: ({ props }) => ({ durationInFrames: Math.max(1, diaFrames(props as any, FPS)) }),
+  }),
+  React.createElement(Composition<any, any>, { id: "MiniaturaWide", component: MiniaturaWide, fps: FPS, width: 1280, height: 720, durationInFrames: 1,
+    defaultProps: { frase: "Hi! I'm Capy.", tag: "INGLÊS DO ZERO · T1 E01" } }));
 
 registerRoot(Root);

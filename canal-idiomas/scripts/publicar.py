@@ -51,6 +51,15 @@ FILA = ROOT / "fila"
 SERVICO = {"youtube": "youtube", "tiktok": "tiktok", "instagram": "instagram"}
 # Rótulo de IA: TikTok exige para conteúdo gerado por IA com voz realista (docs/pesquisas/2026-09-26-tiktok-campeoes.md §7).
 AI_LABEL = {"tiktok": True, "youtube": False, "instagram": False}
+# Vídeo LONGO do YouTube (16:9, faixa "longo"): o Buffer NÃO publica (verificado 28/10/2026 na doc oficial):
+#   "We do not support long-form YouTube videos at this time." / Shorts 1:1 ou 9:16, "Up to 3 minutes"; acima disso vira
+#   notificação manual — https://support.buffer.com/article/562-using-youtube-shorts-with-buffer
+#   miniatura própria: VideoAssetInput.thumbnailUrl "Do not use ... the API rejects video assets that set this field"
+#   — https://developers.buffer.com/types/VideoAssetInput.html
+# Então o longo vai para fila/ com o PACOTE pronto (arquivo, título, descrição com capítulos, categoria 27, miniatura)
+# para subir no YouTube Studio (ou, no futuro, pela YouTube Data API com OAuth do Felipe). Nunca vai ao Buffer.
+BUFFER_SEM_LONGO = "https://support.buffer.com/article/562-using-youtube-shorts-with-buffer"
+SHORT_MAX_S = 180.0  # Buffer: Short > 3 min não publica sozinho (vira notificação)
 
 
 # ---------------------------------------------------------------- API
@@ -277,6 +286,28 @@ def metadata(rede: str, t: dict) -> dict:
     return {"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": AI_LABEL["instagram"]}}
 
 
+def duracao(mp4: Path) -> float:
+    from portao import probe  # import tardio (o portão importa este módulo)
+    return probe(mp4)["duracao"]
+
+
+def pacote_longo(dia: dt.date) -> tuple[list[str], dict]:
+    """Longo do dia (16:9): motivo de não ir ao Buffer + pacote pronto para o upload manual no YouTube Studio."""
+    base = ROOT / "out" / f"dia-{dia.isoformat()}-wide"
+    pac_f = base.with_suffix(".youtube.json")
+    motivo = [f"Buffer não publica vídeo longo do YouTube (só Shorts ≤ 3 min, 1:1/9:16): {BUFFER_SEM_LONGO} — "
+              "subir no YouTube Studio com o pacote abaixo"]
+    if not pac_f.exists():
+        return motivo + [f"pacote não gerado ({pac_f.relative_to(ROOT)}; rode scripts/make-dia-wide.sh)"], {}
+    pac = json.loads(pac_f.read_text())
+    mp4 = ROOT / "out" / pac["arquivo"]
+    portao = mp4.with_suffix(".portao.json")
+    aprovado = portao.exists() and json.loads(portao.read_text()).get("aprovado") is True
+    if not aprovado:
+        motivo.append("portão não aprovou o longo (scripts/portao.py --dia)")
+    return motivo, {"pacote": {**pac, "portao_aprovado": aprovado, "visibilidade": "public", "feito_para_criancas": False}}
+
+
 def para_fila(dia: str, p: dict, motivo: list[str], extra: dict) -> None:
     FILA.mkdir(exist_ok=True)
     cod = p["episodio"].replace(" ", "").replace("/", "-")
@@ -308,7 +339,7 @@ def publicar_dia(dia: dt.date, dry: bool) -> int:
     prontos = []  # (post da grade, mp4, entrada GraphQL)
     for p in grade[dia.isoformat()]["posts"]:
         if p["faixa"] == "longo":
-            para_fila(dia.isoformat(), p, ["vídeo longo: sem render nem publicador ainda"], {})
+            para_fila(dia.isoformat(), p, *pacote_longo(dia))
             continue
         ep = eps.get(p["episodio"])
         if ep is None:
@@ -325,6 +356,8 @@ def publicar_dia(dia: dt.date, dry: bool) -> int:
             motivo.append(f"sem acesso ao Buffer ({acesso_msg})")
         if not mp4.exists():
             motivo.append(f"MP4 não renderizado ({mp4.relative_to(ROOT)})")
+        elif p["rede"] == "youtube" and (dur := duracao(mp4)) > SHORT_MAX_S:
+            motivo.append(f"Short com {dur:.0f} s (> {SHORT_MAX_S:.0f} s: o Buffer vira notificação manual, {BUFFER_SEM_LONGO})")
         portao = mp4.with_suffix(".portao.json")
         if not (portao.exists() and json.loads(portao.read_text()).get("aprovado") is True):
             motivo.append("portão não aprovou (rode scripts/portao.py)")

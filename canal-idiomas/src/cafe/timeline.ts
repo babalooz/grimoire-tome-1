@@ -258,22 +258,25 @@ const subjectOf = (s: CafeStep): Actor[] | "wide" => {
   if (b.mode === "pensamento" || b.speaker === "donajaca") return ["capi"];
   return [b.speaker as Actor];
 };
-const camOf = (subj: Actor[] | "wide"): Cam => {
-  if (subj === "wide" || subj.length === 0 || subj.length > 2) return TWO;
-  if (subj.length === 1) return closeOnActor(subj[0]);
-  return pairCam(subj[0], subj[1]);
+// Geometria do palco: vertical (mundo 1080x1920, padrão) ou horizontal (src/wide/geo.ts, composições *Wide).
+export type CafeGeo = { two: Cam; close: (id: Actor) => Cam; pair: (a: Actor, b: Actor) => Cam; clamp: (c: Cam) => Cam };
+export const GEO_VERT: CafeGeo = { two: TWO, close: (id) => closeOnActor(id), pair: (a, b) => pairCam(a, b), clamp: clampCam };
+const camOf = (subj: Actor[] | "wide", g: CafeGeo = GEO_VERT): Cam => {
+  if (subj === "wide" || subj.length === 0 || subj.length > 2) return g.two;
+  if (subj.length === 1) return g.close(subj[0]);
+  return g.pair(subj[0], subj[1]);
 };
 const eqSubj = (a: Actor[] | "wide", b: Actor[] | "wide") =>
   a === "wide" || b === "wide" ? a === b : a.length === b.length && b.every((x) => a.includes(x));
 const within = (a: Actor[] | "wide", b: Actor[] | "wide") => a === "wide" || (b !== "wide" && b.every((x) => a.includes(x)));
 // reenquadramento de plano longo: close ↔ plano com quem escuta (a Capy; ou o Hank se a Capy fala)
-const altCam = (sh: Shot): Cam => {
-  if (sh.subjects === "wide") return punch(sh.cam);
-  if (sh.subjects.length === 1) return pairCam(sh.subjects[0], sh.subjects[0] === "capi" ? "hank" : "capi");
-  return closeOnActor(sh.subjects[0]);
+const altCam = (sh: Shot, g: CafeGeo = GEO_VERT): Cam => {
+  if (sh.subjects === "wide") return punch(sh.cam, g);
+  if (sh.subjects.length === 1) return g.pair(sh.subjects[0], sh.subjects[0] === "capi" ? "hank" : "capi");
+  return g.close(sh.subjects[0]);
 };
 
-export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
+export const planShots = (steps: CafeStep[], h0 = 0, g: CafeGeo = GEO_VERT): Shot[] => {
   const total = cafeTotal(steps);
   const shots: Shot[] = [];
   const s0 = stepAt(steps, h0);
@@ -283,11 +286,11 @@ export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
   if (hookOk) {
     const a = (subjectOf(s0) as Actor[])[0] ?? "capi";
     const b: Actor = a === "capi" ? "hank" : "capi";
-    shots.push({ from: h0, to: h0 + HOOK_CUT, cam: closeOnActor(a), hook: "a", subjects: [a] });
-    shots.push({ from: h0 + HOOK_CUT, to: h0 + HOOK_CUT + HOOK_INSERT, cam: closeOnActor(b), hook: "b", subjects: [b] });
-    cur = { from: h0 + HOOK_CUT + HOOK_INSERT, to: -1, cam: TWO, subjects: [a] };
+    shots.push({ from: h0, to: h0 + HOOK_CUT, cam: g.close(a), hook: "a", subjects: [a] });
+    shots.push({ from: h0 + HOOK_CUT, to: h0 + HOOK_CUT + HOOK_INSERT, cam: g.close(b), hook: "b", subjects: [b] });
+    cur = { from: h0 + HOOK_CUT + HOOK_INSERT, to: -1, cam: g.two, subjects: [a] };
   } else {
-    cur = { from: h0, to: -1, cam: TWO, subjects: subjectOf(s0) };
+    cur = { from: h0, to: -1, cam: g.two, subjects: subjectOf(s0) };
   }
   for (const s of steps) {
     if (s.from <= cur.from || s.from < h0) continue;
@@ -298,7 +301,7 @@ export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
     if (!early) {
       cur.to = s.from;
       shots.push(cur);
-      cur = { from: s.from, to: -1, cam: TWO, subjects: subj };
+      cur = { from: s.from, to: -1, cam: g.two, subjects: subj };
     } else if (cur.subjects !== "wide" && subj !== "wide") {
       // corte cedo demais: abre o plano atual para caber os dois (sem cortar)
       cur.subjects = [...cur.subjects, ...subj.filter((x) => !(cur.subjects as Actor[]).includes(x))];
@@ -308,7 +311,7 @@ export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
   }
   cur.to = total;
   shots.push(cur);
-  shots.forEach((sh) => { if (!sh.hook) sh.cam = camOf(sh.subjects); });
+  shots.forEach((sh) => { if (!sh.hook) sh.cam = camOf(sh.subjects, g); });
 
   // plano longo (> 3 s): reenquadra (punch-in de 15% ou volta) em limites de beat, entre 1,5 e 3 s
   const bounds = steps.flatMap((s) => [s.from, s.shadowFrom]).filter((f) => f > 0);
@@ -319,15 +322,15 @@ export const planShots = (steps: CafeStep[], h0 = 0): Shot[] => {
     while (sh.to - pos > CAM_MAX + 9) {
       const cands = bounds.filter((f) => f >= pos + CAM_MIN && f <= pos + CAM_MAX && sh.to - f >= CAM_MIN);
       const cut = cands.length ? cands.reduce((a, b) => (Math.abs(b - pos - 70) < Math.abs(a - pos - 70) ? b : a)) : Math.min(pos + 72, sh.to - CAM_MIN);
-      out.push({ ...sh, from: pos, to: cut, cam: alt ? altCam(sh) : sh.cam });
+      out.push({ ...sh, from: pos, to: cut, cam: alt ? altCam(sh, g) : sh.cam });
       pos = cut;
       alt = !alt;
     }
-    out.push({ ...sh, from: pos, to: sh.to, cam: alt ? altCam(sh) : sh.cam });
+    out.push({ ...sh, from: pos, to: sh.to, cam: alt ? altCam(sh, g) : sh.cam });
   });
   return out;
 };
-const punch = (c: Cam): Cam => clampCam({ cx: c.cx, cy: c.cy - 20, z: c.z * 1.15 });
+const punch = (c: Cam, g: CafeGeo = GEO_VERT): Cam => g.clamp({ cx: c.cx, cy: c.cy - 20, z: c.z * 1.15 });
 export const shotAt = (shots: Shot[], frame: number) => shots.find((s) => frame >= s.from && frame < s.to) ?? shots[shots.length - 1];
 
 // ---- trilha: −22 dB sob a voz, respiro −18, ZERO na pergunta, no shadowing e em todo beat da frase-alvo ----

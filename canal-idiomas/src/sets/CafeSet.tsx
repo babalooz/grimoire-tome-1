@@ -16,7 +16,7 @@ const S = { stroke: INK, strokeWidth: 8, strokeLinejoin: "round" as const, strok
 
 export const COUNTER_Y = 1130;
 
-const Lamp: React.FC<{ x: number; len: number; color: string; frame: number; i: number }> = ({ x, len, color, frame, i }) => {
+export const Lamp: React.FC<{ x: number; len: number; color: string; frame: number; i: number }> = ({ x, len, color, frame, i }) => {
   const swing = Math.sin(frame / 40 + i * 1.7) * 1.5;
   return (
     <g transform={`rotate(${swing} ${x} 0)`}>
@@ -30,7 +30,7 @@ const Lamp: React.FC<{ x: number; len: number; color: string; frame: number; i: 
 };
 
 // Menu com os tamanhos P/M/G desenhados: plantio da piada final ("Tem… TAMANHO?!").
-const MenuBoard: React.FC = () => (
+export const MenuBoard: React.FC = () => (
   <g transform="translate(90 330)">
     <rect x={0} y={0} width={560} height={372} rx={26} fill={BOARD} {...S} strokeWidth={10} />
     <rect x={18} y={18} width={524} height={336} rx={16} fill="none" stroke={C.lilas} strokeWidth={4} strokeDasharray="4 12" />
@@ -55,7 +55,7 @@ const MenuBoard: React.FC = () => (
   </g>
 );
 
-const Sign: React.FC<{ frame: number }> = ({ frame }) => {
+export const Sign: React.FC<{ frame: number }> = ({ frame }) => {
   const glow = 0.85 + Math.sin(frame / 9) * 0.08 + (Math.floor(frame / 7) % 23 === 0 ? -0.35 : 0); // neon que pisca de vez em quando
   return (
     <g transform="translate(690 350) rotate(4)">

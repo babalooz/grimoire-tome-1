@@ -246,7 +246,7 @@ const VocabInner: React.FC<VocabRenderProps> = (p) => {
 
 // Adesivo de preço do café: dígito + palavra. A palavra fica AMARELA só enquanto alguém a diz (único amarelo do quadro).
 // `enfase` = sílaba forte maior (SEV-en). `marca` = armadilha do brasileiro, chip lilás embaixo.
-const Adesivo: React.FC<{
+export const Adesivo: React.FC<{
   x: number; y: number; z: number; digito: string; palavra: string; enfase?: string; ativo: boolean; pop: number; pulse: number;
   marca?: string; marcaSince: number;
 }> = ({ x, y, z, digito, palavra, enfase, ativo, pop, pulse, marca, marcaSince }) => {

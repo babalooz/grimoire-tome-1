@@ -79,28 +79,28 @@ Responda SÓ JSON: {"nota": <0-10>, "criterios": {"1": n, ...}, "motivos": ["...
 # ---------------------------------------------------------------- camada 1: arquivo
 def probe(mp4: Path) -> dict:
     out = subprocess.run([str(FFPROBE), "-v", "error", "-show_entries",
-                          "format=duration:stream=codec_type,width,height,pix_fmt,color_range,color_space",
+                          "format=duration:stream=codec_type,codec_name,width,height,pix_fmt,color_range,color_space",
                           "-of", "json", str(mp4)], capture_output=True, text=True, check=True,
                          env={**os.environ, "LD_LIBRARY_PATH": str(FFPROBE.parent)}).stdout
     d = json.loads(out)
     v = next(s for s in d["streams"] if s["codec_type"] == "video")
-    return {"duracao": round(float(d["format"]["duration"]), 2), "largura": v["width"], "altura": v["height"],
+    return {"duracao": round(float(d["format"]["duration"]), 2), "largura": v["width"], "altura": v["height"], "codec": v.get("codec_name"),
             "cor": f"{v.get('pix_fmt')}/{v.get('color_range')}/{v.get('color_space')}",
             "tem_audio": any(s["codec_type"] == "audio" for s in d["streams"])}
 
 
-def quadro(mp4: Path, t: float, tmp: Path):
+def quadro(mp4: Path, t: float, tmp: Path, tam: tuple[int, int] = (108, 192)):
     from PIL import Image
     png = tmp / f"q{t}.png"
     subprocess.run([str(FFMPEG), "-v", "error", "-y", "-ss", str(t), "-i", str(mp4), "-frames:v", "1", str(png)],
                    check=True, env={**os.environ, "LD_LIBRARY_PATH": str(FFMPEG.parent)})
-    return Image.open(png).convert("L").resize((108, 192))
+    return Image.open(png).convert("L").resize(tam)
 
 
-def movimento_gancho(mp4: Path) -> float:
-    """Diferença média (0–1) entre o quadro 0 e o quadro de 1 s: mede se há corte/zoom/ação no 1º segundo."""
+def movimento_gancho(mp4: Path, t: float = 1.0, tam: tuple[int, int] = (108, 192)) -> float:
+    """Diferença média (0–1) entre o quadro 0 e o quadro de t s: mede se há corte/zoom/ação no começo."""
     with tempfile.TemporaryDirectory() as tmp:
-        a, b = quadro(mp4, 0, Path(tmp)), quadro(mp4, 1.0, Path(tmp))
+        a, b = quadro(mp4, 0, Path(tmp), tam), quadro(mp4, t, Path(tmp), tam)
     pa, pb = list(a.getdata()), list(b.getdata())
     return round(sum(abs(x - y) for x, y in zip(pa, pb)) / (255 * len(pa)), 3)
 
@@ -451,14 +451,176 @@ def gravar(mp4: Path, c1: dict, juiz: dict | None) -> dict:
     return v
 
 
+# ---------------------------------------------------------------- LONGO DO DIA 16:9 (YouTube, decisão do Felipe 28/10)
+FAIXA_LONGO = (150.0, 300.0)  # "cerca de 3 a 4 minutos" (folga de 2:30 a 5:00)
+# Zona segura 16:9 (src/wide/geo.ts SAFE_W): margem de título e faixa dos controles do player embaixo.
+ZONAS_W = {"controles do player (y>960)": (0, 960, 1920, 1080), "borda esquerda (x<96)": (0, 0, 96, 1080),
+           "borda direita (x>1824)": (1824, 0, 1920, 1080), "borda de cima (y<54)": (0, 0, 1920, 54)}
+TRAVAR = re.compile(r"\btrav", re.I)  # regra do pacote do assunto 1: título/descrição sem "travar"
+REGUA_MESTRE = "git show origin/ponte:ponte/saida/mestre-ingles.md"
+
+
+def checar_arquivo_dia(mp4: Path) -> tuple[list[str], dict]:
+    if not mp4.exists():
+        return [f"MP4 não existe: {mp4.name}"], {}
+    falhas, m = [], probe(mp4)
+    if not FAIXA_LONGO[0] <= m["duracao"] <= FAIXA_LONGO[1]:
+        falhas.append(f"duração {m['duracao']} s fora da faixa do longo ({FAIXA_LONGO[0]}–{FAIXA_LONGO[1]} s)")
+    if (m["largura"], m["altura"]) != (1920, 1080):
+        falhas.append(f"resolução {m['largura']}x{m['altura']} (esperado 1920x1080)")
+    if m.get("codec") != "h264":
+        falhas.append(f"codec {m.get('codec')} (esperado h264)")
+    if m["cor"] != "yuv420p/tv/bt709":
+        falhas.append(f"cor {m['cor']} (esperado yuv420p/tv/bt709)")
+    m["movimento_1s"] = movimento_gancho(mp4, 1.0, (192, 108))
+    m["movimento_2s"] = movimento_gancho(mp4, 2.0, (192, 108))
+    if max(m["movimento_1s"], m["movimento_2s"]) < GANCHO_DIF_MIN:
+        falhas.append(f"sem movimento nos 2 primeiros s ({m['movimento_1s']}/{m['movimento_2s']}, mín. {GANCHO_DIF_MIN})")
+    if not m["tem_audio"]:
+        falhas.append("sem trilha de áudio")
+    else:
+        m["lufs"], m["true_peak"] = loudness(mp4)
+        if abs(m["lufs"] - LUFS_ALVO) > LUFS_TOL:
+            falhas.append(f"loudness {m['lufs']} LUFS (alvo {LUFS_ALVO} ±{LUFS_TOL})")
+        if m["true_peak"] > TP_MAX:
+            falhas.append(f"pico verdadeiro {m['true_peak']} dBTP (> {TP_MAX})")
+    return falhas, m
+
+
+def zona_segura_dia(props: Path, frames: list[int]) -> list[str]:
+    """Quadros do DiaWide em modo auditoria (só interface sobre preto): nada parado fora da zona segura 16:9."""
+    from PIL import Image
+    falhas = []
+    with tempfile.TemporaryDirectory() as tmp:
+        pa = Path(tmp) / "props.json"
+        pa.write_text(json.dumps({**json.loads(props.read_text()), "auditoria": True}))
+        ultimo = max(frames)
+        todos = sorted({min(f, ultimo) for x in frames for f in (x, x + ZONA_PERSISTE)})
+        r = subprocess.run(["node", "scripts/stills.mjs", "DiaWide", str(pa), tmp, *map(str, todos)], cwd=ROOT, capture_output=True, text=True)
+        if r.returncode:
+            return [f"zona segura: falha ao renderizar auditoria ({r.stderr.strip()[-200:]})"]
+
+        def invasoes(png: Path) -> dict:
+            im = Image.open(png).convert("L")
+            out = {}
+            for nomez, (x0, y0, x1, y1) in ZONAS_W.items():
+                reg = im.crop((x0, y0, x1, y1))
+                frac = sum(1 for v in reg.getdata() if v > 40) / ((x1 - x0) * (y1 - y0))
+                if frac > ZONA_MAX:
+                    out[nomez] = frac
+            return out
+        por_quadro = {int(p.stem.split("-f")[-1]): invasoes(p) for p in Path(tmp).glob("*.png")}
+        for f in frames:
+            depois = por_quadro.get(min(f + ZONA_PERSISTE, ultimo), {})
+            for nomez, frac in por_quadro.get(f, {}).items():
+                if nomez in depois:
+                    falhas.append(f"zona segura 16:9: {nomez} com {frac:.1%} de interface no quadro {f}")
+    return sorted(set(falhas))
+
+
+def proximo_agendado(proximo: str | None, data: str) -> list[str]:
+    """'próximo episódio' só se houver post do YouTube agendado depois da data (publicados.csv)."""
+    if not proximo:
+        return []
+    import csv
+    pub = ROOT / "publicados.csv"
+    rows = list(csv.DictReader(pub.open())) if pub.exists() else []
+    cod = proximo.split(" · ")[0:2]
+    ok = any(r["rede"] == "youtube" and r["data"] > data and " · ".join(cod).startswith(r["episodio"].split(" · ")[0]) for r in rows)
+    return [] if ok else [f"promete '{proximo}' mas não há post do YouTube agendado depois de {data} (publicados.csv)"]
+
+
+def checar_dia(props_f: Path) -> tuple[list[str], dict]:
+    """Camada 1 do longo: roteiro de cada parte (regras de sempre) + textos do dia + capítulos + pacote do YouTube."""
+    p = json.loads(props_f.read_text())
+    falhas = []
+    for pt in p["partes"]:
+        ep = {k: v for k, v in pt["props"].items() if k not in ("timings", "clips", "voiceLufs")}
+        if pt["tipo"] == "corte":
+            continue  # corte = trecho de episódio já aprovado e publicado (o episódio inteiro já passou no portão)
+        falhas += [f"{pt['rotulo']}: {f}" for f in checar_roteiro(ep)]
+    pacote_f = ROOT / "out" / f"{p['id']}.youtube.json"
+    if not pacote_f.exists():
+        return falhas + [f"falta {pacote_f.name} (dia-wide.ts pacote)"], {}
+    pac = json.loads(pacote_f.read_text())
+    textos = [pac["titulo"], pac["descricao"], *p.get("recap", []), p.get("proximo") or ""] + [x["titulo"] for x in p["partes"]] + [
+        x.get("cta", "") for x in p["partes"]]
+    for t in textos:
+        if GATILHO_PROIBIDO.search(t) or PROIBIDO.search(t) or re.search(r"comigo", t, re.I):
+            falhas.append(f"texto proibido: {t[:80]!r}")
+    for t in (pac["titulo"], pac["descricao"]):
+        if TRAVAR.search(t):
+            falhas.append(f"'travar' no título/descrição (regra do pacote do assunto 1): {t[:60]!r}")
+    if len(pac["titulo"]) > 100:
+        falhas.append(f"título com {len(pac['titulo'])} caracteres (YouTube: máx. 100)")
+    if len(pac["descricao"]) > 5000:
+        falhas.append(f"descrição com {len(pac['descricao'])} caracteres (YouTube: máx. 5000)")
+    caps = pac.get("capitulos") or []
+    if len(caps) < 3 or not caps[0].startswith("00:00"):
+        falhas.append("capítulos: precisa de ≥ 3 e o 1º em 00:00")
+    falhas += proximo_agendado(p.get("proximo"), p["data"])
+    mini = ROOT / pac["miniatura"]
+    if not mini.exists():
+        falhas.append("miniatura não gerada")
+    else:
+        from PIL import Image
+        if Image.open(mini).size != (1280, 720):
+            falhas.append(f"miniatura {Image.open(mini).size} (esperado 1280x720)")
+    return falhas, pac
+
+
+def roteiro_dia(p: dict) -> str:
+    linhas = [f"LONGO DO DIA {p['data']} (16:9, ~3 min): abertura 6,5 s (marca + lista do dia, sem voz) → 3 partes com cartão → encerramento 10 s.",
+              f"Encerramento: hoje você viu {p['recap']}; próximo episódio: {p.get('proximo') or '(nenhum agendado: não aparece)'}; inscrição sem urgência."]
+    for i, pt in enumerate(p["partes"], 1):
+        ep = {k: v for k, v in pt["props"].items() if k not in ("timings", "clips")}
+        linhas.append(f"\n=== PARTE {i}: {pt['rotulo']} · {pt['titulo']} ===")
+        if pt["tipo"] == "corte":
+            beats = ep["beats"][pt["de"]: pt["ate"] + 1]
+            linhas += [f"{b['speaker']} ({b['lang']}): {b['text']}" for b in beats if "text" in b] + [f"[cartão: {pt['cta']}]"]
+        else:
+            linhas.append(roteiro_texto(ep))
+    return "\n".join(linhas)
+
+
+def main_dia(args) -> None:
+    props_f = Path(args.dia).resolve()
+    p = json.loads(props_f.read_text())
+    mp4 = ROOT / "out" / f"{p['id']}.mp4"
+    if args.pedido_juiz:
+        print("Juiz do LONGO DO DIA: use a régua do mestre (" + REGUA_MESTRE + "): 8 critérios 0–10; nota final ≥ 8 e nenhum critério < 8"
+              " sem reescrita.\nAlém da régua: legibilidade 16:9 (celular deitado/TV), transições, nada que pareça conteúdo infantil.\n\n"
+              + roteiro_dia(p))
+        print(f"\nDepois grave: .venv/bin/python scripts/portao.py --dia {args.dia} --juiz <nota> --motivos \"...\"")
+        return
+    falhas_txt, pac = checar_dia(props_f)
+    falhas_arq, medidas = checar_arquivo_dia(mp4)
+    if mp4.exists():
+        fim = int(medidas["duracao"] * 30) - 2
+        falhas_arq += zona_segura_dia(props_f, sorted({0, 15, 30, *range(60, fim, 150)}))
+    juiz = {"nota": args.juiz, "motivos": [m.strip() for m in args.motivos.split(";") if m.strip()], "fonte": "rotina (régua do mestre)"} \
+        if args.juiz is not None else None
+    c1 = {"ok": not (falhas_arq or falhas_txt), "falhas": falhas_arq + falhas_txt, "medidas": medidas}
+    v = gravar(mp4, c1, juiz)
+    print(f"{'APROVADO' if v['aprovado'] else 'REPROVADO':9} {mp4.name} (longo 16:9, {medidas.get('duracao', '?')} s, "
+          f"{medidas.get('lufs', '?')} LUFS, pico {medidas.get('true_peak', '?')} dBTP, juiz {juiz['nota'] if juiz else 'pendente'})")
+    for f in c1["falhas"]:
+        print(f"   - {f}")
+    sys.exit(0 if v["aprovado"] else 1)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("episodio")
+    ap.add_argument("episodio", nargs="?")
+    ap.add_argument("--dia", metavar="PROPS", help="longo do dia 16:9: out/props-dia-<data>-wide.json (nunca sobe nem publica)")
     ap.add_argument("--pedido-juiz", action="store_true")
     ap.add_argument("--juiz", type=float, metavar="NOTA")
     ap.add_argument("--motivos", default="")
     ap.add_argument("--sem-midia", action="store_true", help="não sobe os aprovados para o branch midia")
     args = ap.parse_args()
+    if args.dia:
+        main_dia(args)
+        return
     ep = json.loads(Path(args.episodio).read_text())
 
     if args.pedido_juiz:
