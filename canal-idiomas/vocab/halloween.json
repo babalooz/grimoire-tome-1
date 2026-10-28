@@ -25,7 +25,7 @@
         "id": "tghost",
         "marca": "termina no t, sem i",
         "dica": "Termina no t, seco. Sem i no final.",
-        "voz": true
+        "voz": false
       }
     },
     { "en": "bat", "pt": "morcego", "digito": "4", "objeto": "morcego", "qtd": 4 },
