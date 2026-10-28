@@ -14,6 +14,7 @@ import { CafeBack, CafeCounter, COUNTER_Y } from "./sets/CafeSet";
 import { Cam, Sfx, clampCam, toScreen } from "./Sitcom";
 import { BODY, C, SAFE, TITLE } from "./theme";
 import { Watermark } from "./Watermark";
+import { CENA_H, Cena, ChipContexto } from "./vocab/cena";
 import { LAYOUT, Objetos } from "./vocab/objetos";
 import {
   VocabActor, VocabProps, VocabStep, aprendidas, bolinhaIn, buildVocabSchedule, convidados, falaAt, mostraAt, presencaK,
@@ -65,7 +66,8 @@ const VocabInner: React.FC<VocabRenderProps> = (p) => {
   const fala = falaAt(steps, frame);
   const mostra = mostraAt(steps, frame);
   const nSabe = aprendidas(steps, frame);
-  const ganchoStep = steps[0]?.papel === "gancho" ? steps[0] : null;
+  const ganchoSteps = steps.filter((s) => s.papel === "gancho"); // 1 fala, ou as partes de uma fala dividida
+  const ganchoStep = ganchoSteps.length ? { from: ganchoSteps[0].from, dur: ganchoSteps.reduce((t, s) => t + s.dur, 0) } : null;
   const ganchoEnd = ganchoStep ? ganchoStep.from + ganchoStep.dur : 0;
   const finais = steps.filter((s) => s.papel === "final");
   const finalFrom = finais.length ? finais[0].from - 8 : Infinity;
@@ -115,7 +117,9 @@ const VocabInner: React.FC<VocabRenderProps> = (p) => {
         {pal && (
           <svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{ position: "absolute", left: 0, top: 0 }}>
             <g transform={`translate(${OBJ_X} ${COUNTER_Y + 4}) scale(${OBJ_SCALE})`}>
-              <Objetos objeto={pal.objeto} qtd={pal.qtd} since={objSince} instant={mostra!.instant} />
+              {pal.cena
+                ? <Cena cena={pal.cena} frame={frame} since={objSince} instant={mostra!.instant} uid={`${mostra!.palavra}`} />
+                : <Objetos objeto={pal.objeto!} qtd={pal.qtd ?? 1} since={objSince} instant={mostra!.instant} />}
             </g>
           </svg>
         )}
@@ -137,8 +141,8 @@ const VocabInner: React.FC<VocabRenderProps> = (p) => {
   // ---- adesivo de preço (palavra colada no objeto; espaço de tela, acompanha a câmera) ----
   let sticker: React.ReactNode = null;
   if (pal && mostra && !onFecho) {
-    const L = LAYOUT[pal.objeto];
-    const [sx, sy] = toScreen(cam, OBJ_X, COUNTER_Y - L.h * OBJ_SCALE - 30);
+    const h = pal.cena ? CENA_H : LAYOUT[pal.objeto!].h;
+    const [sx, sy] = toScreen(cam, OBJ_X, COUNTER_Y - h * OBJ_SCALE - 30);
     const revelado = frame >= mostra.revelado;
     const since = revelado ? frame - mostra.revelado : frame - mostra.from;
     const show = revelado || mostra.oculto;
@@ -153,6 +157,16 @@ const VocabInner: React.FC<VocabRenderProps> = (p) => {
           pulse={pulse} marca={marca?.marca} marcaSince={frame - mostra.revelado - 8} />
       );
     }
+  }
+  // contexto da cena (PT, apoio): chip logo abaixo da janela, some na revisão final rápida e no fecho
+  let contexto: React.ReactNode = null;
+  if (pal?.cena && mostra && !onFecho && frame < finalFrom) {
+    const [cx, cy] = toScreen(cam, OBJ_X, COUNTER_Y + 18);
+    contexto = (
+      <div style={{ position: "absolute", left: cx - 300, width: 600, top: cy, display: "flex", justifyContent: "center", transform: `scale(${cam.z})`, transformOrigin: "50% 0" }}>
+        <ChipContexto text={pal.cena.contexto} opacity={mostra.instant ? 1 : Math.min(1, objSince / 8)} />
+      </div>
+    );
   }
 
   // ---- interface de tela ----
@@ -218,11 +232,12 @@ const VocabInner: React.FC<VocabRenderProps> = (p) => {
         <Faixa10 palavras={p.palavras} sabe={nSabe} ativo={ativoIdx} since={frame - stripFrom} marcas={frame >= armadilhaAt} fps={fps}
           prev={frame < ganchoEnd} />
       )}
+      {contexto}
       {sticker}
       {chip}
       {titleOn && <HookTitle text={p.hookTitle!} top={TITLE_TOP} out={titleOut} />}
       {caption}
-      {onFecho && fecho && <CardFinal titulo={p.card?.titulo ?? ""} sub={p.card?.sub} since={frame - fecho.from} fps={fps} />}
+      {onFecho && fecho && <CardFinal titulo={p.card?.titulo ?? ""} sub={p.card?.sub} cta={p.card?.cta} since={frame - fecho.from} fps={fps} />}
       <Watermark lead={<CafeSeal serie={p.serie ? { temporada: 0, capitulo: 0, episodio: 0, codigo: p.serie.codigo, tituloCapitulo: "",
         progresso: nSabe > 0 ? `você já sabe ${nSabe} palavra${nSabe > 1 ? "s" : ""}` : p.serie.titulo } : undefined} />} />
     </AbsoluteFill>
@@ -247,7 +262,7 @@ const Adesivo: React.FC<{
           boxShadow: `0 10px 0 ${C.tinta}`, padding: "8px 26px 8px 14px", transform: "rotate(-2deg)", position: "relative",
         }}>
           <div style={{ position: "absolute", left: -14, top: "50%", width: 22, height: 22, marginTop: -11, borderRadius: 11, background: C.noite, border: `6px solid ${C.tinta}` }} />
-          <div style={{ minWidth: 92, height: 92, borderRadius: 22, background: C.roxo, color: C.creme, fontFamily: TITLE, fontSize: 76, lineHeight: "92px", textAlign: "center", padding: "0 8px" }}>{digito}</div>
+          {digito && <div style={{ minWidth: 92, height: 92, borderRadius: 22, background: C.roxo, color: C.creme, fontFamily: TITLE, fontSize: 76, lineHeight: "92px", textAlign: "center", padding: "0 8px" }}>{digito}</div>}
           {palavra && (
             <div style={{
               fontFamily: TITLE, fontSize: 84, lineHeight: 1.05, color: C.tinta, padding: "0 12px", borderRadius: 16,
@@ -355,8 +370,10 @@ const Faixa10: React.FC<{ palavras: VocabProps["palavras"]; sabe: number; ativo?
             background: at ? C.lilas : on ? C.creme : "rgba(255,244,224,0.35)", transform: `scale(${Math.max(0, s) * (at ? 1.12 : 1)})`,
             display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
           }}>
-            <div style={{ fontFamily: TITLE, fontSize: 40, lineHeight: 1, color: at ? "#fff" : C.tinta }}>{pw.digito}</div>
-            <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 17, lineHeight: 1.1, color: at ? "#fff" : C.roxo, opacity: on ? 1 : 0 }}>{pw.en}</div>
+            {pw.digito
+              ? <><div style={{ fontFamily: TITLE, fontSize: 40, lineHeight: 1, color: at ? "#fff" : C.tinta }}>{pw.digito}</div>
+                <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 17, lineHeight: 1.1, color: at ? "#fff" : C.roxo, opacity: on ? 1 : 0 }}>{pw.en}</div></>
+              : <div style={{ fontFamily: TITLE, fontSize: Math.min(30, Math.floor((w - 10) / (0.55 * pw.en.length))), lineHeight: 1, color: at ? "#fff" : C.tinta, opacity: on ? 1 : 0.25 }}>{on ? pw.en : "?"}</div>}
             {marcas && pw.armadilha && !on && (
               <div style={{ position: "absolute", right: -6, top: -12, width: 30, height: 30, borderRadius: 15, background: C.tangerina, border: `4px solid ${C.tinta}`,
                 fontFamily: TITLE, fontSize: 22, lineHeight: "22px", textAlign: "center", color: C.tinta }}>!</div>
@@ -368,14 +385,15 @@ const Faixa10: React.FC<{ palavras: VocabProps["palavras"]; sabe: number; ativo?
   );
 };
 
-const CardFinal: React.FC<{ titulo: string; sub?: string; since: number; fps: number }> = ({ titulo, sub, since, fps }) => {
+// `cta` = a mesma pergunta que a Capy faz no fecho (padrão: a do protótipo)
+const CardFinal: React.FC<{ titulo: string; sub?: string; cta?: string; since: number; fps: number }> = ({ titulo, sub, cta, since, fps }) => {
   const s = spring({ frame: since, fps, config: { damping: 13 } });
   return (
     <div style={{ position: "absolute", left: SAFE.x0 + 20, width: SAFE.x1 - SAFE.x0 - 40, top: 420, transform: `translateY(${(1 - s) * 700}px) rotate(-1.5deg)` }}>
       <div style={{ background: C.creme, border: `8px solid ${C.tinta}`, borderRadius: 34, boxShadow: `0 12px 0 ${C.tinta}`, padding: "30px 30px 34px", textAlign: "center" }}>
         <div style={{ fontFamily: TITLE, fontSize: 74, lineHeight: 1.05, color: C.tinta }}>{titulo} <span style={{ color: C.certo }}>✓</span></div>
         {sub && <div style={{ fontFamily: TITLE, fontSize: 60, color: C.roxo, marginTop: 14 }}>{sub}</div>}
-        <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 36, color: C.tinta, marginTop: 22, opacity: Math.min(1, Math.max(0, (since - 20) / 8)) }}>qual foi o mais difícil? comenta aí</div>
+        <div style={{ fontFamily: BODY, fontWeight: 800, fontSize: 36, color: C.tinta, marginTop: 22, opacity: Math.min(1, Math.max(0, (since - 20) / 8)) }}>{cta ?? "qual foi o mais difícil? comenta aí"}</div>
       </div>
     </div>
   );

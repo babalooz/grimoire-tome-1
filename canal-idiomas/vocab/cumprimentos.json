@@ -1,0 +1,224 @@
+{
+  "id": "vocab-cumprimentos",
+  "format": "vocab",
+  "audio": "audio/vocab/cumprimentos",
+  "tema": {
+    "pt": "cumprimentos de balcão",
+    "en": "greetings"
+  },
+  "serie": {
+    "codigo": "VOCAB 03",
+    "titulo": "cumprimentos"
+  },
+  "hookTitle": "Inglês de balcão: 8 palavras",
+  "nota": "Tema 2 do banco (ponte/saida/serie-vocabulario.md §b), 1º tema com QUADRO DE CENA (src/vocab/cena.tsx): a palavra não é objeto contado, então a janela do café mostra a ação (chega, sai, pede, recebe, esbarra, sim, não) e um chip de contexto em PT. Atores da cena = Duda e o figurante (Lazy e Hank já estão no palco como ecos). Liga com os assuntos 1 (Hi! I'm Capy) e 2 (Bye! See you!) da sitcom.",
+  "palavras": [
+    {
+      "en": "hi",
+      "pt": "oi",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "chega",
+        "contexto": "uma amiga chega"
+      }
+    },
+    {
+      "en": "hello",
+      "pt": "olá",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "chega",
+        "contexto": "cliente novo chega"
+      },
+      "armadilha": {
+        "id": "thello",
+        "marca": "força no fim: he-LLO",
+        "dica": "A força vai no fim: he-LLO."
+      }
+    },
+    {
+      "en": "bye",
+      "pt": "tchau",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "sai",
+        "contexto": "indo embora"
+      }
+    },
+    {
+      "en": "please",
+      "pt": "por favor",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "pede",
+        "contexto": "pedindo um café"
+      },
+      "armadilha": {
+        "id": "tplease",
+        "marca": "termina em z, sem i no fim",
+        "dica": "Termina em z. Sem i no final."
+      }
+    },
+    {
+      "en": "thanks",
+      "pt": "obrigado",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "agradece",
+        "contexto": "recebendo o café"
+      },
+      "armadilha": {
+        "id": "tthanks",
+        "marca": "th: língua entre os dentes",
+        "dica": "Língua entre os dentes no th."
+      }
+    },
+    {
+      "en": "sorry",
+      "pt": "desculpa",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista",
+          "duda"
+        ],
+        "acao": "esbarra",
+        "contexto": "esbarrou sem querer"
+      }
+    },
+    {
+      "en": "yes",
+      "pt": "sim",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "sim",
+        "contexto": "— quer açúcar?"
+      }
+    },
+    {
+      "en": "no",
+      "pt": "não",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "nao",
+        "contexto": "— mais café?"
+      },
+      "armadilha": {
+        "id": "tno",
+        "marca": "nou, com u no fim (não é nó)",
+        "dica": "É nou, com u no final."
+      }
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "capi",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      4,
+      7
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Com essas 8 palavras você já entra, pede e sai de um café em inglês."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "8 palavras de balcão. Qual você mais vai usar? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 8 palavras",
+    "sub": "hi → no",
+    "cta": "qual você mais vai usar? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "cumprimentos em inglês pro balcão do café: oi, por favor, obrigado, desculpa e mais 4. fala junto em voz alta ☕",
+    "youtube_titulo": "Cumprimentos em inglês: hi, please, thanks, sorry | CapyFala",
+    "youtube_descricao": "8 palavras de balcão em inglês (hi, hello, bye, please, thanks, sorry, yes, no), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (hello, please, thanks, no). VOCAB 03 · CapyFala.",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "dividir": {
+    "gancho": [
+      "Com essas 8 palavras você já entra,",
+      "pede e sai de um café em inglês."
+    ]
+  }
+}

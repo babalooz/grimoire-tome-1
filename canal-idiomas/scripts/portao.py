@@ -65,7 +65,7 @@ Responda SÓ JSON: {"nota": <0-10>, "criterios": {"1": n, ...}, "motivos": ["...
 # Série de vocabulário (formato `vocab`): não tem história nem piada obrigatória; o critério é ensinar palavra.
 RUBRICA_VOCAB = """Você é o juiz de qualidade da série de VOCABULÁRIO do canal CapyFala (inglês para brasileiros adultos que começam
 do zero e têm medo de inglês; personagem Capy, capivara). Vídeo passivo de 61–75 s: palavras de um tema, cada uma com o
-objeto e a quantidade na tela, a palavra colada no objeto, pausa para o espectador repetir, revisão. Dê nota 0–10 por
+objeto e a quantidade (ou, sem objeto contável, um quadro de cena do café com a ação e um chip de contexto em PT) na tela, a palavra colada, pausa para o espectador repetir, revisão. Dê nota 0–10 por
 critério e uma nota final (média ponderada, pesos entre parênteses). Seja exigente.
 1. Inglês correto (americano), palavras certas, modelos de pronúncia confiáveis, armadilhas do brasileiro bem marcadas (3)
 2. Ensina sem interação: sentido óbvio pela imagem, palavra repetida em várias vozes, pausa para repetir, mini-revisões,
@@ -322,7 +322,7 @@ def checar_roteiro_vocab(ep: dict) -> list[str]:
         if x["lang"] == "pt" and n > 14:
             falhas.append(f"fala em português longa demais ({n} palavras): {x['text']!r}")
     textos = [x["text"] for x in falas_] + [ep.get("hookTitle", ""), (ep.get("card") or {}).get("titulo", ""),
-                                            (ep.get("card") or {}).get("sub", "")] + [
+                                            (ep.get("card") or {}).get("sub", ""), (ep.get("card") or {}).get("cta", "")] + [
         (w.get("armadilha") or {}).get("marca", "") for w in pal]
     for t in textos:
         if PROIBIDO.search(t or ""):
@@ -370,11 +370,14 @@ def roteiro_texto(ep: dict) -> str:
     if ep.get("format") == "vocab":
         rot = roteiro_vocab(ep)
         linhas = [f"{ep['serie']['codigo']} — tema: {ep['tema']['pt']} · {len(ep['palavras'])} palavras · {rot['duracao']} s",
-                  "palavras: " + ", ".join(f"{w['digito']} {w['en']} ({w['qtd']} {w['objeto']})" for w in ep["palavras"]),
+                  "palavras: " + ", ".join(f"{w['digito']} {w['en']} ({w['qtd']} {w['objeto']})" if not w.get("cena") else
+                                           f"{w['en']} (cena: {'+'.join(w['cena']['quem'])} {w['cena']['acao']} · chip PT '{w['cena']['contexto']}')"
+                                           for w in ep["palavras"]),
                   "armadilhas marcadas: " + "; ".join(f"{w['en']}: {w['armadilha']['marca']}" for w in ep["palavras"] if w.get("armadilha"))]
+        cena = {w["en"]: w.get("cena") for w in ep["palavras"]}
         for x in rot["linhas"]:
             if x["tipo"] == "objetos":
-                linhas.append(f"[{x['t']} s] objetos de '{x['palavra']}' entram no balcão (sem palavra ainda)")
+                linhas.append(f"[{x['t']} s] {'cena' if cena.get(x['palavra']) else 'objetos'} de '{x['palavra']}' entra(m) no balcão (sem palavra ainda)")
             elif x["tipo"] == "suavez":
                 linhas.append(f"[{x['t']} s] SUA VEZ: {x['dur']} s de pausa para o espectador dizer '{x['palavra']}'")
             elif x["tipo"] == "pergunta":

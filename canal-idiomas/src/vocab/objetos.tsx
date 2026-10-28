@@ -177,6 +177,46 @@ const Monstro: React.FC = () => (
   </g>
 );
 
+// tema "bebidas do café" (VOCAB 04): mesma linha da xícara e do copo do balcão.
+const Cha: React.FC = () => (
+  <g>
+    <ellipse cx={0} cy={-6} rx={84} ry={13} fill="#fff" {...S} />
+    <path d="M-56 -96 L56 -96 L46 -20 Q0 -8 -46 -20 Z" fill="#fff" {...S} />
+    <path d="M54 -80 Q90 -80 84 -54 Q78 -34 50 -38" fill="none" {...S} strokeWidth={10} />
+    <ellipse cx={0} cy={-96} rx={56} ry={11} fill="#C8862E" {...S} strokeWidth={6} />
+    {/* saquinho: fio + etiqueta pendurada para fora */}
+    <path d="M10 -100 Q24 -130 -40 -128 L-62 -70" fill="none" stroke={INK} strokeWidth={4} />
+    <rect x={-80} y={-72} width={34} height={30} rx={4} fill={C.lilas} {...S} strokeWidth={5} />
+  </g>
+);
+const Agua: React.FC = () => (
+  <g>
+    <path d="M-36 -120 L36 -120 L28 0 L-28 0 Z" fill="#EAF6FF" {...S} strokeWidth={6} />
+    <path d="M-33 -84 L33 -84 L28 -4 L-28 -4 Z" fill="#7FC8F8" />
+    <rect x={-18} y={-80} width={18} height={18} rx={4} fill="#fff" stroke={INK} strokeWidth={3} opacity={0.9} />
+    <rect x={6} y={-66} width={16} height={16} rx={4} fill="#fff" stroke={INK} strokeWidth={3} opacity={0.9} />
+    <path d="M-36 -120 L36 -120 L28 0 L-28 0 Z" fill="none" {...S} strokeWidth={6} />
+  </g>
+);
+const Suco: React.FC = () => (
+  <g>
+    <path d="M14 -150 L-6 -96" stroke={INK} strokeWidth={14} strokeLinecap="round" />
+    <path d="M14 -150 L-6 -96" stroke={C.lilas} strokeWidth={7} strokeLinecap="round" />
+    <path d="M-36 -110 L36 -110 L28 0 L-28 0 Z" fill={C.tangerina} {...S} strokeWidth={6} />
+    <path d="M-36 -110 L-30 -96 L30 -96 L36 -110 Z" fill="#FFF4E0" />
+    <circle cx={-34} cy={-108} r={22} fill="#FFB347" {...S} strokeWidth={5} />
+    <path d="M-34 -108 L-34 -126 M-34 -108 L-50 -98 M-34 -108 L-18 -98" stroke="#FF8A1F" strokeWidth={4} strokeLinecap="round" />
+  </g>
+);
+const Leite: React.FC = () => (
+  <g>
+    <path d="M-40 0 L-40 -110 L-20 -140 L20 -140 L40 -110 L40 0 Z" fill="#fff" {...S} strokeWidth={7} />
+    <path d="M-20 -140 L-20 -156 L20 -156 L20 -140" fill="#fff" {...S} strokeWidth={6} />
+    <path d="M-40 -70 Q-20 -84 0 -70 Q20 -56 40 -70 L40 -40 L-40 -40 Z" fill="#7FC8F8" />
+    <path d="M-40 0 L-40 -110 L-20 -140 L20 -140 L40 -110 L40 0 Z" fill="none" {...S} strokeWidth={7} />
+  </g>
+);
+
 type Item = { x: number; y: number; s?: number; flip?: boolean };
 // Posições dos itens na área do balcão (centro do grupo em x = 0, base no tampo em y = 0). Ordem = ordem de entrada.
 const row = (n: number, gap: number, y = 0, s = 1): Item[] => Array.from({ length: n }, (_, i) => ({ x: (i - (n - 1) / 2) * gap, y, s }));
@@ -202,6 +242,12 @@ export const LAYOUT: Record<string, { items: Item[]; draw: (i: number, k: number
   chapeuBruxa: { items: [{ x: 0, y: 0, s: 1.15 }], draw: () => <ChapeuBruxa />, h: 170 },
   esqueleto: { items: [{ x: 0, y: 0, s: 1.15 }], draw: () => <Esqueleto />, h: 170 },
   monstro: { items: row(2, 180, 0, 0.95), draw: () => <Monstro />, h: 170 },
+  // tema "bebidas do café" (VOCAB 04)
+  xicara2: { items: row(2, 250, 0, 0.85), draw: () => <Xicara />, h: 215 },
+  cha: { items: [{ x: 0, y: 0, s: 1.2 }], draw: () => <Cha />, h: 160 },
+  agua: { items: row(3, 120, 0, 1.0), draw: () => <Agua />, h: 125 },
+  suco: { items: row(2, 140, 0, 1.0), draw: () => <Suco />, h: 155 },
+  leite: { items: [{ x: 0, y: 0, s: 1.2 }], draw: () => <Leite />, h: 190 },
 };
 
 // Grupo de objetos com entrada item a item (`since` = quadros desde o início da entrada; `instant` = já completo).

@@ -52,7 +52,7 @@ def pacotes(tema: dict) -> list[dict]:
     for k, f in tema["falas"].items():
         pt.setdefault(f["speaker"], []).append((k, f["text"]))
     for p in tema["palavras"]:
-        if p.get("armadilha"):
+        if p.get("armadilha") and p["armadilha"].get("voz"):  # dica só no chip (voz ausente/false) não gasta pedido (igual ao timeline.ts)
             pt.setdefault(tema["dicas"], []).append((p["armadilha"]["id"], p["armadilha"]["dica"]))
     for sp, itens in pt.items():
         out.append({"speaker": sp, "lang": "pt", "itens": itens})
@@ -198,6 +198,46 @@ def ouvir(clipes: list[Path], lang: str) -> list[str]:
     return json.loads(txt[txt.index("["): txt.rindex("]") + 1])
 
 
+def dividir(tema: dict, pac: dict, clips: dict, pasta: Path, sem_ouvido: bool) -> None:
+    """`tema.dividir = {"gancho": ["parte 1", "parte 2"]}`: corta uma fala JÁ GRAVADA nas pausas internas, sem pedido
+    novo ao TTS (o hash do pacote não muda). Cada parte vira o corte `<item>@1`, `<item>@2`… com o próprio texto,
+    conferido por transcrição; o timeline toca as partes em sequência (legenda menor, mesma voz)."""
+    for item, partes in (tema.get("dividir") or {}).items():
+        k_ = f"{pac['speaker']}|{pac['lang']}|{item}"
+        if k_ not in clips or not any(i == item for i, _ in pac["itens"]):
+            continue
+        c = clips[k_]
+        audio, sr = sf.read(ROOT / "public" / c["audio"], dtype="float32")
+        segs, _ = cortar(audio, sr, partes)
+        saidas = []
+        for n, (texto, (s0, s1)) in enumerate(zip(partes, segs), 1):
+            a0, a1 = max(0, int((s0 - HEAD) * sr)), min(len(audio), int((s1 + TAIL) * sr))
+            f = pasta / f"{pac['speaker']}-{pac['lang']}-{item}@{n}.wav"
+            sf.write(f, audio[a0:a1], sr)
+            saidas.append(f)
+            kp = f"{k_}@{n}"
+            antes = clips.get(kp, {})
+            clips[kp] = {**{k: v for k, v in c.items() if k not in ("ouvido", "confere")}, "audio": f"{tema['audio']}/{f.name}",
+                         "duration": round((a1 - a0) / sr, 3), "onset": round(s0 - a0 / sr, 3), "fala": round(s1 - s0, 3),
+                         "text": texto, "parte_de": item}
+            if antes.get("fala") == clips[kp]["fala"] and "confere" in antes:
+                clips[kp].update(ouvido=antes.get("ouvido"), confere=antes["confere"])
+        if sem_ouvido or all(clips[f"{k_}@{n}"].get("confere") for n in range(1, len(partes) + 1)):
+            continue
+        for n, (texto, f) in enumerate(zip(partes, saidas), 1):  # 1 parte por pedido: o ouvido junta clipes vizinhos
+            for _ in range(3):
+                try:
+                    ouvido = ouvir([f], pac["lang"])[0]
+                except (Exception, SystemExit) as e:
+                    print(f"  aviso: conferência de {item}@{n} falhou ({type(e).__name__})")
+                    continue
+                clips[f"{k_}@{n}"].update(ouvido=ouvido, confere=bate(texto, ouvido, pac["lang"]))
+                if clips[f"{k_}@{n}"]["confere"]:
+                    break
+        print(f"  {item} dividido em {len(partes)}: " + " | ".join(
+            f"{clips[f'{k_}@{n}'].get('ouvido')!r} {'ok' if clips[f'{k_}@{n}'].get('confere') else '✗'}" for n in range(1, len(partes) + 1)))
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("tema")
@@ -255,6 +295,7 @@ def main() -> None:
                 if len(ouvidos) == len(pac["itens"]) and not c.get("confere"):
                     c["ouvido"] = ouvidos[k]
                     c["confere"] = bate(texto, ouvidos[k], pac["lang"])
+        dividir(tema, pac, clips, pasta, a.sem_ouvido)
         ok = sum(1 for i, _ in pac["itens"] if clips[f"{pac['speaker']}|{pac['lang']}|{i}"].get("confere"))
         print(f"  {pac['speaker']}/{pac['lang']}: {len(segs)} cortes · margem de silêncio {conf['margem']}× "
               f"(corte ≥ {conf['menor_silencio_corte']} s, interno ≤ {conf['maior_silencio_interno']} s) · "

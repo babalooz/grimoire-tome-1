@@ -1,0 +1,189 @@
+{
+  "id": "vocab-pronomes",
+  "format": "vocab",
+  "audio": "audio/vocab/pronomes",
+  "tema": {
+    "pt": "quem é quem (pronomes)",
+    "en": "pronouns"
+  },
+  "serie": {
+    "codigo": "VOCAB 05",
+    "titulo": "quem é quem"
+  },
+  "hookTitle": "Eu, você, ele: em inglês",
+  "nota": "Tema 4 do banco (ponte/saida/serie-vocabulario.md §b): pronomes, com QUADRO DE CENA 'aponta' (seta até quem é). Referentes fora do palco (Lazy, Dona Jaca, e 'você' = silhueta no celular) para a cena não confundir com quem está ecoando (Hank e Duda). Liga com os assuntos 5–6 da sitcom (from Brazil / Italy).",
+  "palavras": [
+    {
+      "en": "I",
+      "pt": "eu",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "aponta",
+        "contexto": "a Capy falando de si"
+      },
+      "armadilha": {
+        "id": "ti",
+        "marca": "sempre maiúsculo · ái",
+        "dica": "É ái. E escreve sempre com letra maiúscula.",
+        "voz": true
+      }
+    },
+    {
+      "en": "you",
+      "pt": "você",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "voce"
+        ],
+        "acao": "aponta",
+        "contexto": "você aí, do outro lado"
+      }
+    },
+    {
+      "en": "he",
+      "pt": "ele",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "aponta",
+        "contexto": "o Lazy"
+      },
+      "armadilha": {
+        "id": "the",
+        "marca": "H é só ar: hii",
+        "dica": "O H é só ar saindo, bem leve. Hii.",
+        "voz": true
+      }
+    },
+    {
+      "en": "she",
+      "pt": "ela",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "donajaca"
+        ],
+        "acao": "aponta",
+        "contexto": "a Dona Jaca"
+      },
+      "armadilha": {
+        "id": "tshe",
+        "marca": "chii, não sii",
+        "dica": "É chii, com som de ch. Não é sii.",
+        "voz": true
+      }
+    },
+    {
+      "en": "we",
+      "pt": "nós",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi",
+          "lazy"
+        ],
+        "acao": "aponta",
+        "contexto": "a Capy + o Lazy"
+      }
+    },
+    {
+      "en": "they",
+      "pt": "eles",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy",
+          "donajaca"
+        ],
+        "acao": "aponta",
+        "contexto": "o Lazy + a Dona Jaca"
+      },
+      "armadilha": {
+        "id": "tthey",
+        "marca": "th: língua entre os dentes",
+        "dica": "Língua entre os dentes no th. Não é dei.",
+        "voz": true
+      }
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "capi",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Eu, você, ele, ela: 6 palavras pra falar de qualquer pessoa em inglês."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras pra falar de gente. Qual é a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "I → they",
+    "cta": "qual é a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "eu, você, ele, ela em inglês: os 6 pronomes do básico, cada um apontando pra alguém. fala junto em voz alta ☕",
+    "youtube_titulo": "I, you, he, she, we, they: pronomes em inglês | CapyFala",
+    "youtube_descricao": "Os 6 pronomes pessoais em inglês (I, you, he, she, we, they), cada um numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (I, he, she, they). VOCAB 05 · CapyFala.",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  }
+}

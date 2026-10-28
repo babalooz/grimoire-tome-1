@@ -12,9 +12,22 @@
 //   desafio (objeto sem a palavra, "qual é?", pausa, resposta) → revisão final das 10 em ritmo crescente → fecho.
 
 export type VocabActor = "capi" | "hank" | "lazy" | "duda" | "bolinha";
+// Quadro de cena (src/vocab/cena.tsx desenha): palavra sem objeto contável. "voce" = quem assiste (silhueta no celular).
+export type CenaAtor = "turista" | "capi" | "hank" | "lazy" | "duda" | "bolinha" | "donajaca" | "voce";
+export type CenaAcao = "chega" | "sai" | "acena" | "pede" | "agradece" | "esbarra" | "sim" | "nao" | "aponta";
+export type VocabCena = {
+  quem: CenaAtor[]; // 1 ou 2 (o 1º faz a ação; o 2º é com quem / para quem)
+  acao: CenaAcao;
+  contexto: string; // PT curto, chip embaixo da cena ("chegando no café"): diz a situação, não traduz a palavra
+  adereco?: string; // objeto de LAYOUT na mesinha (pede/agradece; padrão "xicara")
+};
+export const CENA_ACOES: CenaAcao[] = ["chega", "sai", "acena", "pede", "agradece", "esbarra", "sim", "nao", "aponta"];
+export const CENA_ATORES: CenaAtor[] = ["turista", "capi", "hank", "lazy", "duda", "bolinha", "donajaca", "voce"];
 export type VocabArmadilha = { id: string; marca: string; dica: string; voz?: boolean; enfase?: string };
+// Palavra concreta = `objeto` + `qtd` (objetos.tsx). Palavra sem objeto contável (cumprimento, pronome, frase) = `cena`
+// (quadro de cena, cena.tsx): personagens do café fazendo a ação. `digito` vazio = adesivo só com a palavra.
 export type VocabPalavra = {
-  en: string; pt: string; digito: string; objeto: string; qtd: number; contagem?: number; armadilha?: VocabArmadilha;
+  en: string; pt: string; digito: string; objeto?: string; qtd?: number; contagem?: number; armadilha?: VocabArmadilha; cena?: VocabCena;
 };
 export type VocabFala = { speaker: VocabActor; text: string };
 export type VocabClip = { audio: string; duration: number; onset: number; fala: number; text: string };
@@ -33,7 +46,7 @@ export type VocabProps = {
   final: VocabActor;
   falarFinal?: boolean; // false = a revisão final abre só com a faixa na tela (a fala falas.final fica no cache, sem tocar)
   falas: Partial<Record<"gancho" | "desafio" | "final" | "fecho", VocabFala>>;
-  card?: { titulo: string; sub?: string };
+  card?: { titulo: string; sub?: string; cta?: string }; // cta = pergunta do fecho escrita no card
   trilha?: VocabTrilha;
   clips: Record<string, VocabClip>;
   voiceLufs?: number;
@@ -97,14 +110,22 @@ export const buildVocabSchedule = (p: VocabProps, fps: number): VocabStep[] => {
   };
   const w = (k: number) => `w${k}`;
 
+  // fala dividida (tema.dividir, scripts/tts_vocab.py): toca as partes `<item>@1`, `@2`… em sequência, no lugar da inteira
+  const falaPt = (f: VocabFala, item: string, papel: Papel, gap: number) => {
+    const partes: string[] = [];
+    for (let n = 1; p.clips?.[clipKey(f.speaker, "pt", `${item}@${n}`)]; n++) partes.push(`${item}@${n}`);
+    if (!partes.length) return fala(f.speaker, "pt", item, papel, {}, gap);
+    partes.forEach((it, j) => fala(f.speaker, "pt", it, papel, {}, j < partes.length - 1 ? 0 : gap));
+  };
   const g = p.falas.gancho;
-  if (g) fala(g.speaker, "pt", "gancho", "gancho", {}, R.aposGancho);
+  if (g) falaPt(g, "gancho", "gancho", R.aposGancho);
 
   p.blocos.forEach((b, bi) => {
     b.palavras.forEach((k) => {
       const pal = p.palavras[k];
-      const n = pal.contagem ?? pal.qtd;
-      push({ tipo: "objetos", dur: F(Math.min(R.leadMax, R.leadBase + R.leadPorItem * n)), palavra: k, bloco: bi });
+      const n = pal.contagem ?? pal.qtd ?? 1;
+      // cena: a ação precisa de ~0,4 s antes da voz para o sentido aparecer primeiro (como a quantidade)
+      push({ tipo: "objetos", dur: F(pal.cena ? R.leadMax : Math.min(R.leadMax, R.leadBase + R.leadPorItem * n)), palavra: k, bloco: bi });
       fala(p.apresenta, "en", w(k), "apresenta", { palavra: k, bloco: bi }, R.aposApresenta);
       const c = clip(p.apresenta, "en", w(k));
       push({ tipo: "suavez", dur: F(Math.min(R.suaVezMax, Math.max(R.suaVezMin, c.fala + R.suaVezExtra))), palavra: k, bloco: bi });

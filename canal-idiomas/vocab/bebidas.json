@@ -1,0 +1,151 @@
+{
+  "id": "vocab-bebidas",
+  "format": "vocab",
+  "audio": "audio/vocab/bebidas",
+  "tema": {
+    "pt": "bebidas do café",
+    "en": "drinks"
+  },
+  "serie": {
+    "codigo": "VOCAB 04",
+    "titulo": "bebidas"
+  },
+  "hookTitle": "Bebidas em inglês",
+  "nota": "Tema 3 do banco (ponte/saida/serie-vocabulario.md §b): bebidas do café, liga com o assunto 17 da sitcom (A coffee, please). 6 palavras: 3 armadilhas com dica falada (tea, juice, milk) e 2 itens no desafio para caber em 61–75 s. Ecos Hank e Duda (o tema anterior usou Lazy e Hank).",
+  "palavras": [
+    {
+      "en": "coffee",
+      "pt": "café",
+      "digito": "2",
+      "objeto": "xicara2",
+      "qtd": 2
+    },
+    {
+      "en": "tea",
+      "pt": "chá",
+      "digito": "1",
+      "objeto": "cha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ttea",
+        "marca": "t seco, não é tchi",
+        "dica": "É t seco, como em tatu. Nunca tchi.",
+        "voz": true
+      }
+    },
+    {
+      "en": "water",
+      "pt": "água",
+      "digito": "3",
+      "objeto": "agua",
+      "qtd": 3
+    },
+    {
+      "en": "juice",
+      "pt": "suco",
+      "digito": "2",
+      "objeto": "suco",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tjuice",
+        "marca": "termina em s, sem i no fim",
+        "dica": "Termina no s. Sem i no final.",
+        "voz": true
+      }
+    },
+    {
+      "en": "milk",
+      "pt": "leite",
+      "digito": "1",
+      "objeto": "leite",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tmilk",
+        "marca": "termina no k, sem i no fim",
+        "dica": "Termina no k, seco. Sem i no final.",
+        "voz": true
+      }
+    },
+    {
+      "en": "sugar",
+      "pt": "açúcar",
+      "digito": "4",
+      "objeto": "acucar",
+      "qtd": 4
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "capi",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      4
+    ],
+    "vozes": [
+      "duda",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "6 bebidas pra pedir no café em inglês. 3 têm pegadinha."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 bebidas. Qual você pede primeiro? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "coffee → sugar",
+    "cta": "qual você pede primeiro? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "bebidas em inglês pra pedir no café: 3 delas têm pegadinha pro brasileiro. fala junto em voz alta ☕",
+    "youtube_titulo": "Bebidas em inglês (e as 3 pegadinhas) | CapyFala",
+    "youtube_descricao": "Coffee, tea, water, juice, milk e sugar em inglês, com o objeto na tela, pausa para você repetir e as 3 pegadinhas do brasileiro (tea, juice, milk). VOCAB 04 · CapyFala.",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  }
+}

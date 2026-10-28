@@ -4,8 +4,9 @@
 //      vocab-frames <props.json> duracao    -> segundos (stdout)
 //      vocab-frames <props.json> roteiro    -> roteiro linear em JSON (stdout): o portão lê este arquivo
 //      vocab-frames <props.json> checar     -> regras do formato (stderr); sai 1 se alguma falhar
+//      vocab-frames <props.json> cenas      -> 1 quadro por palavra (teste do quadro de cena: scripts/teste-cena.sh)
 import { readFileSync } from "fs";
-import { aprendidas, buildVocabSchedule, falaAt, mostraAt, roteiroLinear, vocabTotal, voiceStart } from "../src/vocab/timeline";
+import { CENA_ACOES, CENA_ATORES, aprendidas, buildVocabSchedule, falaAt, mostraAt, roteiroLinear, vocabTotal, voiceStart } from "../src/vocab/timeline";
 
 const p = JSON.parse(readFileSync(process.argv[2], "utf8"));
 const mode = process.argv[3];
@@ -19,6 +20,10 @@ if (mode === "duracao") {
 }
 if (mode === "roteiro") {
   console.log(JSON.stringify({ id: p.id, duracao: +(total / fps).toFixed(2), linhas: roteiroLinear(p, s, fps) }, null, 1));
+  process.exit(0);
+}
+if (mode === "cenas") { // 1 quadro por palavra: voz da apresentação + 10 (cena/objetos montados, adesivo colado)
+  console.log(s.filter((x) => x.papel === "apresenta").map((x) => voiceStart(x) + 10).join(" "));
   process.exit(0);
 }
 if (mode === "checar") {
@@ -38,6 +43,11 @@ if (mode === "checar") {
       if (!m || m.palavra !== k || Math.abs(m.revelado - v) > 3) falhas.push(`${pal.en}: adesivo fora de sincronia com a voz`);
       if (antes && antes.palavra === k && antes.revelado <= v - 4) falhas.push(`${pal.en}: adesivo aparece antes da voz`);
     }
+  });
+  p.palavras.forEach((pal: any) => {
+    if (!pal.cena && !pal.objeto) falhas.push(`${pal.en}: sem objeto nem cena`);
+    if (pal.cena && (!CENA_ACOES.includes(pal.cena.acao) || !pal.cena.quem?.length || pal.cena.quem.some((q: string) => !CENA_ATORES.includes(q as any))
+      || !pal.cena.contexto)) falhas.push(`${pal.en}: cena inválida (acao/quem/contexto)`);
   });
   const sv = s.filter((x) => x.tipo === "suavez");
   if (sv.length < p.palavras.length) falhas.push(`só ${sv.length} pausas "sua vez" para ${p.palavras.length} palavras`);
