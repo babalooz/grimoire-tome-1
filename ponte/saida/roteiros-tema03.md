@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 3 · "What's your name?" · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 27/10/2026 com as correções do mestre**
+
 Versão 1 · 11/10/2026. Segue o molde aprovado dos assuntos 1 (v6) e 2:
 - 3 vídeos com pelo menos 61 s: V1 aula, V2 história com hype do mundo que fala inglês, V3 fixar;
 - o alcance vem dos cortes C1–C5.
@@ -97,9 +99,9 @@ Versão 1 · 11/10/2026. Segue o molde aprovado dos assuntos 1 (v6) e 2:
 
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "o nome nas costas" · parte 2/3 · ~70 s
 
-Continua o capítulo do assunto 2 (o vídeo da Poppy bombou e um gringo comentou).
+Continua o capítulo: a Poppy leva a Capy a um bar numa noite de basquete americano. O Mike lê o crachá CAPY que o Hank fez no assunto 1.
 
-**Hype de exemplo:** a estreia da temporada 2026-27 da NBA, em 20/10 (radar semanal W42, item "NBA temporada 2026-27 (estreia 20/10)"). Na grade, a semana 2 começa em 19/10 e o A · V2 sai na terça, 20/10: cai no dia. **O que aparece:** um bar com TV mostrando só um placar genérico, camisas de basquete de cor lisa com sobrenome inventado. **Sem:** logo, nome de time, jogador real, imagem ou áudio de jogo. Na tela, o texto diz "basquete americano"; o nome "NBA" fica só na legenda do post (ver dúvidas). Na produção, o roteirista confirma o hype no radar da semana.
+Hype de exemplo: noite de jogo de basquete americano (temporada regular). Sem data de estreia. Na tela, "basquete americano"; "NBA" só na legenda do post.
 
 **Reserva atemporal:** "a fila do ônibus de turismo", escrita logo abaixo.
 
@@ -111,11 +113,11 @@ Continua o capítulo do assunto 2 (o vídeo da Poppy bombou e um gringo comentou
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre nas costas de uma camisa:** close numa camisa de basquete lisa escrito "SMITH 3". Texto: **"estreia do basquete americano: bar cheio de gringo"** | — | buzina de placar |
-| 2 | 2–5 s | A Poppy entra no bar puxando a Capy, celular gravando | Poppy PT: "O gringo do comentário chamou a gente pra estreia da temporada!" | burburinho |
+| 1 | 0–2 s | **Abre nas costas de uma camisa:** close numa camisa de basquete lisa escrito "SMITH 3". Texto: **"noite de basquete americano: bar cheio de gringo"** | — | buzina de placar |
+| 2 | 2–5 s | A Poppy entra no bar puxando a Capy, celular gravando | Poppy PT: "Noite de basquete americano! O bar tá cheio de gringo!" | burburinho |
 | 3 | 5–8 s | A Capy olha o bar cheio de camisas (objetivo dito por cima da ação) | Capy (pensa) PT: "Hoje eu pergunto o nome de alguém. Eu aprendi isso." | — |
-| 4 | 8–10 s | Um urso grandão de camisa lisa se vira e abre os braços | Mike EN: "Hi, Capy!" | — |
-| 5 | 10–13 s | A Capy, sem graça | Capy (pensa) PT: "Ele sabe o meu nome. Eu não sei o dele." | — |
+| 4 | 8–10 s | Um urso grandão de camisa lisa lê o crachá da Capy (CAPY) e abre os braços | Mike EN: "Hi, Capy!" | — |
+| 5 | 10–13 s | A Capy, sem graça | Capy (pensa) PT: "Ele leu meu crachá. Eu não sei o nome dele." | — |
 | 6 | 13–15 s | Ela olha as costas da camisa dele: "SMITH" | Capy EN: "Hi... Smith?" | — |
 | 7 | 15–18 s | O Mike ri e aponta para a TV | Mike EN: "No! That's the player." | risada do bar |
 | 8 | 18–21 s | O Lazy aparece no balcão do bar (do nada, como sempre) e cochicha o lembrete | Lazy EN: ⭐ "What's... your... name?" | clic |
@@ -131,8 +133,8 @@ Continua o capítulo do assunto 2 (o vídeo da Poppy bombou e um gringo comentou
 | 18 | 47–50 s | A Poppy, gravando, vira para um torcedor de capuz sentado de costas, com um balde de pipoca | Poppy EN: ⭐ "What's your name?" | — |
 | 19 | 50–53 s | O capuz cai: é o Hank, de camisa lisa, cara de sempre | Hank EN: "Hank. You know me." | — |
 | 20 | 53–57 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você perguntou o nome de 2 gringos" + **consigo ✓** | Capy PT: "Perguntei dois nomes. E não confundi mais com a camisa." | acerto |
-| 21 | 57–62 s | O placar empata nos últimos segundos. O bar inteiro começa a contar junto (só burburinho, sem número falado). A Capy trava | Capy (pensa) PT: "Eles tão contando. E eu não sei contar em inglês." | torcida |
-| 22 | 62–66 s | **Gancho verdadeiro:** congela na Capy. Texto: **"a Capy sabe contar até 3 em inglês? próximo assunto: One, two, three!"** (verdadeiro só se o assunto 4 já estiver agendado; o portão confere) | Poppy PT: "Conta com eles, Capy!" | — |
+| 21 | 57–62 s | Intervalo. O telão anuncia o desafio dos 10 arremessos; o bar começa a contar as cestas junto (só burburinho, sem número falado). A Capy trava | Capy (pensa) PT: "Eles vão contar. E eu não sei contar em inglês." | torcida |
+| 22 | 62–66 s | **Gancho verdadeiro:** congela na Capy. Texto: **"a Capy sabe contar até 10 em inglês? próximo assunto: os números de 1 a 10"** (verdadeiro só se o assunto 4 já estiver agendado; o portão confere) | Poppy PT: "Conta com eles, Capy!" | — |
 | 23 | 66–70 s | Card: "aula do assunto 3 no perfil · segue a Capy pro próximo capítulo" | — | — |
 
 **Frase-alvo: 5×** no áudio (Lazy, Capy ×2, Mike, Poppy), em 4 bocas. A última é da Poppy. O aluno fala 2×.
@@ -162,7 +164,7 @@ Para semana sem hype anglófono seguro. Mesma estrutura, mesmos exercícios, mes
 | 15 | 39–42 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 16 | 42–45 s | **Resposta.** A resposta da turista aparece só em texto: "I'm Ann!" | Capy EN: ⭐ "What's your name?" | clic |
 | 17 | 45–48 s | A Duda entra pela porta dos fundos, de avental, para ajudar. O Bob, animado, aponta para ela | Duda PT: "Deixa que eu pergunto pro resto." · Duda EN: ⭐ "What's your name?" | — |
-| 18 | 48–51 s | O Hank volta da cozinha. O Bob pergunta para ele também. O Hank aponta o nome bordado no avental | Hank EN: "Hank. Read it." | — |
+| 18 | 48–51 s | O Hank volta da cozinha. O Bob pergunta para ele também. O Hank bate no nome bordado no avental | Hank EN: "Hank. Right here." | — |
 | 19 | 51–55 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você perguntou o nome de 2 turistas" + **consigo ✓** | Capy PT: "Dois nomes certos. E nenhum Texas no copo." | acerto |
 | 20 | 55–60 s | O guia do grupo levanta 3 dedos para a Capy: três cafés para viagem. Ela trava | Capy (pensa) PT: "Três. E como eu falo três em inglês?" | — |
 | 21 | 60–63 s | **Gancho verdadeiro:** congela. Texto: **"próximo assunto: One, two, three!"** (só se o assunto 4 estiver agendado) | — | — |
@@ -177,7 +179,7 @@ Para semana sem hype anglófono seguro. Mesma estrutura, mesmos exercícios, mes
 **Exercícios:**
 1. **Ouça e reconheça**, em 2 rodadas:
    - "pergunta ou resposta?": a boca fica escondida atrás do copo, só o som decide;
-   - "quem perguntou?": duas fotos (Poppy e Hank), uma voz rápida pergunta, o aluno diz quem foi (velocidade nativa).
+   - "pergunta ou resposta? agora rápido": a Poppy diz uma de duas frases em velocidade nativa, sem mostrar a boca; o aluno decide se é pergunta ou resposta.
 2. **Personalize**, em 2 rodadas:
    - o Hank pergunta o SEU nome e você responde;
    - os papéis trocam: VOCÊ pergunta o nome do Hank.
@@ -194,9 +196,9 @@ Para semana sem hype anglófono seguro. Mesma estrutura, mesmos exercícios, mes
 | 6 | 14–17 s | Agora é o Hank atrás de um copo | Hank EN: ⭐ "What's your name?" | — |
 | 7 | 17–20 s | contador | ⏸ 3 s | trilha em zero |
 | 8 | 20–24 s | **Resposta:** o Hank baixa o copo e levanta a caneta | Lazy PT: "Pergunta. Ele quer o seu nome." · Lazy EN: ⭐ "What's your name?" | clic |
-| 9 | 24–27 s | **Rodada 2:** duas fotos na tela, Poppy e Hank. A voz fala sem mostrar a boca | Voz (Poppy) EN: ⭐ "What's your name?" | — |
-| 10 | 27–30 s | "quem perguntou? rápido assim mesmo" + contador | ⏸ 3 s | trilha em zero |
-| 11 | 30–33 s | **Resposta:** a foto da Poppy acende e ela acena | Poppy PT: "Eu! Rapidinho, mas é a mesma pergunta." | acerto |
+| 9 | 24–27 s | **Rodada 2, rápido como na rua:** a Poppy diz UMA de duas frases, sem mostrar a boca | Voz (Poppy) EN: ⭐ "What's your name?" (velocidade nativa) | — |
+| 10 | 27–30 s | "pergunta ou resposta? agora rápido" + contador | ⏸ 3 s | trilha em zero |
+| 11 | 30–33 s | **Resposta:** a Poppy aparece de caneta levantada | Poppy PT: "Pergunta! Rapidinho, mas é a mesma." | acerto |
 | 12 | 33–36 s | Tela: **"AGORA É VOCÊ"**. O Hank, de caneta e copo em branco, olha para a câmera | Hank EN: ⭐ "What's your name?" | — |
 | 13 | 36–39 s | **Personalize 1:** balão vazio | 🎤 **SUA VEZ** ("I'm… e o seu nome") | trilha em zero |
 | 14 | 39–42 s | O Hank escreve "????" no copo (é o nome do aluno) e empurra para a câmera | Hank EN: "Good." | caneta |
@@ -205,7 +207,7 @@ Para semana sem hype anglófono seguro. Mesma estrutura, mesmos exercícios, mes
 | 17 | 49–52 s | **Para conferir:** a Duda diz junto, de longe, e o Hank responde | Duda EN: ⭐ "What's your name?" · Hank EN: "Hank." | clic |
 | 18 | 52–58 s | O Bolinha enche as bochechas. Texto: **"lembra dessa?"** Ele devolve a conversa inteira dos 3 assuntos, um balão por vez | Bolinha EN: "Hi! I'm Capy." · Bolinha EN: ⭐ "What's your name?" · Bolinha EN: "Bye! See you!" · Bolinha PT: "Guardei a de hoje no meio. Devolvo daqui a uns dias." | — |
 | 19 | 58–62 s | ⭐ **VITÓRIA DO ASSUNTO**: "você perguntou e respondeu o nome" + **consigo ✓** + selo "T1 E03 · você já sabe 3 frases" | Capy PT: "Chegar, perguntar o nome e ir embora. Tudo em inglês." | acerto maior |
-| 20 | 62–68 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: One, two, three! · segue a Capy"** | Capy PT: "Comenta: What's your name? Quem ler, responde." | — |
+| 20 | 62–68 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: os números de 1 a 10 · segue a Capy"** | Capy PT: "Comenta: What's your name? Quem ler, responde." | — |
 
 **Frase-alvo: 6×** no áudio (Hank ×2, Lazy, Poppy na rodada 2, Duda, Bolinha), em 5 bocas; a última é do Bolinha. A Capy não diz a frase-alvo neste vídeo. O aluno fala 2× e reconhece 2×.
 

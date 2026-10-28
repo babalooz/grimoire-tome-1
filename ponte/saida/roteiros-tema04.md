@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 4 · "One, two, three!" (de one a ten) · 4 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 27/10/2026 com as correções do mestre**
+
 Versão 2 · 11/10/2026. Reescrita pela decisão do Felipe de 11/10: **o assunto 4 ensina do 1 ao 10 num assunto só** (aula em
 blocos 1-3, 4-6, 7-10; a história usa; a música faz decorar) e **cada assunto ganha o V4, a música do assunto** (20–40 s,
 frase-alvo no refrão, é o corte de alcance). Segue o molde aprovado do assunto 1 (v6).
@@ -123,9 +125,7 @@ apresentar, ouvir e repetir). Três blocos, a mesma mecânica, para o aluno sabe
 
 Continua o capítulo do assunto 3: o mesmo bar, a mesma noite de basquete americano, agora no **intervalo**.
 
-**Hype de exemplo:** a abertura da temporada 2026-27 da NBA, em **20/10/2026** (radar semanal W42: 4 de 7 dias, e
-calendário confirmado em [Band](https://www.band.com.br/esportes/calendario-da-nba-veja-datas-horarios-e-jogos-da-temporada-202627-202608131645)).
-Se a grade começar em 12/10, o B · V2 da semana 2 sai na sexta, 23/10, na 1ª semana da temporada.
+Hype de exemplo: noite de jogo de basquete americano (temporada regular). Continua do intervalo anunciado no fim do V2 do assunto 3.
 **O que aparece:** placar genérico, um mascote de time genérico (bicho de fantasia, sem logo), camisas lisas com sobrenome
 inventado. **Sem:** logo, time, jogador real, imagem ou áudio de jogo. Na tela, "basquete americano"; "NBA" só na
 legenda do post.
@@ -156,12 +156,12 @@ rodada 2: 7-10).
 | 11 | 28–30 s | Tela: **"de novo: você é a Capy."** Balão vazio | ⏸ 0,6 s | — |
 | 12 | 30–35 s | Balão vazio, barra de tempo; a cada cesta, um dígito acende: 7, 8, 9, 10 | 🎤 **SUA VEZ** ("Seven, eight, nine, ten!") | trilha em zero; rede ×4 |
 | 13 | 35–38 s | **Resposta:** a Capy conta 7, 8, 9 no microfone; a 10ª bola sobe, em câmera lenta | Capy EN: 🔢 "Seven! Eight! Nine!" | torcida crescendo |
-| 14 | 38–41 s | **Piada:** a Poppy grita antes da hora; a bola bate no aro e sai. Silêncio no bar | Poppy EN: "TEN!" · Hank EN: "Too fast." | aro, "ohhh" |
+| 14 | 38–41 s | **Piada:** a Poppy grita antes da hora; a bola bate no aro e sai. Silêncio no bar | Poppy EN: "TEN!" · Hank EN: "Too soon." | aro, "ohhh" |
 | 15 | 41–44 s | O mascote pega a bola de novo. O bar inteiro olha para a Capy | ⏸ 0,8 s (reação) | — |
 | 16 | 44–46 s | A bola entra; a Capy fala no tempo certo | Capy EN: "Ten!" | rede + explosão do bar |
-| 17 | 46–50 s | O Mike puxa todo mundo para uma roda, mãos empilhadas, do jeito que time americano fecha a roda | Mike EN: "Great count! Hands in!" · Mike EN: ⭐ "One, two, three!" | mãos subindo |
+| 17 | 46–50 s | O Mike puxa todo mundo para uma roda, mãos empilhadas, do jeito que time americano fecha a roda | Mike EN: "Nice, Capy! Hands in!" · Mike EN: ⭐ "One, two, three!" | mãos subindo |
 | 18 | 50–54 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você puxou a contagem do bar" + **consigo ✓** | Capy PT: "Contei dez cestas. Em inglês. No microfone." | acerto |
-| 19 | 54–58 s | O Mike mostra o celular para a Capy; na tela do celular, só texto, sem voz: "where are you from?" | Poppy PT: "Ele quer saber de onde você é!" | notificação |
+| 19 | 54–58 s | O Mike grita algo no meio da barulheira; só aparece o balão dele, em texto: "where are you from?" | Poppy PT: "Ele quer saber de onde você é!" | — |
 | 20 | 58–62 s | **Gancho verdadeiro:** congela na Capy olhando o celular. Texto: **"de onde a Capy é? próximo assunto: I'm from Brazil."** (só se o assunto 5 já estiver agendado; o portão confere) | Capy (pensa) PT: "Isso eu ainda não sei dizer." | — |
 | 21 | 62–68 s | Card: "aula do assunto 4 no perfil · segue a Capy pro próximo capítulo" | — | — |
 

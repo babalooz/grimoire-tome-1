@@ -75,43 +75,44 @@ Versão 1 · 27/09/2026. Segue o padrão aprovado no assunto 1 (v5/v6):
 
 ---
 
-## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "a noite da estreia" · parte 2/3 · ~68 s
+## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "o tchau que não acaba" · parte 2/3 · ~68 s
 
-Continua o capítulo do assunto 1 (a fila da estreia). **Hype de exemplo:** a estreia de *Street Fighter* em 15/10, citada só como texto, sem imagem nem som do filme. Na produção, entra o hype anglófono da semana, vindo do radar.
+Continua o V2 do assunto 1 que foi ao ar: o Rick, turista do café de graça, termina o café e vai embora. **Hype de exemplo:** turista americano no café (continua o V2 do assunto 1 que foi ao ar).
 
-**Reserva atemporal:** um turista americano se despede no café antes de ir para o aeroporto.
+**Quem traz o hype:** a Poppy, gravando a trend, e o Rick dando tchau várias vezes (o "tchau que não acaba", hábito real de americano). O Hank não fala neste vídeo.
 
-**Quem traz o hype:** a Poppy e os fãs gringos.
-
-**Exercício:** "você é a Capy", dentro da história. A fala dela some e o aluno se despede.
+**Exercício:** "você é a Capy", dentro da história. A fala dela some e o aluno se despede do Rick.
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | Saída do cinema, à noite. Os fãs fantasiados saem empolgados. Texto: **"fim da estreia: hora de dar tchau em inglês"** | burburinho, sem áudio do filme | — |
-| 2 | 2–5 s | A Poppy, eufórica, grava o "depois do filme" | Poppy PT: "Melhor noite do ano! E agora todo mundo vai embora..." | — |
+| 1 | 0–2 s | No Bean There: o Rick termina o café no balcão, a Poppy filma com o celular. Texto: **"o gringo do café já vai embora"** | — | — |
+| 2 | 2–5 s | A Poppy, filmando, animada | Poppy PT: "O gringo do café de graça já vai embora..." | — |
 | 3 | 5–7 s | A Poppy vira a câmera do celular para a Capy (sem faixa) | Poppy PT: "Hoje você vai se despedir de gringo de verdade. Tá gravando!" | — |
-| 4 | 7–10 s | O Rick, o fã gringo do capítulo anterior, se despede dos amigos | Rick EN: "Bye, guys!" / Fã 2 EN: ⭐ "Bye! See you!" | — |
+| 4 | 7–10 s | O Rick se despede do Hank e da Capy, de longe | Rick EN: "Bye, guys!" / Rick EN: ⭐ "Bye! See you!" | — |
 | 5 | 10–13 s | A Capy percebe: o Rick vai passar por ela | Capy (pensa) PT: "Ele vai falar tchau. E dessa vez eu sei." | — |
-| 6 | 13–16 s | O Lazy, na calçada (como sempre, do nada) | Lazy EN: ⭐ "Bye!... See... you!" (lembrete, com o bocejo) | bocejo |
+| 6 | 13–16 s | O Lazy, por ali (como sempre, do nada) | Lazy EN: ⭐ "Bye!... See... you!" (lembrete, com o bocejo) | bocejo |
 | 7 | 16–18 s | O Rick para na frente da Capy. Tela: **"você é a Capy"**. O balão dela fica **vazio, piscando** | Rick EN: "Bye, Capy!" | — |
 | 8 | 18–21 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** (despeça-se do Rick) | trilha em zero |
 | 9 | 21–24 s | **Resposta:** o balão se preenche | Capy EN: ⭐ "Bye! See you!" | — |
 | 10 | 24–27 s | O Rick faz um joinha e aponta para a Poppy | Rick EN: "See you, Poppy!" | — |
 | 11 | 27–30 s | A Poppy responde para a câmera dela, rápida (nativa, ~160 palavras/min) | Poppy EN: ⭐ "Bye! See you!" | — |
-| 12 | 30–35 s | **2ª rodada no enredo:** mais 2 fãs passam acenando. Tela: "de novo: você é a Capy" | Fã 3 EN: "Bye!" | — |
-| 13 | 35–38 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
-| 14 | 38–41 s | **Resposta** | Capy EN: ⭐ "Bye! See you!" | — |
-| 15 | 41–45 s | A calçada esvazia. A Poppy e a Capy ficam sozinhas, rindo | Poppy PT: "Você se despediu de metade da fila!" | — |
-| 16 | 45–50 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você se despediu de 3 gringos" + **consigo ✓** | Capy PT: "Cheguei com medo. Saí dando tchau em inglês." | acerto |
-| 17 | 50–56 s | O celular da Poppy apita: o vídeo da trend bombou. No pé do vídeo, um comentário em inglês de um fã (texto genérico): "what's your name?" | Poppy PT: "Olha! Um gringo perguntou seu nome!" | notificação |
-| 18 | 56–62 s | **Gancho verdadeiro para o próximo capítulo:** congela na Capy olhando o celular. Texto: **"e se alguém perguntar o seu nome? próximo assunto: What's your name?"** (verdadeiro: o assunto 3 está na grade da semana 2) | Capy (pensa) PT: "Perguntar o nome... isso eu ainda não sei." | — |
-| 19 | 62–68 s | Card: "aula do assunto 2 no perfil · segue a Capy pro próximo capítulo" | — | — |
+| 12 | 30–33 s | O Rick, já na porta, vira de novo. Tela: "de novo: você é a Capy" | Rick EN: "Bye!" | — |
+| 13 | 33–36 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
+| 14 | 36–39 s | **Resposta** | Capy EN: ⭐ "Bye! See you!" | — |
+| 15 | 39–42 s | O Rick, já do lado de fora, acena uma terceira vez pelo vidro — o "tchau que não acaba" | Rick EN: ⭐ "Bye! See you!" | — |
+| 16 | 42–47 s | A Poppy e a Capy ficam sozinhas, rindo | Poppy PT: "Gringo dá tchau mil vezes. E você respondeu todas!" | — |
+| 17 | 47–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você se despediu do Rick" + **consigo ✓** | Capy PT: "Cheguei com medo. Saí dando tchau em inglês." | acerto |
+| 18 | 52–58 s | O celular da Poppy apita: o vídeo da trend bombou. No pé do vídeo, um comentário em inglês de um fã (texto genérico): "what's your name?" | Poppy PT: "Olha! Um gringo perguntou seu nome!" | notificação |
+| 19 | 58–64 s | **Gancho verdadeiro para o próximo capítulo:** congela na Capy olhando o celular. Texto: **"e se alguém perguntar o seu nome? próximo assunto: What's your name?"** (verdadeiro: o assunto 3 está na grade da semana 2) | Capy (pensa) PT: "Perguntar o nome... isso eu ainda não sei." | — |
+| 20 | 64–68 s | Card: "aula do assunto 2 no perfil · segue a Capy pro próximo capítulo" | — | — |
 
-**Frase-alvo: 5×** no áudio (Fã 2, Lazy, Capy ×2, Poppy) + 2× o aluno.
+Sem cinema, sem fila, sem fantasia, sem título de filme.
+
+**Frase-alvo: 6×** no áudio (Rick, Lazy, Capy, Poppy, Capy, Rick) + 2× o aluno. A última é do Rick.
 
 **Variações:** "Bye, guys!", "Bye, Capy!", "See you, Poppy!", "Bye!" → mais 4 exposições do bloco.
 
-**Por que este hype puxa o inglês:** é a saída de uma estreia gringa, cheia de fãs estrangeiros. O "tchau" em inglês acontece ali de verdade.
+**Por que este hype puxa o inglês:** é turista americano de verdade, no café, se despedindo. O "tchau" em inglês acontece ali de verdade (continua o V2 do assunto 1 que foi ao ar).
 
 **Atenção para o portão:** "what's your name?" aparece só como texto de comentário na tela, sem voz. O gancho só vai ao ar se o assunto 3 já estiver agendado.
 
@@ -172,7 +173,7 @@ Continua o capítulo do assunto 1 (a fila da estreia). **Hype de exemplo:** a es
 |---|---|---|---|
 | C1 | V1, cenas 1–5 + 14–16 (a Duda sai em 2 palavras → a Capy consegue) | ~25 s | "ela saiu em 2 palavras" |
 | C2 | V1, cenas 5–7 (o "seeee" do bocejo do Lazy) | ~9 s | "o see que o brasileiro encurta" |
-| C3 | V2, cenas 1–11 (a saída da estreia, você é a Capy) | ~28 s | "fim da estreia: hora de dar tchau em inglês" |
+| C3 | V2, cenas 1–11 (o Rick vai embora, você é a Capy) | ~28 s | "o gringo do café já vai embora" |
 | C4 | V3, cenas 1–8 ("chegando ou saindo?") | ~23 s | "chegando ou saindo? só pelo som" |
 | C5 | V2, cenas 17–18 (o gringo perguntou o nome) | ~12 s | "um gringo perguntou seu nome. e agora?" |
 
