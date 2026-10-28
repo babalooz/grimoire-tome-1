@@ -12,8 +12,8 @@
   },
   "level": "A1",
   "canDo": "Consigo me despedir de alguém usando fórmulas simples e educadas.",
-  "title": "T1 E02 · parte 2/3 · a noite da estreia ☕",
-  "hookTitle": "fim da estreia: hora de dar tchau em inglês",
+  "title": "T1 E02 · parte 2/3 · o tchau que não acaba ☕",
+  "hookTitle": "o gringo do café já vai embora",
   "alvo": {
     "en": "Bye! See you!",
     "pt": "Tchau! Até mais!",
@@ -24,7 +24,7 @@
   "notebook": 2,
   "beats": [
     { "speaker": "poppy", "lang": "pt", "emotion": "happy",
-      "text": "Melhor noite do ano! E agora todo mundo vai embora..." },
+      "text": "O gringo do café de graça já vai embora..." },
     { "speaker": "poppy", "lang": "pt", "emotion": "happy",
       "text": "Hoje você vai se despedir de gringo de verdade. Tá gravando!" },
     { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye, guys!" },
@@ -40,21 +40,22 @@
     { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye!" },
     { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: de novo, você é a Capy" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "poppy", "lang": "pt", "emotion": "happy",
-      "text": "Você se despediu de metade da fila!" },
+      "text": "Gringo dá tchau mil vezes. E você respondeu todas!" },
     { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.2, "emotion": "happy",
       "text": "Cheguei com medo. Saí dando tchau em inglês.",
-      "cardTexto": "você se despediu de 3 gringos · CONSIGO ✓" },
+      "cardTexto": "você se despediu do Rick · CONSIGO ✓" },
     { "speaker": "poppy", "lang": "pt", "emotion": "excited",
       "text": "Olha! Um gringo perguntou seu nome!" },
     { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
       "text": "Perguntar o nome... isso eu ainda não sei." }
   ],
   "gatilhos": [
-    "hype anglófono: saída de uma estreia gringa (ex. Street Fighter 15/10), reserva atemporal = turista no café",
+    "continua o V2 do assunto 1 que foi ao ar: o Rick, turista do café de graça, vai embora; hype anglófono = turista americano no café (atemporal)",
     "'você é a Capy' no enredo: a fala dela some e o aluno responde ao Rick",
     "gancho verdadeiro pro próximo capítulo: 'What's your name?' aparece só como texto de comentário, sem voz",
     "variações (Bye guys / Bye Capy / See you Poppy / Bye!) dão 4 exposições extras do bloco",
-    "o Hank não aparece neste vídeo: quem traz o hype é a Poppy + os fãs gringos"
+    "o Hank não fala neste vídeo: quem conduz é a Poppy gravando a trend e o Rick dando tchau várias vezes (o 'tchau que não acaba')"
   ]
 }

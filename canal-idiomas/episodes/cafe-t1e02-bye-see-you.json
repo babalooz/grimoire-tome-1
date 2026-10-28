@@ -43,6 +43,7 @@
     { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye!... See you!" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
+    { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "Bye! See you!" },
     { "tipo": "pausa", "s": 0.6, "react": { "hank": "smile" } },
     { "speaker": "hank", "lang": "en", "emotion": "smile", "alvo": "variacao", "text": "See you, Capy." },
     { "speaker": "capi", "lang": "pt", "emotion": "happy",

@@ -51,6 +51,7 @@
     { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: Hi! I'm... e o seu nome" },
     { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Bye." },
     { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: Bye! See you!" },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.4, "emotion": "happy",
       "text": "Dois assuntos. Uma conversa inteira: chegar e sair.",
       "cardTexto": "você chegou e saiu em inglês · CONSIGO ✓" },
