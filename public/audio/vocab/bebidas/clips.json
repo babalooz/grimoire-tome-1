@@ -1,0 +1,74 @@
+{
+  "bolinha|en|w0": {
+    "audio": "audio/vocab/bebidas/bolinha-en-w0.wav",
+    "duration": 0.74,
+    "onset": 0.04,
+    "fala": 0.62,
+    "text": "Coffee.",
+    "modelo": "gemini-3.8-flash-lite-tts",
+    "voz": "Despina",
+    "raw": "raw/bolinha-en-8ca5819038d9.wav",
+    "ouvido": "coffee",
+    "confere": true
+  },
+  "bolinha|en|w1": {
+    "audio": "audio/vocab/bebidas/bolinha-en-w1.wav",
+    "duration": 0.55,
+    "onset": 0.04,
+    "fala": 0.43,
+    "text": "Tea.",
+    "modelo": "gemini-3.8-flash-lite-tts",
+    "voz": "Despina",
+    "raw": "raw/bolinha-en-8ca5819038d9.wav",
+    "ouvido": "tea",
+    "confere": true
+  },
+  "bolinha|en|w2": {
+    "audio": "audio/vocab/bebidas/bolinha-en-w2.wav",
+    "duration": 0.59,
+    "onset": 0.04,
+    "fala": 0.47,
+    "text": "Water.",
+    "modelo": "gemini-3.8-flash-lite-tts",
+    "voz": "Despina",
+    "raw": "raw/bolinha-en-8ca5819038d9.wav",
+    "ouvido": "water",
+    "confere": true
+  },
+  "bolinha|en|w3": {
+    "audio": "audio/vocab/bebidas/bolinha-en-w3.wav",
+    "duration": 0.72,
+    "onset": 0.04,
+    "fala": 0.6,
+    "text": "Juice.",
+    "modelo": "gemini-3.8-flash-lite-tts",
+    "voz": "Despina",
+    "raw": "raw/bolinha-en-8ca5819038d9.wav",
+    "ouvido": "juice",
+    "confere": true
+  },
+  "bolinha|en|w4": {
+    "audio": "audio/vocab/bebidas/bolinha-en-w4.wav",
+    "duration": 0.58,
+    "onset": 0.04,
+    "fala": 0.46,
+    "text": "Milk.",
+    "modelo": "gemini-3.8-flash-lite-tts",
+    "voz": "Despina",
+    "raw": "raw/bolinha-en-8ca5819038d9.wav",
+    "ouvido": "milk",
+    "confere": true
+  },
+  "bolinha|en|w5": {
+    "audio": "audio/vocab/bebidas/bolinha-en-w5.wav",
+    "duration": 0.57,
+    "onset": 0.04,
+    "fala": 0.45,
+    "text": "Sugar.",
+    "modelo": "gemini-3.8-flash-lite-tts",
+    "voz": "Despina",
+    "raw": "raw/bolinha-en-8ca5819038d9.wav",
+    "ouvido": "sugar",
+    "confere": true
+  }
+}
