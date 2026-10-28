@@ -24,3 +24,4 @@
 - `cafe-t1e02-bye-see-you.mp4` · midia 82d8049 · 63.1 s · -14.0 LUFS · pico -1.5 · mov 0.240 · ok
 - `vocab-halloween.mp4` · midia 82d8049 · 73.3 s · -14.0 LUFS · pico -1.5 · mov 0.251 · ok
 - `vocab-cumprimentos.mp4` · midia 15be6c7 · 63.1 s · -14.0 LUFS · pico -1.5 · mov 0.249 · ok
+- `dia-2026-10-29-wide.mp4` · midia 3114826 · 179.2 s · -14.0 LUFS · pico -1.4 · mov 0.247 · REPROVADO: não é 1080x1920; episódio com 179.2 s (61-140)
