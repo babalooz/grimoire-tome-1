@@ -1,20 +1,25 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-27)
-# 6 buscas web (trend tiktok brasil hoje 27 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana outubro 2026 / viralizou no tiktok essa semana brasil /
-# tiktok trending hashtag brazil October 2026 / bordão viral tiktok 2026). Nenhuma achou tendência NOVA e
-# confiável das últimas 24-48h no TikTok BR com fonte/data clara: resultados eram guias genéricos sem data,
-# rankings de influenciador (não de trend) ou tendências antigas já descartadas (six seven — PROIBIDA por
-# risco "feito para crianças", carimbada assim desde 26/09; Garçom tem Pitú/2025, vencida; Morango do
-# Amor, sem data clara). Candidata nova avaliada e DESCARTADA: trend "Suspect" (out/2026, formato
-# "transforma parente em suspeito" com voz de investigação) — fonte só um guia de marketing (Gelato,
-# replicado em vários idiomas) sem data exata, sem confirmação de uso no TikTok BR e sem número; tom de
-# "investigação/suspeito" fica perto demais da categoria crime/polícia do filtro de segurança do projeto —
-# fica de fora por falta de fonte e por risco, não entra nem como "não medido".
-# Endpoint público /api/challenge/detail testado hoje para NBA, Halloween e suspect -> HTTP 200, corpo
-# vazio nas três = "não medido" (mesma falha documentada desde 26/09, repetida todo dia desde então; a
-# medição via nuvem continua indisponível, só o PC mede).
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-28)
+# 6 buscas web (trend tiktok brasil hoje 28 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana outubro 2026 / "six seven" OR "6 7" meme tiktok outubro 2026 ainda viral /
+# Halloween 2026 TikTok trend hashtag challenge / hashtag viral tiktok brasil "esta semana" outubro 2026).
+# Nenhuma achou tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data clara: resultados
+# eram guias genéricos sem data, rankings de influenciador (não de trend) ou tendências antigas já
+# conhecidas.
+# Candidatas avaliadas e DESCARTADAS hoje:
+# - "six seven" / "6 7" — ainda citado como meme forte em 2026 (Correio Braziliense, jul/2026; CyberLink,
+#   abr/2026), mas CONTINUA PROIBIDA por regra do projeto (docs/tiktok-nativo.md §4: risco "feito para
+#   crianças"), mesmo sendo literalmente números em inglês.
+# - "A Seleção Chegou" (funk, torcida) — sem fonte datada de out/2026; e mesmo se estivesse em alta, não
+#   puxa para o inglês (regra do V2: hype só de assunto do mundo anglófono).
+# - #halloween2026, #halloweentiktok, #spookyseason, #trickortreat, #halloweencostume — testadas no
+#   endpoint (ver abaixo); fonte é lista genérica de hashtags de marketing (SocialPilot, SocialChamp,
+#   HashtagTools) sem confirmação de uso/virada real no TikTok BR agora, não entram separado do evento
+#   "Halloween" já mantido abaixo (calendário já cobre trick-or-treat/jack-o'-lantern/haunted/spooky).
+# Endpoint público /api/challenge/detail testado hoje para halloween2026, halloweentiktok, spookyseason,
+# trickortreat, halloweencostume, sixseven, 67, aseleicaochegou -> HTTP 200, corpo vazio nas oito =
+# "não medido" (mesma falha documentada desde 26/09; a medição via nuvem continua indisponível, só o PC mede).
 # Mantidos da rotina anterior (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
-# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, faltam 4 d — já consta também no
+# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, faltam 3 d — já consta também no
 # calendário/evento do dia do radar).
 NBA
 Halloween
