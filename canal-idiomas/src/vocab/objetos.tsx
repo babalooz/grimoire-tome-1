@@ -95,6 +95,88 @@ const Canudos: React.FC<{ k: number }> = ({ k }) => {
   );
 };
 
+// Objetos do tema de hype "Halloween" (VOCAB 02, 29/10): mesmo contorno grosso tinta + paleta do theme (sem preto
+// cru: C.noite faz o papel de "escuro" em morcego/aranha/chapéu de bruxa).
+const Abobora: React.FC = () => (
+  <g transform="translate(0 -70)">
+    <ellipse cx={0} cy={0} rx={78} ry={66} fill={C.tangerina} {...S} strokeWidth={6} />
+    <path d="M-50 0 Q-55 -40 0 -44 Q55 -40 50 0" fill="none" stroke="#C9680E" strokeWidth={6} />
+    <path d="M-25 0 Q-28 -40 0 -44 Q28 -40 25 0" fill="none" stroke="#C9680E" strokeWidth={6} />
+    <path d="M0 -62 L-8 -92 Q0 -102 10 -90 Z" fill="#3E7A3A" {...S} strokeWidth={5} />
+    <path d="M-30 -18 L-14 -2 L-30 14 M30 -18 L14 -2 L30 14" stroke={C.tinta} strokeWidth={10} fill="none" strokeLinecap="round" />
+    <path d="M-20 24 L0 14 L20 24 L8 30 L0 24 L-8 30 Z" fill={C.tinta} />
+  </g>
+);
+const Doce: React.FC = () => (
+  <g transform="translate(0 -40)">
+    <path d="M-50 -24 L-18 -6 L-18 6 L-50 24 Q-62 0 -50 -24 Z" fill={C.lilas} {...S} strokeWidth={6} />
+    <path d="M50 -24 L18 -6 L18 6 L50 24 Q62 0 50 -24 Z" fill={C.lilas} {...S} strokeWidth={6} />
+    <rect x={-18} y={-20} width={36} height={40} rx={8} fill={C.tangerina} {...S} strokeWidth={6} />
+  </g>
+);
+const Fantasma: React.FC = () => (
+  <g transform="translate(0 -70)">
+    <path d="M-50 10 Q-56 -70 0 -74 Q56 -70 50 10 Q38 -4 26 10 Q14 -4 2 10 Q-10 -4 -22 10 Q-34 -4 -50 10 Z" fill="#fff" {...S} strokeWidth={6} />
+    <circle cx={-18} cy={-28} r={8} fill={C.tinta} />
+    <circle cx={18} cy={-28} r={8} fill={C.tinta} />
+    <ellipse cx={0} cy={-8} rx={9} ry={12} fill={C.tinta} opacity={0.85} />
+  </g>
+);
+const Morcego: React.FC = () => (
+  <g transform="translate(0 -46)">
+    <path d="M0 10 Q-10 -20 0 -14 Q10 -20 0 10 Z" fill={C.noite} {...S} strokeWidth={5} />
+    <path d="M-6 -6 Q-60 -40 -94 -4 Q-70 -10 -50 2 Q-66 4 -82 20 Q-50 10 -30 10 Q-18 2 -6 -6 Z" fill={C.noite} {...S} strokeWidth={5} />
+    <path d="M6 -6 Q60 -40 94 -4 Q70 -10 50 2 Q66 4 82 20 Q50 10 30 10 Q18 2 6 -6 Z" fill={C.noite} {...S} strokeWidth={5} />
+    <circle cx={-4} cy={-10} r={3} fill={C.amarelo} />
+    <circle cx={4} cy={-10} r={3} fill={C.amarelo} />
+  </g>
+);
+const Mascara: React.FC = () => (
+  <g transform="translate(0 -60)">
+    <path d="M-66 -10 Q-70 -60 0 -64 Q70 -60 66 -10 Q40 20 0 16 Q-40 20 -66 -10 Z" fill="#fff" {...S} strokeWidth={6} />
+    <ellipse cx={-28} cy={-20} rx={16} ry={12} fill={C.roxo} />
+    <ellipse cx={28} cy={-20} rx={16} ry={12} fill={C.roxo} />
+    <path d="M-50 -58 Q-70 -80 -86 -70 M50 -58 Q70 -80 86 -70" stroke={C.tinta} strokeWidth={6} fill="none" strokeLinecap="round" />
+  </g>
+);
+const Aranha: React.FC = () => (
+  <g transform="translate(0 -40)">
+    <circle cx={0} cy={-10} r={26} fill={C.noite} {...S} strokeWidth={6} />
+    <circle cx={0} cy={20} r={38} fill={C.noite} {...S} strokeWidth={6} />
+    {[-1, 1].flatMap((d) => [0, 1, 2, 3].map((i) => {
+      const y = -10 + i * 10;
+      return <path key={`${d}-${i}`} d={`M${d * 20} ${y} Q${d * 70} ${y - 10} ${d * 92} ${y + 4}`} stroke={C.noite} strokeWidth={7} fill="none" strokeLinecap="round" />;
+    }))}
+    <circle cx={-8} cy={-16} r={4} fill={C.amarelo} />
+    <circle cx={8} cy={-16} r={4} fill={C.amarelo} />
+  </g>
+);
+const ChapeuBruxa: React.FC = () => (
+  <g transform="translate(0 -10)">
+    <ellipse cx={0} cy={0} rx={70} ry={16} fill={C.noite} {...S} strokeWidth={6} />
+    <path d="M-30 -4 L18 -150 L34 -4 Z" fill={C.noite} {...S} strokeWidth={6} />
+    <rect x={-34} y={-24} width={66} height={16} fill={C.roxo} />
+  </g>
+);
+const Esqueleto: React.FC = () => (
+  <g transform="translate(0 -70)">
+    <path d="M-44 -10 Q-48 -70 0 -74 Q48 -70 44 -10 Q44 14 28 14 L28 30 L14 30 L14 14 L-14 14 L-14 30 L-28 30 L-28 14 Q-44 14 -44 -10 Z" fill="#fff" {...S} strokeWidth={6} />
+    <circle cx={-18} cy={-20} r={11} fill={C.tinta} />
+    <circle cx={18} cy={-20} r={11} fill={C.tinta} />
+    <path d="M-6 -4 L0 6 L6 -4" stroke={C.tinta} strokeWidth={5} fill="none" strokeLinecap="round" />
+  </g>
+);
+const Monstro: React.FC = () => (
+  <g transform="translate(0 -60)">
+    <path d="M-50 10 Q-56 -70 0 -76 Q56 -70 50 10 Q30 20 0 14 Q-30 20 -50 10 Z" fill={C.certo} {...S} strokeWidth={6} />
+    <circle cx={-16} cy={-30} r={14} fill="#fff" {...S} strokeWidth={5} />
+    <circle cx={16} cy={-30} r={14} fill="#fff" {...S} strokeWidth={5} />
+    <circle cx={-16} cy={-30} r={5} fill={C.tinta} />
+    <circle cx={16} cy={-30} r={5} fill={C.tinta} />
+    <path d="M-20 0 L-12 10 L-4 0 L4 10 L12 0 L20 10" stroke={C.tinta} strokeWidth={6} fill="none" strokeLinecap="round" />
+  </g>
+);
+
 type Item = { x: number; y: number; s?: number; flip?: boolean };
 // Posições dos itens na área do balcão (centro do grupo em x = 0, base no tampo em y = 0). Ordem = ordem de entrada.
 const row = (n: number, gap: number, y = 0, s = 1): Item[] => Array.from({ length: n }, (_, i) => ({ x: (i - (n - 1) / 2) * gap, y, s }));
@@ -110,6 +192,16 @@ export const LAYOUT: Record<string, { items: Item[]; draw: (i: number, k: number
   cookie: { items: [...row(4, 100, -46, 0.88), ...row(4, 112, 0)], draw: () => <Cookie />, h: 120 },
   canudo: { items: [{ x: 0, y: 0, s: 1.1 }], draw: (_i, k) => <Canudos k={k} />, h: 255 },
   "pata-hank": { items: [{ x: -112, y: 0, s: 0.92, flip: true }, { x: 112, y: 0, s: 0.92 }], draw: () => <Pata cor="#1F1A24" palma="#5A5260" />, h: 215 },
+  // tema "halloween" (VOCAB 02)
+  abobora: { items: [{ x: 0, y: 0, s: 1.25 }], draw: () => <Abobora />, h: 170 },
+  doce: { items: row(3, 100, 0, 1.0), draw: () => <Doce />, h: 90 },
+  fantasma: { items: row(2, 160, 0, 1.05), draw: () => <Fantasma />, h: 170 },
+  morcego: { items: row(4, 160, 0, 0.85), draw: () => <Morcego />, h: 100 },
+  mascara: { items: [{ x: 0, y: 0, s: 1.2 }], draw: () => <Mascara />, h: 150 },
+  aranha: { items: row(2, 170, 0, 0.95), draw: () => <Aranha />, h: 110 },
+  chapeuBruxa: { items: [{ x: 0, y: 0, s: 1.15 }], draw: () => <ChapeuBruxa />, h: 170 },
+  esqueleto: { items: [{ x: 0, y: 0, s: 1.15 }], draw: () => <Esqueleto />, h: 170 },
+  monstro: { items: row(2, 180, 0, 0.95), draw: () => <Monstro />, h: 170 },
 };
 
 // Grupo de objetos com entrada item a item (`since` = quadros desde o início da entrada; `instant` = já completo).

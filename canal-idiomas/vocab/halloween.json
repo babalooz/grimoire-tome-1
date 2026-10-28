@@ -1,0 +1,113 @@
+{
+  "id": "vocab-halloween",
+  "format": "vocab",
+  "audio": "audio/vocab/halloween",
+  "tema": {
+    "pt": "Halloween",
+    "en": "halloween"
+  },
+  "serie": {
+    "codigo": "VOCAB 02",
+    "titulo": "halloween"
+  },
+  "hookTitle": "Halloween em inglês",
+  "nota": "Hype do radar 2026-10-28 (Halloween, 31/10, item fixo da seção 'preparar'): tema de hype no lugar do tema 2 do banco (cumprimentos de balcão, que precisa de 'quadro de cena' ainda não construído no motor; entra no dia seguinte). Publica 29/10, 2 dias antes da data.",
+  "palavras": [
+    { "en": "pumpkin", "pt": "abóbora", "digito": "1", "objeto": "abobora", "qtd": 1 },
+    { "en": "candy", "pt": "doce", "digito": "3", "objeto": "doce", "qtd": 3 },
+    {
+      "en": "ghost",
+      "pt": "fantasma",
+      "digito": "2",
+      "objeto": "fantasma",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tghost",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t, seco. Sem i no final.",
+        "voz": true
+      }
+    },
+    { "en": "bat", "pt": "morcego", "digito": "4", "objeto": "morcego", "qtd": 4 },
+    { "en": "mask", "pt": "máscara", "digito": "1", "objeto": "mascara", "qtd": 1 },
+    {
+      "en": "spider",
+      "pt": "aranha",
+      "digito": "2",
+      "objeto": "aranha",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tspider",
+        "marca": "SPY-der: ditongo \"ai\", não \"i\"",
+        "dica": "O SPY é como 'ai' de 'pai'. Não é i.",
+        "voz": false,
+        "enfase": "SPY"
+      }
+    },
+    {
+      "en": "witch",
+      "pt": "bruxa",
+      "digito": "1",
+      "objeto": "chapeuBruxa",
+      "qtd": 1,
+      "armadilha": {
+        "id": "twitch",
+        "marca": "i curto, rápido. Sem i no final",
+        "dica": "I curto e rápido. Sem i no final.",
+        "voz": false
+      }
+    },
+    { "en": "skeleton", "pt": "esqueleto", "digito": "1", "objeto": "esqueleto", "qtd": 1 },
+    { "en": "monster", "pt": "monstro", "digito": "2", "objeto": "monstro", "qtd": 2 }
+  ],
+  "blocos": [
+    {
+      "palavras": [0, 1, 2],
+      "ecos": ["lazy", "hank"]
+    },
+    {
+      "palavras": [3, 4, 5],
+      "ecos": ["hank", "duda"]
+    },
+    {
+      "palavras": [6, 7, 8],
+      "ecos": ["duda", "lazy"]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [4],
+    "vozes": ["lazy"]
+  },
+  "final": "hank",
+  "falarFinal": false,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Halloween tá chegando: 9 palavras que você vai ouvir essa semana."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "9 palavras de Halloween. Qual foi a mais assustadora? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 9 palavras",
+    "sub": "pumpkin → monster"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  }
+}
