@@ -855,6 +855,60 @@
      "frame0": "cena-sem-texto"
     }
    ]
+  },
+  {
+   "data": "2026-11-01",
+   "diaSemana": "dom",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E02"
+    },
+    {
+     "hora": "12:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E02"
+    }
+   ]
+  },
+  {
+   "data": "2026-11-02",
+   "diaSemana": "seg",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E02 · parte 2/3"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E02 · parte 2/3"
+    }
+   ]
+  },
+  {
+   "data": "2026-11-04",
+   "diaSemana": "qua",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E02 · parte 3/3"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E02 · parte 3/3"
+    }
+   ]
   }
  ]
 }

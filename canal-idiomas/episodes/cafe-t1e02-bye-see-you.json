@@ -20,6 +20,9 @@
     "variacoes": ["See you, Capy."]
   },
   "cast": ["capi", "hank", "lazy", "duda"],
+  "contexto": {
+    "legenda": "como se despedir em inglês com 2 palavras só (a duda saiu assim). bye! see you! 👋"
+  },
   "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
   "notebook": 2,
   "beats": [
@@ -33,23 +36,23 @@
       "text": "Bye!... See... you!" },
     { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
       "text": "O 'see' é comprido, igual meu bocejo. Não é 'si'." },
-    { "tipo": "pausa", "s": 0.8, "react": { "capi": "happy" } },
+    { "tipo": "pausa", "s": 1.3, "react": { "capi": "happy" } },
     { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos." },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true,
       "text": "Bye! See you!" },
-    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: Bye! See you!" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: Bye! See you!" },
     { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye!... See you!" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "Bye! See you!" },
-    { "tipo": "pausa", "s": 0.6, "react": { "hank": "smile" } },
+    { "tipo": "pausa", "s": 1.3, "react": { "hank": "smile" } },
     { "speaker": "hank", "lang": "en", "emotion": "smile", "alvo": "variacao", "text": "See you, Capy." },
     { "speaker": "capi", "lang": "pt", "emotion": "happy",
-      "text": "Ele disse 'see you'. Quer dizer que eu volto amanhã." },
-    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.4, "emotion": "happy",
-      "text": "Se despede da Capy aqui: Bye! See you!",
+      "text": "Ele disse 'see you'. Quer dizer que a gente se vê de novo." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 6.5, "emotion": "happy",
+      "text": "Se despede da Capy aqui, em inglês.",
       "cardTexto": "CONSIGO me despedir ✓" }
   ],
   "gatilhos": [

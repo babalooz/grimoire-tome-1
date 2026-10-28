@@ -20,6 +20,9 @@
     "variacoes": []
   },
   "cast": ["capi", "hank", "lazy", "duda", "bolinha"],
+  "contexto": {
+    "legenda": "chegando ou saindo? dá pra saber só pelo som (eu testei). bye! see you! 👂"
+  },
   "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
   "notebook": 2,
   "beats": [
@@ -33,7 +36,7 @@
     { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Saindo. 'Bye' é tchau." },
     { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
-      "text": "Em qual dá pra dizer good night?" },
+      "text": "Em qual delas cabe aquele tchau de boa noite?" },
     { "tipo": "pausa", "s": 3, "text": "contador" },
     { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
       "text": "À noite, indo embora ou dormir." },
@@ -56,7 +59,7 @@
       "text": "Dois assuntos. Uma conversa inteira: chegar e sair.",
       "cardTexto": "você chegou e saiu em inglês · CONSIGO ✓" },
     { "speaker": "capi", "lang": "pt", "emotion": "happy",
-      "text": "Comenta: Bye! See you!… e pra quem você deu tchau." }
+      "text": "Comenta aqui: pra quem você deu tchau, em inglês." }
   ],
   "gatilhos": [
     "reconhecer antes de produzir: 2 rodadas de ouvir e decidir (chegando/saindo, manhã/noite)",

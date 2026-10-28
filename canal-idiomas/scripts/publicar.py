@@ -279,7 +279,8 @@ def metadata(rede: str, t: dict) -> dict:
 
 def para_fila(dia: str, p: dict, motivo: list[str], extra: dict) -> None:
     FILA.mkdir(exist_ok=True)
-    nome = f"{dia}_{p['rede']}_{p['faixa']}_{p['episodio'].replace(' ', '')}{('-' + p['corte']) if p.get('corte') else ''}"
+    cod = p["episodio"].replace(" ", "").replace("/", "-")
+    nome = f"{dia}_{p['rede']}_{p['faixa']}_{cod}{('-' + p['corte']) if p.get('corte') else ''}"
     (FILA / f"{nome}.json").write_text(json.dumps({**p, "data": dia, "motivo": motivo, **extra}, ensure_ascii=False, indent=2))
     print(f"  FILA {p['hora']} {p['rede']:9} {p['faixa']:8} {p['episodio']}: {'; '.join(motivo)}")
 

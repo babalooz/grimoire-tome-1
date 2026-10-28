@@ -214,8 +214,9 @@ WORD = re.compile(r"[A-Za-z0-9À-ÿ']+")
 
 # ---------------------------------------------------------------- motor Gemini (docs/pesquisas/formato-novo/voz-audio-didatico.md
 # + teste cego, docs/teste-voz.md): Felipe escolheu Sulafat pra Capy (fala1-A do gabarito) em 03/10. Kokoro aposentado no
-# formato "cafe". Modelo travado em flash-LITE-tts: o flash-tts normal só libera 10 pedidos/dia no plano grátis.
-GEMINI_MODEL_CAFE = "gemini-3.8-flash-lite-tts"
+# formato "cafe". Separação de modelo por série (28/10): a Sitcom do Café usa o flash-tts normal (10 pedidos/dia no
+# plano grátis); o flash-lite fica reservado para a série de vocabulário (tts_vocab.py), cada um com cota própria.
+GEMINI_MODEL_CAFE = "gemini-3.8-flash-tts"
 GEMINI_VOICE = {  # vozes bem diferentes entre si (grave/seco, lento, animada, jovem/rápida, leve)
     "capi": "Sulafat", "hank": "Algenib", "lazy": "Umbriel", "duda": "Autonoe", "poppy": "Zephyr",
     "bolinha": "Despina", "donajaca": "Gacrux", "narrador": "Enceladus", "turista": "Orus",

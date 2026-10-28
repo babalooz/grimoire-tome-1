@@ -13,13 +13,16 @@
   "level": "A1",
   "canDo": "Consigo me despedir de alguém usando fórmulas simples e educadas.",
   "title": "T1 E02 · parte 2/3 · o tchau que não acaba ☕",
-  "hookTitle": "o gringo do café já vai embora",
+  "hookTitle": "o gringo do café vai embora",
   "alvo": {
     "en": "Bye! See you!",
     "pt": "Tchau! Até mais!",
     "variacoes": ["Bye, guys!", "Bye, Capy!", "See you, Poppy!", "Bye!"]
   },
   "cast": ["capi", "lazy", "poppy", "turista"],
+  "contexto": {
+    "legenda": "o que fazer quando o gringo do café não para de dizer tchau. bye! see you! ☕"
+  },
   "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
   "notebook": 2,
   "beats": [
@@ -33,22 +36,22 @@
       "text": "Ele vai falar tchau. E dessa vez eu sei." },
     { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye!... See... you!" },
     { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye, Capy!" },
-    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: despeça-se do Rick" },
+    { "tipo": "pausa", "s": 3.5, "text": "SUA VEZ: despeça-se do Rick" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "See you, Poppy!" },
     { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Bye!" },
-    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: de novo, você é a Capy" },
+    { "tipo": "pausa", "s": 3.5, "text": "SUA VEZ: de novo, você é a Capy" },
     { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": true, "text": "Bye! See you!" },
     { "speaker": "poppy", "lang": "pt", "emotion": "happy",
       "text": "Gringo dá tchau mil vezes. E você respondeu todas!" },
-    { "speaker": "capi", "lang": "pt", "card": true, "hold": 1.2, "emotion": "happy",
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.5, "emotion": "happy",
       "text": "Cheguei com medo. Saí dando tchau em inglês.",
       "cardTexto": "você se despediu do Rick · CONSIGO ✓" },
     { "speaker": "poppy", "lang": "pt", "emotion": "excited",
       "text": "Olha! Um gringo perguntou seu nome!" },
-    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 4.0,
       "text": "Perguntar o nome... isso eu ainda não sei." }
   ],
   "gatilhos": [

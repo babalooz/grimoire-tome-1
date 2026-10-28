@@ -33,7 +33,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import tts  # noqa: E402  (GEMINI_VOICE, speech_text, GeminiQuotaError)
 from teste_voz import GEMINI_API, http  # noqa: E402
 
-MODELO_PADRAO = tts.GEMINI_MODEL_CAFE  # gemini-3.8-flash-lite-tts (o do protótipo aprovado)
+MODELO_PADRAO = "gemini-3.8-flash-lite-tts"  # cota própria, separada da Sitcom do Café (que usa flash-tts desde 28/10)
 MODELO_OUVIDO = "gemini-3.5-flash"  # confere os cortes (modelo de texto: cota separada da do TTS)
 HEAD, TAIL = 0.04, 0.08  # folga antes/depois da fala em cada corte (não come consoante final: five, eight)
 SILENCIO_MIN = 0.12  # s: silêncio menor que isso nunca é fronteira

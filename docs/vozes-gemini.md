@@ -1,8 +1,11 @@
 # Vozes do motor Gemini (Sitcom do Café) — 03/10/2026
 
-Kokoro aposentado no formato `cafe`. Motor: `gemini-3.8-flash-lite-tts` (o `gemini-3.8-flash-tts` normal só libera
-10 pedidos/dia no plano grátis; o lite não tem esse limite registrado, mas trate como escasso — cache por hash em
-`public/audio/_cache_gemini/`, reaproveitado entre V1/V2/V3 e entre re-renders).
+Kokoro aposentado no formato `cafe`. **Separação de modelo por série (28/10, correções do mestre):** a Sitcom do
+Café usa `gemini-3.8-flash-tts` (10 pedidos/dia no plano grátis); a série de vocabulário usa `gemini-3.8-flash-lite-tts`
+(`scripts/tts_vocab.py`, sem esse limite registrado, mas tratado como escasso) — cada modelo com cota própria. Cache
+por hash em `public/audio/_cache_gemini/` (sitcom) e `public/<tema>/` (vocabulário), reaproveitado entre V1/V2/V3 e
+entre re-renders. O assunto 2 usou a pasta temporária `public/audio/flash-tts/assunto2/` durante o teste das
+correções do mestre; as falas já foram incorporadas ao cache padrão.
 
 ## Capy — decidida pelo Felipe (teste cego, 03/10)
 
