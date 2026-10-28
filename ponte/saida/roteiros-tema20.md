@@ -128,7 +128,7 @@ Para quando o V2 sair fora de dezembro. Mesmos exercícios, mesma ordem. Mudam s
 
 ---
 
-## VÍDEO 3 · FIXAR · ≥ 61 s · "que horas são? fim da temporada 1" · parte 3/3 · ~66 s
+## VÍDEO 3 · FIXAR · ≥ 61 s · "que horas são? fim da temporada 1" · parte 3/3 · ~67 s
 
 **Exercícios:**
 1. **Ouça e reconheça**, em 2 rodadas:
