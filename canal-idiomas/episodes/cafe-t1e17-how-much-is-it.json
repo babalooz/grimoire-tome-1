@@ -25,6 +25,8 @@
   "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
   "notebook": 17,
   "beats": [
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",
+      "text": "Cheguei na barraca de café." },
     { "speaker": "capi", "lang": "en", "emotion": "neutral", "text": "A coffee, please." },
     { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
       "text": "Pedi. E se custar uma fortuna? Como pergunta o preço?" },
