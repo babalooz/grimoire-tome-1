@@ -133,3 +133,4 @@
 - 2026-10-29T07:41Z · portão T1 E16 · parte 2/3: 1 vídeo(s) aprovado(s) no branch midia · commit 6238e07971d5ee1ba43e06701ddd2d10717e7f8d: cafe-t1e16-im-tired-v2.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
 - 2026-10-29T07:52Z · portão T1 E16 · parte 3/3: 1 vídeo(s) aprovado(s) no branch midia · commit f4914b65b1160b6b706a8485b6663c1a26734d06: cafe-t1e16-im-tired-v3.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
 - 2026-10-29T08:08Z · portão T1 E17: 1 vídeo(s) aprovado(s) no branch midia · commit 92ff8c8e87f5ea5a81a45b9e8846d094f394b35a: cafe-t1e17-how-much-is-it.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
+- 2026-10-29T08:12Z · portão T1 E17 · parte 2/3: 1 vídeo(s) aprovado(s) no branch midia · commit 0fbee5066eacb99fdd5b7f126bc093a88d0f8ca4: cafe-t1e17-how-much-is-it-v2.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
