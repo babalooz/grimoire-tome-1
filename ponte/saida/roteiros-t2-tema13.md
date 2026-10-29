@@ -16,7 +16,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 **G + V + P:**
 - **G:** "He + verbo com S". Imagem fixa do dicionário visual (`didatica-visual.md` §3, itens 6 e 8): o **rabinho S**, um S amarelo com cauda que pula para o verbo quando entra he/she.
 - **V:** he (já ouvido na T1), tea (palavra nova e curta, sempre colada no desenho do saquinho de chá).
-- **P:** o -s de "likes" sai em **/s/ curto, colado**: "laiks", sem "laiquis". Ícone novo e fixo: **o sachê de açúcar rasgando** ("tss", curto).
+- **P:** o -s de "likes" sai em **/s/ curto, colado**: "laiks", sem "laiquis". Ícone: **o moedor de café do assunto 3 da T2**, agora **sem zumbido, só o chiado** ("sss" curto). No plural de "coffees" o -s zumbia (/z/, "cófiz"); em "likes", depois do k, ele sai /s/ seco. Mesmo moedor, som diferente: é a revisão espaçada do assunto 3.
 
 **Frase-alvo:** ⭐ "He likes tea." Só sai da boca de quem fala do Hank, depois de descobrir o segredo: **a Capy, a Duda, a Poppy** e **o Lazy** (ele dorme no café e sempre soube), mais **o Bolinha como modelo/revisão**. **O Hank não diz a ⭐** (ele diz "I like tea.", que é a variação verdadeira dele).
 
@@ -49,7 +49,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Exercício:** repita comigo, primeiro em coro com a Capy e depois sozinho.
 
-**Primeiros 3 s:** abre atrás da máquina de espresso, numa xícara escondida com a etiqueta de um saquinho de chá pendurada. Diferente das aberturas vizinhas (o 12 abriu em cinco xícaras no balcão; o 14 abre num cartaz na porta).
+**Primeiros 3 s:** abre atrás da máquina de espresso, numa xícara escondida com a etiqueta de um saquinho de chá pendurada. Diferente das aberturas vizinhas (o 12 abriu em cinco xícaras no balcão; o 14 abre num pão de canela saindo do forno).
 
 **Vitória:** a Capy conta o segredo do Hank em inglês (e ele ouve).
 
@@ -62,10 +62,10 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 5 | 10–13 s | O Hank aparece e pega a xícara de volta, sem pressa | Hank EN: "I like tea. Problem?" | — |
 | 6 | 13–18 s | O Lazy aponta o Hank, bem devagar | Lazy EN: ⭐ "He... likes... tea." · legenda EN + PT: "Ele gosta de chá." | — |
 | 7 | 18–22 s | Na tela: "I like" e "He likes"; o **rabinho S** pula para o "like". Embaixo, pequeno: "He like tea" aparece e é riscado (só escrito) | Lazy PT: "Com he, o verbo ganha um S. O rabinho pula pro like." | pulinho |
-| 8 | 22–26 s | Close na boca do Lazy em "likes", com o **ícone do sachê de açúcar rasgando**. Na tela, "laiquis" aparece e é riscado (só escrito) | Lazy PT: "O S sai colado, sem vogal: laiks." | tss |
+| 8 | 22–26 s | Close na boca do Lazy em "likes", com o **ícone do moedor sem zumbido, só chiando**. Na tela, "laiquis" aparece e é riscado (só escrito) | Lazy PT: "O S sai colado e seco, sem vogal: laiks. Sem o zumbido do coffees." | sss |
 | 9 | 26–28 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. Baixinho, que ele tá ouvindo." | — |
-| 10 | 28–31 s | **Em coro**, a Capy apontando o Hank de longe. Na tela: "fala JUNTO" | Capy EN: ⭐ "He likes tea." | tss |
-| 11 | 31–34 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "He likes tea." | tss |
+| 10 | 28–31 s | **Em coro**, a Capy apontando o Hank de longe. Na tela: "fala JUNTO" | Capy EN: ⭐ "He likes tea." | sss |
+| 11 | 31–34 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "He likes tea." | sss |
 | 12 | 34–38 s | **Sozinho:** a Capy aponta para a câmera e fica em silêncio | 🎤 **SUA VEZ** ("He likes tea.") | trilha em zero |
 | 13 | 38–41 s | **Para conferir:** a Duda, chocada, de xícara na mão | Duda EN: ⭐ "He likes tea." · Duda PT: "Esse tempo todo?" | acerto baixinho |
 | 14 | 41–45 s | O Hank, de braços cruzados, corrige a pronúncia da frase sobre ele mesmo | Hank PT: "Saiu 'laiquis'? Dá pra entender. Colado, fica mais inglês." | — |
@@ -94,15 +94,15 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 2 | 2–5 s | A Poppy filma, animada | Poppy PT: "Gente, hoje é 'adivinha o pedido'! A barista confere." | — |
 | 3 | 5–8 s | A Capy, de avental, segura a etiqueta do chá no bolso (objetivo por cima da ação) | Capy (pensa) PT: "Eu sei o pedido de todo mundo. Até o que é segredo." | — |
 | 4 | 8–11 s | A Poppy aponta o Hank, de braços cruzados no caixa | Poppy EN: "Him? Black coffee. Strong!" | — |
-| 5 | 11–14 s | O Lazy, no sofá, cochicha o lembrete | Lazy EN: ⭐ "He... likes... tea." | tss |
+| 5 | 11–14 s | O Lazy, no sofá, cochicha o lembrete | Lazy EN: ⭐ "He... likes... tea." | sss |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando. A Poppy espera a barista | ⏸ 0,6 s | — |
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** | trilha em zero |
-| 8 | 19–22 s | **Resposta** | Capy EN: ⭐ "He likes tea." | tss |
+| 8 | 19–22 s | **Resposta** | Capy EN: ⭐ "He likes tea." | sss |
 | 9 | 22–25 s | A Poppy quase derruba o celular | Poppy PT: "Chá?! O dono do café?!" · Hank EN: "Delete that." | risada |
 | 10 | 25–29 s | O Mike entra, de camisa da sorte; a Poppy mostra o vídeo sem o fim | Poppy EN: "Guess! Hank's order?" · Mike EN: "Easy. Espresso!" | sino da porta |
 | 11 | 29–32 s | **2ª rodada.** Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
-| 13 | 35–38 s | **Resposta** | Capy EN: ⭐ "He likes tea." | tss |
+| 13 | 35–38 s | **Resposta** | Capy EN: ⭐ "He likes tea." | sss |
 | 14 | 38–42 s | O Hank põe a xícara de chá no balcão, à vista, com toda a calma | Hank EN: "I like tea. Okay?" · Mike EN: "Respect." | xícara no pires |
 | 15 | 42–45 s | A Duda, para a câmera da Poppy | Duda EN: ⭐ "He likes tea." · Duda PT: "E ninguém nunca viu." | — |
 | 16 | 45–48 s | A Poppy fecha o vídeo da trend, olhando a lente | Poppy EN: ⭐ "He likes tea!" · Poppy PT: "Segue pra mais segredos." | — |
@@ -148,10 +148,10 @@ Para quando o radar não quiser a trend. Mesmos exercícios, mesma ordem. O Mike
 | 3 | 5–8 s | **Rodada 1:** só a voz, sem mostrar a boca | Voz (Poppy) EN: ⭐ "He likes tea." | — |
 | 4 | 8–11 s | "eu ou ele? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
 | 5 | 11–14 s | **Resposta:** o dedo apontando acende; o rabinho S pisca no "likes" | Lazy PT: "Ele. Ouviu o S no like? É ele." | acerto |
-| 6 | 14–17 s | **Rodada 2:** dois sachês de açúcar. O 1º rasga curto | Lazy EN: ⭐ "He likes tea." | tss |
-| 7 | 17–20 s | O 2º sachê rasga devagar (gravado 1 vez só, sem risco vermelho) | Lazy EN: "He laiquis tea." | — |
-| 8 | 20–23 s | "em qual o S colou?" + contador | ⏸ 3 s | trilha em zero |
-| 9 | 23–27 s | **Resposta:** o 1º sachê faz tss | Lazy PT: "No primeiro." · Lazy EN: ⭐ "He likes tea." | tss |
+| 6 | 14–17 s | **Rodada 2:** dois moedores. O 1º chia curto | Lazy EN: ⭐ "He likes tea." | sss |
+| 7 | 17–20 s | O 2º moedor engasga (gravado 1 vez só, sem risco vermelho) | Lazy EN: "He laiquis tea." | — |
+| 8 | 20–23 s | "em qual o S saiu colado?" + contador | ⏸ 3 s | trilha em zero |
+| 9 | 23–27 s | **Resposta:** o 1º moedor chia | Lazy PT: "No primeiro." · Lazy EN: ⭐ "He likes tea." | sss |
 | 10 | 27–30 s | | Hank PT: "O segundo também dá pra entender. O primeiro é mais inglês." | — |
 | 11 | 30–33 s | Tela: **"AGORA É VOCÊ"** + 3 cartões: tea, coffee, pizza (com desenho) | Capy EN: ⭐ "He likes tea." · Capy PT: "Pensa em alguém. Ele ou ela gosta de quê?" | — |
 | 12 | 33–37 s | **Personalize 1:** os cartões piscam; embaixo, "He likes… / She likes…" | 🎤 **SUA VEZ** ("He likes…" ou "She likes…" + o cartão) | trilha em zero |
