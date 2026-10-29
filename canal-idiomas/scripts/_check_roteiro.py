@@ -6,6 +6,9 @@ import portao
 for path in sys.argv[1:]:
     ep = json.load(open(path))
     falhas = portao.checar_roteiro_cafe(ep)
+    variedade = portao.checar_variedade(ep)
+    if portao.ordem_ep(ep) >= portao.VARIEDADE_DESDE:
+        falhas += variedade
     falas = [b for b in ep["beats"] if "text" in b and "lang" in b]
     en = sum(len(b["text"].split()) for b in falas if b["lang"] == "en")
     pt = sum(len(b["text"].split()) for b in falas if b["lang"] == "pt")
@@ -16,3 +19,6 @@ for path in sys.argv[1:]:
         print("  -", f)
     if not falhas:
         print("  OK")
+    if portao.ordem_ep(ep) < portao.VARIEDADE_DESDE:
+        for f in variedade:
+            print("  aviso (T1, não reprova):", f)

@@ -2,7 +2,8 @@
 
 Camada 1 (código, reprova sozinha): arquivo, resolução 1080x1920, duração da faixa (episódio 61–140 s · esquete 5–20 s),
   loudness −14 LUFS ±1 e pico verdadeiro ≤ −1 dBTP, e checagens do roteiro (selo da série, gancho ≤ 6 palavras,
-  nada de "%"/estatística, nada de marca de terceiros, inglês só em fala `en`, promessa de episódio que existe).
+  nada de "%"/estatística, nada de marca de terceiros, inglês só em fala `en`, promessa de episódio que existe) e, na
+  sitcom, variedade contra os últimos 10 aprovados (par quem resolve/desfecho ≤ 3×, gancho e 1ª fala sem repetir).
 Camada 2 (juiz com rubrica 0–10, aprova com nota ≥ 8): inglês correto, lição útil, história, humor, adulto (não infantil),
   autoral (não "conteúdo inautêntico"). Dois modos:
     - API: se houver acesso à API da Anthropic (ANTHROPIC_API_KEY ou credencial do ambiente), o juiz roda aqui.
@@ -365,6 +366,109 @@ def checar_roteiro(ep: dict) -> list[str]:
     return sorted(set(falhas))
 
 
+# ---------------------------------------------------------------- camada 1c: variedade (YouTube answer/1311392)
+# Política de monetização reprova "personagens na mesma situação, com o mesmo desfecho" e "pouca variação entre vídeos".
+# Decisão do diretor (29/10, playbook-youtube-tiktok.md §(b) regra 1): o par (quem resolve, tipo de desfecho) não pode
+# se repetir em mais de 3 dos últimos 10 episódios aprovados da sitcom, e o gancho/abertura não pode repetir um deles.
+# Campos opcionais no JSON: "resolve" (speaker) e "desfecho" (DESFECHOS). Sem os campos, deduz do texto (desfecho_de).
+DESFECHOS = {"consegue", "erra_e_fica", "outro_resolve", "vira_piada", "aberto"}
+VARIEDADE_JANELA, VARIEDADE_MAX = 10, 3
+# A T1 já escrita foi aprovada pelo Felipe e mede 58% (capi, consegue): reprovar agora pararia a fábrica e forçaria
+# reescrita de roteiro aprovado (decisão dele). Até ele decidir, a T1 só AVISA; reprova a partir da T2 (temporada 2).
+# Para reprovar a T1 também: VARIEDADE_DESDE = (1, 0, 0). Placar: ponte/saida/variedade-desfecho.md (branch ponte).
+VARIEDADE_DESDE = (2, 0, 0)
+APROVADO_ESTOQUE = {"aprovado", "publicado_midia"}
+
+
+def _norm(t: str) -> str:
+    return " ".join(re.findall(r"[a-zà-ú0-9']+", (t or "").lower()))
+
+
+def desfecho_de(ep: dict) -> tuple[str, str, str]:
+    """(resolve, desfecho, fonte). Campos do JSON vencem; senão deduz só o que o texto mostra na cena depois do último
+    treino (pausa/repita):
+    - última fala da Capy em inglês é a forma errada -> (capi, erra_e_fica)
+    - a Capy diz a frase-alvo certa em inglês (alvo, sem errado) -> (capi, consegue)
+    - a Capy nunca diz a frase-alvo e outro diz -> (quem mais disse a frase-alvo, outro_resolve); empate -> desconhecido
+    - nada disso -> desconhecido. vira_piada e aberto só via campo (piada/fim aberto não se mede por regra)."""
+    if ep.get("resolve") or ep.get("desfecho"):
+        d = ep.get("desfecho") if ep.get("desfecho") in DESFECHOS else "desconhecido"
+        return ep.get("resolve") or "desconhecido", d, "campo"
+    beats = ep.get("beats") or []
+    # Só a cena depois do último treino (pausa "SUA VEZ" / repita): o "vamos juntos" do treino não é desfecho.
+    treino = [i for i, b in enumerate(beats) if b.get("tipo") == "pausa" or b.get("repita")]
+    cena = beats[treino[-1] + 1:] if treino else beats
+    falas_ = [b for b in cena if "text" in b and b.get("speaker") and not b.get("card")]
+    capi_en = [b for b in falas_ if b["speaker"] == "capi" and b["lang"] == "en"]
+    if capi_en and capi_en[-1].get("errado"):
+        return "capi", "erra_e_fica", "texto"
+    alvo = [b for b in falas_ if b["lang"] == "en" and b.get("alvo") and not b.get("errado")]
+    if any(b["speaker"] == "capi" for b in alvo):
+        return "capi", "consegue", "texto"
+    cont: dict[str, int] = {}
+    for b in alvo:
+        if b["speaker"] != "bolinha":  # Bolinha só devolve frase (revisão espaçada), não resolve a cena
+            cont[b["speaker"]] = cont.get(b["speaker"], 0) + 1
+    if cont:
+        top = sorted(cont.items(), key=lambda x: -x[1])
+        if len(top) == 1 or top[0][1] > top[1][1]:
+            return top[0][0], "outro_resolve", "texto"
+    return "desconhecido", "desconhecido", "texto"
+
+
+def abertura_de(ep: dict) -> tuple[str, str]:
+    """(gancho, primeira fala) normalizados: o que o espectador vê/ouve nos primeiros segundos."""
+    primeira = next((b["text"] for b in ep.get("beats") or [] if "text" in b and b.get("speaker")), "")
+    return _norm(ep.get("hookTitle", "")), _norm(primeira)
+
+
+def ordem_ep(ep: dict) -> tuple[int, int, int]:
+    s = ep.get("serie") or {}
+    m = re.search(r"-v(\d)$", ep.get("id", ""))
+    return s.get("temporada", 1), s.get("episodio", 0), int(m.group(1)) if m else 1
+
+
+def ids_aprovados() -> set[str]:
+    """Sitcom já aprovada: estoque.csv (aprovado/publicado_midia) + qualquer cafe-* em publicados.csv."""
+    import csv
+    ids = set()
+    est, pub = ROOT / "estoque.csv", ROOT / "publicados.csv"
+    if est.exists():
+        ids |= {r["id"] for r in csv.DictReader(est.open()) if r.get("status") in APROVADO_ESTOQUE and r.get("id")}
+    if pub.exists():
+        ids |= {Path(r["arquivo"]).stem for r in csv.DictReader(pub.open()) if (r.get("arquivo") or "").startswith("cafe-")}
+    return ids
+
+
+def checar_variedade(ep: dict, anteriores: list[dict] | None = None) -> list[str]:
+    """Compara com os últimos 10 episódios da sitcom aprovados ANTES deste na ordem da série (temporada, assunto, V).
+    `anteriores` permite simular a sequência (relatório); sem ele, lê estoque.csv/publicados.csv + episodes/*.json."""
+    if ep.get("format") != "cafe":
+        return []
+    if anteriores is None:
+        ok = ids_aprovados()
+        anteriores = [json.loads(f.read_text()) for f in (ROOT / "episodes").glob("cafe-*.json") if f.stem in ok]
+    janela = sorted((x for x in anteriores if x.get("id") != ep.get("id") and ordem_ep(x) < ordem_ep(ep)),
+                    key=ordem_ep)[-VARIEDADE_JANELA:]
+    falhas = []
+    if ep.get("desfecho") and ep["desfecho"] not in DESFECHOS:
+        falhas.append(f"desfecho inválido {ep['desfecho']!r} (use: {', '.join(sorted(DESFECHOS))})")
+    r, d, _ = desfecho_de(ep)
+    if "desconhecido" not in (r, d):
+        iguais = [x["id"] for x in janela if desfecho_de(x)[:2] == (r, d)]
+        if len(iguais) > VARIEDADE_MAX:
+            falhas.append(f"variedade: ({r}, {d}) já em {len(iguais)} dos últimos {len(janela)} aprovados "
+                          f"(máximo {VARIEDADE_MAX}): {', '.join(iguais)}")
+    g, p = abertura_de(ep)
+    for x in janela:
+        gx, px = abertura_de(x)
+        if g and g == gx:
+            falhas.append(f"variedade: gancho igual ao de {x['id']}: {ep.get('hookTitle')!r}")
+        if p and p == px:
+            falhas.append(f"variedade: abertura (1ª fala) igual à de {x['id']}")
+    return falhas
+
+
 # ---------------------------------------------------------------- camada 2: juiz
 def roteiro_texto(ep: dict) -> str:
     if ep.get("format") == "vocab":
@@ -629,6 +733,11 @@ def main() -> None:
         return
 
     falhas_roteiro = checar_roteiro(ep)
+    variedade = checar_variedade(ep)
+    if ordem_ep(ep) >= VARIEDADE_DESDE:
+        falhas_roteiro += variedade
+    for f in variedade if ordem_ep(ep) < VARIEDADE_DESDE else []:
+        print(f"aviso (não reprova na T1 até decisão do Felipe): {f}")
     juiz = None
     if args.juiz is not None:
         juiz = {"nota": args.juiz, "motivos": [m.strip() for m in args.motivos.split(";") if m.strip()],
