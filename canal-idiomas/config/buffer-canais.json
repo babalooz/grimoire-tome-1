@@ -1,11 +1,18 @@
 {
   "_sobre": "IDs dos canais no Buffer (sem segredo). Gerado por scripts/publicar.py --listar.",
-  "atualizado": "2026-10-28T19:59-03:00",
+  "atualizado": "2026-10-29T08:18-03:00",
   "organizacoes": [
     {
       "id": "6a1599888465779c73b3235d",
       "nome": "My Organization",
       "canais": [
+        {
+          "id": "6ae290042f1f5ed648066602",
+          "name": "sabianaonoticias",
+          "displayName": "sabianaonoticias",
+          "service": "tiktok",
+          "isQueuePaused": false
+        },
         {
           "id": "6ab84f02ea19ca0bdefbf095",
           "name": "acapyfala",
