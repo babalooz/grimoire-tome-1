@@ -7,7 +7,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 **De onde vem:**
 - **Origem:** tópico #26 do consenso Oxford/Cambridge, "there is / there are + lugares" (`sequencia-oxford-cambridge.md` §3; grade da T2, assunto 16). Só a ordem vem de lá; o "there are" fica de fora (1 coisa só).
 - **"Consigo…"** (CEFR Companion Volume 2020, A1, Overall spoken interaction, paráfrase): consigo dizer, com uma frase pronta, que existe um problema e pedir ajuda.
-- **Paga o gancho do assunto 15** (grade §6): o convite para a viagem de carro do feriado. Se o V2 do assunto 15, quando estiver escrito, mostrar outro detalhe do convite (quem convidou, para onde), a cena 1 do V1 só troca o texto de tela; nenhuma fala muda.
+- **Paga o gancho do assunto 15** (`roteiros-t2-tema15.md`, V2 cena 19): o Mike, na porta, levantou a chave do carro: "Monday's a holiday. Road trip!", e a Capy pensou "o que pode dar errado?". O V1 abre na manhã da viagem, com o primeiro problema.
 
 **1 coisa só:** dizer que **tem/existe** um problema com o bloco pronto ⭐ "There's a problem." O erro do brasileiro, "Have a problem." ✗ (decalque de "tem um problema"), aparece só escrito e riscado (no V1), nunca falado.
 
