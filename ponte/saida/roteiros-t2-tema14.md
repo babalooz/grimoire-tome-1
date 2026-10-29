@@ -105,7 +105,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 13 | 35–38 s | **Resposta**, com um chip na mão | Capy EN: ⭐ "I love it!" | crocante |
 | 14 | 38–41 s | O Mike prova o próprio molho e fecha os olhos | Mike EN: ⭐ "I love it!" | — |
 | 15 | 41–44 s | A Duda mergulha um chip até o fundo | Duda EN: ⭐ "I love it!" | crocante |
-| 16 | 44–48 s | O Lazy acordou com o nariz dentro da travessa de nachos | Poppy PT: "E o Lazy aprovou os nachos. Sem acordar." | ronco |
+| 16 | 44–48 s | O Lazy acordou com o nariz dentro da bandeja de nachos | Poppy PT: "E o Lazy aprovou os nachos. Sem acordar." | ronco |
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você adorou em inglês na festa americana" + **consigo ✓** | Capy PT: "Chili, molho e um 'I love it'. Festa aprovada." | acerto |
 | 18 | 52–58 s | **Gancho verdadeiro:** o Mike tira de uma sacola uma caixa de chocolates em forma de coração | Mike EN: "Sunday is Valentine's, too!" · Capy (pensa) PT: "A final e o Dia dos Namorados no mesmo domingo? E esse chocolate é pra quem?" | — |
 | 19 | 58–61 s | Congela na caixa de coração. Texto: **"próximo assunto: These are for you."** (só se o assunto 15 estiver agendado) | — | — |
