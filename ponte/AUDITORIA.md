@@ -25,3 +25,14 @@
 - `vocab-halloween.mp4` · midia 82d8049 · 73.3 s · -14.0 LUFS · pico -1.5 · mov 0.251 · ok
 - `vocab-cumprimentos.mp4` · midia 15be6c7 · 63.1 s · -14.0 LUFS · pico -1.5 · mov 0.249 · ok
 - `dia-2026-10-29-wide.mp4` · midia 3114826 · 179.2 s · -14.0 LUFS · pico -1.4 · mov 0.247 · ok
+- `cafe-t1e06-shes-from-italy-v2.mp4` · midia 1ab3f07 · 66.9 s · -14.0 LUFS · pico -1.5 · mov 0.270 · ok
+- `cafe-t1e06-shes-from-italy-v3.mp4` · midia 1ab3f07 · 71.3 s · -14.0 LUFS · pico -1.5 · mov 0.307 · ok
+- `cafe-t1e06-shes-from-italy.mp4` · midia 1ab3f07 · 70.0 s · -14.0 LUFS · pico -1.5 · mov 0.276 · ok
+- `cafe-t1e12-my-number-is-v2.mp4` · midia 1ab3f07 · 65.0 s · -14.1 LUFS · pico -1.5 · mov 0.271 · ok
+- `cafe-t1e12-my-number-is-v3.mp4` · midia 1ab3f07 · 78.1 s · -14.0 LUFS · pico -1.5 · mov 0.294 · ok
+- `cafe-t1e16-im-tired-v2.mp4` · midia 1ab3f07 · 65.6 s · -14.1 LUFS · pico -1.5 · mov 0.233 · ok
+- `cafe-t1e16-im-tired-v3.mp4` · midia 1ab3f07 · 75.2 s · -14.0 LUFS · pico -1.5 · mov 0.293 · ok
+- `cafe-t1e16-im-tired.mp4` · midia 1ab3f07 · 70.2 s · -14.0 LUFS · pico -1.5 · mov 0.281 · ok
+- `cafe-t1e17-how-much-is-it-v2.mp4` · midia 1ab3f07 · 68.1 s · -14.1 LUFS · pico -1.5 · mov 0.245 · ok
+- `cafe-t1e17-how-much-is-it.mp4` · midia 1ab3f07 · 67.3 s · -14.0 LUFS · pico -1.5 · mov 0.260 · ok
+- `vocab-bebidas.mp4` · midia 1ab3f07 · 62.0 s · -14.0 LUFS · pico -1.5 · mov 0.250 · ok
