@@ -91,7 +91,7 @@ def subir(d, yt, tmp):
         status |= {"privacyStatus": "public"}
     corpo = {"snippet": {"title": pac["titulo"][:100], "description": pac["descricao"][:5000],
                          "categoryId": str(pac.get("categoria", "27")), "defaultLanguage": "pt-BR",
-                         "defaultAudioLanguage": "en"},
+                         "defaultAudioLanguage": "pt-BR"},  # a aula explica em português; "en" ligava dublagem e legenda erradas
              "status": status}
     req = yt.videos().insert(part="snippet,status", body=corpo,
                              media_body=MediaFileUpload(str(mp4), chunksize=-1, resumable=True))
