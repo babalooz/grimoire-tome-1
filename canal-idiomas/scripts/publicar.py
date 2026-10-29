@@ -142,11 +142,12 @@ def canal_id(rede: str) -> str | None:
     if not CANAIS.exists():
         return None
     d = json.loads(CANAIS.read_text())
-    for o in d["organizacoes"]:
-        for c in o["canais"]:
-            if c["service"] == SERVICO[rede]:
-                return c["id"]
-    return None
+    canais = [c for o in d["organizacoes"] for c in o["canais"] if c["service"] == SERVICO[rede]]
+    # a organização tem mais de 1 conta do mesmo serviço (ex.: 2º TikTok, 29/10/2026): escolhe pelo nome esperado
+    nome = ESPERADOS.get(rede)
+    if nome:
+        canais = [c for c in canais if nome in f"{c.get('name', '')} {c.get('displayName', '')}".lower()]
+    return canais[0]["id"] if canais else None
 
 
 # ---------------------------------------------------------------- hospedagem do vídeo (branch órfão "midia")
