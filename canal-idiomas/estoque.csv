@@ -28,3 +28,13 @@ data,assunto,episodio,video,id,hype_ou_reserva,status,nota_portao,reescritas,mot
 2026-10-29,16,T1 E16 · parte 3/3,V3,cafe-t1e16-im-tired-v3,,aprovado,8.5,0,"juiz 8.5; reconhecimento tired/happy fixa contraste; Bolinha revisão assunto 12; nada infantil",cafe-t1e16-im-tired-v3.mp4
 2026-10-29,17,T1 E17,V1,cafe-t1e17-how-much-is-it,,aprovado,8.7,1,"reescrita 1: gancho parado (0 s-1 s sem movimento) corrigido com pensamento de abertura; juiz 8.7",cafe-t1e17-how-much-is-it.mp4
 2026-10-29,17,T1 E17 · parte 2/3,V2,cafe-t1e17-how-much-is-it-v2,reserva,aprovado,8.4,0,"juiz 8.4; feira de Natal coerente; Dona Jaca de surpresa; reserva atemporal (roteiro recomenda reserva por hype datado incerto)",cafe-t1e17-how-much-is-it-v2.mp4
+2026-10-29,17,T1 E17 · parte 3/3,V3,cafe-t1e17-how-much-is-it-v3,,bloqueado_cota,,0,"JSON pronto e validado; gemini-3.8-flash-tts devolveu HTTP 429 cota DIÁRIA (retryDelay ~81857s, ~22h, reset ~06h UTC de 30/10); parei sem insistir",
+2026-10-29,18,T1 E18,V1,cafe-t1e18-this-is-my-mother,,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado nesta rodada — cota 429 do gemini-3.8-flash-tts bloqueou antes de chegar aqui",
+2026-10-29,18,T1 E18 · parte 2/3,V2,cafe-t1e18-this-is-my-mother-v2,reserva,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,18,T1 E18 · parte 3/3,V3,cafe-t1e18-this-is-my-mother-v3,,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,19,T1 E19,V1,cafe-t1e19-im-a-doctor,,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,19,T1 E19 · parte 2/3,V2,cafe-t1e19-im-a-doctor-v2,reserva,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,19,T1 E19 · parte 3/3,V3,cafe-t1e19-im-a-doctor-v3,,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,20,T1 E20,V1,cafe-t1e20-its-three-oclock,,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,20,T1 E20 · parte 2/3,V2,cafe-t1e20-its-three-oclock-v2,reserva,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); não iniciado — mesma cota 429",
+2026-10-29,20,T1 E20 · parte 3/3 (fim da T1),V3,cafe-t1e20-its-three-oclock-v3,,nao_iniciado,,0,"JSON pronto e validado (layer 1 OK); card final 'fim da temporada 1' sem data já escrito; não iniciado — mesma cota 429",
