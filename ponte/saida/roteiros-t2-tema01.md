@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 1 · "I'm not tired." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5 da T1, as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. **Primeiro assunto da T2** (`grade-t2.md`).
 
@@ -68,9 +68,11 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 15 | 45–48 s | A Capy arregala os olhos de propósito | Capy EN: ⭐ "I'm not tired!" · Hank EN: "Sure." | clic |
 | 16 | 48–52 s | **Piada:** a Duda cutuca o Lazy, que voltou a dormir em pé na árvore | Duda EN: "Lazy?" · Lazy EN (de olhos fechados): ⭐ "I'm... not... tired." | ronco |
 | 17 | 52–57 s | ⭐ **VITÓRIA DO DIA**: card "1º 'não' em inglês". Selo: **"T2 E01 · você já sabe 21 frases"** | Capy PT: "Eu disse que não. É mentira, mas a frase tá certa." | acerto |
-| 18 | 57–65 s | Card final: **CONSIGO… dizer que não estou de um jeito ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: I'm not... e como você NÃO tá agora." | — |
+| 18 | 57–65 s | Card final: **CONSIGO… dizer como eu NÃO estou ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: I'm not... e como você NÃO tá agora." | — |
 
 **Frase-alvo no áudio: 6×** (Lazy ×2, Capy ×3, Dona Jaca), em 3 bocas. A última é do Lazy. O aluno fala 1×. "I'm tired." (Duda) é revisão e não conta.
+
+Se o V2 for a RESERVA ("o último turno do ano"), a cena 2 do V1 vira: Dona Jaca PT: "Último turno do ano hoje. Quem aguenta até meia-noite?" (a faixa "2027" fica).
 
 ---
 
@@ -87,7 +89,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre no relógio de pizza** da cozinha do Mike (o do Natal), marcando 11. Chapéus de festa na mesa. Texto: **"festa de Ano-Novo do Mike. 11 da noite. quem aguenta?"** | — | burburinho |
-| 2 | 2–5 s | A Poppy filma a sala | Poppy PT: "Gente, aqui a virada é contagem regressiva. Em inglês, gritando!" | — |
+| 2 | 2–5 s | A Poppy filma a sala | Poppy PT: "Gente, virada americana: contagem regressiva em inglês, todo mundo gritando!" | — |
 | 3 | 5–8 s | A Capy pisca devagar, segurando um copo de suco (objetivo por cima da ação) | Capy (pensa) PT: "Uma hora pra meia-noite. Eu não posso dormir." | — |
 | 4 | 8–11 s | O Mike, de chapéu de festa, vê a Capy bocejar | Mike EN: "Capy! Are you tired?" | — |
 | 5 | 11–14 s | O Lazy, dormindo no sofá com uma língua de sogra na boca, cochicha o lembrete | Lazy EN: ⭐ "I'm... not... tired." | clic |
@@ -104,7 +106,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 16 | 47–51 s | 00h01. O Hank já está de casaco, na porta | Hank EN: "I'm tired. Good night." · Poppy EN (filmando, ainda pulando): ⭐ "I'm not tired!" | porta |
 | 17 | 51–55 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você chegou até a meia-noite em inglês" + **consigo ✓** | Capy PT: "Ano novo. Frase nova." | acerto |
 | 18 | 55–61 s | **Gancho verdadeiro:** uma convidada (sem voz) aponta a Duda, que dança em cima do sofá; o balão dela vem em texto: "what's her name?". A Capy congela | Capy (pensa) PT: "O meu nome eu sei dizer. E o DELA?" · Texto: **"próximo assunto: Her name is Duda."** (só se o assunto 2 estiver agendado) | — |
-| 19 | 61–67 s | Card: "aula do assunto 21 no perfil · segue a Capy" | — | — |
+| 19 | 61–67 s | Card: "aula do Ep. 21 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Dona Jaca, Poppy), em 4 bocas. A última é da Poppy. O aluno fala 2×. "Are you tired?", "I'm tired." (Hank) e a contagem são variação e revisão; não contam.
 
@@ -121,13 +123,13 @@ Para quando o V2 sair depois de 03/01/2027. Mesmos exercícios, mesma ordem. A h
 | 4 | O Mike, único cliente, com o laptop aberto, vê a Capy bocejar | Mike EN: "Capy! Are you tired?" |
 | 5 | O Lazy, dormindo no sofá do café | (igual) |
 | 9 | O Mike levanta a xícara | Mike EN: "Great! One more coffee!" |
-| 10 | A Dona Jaca, de pijama, por videochamada | Dona Jaca PT: "Filha, no Brasil já é madrugada. E eu tô acordada!" |
+| 10 | A Dona Jaca, de pijama e casaco, que veio fazer companhia à filha no último turno, mostra o celular com a hora do Brasil | Dona Jaca PT: "Filha, no Brasil já é madrugada. E eu tô acordada!" |
 | 11 | A avó do Mike, que veio buscá-lo, cutuca a Capy | (igual) |
-| 14 | A Dona Jaca, no celular | (igual) |
+| 14 | A Dona Jaca, do sofá do café | (igual) |
 | 15 | O Hank conta as cadeiras que faltam subir, devagar | Hank EN: "Ten. Nine. Eight..." · Mike EN: "Three, two, one... Closed!" |
 | 16 | O Hank apaga a luz | (igual) |
 | 17 | Card | "você aguentou o turno inteiro em inglês" |
-| 18 | A avó do Mike aponta a Duda, que chega para o turno da manhã | (igual) |
+| 18 | A avó do Mike aponta a Duda, que veio buscar a Capy no fim do turno | (igual) |
 
 ---
 

@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 18 · "I'd like a coffee." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. **Fecha o arco da viagem de carro (assuntos 16–18)**: V1 e V2 em diners de estrada, V3 de volta ao Bean There.
 
@@ -75,7 +75,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "o café que não acaba" · parte 2/3 · ~67 s
 
-**Hype de exemplo (atemporal):** o café da manhã num diner de estrada americano, no último dia da viagem: a garçonete de bloquinho, a jarra de café que volta sozinha (refil, comum em muito diner), a torta com vela para o aniversário de um cliente. **Sem:** marca de diner, de café ou de comida; canção de aniversário (só palmas).
+**Hype de exemplo (atemporal):** a parada da volta num diner de estrada americano: a garçonete de bloquinho, a jarra de café que volta sozinha (refil, comum em muito diner), a torta com vela para o aniversário de um cliente. **Sem:** marca de diner, de café ou de comida; canção de aniversário (só palmas).
 
 **Quem traz o hype:** a Poppy (contando os refis para a câmera) e o Mike.
 
@@ -85,9 +85,9 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre na jarra de café** sobre a chapa quente do diner; a garçonete pega a jarra e sai andando. Texto: **"último dia de viagem. café da manhã no diner. a jarra não para."** | — | chapa |
+| 1 | 0–2 s | **Abre na jarra de café** sobre a chapa quente do diner; a garçonete pega a jarra e sai andando. Texto: **"na volta, o mesmo diner. e a jarra não para."** | — | chapa |
 | 2 | 2–5 s | A Poppy filma a mesa | Poppy PT: "Gente, em muito diner americano o café tem refil. Ela volta com a jarra!" | — |
-| 3 | 5–8 s | A Capy abre o cardápio, decidida (objetivo por cima da ação) | Capy (pensa) PT: "Ontem eu congelei. Hoje o pedido é meu, do começo." | — |
+| 3 | 5–8 s | A Capy abre o cardápio, decidida (objetivo por cima da ação) | Capy (pensa) PT: "Na ida eu congelei. Na volta, o pedido é meu, do começo." | — |
 | 4 | 8–11 s | A garçonete chega com o bloquinho; o balão dela, em texto: "what would you like?" | — | caneta |
 | 5 | 11–14 s | O Lazy, encostado na janela, cochicha o lembrete | Lazy EN: ⭐ "I'd... like... a coffee." | — |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando. A garçonete espera | ⏸ 0,6 s | — |

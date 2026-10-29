@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 15 · "These are for you." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado.
 
@@ -25,7 +25,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 - No Brasil, o Dia dos Namorados é em **12 de junho** (fato de calendário). É o contraste que a Dona Jaca traz.
 - **Nada romântico explícito:** ninguém do elenco tem par; os presentes são de amigo para amigo.
 
-**Janela do hype:** V2 "Valentine's e a final no mesmo domingo" só se for ao ar entre 07 e 14/02/2027; senão, V2 RESERVA ("os biscoitos do Hank").
+**Janela do hype:** V2 "Valentine's e a final no mesmo domingo" só se for ao ar entre 08 e 13/02/2027; senão, V2 RESERVA ("os biscoitos do Hank").
 
 **Revisão:** "This is…" (T1, assunto 14) no V1, só para ouvir; "I love it!" (T2, assunto 14) no V2. O Bolinha devolve no V3 "I get up at seven." (T2, assunto 11, V3 em 02/02 = 12 dias antes do V3 deste assunto, em 14/02).
 
@@ -81,7 +81,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "Valentine's e a final no mesmo domingo" · parte 2/3 · ~67 s
 
-**Hype de exemplo:** amanhã (14/02/2027) é Valentine's Day e também a final do futebol americano, no mesmo domingo, pela 1ª vez na história. O Mike não sabe se faz festa da final ou se distribui chocolate; faz as duas coisas e passa no café no sábado. A Capy traz brigadeiros para os amigos. **Sem:** casal, beijo, cartão de amor, marca, time, jogador.
+**Hype de exemplo:** No domingo, 14/02/2027, é Valentine's Day e também a final do futebol americano, pela 1ª vez na história no mesmo dia. O Mike não sabe se faz festa da final ou se distribui chocolate; faz as duas coisas e passa no café no sábado. A Capy traz brigadeiros para os amigos. **Sem:** casal, beijo, cartão de amor, marca, time, jogador.
 
 **Quem traz o hype:** a Poppy (filma "o domingo mais confuso do ano"), o Mike (de camisa da sorte e sacolinhas) e a Dona Jaca, por videochamada, com o contraste do 12 de junho.
 
@@ -91,7 +91,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre num calendário de parede no dia 14**, com dois adesivos: um coração e uma bola oval. Texto: **"amanhã é Valentine's. e a final. no mesmo domingo."** | — | — |
+| 1 | 0–2 s | **Abre num calendário de parede no dia 14**, com dois adesivos: um coração e uma bola oval. Texto: **"domingo, dia 14: Valentine's e a final. no mesmo dia."** | — | — |
 | 2 | 2–5 s | A Poppy filma o calendário | Poppy PT: "Gente, é a primeira vez na história que a final cai no Valentine's!" | — |
 | 3 | 5–8 s | A Capy, com uma bandeja de brigadeiros (objetivo por cima da ação) | Capy (pensa) PT: "Brigadeiro pra todo mundo. E eu entrego em inglês." | — |
 | 4 | 8–11 s | O Mike entra de camisa da sorte e sacolinhas; vê a bandeja estendida para ele | Mike EN: "Whoa! For me?" | sino da porta |
@@ -110,7 +110,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 17 | 49–52 s | A Duda entra com uma lata de biscoitos que ela fez e põe no colo do Lazy | Duda EN: ⭐ "These are for you." · Lazy EN: "Thanks." (dormindo) | lata |
 | 18 | 52–56 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você entregou presentes em inglês no Valentine's" + **consigo ✓** | Capy PT: "Dei brigadeiro. Ganhei chá. Do Hank." | acerto |
 | 19 | 56–61 s | **Gancho verdadeiro:** o Mike, na porta, levanta a chave do carro | Mike EN: "Monday's a holiday. Road trip!" · Capy (pensa) PT: "Viagem de carro... com esse grupo? O que pode dar errado?" · Texto: **"próximo assunto: There's a problem."** (só se o assunto 16 estiver agendado) | chaves |
-| 20 | 61–67 s | Card: "aula do assunto 35 no perfil · segue a Capy" | — | — |
+| 20 | 61–67 s | Card: "aula do Ep. 35 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Hank, Duda), em 4 bocas. A última é da Duda. O aluno fala 2×. "For me?" é a pergunta; "I love it!" (Mike) é revisão do assunto 14. A Dona Jaca fala só em português.
 
@@ -118,7 +118,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "os biscoitos do Hank" · ~67 s
 
-Para quando o V2 sair fora de 07–14/02/2027. Mesmos exercícios, mesma ordem. Sem data na tela: a Capy faz brigadeiro para a equipe porque o café bateu o recorde de pedidos da semana. Mudam só estas cenas:
+Para quando o V2 sair fora de 08–13/02/2027. Mesmos exercícios, mesma ordem. Sem data na tela: a Capy faz brigadeiro para a equipe porque o café bateu o recorde de pedidos da semana. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|

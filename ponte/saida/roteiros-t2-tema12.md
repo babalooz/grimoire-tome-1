@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 12 · "I always drink coffee." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado.
 
@@ -52,7 +52,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre em cinco xícaras "CAPY"** no balcão, uma para cada dia, de segunda a sexta. Texto: **"segunda a sexta. a mesma xícara."** | — | xícaras |
-| 2 | 2–5 s | O Lazy, deitado no sofá, abre um olho (objetivo por cima da ação) | Lazy PT: "Ontem eu disse 'nunca'. Hoje é o contrário: sempre." | — |
+| 2 | 2–5 s | O Lazy, deitado no sofá, abre um olho (objetivo por cima da ação) | Lazy PT: "Outro dia eu disse 'nunca'. Hoje é o contrário: sempre." | — |
 | 3 | 5–8 s | A Duda pega a xícara dela (cinza: só ouvir, revisão do assunto 6) | Duda EN: "I like coffee." | — |
 | 4 | 8–13 s | O Lazy segura uma caneca enorme, bem devagar, quase dormindo | Lazy EN: ⭐ "I... always... drink... coffee." · legenda EN + PT: "Eu sempre tomo café." · Lazy PT: "E durmo mesmo assim." | gole |
 | 5 | 13–18 s | Na tela: "I drink coffee." e o **porta-copos "always"** deslizando para antes de "drink". Embaixo, pequeno: "I drink always coffee" aparece e é riscado (só escrito) | Lazy PT: "O always entra antes do verbo. Antes do drink." | porta-copos |
@@ -104,7 +104,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 17 | 46–50 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você contou a sua superstição em inglês" + **consigo ✓** | Capy PT: "A minha superstição é café. Todo dia." | acerto |
 | 18 | 50–56 s | **Gancho verdadeiro:** o Mike estende uma xícara para o Hank | Mike EN: "Hank! Coffee for luck!" · Hank EN: "No, thanks." · Capy (pensa) PT: "Peraí. Eu nunca vi o Hank tomar café. Nunca." | — |
 | 19 | 56–60 s | Congela no Hank, de costas, guardando alguma coisa no bolso do avental. Texto: **"próximo assunto: o segredo do Hank."** (só se o assunto 13 estiver agendado) | — | — |
-| 20 | 60–66 s | Card: "aula do assunto 32 no perfil · segue a Capy" | — | — |
+| 20 | 60–66 s | Card: "aula do Ep. 32 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Mike, Lazy, Capy ×2, Duda), em 4 bocas. A última é da Duda. O aluno fala 2×. "I always wear this shirt." e "I always sit here." são variações do mesmo molde (contam como exposição do "always", não como ⭐). "Never!" é só para ouvir.
 

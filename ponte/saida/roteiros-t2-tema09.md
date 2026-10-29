@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 9 · "I live in Brazil." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Abre o bloco **"O mundo vem ao café"** da grade (`grade-t2.md` §5).
 
@@ -22,7 +22,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Datas do hype:** pela grade, V1 em 25/01/2027 (seg), V2 em 26/01 (ter), V3 em 27/01 (qua). 26/01 é o Australia Day, feriado nacional da Austrália (cálculo de calendário; data fixa). Em janeiro é **verão na Austrália** (hemisfério sul).
 
-**Janela do hype:** V2 "feriado longe de casa" só se for ao ar entre 24 e 27/01/2027; senão, V2 RESERVA ("o turista com saudade").
+**Janela do hype:** V2 "feriado longe de casa" só se for ao ar em 26 ou 27/01/2027; senão, V2 RESERVA ("o turista com saudade").
 
 **Cuidado de cultura (Australia Day):** a data é debatida na própria Austrália (muita gente, sobretudo dos povos indígenas, não comemora o 26 de janeiro). Fonte: conhecimento geral amplamente noticiado; **não verificado nesta sessão** com link. Por isso o V2 **não celebra** a data (sem bandeira, sem festa, sem "Happy Australia Day"): mostra só um turista longe de casa num feriado do país dele. Nada de caricatura de australiano: sem chapéu de abas com rolhas, sem canguru, sem gíria além de um único "G'day" (no V2). O coala fala inglês comum.
 
@@ -102,7 +102,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 8 | 18–21 s | **Resposta:** a imagem volta | Dona Jaca EN: ⭐ "I live in Brazil!" · Dona Jaca PT: "Voltou? Ah, ele ouviu." | gole curto |
 | 9 | 21–25 s | O Ned chega perto da tela | Ned EN: "Brazil! Is it hot?" · Dona Jaca EN: "Yes! Very hot!" | — |
 | 10 | 25–29 s | O Hank põe um café na frente do Ned, sem cobrar | Hank EN: "On the house." · Hank PT: "Feriado é feriado." | xícara |
-| 11 | 29–32 s | **2ª rodada:** a Poppy vira o celular da live para o Ned, que se inclina para a câmera (a câmera da Poppy é a nossa). Tela: **"agora é você: o Ned tá falando com quem tá no Brasil"** | Ned EN: "Hi, Brazil! Where do you live?" · ⏸ 0,6 s | — |
+| 11 | 29–32 s | **2ª rodada:** a Poppy vira o celular da live para o Ned, que se inclina para a câmera (a câmera da Poppy é a nossa). Tela: **"agora é você: o Ned tá falando com quem tá assistindo"** | Ned EN: "Hi, guys! Where do you live?" · ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio, com o "LIVE" piscando no canto | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 35–38 s | **Resposta:** os comentários sobem na tela; a Poppy lê o primeiro | Poppy EN: ⭐ "I live in Brazil!" | notificações |
 | 14 | 38–41 s | O Lazy, antes do próximo comentário, cochicha de novo, para quem ainda não respondeu | Lazy EN: ⭐ "I live in Brazil." | gole curto |
@@ -110,8 +110,8 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 16 | 45–49 s | A Dona Jaca, ainda na chamada, com pena | Dona Jaca PT: "Ô, coitado. Vem pro Brasil, que aqui também é verão!" | risada |
 | 17 | 49–53 s | A Poppy lê mais um comentário, de outra cidade (na tela, o comentário continua: "...and it's hot!") | Poppy PT: "Olha esse aqui:" · Poppy EN: ⭐ "I live in Brazil!" | — |
 | 18 | 53–56 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você disse onde mora pra um gringo" + **consigo ✓** | Capy PT: "Ele ganhou um café. E um monte de brasileiros." | acerto |
-| 19 | 56–62 s | **Gancho verdadeiro:** o Ned, mais animado, tira do bolso um folheto: "TRIVIA NIGHT · MIKE'S BAR" | Ned EN: "Trivia night! Come!" · Capy (pensa) PT: "Quiz em inglês? Eu vou ter mil dúvidas... e nem sei como começar a perguntar." · Texto: **"próximo assunto: I have a question."** (só se o assunto 10 estiver agendado) | papel |
-| 20 | 62–67 s | Card: "aula do assunto 29 no perfil · segue a Capy" | — | — |
+| 19 | 56–62 s | **Gancho verdadeiro:** o Ned, mais animado, tira do bolso um folheto: "TRIVIA NIGHT · HOST: MIKE" | Ned EN: "Trivia night! Come!" · Capy (pensa) PT: "Quiz em inglês? Eu vou ter mil dúvidas... e nem sei como começar a perguntar." · Texto: **"próximo assunto: I have a question."** (só se o assunto 10 estiver agendado) | papel |
+| 20 | 62–67 s | Card: "aula do Ep. 29 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy ×2, Dona Jaca, Poppy ×2), em 3 bocas. A última é da Poppy (cena 17). **A Capy não diz a ⭐ neste vídeo.** O aluno fala 2×. "Where do you live?", "I live in Australia." e "Is it hot?" são pergunta e variação; não contam.
 
@@ -119,7 +119,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "o turista com saudade" · ~67 s
 
-Para quando o V2 sair fora de 24–27/01/2027. Mesmos exercícios, mesma ordem. Sem feriado: o Ned, de férias, só sente falta de casa num dia de neve. Mudam só estas cenas:
+Para quando o V2 sair fora de 26–27/01/2027. Mesmos exercícios, mesma ordem. Sem feriado: o Ned, de férias, só sente falta de casa num dia de neve. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|

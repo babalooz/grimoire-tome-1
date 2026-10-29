@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 16 · "There's a problem." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. **Abre o arco da viagem de carro (assuntos 16–18).**
 
@@ -98,7 +98,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 11 | 30–33 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 12 | 33–36 s | **Resposta** | Capy EN: ⭐ "There's a problem." | clic |
 | 13 | 36–40 s | A atendente, em texto: "where are you?". A Capy olha a plaquinha verde na beira da estrada: "MILE 50" | Capy EN: "Mile fifty." · Capy PT (pensa): "Ainda bem que eu sei as dezenas." | — |
-| 14 | 40–44 s | Quarenta minutos depois (texto: "40 min depois"). A turma sentada na mureta; a Duda vira a garrafa térmica inteira de café | Poppy PT: "Quarenta minutos no acostamento. Conteúdo!" | risada |
+| 14 | 40–44 s | Quarenta minutos depois (texto: "40 min depois"). A turma sentada no gramado, atrás da mureta, longe da pista, com o pisca-alerta da minivan ligado; a Duda vira a garrafa térmica inteira de café | Poppy PT: "Quarenta minutos no acostamento. Conteúdo!" | risada |
 | 15 | 44–48 s | O Hank pega a garrafa térmica, sacode: vazia. Olha para a Duda | Hank EN: ⭐ "There's a problem." · Hank PT: "Acabou o café." | — |
 | 16 | 48–52 s | O guincho chega (o mecânico, sem voz, mexe no motor e faz joinha). O Mike fecha o capô | Mike EN: "We're good! Let's go!" | capô fecha |
 | 17 | 52–56 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você explicou o problema por telefone, em inglês" + **consigo ✓** | Capy PT: "Avisei o Mike. E o socorro." | acerto |

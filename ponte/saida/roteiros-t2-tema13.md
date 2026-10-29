@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 13 · "He likes tea." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado.
 
@@ -109,7 +109,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você contou o segredo do Hank em inglês" + **consigo ✓** | Capy PT: "Segredo revelado. Em inglês. Pra internet." | acerto |
 | 18 | 52–58 s | **Gancho verdadeiro:** o Mike prega no mural uma lista: "TASTE TEST · WINGS · NACHOS · CHILI · DIP" | Mike EN: "Party food test! Come try!" · Capy (pensa) PT: "E se eu adorar a comida? Como fala 'adorei'?" | papel |
 | 19 | 58–61 s | Congela na lista. Texto: **"próximo assunto: I love it!"** (só se o assunto 14 estiver agendado) | — | — |
-| 20 | 61–66 s | Card: "aula do assunto 33 no perfil · segue a Capy" | — | — |
+| 20 | 61–66 s | Card: "aula do Ep. 33 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Duda, Poppy), em 4 bocas. A última é da Poppy. O aluno fala 2×. "I like tea." (Hank) é variação. O Mike não diz a ⭐ (ele só chuta e respeita).
 

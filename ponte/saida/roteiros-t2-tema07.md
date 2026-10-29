@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 7 · "I don't like it." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Bloco **"Playoffs"** da grade (`grade-t2.md` §5).
 
@@ -105,8 +105,8 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 15 | 42–46 s | O Mike pega o sanduíche da mão da Duda, sem cerimônia | Mike EN: "I love it." · Duda PT: "Ele gosta de tudo." | risada |
 | 16 | 46–50 s | A Poppy prova o "grits" para a câmera, séria, e encerra a trend | Poppy EN: ⭐ "I don't like it." · Poppy PT: "Sinceridade é o que dá view." | — |
 | 17 | 50–54 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você disse 'não gosto' sem ofender ninguém" + **consigo ✓** | Capy PT: "Duas comidas. Dois não. Zero briga." | acerto |
-| 18 | 54–61 s | **Gancho verdadeiro:** o Mike limpa a boca, olha o celular (placar desenhado, sem time) e vira para a Capy | Mike EN: "Capy! Do you like football?" · Capy (pensa) PT: "Futebol? Claro! ...ou ele tá falando do outro?" · Texto: **"próximo assunto: Yes, I do."** (só se o assunto 8 estiver agendado) | — |
-| 19 | 61–66 s | Card: "aula do assunto 27 no perfil · segue a Capy" | — | — |
+| 18 | 54–61 s | **Gancho verdadeiro:** o Mike, que na festa do jogo viu a Capy de costas para a TV a noite toda, comendo pizza, limpa a boca, olha o celular (placar desenhado, sem time) e vira para ela | Mike EN: "Capy! Do you like football?" · Capy (pensa) PT: "Futebol? Claro! ...ou ele tá falando do outro?" · Texto: **"próximo assunto: Yes, I do."** (só se o assunto 8 estiver agendado) | — |
+| 19 | 61–66 s | Card: "aula do Ep. 27 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Duda, Poppy), em 4 bocas. A última é da Poppy. O aluno fala 2×. "Do you like it?" é a pergunta (cinza); "I love it." (Mike) é só para ouvir (o "love" é o assunto 14); "More for me!" é apoio.
 
@@ -137,7 +137,7 @@ Para quando a trend de comida não couber (ver Janela). Mesmos exercícios, mesm
 1. **Ouça e reconheça**, em 2 rodadas:
    - "gostou ou não?": a voz diz uma frase e o aluno escolhe o prato (limpo, comeu tudo × intocado, com o garfo em pé);
    - "fechou no t?": "don't" fechado e "dônti", uma vez cada.
-2. **Personalize**, em 2 rodadas: (1) a Capy mostra uma foto de jiló e você diz a verdade: "I like it." ou "I don't like it."; (2) o Hank pergunta "Coffee?" e você responde a verdade.
+2. **Personalize**, em 2 rodadas: (1) a Capy mostra uma foto de jiló e você diz a verdade: "I like it." ou "I don't like it."; (2) o Hank pergunta "Do you like coffee?" e você responde a verdade.
 
 **Por que estes:** o "don't" é curto e, na fala rápida, quase some: ouvir a diferença entre "I like it." e "I don't like it." é o que importa. O jiló é a comida brasileira que divide opinião: dá vontade de responder e de comentar. A 2ª personalização usa o café, que todo mundo tem opinião.
 
@@ -156,7 +156,7 @@ Para quando a trend de comida não couber (ver Janela). Mesmos exercícios, mesm
 | 11 | 30–34 s | Tela: **"AGORA É VOCÊ"**. A Capy aponta o copo de root beer do V1, ainda no balcão; depois vira um cartão com a foto de um **jiló** | Capy EN: ⭐ "I don't like it." · Capy PT: "Agora você. Jiló: gosta ou não?" | — |
 | 12 | 34–38 s | **Personalize 1:** o cartão do jiló pisca, com as duas frases embaixo: "I like it." / "I don't like it." | 🎤 **SUA VEZ** (a verdade) | trilha em zero |
 | 13 | 38–41 s | **Para conferir**, as duas: o Lazy, que come jiló devagar, e a Duda, que nunca tinha visto | Lazy EN: "I like it." · Duda EN: ⭐ "I don't like it." | acerto |
-| 14 | 41–44 s | **Personalize 2:** o Hank olha para a câmera e levanta uma xícara | Hank EN: "Coffee?" | — |
+| 14 | 41–44 s | **Personalize 2:** o Hank olha para a câmera e levanta uma xícara | Hank EN: "Do you like coffee?" | — |
 | 15 | 44–48 s | Balão vazio. Tela: "responde a verdade" | 🎤 **SUA VEZ** ("I like it." ou "I don't like it.") | trilha em zero |
 | 16 | 48–50 s | O Hank põe a xícara no balcão, sem comentar | Hank EN: "Your call." | — |
 | 17 | 50–55 s | O Bolinha enche as bochechas. Texto: **"lembra dessa?"** | Bolinha EN: "Two coffees, please." · Bolinha EN: ⭐ "I don't like it." · Bolinha PT: "Os dois cafés eu guardei. A root beer, não." | — |

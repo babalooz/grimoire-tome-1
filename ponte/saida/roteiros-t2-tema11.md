@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 11 · "I get up at seven." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado.
 
@@ -14,7 +14,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 **G + V + P:**
 - **G:** "I get up + at + hora". Imagem fixa do dicionário visual (`didatica-visual.md` §3, itens 3 e 11): o **alfinete do "at"** espetando o número no **relógio de pizza**.
 - **V:** get up (seven e os números já vêm da T1 e da série Palavras; five e eleven só para ouvir).
-- **P:** ligação **"ge-tâp"**: o t de "get" encosta no "up", sem vogal no meio ("guéti âp"). Ícone novo e fixo: **dois cubos de açúcar que grudam** ("tic").
+- **P:** ligação **"gué-râp"**: o t de "get" encosta no "up", sem vogal no meio ("guéti âp"). No inglês americano esse t entre vogais vira um toque rápido, quase o r de "caro"; é o que a voz vai fazer. Ícone novo e fixo: **dois cubos de açúcar que grudam** ("tic").
 
 **Frase-alvo:** ⭐ "I get up at seven." Só sai da boca de quem acorda às 7: **a Capy e a Duda** (abrem o café às 8), o **Mike** (V2) e o **Bolinha como modelo/revisão**. **O Lazy nunca diz a ⭐** (ele não acorda às 7: é o gancho do assunto 12). O Hank acorda às 5 e a Poppy às 11 (variações, só para ouvir).
 
@@ -22,7 +22,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Fato do hype (conferido em 29/10/2026):** em Punxsutawney (Pensilvânia), a festa começa de madrugada em Gobbler's Knob e a marmota sai **por volta do nascer do sol** (FOX, 27/01/2026: "around sunrise", nascer do sol perto das 7h07 naquela data; o horário exato muda a cada ano, então na tela só "ao nascer do sol"). Se ela "vê a sombra", são mais seis semanas de inverno; se não vê, primavera mais cedo. Fonte: https://www.fox6now.com/news/groundhog-day-2026-what-time-will-punxsutawney-phil-come-out (verificado na busca; horário = estimativa da reportagem). Sem nome de filme, sem nome da marmota na tela.
 
-**Janela do hype:** V2 "véspera do Groundhog Day" só se for ao ar entre 28/01 e 02/02/2027; senão, V2 RESERVA ("a entrega da madrugada").
+**Janela do hype:** V2 "véspera do Groundhog Day" só se for ao ar entre 28/01 e 01/02/2027; senão, V2 RESERVA ("a entrega da madrugada").
 
 **Revisão:** "It's seven o'clock." (molde do T1, assunto 20) no V1, só para ouvir. O Bolinha devolve no V3 "I don't like it." (T2, assunto 7, V3 em 21/01 = 12 dias antes do V3 deste assunto, em 02/02).
 
@@ -56,10 +56,10 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 1 | 0–2 s | **Abre num despertador tocando**, marcando 7:00; a pata da Duda bate nele. Texto: **"7 da manhã. a Duda já levantou."** | — | despertador |
 | 2 | 2–5 s | Bean There, de manhã. A Capy abre a cortina; no balcão, a folha do quiz de ontem com a última pergunta circulada: "what time does the groundhog get up?" | Capy (pensa) PT: "Ontem eu perdi a última do quiz. Nem a minha hora eu sei dizer." | cortina |
 | 3 | 5–8 s | O Lazy, deitado no sofá do café, sem abrir os olhos (objetivo por cima da ação) | Lazy PT: "Hoje você diz a hora que acorda. Eu explico. Acordar, não." | — |
-| 4 | 8–10 s | O Hank vira a plaquinha da porta para "OPEN" e olha o relógio de pizza (cinza: só ouvir, revisão) | Hank EN: "It's seven o'clock." | clic |
+| 4 | 8–10 s | O Hank liga a máquina e olha o relógio de pizza (cinza: só ouvir, revisão) | Hank EN: "It's seven o'clock." | clic |
 | 5 | 10–15 s | A Duda chega se espreguiçando e aponta o despertador que trouxe na mão, bem devagar | Duda EN: ⭐ "I get up... at... seven." · legenda EN + PT: "Eu acordo às sete." | — |
 | 6 | 15–19 s | Na tela: "I get up" e o **alfinete do "at"** espetando o 7 do relógio de pizza. Embaixo, pequeno: "I get up seven" aparece e é riscado (só escrito) | Lazy PT: "Hora pede o at. É o alfinete no número." | alfinete |
-| 7 | 19–23 s | Close na boca da Duda em "get up", com o **ícone dos dois cubos de açúcar grudando**. Na tela, "guéti âp" aparece e é riscado (só escrito) | Lazy PT: "O t do get gruda no up. Gue-tâp." | tic |
+| 7 | 19–23 s | Close na boca da Duda em "get up", com o **ícone dos dois cubos de açúcar grudando**. Na tela, "guéti âp" aparece e é riscado (só escrito) | Lazy PT: "O t do get gruda no up e fica rapidinho. Quase o r de caro: gué-râp." | tic |
 | 8 | 23–25 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. Essa é a minha hora também." | — |
 | 9 | 25–28 s | **Em coro.** Na tela: "fala JUNTO" | Capy EN: ⭐ "I get up at seven." | tic |
 | 10 | 28–31 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "I get up at seven." | tic |
@@ -88,8 +88,8 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre na TV do café: uma toca na neve, desenhada**, com uma faixa "AMANHÃ, AO NASCER DO SOL". Texto: **"véspera do Groundhog Day: amanhã uma marmota diz se o inverno acaba."** | — | vento |
-| 2 | 2–5 s | A Poppy filma a TV | Poppy PT: "Gente, amanhã cedo a marmota sai da toca. Se ver a sombra, mais seis semanas de frio!" | — |
+| 1 | 0–2 s | **Abre na TV do café: uma toca na neve, desenhada**, com uma faixa "2 DE FEVEREIRO, AO NASCER DO SOL". Texto: **"dia 2 de fevereiro: uma marmota diz se o inverno acaba."** | — | vento |
+| 2 | 2–5 s | A Poppy filma a TV | Poppy PT: "Gente, dia 2, cedinho, a marmota sai da toca. Se ver a sombra, mais seis semanas de frio!" | — |
 | 3 | 5–8 s | A Capy limpa o balcão, de olho no relógio de pizza (objetivo por cima da ação) | Capy (pensa) PT: "Ela sai ao nascer do sol. Quem acorda a essa hora?" | — |
 | 4 | 8–11 s | A Poppy vira o celular para a Capy, planejando quem filma | Poppy EN: "Capy! When do you get up?" | — |
 | 5 | 11–14 s | A Duda, de gorro, passa com a bandeja e cochicha o lembrete (é a hora dela também) | Duda EN: ⭐ "I get up at seven." | tic |
@@ -107,7 +107,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 17 | 47–51 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você combinou a manhã do Groundhog Day em inglês" + **consigo ✓** | Capy PT: "Amanhã, às sete. Eu e a marmota." | acerto |
 | 18 | 51–57 s | **Gancho verdadeiro:** o Mike aponta o Lazy, enrolado num cobertor no sofá do café | Mike EN: "Lazy? Seven?" · Lazy PT: "Às sete? Eu? Nunca." · Capy (pensa) PT: "Nunca... e 'sempre'? Como fala isso?" | — |
 | 19 | 57–61 s | Congela no Lazy, que já dormiu de novo. Texto: **"próximo assunto: I always drink coffee."** (só se o assunto 12 estiver agendado) | — | ronco leve |
-| 20 | 61–66 s | Card: "aula do assunto 31 no perfil · segue a Capy" | — | — |
+| 20 | 61–66 s | Card: "aula do Ep. 31 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Duda ×2, Capy ×2, Mike), em 3 bocas. A última é da Duda. O aluno fala 2×. "When do you get up?", "I get up at eleven." e "I get up at five." são pergunta e variação; não contam. O Lazy não diz a ⭐ (o "nunca" dele fica em português: o "never" é só do assunto 12, e nem lá é a frase-alvo).
 
@@ -115,7 +115,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "a entrega da madrugada" · ~66 s
 
-Para quando o V2 sair fora de 28/01–02/02/2027. Mesmos exercícios, mesma ordem. A história é um aviso do Hank: amanhã chega a entrega grande de grãos, cedo, e ele precisa saber quem já estará de pé. Mudam só estas cenas:
+Para quando o V2 sair fora de 28/01–01/02/2027. Mesmos exercícios, mesma ordem. A história é um aviso do Hank: amanhã chega a entrega grande de grãos, cedo, e ele precisa saber quem já estará de pé. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|
@@ -136,7 +136,7 @@ Para quando o V2 sair fora de 28/01–02/02/2027. Mesmos exercícios, mesma orde
 **Exercícios:**
 1. **Ouça e reconheça**, em 2 rodadas:
    - "qual despertador?": a voz diz uma frase e o aluno escolhe o despertador (7 × 11);
-   - "grudou o t?": "get up" grudado ("ge-tâp") e com vogal no meio ("guéti âp"), uma vez cada.
+   - "grudou o t?": "get up" grudado ("gué-râp") e com vogal no meio ("guéti âp"), uma vez cada.
 2. **Personalize**, em 2 rodadas: (1) escolher o despertador que é verdade para você (5, 6, 7, 8 ou 9) e dizer a frase; (2) o Hank pergunta "When do you get up?" e você responde a verdade.
 
 **Por que estes:** ouvir o número depois do "at" é o que separa "sete" de "onze" numa conversa real; a ligação "ge-tâp" é o que faz a frase soar inglesa. A personalização obriga a dizer uma rotina verdadeira (Talking about you, Headway), que é o que fixa.

@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 10 · "I have a question." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Fecha o bloco **"O mundo vem ao café"** da grade (`grade-t2.md` §5).
 
@@ -20,7 +20,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Datas do hype:** pela grade, V1 em 28/01/2027 (qui), V2 em 29/01 (sex), V3 em 30/01 (sáb). Hype atemporal: a noite de quiz no bar ("trivia night"), costume comum em bares dos EUA e do Reino Unido ("pub quiz").
 
-**Janela do hype:** qualquer data (hype atemporal). A V2 RESERVA ("a visita guiada") existe para o caso de o bar do Mike não caber (por exemplo, se o V2 do assunto 8 tiver ido ao ar na reserva do café e o bar ainda não tiver aparecido na T2).
+**Janela do hype:** qualquer data (hype atemporal). A V2 RESERVA ("a visita guiada") existe para o caso de o bar do quiz não caber (por exemplo, se o V2 do assunto 8 tiver ido ao ar na reserva do café e o bar ainda não tiver aparecido na T2).
 
 **Revisão:** o Bolinha devolve "I like pizza." (T2, assunto 6, 16–18/01: 12 a 14 dias antes) no V3, com o texto "lembra dessa?". "How do you spell it?" (T1, assunto 8) volta na 2ª rodada do V2. O "a" de "It's a…" (T1, assunto 15) volta no V1.
 
@@ -35,7 +35,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | V3 | `Ep. 30 (parte 3/3) · o que ela tem?` | `anterior: Ep. 30 (parte 2/3)` |
 | Cortes | `do Ep. 30 · …` | `anterior: Ep. 30 (parte X/3)` de onde saiu |
 
-**Vozes:** Capy, Lazy, Hank, Duda, Poppy, Bolinha. Figurante com voz (speaker `turista`, Orus): o Mike, só no V2 (apresentador do quiz do bar dele). O Ned (coala) vai ao quiz **sem voz** (um figurante com voz por vídeo). No V1 e no V3 não há figurante com voz. A Dona Jaca não aparece (ela esteve no V2 do assunto 9).
+**Vozes:** Capy, Lazy, Hank, Duda, Poppy, Bolinha. Figurante com voz (speaker `turista`, Orus): o Mike, só no V2 (apresentador convidado do quiz do bar; ele é cliente do bar, não dono). O Ned (coala) vai ao quiz **sem voz** (um figurante com voz por vídeo). No V1 e no V3 não há figurante com voz. A Dona Jaca não aparece (ela esteve no V2 do assunto 9).
 
 **Legenda e regras:** as mesmas da T2. Perguntas do quiz com resposta verdadeira e conferível (ver Cultura conferida no V2). Sem marca, sem prêmio em dinheiro, bebida sem destaque.
 
@@ -75,7 +75,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "noite de quiz no bar" · parte 2/3 · ~66 s
 
-**Hype de exemplo:** a noite de quiz em bar ("trivia night"), costume comum em bares dos EUA (e o "pub quiz" do Reino Unido): times pequenos, um apresentador lendo perguntas, respostas no papel, celular proibido. No bar do Mike (o dos assuntos 3 e 4 da T1 e do 8 da T2), com o Mike de apresentador. **Sem:** marca, prêmio em dinheiro, bebida em destaque, pergunta sobre pessoa real, time, filme ou música.
+**Hype de exemplo:** a noite de quiz em bar ("trivia night"), costume comum em bares dos EUA (e o "pub quiz" do Reino Unido): times pequenos, um apresentador lendo perguntas, respostas no papel, celular proibido. No bar dos assuntos 3 e 4 da T1 e do 8 da T2, com o Mike de apresentador convidado. **Sem:** marca, prêmio em dinheiro, bebida em destaque, pergunta sobre pessoa real, time, filme ou música.
 
 **Quem traz o hype:** o Ned (que convidou; sem voz neste vídeo) e o Mike (apresentador, com voz). A Poppy filma.
 
@@ -87,7 +87,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre num microfone batendo** (tum, tum) e numa lousa atrás: "TRIVIA NIGHT · TEAMS OF 5". Texto: **"noite de quiz no bar do Mike. tudo em inglês."** | — | microfone |
+| 1 | 0–2 s | **Abre num microfone batendo** (tum, tum) e numa lousa atrás: "TRIVIA NIGHT · TEAMS OF 5". Texto: **"noite de quiz no bar. o Mike apresenta. tudo em inglês."** | — | microfone |
 | 2 | 2–5 s | A Poppy filma a mesa do time: Capy, Duda, Lazy e o Ned, de casaco | Poppy PT: "Gente, quiz em bar é programa comum aqui. E o prêmio é pizza!" | — |
 | 3 | 5–8 s | O Mike, no microfone, fala rápido. A Capy segura a caneta no ar (objetivo por cima da ação) | Mike EN: "No phones! Write it down! Ready?" · Capy (pensa) PT: "Rápido demais. Eu não entendi a regra." | — |
 | 4 | 8–11 s | O Lazy, apoiado na mesa, cochicha o lembrete | Lazy EN: ⭐ "I... have... a... question." | vvv |
@@ -96,15 +96,15 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 7 | 16–19 s | **Resposta**, de mão levantada | Capy EN: ⭐ "I have a question!" | vvv |
 | 8 | 19–22 s | O Mike aponta a Capy, simpático | Mike EN: "Sure!" · Capy EN: "Phones?" · Mike EN: "No phones. Sorry!" | risada |
 | 9 | 22–27 s | Pergunta 5, na lousa: "what color is a polar bear's skin?". O Ned escreve rápido: "BLACK". O Mike, um urso, bate no peito | Duda PT: "Preta? A pele do urso-polar é preta?" · Mike EN: "Correct, team five!" | acerto |
-| 10 | 27–30 s | **2ª rodada:** pergunta 6, no microfone | Mike EN: "Question six. Name a marsupial!" · Capy (pensa) PT: "Mar... o quê? Como escreve isso?" · Tela: **"de novo: você é a Capy · levanta a mão"** · ⏸ 0,6 s | — |
+| 10 | 27–30 s | **2ª rodada:** pergunta 6, no microfone | Mike EN: "Question six. Name a marsupial!" · Capy (pensa) PT: "Marsupial... canguru! Mas como escreve canguru em inglês?" · Tela: **"de novo: você é a Capy · levanta a mão"** · ⏸ 0,6 s | — |
 | 11 | 30–33 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
-| 12 | 33–37 s | **Resposta**, e a pergunta da T1 logo em seguida | Capy EN: ⭐ "I have a question." · Capy EN: "How do you spell it?" · Mike EN: "M-A-R-S..." | vvv |
-| 13 | 37–40 s | O Ned, sem dizer nada, aponta para si mesmo com as duas patas. O time inteiro olha para ele e escreve "KOALA" | Duda PT: "Ele é a resposta." | risada |
+| 12 | 33–37 s | **Resposta**, e a pergunta da T1 logo em seguida | Capy EN: ⭐ "I have a question." · Capy EN: "How do you spell 'kangaroo'?" · Mike EN: "Nice try!" | vvv |
+| 13 | 37–40 s | O Ned, sem dizer nada, aponta para si mesmo com as duas patas. O time inteiro olha para ele e escreve "KOALA" | Duda PT: "Ele é a resposta. E é fácil de escrever." | risada |
 | 14 | 40–44 s | A Duda levanta a mão | Duda EN: ⭐ "I have a question." · Duda EN: "Pizza break?" · Mike EN: "After round two!" | — |
 | 15 | 44–49 s | O Lazy acorda e levanta a mão, beeem devagar | Lazy EN: ⭐ "I... have... a question." · Lazy EN: "Snacks?" · Mike EN: "Same answer!" | risada |
 | 16 | 49–53 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você pediu a palavra duas vezes num quiz em inglês" + **consigo ✓** | Capy PT: "Perguntei a regra. Perguntei a letra. E acertamos!" | acerto |
 | 17 | 53–60 s | **Gancho verdadeiro:** o Mike bate no microfone. Na lousa, a última pergunta: "what time does the groundhog get up?". O time se olha; ninguém sabe | Mike EN: "Last question!" · Capy (pensa) PT: "A marmota eu não sei. E eu nem sei dizer a que horas EU acordo." · Texto: **"próximo assunto: I get up at seven."** (só se o assunto 11 estiver agendado) | microfone |
-| 18 | 60–66 s | Card: "aula do assunto 30 no perfil · segue a Capy" | — | — |
+| 18 | 60–66 s | Card: "aula do Ep. 30 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy ×2, Capy ×2, Duda), em 3 bocas. A última é do Lazy. O aluno fala 2×. "How do you spell it?" é revisão (T1-8); "Ready?", "Sure!", "Pizza break?", "Snacks?" e as perguntas do quiz são apoio.
 
@@ -112,7 +112,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "a visita guiada" · ~66 s
 
-Para quando o bar do Mike não couber (ver Janela). Mesmos exercícios, mesma ordem. O Ned leva o grupo numa visita guiada a pé pela cidade, na neve, e a guia (figurante com voz, speaker `turista`: uma raposa de casaco vermelho) termina com um mini-quiz. O Mike não aparece. Mudam só estas cenas:
+Para quando o bar do quiz não couber (ver Janela). Mesmos exercícios, mesma ordem. O Ned leva o grupo numa visita guiada a pé pela cidade, na neve, e a guia (figurante com voz, speaker `turista`: uma raposa de casaco vermelho) termina com um mini-quiz. O Mike não aparece. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|
@@ -181,7 +181,7 @@ Para quando o bar do Mike não couber (ver Janela). Mesmos exercícios, mesma or
 | Quem diz a última ⭐ | Hank | Lazy | Bolinha | Capy nunca ✓ |
 | O aluno fala | 1 | 2 | 2 | **5** |
 | Reconhecimentos | — | — | 2 | 2 |
-| Revisão | "It's a…" (T1-15) | "How do you spell it?" (T1-8), o bar do Mike | "I like pizza." (T2-6, Bolinha), "a phone" na contingência (T1-15) | ✓ |
+| Revisão | "It's a…" (T1-15) | "How do you spell it?" (T1-8), o bar do jogo | "I like pizza." (T2-6, Bolinha), "a phone" na contingência (T1-15) | ✓ |
 | Primeiros 3 s | mão levantada parada no café | microfone batendo + lousa | mão levantada × celular | variam ✓ |
 | Gancho verdadeiro no fim | — | a marmota → assunto 11 (se agendado) | próximo assunto (se agendado) | |
 

@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 4 · "It's Mike's." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Quarto assunto da T2 (`grade-t2.md`).
 
@@ -20,7 +20,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Datas do hype:** pela grade, V1 em 10/01/2027 (dom), V2 em 11/01 (seg), V3 em 12/01 (ter). A história do V2 é a manhã de segunda depois da última rodada da temporada regular do futebol americano (domingo, 10/01/2027; fonte na grade §3), que o Bean There passou na TV.
 
-**Janela do hype:** V2 "a manhã depois do último jogo" só se for ao ar entre 10 e 17/01/2027; senão, V2 RESERVA ("a caixa de achados").
+**Janela do hype:** V2 "a manhã depois do último jogo" só se for ao ar entre 10 e 15/01/2027; senão, V2 RESERVA ("a caixa de achados").
 
 **Revisão:** o Bolinha devolve "It's three o'clock." (T1, assunto 20, 12 a 14 vídeos antes, contando 1 por dia) no V3, com o texto "lembra dessa?": o mesmo "It's", agora com dono. "It's a…" (T1-15) volta numa fala cinza do V1.
 
@@ -54,7 +54,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 1 | 0–2 s | **Abre no cachecol vermelho subindo**, pendurado na pinça de pão do Hank, que segura de longe. Texto: **"alguém esqueceu isso no dia de neve."** | — | pinça |
 | 2 | 2–5 s | O Hank olha o cachecol e olha a Capy (cinza: só ouvir) | Hank EN: "Whose is this?" | — |
 | 3 | 5–8 s | O Lazy, no sofá, aponta o cachecol com o queixo (objetivo por cima da ação) | Lazy PT: "Hoje você diz de quem é uma coisa. Um 's resolve." | — |
-| 4 | 8–10 s | A Duda, que não estava no dia de neve, olha o cachecol (cinza: revisão do "It's a…", assunto 15) | Duda EN: "It's a scarf." | — |
+| 4 | 8–10 s | A Duda olha o cachecol (cinza: revisão do "It's a…", assunto 15) | Duda EN: "It's a scarf." | — |
 | 5 | 10–15 s | O Lazy aponta o cachecol e depois a porta, por onde o Mike saiu ontem, bem devagar | Lazy EN: ⭐ "It's... Mike's." · legenda EN + PT: "É do Mike." | clic |
 | 6 | 15–19 s | Na tela, **a etiqueta no cabide**: "Mike" em cima, o 's como ganchinho prendendo no cachecol. Embaixo, pequeno: "It's of Mike" aparece e é riscado (só escrito) | Lazy PT: "Em inglês, o dono vem primeiro. E ganha um 's." | cabide |
 | 7 | 19–23 s | Close na boca do Lazy no fim de "Mike's", com o **ícone da tampa do copo fechando**. Na tela, "máiquis" aparece e é riscado (só escrito) | Lazy PT: "Cola o s no Mike. Máiks. Sem o 'i' no meio." | clic |
@@ -64,7 +64,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 11 | 31–35 s | **Sozinho:** a Capy levanta o cachecol e fica em silêncio | 🎤 **SUA VEZ** ("It's Mike's.") | trilha em zero |
 | 12 | 35–38 s | **Para conferir:** a Poppy, que estava na fila do dia de neve, reconhece o cachecol | Poppy EN: ⭐ "It's Mike's!" | acerto baixinho |
 | 13 | 38–42 s | Balão do Hank ao fundo, ainda com a pinça | Hank PT: "Saiu 'máiquis'? Dá pra entender. Colado, fica mais inglês." | — |
-| 14 | 42–45 s | O Hank, que estava na máquina e não viu o Mike tirar o cachecol, pergunta de novo, para a Capy | Hank EN: "Whose is this?" | — |
+| 14 | 42–45 s | Uma cliente fixa (sem voz), de gorro, vê o cachecol na pinça do Hank e mostra um balão só em texto: "whose is this?" | — | — |
 | 15 | 45–48 s | A Capy, segura | Capy EN: ⭐ "It's Mike's!" · Hank EN: "Lost and found." · o Hank solta o cachecol na caixa de achados | clic, caixa |
 | 16 | 48–53 s | **Piada:** o Lazy já tirou o cachecol da caixa e se enrolou nele no sofá. A Duda: "Lazy!" | Lazy EN (sem abrir os olhos): ⭐ "It's... Mike's." · Lazy PT: "Eu só tô guardando. Quentinho." | risada |
 | 17 | 53–57 s | ⭐ **VITÓRIA DO DIA**: a etiqueta "Mike's" balança no cachecol. Card "1º 'de quem é' em inglês". Selo: **"T2 E04 · você já sabe 24 frases"** | Capy PT: "Disse de quem é. Agora é só ele voltar." | acerto |
@@ -111,7 +111,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "a caixa de achados" · ~66 s
 
-Para quando o V2 sair fora de 10–17/01/2027. Mesmos exercícios, mesma ordem. Sem jogo: o Bean There fez a limpeza da caixa de achados do mês, e quase tudo é do Mike. O convite do fim vira "jogos na casa dele" no fim de semana prolongado, sem data. Mudam só estas cenas:
+Para quando o V2 sair fora de 10–15/01/2027. Mesmos exercícios, mesma ordem. Sem jogo: o Bean There fez a limpeza da caixa de achados do mês, e quase tudo é do Mike. O convite do fim vira "jogos na casa dele" no fim de semana prolongado, sem data. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|
@@ -148,7 +148,7 @@ Para quando o V2 sair fora de 10–17/01/2027. Mesmos exercícios, mesma ordem. 
 | 8 | 20–23 s | "em qual o s colou?" + contador | ⏸ 3 s | trilha em zero |
 | 9 | 23–27 s | **Resposta:** a 1ª tampa faz clic | Lazy PT: "Na primeira." · Lazy EN: ⭐ "It's Mike's." | clic |
 | 10 | 27–30 s | | Hank PT: "A segunda também dá pra entender. A primeira é mais inglês." | — |
-| 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** + 3 cartões: "Mom's", "Dad's" e um em branco "(nome)'s". A Capy aponta o boné do Mike no cabide | Capy EN: ⭐ "It's Mike's." · Capy PT: "Agora pensa numa coisa da sua casa que não é sua. De quem é?" | clic |
+| 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** + 3 cartões: "Mom's", "Dad's" e um em branco "(nome)'s" + texto pequeno: "ou de quem mora com você". A Capy aponta o boné do Mike no cabide | Capy EN: ⭐ "It's Mike's." · Capy PT: "Agora pensa numa coisa da sua casa que não é sua. De quem é?" | clic |
 | 12 | 34–38 s | **Personalize 1:** os cartões piscam | 🎤 **SUA VEZ** ("It's Mom's." / "It's Dad's." / "It's…" + nome + 's) | trilha em zero |
 | 13 | 38–41 s | **Para conferir**, rápido: a Duda segura o avental e depois a luva gigante que ela achou ontem | Duda EN: "It's Hank's." · Duda EN: ⭐ "It's Mike's." | acerto |
 | 14 | 41–44 s | **Personalize 2:** o Hank se inclina para a câmera e aponta o canto da tela, como se visse uma coisa aí do seu lado. Tela: "uma coisa perto de você que é de outra pessoa" | Hank EN: "Whose is this?" | — |

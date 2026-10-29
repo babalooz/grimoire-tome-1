@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 2 · "Her name is Duda." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Segundo assunto da T2 (`grade-t2.md`).
 
@@ -112,7 +112,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "o dia da entrega" · ~66 s
 
-Para quando o V2 sair fora de 02–17/01/2027. Mesmos exercícios, mesma ordem. A história acontece no Bean There, no dia em que chegam 20 sacos de café e a Duda carrega quase todos sozinha. Figurante com voz: um turista (um castor de boné de beisebol, speaker `turista`) no lugar do treinador. Mudam só estas cenas:
+Para quando o V2 sair fora de 02–17/01/2027. Mesmos exercícios, mesma ordem. A história acontece no Bean There, no dia em que chegam 20 sacos de café e a Duda carrega quase todos sozinha. Figurante com voz: um turista (um guaxinim de boné de beisebol, speaker `turista`) no lugar do treinador. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|

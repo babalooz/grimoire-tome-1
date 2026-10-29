@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 6 · "I like pizza." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Abre o bloco **"Playoffs"** da grade (`grade-t2.md` §5).
 
@@ -106,7 +106,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 16 | 45–49 s | A Duda prova a borda no ranch, fecha os olhos e cede | Duda EN: ⭐ "I like pizza." · Duda PT: "Mas não conta pra Itália." | risada |
 | 17 | 49–53 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você disse do que gosta numa festa americana" + **consigo ✓** | Capy PT: "Disse duas vezes. E comi três." | acerto |
 | 18 | 53–60 s | **Gancho verdadeiro:** a Poppy aparece com uma sacola de papel: uma garrafa escura e dois potinhos fechados, com etiquetas escritas à mão em inglês (sem marca) | Poppy PT: "Trend nova: comida americana estranha. E você vai provar." · Capy (pensa) PT: "E se eu não gostar? Como diz isso?" · Texto: **"próximo assunto: I don't like it."** (só se o assunto 7 estiver agendado) | sacola |
-| 19 | 60–66 s | Card: "aula do assunto 26 no perfil · segue a Capy" | — | — |
+| 19 | 60–66 s | Card: "aula do Ep. 26 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Mike, Duda), em 4 bocas. A última é da Duda. O aluno fala 2×. "Do you like pizza?" é a pergunta (cinza); "Me too!" e "Ranch! Try it!" são apoio.
 
@@ -134,7 +134,7 @@ Para quando o V2 sair fora de 16–24/01/2027. Mesmos exercícios, mesma ordem. 
 1. **Ouça e reconheça**, em 2 rodadas:
    - "do que ela gosta?": a voz diz uma frase e o aluno escolhe a imagem (fatia de pizza × xícara de café);
    - "fechou no k?": "like" fechado e "láiki", uma vez cada.
-2. **Personalize**, em 2 rodadas: (1) escolher o cartão de uma coisa de que você gosta (pizza, chocolate, café) e dizer a frase; (2) o Hank pergunta "Pizza?" e você responde a verdade.
+2. **Personalize**, em 2 rodadas: (1) escolher o cartão de uma coisa de que você gosta (pizza, chocolate, café) e dizer a frase; (2) o Hank pergunta "Do you like pizza?" e você responde a verdade.
 
 **Por que estes:** a 1ª rodada obriga a ouvir a palavra depois do "like" (é ali que mora a informação); a 2ª treina o fim do "like", que é o erro do brasileiro. A personalização faz a frase ser verdade para o aluno, o que fixa (Talking about you, Headway).
 
@@ -153,7 +153,7 @@ Para quando o V2 sair fora de 16–24/01/2027. Mesmos exercícios, mesma ordem. 
 | 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** + 3 cartões: pizza, chocolate, coffee (com desenho) | Capy EN: ⭐ "I like pizza." · Capy PT: "Escolhe um que você gosta e fala inteiro." | — |
 | 12 | 34–38 s | **Personalize 1:** os cartões piscam | 🎤 **SUA VEZ** ("I like…" + o cartão) | trilha em zero |
 | 13 | 38–41 s | **Para conferir**, rápido: o cartão do chocolate acende, depois o da pizza | Duda EN: "I like chocolate." · Duda EN: ⭐ "I like pizza." | acerto |
-| 14 | 41–44 s | **Personalize 2:** o Hank olha para a câmera, com uma fatia num prato, sem oferecer de verdade | Hank EN: "Pizza?" | — |
+| 14 | 41–44 s | **Personalize 2:** o Hank olha para a câmera, com uma fatia num prato, sem oferecer | Hank EN: "Do you like pizza?" | — |
 | 15 | 44–48 s | Balão vazio. Tela: "responde a verdade · não curte pizza? fala de outra coisa: I like coffee." | 🎤 **SUA VEZ** ("I like pizza." ou "I like…") | trilha em zero |
 | 16 | 48–50 s | O Hank guarda a fatia para ele | Hank EN: "Noted." | — |
 | 17 | 50–55 s | O Bolinha enche as bochechas, com a foto da Duda presa na parede atrás. Texto: **"lembra dessa?"** | Bolinha EN: "Her name is Duda." · Bolinha EN: ⭐ "I like pizza." · Bolinha PT: "A Duda e a pizza. Guardei as duas juntas." | — |

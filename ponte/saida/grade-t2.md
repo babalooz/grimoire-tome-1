@@ -26,12 +26,12 @@ Legenda das colunas: **#** = tópico do consenso (§3) · **Revisa da T1** = o q
 | 3 | **"Two coffees, please."** | #13 (plural) | pedir mais de uma coisa | "A coffee, please." (17), números (4) | o -s do plural em /z/: "cófiz", sem "cófisi" |
 | 4 | **"It's Mike's."** | #16 ('s) | dizer de quem é uma coisa | "It's a phone." (15), "This is my mother." (18) | o 's colado: "máiks", sem "máiquis" |
 | 5 | **"See you on Monday!"** | #17 (dias) | combinar um dia | "Bye! See you!" (2) | "Monday" = "MÂN-dei" (o "o" soa "â"; tônica no começo) |
-| 6 | **"I like pizza."** | #18 + #20 (comida + presente simples, I) | dizer do que gosto | "A coffee, please." (17), a pizza do "It's a pizza!" (15) | "like" fecha no k, sem "láiki" (o brasileiro já diz "pítsa": vira vitória fácil, não aula) |
+| 6 | **"I like pizza."** | #18 + #20 (comida + presente simples, I) | dizer do que gosto | "A coffee, please." (17), a pizza do "It's a pizza!" (15) | "like" fecha no k, sem "láiki" (o "pítsa" o brasileiro já diz certo: vira vitória de graça, não aula) |
 | 7 | **"I don't like it."** | #20 (negativa) | dizer do que não gosto | "I like pizza." (T2-6), "It's…" (15) | "don't" = "dount", t final quase mudo |
 | 8 | **"Yes, I do."** | #20 (pergunta + resposta curta) | responder sim a uma pergunta sobre gosto | "Yes, I am." (10): am × do | entonação: "Do you like…?" sobe; "Yes, I do." desce |
 | 9 | **"I live in Brazil."** | #20 (live) | dizer onde moro | "I'm from Brazil." (5): from × live | "live" com i curto (/ɪ/), não "liv" de "leave" (§8) |
 | 10 | **"I have a question."** | #20 (have) | dizer que tenho algo / pedir a palavra | "How do you spell it?" (8), o "a" (15, 19) | "have" fecha no v (lábio no dente), sem "hévi" |
-| 11 | **"I get up at seven."** | #24 (rotina + at + hora) | dizer a hora em que faço algo | "It's three o'clock." (20), números (4) | ligação: "ge-tâp" (o t encosta no "up") |
+| 11 | **"I get up at seven."** | #24 (rotina + at + hora) | dizer a hora em que faço algo | "It's three o'clock." (20), números (4) | ligação "gué-râp": o t do get encosta no up e, no inglês americano, vira um toque rápido, quase o r de "caro" (sem "guéti âp") |
 | 12 | **"I always drink coffee."** | #24 (frequência) | dizer com que frequência faço algo | "I like…" (T2-6) | "always" = "ÓL-ueiz": L de verdade antes do w (colherzinha "tlim", assunto 13) |
 | 13 | **"He likes tea."** | #25 (presente simples he/she) | dizer do que outra pessoa gosta | "I like…" (T2-6), "She's from Italy." (6) | o -s de "likes" em /s/: "laiks", sem "laiquis" |
 | 14 | **"I love it!"** | #22 (love) | dizer que adoro algo | "I don't like it." (T2-7): a escala don't like → like → love | "love" = "lâv", fecha no v |
@@ -55,10 +55,11 @@ Conferidas na busca em 29/10/2026 (fontes no fim). O que não está com fonte é
 | 1/1 (sex) | Ano-Novo ("Happy New Year!", contagem regressiva) | sim | assunto 1 (V1 1/1, V2 2/1) |
 | 1ª–2ª semana de jan. | Resolução de Ano-Novo: academia lotada ("new year, new me") | sim | assunto 2 (V2 5/1) |
 | dez.–fev. | Inverno americano, "snow day" (escola e escritório fecham por neve) | sim | assunto 3 (V2 8/1) |
-| 10/1 (dom) | Última rodada da temporada regular da NFL | sim | assunto 4 (V2 11/1) |
-| 16–18/1 (sáb–seg) | Wild Card dos playoffs da NFL, com jogo na **segunda** 18/1 | sim | assuntos 5 (V2 14/1) e 6 (V2 17/1) |
+| 9–10/1 (sáb–dom) | Última rodada da temporada regular da NFL (anúncio da NFL) | sim | assunto 4 (V2 11/1) |
+| 16–18/1 (sáb–seg) | Wild Card dos playoffs, com jogo na segunda 18/1 (dedução: a NFL ainda não publicou; é sempre o fim de semana seguinte à última rodada) | sim | assuntos 5 (V2 14/1) e 6 (V2 17/1) |
+| 18/1 (seg) | Martin Luther King Jr. Day (feriado federal, 3ª segunda de janeiro) | sim | reforça a folga e o jogo de segunda do assunto 5 |
 | 21/1 (qui) | Anúncio dos indicados ao Oscar | não usado (sem frase que puxe) | — |
-| 23–24/1 | Rodada divisional da NFL ("football" × "soccer") | sim | assunto 8 (V2 23/1) |
+| 23–24/1 | Rodada divisional (dedução pelo mesmo padrão) | sim | assunto 8 (V2 23/1) |
 | 26/1 (ter) | Australia Day (turista australiano longe de casa) | sim | assunto 9 (V2 26/1) |
 | 31/1 (dom) | Finais de conferência da NFL | não usado | — |
 | 2/2 (ter) | Groundhog Day (a marmota de Punxsutawney sai de manhã cedo) | sim | assunto 11 (V2 1/2, V3 2/2) |
@@ -82,18 +83,18 @@ Sitcom = 1 vídeo ≥ 61 s por dia (V1, V2, V3 em dias seguidos), como na T1. Co
 | 1 · I'm not tired. | 01/01 sex | 02/01 sáb | 03/01 dom | festa de Ano-Novo do Mike / plantão da noite no café | até 03/01 |
 | 2 · Her name is Duda. | 04/01 seg | 05/01 ter | 06/01 qua | academia lotada de janeiro / turista no café | 02–17/01 |
 | 3 · Two coffees, please. | 07/01 qui | 08/01 sex | 09/01 sáb | snow day: café lotado / ônibus de turistas | 01/12–28/02 |
-| 4 · It's Mike's. | 10/01 dom | 11/01 seg | 12/01 ter | manhã depois da última noite de jogo / achados do café | 10–17/01 |
+| 4 · It's Mike's. | 10/01 dom | 11/01 seg | 12/01 ter | manhã depois da última noite de jogo / achados do café | 10–15/01 |
 | 5 · See you on Monday! | 13/01 qua | 14/01 qui | 15/01 sex | fim de semana de playoffs com jogo na segunda / escala de turnos | 11–18/01 |
 | 6 · I like pizza. | 16/01 sáb | 17/01 dom | 18/01 seg | festa do jogo dos playoffs / noite de pizza no café | 16–24/01 |
 | 7 · I don't like it. | 19/01 ter | 20/01 qua | 21/01 qui | trend gringa de provar comida americana (atemporal) / cliente gringo prova pão de queijo | qualquer |
 | 8 · Yes, I do. | 22/01 sex | 23/01 sáb | 24/01 dom | rodada divisional: "football" × "soccer" / TV do café | 22–25/01 |
-| 9 · I live in Brazil. | 25/01 seg | 26/01 ter | 27/01 qua | Australia Day: turista australiano / turista com mapa | 24–27/01 |
+| 9 · I live in Brazil. | 25/01 seg | 26/01 ter | 27/01 qua | Australia Day: turista australiano / turista com mapa | 26–27/01 |
 | 10 · I have a question. | 28/01 qui | 29/01 sex | 30/01 sáb | noite de quiz no bar (atemporal) / visita guiada | qualquer |
-| 11 · I get up at seven. | 31/01 dom | 01/02 seg | 02/02 ter | véspera do Groundhog Day / turno da madrugada | 28/01–02/02 |
+| 11 · I get up at seven. | 31/01 dom | 01/02 seg | 02/02 ter | véspera do Groundhog Day / turno da madrugada | 28/01–01/02 |
 | 12 · I always drink coffee. | 03/02 qua | 04/02 qui | 05/02 sex | superstições da semana do Super Bowl / a rotina do Hank | 01–14/02 |
 | 13 · He likes tea. | 06/02 sáb | 07/02 dom | 08/02 seg | trend gringa "adivinha o pedido dele" (atemporal) / cliente fixo | qualquer |
-| 14 · I love it! | 09/02 ter | 10/02 qua | 11/02 qui | o Mike testa o cardápio da festa do Super Bowl / bolo novo do Hank | 01–14/02 |
-| 15 · These are for you. | 12/02 sex | 13/02 sáb | 14/02 dom | Valentine's + Super Bowl no mesmo domingo / biscoitos do Hank | 07–14/02 |
+| 14 · I love it! | 09/02 ter | 10/02 qua | 11/02 qui | o Mike testa o cardápio da festa do Super Bowl / bolo novo do Hank | 08–13/02 |
+| 15 · These are for you. | 12/02 sex | 13/02 sáb | 14/02 dom | Valentine's + Super Bowl no mesmo domingo / biscoitos do Hank | 08–13/02 |
 | 16 · There's a problem. | 15/02 seg | 16/02 ter | 17/02 qua | viagem de carro do Presidents' Day: o carro do Mike quebra / máquina do café | 13–21/02 |
 | 17 · Where's the restroom? | 18/02 qui | 19/02 sex | 20/02 sáb | posto de estrada americano (atemporal) / turista no café | qualquer |
 | 18 · I'd like a coffee. | 21/02 dom | 22/02 seg | 23/02 ter | diner de estrada americano (atemporal) / cliente novo no café | qualquer |
@@ -102,7 +103,7 @@ Sitcom = 1 vídeo ≥ 61 s por dia (V1, V2, V3 em dias seguidos), como na T1. Co
 
 **Compilações de domingo (YouTube):** 03/01, 10/01, 17/01, 24/01, 31/01, 07/02, 14/02, 21/02, 28/02 (cada uma com os 7 vídeos da semana, com capítulos). **Revise & Check** (EF) na compilação de 24/01 (assuntos 1–8), 14/02 (9–15) e 28/02 (16–20), sem vídeo novo.
 
-**Folga do portão:** se a fila escorregar 1 ou 2 dias (reescrita do juiz), os V2 com janela curta (1, 4, 5, 8, 9, 11) caem na reserva automaticamente. O calendário não muda.
+**Folga do portão:** se a fila escorregar 1 ou 2 dias (reescrita do juiz), os V2 com janela curta (1, 4, 5, 8, 9, 11, 14, 15) caem na reserva automaticamente. O calendário não muda.
 
 ## 5. O arco da T2 (continuidade de personagens)
 
@@ -167,6 +168,7 @@ A T1 terminou na véspera de Natal, na casa do Mike, com a Dona Jaca em visita (
 ## Fontes (consultadas em 29/10/2026)
 - Super Bowl LXI em 14/2/2027, SoFi Stadium, e 1ª vez no Valentine's Day: [Fox LA](https://www.foxla.com/news/2027-super-bowl-lxi-sofi-staduim-los-angeles), [fbschedules](https://fbschedules.com/super-bowl-lxi-to-be-played-at-sofi-stadium-in-los-angeles/), [Sunday Guardian](https://sundayguardianlive.com/sports/when-is-super-bowl-2027-date-kickoff-time-sofi-stadium-and-historic-broadcast-details-for-super-bowl-lxi-281163/).
 - Playoffs da NFL 2027 (Wild Card 16–18/1 com jogo na segunda, divisional 23–24/1, conferência 31/1, fim da temporada regular 10/1): [fbschedules, NFL Playoff Schedule](https://fbschedules.com/nfl/nfl-playoffs-schedule.php), [Legion Report](https://legionreport.com/?p=38989).
-- Oscar 2027 em 14/3/2027, indicados em 21/1/2027: [press.oscars.org](https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr), [TheWrap](https://www.thewrap.com/creative-content/movies/academy-sets-2027-and-2028-oscars-dates/).
-- Cálculo de calendário (sem fonte externa): Ano-Novo 1/1 (sex), Australia Day 26/1, Groundhog Day 2/2, Presidents' Day = 3ª segunda de fevereiro (15/2), St. Patrick's 17/3, Páscoa 28/3/2027, Carnaval 9/2/2027.
-- Não verificado: datas da NBA 2027, Grammy 2027.
+- Última rodada da temporada regular da NFL em 9–10/1/2027: anúncio da NFL, "2026 NFL schedule announced" (https://edge-operations.nfl.com/updates/the-game/2026-nfl-schedule-announced/).
+- Oscar 2027 em 14/3/2027, indicados em 21/1/2027: [press.oscars.org](https://press.oscars.org/news/academy-and-abc-announce-show-dates-99th-and-100th-oscarsr), [TheWrap](https://www.thewrap.com/creative-content/movies/academy-sets-2027-and-2028-oscars-dates/); comunicado da Academy e da ABC (abc.com).
+- Cálculo de calendário (sem fonte externa): Ano-Novo 1/1 (sex), Australia Day 26/1, Groundhog Day 2/2, Martin Luther King Jr. Day 18/1, Presidents' Day = 3ª segunda de fevereiro (15/2), St. Patrick's 17/3, Páscoa 28/3/2027, Carnaval 9/2/2027.
+- Não verificado: datas da NBA 2027, Grammy 2027; datas oficiais do Wild Card, da rodada divisional e das finais de conferência de 2027 (dedução, não anunciadas).

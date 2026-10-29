@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 8 · "Yes, I do." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Fecha o bloco **"Playoffs"** da grade (`grade-t2.md` §5).
 
@@ -20,7 +20,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Datas do hype:** pela grade, V1 em 22/01/2027 (sex), V2 em 23/01 (sáb), V3 em 24/01 (dom). Rodada divisional dos playoffs da NFL: 23–24/01/2027 (fonte na grade, §3: fbschedules e Legion Report, consultados em 29/10/2026).
 
-**Janela do hype:** V2 "a rodada dos playoffs no bar do Mike" só se for ao ar entre 22 e 25/01/2027; senão, V2 RESERVA ("o jogo na TV do café").
+**Janela do hype:** V2 "a rodada dos playoffs no bar" só se for ao ar entre 22 e 25/01/2027; senão, V2 RESERVA ("o jogo na TV do café").
 
 **Revisão:** o Bolinha devolve "It's Mike's." (T2, assunto 4, 10–12/01: 12 a 14 dias antes) no V3, com o texto "lembra dessa?". "Are you…? Yes, I am." (T1, assunto 10) volta no V1 e no V3 como contraste. A compilação de domingo 24/01 traz o **Revise & Check** dos assuntos 1–8 (grade §4), sem vídeo novo.
 
@@ -64,8 +64,8 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 11 | 31–35 s | **Sozinho:** a Capy aponta para a câmera e fica em silêncio | 🎤 **SUA VEZ** ("Yes, I do.") | trilha em zero |
 | 12 | 35–38 s | **Para conferir:** o Mike vira para a Duda, que nunca falou de esporte com ele | Mike EN: "Duda? Football?" · Duda EN: ⭐ "Yes, I do!" | acerto baixinho |
 | 13 | 38–42 s | Balão do Hank, que finalmente devolve a bola com o pé | Hank PT: "Subiu no fim? Parece dúvida. Descendo, é certeza." | — |
-| 14 | 42–45 s | A Capy, agora sim, para o Mike | Capy EN: ⭐ "Yes, I do!" · Mike EN: "Great! My bar! Saturday!" | — |
-| 15 | 45–48 s | **Piada:** o Mike joga a bola oval para a Capy; ela pega, vira a bola na mão, desconfiada. A Duda olha por cima do ombro dela | Capy (pensa) PT: "Por que a bola dele é... oval?" · Duda PT: "Hm." | quique |
+| 14 | 42–45 s | A Capy, agora sim, para o Mike | Capy EN: ⭐ "Yes, I do!" · Mike EN: "Great! Saturday, at the bar!" | — |
+| 15 | 45–48 s | **Piada:** o Mike joga a bola oval para a Capy; ela pega, vira a bola na mão e entende. A Duda olha por cima do ombro dela | Capy (pensa) PT: "Peraí. Football, pra ele, é o da bola oval?" · Duda PT: "Hm." | quique |
 | 16 | 48–53 s | O Mike aponta o Hank, que nem levanta os olhos; depois o Lazy | Mike EN: "Hank?" · Hank EN: "No." · Mike EN: "Lazy?" · Lazy EN (de olhos fechados): ⭐ "Yes, I do." · Lazy PT: "Assistir. Deitado." | risada |
 | 17 | 53–57 s | ⭐ **VITÓRIA DO DIA**: card "1º 'sim, gosto' em inglês, sem like sobrando". Selo: **"T2 E08 · você já sabe 28 frases"** | Capy PT: "Respondi. Agora só falta entender a bola." | acerto |
 | 18 | 57–65 s | Card final: **CONSIGO… responder sim sobre do que eu gosto ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: Do you like coffee? E responde embaixo." | — |
@@ -78,7 +78,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "football ou soccer?" · parte 2/3 · ~66 s
 
-**Hype de exemplo:** a rodada divisional dos playoffs de futebol americano (23–24/01/2027), vista no bar do Mike (o bar dos assuntos 3 e 4 da T1). Na tela, "futebol americano"; "NFL" e "#playoffs" só na legenda do post. **Sem:** marca, logotipo de time, nome de jogador, transmissão real, bebida em destaque.
+**Hype de exemplo:** a rodada divisional dos playoffs de futebol americano (23–24/01/2027), vista no bar dos assuntos 3 e 4 da T1, onde o Mike vê os jogos. Na tela, "futebol americano"; "NFL" e "#playoffs" só na legenda do post. **Sem:** marca, logotipo de time, nome de jogador, transmissão real, bebida em destaque.
 
 **Quem traz o hype:** o Mike (o bar, os amigos). A Poppy filma.
 
@@ -88,7 +88,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre no telão do bar do Mike**: uma bola oval girando em câmera lenta no ar, jogadores desenhados de costas. Texto: **"noite de playoffs. a Capy veio ver 'futebol'."** | — | torcida baixinha |
+| 1 | 0–2 s | **Abre no telão do bar**: uma bola oval girando em câmera lenta no ar, jogadores desenhados de costas. Texto: **"noite de playoffs no bar. a Capy veio ver 'futebol'."** | — | torcida baixinha |
 | 2 | 2–5 s | A Poppy filma, apontando o telão | Poppy PT: "Gente, nos EUA, football é ESSE. O nosso eles chamam de soccer." | — |
 | 3 | 5–8 s | A Capy, com a camisa de futebol (lisa, sem escudo), olha o telão (objetivo por cima da ação) | Capy (pensa) PT: "Eu disse que gostava. Do futebol errado." | — |
 | 4 | 8–11 s | O Mike repara na camisa dela e aponta uma bola redonda na prateleira do bar | Mike EN: "Oh! Do you like soccer?" | — |
@@ -106,7 +106,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 16 | 46–50 s | O Lazy dormiu na banqueta, com a cabeça no balcão | Poppy PT: "Esse aí gosta de assistir. De olho fechado." | ronco |
 | 17 | 50–54 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você respondeu sim duas vezes, sobre dois futebóis" + **consigo ✓** | Capy PT: "Football é esse. Soccer é o nosso. Gostei dos dois." | acerto |
 | 18 | 54–61 s | **Gancho verdadeiro:** a porta do bar abre com neve; entra um **coala de casaco grosso**, batendo os pés, com um mapa de papel. Ele senta ao lado da Capy, ouve ela falar português com a Duda e mostra um balão só em texto: "hi! where do you live?" | Capy (pensa) PT: "Live? Ele quer saber onde eu MORO? Eu só sei dizer de onde eu SOU." · Texto: **"próximo assunto: I live in Brazil."** (só se o assunto 9 estiver agendado) | porta, vento |
-| 19 | 61–66 s | Card: "aula do assunto 28 no perfil · segue a Capy" | — | — |
+| 19 | 61–66 s | Card: "aula do Ep. 28 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Poppy, Mike), em 4 bocas. A última é do Mike. O aluno fala 2×. "Do you like soccer?", "Football?", "And soccer?" são perguntas (cinza); "This is football." é apoio.
 
@@ -156,7 +156,7 @@ Para quando o V2 sair fora de 22–25/01/2027. Mesmos exercícios, mesma ordem. 
 | 14 | 41–44 s | **Personalize 2:** o Hank olha para a câmera, de braços cruzados | Hank EN: "Do you like English?" | vapor sobe |
 | 15 | 44–48 s | Balão vazio. Tela: "responde a verdade" | 🎤 **SUA VEZ** ("Yes, I do." ou "No.") | trilha em zero |
 | 16 | 48–50 s | O Hank descruza os braços | Hank EN: "Good. Keep going." | — |
-| 17 | 50–55 s | O Bolinha enche as bochechas, com o cachecol vermelho do Mike enrolado no pescoço. Texto: **"lembra dessa?"** | Bolinha EN: "It's Mike's." · Bolinha EN: ⭐ "Yes, I do." · Bolinha PT: "O cachecol é do Mike. O sim é meu. Guardei os dois." | — |
+| 17 | 50–55 s | O Bolinha enche as bochechas, com uma etiqueta "MIKE'S" colada na bochecha. Texto: **"lembra dessa?"** | Bolinha EN: "It's Mike's." · Bolinha EN: ⭐ "Yes, I do." · Bolinha PT: "O cachecol é do Mike. O sim é meu. Guardei os dois." | — |
 | 18 | 55–59 s | ⭐ **VITÓRIA DO ASSUNTO**: "você respondeu sim do jeito certo" + **consigo ✓** + selo "T2 E08 · você já sabe 28 frases" | Capy PT: "Pergunta com do, resposta com do. Pronto." | acerto maior |
 | 19 | 59–66 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro "próximo assunto: I live in Brazil. · segue a Capy" (só se o assunto 9 estiver agendado) | Capy PT: "Comenta: Do you like English? E responde." | — |
 
@@ -176,7 +176,7 @@ Para quando o V2 sair fora de 22–25/01/2027. Mesmos exercícios, mesma ordem. 
 | Quem diz a última ⭐ | Lazy | Mike | Bolinha | Capy nunca ✓ |
 | O aluno fala | 1 | 2 | 2 | **5** |
 | Reconhecimentos | — | — | 2 | 2 |
-| Revisão | "Yes, I am." (T1-10), o vapor (T1-10) | o bar do Mike (T1-3/4) | "It's Mike's." (T2-4, Bolinha), "Are you tired?" na contingência | ✓ |
+| Revisão | "Yes, I am." (T1-10), o vapor (T1-10) | o bar do jogo (T1-3/4) | "It's Mike's." (T2-4, Bolinha), "Are you tired?" na contingência | ✓ |
 | Primeiros 3 s | bola oval rolando torta | telão com a bola em câmera lenta | plaquinhas AM e DO | variam ✓ |
 | Gancho verdadeiro no fim | — | o coala: "where do you live?" → assunto 9 (se agendado) | próximo assunto (se agendado) | |
 

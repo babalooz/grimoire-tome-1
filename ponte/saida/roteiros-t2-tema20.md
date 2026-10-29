@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 20 · "I can speak a little English." · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas (nenhuma correção de conteúdo neste assunto).
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md`, as três rodadas de correções do mestre (27/10, 06–12, 13–20) e o fim da T1 (`roteiros-tema20.md`, modelo de fim de temporada). É só texto: nada foi gravado, renderizado ou sintetizado. **Último assunto da T2.**
 

@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 14 · "I love it!" · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), a grade (`grade-t2.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado.
 
@@ -14,7 +14,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 **G + V + P:**
 - **G:** "I love + it" (o "it" é a coisa: vem do T1, assunto 15). Imagem fixa: o **termômetro de três xícaras**: fria = "I don't like it.", morna = "I like it.", fervendo = "I love it!". O "love" só troca a temperatura.
 - **V:** love (o "it" e o "like" já são conhecidos).
-- **P:** "love" = **"lâv"**: o "o" soa "â" e a palavra **fecha no v** (lábio de baixo encostando nos dentes de cima), sem "lóvi". Ícone: **o lábio encostando no dente**, o mesmo do "have" do assunto 10 da T2 (conferir o desenho no roteiro do assunto 10 quando ele estiver no ramo; se lá for outro ícone, usar o de lá).
+- **P:** "love" = **"lâv"**: o "o" soa "â" e a palavra **fecha no v** (lábio de baixo encostando nos dentes de cima), sem "lóvi". Ícone: a borda da xícara encostando no lábio de baixo ("vvv"), o mesmo do "have" do assunto 10 da T2.
 
 **Frase-alvo:** ⭐ "I love it!" Só sai da boca de quem acabou de provar e adorou: **a Capy, a Duda, a Poppy, o Mike** e **o Lazy e o Bolinha como modelo/revisão**. **O Hank não diz a ⭐ neste assunto** (ele diz "I like it.", que no Hank já é adorar; o momento quente dele fica para o 15, grade §5).
 
@@ -22,7 +22,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 **Datas do hype:** pela grade, V1 em 09/02/2027 (ter), V2 em 10/02 (qua), V3 em 11/02 (qui). O V2 é a prova do cardápio da festa do Mike para a final do futebol americano (Super Bowl, domingo 14/02/2027; fonte na grade §3). Na tela, "a final"; "Super Bowl" só na legenda do post. 09/02 é terça de Carnaval no Brasil: o V1 não depende de hype (é a aula), como pede a grade §3.
 
-**Janela do hype:** V2 "prova do cardápio da festa da final" só se for ao ar entre 01 e 14/02/2027; senão, V2 RESERVA ("o bolo novo do Hank").
+**Janela do hype:** V2 "prova do cardápio da festa da final" só se for ao ar entre 08 e 13/02/2027; senão, V2 RESERVA ("o bolo novo do Hank").
 
 **Cultura (comum, não universal):** chili, asinhas, nachos e molho de queijo são comida comum de festa de Super Bowl nos EUA; o cardápio aqui é **o do Mike** (a receita de chili é da avó dele, a do T1, assunto 10).
 
@@ -62,7 +62,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 5 | 10–14 s | Na tela, o **termômetro de três xícaras**: fria "I don't like it.", morna "I like it.", fervendo "I love it!" | Lazy PT: "Não gosto, gosto, adoro. Só muda a temperatura." | xícaras |
 | 6 | 14–19 s | O Lazy morde o pão de canela, bem devagar, e abre os olhos pela primeira vez no episódio | Lazy EN: ⭐ "I... love... it!" · legenda EN + PT: "Eu adoro! (amei!)" | — |
 | 7 | 19–22 s | Na tela: "I love!" aparece e é riscado (só escrito); a peça "it" encaixa: "I love **it**!" | Lazy PT: "Sem o it, falta a coisa. 'Amei' é I love it." | encaixe |
-| 8 | 22–26 s | Close na boca do Lazy em "love", com o **ícone do lábio encostando no dente**. Na tela, "lóvi" aparece e é riscado (só escrito) | Lazy PT: "Fecha no v: lábio no dente. Lâv." | — |
+| 8 | 22–26 s | Close na boca do Lazy em "love", com o ícone da borda da xícara no lábio de baixo. Na tela, "lóvi" aparece e é riscado (só escrito) | Lazy PT: "Fecha no v: lábio no dente. Lâv." | vvv |
 | 9 | 26–28 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. De boca vazia." | — |
 | 10 | 28–31 s | **Em coro**, a Capy depois de uma mordida. Na tela: "fala JUNTO" | Capy EN: ⭐ "I love it!" | — |
 | 11 | 31–34 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "I love it!" | — |
@@ -90,7 +90,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre numa panela de chili borbulhando** na cozinha do Mike; na geladeira, a lista "TASTE TEST". Texto: **"a final é domingo. hoje o Mike testa o cardápio."** | — | borbulho |
+| 1 | 0–2 s | **Abre numa panela de chili borbulhando** na cozinha do Mike; na geladeira, a lista "TASTE TEST". Texto: **"a final é domingo, dia 14. hoje o Mike testa o cardápio."** | — | borbulho |
 | 2 | 2–5 s | A Poppy filma a mesa: chili, molho de queijo, asinhas, nachos | Poppy PT: "Gente, comida de festa da final: chili, asinha, nachos e molho de queijo!" | — |
 | 3 | 5–8 s | A Capy, de colher na mão (objetivo por cima da ação) | Capy (pensa) PT: "Se eu adorar, eu falo. Nada de 'like' morno." | — |
 | 4 | 8–11 s | O Mike, de avental, oferece uma colher de chili | Mike EN: "Try it! Do you like it?" | — |
@@ -99,7 +99,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** | trilha em zero |
 | 8 | 19–22 s | **Resposta** | Capy EN: ⭐ "I love it!" | — |
 | 9 | 22–25 s | O Mike levanta a colher de pau | Mike EN: "Yes! Grandma's recipe!" | — |
-| 10 | 25–29 s | O Hank prova o chili e o rosto fica vermelho por baixo do pelo | Hank EN: "I don't like it." · Hank EN: "Too hot." | risada |
+| 10 | 25–29 s | O Hank prova o chili e o rosto fica vermelho por baixo do pelo | Hank EN: "I don't like it." · Hank EN: "Too spicy." | risada |
 | 11 | 29–32 s | **2ª rodada:** o colega do Mike (o "Tom", sem voz) traz o molho de queijo com chips; o balão dele vem só em texto: "and the dip?". Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 35–38 s | **Resposta**, com um chip na mão | Capy EN: ⭐ "I love it!" | crocante |
@@ -109,7 +109,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você adorou em inglês na festa americana" + **consigo ✓** | Capy PT: "Chili, molho e um 'I love it'. Festa aprovada." | acerto |
 | 18 | 52–58 s | **Gancho verdadeiro:** o Mike tira de uma sacola uma caixa de chocolates em forma de coração | Mike EN: "Sunday is Valentine's, too!" · Capy (pensa) PT: "A final e o Dia dos Namorados no mesmo domingo? E esse chocolate é pra quem?" | — |
 | 19 | 58–61 s | Congela na caixa de coração. Texto: **"próximo assunto: These are for you."** (só se o assunto 15 estiver agendado) | — | — |
-| 20 | 61–66 s | Card: "aula do assunto 34 no perfil · segue a Capy" | — | — |
+| 20 | 61–66 s | Card: "aula do Ep. 34 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Mike, Duda), em 4 bocas. A última é da Duda. O aluno fala 2×. "Do you like it?" é a pergunta (revisão do assunto 8); "I don't like it." (Hank) é revisão do 7. Nenhuma ⭐ é dita sobre asinhas ou nachos (regra de inglês do cabeçalho).
 
@@ -117,7 +117,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "o bolo novo do Hank" · ~66 s
 
-Para quando o V2 sair fora de 01–14/02/2027. Mesmos exercícios, mesma ordem. O Hank testa no Bean There três receitas novas para o cardápio, e o Mike, cliente fiel, é o provador oficial. Mudam só estas cenas:
+Para quando o V2 sair fora de 08–13/02/2027. Mesmos exercícios, mesma ordem. O Hank testa no Bean There três receitas novas para o cardápio, e o Mike, cliente fiel, é o provador oficial. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|
@@ -150,8 +150,8 @@ Para quando o V2 sair fora de 01–14/02/2027. Mesmos exercícios, mesma ordem. 
 | 3 | 5–8 s | **Rodada 1:** só a voz, sem mostrar a boca | Voz (Poppy) EN: ⭐ "I love it!" | — |
 | 4 | 8–11 s | "morna ou fervendo? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
 | 5 | 11–14 s | **Resposta:** a xícara fervendo acende | Lazy PT: "Fervendo. Love. Ouviu o v no fim?" | acerto |
-| 6 | 14–17 s | **Rodada 2:** duas bocas desenhadas. Na 1ª, o lábio encosta no dente | Lazy EN: ⭐ "I love it!" | — |
-| 7 | 17–20 s | Na 2ª, a boca abre no fim (gravado 1 vez só, sem risco vermelho) | Lazy EN: "I lóvi it!" | — |
+| 6 | 14–17 s | **Rodada 2:** duas xícaras encostando no lábio. A 1ª faz "vvv" | Lazy EN: ⭐ "I love it!" | vvv |
+| 7 | 17–20 s | A 2ª xícara fica longe do lábio (gravado 1 vez só, sem risco vermelho) | Lazy EN: "I lóvi it!" | — |
 | 8 | 20–23 s | "em qual fechou no v?" + contador | ⏸ 3 s | trilha em zero |
 | 9 | 23–27 s | **Resposta:** a 1ª boca acende | Lazy PT: "Na primeira." · Lazy EN: ⭐ "I love it!" | acerto |
 | 10 | 27–30 s | | Hank PT: "A segunda também dá pra entender. A primeira é mais inglês." | — |

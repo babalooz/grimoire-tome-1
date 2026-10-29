@@ -1,6 +1,6 @@
 # CapyFala · T2 · ASSUNTO 5 · "See you on Monday!" · 3 vídeos (papel, sem vídeo)
 
-**Status: rascunho para o Felipe aprovar.** (Sem a marca de aprovado: nada vai ao ar antes da aprovação.)
+**Status: APROVADO (Felipe, 29/10).** Correções do mestre (`correcoes-mestre-t2.md`) aplicadas.
 
 Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tema01.md`), as regras do `mestre-ingles.md` e as três rodadas de correções do mestre (27/10, 06–12, 13–20). É só texto: nada foi gravado, renderizado ou sintetizado. Quinto assunto da T2 (`grade-t2.md`).
 
@@ -62,7 +62,7 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 | 9 | 25–28 s | **Em coro.** Na tela: "fala JUNTO" | Capy EN: ⭐ "See you on Monday!" | xícaras |
 | 10 | 28–31 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "See you on Monday!" | xícaras |
 | 11 | 31–35 s | **Sozinho:** a Capy põe o dedo no "MON" e fica em silêncio | 🎤 **SUA VEZ** ("See you on Monday!") | trilha em zero |
-| 12 | 35–38 s | **Para conferir:** a Duda volta pela porta (esqueceu a bolsa) e acena de novo. Ela tem folga no fim de semana e vai ao jogo de segunda | Duda EN: ⭐ "See you on Monday!" | acerto baixinho |
+| 12 | 35–38 s | **Para conferir:** a Duda volta pela porta (esqueceu a bolsa), vê no celular dela a mesma mensagem do Mike e grava um áudio para ele | Duda EN: ⭐ "See you on Monday!" | acerto baixinho |
 | 13 | 38–42 s | Balão do Hank ao fundo, prendendo a escala de novo na parede | Hank PT: "Saiu 'môn-dêi'? Dá pra entender. 'Mân', com força no começo, fica mais inglês." | — |
 | 14 | 42–45 s | A Capy grava um áudio para o Mike, com o celular perto da boca | Capy EN: ⭐ "See you on Monday!" | envio de áudio |
 | 15 | 45–48 s | O celular vibra: chega o áudio do Mike. Só a voz dele, com a onda do áudio na tela | Mike EN: "Monday! Great!" · Mike EN: ⭐ "See you on Monday!" | notificação |
@@ -111,14 +111,14 @@ Versão 1 · 29/10/2026 (rotina da nuvem). Segue o molde da T2 (`roteiros-t2-tem
 
 ### V2 RESERVA ATEMPORAL · "a escala do fim de semana" · ~66 s
 
-Para quando o V2 sair fora de 11–18/01/2027. Mesmos exercícios, mesma ordem. Sem mata-mata: é sexta, o feriadão está chegando, e cada amigo tem um programa no sábado e no domingo; a Capy cobre os dois turnos. O Mike faz a noite de pizza na segunda. Mudam só estas cenas:
+Para quando o V2 sair fora de 11–18/01/2027. Mesmos exercícios, mesma ordem. Sem mata-mata: é sexta, e cada amigo tem um programa no sábado e no domingo; a Capy cobre os dois turnos. O Mike faz a noite de pizza na segunda. Mudam só estas cenas:
 
 | # | Cena (reserva) | Fala |
 |---|---|---|
-| 1 | **Abre numa bola de vôlei de praia** entrando pela porta e caindo no colo do Lazy. Texto: **"sexta à tarde. e a Capy trabalha no fim de semana."** | — (bola, sininho) |
-| 2 | A Poppy, de óculos escuros, pega a bola | Poppy PT: "Gente, fim de semana chegando! Sábado praia, domingo trilha!" |
-| 4 | (igual) | Poppy EN: "Saturday? Beach! Coming?" |
-| 11 | A Duda, de mochila de trilha | Duda EN: "Sunday? Hiking! Coming?" |
+| 1 | Abre num gorro de lã voando pela porta e caindo no colo do Lazy. Texto: "sexta à tarde. e a Capy trabalha no fim de semana." | — (sininho) |
+| 2 | A Poppy, de patins de gelo no ombro, pega o gorro | Poppy PT: "Gente, fim de semana chegando! Sábado patinação no gelo, domingo cinema!" |
+| 4 | (igual) | Poppy EN: "Saturday? Skating! Coming?" |
+| 11 | A Duda, com dois ingressos de cinema | Duda EN: "Sunday? Movies! Coming?" |
 | 15 | O Mike entra e chama o Hank para a noite de pizza | (igual) |
 | 16 | Card | "você combinou o fim de semana inteiro em inglês" · Capy PT: "Sábado trabalho, domingo trabalho. Segunda é pizza." |
 | 17 | (igual) | Mike EN: "Monday! Pizza at my place!" · (resto igual) |

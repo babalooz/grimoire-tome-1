@@ -1,8 +1,8 @@
 # Correções do mestre de inglês · temporada 2 inteira (assuntos 1 a 20) · 29/10/2026
 
-**Aguardando aprovação do Felipe.** Nada daqui entra nos roteiros antes da resposta dele às 3 decisões da seção 1.
+**APLICADO (29/10/2026).** Felipe aprovou as 3 decisões da seção 1 (todas como o mestre recomendou: 1 Dona Jaca até o Ano-Novo, 2 numeração contínua Ep. 21–40, 3 os 5 fatos permanentes). Todas as correções deste arquivo foram aplicadas em `grade-t2.md` e em `roteiros-t2-tema01.md` a `roteiros-t2-tema20.md`, que agora estão com o cabeçalho "APROVADO (Felipe, 29/10)". Os 5 fatos permanentes foram registrados em `ponte/saida/fatos-permanentes.md`. A regra de numeração ganhou a linha "na T2, N = 20 + número do assunto" no `CLAUDE.md`.
 
-Este arquivo é a fonte para aplicar as correções em `grade-t2.md` e `roteiros-t2-tema01.md` a `roteiros-t2-tema20.md` (versão 1, escrita pela nuvem em 29/10/2026, sem voz gravada). Cada correção diz o vídeo, a cena, o personagem e o texto exato. Aplicar ao pé da letra; nada aqui pede interpretação. Onde diz "trocar", o texto antigo sai inteiro e entra o novo. O que não está listado fica igual, palavra por palavra. **Os roteiros não foram alterados por esta revisão.**
+Este arquivo é a fonte que foi usada para aplicar as correções em `grade-t2.md` e `roteiros-t2-tema01.md` a `roteiros-t2-tema20.md` (versão 1, escrita pela nuvem em 29/10/2026, sem voz gravada). Cada correção diz o vídeo, a cena, o personagem e o texto exato. Foi aplicado ao pé da letra; onde dizia "trocar", o texto antigo saiu inteiro e entrou o novo. O que não estava listado ficou igual, palavra por palavra.
 
 Leitura feita em 29/10/2026 de `origin/ponte` (commit `fdea11f`), com a régua `mestre-ingles.md`, o molde `roteiros-tema01.md` e as três rodadas de correções anteriores (27/10, 06–12, 13–20). Os números de cena são os do roteiro.
 
