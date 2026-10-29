@@ -1,0 +1,63 @@
+{
+  "id": "cafe-t1e17-how-much-is-it-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 17,
+    "codigo": "T1 E17 · parte 2/3",
+    "tituloCapitulo": "Pedindo e perguntando o preço",
+    "frasesAprendidas": 17,
+    "progresso": "você já sabe 17 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo pedir comida e bebida com expressões básicas e perguntar o preço.",
+  "title": "Ep. 17 (parte 2/3) · o cardápio novo sem preço",
+  "hookTitle": "o cardápio novo do Hank",
+  "alvo": {
+    "en": "How much is it?",
+    "pt": "Quanto custa?"
+  },
+  "cast": ["capi", "lazy", "turista", "poppy", "hank", "duda", "donajaca"],
+  "contexto": {
+    "legenda": "cardápio novo no Bean There. e nenhum preço escrito. How much is it? 📋"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 17,
+  "beats": [
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Nice menu! No prices?" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Cardápio novo! Sem preço nenhum!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",
+      "text": "Hoje eu pergunto o preço antes de pedir." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "One moment, please." },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "How... much... is it?" },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "SUA VEZ: How much is it?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How much is it?" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Five dollars. Not bad!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Filha, que barulho é esse? Parece feira." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How much is it?" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How much is it?" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "How much is it?" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Comenta quanto você pagaria!" },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Preço é detalhe. Café é arte." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Coffee is art." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Cardápio novo e biscoito de capivara. E eu sabia quanto ia pagar.",
+      "cardTexto": "você perguntou o preço num cardápio novo · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "surprised", "hold": 1.0,
+      "text": "A porta abriu. Minha mãe? De mala?" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Desliga, filha. Eu tô aqui." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.0, "emotion": "happy",
+      "text": "Comenta quanto custaria um café no seu país.",
+      "cardTexto": "aula do assunto 17 no perfil · segue a Capy" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: cardápio novo sem preço no Bean There, sem data; usada se o hype da feira de Natal não servir",
+    "'você é a Capy' 2x no enredo: a fala dela some e o aluno responde",
+    "a última ⭐ é da Poppy (nunca a Capy)",
+    "gancho verdadeiro pro V3: a Dona Jaca aparece de mala no café (sem citar assunto futuro não agendado)"
+  ]
+}

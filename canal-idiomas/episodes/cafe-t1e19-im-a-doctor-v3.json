@@ -1,0 +1,67 @@
+{
+  "id": "cafe-t1e19-im-a-doctor-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 19,
+    "codigo": "T1 E19 · parte 3/3",
+    "tituloCapitulo": "O que você faz",
+    "frasesAprendidas": 19,
+    "progresso": "você já sabe 19 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer o que eu faço.",
+  "title": "Ep. 19 (parte 3/3) · I'm a ou I'm? só pelo ouvido",
+  "hookTitle": "qual profissão? só pelo ouvido",
+  "alvo": {
+    "en": "I'm a doctor.",
+    "pt": "Eu sou médico."
+  },
+  "errado": {
+    "en": "I'm doctor.",
+    "pt": "profissão sempre vem com 'a': I'm A doctor."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca", "bolinha"],
+  "contexto": {
+    "legenda": "médica ou professora? escuta a profissão e diz a sua, com o 'a'. I'm a doctor. 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 19,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Hoje você ouve a profissão. E diz a sua." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "I'm a teacher." },
+    { "tipo": "pergunta", "s": 3, "text": "médica ou professora? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Professora. Mesmo molde de antes." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "I'm doctor." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm a doctor." },
+    { "tipo": "pausa", "s": 3, "text": "A ou B? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "B. Com o 'a'." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "A primeira dá pra entender. A segunda é inglês de verdade." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Agora você. Escolhe o seu crachá. Com o 'a'." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: I'm a… e a sua profissão" },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "I'm a barista!" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Junior barista. Not head." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "What do you do, really?" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: I'm a…" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "It's a phone." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. O 'a' tá nas duas." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Nome, país, família, profissão. Você já se apresenta.",
+      "cardTexto": "você disse o que faz · T1 E19 · você já sabe 19 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta a sua profissão em inglês, com o 'a'.",
+      "cardTexto": "CONSIGO… dizer o que eu faço ✓ · último assunto da temporada: What time is it? · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "reconhecer outra profissão pelo som mostra que o molde serve para todas",
+    "rodada 2 mira o erro do 'a': 'I'm doctor.' x 'I'm a doctor.' (1x só, sem risco vermelho)",
+    "personalização é o 'Talking about you' do Headway; a tela dá 6 profissões comuns",
+    "Bolinha devolve 'It's a phone.' (assunto 15, o mesmo 'a') antes da ⭐; é a última boca"
+  ]
+}

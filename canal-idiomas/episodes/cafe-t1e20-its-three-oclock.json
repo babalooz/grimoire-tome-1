@@ -1,0 +1,65 @@
+{
+  "id": "cafe-t1e20-its-three-oclock",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 20,
+    "codigo": "T1 E20",
+    "tituloCapitulo": "Que horas são",
+    "frasesAprendidas": 20,
+    "progresso": "você já sabe 20 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer a hora com expressões prontas como 'three o'clock'.",
+  "title": "Ep. 20 (parte 1/3) · What time is it? a hora em inglês",
+  "hookTitle": "a mãe que pergunta a hora",
+  "alvo": {
+    "en": "It's three o'clock.",
+    "pt": "São três horas."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca"],
+  "contexto": {
+    "legenda": "o jantar é às 3 e a Dona Jaca não para de perguntar a hora. It's three o'clock. 🕒"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 20,
+  "beats": [
+    { "speaker": "donajaca", "lang": "en", "emotion": "neutral", "text": "What time is it?" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Filha, que horas são?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você diz a hora. Hora cheia, que é a mais fácil." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "Hey Capy, what time is it?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's... three... o'clock." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Hora cheia: o número e o'clock. Pizza inteira." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Fecha no k. Sem o 'i' no final." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Apontando o relógio." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "It's three o'clock." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: It's three o'clock." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Right on time." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'o-clóqui'? Dá pra entender. Fechando no k, fica mais inglês." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "worried", "text": "What time is it now?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's three o'clock!" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "surprised", "text": "We're late!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "surprised", "text": "Atrasadas!" },
+    { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "...It's three o'clock." },
+    { "speaker": "lazy", "lang": "en", "emotion": "smile", "text": "Early, for me." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Pra mim, cedo." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Disse a hora. E a minha mãe não perdeu o jantar.",
+      "cardTexto": "1ª hora dita em inglês · T1 E20 · você já sabe 20 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.5, "emotion": "happy",
+      "text": "Na próxima hora cheia, olha o relógio, fala em inglês e comenta aqui.",
+      "cardTexto": "CONSIGO… dizer a hora cheia ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 19: o convite 'Christmas dinner · 3 pm' e a Dona Jaca espantada",
+    "pizza inteira = o'clock (imagem fixa); hora cheia só, sem meia-hora/quinze",
+    "'o'clock' termina no k, sem vogal extra; e 'three' com a língua pra fora (revisão espaçada do assunto 7)",
+    "a Capy nunca é a última ⭐ (fecha com o Lazy, 'pra mim, cedo')",
+    "todas as ⭐ acontecem às 3 em ponto: só é verdade quando o relógio marca 3"
+  ]
+}

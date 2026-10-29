@@ -1,0 +1,64 @@
+{
+  "id": "cafe-t1e16-im-tired-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 16,
+    "codigo": "T1 E16 · parte 2/3",
+    "tituloCapitulo": "Como você está",
+    "frasesAprendidas": 16,
+    "progresso": "você já sabe 16 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer como me sinto com um adjetivo simples, como 'tired', com ajuda de linguagem corporal.",
+  "title": "Ep. 16 (parte 2/3) · o turno dobrado no Bean There",
+  "hookTitle": "o turno dobrado",
+  "alvo": {
+    "en": "I'm tired.",
+    "pt": "Tô cansado.",
+    "variacoes": ["I'm tired, too."]
+  },
+  "cast": ["capi", "lazy", "turista", "poppy", "donajaca", "hank"],
+  "contexto": {
+    "legenda": "turno dobrado no café. nem o Mike, nem a Capy, nem o Lazy escaparam. I'm tired. ☕"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 16,
+  "beats": [
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Mais um cliente! Só mais um!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Hoje eu digo que tô cansada." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Capy! Long day, how are you?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "I'm... tired." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: I'm tired." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm tired." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm tired, too." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Long shift today." },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "text": "Wow, even Mike is tired!" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Até o Mike cansa num turno dobrado!" },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm tired." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Turno dobrado? No meu tempo era triplo." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "...I'm tired." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Só de olhar." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Acabou. Todo mundo pra casa." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Closed. Go home, everyone. Right now." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Falei duas vezes. Ninguém me pediu outro turno.",
+      "cardTexto": "você disse que tava cansada num turno dobrado · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy", "hold": 2.0,
+      "text": "Café. Preciso pedir e perguntar o preço." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.0, "emotion": "happy",
+      "text": "Comenta em inglês: hoje foi um dia cansado?",
+      "cardTexto": "aula do assunto 16 no perfil · segue a Capy" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: turno dobrado no Bean There, sem data; usada se o hype de dezembro (compras de Natal) não servir",
+    "'você é a Capy' 2x no enredo: a fala dela some e o aluno responde",
+    "'I'm tired, too.' do Mike conta como ⭐ (frase inteira); a última é da Dona Jaca",
+    "gancho verdadeiro pro V3: a Capy pensa em pedir café e perguntar o preço (sem citar assunto futuro não agendado)"
+  ]
+}

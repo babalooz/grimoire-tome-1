@@ -1,0 +1,60 @@
+{
+  "id": "cafe-t1e20-its-three-oclock-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 20,
+    "codigo": "T1 E20 · parte 2/3",
+    "tituloCapitulo": "Que horas são",
+    "frasesAprendidas": 20,
+    "progresso": "você já sabe 20 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer a hora com expressões prontas como 'three o'clock'.",
+  "title": "Ep. 20 (parte 2/3) · o bolo que sai às três",
+  "hookTitle": "o bolo das três",
+  "alvo": {
+    "en": "It's three o'clock.",
+    "pt": "São três horas.",
+    "variacoes": ["It's ten o'clock!"]
+  },
+  "cast": ["capi", "donajaca", "turista", "lazy", "hank", "poppy"],
+  "contexto": {
+    "legenda": "no Bean There, o bolo sai às três em ponto. It's three o'clock. 🍰"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 20,
+  "beats": [
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Trouxe o lanche. Lanche de verdade." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",
+      "text": "Hoje eu digo as horas. E aguento a minha mãe." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "What time is it?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "It's... three... o'clock." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "SUA VEZ: It's three o'clock." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Three o'clock! Cake!" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "text": "This café has cake hours!" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Gente, aqui o bolo tem hora marcada!" },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "de novo: SUA VEZ · mais alto!" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's three o'clock!" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "E o bolo tá no ponto." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": "variacao", "text": "It's ten o'clock!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Agora é jantar de verdade!" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Dois lanches no mesmo dia.",
+      "cardTexto": "você disse a hora do bolo e do jantar · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.0, "emotion": "happy",
+      "text": "Comenta que horas são agora, em inglês.",
+      "cardTexto": "aula do assunto 20 no perfil · segue a Capy" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: o bolo do Bean There sai sempre às três, sem data; usada se o V2 sair fora de dezembro",
+    "'você é a Capy' 2x no enredo, a 2ª 'mais alto' (avó batendo no relógio parado)",
+    "'It's ten o'clock!' é variação (corte pra noite) e não conta; a última ⭐ é do Hank",
+    "sem Papai Noel, sem criança, sem música de Natal com direitos"
+  ]
+}

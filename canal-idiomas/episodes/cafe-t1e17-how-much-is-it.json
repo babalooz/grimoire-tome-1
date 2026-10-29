@@ -1,0 +1,63 @@
+{
+  "id": "cafe-t1e17-how-much-is-it",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 17,
+    "codigo": "T1 E17",
+    "tituloCapitulo": "Pedindo e perguntando o preço",
+    "frasesAprendidas": 17,
+    "progresso": "você já sabe 17 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo pedir comida e bebida com expressões básicas e perguntar o preço.",
+  "title": "Ep. 17 (parte 1/3) · How much is it? perguntar o preço em inglês",
+  "hookTitle": "a barraca sem preço",
+  "alvo": {
+    "en": "How much is it?",
+    "pt": "Quanto custa?"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca", "turista"],
+  "contexto": {
+    "legenda": "café da feira de Natal, sem preço nenhum. How much is it? 💵"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 17,
+  "beats": [
+    { "speaker": "capi", "lang": "en", "emotion": "neutral", "text": "A coffee, please." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Pedi. E se custar uma fortuna? Como pergunta o preço?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você pergunta quanto custa. Quatro palavras." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How... much... is it?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Essa pergunta desce no fim. Não sobe." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "It's five dollars." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Dedos na moeda." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How much is it?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "How much is it?" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: How much is it?" },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How much is it?" },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Subiu no fim? Dá pra entender. Descendo, fica mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "neutral", "text": "A hot chocolate, please." },
+    { "speaker": "capi", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How much is it?" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Four dollars." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Quatro dólares? Num chocolate?" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "How much is it..." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "...em real?" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Pedi, perguntei e paguei. Sem susto.",
+      "cardTexto": "1º preço perguntado em inglês · T1 E17 · você já sabe 17 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta o que você pediria no café da feira.",
+      "cardTexto": "CONSIGO… pedir e perguntar o preço ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 16: a Capy viu a barraca de café da feira e pensou em pedir e perguntar o preço",
+    "'A coffee, please.' é apoio (peças já conhecidas); a frase nova é só 'How much is it?'",
+    "pergunta com how desce no fim (ao contrário da pergunta de sim/não do assunto 10)",
+    "a Capy nunca é a última a dizer a ⭐ (fecha com a Dona Jaca convertendo pra real)",
+    "imagem fixa: etiqueta de preço que se parte em blocos do jeito que se fala"
+  ]
+}

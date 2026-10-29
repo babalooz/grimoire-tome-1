@@ -1,0 +1,64 @@
+{
+  "id": "cafe-t1e20-its-three-oclock-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 20,
+    "codigo": "T1 E20 · parte 3/3",
+    "tituloCapitulo": "Que horas são",
+    "frasesAprendidas": 20,
+    "progresso": "você já sabe 20 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer a hora com expressões prontas como 'three o'clock'.",
+  "title": "Ep. 20 (parte 3/3) · fim da temporada 1: que horas são?",
+  "hookTitle": "que horas são? fim da T1",
+  "alvo": {
+    "en": "It's three o'clock.",
+    "pt": "São três horas."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha"],
+  "contexto": {
+    "legenda": "último vídeo da temporada 1. ouça a hora, diga a hora e reveja tudo com o Bolinha. 🎉"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 20,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Último vídeo da temporada. Você ouve a hora e diz a hora." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "It's five o'clock." },
+    { "tipo": "pergunta", "s": 3, "text": "cinco ou nove? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Cinco. Five, terminando no v." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "It's three o-clóqui." },
+    { "tipo": "pausa", "s": 3, "text": "em qual fechou no k? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Na primeira." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "A segunda também dá pra entender. A primeira é mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Agora o Hank pergunta pra você." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Okay, what time is it?" },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: It's three o'clock." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's three o'clock!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "Hi!" },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: Hi! I'm... e o seu nome" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "How are you?" },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: I'm fine, thanks. ou I'm tired." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "It's three o'clock." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei a temporada inteira." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.5, "emotion": "happy",
+      "text": "Vinte frases. Você começou do zero. Lembra?",
+      "cardTexto": "T1 completa · você já sabe 20 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 6.0, "emotion": "happy",
+      "text": "Comenta qual foi a sua frase favorita.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido · fim da temporada 1 · a temporada 1 está no perfil" }
+  ],
+  "gatilhos": [
+    "último vídeo da T1: revisão com o Bolinha devolvendo 'Hi! I'm Capy.' (assunto 1) e 'How are you?' (assunto 7)",
+    "rodada 2 troca o contraste de intonação por 'em qual fechou no k?' (o-clóqui dito 1x só, sem risco vermelho)",
+    "a Capy entra no 'AGORA É VOCÊ' sem ser a última; a última ⭐ é do Bolinha",
+    "card final: 'fim da temporada 1', sem data de T2 (regra dos gatilhos verdadeiros)"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "cafe-t1e18-this-is-my-mother-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 18,
+    "codigo": "T1 E18 · parte 3/3",
+    "tituloCapitulo": "Apresentando a família",
+    "frasesAprendidas": 18,
+    "progresso": "você já sabe 18 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo ter uma conversa simples sobre temas previsíveis, como apresentar alguém da família.",
+  "title": "Ep. 18 (parte 3/3) · amigo ou mãe? só pelo ouvido",
+  "hookTitle": "amigo ou mãe? só pelo ouvido",
+  "alvo": {
+    "en": "This is my mother.",
+    "pt": "Essa é minha mãe."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha"],
+  "contexto": {
+    "legenda": "o Mike ou a Dona Jaca? escuta e apresenta alguém da sua família. This is my mother. 👪"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 18,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você ouve quem é quem. E apresenta alguém da sua família." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "This is my friend." },
+    { "tipo": "pergunta", "s": 3, "text": "o Mike ou a Dona Jaca? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O Mike. Friend é amigo." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my mother." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my mother." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "This is my móder." },
+    { "tipo": "pausa", "s": 3, "text": "em qual vibrou? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "No primeiro." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "O segundo também dá pra entender. O primeiro é mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my mother." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Pensa nela. Mão aberta." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: This is my mother." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my mother!" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Who's this?" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: This is my mother." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Do lado da Dona Jaca. Vão se dar bem." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Right next to her." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "This is my friend." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "This is my mother." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei as duas. Só muda o fim." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Amigo, mãe... a turma tá crescendo.",
+      "cardTexto": "você apresentou sua família · T1 E18 · você já sabe 18 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Marca alguém da sua família e apresenta ela em inglês.",
+      "cardTexto": "CONSIGO… apresentar minha família ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "par friend x mother usa o molde inteiro do assunto 14; treina o ouvido na única palavra que muda",
+    "tela diz 'sua mãe (ou quem cuidou de você)': não supõe que todo mundo tem mãe por perto",
+    "2ª personalização é pergunta de verdade: o Hank não conhece a pessoa da moldura do aluno",
+    "Bolinha devolve 'This is my friend.' (assunto 14) antes da ⭐; é a última boca"
+  ]
+}

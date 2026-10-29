@@ -1,0 +1,65 @@
+{
+  "id": "cafe-t1e19-im-a-doctor",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 19,
+    "codigo": "T1 E19",
+    "tituloCapitulo": "O que você faz",
+    "frasesAprendidas": 19,
+    "progresso": "você já sabe 19 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer o que eu faço.",
+  "title": "Ep. 19 (parte 1/3) · I'm a doctor: o \"a\" que brasileiro esquece",
+  "hookTitle": "o crachá que cai",
+  "alvo": {
+    "en": "I'm a doctor.",
+    "pt": "Eu sou médico."
+  },
+  "errado": {
+    "en": "I'm doctor.",
+    "pt": "profissão sempre vem com 'a': I'm A doctor."
+  },
+  "cast": ["capi", "hank", "lazy", "bolinha", "donajaca", "turista"],
+  "contexto": {
+    "legenda": "ontem ela não soube responder. hoje ele veio ao café. I'm a doctor. 🩺"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 19,
+  "beats": [
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Good morning! What do you do?" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "worried", "text": "Oh... What do I say?" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "worried", "text": "Filha, como fala 'sou médica'?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você diz o que faz. Com um 'a' que ninguém pode esquecer." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm... a... doctor." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Sem o 'a', o crachá cai. Profissão sempre com 'a'." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O 'a' é fraquinho. Quase some. A força vai no doc." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Repete com o Lazy. Eu ajudo." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "repita": true, "text": "I'm a doctor." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: I'm a doctor." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'ei doctor'? Dá pra entender. Fraquinho, fica mais inglês." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "alvo": true, "text": "Me too! I'm a doctor." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "No. I'm fine. Really." },
+    { "speaker": "hank", "lang": "pt", "emotion": "bored", "text": "Eu tô ótimo." },
+    { "speaker": "capi", "lang": "en", "emotion": "neutral", "text": "I'm a barista. Not a doctor." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Minha mãe disse o que faz. E eu também.",
+      "cardTexto": "1ª profissão dita em inglês · T1 E19 · você já sabe 19 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta a sua profissão em inglês, com o 'a'.",
+      "cardTexto": "CONSIGO… dizer o que eu faço ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 18: o vizinho perguntou 'what do you do?' à Dona Jaca",
+    "o 'a' é obrigatório antes da profissão; sem ele, o crachá cai (imagem fixa)",
+    "a Capy não diz a ⭐ (ela não é médica); a fala dela é o molde 'I'm a barista.'",
+    "a última ⭐ é do vizinho médico; piada: dois médicos olhando a garganta do Hank"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "cafe-t1e16-im-tired",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 16,
+    "codigo": "T1 E16",
+    "tituloCapitulo": "Como você está",
+    "frasesAprendidas": 16,
+    "progresso": "você já sabe 16 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer como me sinto com um adjetivo simples, como 'tired', com ajuda de linguagem corporal.",
+  "title": "Ep. 16 (parte 1/3) · I'm tired: quando \"fine\" não é verdade",
+  "hookTitle": "a manhã depois da festa",
+  "alvo": {
+    "en": "I'm tired.",
+    "pt": "Tô cansado.",
+    "variacoes": ["I'm tired, too."]
+  },
+  "cast": ["capi", "hank", "lazy", "duda"],
+  "contexto": {
+    "legenda": "fine é pra estranho. pra amigo, a verdade: I'm tired. 😴"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 16,
+  "beats": [
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Good morning! How are you?" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Fine? Eu não tô fine." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você diz que tá cansado." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm... tired." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Fecha no d. Sem o 'i' no final." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "text": "Not táiredi." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "text": "Tired." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Pra estranho, fine. Pra amigo, a verdade." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Ombro caído." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm tired." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "I'm tired." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: I'm tired." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm tired." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "So many heavy boxes." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'táiredi'? Dá pra entender. Fechando no d, fica mais inglês." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "How are you?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm tired." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Double. On the house, Capy." },
+    { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "I'm tired." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Sempre. Por eficiência." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Falei que tava cansada. Ganhei café.",
+      "cardTexto": "1ª vez dizendo a verdade em inglês · T1 E16 · você já sabe 16 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.5, "emotion": "happy",
+      "text": "Comenta em inglês: você tá cansado hoje?",
+      "cardTexto": "CONSIGO dizer que estou cansado ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 15: a Capy se jogou na cadeira e pensou 'como diz tô cansada?'",
+    "'I'm tired.' entra só pra ouvir e reconhecer no V3, como o contrário (regra: 1 coisa só por vídeo)",
+    "'tired' termina no d sem vogal extra — ícone da tampa do copo fechando ('clic')",
+    "cultura verdadeira: pra estranho (How are you? -> fine), pra amigo, a verdade",
+    "a Capy nunca é a última a dizer a ⭐ (fecha com o Lazy, bordão 'por eficiência')"
+  ]
+}

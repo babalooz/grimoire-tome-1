@@ -1,0 +1,66 @@
+{
+  "id": "cafe-t1e16-im-tired-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 16,
+    "codigo": "T1 E16 · parte 3/3",
+    "tituloCapitulo": "Como você está",
+    "frasesAprendidas": 16,
+    "progresso": "você já sabe 16 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer como me sinto com um adjetivo simples, como 'tired', com ajuda de linguagem corporal.",
+  "title": "Ep. 16 (parte 3/3) · tired ou happy? só pelo ouvido",
+  "hookTitle": "tired ou happy? só pelo ouvido",
+  "alvo": {
+    "en": "I'm tired.",
+    "pt": "Tô cansado."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "poppy", "bolinha"],
+  "contexto": {
+    "legenda": "cansado ou feliz? escuta e diz como você tá. I'm tired ou I'm happy. 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 16,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você reconhece cansado e diz como você tá." },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "text": "I'm happy!" },
+    { "tipo": "pergunta", "s": 3, "text": "cansada ou feliz? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Feliz. Happy é o contrário de tired." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm tired." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm tired." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "I'm táiredi." },
+    { "tipo": "pausa", "s": 3, "text": "em qual fechou no d? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Na primeira." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "A segunda também dá pra entender. A primeira é mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm tired." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Se tá cansado, diz. É verdade, então vale." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Hey Capy, how are you?" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: I'm tired. ou I'm fine, thanks." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Coffee. On me today." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Take a seat." },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "text": "Tough shift? Long day?" },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: I'm tired." },
+    { "speaker": "poppy", "lang": "en", "emotion": "surprised", "alvo": true, "text": "I'm tired!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "My number is..." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "I'm tired." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Cansado ou feliz, agora você diz.",
+      "cardTexto": "você reconheceu e disse como tá · T1 E16 · você já sabe 16 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta em inglês: hoje você tá tired ou happy?",
+      "cardTexto": "CONSIGO… dizer como estou ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "reconhecer o contrário fixa o sentido (codificação dupla); 'I'm happy!' só para ouvir",
+    "contraste de pronúncia: 'tired' fechado no d x 'táiredi' com vogal extra (1x só, sem risco vermelho)",
+    "personalização liga a frase à vida real de quem assiste cansado, de noite",
+    "Bolinha devolve 'My number is...' (assunto 12) antes da ⭐ do dia; é a última boca",
+    "Poppy, que nunca cansa, desabando pela 1ª vez é a piada de 'para conferir'"
+  ]
+}

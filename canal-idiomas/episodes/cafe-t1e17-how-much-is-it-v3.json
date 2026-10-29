@@ -1,0 +1,64 @@
+{
+  "id": "cafe-t1e17-how-much-is-it-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 17,
+    "codigo": "T1 E17 · parte 3/3",
+    "tituloCapitulo": "Pedindo e perguntando o preço",
+    "frasesAprendidas": 17,
+    "progresso": "você já sabe 17 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo pedir comida e bebida com expressões básicas e perguntar o preço.",
+  "title": "Ep. 17 (parte 3/3) · quanto custa? só pelo ouvido",
+  "hookTitle": "quanto custa? só pelo ouvido",
+  "alvo": {
+    "en": "How much is it?",
+    "pt": "Quanto custa?"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "poppy", "bolinha"],
+  "contexto": {
+    "legenda": "qual etiqueta é essa? escuta o preço e pergunta de novo. How much is it? 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 17,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você ouve o preço e pergunta quanto custa." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How much is it?" },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "It's three dollars." },
+    { "tipo": "pergunta", "s": 3, "text": "três ou oito? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Três. Three, com a língua pra fora." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "It's five dollars." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "It's nine dollars." },
+    { "tipo": "pausa", "s": 3, "text": "cinco ou nove? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Cinco. Five, terminando no v." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "O nove também é fácil. Nine, com o som do n dobrado." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How much is it?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "How much is it?" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Pede o café e pergunta o preço pro Hank." },
+    { "tipo": "pausa", "s": 5.0, "text": "SUA VEZ: A coffee, please. How much is it?" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Two dollars. Thank you, Capy." },
+    { "speaker": "capi", "lang": "pt", "emotion": "neutral", "text": "Aponta e pergunta." },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: How much is it?" },
+    { "speaker": "duda", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How much is it?" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "How old are you?" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "How much is it?" },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei as duas. Começam igual." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Agora você pede e pergunta o preço sozinho.",
+      "cardTexto": "você pediu e perguntou o preço · T1 E17 · você já sabe 17 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta em inglês o que você quer comprar e por quanto.",
+      "cardTexto": "CONSIGO… pedir e perguntar o preço ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "reconhecer o preço dito é a outra metade do consigo (lidar com preço)",
+    "rodada 2 troca o par $5/$9 em vez do contraste de melodia (TTS não garante subida/descida audível com o mesmo texto; régua do mestre, contingência da cena 7)",
+    "personalização junta pedir + perguntar, a cena inteira de sobrevivência",
+    "Bolinha devolve 'How old are you?' (assunto 13) antes da ⭐; é a última boca"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "cafe-t1e18-this-is-my-mother-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 18,
+    "codigo": "T1 E18 · parte 2/3",
+    "tituloCapitulo": "Apresentando a família",
+    "frasesAprendidas": 18,
+    "progresso": "você já sabe 18 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo ter uma conversa simples sobre temas previsíveis, como apresentar alguém da família.",
+  "title": "Ep. 18 (parte 2/3) · a Dona Jaca conhece o café",
+  "hookTitle": "a mãe no café",
+  "alvo": {
+    "en": "This is my mother.",
+    "pt": "Essa é minha mãe.",
+    "variacoes": ["This is my daughter!"]
+  },
+  "cast": ["capi", "donajaca", "lazy", "turista", "poppy", "hank", "duda"],
+  "contexto": {
+    "legenda": "a Dona Jaca no Bean There. todo mundo quer conhecer. This is my mother. ☕"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 18,
+  "beats": [
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Filha, esse café custa um almoço!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",
+      "text": "Hoje eu apresento a minha mãe pro café inteiro." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "And this is...?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "This... is... my... mother." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "SUA VEZ: This is my mother." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my mother." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "text": "Thank you! So nice!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Gente educada." },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "text": "This café loves moms!" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Eficiente. Pisco sem esforço." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my mother." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "text": "This is my... daughter!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my mother!" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my mother." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Ela também não sorri." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Rua inteira. E até o Hank tem mãe.",
+      "cardTexto": "você apresentou sua mãe pro café inteiro · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 1.0,
+      "text": "Minha mãe é médica. Como ela fala isso em inglês?" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.0, "emotion": "happy",
+      "text": "Comenta quem você apresentaria primeiro, da sua família.",
+      "cardTexto": "aula do assunto 18 no perfil · segue a Capy" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: a Dona Jaca conhece o Bean There, sem data; usada se o hype do passeio das luzes não servir",
+    "'você é a Capy' 2x no enredo: a fala dela some e o aluno responde",
+    "'This is my... daughter!' é variação e não conta; a última ⭐ é do Hank",
+    "gancho verdadeiro pro V3/assunto 19: a profissão da Dona Jaca (sem citar assunto futuro não agendado)"
+  ]
+}

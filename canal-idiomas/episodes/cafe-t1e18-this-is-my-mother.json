@@ -1,0 +1,66 @@
+{
+  "id": "cafe-t1e18-this-is-my-mother",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 18,
+    "codigo": "T1 E18",
+    "tituloCapitulo": "Apresentando a família",
+    "frasesAprendidas": 18,
+    "progresso": "você já sabe 18 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo ter uma conversa simples sobre temas previsíveis, como apresentar alguém da família.",
+  "title": "Ep. 18 (parte 1/3) · This is my mother: a Dona Jaca chegou",
+  "hookTitle": "a Dona Jaca chegou",
+  "alvo": {
+    "en": "This is my mother.",
+    "pt": "Essa é minha mãe."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha", "turista", "donajaca"],
+  "contexto": {
+    "legenda": "a Dona Jaca veio em pessoa pro Natal. This is my mother. 🧳"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 18,
+  "beats": [
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Ouch! My foot!" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "text": "Sorry! Hello, everyone!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "O Mike só viu ela pelo celular." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você apresenta a sua mãe. Igual amigo, muda uma palavra." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This... is... my... mother." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Você já sabe o começo. Só troca o fim." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "No meio, a língua aparece e vibra. Não é 'móder'." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Mão aberta pra mãe." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my mother." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "This is my mother." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: This is my mother." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "This is my mother." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'móder'? Dá pra entender. Vibrando, fica mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "Mike, this is my mother." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "text": "Hi, Mike! Nice to meet you!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Que menino grande!" },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "Aww, that's so sweet!" },
+    { "speaker": "turista", "lang": "en", "emotion": "surprised", "alvo": true, "text": "This is my mother!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Hi, Mom! Say hi to Capy!" },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Family. Nice." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Ela também acha que você tá magro, Mike." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Apresentei a minha mãe. E ela apresentou um abraço.",
+      "cardTexto": "1ª vez apresentando a família · T1 E18 · você já sabe 18 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.5, "emotion": "happy",
+      "text": "Marca a sua mãe e apresenta ela em inglês, nos comentários.",
+      "cardTexto": "CONSIGO… apresentar a minha mãe ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 17: a Dona Jaca apareceu de mala na feira; o Mike espera ser apresentado",
+    "molde 'This is my...' do assunto 14, peça nova é só 'mother'",
+    "th de 'mother' vibra, igual 'this' (saquinho de chá tremendo, revisão espaçada do assunto 14)",
+    "a Capy nunca é a última a dizer a ⭐ (fecha com o Mike apresentando a mãe dele na videochamada)",
+    "piada: as duas mães se olham pelas telas e acenam ao mesmo tempo"
+  ]
+}

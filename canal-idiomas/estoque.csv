@@ -23,3 +23,4 @@ data,assunto,episodio,video,id,hype_ou_reserva,status,nota_portao,reescritas,mot
 2026-10-29,8,T1 E08,,,,nao_iniciado,,,"não iniciado nesta rodada (cota 429 do gemini-3.8-flash-tts bloqueou antes de chegar aqui)",
 2026-10-29,9,T1 E09,,,,nao_iniciado,,,"não iniciado nesta rodada (cota 429 do gemini-3.8-flash-tts bloqueou antes de chegar aqui)",
 2026-10-29,10,T1 E10,,,,nao_iniciado,,,"não iniciado nesta rodada (cota 429 do gemini-3.8-flash-tts bloqueou antes de chegar aqui)",
+2026-10-29,16,T1 E16,V1,cafe-t1e16-im-tired,,aprovado,8.8,0,"juiz 8.8; inglês natural, objetivo único claro, piada do Lazy ('por eficiência') funciona só, nada infantil",cafe-t1e16-im-tired.mp4

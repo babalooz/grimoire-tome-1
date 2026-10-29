@@ -1,0 +1,65 @@
+{
+  "id": "cafe-t1e19-im-a-doctor-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 4,
+    "episodio": 19,
+    "codigo": "T1 E19 · parte 2/3",
+    "tituloCapitulo": "O que você faz",
+    "frasesAprendidas": 19,
+    "progresso": "você já sabe 19 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer o que eu faço.",
+  "title": "Ep. 19 (parte 2/3) · todo mundo no café tem profissão",
+  "hookTitle": "o dia da profissão no café",
+  "alvo": {
+    "en": "I'm a doctor.",
+    "pt": "Eu sou médico.",
+    "variacoes": ["I'm a doctor, too!"]
+  },
+  "cast": ["capi", "poppy", "donajaca", "turista", "lazy", "hank", "duda"],
+  "contexto": {
+    "legenda": "mural de clientes no Bean There. cada um diz o que faz. I'm a doctor. 📌"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 19,
+  "beats": [
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "text": "Look at this wall! So many cards!" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Gente, aqui perguntam a profissão logo depois do nome!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",
+      "text": "Hoje eu digo o que eu faço. E a minha mãe também." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "What do you do?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "I'm a doctor..." },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "text": "...barista." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "SUA VEZ: I'm a barista." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "I'm a barista." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm a doctor!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm a doctor, too!" },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.5, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "I'm a barista." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Head barista." },
+    { "speaker": "hank", "lang": "pt", "emotion": "bored", "text": "Eu que mando aqui." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm a doctor." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Doze por oito. Pode tomar mais um café." },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "...I'm a doctor." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Mentira. Mas falei certo." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Barista e filha de médica. Tudo em inglês.",
+      "cardTexto": "você disse o que faz no mural do café · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "surprised", "hold": 1.0,
+      "text": "Jantar de Natal às três da tarde?" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.0, "emotion": "happy",
+      "text": "Comenta a profissão de alguém da sua família, em inglês.",
+      "cardTexto": "aula do assunto 19 no perfil · segue a Capy pro último capítulo da temporada" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: mural de clientes do Bean There, sem data; usada se o hype da festa de Natal não servir",
+    "o aluno usa o molde com a profissão da Capy ('I'm a barista.'); a ⭐ fica nas bocas dos médicos",
+    "'Head barista.' / humor de hierarquia, sem humilhar",
+    "a última ⭐ é do Lazy; gancho verdadeiro pro V3/assunto 20 sem citar episódio não agendado"
+  ]
+}
