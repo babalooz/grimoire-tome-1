@@ -25,3 +25,4 @@ data,assunto,episodio,video,id,hype_ou_reserva,status,nota_portao,reescritas,mot
 2026-10-29,10,T1 E10,,,,nao_iniciado,,,"não iniciado nesta rodada (cota 429 do gemini-3.8-flash-tts bloqueou antes de chegar aqui)",
 2026-10-29,16,T1 E16,V1,cafe-t1e16-im-tired,,aprovado,8.8,0,"juiz 8.8; inglês natural, objetivo único claro, piada do Lazy ('por eficiência') funciona só, nada infantil",cafe-t1e16-im-tired.mp4
 2026-10-29,16,T1 E16 · parte 2/3,V2,cafe-t1e16-im-tired-v2,reserva,aprovado,8.5,0,"juiz 8.5; história do turno dobrado coerente; piada 'até o Mike cansa' funciona só; reserva atemporal (hype de Natal incerto, roteiro recomenda reserva)",cafe-t1e16-im-tired-v2.mp4
+2026-10-29,16,T1 E16 · parte 3/3,V3,cafe-t1e16-im-tired-v3,,aprovado,8.5,0,"juiz 8.5; reconhecimento tired/happy fixa contraste; Bolinha revisão assunto 12; nada infantil",cafe-t1e16-im-tired-v3.mp4
