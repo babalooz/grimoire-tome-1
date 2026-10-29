@@ -119,6 +119,8 @@ Prioridade: o que gera retorno mais rápido com menos esforço. Idioma: sempre p
 - Objetivo: parecer sequência e o público ir atrás dos outros. Todo **título do YouTube** e toda **legenda do TikTok/Instagram
   COMEÇAM pelo número da série**:
   - **Sitcom:** `Ep. N (parte X/3) · ` — N = número do assunto (o mesmo do selo "T1 E0N" no vídeo); X = 1 (V1), 2 (V2), 3 (V3).
+    Na T2, N = 20 + número do assunto (selo continua "T2 E0N"; decisão do Felipe, 29/10, aprovando a numeração contínua
+    recomendada pelo mestre em `ponte/saida/correcoes-mestre-t2.md`).
   - **Vocabulário:** `Palavras #N · ` — N = número do tema na ordem em que foi ao ar (01 = números, 02 = Halloween,
     03 = cumprimentos, e assim por diante; o número segue o VOCAB NN do `publicados.csv`).
   - **Corte:** diz de onde vem: `do Ep. N · ` ou `das Palavras #N · ` no começo.
