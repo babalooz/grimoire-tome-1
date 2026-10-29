@@ -26,7 +26,7 @@ Legenda das colunas: **#** = tópico do consenso (§3) · **Revisa da T1** = o q
 | 3 | **"Two coffees, please."** | #13 (plural) | pedir mais de uma coisa | "A coffee, please." (17), números (4) | o -s do plural em /z/: "cófiz", sem "cófisi" |
 | 4 | **"It's Mike's."** | #16 ('s) | dizer de quem é uma coisa | "It's a phone." (15), "This is my mother." (18) | o 's colado: "máiks", sem "máiquis" |
 | 5 | **"See you on Monday!"** | #17 (dias) | combinar um dia | "Bye! See you!" (2) | "Monday" = "MÂN-dei" (o "o" soa "â"; tônica no começo) |
-| 6 | **"I like pizza."** | #18 + #20 (comida + presente simples, I) | dizer do que gosto | "A coffee, please." (17), a pizza do "It's a pizza!" (15) | "pizza" = "PÍT-sa" (o zz vira "ts") |
+| 6 | **"I like pizza."** | #18 + #20 (comida + presente simples, I) | dizer do que gosto | "A coffee, please." (17), a pizza do "It's a pizza!" (15) | "like" fecha no k, sem "láiki" (o brasileiro já diz "pítsa": vira vitória fácil, não aula) |
 | 7 | **"I don't like it."** | #20 (negativa) | dizer do que não gosto | "I like pizza." (T2-6), "It's…" (15) | "don't" = "dount", t final quase mudo |
 | 8 | **"Yes, I do."** | #20 (pergunta + resposta curta) | responder sim a uma pergunta sobre gosto | "Yes, I am." (10): am × do | entonação: "Do you like…?" sobe; "Yes, I do." desce |
 | 9 | **"I live in Brazil."** | #20 (live) | dizer onde moro | "I'm from Brazil." (5): from × live | "live" com i curto (/ɪ/), não "liv" de "leave" (§8) |
