@@ -53,7 +53,7 @@ def medir(mp4: Path, tmp: Path):
 
 def veredito(nome: str, m: dict):
     falhas = []
-    wide = "wide" in nome  # longo do YouTube em tela cheia (16:9)
+    wide = "wide" in nome or nome.startswith("longo/")  # longo do YouTube em tela cheia (16:9)
     esquete = "esquete" in nome or nome.startswith("corte-")
     if wide:
         if not m["res_wide"]:
