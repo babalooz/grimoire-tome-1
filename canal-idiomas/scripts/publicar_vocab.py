@@ -31,6 +31,11 @@ def url_midia(nome: str) -> tuple[str, str] | None:
     return f"https://cdn.jsdelivr.net/gh/{pub.REPO}@{sha}/{nome}", sha
 
 
+def anterior_por_ultimo(desc: str, hashtags: str) -> str:
+    corpo, sep, ant = desc.rpartition("\n\nanterior:")
+    return f"{corpo}\n\n{hashtags}\n\nanterior:{ant}" if sep else f"{desc}\n\n{hashtags}"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("tema")
@@ -44,7 +49,8 @@ def main() -> None:
     post = tema["post"]
     textos = {
         "tiktok": {"titulo": "", "texto": f"{post['tiktok']} {post['hashtags_tiktok']}"},
-        "youtube": {"titulo": post["youtube_titulo"], "texto": f"{post['youtube_descricao']}\n\n{post['hashtags_youtube']}"},
+        # regra de CLAUDE.md (28/10): a descrição TERMINA com "anterior: …" → hashtags entram antes dessa linha
+        "youtube": {"titulo": post["youtube_titulo"], "texto": anterior_por_ultimo(post["youtube_descricao"], post["hashtags_youtube"])},
     }
     falhas = []
     if (pub.ROOT / "FREIO").exists():

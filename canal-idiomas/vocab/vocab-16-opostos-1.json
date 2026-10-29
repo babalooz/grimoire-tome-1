@@ -1,0 +1,165 @@
+{
+  "id": "vocab-16-opostos-1",
+  "format": "vocab",
+  "audio": "audio/vocab/opostos-1",
+  "tema": {
+    "pt": "opostos 1",
+    "en": "opposites"
+  },
+  "serie": {
+    "codigo": "VOCAB 16",
+    "titulo": "opostos 1",
+    "post": "Palavras #16"
+  },
+  "data_ar": "2026-11-12",
+  "banco": 15,
+  "hookTitle": "Opostos em inglês",
+  "nota": "Tema 15 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #16, vai ao ar 12/11/2026 (qui). Cenário pedido: café (copos P e G). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "big",
+      "pt": "grande",
+      "digito": "1",
+      "objeto": "copoGrande",
+      "qtd": 1,
+      "pron": "BÍG"
+    },
+    {
+      "en": "small",
+      "pt": "pequeno",
+      "digito": "1",
+      "objeto": "copoPequeno",
+      "qtd": 1,
+      "pron": "SMÓL"
+    },
+    {
+      "en": "hot",
+      "pt": "quente",
+      "digito": "1",
+      "objeto": "cafeQuente",
+      "qtd": 1,
+      "armadilha": {
+        "id": "thot",
+        "marca": "o h soa como r de rato",
+        "dica": "O h sai como um sopro, igual ao r de rato.",
+        "voz": true
+      },
+      "pron": "RÓT"
+    },
+    {
+      "en": "cold",
+      "pt": "gelado",
+      "digito": "1",
+      "objeto": "cafeGelado",
+      "qtd": 1,
+      "pron": "KOULD"
+    },
+    {
+      "en": "new",
+      "pt": "novo",
+      "digito": "1",
+      "objeto": "celularNovo",
+      "qtd": 1,
+      "pron": "NUU"
+    },
+    {
+      "en": "old",
+      "pt": "velho",
+      "digito": "1",
+      "objeto": "celularVelho",
+      "qtd": 1,
+      "armadilha": {
+        "id": "told",
+        "marca": "ould, com u",
+        "dica": "Ould, com u.",
+        "voz": false
+      },
+      "pron": "OULD"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Grande, pequeno, quente, gelado: no balcão do café."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "big → old",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #16 · opostos 1 em inglês: big, small, hot e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #16 · Opostos 1 em inglês: big, small, hot | CapyFala",
+    "youtube_descricao": "6 palavras de opostos 1 em inglês (big, small, hot, cold, new, old), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (hot, old). VOCAB 16 · CapyFala.\n\nanterior: Palavras #15",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "cafeGelado",
+      "cafeQuente",
+      "celularNovo",
+      "celularVelho",
+      "copoGrande",
+      "copoPequeno"
+    ],
+    "acoes": []
+  }
+}

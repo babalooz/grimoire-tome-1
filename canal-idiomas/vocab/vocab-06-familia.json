@@ -1,0 +1,187 @@
+{
+  "id": "vocab-06-familia",
+  "format": "vocab",
+  "audio": "audio/vocab/familia",
+  "tema": {
+    "pt": "família",
+    "en": "family"
+  },
+  "serie": {
+    "codigo": "VOCAB 06",
+    "titulo": "família",
+    "post": "Palavras #06"
+  },
+  "data_ar": "2026-11-02",
+  "banco": 5,
+  "hookTitle": "Família em inglês",
+  "nota": "Tema 5 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #06, vai ao ar 02/11/2026 (seg). Cenário pedido: café. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "mother",
+      "pt": "mãe",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "donajaca"
+        ],
+        "acao": "aponta",
+        "contexto": "a mãe da Capy, na videochamada"
+      },
+      "armadilha": {
+        "id": "tmother",
+        "marca": "th vibrando, não é mader",
+        "dica": "Língua entre os dentes no th: mâ-dher.",
+        "voz": true
+      },
+      "pron": "MÂ-dher"
+    },
+    {
+      "en": "father",
+      "pt": "pai",
+      "digito": "1",
+      "objeto": "fotoPai",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tfather",
+        "marca": "th vibrando",
+        "dica": "Língua entre os dentes no th de novo.",
+        "voz": true
+      },
+      "pron": "FÁ-dher"
+    },
+    {
+      "en": "sister",
+      "pt": "irmã",
+      "digito": "1",
+      "objeto": "fotoIrma",
+      "qtd": 1,
+      "pron": "SÍS-ter"
+    },
+    {
+      "en": "brother",
+      "pt": "irmão",
+      "digito": "1",
+      "objeto": "fotoIrmao",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbrother",
+        "marca": "th vibrando: BRÂ-dher",
+        "dica": "Th vibrando: BRÂ-dher.",
+        "voz": false
+      },
+      "pron": "BRÂ-dher"
+    },
+    {
+      "en": "son",
+      "pt": "filho",
+      "digito": "1",
+      "objeto": "fotoFilho",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tson",
+        "marca": "soa igual a sun (sol)",
+        "dica": "Soa igual a sun, o sol.",
+        "voz": true
+      },
+      "pron": "SÂN (igual a sun)"
+    },
+    {
+      "en": "daughter",
+      "pt": "filha",
+      "digito": "1",
+      "objeto": "fotoFilha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tdaughter",
+        "marca": "o gh não soa: DÓ-ter",
+        "dica": "O g e o h não soam. Dó-ter.",
+        "voz": false
+      },
+      "pron": "DÓ-ter"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Mãe, pai, irmão: a família inteira em inglês."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de família. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "mother → daughter",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #06 · família em inglês: mother, father, sister e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #06 · Família em inglês: mother, father, sister | CapyFala",
+    "youtube_descricao": "6 palavras de família em inglês (mother, father, sister, brother, son, daughter), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (mother, father, brother, son, daughter). VOCAB 06 · CapyFala.\n\nanterior: Palavras #05",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "fotoFilha",
+      "fotoFilho",
+      "fotoIrma",
+      "fotoIrmao",
+      "fotoPai"
+    ],
+    "acoes": []
+  }
+}

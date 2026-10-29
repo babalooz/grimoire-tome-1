@@ -1,0 +1,159 @@
+{
+  "id": "vocab-43-celular",
+  "format": "vocab",
+  "audio": "audio/vocab/celular",
+  "tema": {
+    "pt": "celular",
+    "en": "phone things"
+  },
+  "serie": {
+    "codigo": "VOCAB 43",
+    "titulo": "celular",
+    "post": "Palavras #43"
+  },
+  "data_ar": "2026-12-09",
+  "banco": 40,
+  "hookTitle": "Coisas do celular em inglês",
+  "nota": "Tema 40 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #43, vai ao ar 09/12/2026 (qua). Cenário pedido: café (clientes no Wi-Fi). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "password",
+      "pt": "senha",
+      "digito": "1",
+      "objeto": "cadeado",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tpassword",
+        "marca": "o w não soa",
+        "dica": "O w não se fala: pés-uârd.",
+        "voz": true
+      },
+      "pron": "PÉS-uârd"
+    },
+    {
+      "en": "email",
+      "pt": "e-mail",
+      "digito": "1",
+      "objeto": "envelope",
+      "qtd": 1,
+      "pron": "ÍI-meil"
+    },
+    {
+      "en": "charger",
+      "pt": "carregador",
+      "digito": "1",
+      "objeto": "carregador",
+      "qtd": 1,
+      "pron": "TCHÁR-djer"
+    },
+    {
+      "en": "battery",
+      "pt": "bateria",
+      "digito": "1",
+      "objeto": "bateria",
+      "qtd": 1,
+      "pron": "BÉ-ri-ri"
+    },
+    {
+      "en": "message",
+      "pt": "mensagem",
+      "digito": "2",
+      "objeto": "balaoMensagem",
+      "qtd": 2,
+      "pron": "MÉ-sidj"
+    },
+    {
+      "en": "photo",
+      "pt": "foto",
+      "digito": "1",
+      "objeto": "foto",
+      "qtd": 1,
+      "pron": "FÔU-rou"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Senha do Wi-Fi em inglês: o w de password não soa."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de celular. Qual você mais pede? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "password → photo",
+    "cta": "qual você mais pede? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #43 · celular em inglês: password, email, charger e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #43 · Celular em inglês: password, email, charger | CapyFala",
+    "youtube_descricao": "6 palavras de celular em inglês (password, email, charger, battery, message, photo), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (password). VOCAB 43 · CapyFala.\n\nanterior: Palavras #42",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "balaoMensagem",
+      "bateria",
+      "cadeado",
+      "carregador",
+      "envelope",
+      "foto"
+    ],
+    "acoes": []
+  }
+}

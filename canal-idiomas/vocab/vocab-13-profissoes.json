@@ -1,0 +1,165 @@
+{
+  "id": "vocab-13-profissoes",
+  "format": "vocab",
+  "audio": "audio/vocab/profissoes",
+  "tema": {
+    "pt": "profissões",
+    "en": "jobs"
+  },
+  "serie": {
+    "codigo": "VOCAB 13",
+    "titulo": "profissões",
+    "post": "Palavras #13"
+  },
+  "data_ar": "2026-11-09",
+  "banco": 12,
+  "hookTitle": "Profissões em inglês",
+  "nota": "Tema 12 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #13, vai ao ar 09/11/2026 (seg). Cenário pedido: café (clientes de crachá). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "doctor",
+      "pt": "médico",
+      "digito": "1",
+      "objeto": "estetoscopio",
+      "qtd": 1,
+      "pron": "DÓK-ter"
+    },
+    {
+      "en": "teacher",
+      "pt": "professor",
+      "digito": "1",
+      "objeto": "quadroGiz",
+      "qtd": 1,
+      "pron": "TÍI-tcher"
+    },
+    {
+      "en": "student",
+      "pt": "estudante",
+      "digito": "1",
+      "objeto": "mochila",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tstudent",
+        "marca": "sem i no começo: student, não istudent",
+        "dica": "Começa direto no s: stú-dent. Sem i na frente.",
+        "voz": true
+      },
+      "pron": "STÚ-dent"
+    },
+    {
+      "en": "waiter",
+      "pt": "garçom",
+      "digito": "1",
+      "objeto": "bandeja",
+      "qtd": 1,
+      "pron": "UÊI-ter"
+    },
+    {
+      "en": "driver",
+      "pt": "motorista",
+      "digito": "1",
+      "objeto": "volante",
+      "qtd": 1,
+      "pron": "DRÁI-ver"
+    },
+    {
+      "en": "nurse",
+      "pt": "enfermeiro",
+      "digito": "1",
+      "objeto": "termometro",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tnurse",
+        "marca": "o r americano, sem e no fim",
+        "dica": "O r americano, sem e no fim.",
+        "voz": false
+      },
+      "pron": "NÂRS"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "O que você faz? Seis respostas em inglês."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de profissões. Qual é a sua profissão? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "doctor → nurse",
+    "cta": "qual é a sua profissão? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #13 · profissões em inglês: doctor, teacher, student e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #13 · Profissões em inglês: doctor, teacher, student | CapyFala",
+    "youtube_descricao": "6 palavras de profissões em inglês (doctor, teacher, student, waiter, driver, nurse), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (student, nurse). VOCAB 13 · CapyFala.\n\nanterior: Palavras #12",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bandeja",
+      "estetoscopio",
+      "mochila",
+      "quadroGiz",
+      "termometro",
+      "volante"
+    ],
+    "acoes": []
+  }
+}

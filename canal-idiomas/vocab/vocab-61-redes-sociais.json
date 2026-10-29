@@ -1,0 +1,166 @@
+{
+  "id": "vocab-61-redes-sociais",
+  "format": "vocab",
+  "audio": "audio/vocab/redes-sociais",
+  "tema": {
+    "pt": "redes sociais",
+    "en": "social media"
+  },
+  "serie": {
+    "codigo": "VOCAB 61",
+    "titulo": "redes sociais",
+    "post": "Palavras #61"
+  },
+  "data_ar": "2026-12-27",
+  "banco": 57,
+  "hookTitle": "Redes sociais em inglês",
+  "nota": "Tema 57 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #61, vai ao ar 27/12/2026 (dom). Cenário pedido: café (Poppy no celular). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "post",
+      "pt": "postar",
+      "digito": "1",
+      "objeto": "iconePost",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tpost",
+        "marca": "pôust, com ou",
+        "dica": "É pôust, com ou.",
+        "voz": true
+      },
+      "pron": "PÔUST"
+    },
+    {
+      "en": "like",
+      "pt": "curtir",
+      "digito": "3",
+      "objeto": "iconeCoracao",
+      "qtd": 3,
+      "pron": "LÁIK"
+    },
+    {
+      "en": "follow",
+      "pt": "seguir",
+      "digito": "1",
+      "objeto": "iconeSeguir",
+      "qtd": 1,
+      "pron": "FÓ-lou"
+    },
+    {
+      "en": "share",
+      "pt": "compartilhar",
+      "digito": "1",
+      "objeto": "iconeCompartilhar",
+      "qtd": 1,
+      "pron": "SHÉR"
+    },
+    {
+      "en": "comment",
+      "pt": "comentar",
+      "digito": "2",
+      "objeto": "balaoMensagem",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tcomment",
+        "marca": "força no começo",
+        "dica": "Força no começo.",
+        "voz": false,
+        "enfase": "COM"
+      },
+      "pron": "KÓ-ment"
+    },
+    {
+      "en": "video",
+      "pt": "vídeo",
+      "digito": "1",
+      "objeto": "iconePlay",
+      "qtd": 1,
+      "pron": "VÍ-di-ou"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "poppy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "poppy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "A Poppy explica: seis palavras que você já usa todo dia."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de redes sociais. Qual você mais faz? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "post → video",
+    "cta": "qual você mais faz? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #61 · redes sociais em inglês: post, like, follow e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #61 · Redes sociais em inglês: post, like, follow | CapyFala",
+    "youtube_descricao": "6 palavras de redes sociais em inglês (post, like, follow, share, comment, video), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (post, comment). VOCAB 61 · CapyFala.\n\nanterior: Palavras #60",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "balaoMensagem",
+      "iconeCompartilhar",
+      "iconeCoracao",
+      "iconePlay",
+      "iconePost",
+      "iconeSeguir"
+    ],
+    "acoes": []
+  }
+}

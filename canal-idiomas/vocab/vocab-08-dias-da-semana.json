@@ -1,0 +1,176 @@
+{
+  "id": "vocab-08-dias-da-semana",
+  "format": "vocab",
+  "audio": "audio/vocab/dias-da-semana",
+  "tema": {
+    "pt": "dias da semana",
+    "en": "days of the week"
+  },
+  "serie": {
+    "codigo": "VOCAB 08",
+    "titulo": "dias da semana",
+    "post": "Palavras #08"
+  },
+  "data_ar": "2026-11-04",
+  "banco": 7,
+  "hookTitle": "Dias da semana em inglês",
+  "nota": "Tema 7 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #08, vai ao ar 04/11/2026 (qua). Cenário pedido: café (quadro de turnos). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "Monday",
+      "pt": "segunda",
+      "digito": "SEG",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "MÂN-dei"
+    },
+    {
+      "en": "Tuesday",
+      "pt": "terça",
+      "digito": "TER",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "TÚZ-dei"
+    },
+    {
+      "en": "Wednesday",
+      "pt": "quarta",
+      "digito": "QUA",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "armadilha": {
+        "id": "twednesday",
+        "marca": "o d não soa: WENZ-day",
+        "dica": "O primeiro d não se fala: uénz-dei.",
+        "voz": true
+      },
+      "pron": "UÉNZ-dei"
+    },
+    {
+      "en": "Thursday",
+      "pt": "quinta",
+      "digito": "QUI",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tthursday",
+        "marca": "th: língua nos dentes",
+        "dica": "Th: língua nos dentes.",
+        "voz": false
+      },
+      "pron": "THÂRZ-dei"
+    },
+    {
+      "en": "Friday",
+      "pt": "sexta",
+      "digito": "SEX",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "FRAI-dei"
+    },
+    {
+      "en": "Saturday",
+      "pt": "sábado",
+      "digito": "SÁB",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tsaturday",
+        "marca": "força no começo: SAT-ur-day",
+        "dica": "Força no começo: SAT-ur-day.",
+        "voz": false,
+        "enfase": "SAT"
+      },
+      "pron": "SÉ-rer-dei"
+    },
+    {
+      "en": "Sunday",
+      "pt": "domingo",
+      "digito": "DOM",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "SÂN-dei"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      6
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Segunda a domingo: e a quarta tem letra que não se fala."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "7 palavras novas. Qual é o seu dia favorito? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 7 palavras",
+    "sub": "Monday → Sunday",
+    "cta": "qual é o seu dia favorito? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #08 · dias da semana em inglês: Monday, Tuesday, Wednesday e mais 4. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #08 · Dias da semana em inglês: Monday, Tuesday, Wednesday | CapyFala",
+    "youtube_descricao": "7 palavras de dias da semana em inglês (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (Wednesday, Thursday, Saturday). VOCAB 08 · CapyFala.\n\nanterior: Palavras #07",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "calendarioDia"
+    ],
+    "acoes": []
+  }
+}

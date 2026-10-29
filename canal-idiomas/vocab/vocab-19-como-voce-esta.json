@@ -1,0 +1,196 @@
+{
+  "id": "vocab-19-como-voce-esta",
+  "format": "vocab",
+  "audio": "audio/vocab/como-voce-esta",
+  "tema": {
+    "pt": "como você está",
+    "en": "feelings"
+  },
+  "serie": {
+    "codigo": "VOCAB 19",
+    "titulo": "como você está",
+    "post": "Palavras #19"
+  },
+  "data_ar": "2026-11-15",
+  "banco": 18,
+  "hookTitle": "Como você está, em inglês",
+  "nota": "Tema 18 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #19, vai ao ar 15/11/2026 (dom). Cenário pedido: café (caras do elenco). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "happy",
+      "pt": "feliz",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "sente",
+        "contexto": "a Capy no dia de folga"
+      },
+      "armadilha": {
+        "id": "thappy",
+        "marca": "h soprado: RÉ-pi",
+        "dica": "O h sai num sopro: ré-pi.",
+        "voz": true
+      },
+      "pron": "RÉ-pi"
+    },
+    {
+      "en": "sad",
+      "pt": "triste",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "sente",
+        "contexto": "o café acabou"
+      },
+      "pron": "SÉD"
+    },
+    {
+      "en": "tired",
+      "pt": "cansado",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "sente",
+        "contexto": "o Lazy, como sempre"
+      },
+      "pron": "TÁI-erd"
+    },
+    {
+      "en": "hungry",
+      "pt": "com fome",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "sente",
+        "contexto": "antes do almoço"
+      },
+      "armadilha": {
+        "id": "thungry",
+        "marca": "hungry tem h: RÂN-gri",
+        "dica": "Hungry começa com sopro. Angry, não.",
+        "voz": true
+      },
+      "pron": "RÂN-gri"
+    },
+    {
+      "en": "angry",
+      "pt": "bravo",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "hank"
+        ],
+        "acao": "sente",
+        "contexto": "alguém pediu descafeinado"
+      },
+      "armadilha": {
+        "id": "tangry",
+        "marca": "angry sem h: ÉN-gri",
+        "dica": "Angry sem h: ÉN-gri.",
+        "voz": false
+      },
+      "pron": "ÉN-gri"
+    },
+    {
+      "en": "bored",
+      "pt": "entediado",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "sente",
+        "contexto": "a fila não anda"
+      },
+      "pron": "BÓRD"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Feliz, cansado, com fome: seis jeitos de responder."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Como você tá hoje? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "happy → bored",
+    "cta": "como você tá hoje? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #19 · como você está em inglês: happy, sad, tired e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #19 · Como você está em inglês: happy, sad, tired | CapyFala",
+    "youtube_descricao": "6 palavras de como você está em inglês (happy, sad, tired, hungry, angry, bored), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (happy, hungry, angry). VOCAB 19 · CapyFala.\n\nanterior: Palavras #18",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [],
+    "acoes": [
+      "sente"
+    ]
+  }
+}

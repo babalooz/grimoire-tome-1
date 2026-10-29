@@ -1,0 +1,154 @@
+{
+  "id": "vocab-42-ordinais",
+  "format": "vocab",
+  "audio": "audio/vocab/ordinais",
+  "tema": {
+    "pt": "ordinais",
+    "en": "ordinal numbers"
+  },
+  "serie": {
+    "codigo": "VOCAB 42",
+    "titulo": "ordinais",
+    "post": "Palavras #42"
+  },
+  "data_ar": "2026-12-08",
+  "banco": 39,
+  "hookTitle": "1º, 2º, 3º em inglês",
+  "nota": "Tema 39 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #42, vai ao ar 08/12/2026 (ter). Cenário pedido: café (fila). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "first",
+      "pt": "primeiro",
+      "digito": "1º",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "FÂRST"
+    },
+    {
+      "en": "second",
+      "pt": "segundo",
+      "digito": "2º",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "SÉ-kond"
+    },
+    {
+      "en": "third",
+      "pt": "terceiro",
+      "digito": "3º",
+      "objeto": "senha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tthird",
+        "marca": "th: língua nos dentes",
+        "dica": "Língua entre os dentes no th.",
+        "voz": true
+      },
+      "pron": "THÂRD"
+    },
+    {
+      "en": "fourth",
+      "pt": "quarto",
+      "digito": "4º",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "FÓRTH"
+    },
+    {
+      "en": "fifth",
+      "pt": "quinto",
+      "digito": "5º",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "FÍFTH"
+    },
+    {
+      "en": "last",
+      "pt": "último",
+      "digito": "fim",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "LÉST"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Quem é o primeiro da fila? Seis palavras de ordem."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de ordinais. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "first → last",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #42 · ordinais em inglês: first, second, third e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #42 · Ordinais em inglês: first, second, third | CapyFala",
+    "youtube_descricao": "6 palavras de ordinais em inglês (first, second, third, fourth, fifth, last), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (third). VOCAB 42 · CapyFala.\n\nanterior: Palavras #41",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "senha"
+    ],
+    "acoes": []
+  }
+}

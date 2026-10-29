@@ -1,0 +1,192 @@
+{
+  "id": "vocab-14-letras",
+  "format": "vocab",
+  "audio": "audio/vocab/letras",
+  "tema": {
+    "pt": "letras que o brasileiro troca",
+    "en": "letters"
+  },
+  "serie": {
+    "codigo": "VOCAB 14",
+    "titulo": "letras que o brasileiro troca",
+    "post": "Palavras #14"
+  },
+  "data_ar": "2026-11-10",
+  "banco": 13,
+  "hookTitle": "Letras que enganam em inglês",
+  "nota": "Tema 13 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #14, vai ao ar 10/11/2026 (ter). Cenário pedido: café (letreiro). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "A",
+      "pt": "a (letra)",
+      "digito": "A",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ta",
+        "marca": "a letra A se diz ei",
+        "dica": "A letra A se diz ei.",
+        "voz": false
+      },
+      "pron": "ÊI"
+    },
+    {
+      "en": "E",
+      "pt": "e (letra)",
+      "digito": "E",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "armadilha": {
+        "id": "te",
+        "marca": "a letra E se diz ii",
+        "dica": "A letra E se diz ii.",
+        "voz": true
+      },
+      "pron": "II"
+    },
+    {
+      "en": "I",
+      "pt": "i (letra)",
+      "digito": "I",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ti",
+        "marca": "a letra I se diz ai",
+        "dica": "A letra I se diz ai.",
+        "voz": true
+      },
+      "pron": "ÁI"
+    },
+    {
+      "en": "G",
+      "pt": "g (letra)",
+      "digito": "G",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "pron": "DJII"
+    },
+    {
+      "en": "J",
+      "pt": "j (letra)",
+      "digito": "J",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "pron": "DJÊI"
+    },
+    {
+      "en": "H",
+      "pt": "h (letra)",
+      "digito": "H",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "pron": "ÊITCH"
+    },
+    {
+      "en": "R",
+      "pt": "r (letra)",
+      "digito": "R",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "pron": "ÁR"
+    },
+    {
+      "en": "Y",
+      "pt": "y (letra)",
+      "digito": "Y",
+      "objeto": "letreiro",
+      "qtd": 1,
+      "pron": "UÁI"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      7
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Soletrar o nome no café: oito letras que enganam."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "8 palavras novas. Qual letra te pegou? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 8 palavras",
+    "sub": "A → Y",
+    "cta": "qual letra te pegou? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #14 · letras que o brasileiro troca em inglês: A, E, I e mais 5. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #14 · Letras que o brasileiro troca em inglês: A, E, I | CapyFala",
+    "youtube_descricao": "8 palavras de letras que o brasileiro troca em inglês (A, E, I, G, J, H, R, Y), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (A, E, I). VOCAB 14 · CapyFala.\n\nanterior: Palavras #13",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "letreiro"
+    ],
+    "acoes": []
+  }
+}

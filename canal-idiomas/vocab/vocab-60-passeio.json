@@ -1,0 +1,171 @@
+{
+  "id": "vocab-60-passeio",
+  "format": "vocab",
+  "audio": "audio/vocab/passeio",
+  "tema": {
+    "pt": "passeio",
+    "en": "going out"
+  },
+  "serie": {
+    "codigo": "VOCAB 60",
+    "titulo": "passeio",
+    "post": "Palavras #60"
+  },
+  "data_ar": "2026-12-26",
+  "banco": 56,
+  "hookTitle": "Passeio em inglês",
+  "nota": "Tema 56 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #60, vai ao ar 26/12/2026 (sáb). Cenário pedido: cidade (fim de semana). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "park",
+      "pt": "parque",
+      "digito": "2",
+      "objeto": "arvore",
+      "qtd": 2,
+      "pron": "PÁRK"
+    },
+    {
+      "en": "beach",
+      "pt": "praia",
+      "digito": "1",
+      "objeto": "guardaSol",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbeach",
+        "marca": "i bem comprido: biiitch",
+        "dica": "Estica o i, bem comprido. Com i curto vira palavrão.",
+        "voz": true
+      },
+      "pron": "BIITCH"
+    },
+    {
+      "en": "museum",
+      "pt": "museu",
+      "digito": "1",
+      "objeto": "predioMuseu",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tmuseum",
+        "marca": "força no meio",
+        "dica": "Força no meio.",
+        "voz": false
+      },
+      "pron": "miu-ZÍI-um"
+    },
+    {
+      "en": "mall",
+      "pt": "shopping",
+      "digito": "2",
+      "objeto": "sacola",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tmall",
+        "marca": "no inglês, shopping é mall",
+        "dica": "No inglês, shopping é mall.",
+        "voz": false
+      },
+      "pron": "MÓL"
+    },
+    {
+      "en": "church",
+      "pt": "igreja",
+      "digito": "1",
+      "objeto": "predioIgreja",
+      "qtd": 1,
+      "pron": "TCHÂRTCH"
+    },
+    {
+      "en": "square",
+      "pt": "praça",
+      "digito": "1",
+      "objeto": "fonte",
+      "qtd": 1,
+      "pron": "SKUÉR"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Praia em inglês: cuidado com o i. É sério."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de passeio. Pra onde você vai no fim de semana? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "park → square",
+    "cta": "pra onde você vai no fim de semana? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #60 · passeio em inglês: park, beach, museum e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #60 · Passeio em inglês: park, beach, museum | CapyFala",
+    "youtube_descricao": "6 palavras de passeio em inglês (park, beach, museum, mall, church, square), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (beach, museum, mall). VOCAB 60 · CapyFala.\n\nanterior: Palavras #59",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "arvore",
+      "fonte",
+      "guardaSol",
+      "predioIgreja",
+      "predioMuseu",
+      "sacola"
+    ],
+    "acoes": []
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "id": "vocab-64-ano-novo",
+  "format": "vocab",
+  "audio": "audio/vocab/ano-novo",
+  "tema": {
+    "pt": "Ano-Novo",
+    "en": "new year"
+  },
+  "serie": {
+    "codigo": "VOCAB 64",
+    "titulo": "Ano-Novo",
+    "post": "Palavras #64"
+  },
+  "data_ar": "2026-12-30",
+  "banco": 64,
+  "hookTitle": "Ano-Novo em inglês",
+  "nota": "Tema 64 do banco (ponte/saida/serie-vocabulario-banco-2.md, tema de data). Fila: Palavras #64, vai ao ar 30/12/2026 (qua). Cenário pedido: terraço (virada). Réveillon 31/12; vai ao ar na véspera da véspera. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "midnight",
+      "pt": "meia-noite",
+      "digito": "00",
+      "objeto": "relogio",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tmidnight",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t, sem i.",
+        "voz": false
+      },
+      "pron": "MÍD-nait"
+    },
+    {
+      "en": "party",
+      "pt": "festa",
+      "digito": "1",
+      "objeto": "confete",
+      "qtd": 1,
+      "pron": "PÁR-ri"
+    },
+    {
+      "en": "fireworks",
+      "pt": "fogos",
+      "digito": "3",
+      "objeto": "fogos",
+      "qtd": 3,
+      "pron": "FÁI-er-uârks"
+    },
+    {
+      "en": "countdown",
+      "pt": "contagem regressiva",
+      "digito": "3-2-1",
+      "objeto": "placar",
+      "qtd": 1,
+      "pron": "KÁUNT-daun"
+    },
+    {
+      "en": "wish",
+      "pt": "desejo",
+      "digito": "1",
+      "objeto": "estrela",
+      "qtd": 1,
+      "pron": "UÍSH"
+    },
+    {
+      "en": "goal",
+      "pt": "meta",
+      "digito": "1",
+      "objeto": "prancheta",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tgoal",
+        "marca": "gôul, termina no l",
+        "dica": "Termina no l: gôul.",
+        "voz": true
+      },
+      "pron": "GÔUL"
+    },
+    {
+      "en": "cheers",
+      "pt": "saúde!",
+      "digito": "2",
+      "objeto": "tacas",
+      "qtd": 2,
+      "pron": "TCHÍRZ"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      6
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Contagem regressiva em inglês: sete palavras pra virada."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "7 palavras de Ano-Novo. Qual é a sua meta pra 2027? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 7 palavras",
+    "sub": "midnight → cheers",
+    "cta": "qual é a sua meta pra 2027? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #64 · Ano-Novo em inglês: midnight, party, fireworks e mais 4. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #64 · Ano-Novo em inglês: midnight, party, fireworks | CapyFala",
+    "youtube_descricao": "7 palavras de Ano-Novo em inglês (midnight, party, fireworks, countdown, wish, goal, cheers), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (midnight, goal). VOCAB 64 · CapyFala.\n\nanterior: Palavras #63",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "confete",
+      "estrela",
+      "fogos",
+      "placar",
+      "prancheta",
+      "relogio",
+      "tacas"
+    ],
+    "acoes": []
+  }
+}

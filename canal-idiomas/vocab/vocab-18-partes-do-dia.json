@@ -1,0 +1,170 @@
+{
+  "id": "vocab-18-partes-do-dia",
+  "format": "vocab",
+  "audio": "audio/vocab/partes-do-dia",
+  "tema": {
+    "pt": "partes do dia",
+    "en": "times of day"
+  },
+  "serie": {
+    "codigo": "VOCAB 18",
+    "titulo": "partes do dia",
+    "post": "Palavras #18"
+  },
+  "data_ar": "2026-11-14",
+  "banco": 17,
+  "hookTitle": "Manhã, tarde e noite em inglês",
+  "nota": "Tema 17 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #18, vai ao ar 14/11/2026 (sáb). Cenário pedido: café (janela). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "morning",
+      "pt": "manhã",
+      "digito": "1",
+      "objeto": "janelaManha",
+      "qtd": 1,
+      "pron": "MÓR-ning"
+    },
+    {
+      "en": "afternoon",
+      "pt": "tarde",
+      "digito": "1",
+      "objeto": "janelaTarde",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tafternoon",
+        "marca": "força no fim: after-NOON",
+        "dica": "Força no fim: after-NOON.",
+        "voz": false
+      },
+      "pron": "af-ter-NUUN"
+    },
+    {
+      "en": "evening",
+      "pt": "começo da noite",
+      "digito": "1",
+      "objeto": "janelaFim",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tevening",
+        "marca": "ii comprido no começo",
+        "dica": "Ii comprido no começo.",
+        "voz": false
+      },
+      "pron": "ÍIV-ning"
+    },
+    {
+      "en": "night",
+      "pt": "noite",
+      "digito": "1",
+      "objeto": "janelaNoite",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tnight",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t. Sem i no final.",
+        "voz": true
+      },
+      "pron": "NÁIT"
+    },
+    {
+      "en": "today",
+      "pt": "hoje",
+      "digito": "HOJE",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "tu-DÊI"
+    },
+    {
+      "en": "tonight",
+      "pt": "hoje à noite",
+      "digito": "NOITE",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "tu-NÁIT"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Bom dia, boa noite: o dia inteiro pela janela do café."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Você é da manhã ou da noite? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "morning → tonight",
+    "cta": "você é da manhã ou da noite? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #18 · partes do dia em inglês: morning, afternoon, evening e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #18 · Partes do dia em inglês: morning, afternoon, evening | CapyFala",
+    "youtube_descricao": "6 palavras de partes do dia em inglês (morning, afternoon, evening, night, today, tonight), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (afternoon, evening, night). VOCAB 18 · CapyFala.\n\nanterior: Palavras #17",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "calendarioDia",
+      "janelaFim",
+      "janelaManha",
+      "janelaNoite",
+      "janelaTarde"
+    ],
+    "acoes": []
+  }
+}

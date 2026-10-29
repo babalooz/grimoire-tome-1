@@ -1,0 +1,172 @@
+{
+  "id": "vocab-35-almoco",
+  "format": "vocab",
+  "audio": "audio/vocab/almoco",
+  "tema": {
+    "pt": "almoço",
+    "en": "lunch"
+  },
+  "serie": {
+    "codigo": "VOCAB 35",
+    "titulo": "almoço",
+    "post": "Palavras #35"
+  },
+  "data_ar": "2026-12-01",
+  "banco": 32,
+  "hookTitle": "Almoço em inglês",
+  "nota": "Tema 32 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #35, vai ao ar 01/12/2026 (ter). Cenário pedido: café (prato do dia). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "rice",
+      "pt": "arroz",
+      "digito": "1",
+      "objeto": "arroz",
+      "qtd": 1,
+      "pron": "RÁIS"
+    },
+    {
+      "en": "beans",
+      "pt": "feijão",
+      "digito": "1",
+      "objeto": "feijao",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbeans",
+        "marca": "i comprido, termina em z",
+        "dica": "I comprido, termina em z.",
+        "voz": false
+      },
+      "pron": "BIINZ"
+    },
+    {
+      "en": "chicken",
+      "pt": "frango",
+      "digito": "1",
+      "objeto": "frango",
+      "qtd": 1,
+      "pron": "TCHÍ-ken"
+    },
+    {
+      "en": "meat",
+      "pt": "carne",
+      "digito": "1",
+      "objeto": "carne",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tmeat",
+        "marca": "i comprido, termina no t",
+        "dica": "Termina no t. Sem i no final.",
+        "voz": true
+      },
+      "pron": "MIIT"
+    },
+    {
+      "en": "fish",
+      "pt": "peixe",
+      "digito": "1",
+      "objeto": "peixe",
+      "qtd": 1,
+      "pron": "FÍSH"
+    },
+    {
+      "en": "salad",
+      "pt": "salada",
+      "digito": "1",
+      "objeto": "salada",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tsalad",
+        "marca": "força no começo",
+        "dica": "Força no começo.",
+        "voz": false,
+        "enfase": "SAL"
+      },
+      "pron": "SÉ-lad"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Arroz e feijão em inglês: o prato do dia."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de almoço. O que tem no seu prato hoje? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "rice → salad",
+    "cta": "o que tem no seu prato hoje? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #35 · almoço em inglês: rice, beans, chicken e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #35 · Almoço em inglês: rice, beans, chicken | CapyFala",
+    "youtube_descricao": "6 palavras de almoço em inglês (rice, beans, chicken, meat, fish, salad), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (beans, meat, salad). VOCAB 35 · CapyFala.\n\nanterior: Palavras #34",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "arroz",
+      "carne",
+      "feijao",
+      "frango",
+      "peixe",
+      "salada"
+    ],
+    "acoes": []
+  }
+}

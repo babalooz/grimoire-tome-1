@@ -1,0 +1,168 @@
+{
+  "id": "vocab-27-dinheiro",
+  "format": "vocab",
+  "audio": "audio/vocab/dinheiro",
+  "tema": {
+    "pt": "dinheiro",
+    "en": "money"
+  },
+  "serie": {
+    "codigo": "VOCAB 27",
+    "titulo": "dinheiro",
+    "post": "Palavras #27"
+  },
+  "data_ar": "2026-11-23",
+  "banco": 26,
+  "hookTitle": "Dinheiro em inglês",
+  "nota": "Tema 26 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #27, vai ao ar 23/11/2026 (seg). Cenário pedido: café (caixa registradora). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "dollar",
+      "pt": "dólar",
+      "digito": "1",
+      "objeto": "notaDolar",
+      "qtd": 1,
+      "pron": "DÓ-ler"
+    },
+    {
+      "en": "cent",
+      "pt": "centavo",
+      "digito": "3",
+      "objeto": "moeda",
+      "qtd": 3,
+      "armadilha": {
+        "id": "tcent",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t, sem i.",
+        "voz": false
+      },
+      "pron": "SÉNT"
+    },
+    {
+      "en": "price",
+      "pt": "preço",
+      "digito": "$",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "PRÁIS"
+    },
+    {
+      "en": "cheap",
+      "pt": "barato",
+      "digito": "$1",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tcheap",
+        "marca": "i comprido: tchiip",
+        "dica": "I comprido: tchiip.",
+        "voz": false
+      },
+      "pron": "TCHIIP"
+    },
+    {
+      "en": "expensive",
+      "pt": "caro",
+      "digito": "$99",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "texpensive",
+        "marca": "força no pen",
+        "dica": "A força fica no pen: iks-pén-siv.",
+        "voz": true
+      },
+      "pron": "iks-PÉN-siv"
+    },
+    {
+      "en": "change",
+      "pt": "troco",
+      "digito": "2",
+      "objeto": "moeda",
+      "qtd": 2,
+      "pron": "TCHÊINDJ"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "No caixa do café: preço, troco e caro em inglês."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de dinheiro. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "dollar → change",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #27 · dinheiro em inglês: dollar, cent, price e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #27 · Dinheiro em inglês: dollar, cent, price | CapyFala",
+    "youtube_descricao": "6 palavras de dinheiro em inglês (dollar, cent, price, cheap, expensive, change), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (cent, cheap, expensive). VOCAB 27 · CapyFala.\n\nanterior: Palavras #26",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "etiquetaPreco",
+      "moeda",
+      "notaDolar"
+    ],
+    "acoes": []
+  }
+}

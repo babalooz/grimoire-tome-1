@@ -1,0 +1,165 @@
+{
+  "id": "vocab-22-comodos-da-casa",
+  "format": "vocab",
+  "audio": "audio/vocab/comodos-da-casa",
+  "tema": {
+    "pt": "cômodos da casa",
+    "en": "rooms"
+  },
+  "serie": {
+    "codigo": "VOCAB 22",
+    "titulo": "cômodos da casa",
+    "post": "Palavras #22"
+  },
+  "data_ar": "2026-11-18",
+  "banco": 21,
+  "hookTitle": "Cômodos da casa em inglês",
+  "nota": "Tema 21 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #22, vai ao ar 18/11/2026 (qua). Cenário pedido: casa da Dona Jaca (videochamada). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "kitchen",
+      "pt": "cozinha",
+      "digito": "1",
+      "objeto": "fogao",
+      "qtd": 1,
+      "pron": "KÍ-tchen"
+    },
+    {
+      "en": "bathroom",
+      "pt": "banheiro",
+      "digito": "1",
+      "objeto": "chuveiro",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbathroom",
+        "marca": "th sem vibrar",
+        "dica": "Th sem vibrar.",
+        "voz": false
+      },
+      "pron": "BÉTH-rum"
+    },
+    {
+      "en": "bedroom",
+      "pt": "quarto",
+      "digito": "1",
+      "objeto": "cama",
+      "qtd": 1,
+      "pron": "BÉD-rum"
+    },
+    {
+      "en": "door",
+      "pt": "porta",
+      "digito": "1",
+      "objeto": "porta",
+      "qtd": 1,
+      "pron": "DÓR"
+    },
+    {
+      "en": "window",
+      "pt": "janela",
+      "digito": "1",
+      "objeto": "janela",
+      "qtd": 1,
+      "pron": "UÍN-dou"
+    },
+    {
+      "en": "room",
+      "pt": "cômodo",
+      "digito": "1",
+      "objeto": "planta",
+      "qtd": 1,
+      "armadilha": {
+        "id": "troom",
+        "marca": "r de rato não",
+        "dica": "r americano",
+        "voz": true
+      },
+      "pron": "RUUM"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "A Dona Jaca mostra a casa: seis palavras."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual cômodo é o seu favorito? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "kitchen → room",
+    "cta": "qual cômodo é o seu favorito? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #22 · cômodos da casa em inglês: kitchen, bathroom, bedroom e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #22 · Cômodos da casa em inglês: kitchen, bathroom, bedroom | CapyFala",
+    "youtube_descricao": "6 palavras de cômodos da casa em inglês (kitchen, bathroom, bedroom, door, window, room), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (bathroom, room). VOCAB 22 · CapyFala.\n\nanterior: Palavras #21",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "cama",
+      "chuveiro",
+      "fogao",
+      "janela",
+      "planta",
+      "porta"
+    ],
+    "acoes": []
+  }
+}

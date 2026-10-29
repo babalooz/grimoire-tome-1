@@ -1,0 +1,171 @@
+{
+  "id": "vocab-15-cores",
+  "format": "vocab",
+  "audio": "audio/vocab/cores",
+  "tema": {
+    "pt": "cores",
+    "en": "colors"
+  },
+  "serie": {
+    "codigo": "VOCAB 15",
+    "titulo": "cores",
+    "post": "Palavras #15"
+  },
+  "data_ar": "2026-11-11",
+  "banco": 14,
+  "hookTitle": "Cores em inglês",
+  "nota": "Tema 14 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #15, vai ao ar 11/11/2026 (qua). Cenário pedido: café (copos e camisetas). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "red",
+      "pt": "vermelho",
+      "digito": "1",
+      "objeto": "copoVermelho",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tred",
+        "marca": "termina no d, sem i",
+        "dica": "Termina no d, sem i.",
+        "voz": false
+      },
+      "pron": "RÉD"
+    },
+    {
+      "en": "blue",
+      "pt": "azul",
+      "digito": "1",
+      "objeto": "copoAzul",
+      "qtd": 1,
+      "pron": "BLUU"
+    },
+    {
+      "en": "green",
+      "pt": "verde",
+      "digito": "1",
+      "objeto": "copoVerde",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tgreen",
+        "marca": "i comprido",
+        "dica": "I comprido.",
+        "voz": false
+      },
+      "pron": "GRIIN"
+    },
+    {
+      "en": "black",
+      "pt": "preto",
+      "digito": "1",
+      "objeto": "copoPreto",
+      "qtd": 1,
+      "pron": "BLÉK"
+    },
+    {
+      "en": "white",
+      "pt": "branco",
+      "digito": "1",
+      "objeto": "copoBranco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "twhite",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t. Sem i no final.",
+        "voz": true
+      },
+      "pron": "UÁIT"
+    },
+    {
+      "en": "yellow",
+      "pt": "amarelo",
+      "digito": "1",
+      "objeto": "copoAmarelo",
+      "qtd": 1,
+      "pron": "IÉ-lou"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Seis cores. E uma termina num som que a gente não tem."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de cores. Qual é a sua cor? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "red → yellow",
+    "cta": "qual é a sua cor? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #15 · cores em inglês: red, blue, green e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #15 · Cores em inglês: red, blue, green | CapyFala",
+    "youtube_descricao": "6 palavras de cores em inglês (red, blue, green, black, white, yellow), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (red, green, white). VOCAB 15 · CapyFala.\n\nanterior: Palavras #14",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "copoAmarelo",
+      "copoAzul",
+      "copoBranco",
+      "copoPreto",
+      "copoVerde",
+      "copoVermelho"
+    ],
+    "acoes": []
+  }
+}

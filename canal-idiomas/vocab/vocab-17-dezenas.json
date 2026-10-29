@@ -1,0 +1,194 @@
+{
+  "id": "vocab-17-dezenas",
+  "format": "vocab",
+  "audio": "audio/vocab/dezenas",
+  "tema": {
+    "pt": "dezenas",
+    "en": "tens"
+  },
+  "serie": {
+    "codigo": "VOCAB 17",
+    "titulo": "dezenas",
+    "post": "Palavras #17"
+  },
+  "data_ar": "2026-11-13",
+  "banco": 16,
+  "hookTitle": "20, 30, 40… em inglês",
+  "nota": "Tema 16 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #17, vai ao ar 13/11/2026 (sex). Cenário pedido: café (caixa registradora). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "twenty",
+      "pt": "vinte",
+      "digito": "20",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "TUÉN-i"
+    },
+    {
+      "en": "thirty",
+      "pt": "trinta",
+      "digito": "30",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tthirty",
+        "marca": "força no começo: THIR-ty",
+        "dica": "Força no começo: THIR-ty.",
+        "voz": false,
+        "enfase": "THIR"
+      },
+      "pron": "THÂR-ri"
+    },
+    {
+      "en": "forty",
+      "pt": "quarenta",
+      "digito": "40",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "FÓR-ri"
+    },
+    {
+      "en": "fifty",
+      "pt": "cinquenta",
+      "digito": "50",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "FÍF-ti"
+    },
+    {
+      "en": "sixty",
+      "pt": "sessenta",
+      "digito": "60",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "SÍKS-ti"
+    },
+    {
+      "en": "seventy",
+      "pt": "setenta",
+      "digito": "70",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "SÉ-ven-ti"
+    },
+    {
+      "en": "eighty",
+      "pt": "oitenta",
+      "digito": "80",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "ÊI-ri"
+    },
+    {
+      "en": "ninety",
+      "pt": "noventa",
+      "digito": "90",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "NÁIN-ti"
+    },
+    {
+      "en": "hundred",
+      "pt": "cem",
+      "digito": "100",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "thundred",
+        "marca": "h soprado, não é andred",
+        "dica": "O h sai num sopro: rân-dred.",
+        "voz": true
+      },
+      "pron": "RÂN-dred"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7,
+        8
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      8
+    ],
+    "vozes": [
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": false,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Preço, idade, placar: as dezenas em inglês."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "9 palavras de dezenas. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 9 palavras",
+    "sub": "twenty → hundred",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #17 · dezenas em inglês: twenty, thirty, forty e mais 6. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #17 · Dezenas em inglês: twenty, thirty, forty | CapyFala",
+    "youtube_descricao": "9 palavras de dezenas em inglês (twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, hundred), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (thirty, hundred). VOCAB 17 · CapyFala.\n\nanterior: Palavras #16",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "etiquetaPreco"
+    ],
+    "acoes": []
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "id": "vocab-48-restaurante",
+  "format": "vocab",
+  "audio": "audio/vocab/restaurante",
+  "tema": {
+    "pt": "restaurante",
+    "en": "restaurant"
+  },
+  "serie": {
+    "codigo": "VOCAB 48",
+    "titulo": "restaurante",
+    "post": "Palavras #48"
+  },
+  "data_ar": "2026-12-14",
+  "banco": 45,
+  "hookTitle": "Restaurante em inglês",
+  "nota": "Tema 45 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #48, vai ao ar 14/12/2026 (seg). Cenário pedido: restaurante. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "menu",
+      "pt": "cardápio",
+      "digito": "1",
+      "objeto": "cardapio",
+      "qtd": 1,
+      "pron": "MÉ-niu"
+    },
+    {
+      "en": "table",
+      "pt": "mesa",
+      "digito": "1",
+      "objeto": "mesa",
+      "qtd": 1,
+      "pron": "TÊI-bol"
+    },
+    {
+      "en": "order",
+      "pt": "pedido",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "pede",
+        "contexto": "o garçom anotando"
+      },
+      "pron": "ÓR-der"
+    },
+    {
+      "en": "waiter",
+      "pt": "garçom",
+      "digito": "1",
+      "objeto": "bandeja",
+      "qtd": 1,
+      "pron": "UÊI-ter"
+    },
+    {
+      "en": "bill",
+      "pt": "conta",
+      "digito": "1",
+      "objeto": "conta",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbill",
+        "marca": "bil, não biu",
+        "dica": "Termina no l, com a língua no céu da boca.",
+        "voz": true
+      },
+      "pron": "BÍL"
+    },
+    {
+      "en": "tip",
+      "pt": "gorjeta",
+      "digito": "3",
+      "objeto": "moeda",
+      "qtd": 3,
+      "armadilha": {
+        "id": "ttip",
+        "marca": "termina no p, sem i",
+        "dica": "Termina no p, sem i.",
+        "voz": false
+      },
+      "pron": "TÍP"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      4,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Jantar fora em inglês: do cardápio à gorjeta."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de restaurante. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "menu → tip",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #48 · restaurante em inglês: menu, table, order e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #48 · Restaurante em inglês: menu, table, order | CapyFala",
+    "youtube_descricao": "6 palavras de restaurante em inglês (menu, table, order, waiter, bill, tip), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (bill, tip). VOCAB 48 · CapyFala.\n\nanterior: Palavras #47",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bandeja",
+      "cardapio",
+      "conta",
+      "mesa",
+      "moeda"
+    ],
+    "acoes": []
+  }
+}

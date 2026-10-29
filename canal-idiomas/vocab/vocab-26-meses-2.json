@@ -1,0 +1,160 @@
+{
+  "id": "vocab-26-meses-2",
+  "format": "vocab",
+  "audio": "audio/vocab/meses-2",
+  "tema": {
+    "pt": "meses de julho a dezembro",
+    "en": "months 2"
+  },
+  "serie": {
+    "codigo": "VOCAB 26",
+    "titulo": "meses de julho a dezembro",
+    "post": "Palavras #26"
+  },
+  "data_ar": "2026-11-22",
+  "banco": 25,
+  "hookTitle": "Meses em inglês (2/2)",
+  "nota": "Tema 25 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #26, vai ao ar 22/11/2026 (dom). Cenário pedido: café (calendário). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "July",
+      "pt": "julho",
+      "digito": "JUL",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tjuly",
+        "marca": "força no fim: ju-LY",
+        "dica": "A força vai no fim: dju-lái.",
+        "voz": true
+      },
+      "pron": "dju-LÁI"
+    },
+    {
+      "en": "August",
+      "pt": "agosto",
+      "digito": "AGO",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "Ó-gâst"
+    },
+    {
+      "en": "September",
+      "pt": "setembro",
+      "digito": "SET",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "sep-TÉM-ber"
+    },
+    {
+      "en": "October",
+      "pt": "outubro",
+      "digito": "OUT",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "ok-TÔU-ber"
+    },
+    {
+      "en": "November",
+      "pt": "novembro",
+      "digito": "NOV",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "nou-VÉM-ber"
+    },
+    {
+      "en": "December",
+      "pt": "dezembro",
+      "digito": "DEZ",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tdecember",
+        "marca": "o c soa s",
+        "dica": "O c soa s.",
+        "voz": false
+      },
+      "pron": "di-SÉM-ber"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Julho a dezembro: e julho tem a força no fim."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual é o seu mês favorito? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "July → December",
+    "cta": "qual é o seu mês favorito? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #26 · meses de julho a dezembro em inglês: July, August, September e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #26 · Meses de julho a dezembro em inglês: July, August, September | CapyFala",
+    "youtube_descricao": "6 palavras de meses de julho a dezembro em inglês (July, August, September, October, November, December), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (July, December). VOCAB 26 · CapyFala.\n\nanterior: Palavras #25",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "folhaCalendario"
+    ],
+    "acoes": []
+  }
+}

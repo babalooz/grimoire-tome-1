@@ -1,0 +1,166 @@
+{
+  "id": "vocab-38-moveis",
+  "format": "vocab",
+  "audio": "audio/vocab/moveis",
+  "tema": {
+    "pt": "móveis",
+    "en": "furniture"
+  },
+  "serie": {
+    "codigo": "VOCAB 38",
+    "titulo": "móveis",
+    "post": "Palavras #38"
+  },
+  "data_ar": "2026-12-04",
+  "banco": 35,
+  "hookTitle": "Móveis em inglês",
+  "nota": "Tema 35 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #38, vai ao ar 04/12/2026 (sex). Cenário pedido: café e casa. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "table",
+      "pt": "mesa",
+      "digito": "1",
+      "objeto": "mesa",
+      "qtd": 1,
+      "pron": "TÊI-bol"
+    },
+    {
+      "en": "chair",
+      "pt": "cadeira",
+      "digito": "2",
+      "objeto": "cadeira",
+      "qtd": 2,
+      "pron": "TCHÉR"
+    },
+    {
+      "en": "bed",
+      "pt": "cama",
+      "digito": "1",
+      "objeto": "cama",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbed",
+        "marca": "termina no d, sem i",
+        "dica": "Termina no d. Sem i no final.",
+        "voz": true
+      },
+      "pron": "BÉD"
+    },
+    {
+      "en": "sofa",
+      "pt": "sofá",
+      "digito": "1",
+      "objeto": "sofa",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tsofa",
+        "marca": "força no começo: SO-fa",
+        "dica": "Força no começo: SO-fa.",
+        "voz": false,
+        "enfase": "SO"
+      },
+      "pron": "SÔU-fa"
+    },
+    {
+      "en": "lamp",
+      "pt": "luminária",
+      "digito": "1",
+      "objeto": "luminaria",
+      "qtd": 1,
+      "pron": "LÉMP"
+    },
+    {
+      "en": "shelf",
+      "pt": "prateleira",
+      "digito": "1",
+      "objeto": "prateleira",
+      "qtd": 1,
+      "pron": "SHÉLF"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Mesa, cadeira, sofá: os móveis do café e de casa."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de móveis. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "table → shelf",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #38 · móveis em inglês: table, chair, bed e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #38 · Móveis em inglês: table, chair, bed | CapyFala",
+    "youtube_descricao": "6 palavras de móveis em inglês (table, chair, bed, sofa, lamp, shelf), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (bed, sofa). VOCAB 38 · CapyFala.\n\nanterior: Palavras #37",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "cadeira",
+      "cama",
+      "luminaria",
+      "mesa",
+      "prateleira",
+      "sofa"
+    ],
+    "acoes": []
+  }
+}

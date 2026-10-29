@@ -1,0 +1,204 @@
+{
+  "id": "vocab-56-natal",
+  "format": "vocab",
+  "audio": "audio/vocab/natal",
+  "tema": {
+    "pt": "Natal",
+    "en": "christmas"
+  },
+  "serie": {
+    "codigo": "VOCAB 56",
+    "titulo": "Natal",
+    "post": "Palavras #56"
+  },
+  "data_ar": "2026-12-22",
+  "banco": 63,
+  "hookTitle": "Natal em inglês",
+  "nota": "Tema 63 do banco (ponte/saida/serie-vocabulario-banco-2.md, tema de data). Fila: Palavras #56, vai ao ar 22/12/2026 (ter). Cenário pedido: café decorado de Natal. Natal 25/12; vai ao ar 3 dias antes (terça), antes do feriado esvaziar o feed. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "Christmas",
+      "pt": "Natal",
+      "digito": "1",
+      "objeto": "arvoreNatal",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tchristmas",
+        "marca": "o t não soa: KRIS-mas",
+        "dica": "O t não se fala: krís-mas.",
+        "voz": true
+      },
+      "pron": "KRÍS-mas"
+    },
+    {
+      "en": "tree",
+      "pt": "árvore",
+      "digito": "1",
+      "objeto": "arvoreNatal",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ttree",
+        "marca": "tri, não tchri",
+        "dica": "Tri, não tchri.",
+        "voz": false
+      },
+      "pron": "TRII"
+    },
+    {
+      "en": "gift",
+      "pt": "presente",
+      "digito": "3",
+      "objeto": "presente",
+      "qtd": 3,
+      "armadilha": {
+        "id": "tgift",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t, sem i.",
+        "voz": false
+      },
+      "pron": "GÍFT"
+    },
+    {
+      "en": "lights",
+      "pt": "luzes",
+      "digito": "1",
+      "objeto": "pisca",
+      "qtd": 1,
+      "pron": "LÁITS"
+    },
+    {
+      "en": "star",
+      "pt": "estrela",
+      "digito": "1",
+      "objeto": "estrela",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tstar",
+        "marca": "sem i no começo",
+        "dica": "Sem i no começo.",
+        "voz": false
+      },
+      "pron": "STÁR"
+    },
+    {
+      "en": "snow",
+      "pt": "neve",
+      "digito": "3",
+      "objeto": "floco",
+      "qtd": 3,
+      "pron": "SNÔU"
+    },
+    {
+      "en": "Santa",
+      "pt": "Papai Noel",
+      "digito": "1",
+      "objeto": "gorroNoel",
+      "qtd": 1,
+      "pron": "SÉN-ta"
+    },
+    {
+      "en": "party",
+      "pt": "festa",
+      "digito": "1",
+      "objeto": "confete",
+      "qtd": 1,
+      "pron": "PÁR-ri"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      7
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Natal em inglês tem um t que ninguém fala."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "8 palavras de Natal. Qual palavra é mais Natal pra você? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 8 palavras",
+    "sub": "Christmas → party",
+    "cta": "qual palavra é mais Natal pra você? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #56 · Natal em inglês: Christmas, tree, gift e mais 5. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #56 · Natal em inglês: Christmas, tree, gift | CapyFala",
+    "youtube_descricao": "8 palavras de Natal em inglês (Christmas, tree, gift, lights, star, snow, Santa, party), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (Christmas, tree, gift, star). VOCAB 56 · CapyFala.\n\nanterior: Palavras #55",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "arvoreNatal",
+      "confete",
+      "estrela",
+      "floco",
+      "gorroNoel",
+      "pisca",
+      "presente"
+    ],
+    "acoes": []
+  }
+}

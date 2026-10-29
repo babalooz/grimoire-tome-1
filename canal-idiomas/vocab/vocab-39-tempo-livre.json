@@ -1,0 +1,165 @@
+{
+  "id": "vocab-39-tempo-livre",
+  "format": "vocab",
+  "audio": "audio/vocab/tempo-livre",
+  "tema": {
+    "pt": "tempo livre",
+    "en": "free time"
+  },
+  "serie": {
+    "codigo": "VOCAB 39",
+    "titulo": "tempo livre",
+    "post": "Palavras #39"
+  },
+  "data_ar": "2026-12-05",
+  "banco": 36,
+  "hookTitle": "Tempo livre em inglês",
+  "nota": "Tema 36 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #39, vai ao ar 05/12/2026 (sáb). Cenário pedido: café (conversa no balcão). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "music",
+      "pt": "música",
+      "digito": "1",
+      "objeto": "fone",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tmusic",
+        "marca": "começa com miu",
+        "dica": "Começa com miu: miú-zik.",
+        "voz": true
+      },
+      "pron": "MIÚ-zik"
+    },
+    {
+      "en": "movie",
+      "pt": "filme",
+      "digito": "1",
+      "objeto": "pipoca",
+      "qtd": 1,
+      "pron": "MUU-vi"
+    },
+    {
+      "en": "game",
+      "pt": "jogo",
+      "digito": "1",
+      "objeto": "controle",
+      "qtd": 1,
+      "pron": "GÊIM"
+    },
+    {
+      "en": "book",
+      "pt": "livro",
+      "digito": "2",
+      "objeto": "livro",
+      "qtd": 2,
+      "pron": "BÚK"
+    },
+    {
+      "en": "sport",
+      "pt": "esporte",
+      "digito": "1",
+      "objeto": "bola",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tsport",
+        "marca": "sem i no começo",
+        "dica": "Sem i no começo.",
+        "voz": false
+      },
+      "pron": "SPÓRT"
+    },
+    {
+      "en": "travel",
+      "pt": "viajar",
+      "digito": "1",
+      "objeto": "mala",
+      "qtd": 1,
+      "pron": "TRÉ-vel"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "O que você faz no fim de semana? Seis respostas."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. O que você mais faz no tempo livre? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "music → travel",
+    "cta": "o que você mais faz no tempo livre? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #39 · tempo livre em inglês: music, movie, game e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #39 · Tempo livre em inglês: music, movie, game | CapyFala",
+    "youtube_descricao": "6 palavras de tempo livre em inglês (music, movie, game, book, sport, travel), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (music, sport). VOCAB 39 · CapyFala.\n\nanterior: Palavras #38",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bola",
+      "controle",
+      "fone",
+      "livro",
+      "mala",
+      "pipoca"
+    ],
+    "acoes": []
+  }
+}

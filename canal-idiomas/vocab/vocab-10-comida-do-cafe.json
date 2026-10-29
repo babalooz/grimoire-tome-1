@@ -1,0 +1,170 @@
+{
+  "id": "vocab-10-comida-do-cafe",
+  "format": "vocab",
+  "audio": "audio/vocab/comida-do-cafe",
+  "tema": {
+    "pt": "comida do café",
+    "en": "café food"
+  },
+  "serie": {
+    "codigo": "VOCAB 10",
+    "titulo": "comida do café",
+    "post": "Palavras #10"
+  },
+  "data_ar": "2026-11-06",
+  "banco": 9,
+  "hookTitle": "Comida de café em inglês",
+  "nota": "Tema 9 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #10, vai ao ar 06/11/2026 (sex). Cenário pedido: café (vitrine). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "bread",
+      "pt": "pão",
+      "digito": "2",
+      "objeto": "pao",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tbread",
+        "marca": "termina no d, sem i",
+        "dica": "Termina no d, sem i.",
+        "voz": false
+      },
+      "pron": "BRÉD"
+    },
+    {
+      "en": "egg",
+      "pt": "ovo",
+      "digito": "2",
+      "objeto": "ovo",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tegg",
+        "marca": "ég, sem i no fim",
+        "dica": "É ég, seco. Sem i no final.",
+        "voz": true
+      },
+      "pron": "ÉG"
+    },
+    {
+      "en": "cake",
+      "pt": "bolo",
+      "digito": "1",
+      "objeto": "bolo",
+      "qtd": 1,
+      "pron": "KEIK"
+    },
+    {
+      "en": "sandwich",
+      "pt": "sanduíche",
+      "digito": "1",
+      "objeto": "sanduiche",
+      "qtd": 1,
+      "pron": "SÉND-uitch"
+    },
+    {
+      "en": "cookie",
+      "pt": "biscoito",
+      "digito": "3",
+      "objeto": "cookie",
+      "qtd": 3,
+      "pron": "KÚ-ki"
+    },
+    {
+      "en": "cheese",
+      "pt": "queijo",
+      "digito": "1",
+      "objeto": "queijo",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tcheese",
+        "marca": "termina em z",
+        "dica": "Termina em z, zumbindo.",
+        "voz": true
+      },
+      "pron": "TCHIIZ"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Na vitrine do café: seis palavras pra pedir comendo."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual você pediria agora? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "bread → cheese",
+    "cta": "qual você pediria agora? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #10 · comida do café em inglês: bread, egg, cake e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #10 · Comida do café em inglês: bread, egg, cake | CapyFala",
+    "youtube_descricao": "6 palavras de comida do café em inglês (bread, egg, cake, sandwich, cookie, cheese), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (bread, egg, cheese). VOCAB 10 · CapyFala.\n\nanterior: Palavras #09",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bolo",
+      "ovo",
+      "pao",
+      "queijo",
+      "sanduiche"
+    ],
+    "acoes": []
+  }
+}

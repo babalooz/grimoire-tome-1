@@ -1,0 +1,199 @@
+{
+  "id": "vocab-21-verbos-do-dia",
+  "format": "vocab",
+  "audio": "audio/vocab/verbos-do-dia",
+  "tema": {
+    "pt": "verbos do dia",
+    "en": "daily verbs"
+  },
+  "serie": {
+    "codigo": "VOCAB 21",
+    "titulo": "verbos do dia",
+    "post": "Palavras #21"
+  },
+  "data_ar": "2026-11-17",
+  "banco": 20,
+  "hookTitle": "Verbos do dia a dia",
+  "nota": "Tema 20 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #21, vai ao ar 17/11/2026 (ter). Cenário pedido: café (Capy faz a ação). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "eat",
+      "pt": "comer",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "come",
+        "contexto": "hora do lanche"
+      },
+      "armadilha": {
+        "id": "teat",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t. Sem i no final.",
+        "voz": true
+      },
+      "pron": "IIT"
+    },
+    {
+      "en": "drink",
+      "pt": "beber",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "bebe",
+        "contexto": "um café gelado"
+      },
+      "pron": "DRÍNK"
+    },
+    {
+      "en": "sleep",
+      "pt": "dormir",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "dorme",
+        "contexto": "no meio do turno"
+      },
+      "armadilha": {
+        "id": "tsleep",
+        "marca": "i comprido",
+        "dica": "I comprido.",
+        "voz": false
+      },
+      "pron": "SLIIP"
+    },
+    {
+      "en": "work",
+      "pt": "trabalhar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "hank"
+        ],
+        "acao": "trabalha",
+        "contexto": "atrás do balcão"
+      },
+      "armadilha": {
+        "id": "twork",
+        "marca": "uârk, não uórk",
+        "dica": "O o soa como â: uârk.",
+        "voz": true
+      },
+      "pron": "UÂRK"
+    },
+    {
+      "en": "go",
+      "pt": "ir",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "sai",
+        "contexto": "indo embora"
+      },
+      "pron": "GOU"
+    },
+    {
+      "en": "come",
+      "pt": "vir",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "chega",
+        "contexto": "chegando no café"
+      },
+      "pron": "KÂM"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Comer, beber, dormir: seis verbos que você usa todo dia."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual verbo você mais faz? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "eat → come",
+    "cta": "qual verbo você mais faz? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #21 · verbos do dia em inglês: eat, drink, sleep e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #21 · Verbos do dia em inglês: eat, drink, sleep | CapyFala",
+    "youtube_descricao": "6 palavras de verbos do dia em inglês (eat, drink, sleep, work, go, come), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (eat, sleep, work). VOCAB 21 · CapyFala.\n\nanterior: Palavras #20",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [],
+    "acoes": [
+      "bebe",
+      "come",
+      "dorme",
+      "trabalha"
+    ]
+  }
+}

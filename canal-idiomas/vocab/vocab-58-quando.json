@@ -1,0 +1,156 @@
+{
+  "id": "vocab-58-quando",
+  "format": "vocab",
+  "audio": "audio/vocab/quando",
+  "tema": {
+    "pt": "quando",
+    "en": "when"
+  },
+  "serie": {
+    "codigo": "VOCAB 58",
+    "titulo": "quando",
+    "post": "Palavras #58"
+  },
+  "data_ar": "2026-12-24",
+  "banco": 54,
+  "hookTitle": "Ontem, hoje, amanhã: em inglês",
+  "nota": "Tema 54 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #58, vai ao ar 24/12/2026 (qui). Cenário pedido: café (agenda). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "today",
+      "pt": "hoje",
+      "digito": "HOJE",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "tu-DÊI"
+    },
+    {
+      "en": "tomorrow",
+      "pt": "amanhã",
+      "digito": "+1",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ttomorrow",
+        "marca": "força no meio",
+        "dica": "Força no meio.",
+        "voz": false
+      },
+      "pron": "tu-MÓ-rou"
+    },
+    {
+      "en": "yesterday",
+      "pt": "ontem",
+      "digito": "-1",
+      "objeto": "calendarioDia",
+      "qtd": 1,
+      "pron": "IÉS-ter-dei"
+    },
+    {
+      "en": "now",
+      "pt": "agora",
+      "digito": "1",
+      "objeto": "relogio",
+      "qtd": 1,
+      "pron": "NÁU"
+    },
+    {
+      "en": "later",
+      "pt": "mais tarde",
+      "digito": "+2h",
+      "objeto": "relogio",
+      "qtd": 1,
+      "pron": "LÊI-rer"
+    },
+    {
+      "en": "soon",
+      "pt": "logo",
+      "digito": "1",
+      "objeto": "ampulheta",
+      "qtd": 1,
+      "pron": "SUUN"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Ontem, hoje, amanhã: seis palavras de tempo."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de quando. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "today → soon",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #58 · quando em inglês: today, tomorrow, yesterday e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #58 · Quando em inglês: today, tomorrow, yesterday | CapyFala",
+    "youtube_descricao": "6 palavras de quando em inglês (today, tomorrow, yesterday, now, later, soon), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (tomorrow). VOCAB 58 · CapyFala.\n\nanterior: Palavras #57",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "ampulheta",
+      "calendarioDia",
+      "relogio"
+    ],
+    "acoes": []
+  }
+}

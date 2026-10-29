@@ -1,0 +1,177 @@
+{
+  "id": "vocab-46-aeroporto",
+  "format": "vocab",
+  "audio": "audio/vocab/aeroporto",
+  "tema": {
+    "pt": "aeroporto",
+    "en": "airport"
+  },
+  "serie": {
+    "codigo": "VOCAB 46",
+    "titulo": "aeroporto",
+    "post": "Palavras #46"
+  },
+  "data_ar": "2026-12-12",
+  "banco": 43,
+  "hookTitle": "Aeroporto em inglês",
+  "nota": "Tema 43 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #46, vai ao ar 12/12/2026 (sáb). Cenário pedido: aeroporto. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "passport",
+      "pt": "passaporte",
+      "digito": "1",
+      "objeto": "passaporte",
+      "qtd": 1,
+      "pron": "PÉS-port"
+    },
+    {
+      "en": "ticket",
+      "pt": "passagem",
+      "digito": "1",
+      "objeto": "passagem",
+      "qtd": 1,
+      "pron": "TÍ-ket"
+    },
+    {
+      "en": "gate",
+      "pt": "portão",
+      "digito": "B12",
+      "objeto": "placaPortao",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tgate",
+        "marca": "termina no t, sem i",
+        "dica": "Termina no t, sem i.",
+        "voz": false
+      },
+      "pron": "GÊIT"
+    },
+    {
+      "en": "flight",
+      "pt": "voo",
+      "digito": "1",
+      "objeto": "aviao",
+      "qtd": 1,
+      "pron": "FLÁIT"
+    },
+    {
+      "en": "seat",
+      "pt": "assento",
+      "digito": "1",
+      "objeto": "poltronaAviao",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tseat",
+        "marca": "i comprido",
+        "dica": "I comprido.",
+        "voz": false
+      },
+      "pron": "SIIT"
+    },
+    {
+      "en": "luggage",
+      "pt": "bagagem",
+      "digito": "2",
+      "objeto": "mala",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tluggage",
+        "marca": "lâ-guidj",
+        "dica": "Começa com lâ e termina em dj: lâ-guidj.",
+        "voz": true
+      },
+      "pron": "LÂ-guidj"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "A Duda vai viajar: seis palavras pra não se perder no aeroporto."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de aeroporto. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "passport → luggage",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #46 · aeroporto em inglês: passport, ticket, gate e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #46 · Aeroporto em inglês: passport, ticket, gate | CapyFala",
+    "youtube_descricao": "6 palavras de aeroporto em inglês (passport, ticket, gate, flight, seat, luggage), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (gate, seat, luggage). VOCAB 46 · CapyFala.\n\nanterior: Palavras #45",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "aviao",
+      "mala",
+      "passagem",
+      "passaporte",
+      "placaPortao",
+      "poltronaAviao"
+    ],
+    "acoes": []
+  },
+  "dividir": {
+    "gancho": [
+      "A Duda vai viajar:",
+      "seis palavras pra não se perder no aeroporto."
+    ]
+  }
+}

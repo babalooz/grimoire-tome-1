@@ -1,0 +1,165 @@
+{
+  "id": "vocab-36-frutas",
+  "format": "vocab",
+  "audio": "audio/vocab/frutas",
+  "tema": {
+    "pt": "frutas",
+    "en": "fruit"
+  },
+  "serie": {
+    "codigo": "VOCAB 36",
+    "titulo": "frutas",
+    "post": "Palavras #36"
+  },
+  "data_ar": "2026-12-02",
+  "banco": 33,
+  "hookTitle": "Frutas em inglês",
+  "nota": "Tema 33 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #36, vai ao ar 02/12/2026 (qua). Cenário pedido: feira (cesta de frutas). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "apple",
+      "pt": "maçã",
+      "digito": "2",
+      "objeto": "maca",
+      "qtd": 2,
+      "pron": "É-pol"
+    },
+    {
+      "en": "banana",
+      "pt": "banana",
+      "digito": "2",
+      "objeto": "banana",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tbanana",
+        "marca": "ba-NÉ-na, com é aberto",
+        "dica": "O meio é aberto: ba-né-na.",
+        "voz": true
+      },
+      "pron": "ba-NÉ-na"
+    },
+    {
+      "en": "orange",
+      "pt": "laranja",
+      "digito": "2",
+      "objeto": "laranja",
+      "qtd": 2,
+      "pron": "Ó-rindj"
+    },
+    {
+      "en": "lemon",
+      "pt": "limão",
+      "digito": "3",
+      "objeto": "limao",
+      "qtd": 3,
+      "pron": "LÉ-man"
+    },
+    {
+      "en": "grape",
+      "pt": "uva",
+      "digito": "1",
+      "objeto": "uva",
+      "qtd": 1,
+      "pron": "GRÊIP"
+    },
+    {
+      "en": "strawberry",
+      "pt": "morango",
+      "digito": "3",
+      "objeto": "morango",
+      "qtd": 3,
+      "armadilha": {
+        "id": "tstrawberry",
+        "marca": "sem i no começo",
+        "dica": "Sem i no começo.",
+        "voz": false
+      },
+      "pron": "STRÓ-be-ri"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Banana em inglês muda de som. E mais cinco frutas."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de frutas. Qual é a sua fruta? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "apple → strawberry",
+    "cta": "qual é a sua fruta? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #36 · frutas em inglês: apple, banana, orange e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #36 · Frutas em inglês: apple, banana, orange | CapyFala",
+    "youtube_descricao": "6 palavras de frutas em inglês (apple, banana, orange, lemon, grape, strawberry), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (banana, strawberry). VOCAB 36 · CapyFala.\n\nanterior: Palavras #35",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "banana",
+      "laranja",
+      "limao",
+      "maca",
+      "morango",
+      "uva"
+    ],
+    "acoes": []
+  }
+}

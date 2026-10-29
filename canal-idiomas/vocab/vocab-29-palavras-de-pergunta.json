@@ -1,0 +1,190 @@
+{
+  "id": "vocab-29-palavras-de-pergunta",
+  "format": "vocab",
+  "audio": "audio/vocab/palavras-de-pergunta",
+  "tema": {
+    "pt": "palavras de pergunta",
+    "en": "question words"
+  },
+  "serie": {
+    "codigo": "VOCAB 29",
+    "titulo": "palavras de pergunta",
+    "post": "Palavras #29"
+  },
+  "data_ar": "2026-11-25",
+  "banco": 27,
+  "hookTitle": "O quê, onde, quem: em inglês",
+  "nota": "Tema 27 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #29, vai ao ar 25/11/2026 (qua). Cenário pedido: café (clientes perguntando). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "what",
+      "pt": "o quê",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "pergunta",
+        "contexto": "— ___ is your name?"
+      },
+      "pron": "UÓT"
+    },
+    {
+      "en": "where",
+      "pt": "onde",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "pergunta",
+        "contexto": "— ___ is the bathroom?"
+      },
+      "pron": "UÉR"
+    },
+    {
+      "en": "who",
+      "pt": "quem",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "pergunta",
+        "contexto": "— ___ is he?"
+      },
+      "armadilha": {
+        "id": "twho",
+        "marca": "o w não soa: RUU",
+        "dica": "O w não se fala. É ruu, com sopro.",
+        "voz": true
+      },
+      "pron": "RUU"
+    },
+    {
+      "en": "when",
+      "pt": "quando",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "pergunta",
+        "contexto": "— ___ is the meeting?"
+      },
+      "pron": "UÉN"
+    },
+    {
+      "en": "how",
+      "pt": "como",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "pergunta",
+        "contexto": "— ___ are you?"
+      },
+      "armadilha": {
+        "id": "thow",
+        "marca": "h soprado",
+        "dica": "H soprado.",
+        "voz": false
+      },
+      "pron": "RÁU"
+    },
+    {
+      "en": "why",
+      "pt": "por quê",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "pergunta",
+        "contexto": "— ___ so early?"
+      },
+      "pron": "UÁI"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Seis palavras e você já pergunta qualquer coisa."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual você mais vai usar? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "what → why",
+    "cta": "qual você mais vai usar? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #29 · palavras de pergunta em inglês: what, where, who e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #29 · Palavras de pergunta em inglês: what, where, who | CapyFala",
+    "youtube_descricao": "6 palavras de palavras de pergunta em inglês (what, where, who, when, how, why), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (who, how). VOCAB 29 · CapyFala.\n\nanterior: Palavras #28",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [],
+    "acoes": [
+      "pergunta"
+    ]
+  }
+}

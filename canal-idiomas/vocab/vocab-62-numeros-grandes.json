@@ -1,0 +1,162 @@
+{
+  "id": "vocab-62-numeros-grandes",
+  "format": "vocab",
+  "audio": "audio/vocab/numeros-grandes",
+  "tema": {
+    "pt": "números grandes",
+    "en": "big numbers"
+  },
+  "serie": {
+    "codigo": "VOCAB 62",
+    "titulo": "números grandes",
+    "post": "Palavras #62"
+  },
+  "data_ar": "2026-12-28",
+  "banco": 58,
+  "hookTitle": "Mil, milhão em inglês",
+  "nota": "Tema 58 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #62, vai ao ar 28/12/2026 (seg). Cenário pedido: café (placar e preços). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "hundred",
+      "pt": "cem",
+      "digito": "100",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "RÂN-dred"
+    },
+    {
+      "en": "thousand",
+      "pt": "mil",
+      "digito": "1.000",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tthousand",
+        "marca": "th: língua nos dentes",
+        "dica": "Língua entre os dentes no th: tháu-zand.",
+        "voz": true
+      },
+      "pron": "THÁU-zand"
+    },
+    {
+      "en": "million",
+      "pt": "milhão",
+      "digito": "1.000.000",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "MÍ-lion"
+    },
+    {
+      "en": "billion",
+      "pt": "bilhão",
+      "digito": "1 bi",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "BÍ-lion"
+    },
+    {
+      "en": "half",
+      "pt": "metade",
+      "digito": "½",
+      "objeto": "bolo",
+      "qtd": 1,
+      "armadilha": {
+        "id": "thalf",
+        "marca": "o l não soa",
+        "dica": "O l não soa.",
+        "voz": false
+      },
+      "pron": "RÉF"
+    },
+    {
+      "en": "dozen",
+      "pt": "dúzia",
+      "digito": "12",
+      "objeto": "ovo",
+      "qtd": 12,
+      "pron": "DÂ-zen"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Cem, mil, um milhão: os números do preço e do placar."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de números grandes. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "hundred → dozen",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #62 · números grandes em inglês: hundred, thousand, million e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #62 · Números grandes em inglês: hundred, thousand, million | CapyFala",
+    "youtube_descricao": "6 palavras de números grandes em inglês (hundred, thousand, million, billion, half, dozen), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (thousand, half). VOCAB 62 · CapyFala.\n\nanterior: Palavras #61",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bolo",
+      "etiquetaPreco",
+      "ovo"
+    ],
+    "acoes": []
+  }
+}

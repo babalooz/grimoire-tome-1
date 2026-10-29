@@ -1,0 +1,154 @@
+{
+  "id": "vocab-25-meses-1",
+  "format": "vocab",
+  "audio": "audio/vocab/meses-1",
+  "tema": {
+    "pt": "meses de janeiro a junho",
+    "en": "months 1"
+  },
+  "serie": {
+    "codigo": "VOCAB 25",
+    "titulo": "meses de janeiro a junho",
+    "post": "Palavras #25"
+  },
+  "data_ar": "2026-11-21",
+  "banco": 24,
+  "hookTitle": "Meses em inglês (1/2)",
+  "nota": "Tema 24 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #25, vai ao ar 21/11/2026 (sáb). Cenário pedido: café (calendário). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "January",
+      "pt": "janeiro",
+      "digito": "JAN",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "DJÉ-niu-é-ri"
+    },
+    {
+      "en": "February",
+      "pt": "fevereiro",
+      "digito": "FEV",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "FÉB-ru-é-ri"
+    },
+    {
+      "en": "March",
+      "pt": "março",
+      "digito": "MAR",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "MÁRTCH"
+    },
+    {
+      "en": "April",
+      "pt": "abril",
+      "digito": "ABR",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tapril",
+        "marca": "êi no começo",
+        "dica": "Começa com ei: êi-pril.",
+        "voz": true
+      },
+      "pron": "ÊI-pril"
+    },
+    {
+      "en": "May",
+      "pt": "maio",
+      "digito": "MAI",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "MÊI"
+    },
+    {
+      "en": "June",
+      "pt": "junho",
+      "digito": "JUN",
+      "objeto": "folhaCalendario",
+      "qtd": 1,
+      "pron": "DJUUN"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Os meses em inglês sempre com letra maiúscula."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Em que mês você faz aniversário? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "January → June",
+    "cta": "em que mês você faz aniversário? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #25 · meses de janeiro a junho em inglês: January, February, March e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #25 · Meses de janeiro a junho em inglês: January, February, March | CapyFala",
+    "youtube_descricao": "6 palavras de meses de janeiro a junho em inglês (January, February, March, April, May, June), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (April). VOCAB 25 · CapyFala.\n\nanterior: Palavras #24",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "folhaCalendario"
+    ],
+    "acoes": []
+  }
+}

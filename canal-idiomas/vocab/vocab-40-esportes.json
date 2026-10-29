@@ -1,0 +1,165 @@
+{
+  "id": "vocab-40-esportes",
+  "format": "vocab",
+  "audio": "audio/vocab/esportes",
+  "tema": {
+    "pt": "esportes",
+    "en": "sports"
+  },
+  "serie": {
+    "codigo": "VOCAB 40",
+    "titulo": "esportes",
+    "post": "Palavras #40"
+  },
+  "data_ar": "2026-12-06",
+  "banco": 37,
+  "hookTitle": "Esportes em inglês",
+  "nota": "Tema 37 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #40, vai ao ar 06/12/2026 (dom). Cenário pedido: bar (TV do esporte). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "soccer",
+      "pt": "futebol",
+      "digito": "1",
+      "objeto": "bolaFutebol",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tsoccer",
+        "marca": "nos EUA futebol é soccer",
+        "dica": "Nos EUA futebol é soccer.",
+        "voz": false
+      },
+      "pron": "SÓ-ker"
+    },
+    {
+      "en": "basketball",
+      "pt": "basquete",
+      "digito": "1",
+      "objeto": "bolaBasquete",
+      "qtd": 1,
+      "pron": "BÉS-ket-bol"
+    },
+    {
+      "en": "swimming",
+      "pt": "natação",
+      "digito": "1",
+      "objeto": "oculosNatacao",
+      "qtd": 1,
+      "pron": "SUÍ-ming"
+    },
+    {
+      "en": "running",
+      "pt": "corrida",
+      "digito": "2",
+      "objeto": "tenis",
+      "qtd": 2,
+      "pron": "RÂ-ning"
+    },
+    {
+      "en": "gym",
+      "pt": "academia",
+      "digito": "2",
+      "objeto": "halter",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tgym",
+        "marca": "djim, não guim",
+        "dica": "O g soa dj: djim.",
+        "voz": true
+      },
+      "pron": "DJÍM"
+    },
+    {
+      "en": "tennis",
+      "pt": "tênis (esporte)",
+      "digito": "1",
+      "objeto": "raquete",
+      "qtd": 1,
+      "pron": "TÉ-nis"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Futebol em inglês americano não é football."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de esportes. Qual esporte você assiste? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "soccer → tennis",
+    "cta": "qual esporte você assiste? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #40 · esportes em inglês: soccer, basketball, swimming e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #40 · Esportes em inglês: soccer, basketball, swimming | CapyFala",
+    "youtube_descricao": "6 palavras de esportes em inglês (soccer, basketball, swimming, running, gym, tennis), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (soccer, gym). VOCAB 40 · CapyFala.\n\nanterior: Palavras #39",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bolaBasquete",
+      "bolaFutebol",
+      "halter",
+      "oculosNatacao",
+      "raquete",
+      "tenis"
+    ],
+    "acoes": []
+  }
+}

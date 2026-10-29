@@ -1,0 +1,165 @@
+{
+  "id": "vocab-34-tempo-la-fora",
+  "format": "vocab",
+  "audio": "audio/vocab/tempo-la-fora",
+  "tema": {
+    "pt": "tempo lá fora",
+    "en": "weather"
+  },
+  "serie": {
+    "codigo": "VOCAB 34",
+    "titulo": "tempo lá fora",
+    "post": "Palavras #34"
+  },
+  "data_ar": "2026-11-30",
+  "banco": 31,
+  "hookTitle": "O tempo em inglês",
+  "nota": "Tema 31 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #34, vai ao ar 30/11/2026 (seg). Cenário pedido: café (janela). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "sun",
+      "pt": "sol",
+      "digito": "1",
+      "objeto": "sol",
+      "qtd": 1,
+      "pron": "SÂN"
+    },
+    {
+      "en": "rain",
+      "pt": "chuva",
+      "digito": "1",
+      "objeto": "nuvemChuva",
+      "qtd": 1,
+      "pron": "RÊIN"
+    },
+    {
+      "en": "hot",
+      "pt": "calor",
+      "digito": "1",
+      "objeto": "termometroAlto",
+      "qtd": 1,
+      "armadilha": {
+        "id": "thot",
+        "marca": "h soprado",
+        "dica": "O h sai num sopro: rót.",
+        "voz": true
+      },
+      "pron": "RÓT"
+    },
+    {
+      "en": "cold",
+      "pt": "frio",
+      "digito": "1",
+      "objeto": "termometroBaixo",
+      "qtd": 1,
+      "pron": "KOULD"
+    },
+    {
+      "en": "wind",
+      "pt": "vento",
+      "digito": "1",
+      "objeto": "folhasVento",
+      "qtd": 1,
+      "pron": "UÍND"
+    },
+    {
+      "en": "snow",
+      "pt": "neve",
+      "digito": "3",
+      "objeto": "floco",
+      "qtd": 3,
+      "armadilha": {
+        "id": "tsnow",
+        "marca": "sem i no começo",
+        "dica": "Sem i no começo.",
+        "voz": false
+      },
+      "pron": "SNÔU"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Sol, chuva, vento: o tempo pela janela do café."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Como tá o tempo aí? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "sun → snow",
+    "cta": "como tá o tempo aí? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #34 · tempo lá fora em inglês: sun, rain, hot e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #34 · Tempo lá fora em inglês: sun, rain, hot | CapyFala",
+    "youtube_descricao": "6 palavras de tempo lá fora em inglês (sun, rain, hot, cold, wind, snow), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (hot, snow). VOCAB 34 · CapyFala.\n\nanterior: Palavras #33",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "floco",
+      "folhasVento",
+      "nuvemChuva",
+      "sol",
+      "termometroAlto",
+      "termometroBaixo"
+    ],
+    "acoes": []
+  }
+}

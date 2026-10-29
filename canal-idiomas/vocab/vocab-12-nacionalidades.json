@@ -1,0 +1,166 @@
+{
+  "id": "vocab-12-nacionalidades",
+  "format": "vocab",
+  "audio": "audio/vocab/nacionalidades",
+  "tema": {
+    "pt": "nacionalidades",
+    "en": "nationalities"
+  },
+  "serie": {
+    "codigo": "VOCAB 12",
+    "titulo": "nacionalidades",
+    "post": "Palavras #12"
+  },
+  "data_ar": "2026-11-08",
+  "banco": 11,
+  "hookTitle": "Nacionalidades em inglês",
+  "nota": "Tema 11 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #12, vai ao ar 08/11/2026 (dom). Cenário pedido: café (crachás de clientes). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "Brazilian",
+      "pt": "brasileiro",
+      "digito": "BR",
+      "objeto": "cracha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbrazilian",
+        "marca": "força no ZIL",
+        "dica": "Força no ZIL.",
+        "voz": false
+      },
+      "pron": "bra-ZIL-ian"
+    },
+    {
+      "en": "American",
+      "pt": "americano",
+      "digito": "US",
+      "objeto": "cracha",
+      "qtd": 1,
+      "pron": "a-MÉ-ri-can"
+    },
+    {
+      "en": "Mexican",
+      "pt": "mexicano",
+      "digito": "MX",
+      "objeto": "cracha",
+      "qtd": 1,
+      "pron": "MÉK-si-can"
+    },
+    {
+      "en": "Italian",
+      "pt": "italiano",
+      "digito": "IT",
+      "objeto": "cracha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "titalian",
+        "marca": "i-TAL-ian, não ítalian",
+        "dica": "A força fica no tal: i-tél-ian.",
+        "voz": true
+      },
+      "pron": "i-TÉL-ian"
+    },
+    {
+      "en": "Japanese",
+      "pt": "japonês",
+      "digito": "JP",
+      "objeto": "cracha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tjapanese",
+        "marca": "força no fim: ja-pa-NESE",
+        "dica": "A força vai pro fim: djé-pa-niiz.",
+        "voz": true
+      },
+      "pron": "djé-pa-NIIZ"
+    },
+    {
+      "en": "Canadian",
+      "pt": "canadense",
+      "digito": "CA",
+      "objeto": "cracha",
+      "qtd": 1,
+      "pron": "ka-NEI-di-an"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Brasileiro em inglês tem letra maiúscula. Sempre."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de nacionalidades. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "Brazilian → Canadian",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #12 · nacionalidades em inglês: Brazilian, American, Mexican e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #12 · Nacionalidades em inglês: Brazilian, American, Mexican | CapyFala",
+    "youtube_descricao": "6 palavras de nacionalidades em inglês (Brazilian, American, Mexican, Italian, Japanese, Canadian), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (Brazilian, Italian, Japanese). VOCAB 12 · CapyFala.\n\nanterior: Palavras #11",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "cracha"
+    ],
+    "acoes": []
+  }
+}

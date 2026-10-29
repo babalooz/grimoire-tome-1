@@ -1,0 +1,154 @@
+{
+  "id": "vocab-44-frequencia",
+  "format": "vocab",
+  "audio": "audio/vocab/frequencia",
+  "tema": {
+    "pt": "frequência",
+    "en": "frequency"
+  },
+  "serie": {
+    "codigo": "VOCAB 44",
+    "titulo": "frequência",
+    "post": "Palavras #44"
+  },
+  "data_ar": "2026-12-10",
+  "banco": 41,
+  "hookTitle": "Sempre, nunca, às vezes: em inglês",
+  "nota": "Tema 41 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #44, vai ao ar 10/12/2026 (qui). Cenário pedido: café (agenda do Hank). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "always",
+      "pt": "sempre",
+      "digito": "7/7",
+      "objeto": "agendaSemana",
+      "qtd": 1,
+      "pron": "ÓL-ueiz"
+    },
+    {
+      "en": "usually",
+      "pt": "geralmente",
+      "digito": "5/7",
+      "objeto": "agendaSemana",
+      "qtd": 1,
+      "pron": "IÚ-ju-a-li"
+    },
+    {
+      "en": "often",
+      "pt": "frequentemente",
+      "digito": "4/7",
+      "objeto": "agendaSemana",
+      "qtd": 1,
+      "armadilha": {
+        "id": "toften",
+        "marca": "o t não soa",
+        "dica": "O t não se fala: ó-fen.",
+        "voz": true
+      },
+      "pron": "Ó-fen"
+    },
+    {
+      "en": "sometimes",
+      "pt": "às vezes",
+      "digito": "2/7",
+      "objeto": "agendaSemana",
+      "qtd": 1,
+      "pron": "SÂM-taimz"
+    },
+    {
+      "en": "never",
+      "pt": "nunca",
+      "digito": "0/7",
+      "objeto": "agendaSemana",
+      "qtd": 1,
+      "pron": "NÉ-ver"
+    },
+    {
+      "en": "every day",
+      "pt": "todo dia",
+      "digito": "dia",
+      "objeto": "agendaSemana",
+      "qtd": 1,
+      "pron": "É-vri-dei"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Quantas vezes por semana? Seis palavras pra responder."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de frequência. Você sempre ou nunca toma café? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "always → every day",
+    "cta": "você sempre ou nunca toma café? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #44 · frequência em inglês: always, usually, often e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #44 · Frequência em inglês: always, usually, often | CapyFala",
+    "youtube_descricao": "6 palavras de frequência em inglês (always, usually, often, sometimes, never, every day), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (often). VOCAB 44 · CapyFala.\n\nanterior: Palavras #43",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "agendaSemana"
+    ],
+    "acoes": []
+  }
+}

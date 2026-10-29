@@ -1,0 +1,195 @@
+{
+  "id": "vocab-55-eu-sei-fazer",
+  "format": "vocab",
+  "audio": "audio/vocab/eu-sei-fazer",
+  "tema": {
+    "pt": "o que eu sei fazer (can)",
+    "en": "I can"
+  },
+  "serie": {
+    "codigo": "VOCAB 55",
+    "titulo": "o que eu sei fazer (can)",
+    "post": "Palavras #55"
+  },
+  "data_ar": "2026-12-21",
+  "banco": 52,
+  "hookTitle": "O que você sabe fazer?",
+  "nota": "Tema 52 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #55, vai ao ar 21/12/2026 (seg). Cenário pedido: café. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "swim",
+      "pt": "nadar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "nada",
+        "contexto": "nas férias"
+      },
+      "pron": "SUÍM"
+    },
+    {
+      "en": "drive",
+      "pt": "dirigir",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "dirige",
+        "contexto": "o carro da firma"
+      },
+      "armadilha": {
+        "id": "tdrive",
+        "marca": "termina no v",
+        "dica": "Termina no v.",
+        "voz": false
+      },
+      "pron": "DRÁIV"
+    },
+    {
+      "en": "cook",
+      "pt": "cozinhar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "hank"
+        ],
+        "acao": "cozinha",
+        "contexto": "o bolo do dia"
+      },
+      "pron": "KÚK"
+    },
+    {
+      "en": "sing",
+      "pt": "cantar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "canta",
+        "contexto": "no karaokê"
+      },
+      "armadilha": {
+        "id": "tsing",
+        "marca": "o g quase não soa",
+        "dica": "O g quase não soa.",
+        "voz": false
+      },
+      "pron": "SÍNG"
+    },
+    {
+      "en": "dance",
+      "pt": "dançar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "danca",
+        "contexto": "na festa"
+      },
+      "pron": "DÉNS"
+    },
+    {
+      "en": "fix",
+      "pt": "consertar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "hank"
+        ],
+        "acao": "conserta",
+        "contexto": "a máquina de café"
+      },
+      "pron": "FÍKS"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Nadar, dirigir, cozinhar: o que você sabe fazer?"
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. O que você sabe fazer? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "swim → fix",
+    "cta": "o que você sabe fazer? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #55 · o que eu sei fazer (can) em inglês: swim, drive, cook e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #55 · O que eu sei fazer (can) em inglês: swim, drive, cook | CapyFala",
+    "youtube_descricao": "6 palavras de o que eu sei fazer (can) em inglês (swim, drive, cook, sing, dance, fix), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (drive, sing). VOCAB 55 · CapyFala.\n\nanterior: Palavras #54",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [],
+    "acoes": [
+      "canta",
+      "conserta",
+      "cozinha",
+      "danca",
+      "dirige",
+      "nada"
+    ]
+  }
+}

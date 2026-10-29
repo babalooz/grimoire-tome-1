@@ -1,0 +1,176 @@
+{
+  "id": "vocab-49-opostos-2",
+  "format": "vocab",
+  "audio": "audio/vocab/opostos-2",
+  "tema": {
+    "pt": "opostos 2",
+    "en": "opposites 2"
+  },
+  "serie": {
+    "codigo": "VOCAB 49",
+    "titulo": "opostos 2",
+    "post": "Palavras #49"
+  },
+  "data_ar": "2026-12-15",
+  "banco": 46,
+  "hookTitle": "Bom, ruim, fácil, difícil",
+  "nota": "Tema 46 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #49, vai ao ar 15/12/2026 (ter). Cenário pedido: café. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "good",
+      "pt": "bom",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "sim",
+        "contexto": "— o café tá bom?"
+      },
+      "pron": "GÚD"
+    },
+    {
+      "en": "bad",
+      "pt": "ruim",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "nao",
+        "contexto": "— café frio"
+      },
+      "armadilha": {
+        "id": "tbad",
+        "marca": "bad tem a aberto: BÉD",
+        "dica": "Bad é bem aberto: béd.",
+        "voz": true
+      },
+      "pron": "BÉD"
+    },
+    {
+      "en": "easy",
+      "pt": "fácil",
+      "digito": "2",
+      "objeto": "quebraCabeca",
+      "qtd": 1,
+      "pron": "ÍI-zi"
+    },
+    {
+      "en": "hard",
+      "pt": "difícil",
+      "digito": "1000",
+      "objeto": "quebraCabeca",
+      "qtd": 1,
+      "armadilha": {
+        "id": "thard",
+        "marca": "h soprado",
+        "dica": "H soprado.",
+        "voz": false
+      },
+      "pron": "RÁRD"
+    },
+    {
+      "en": "fast",
+      "pt": "rápido",
+      "digito": "1",
+      "objeto": "cafeteira",
+      "qtd": 1,
+      "pron": "FÉST"
+    },
+    {
+      "en": "slow",
+      "pt": "devagar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "chega",
+        "contexto": "atrasado de novo"
+      },
+      "pron": "SLÔU"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Bom ou ruim, fácil ou difícil: seis opostos."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Inglês tá fácil ou difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "good → slow",
+    "cta": "inglês tá fácil ou difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #49 · opostos 2 em inglês: good, bad, easy e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #49 · Opostos 2 em inglês: good, bad, easy | CapyFala",
+    "youtube_descricao": "6 palavras de opostos 2 em inglês (good, bad, easy, hard, fast, slow), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (bad, hard). VOCAB 49 · CapyFala.\n\nanterior: Palavras #48",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "cafeteira",
+      "quebraCabeca"
+    ],
+    "acoes": []
+  }
+}

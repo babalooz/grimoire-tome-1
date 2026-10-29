@@ -1,0 +1,159 @@
+{
+  "id": "vocab-37-onde-esta",
+  "format": "vocab",
+  "audio": "audio/vocab/onde-esta",
+  "tema": {
+    "pt": "onde está",
+    "en": "prepositions of place"
+  },
+  "serie": {
+    "codigo": "VOCAB 37",
+    "titulo": "onde está",
+    "post": "Palavras #37"
+  },
+  "data_ar": "2026-12-03",
+  "banco": 34,
+  "hookTitle": "Dentro, em cima, embaixo",
+  "nota": "Tema 34 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #37, vai ao ar 03/12/2026 (qui). Cenário pedido: café (grãos e xícaras). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "in",
+      "pt": "dentro",
+      "digito": "1",
+      "objeto": "posDentro",
+      "qtd": 1,
+      "pron": "ÍN"
+    },
+    {
+      "en": "on",
+      "pt": "em cima",
+      "digito": "1",
+      "objeto": "posCima",
+      "qtd": 1,
+      "pron": "ÓN"
+    },
+    {
+      "en": "under",
+      "pt": "embaixo",
+      "digito": "1",
+      "objeto": "posEmbaixo",
+      "qtd": 1,
+      "pron": "ÂN-der"
+    },
+    {
+      "en": "behind",
+      "pt": "atrás",
+      "digito": "1",
+      "objeto": "posAtras",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbehind",
+        "marca": "força no fim",
+        "dica": "A força vai no fim: bi-ráind.",
+        "voz": true
+      },
+      "pron": "bi-RÁIND"
+    },
+    {
+      "en": "between",
+      "pt": "entre",
+      "digito": "1",
+      "objeto": "posEntre",
+      "qtd": 1,
+      "pron": "bi-TUIIN"
+    },
+    {
+      "en": "next to",
+      "pt": "ao lado",
+      "digito": "1",
+      "objeto": "posLado",
+      "qtd": 1,
+      "pron": "NÉKST-tu"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Cadê o grão? Seis palavras pra dizer onde está."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de onde está. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "in → next to",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #37 · onde está em inglês: in, on, under e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #37 · Onde está em inglês: in, on, under | CapyFala",
+    "youtube_descricao": "6 palavras de onde está em inglês (in, on, under, behind, between, next to), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (behind). VOCAB 37 · CapyFala.\n\nanterior: Palavras #36",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "posAtras",
+      "posCima",
+      "posDentro",
+      "posEmbaixo",
+      "posEntre",
+      "posLado"
+    ],
+    "acoes": []
+  }
+}

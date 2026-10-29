@@ -1,0 +1,162 @@
+{
+  "id": "vocab-45-trabalho",
+  "format": "vocab",
+  "audio": "audio/vocab/trabalho",
+  "tema": {
+    "pt": "trabalho",
+    "en": "work"
+  },
+  "serie": {
+    "codigo": "VOCAB 45",
+    "titulo": "trabalho",
+    "post": "Palavras #45"
+  },
+  "data_ar": "2026-12-11",
+  "banco": 42,
+  "hookTitle": "Trabalho em inglês",
+  "nota": "Tema 42 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #45, vai ao ar 11/12/2026 (sex). Cenário pedido: escritório. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "meeting",
+      "pt": "reunião",
+      "digito": "1",
+      "objeto": "mesaReuniao",
+      "qtd": 1,
+      "pron": "MÍI-ting"
+    },
+    {
+      "en": "boss",
+      "pt": "chefe",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "hank"
+        ],
+        "acao": "aponta",
+        "contexto": "o dono do café"
+      },
+      "pron": "BÓS"
+    },
+    {
+      "en": "computer",
+      "pt": "computador",
+      "digito": "1",
+      "objeto": "notebook",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tcomputer",
+        "marca": "força no meio",
+        "dica": "A força fica no meio: com-piú-ter.",
+        "voz": true
+      },
+      "pron": "com-PIÚ-ter"
+    },
+    {
+      "en": "desk",
+      "pt": "mesa de trabalho",
+      "digito": "1",
+      "objeto": "mesaTrabalho",
+      "qtd": 1,
+      "pron": "DÉSK"
+    },
+    {
+      "en": "office",
+      "pt": "escritório",
+      "digito": "1",
+      "objeto": "predioEscritorio",
+      "qtd": 1,
+      "pron": "Ó-fis"
+    },
+    {
+      "en": "break",
+      "pt": "intervalo",
+      "digito": "1",
+      "objeto": "xicara",
+      "qtd": 1,
+      "pron": "BRÊIK"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "O cliente do escritório: seis palavras do trabalho."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de trabalho. Qual você mais usa no trabalho? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "meeting → break",
+    "cta": "qual você mais usa no trabalho? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #45 · trabalho em inglês: meeting, boss, computer e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #45 · Trabalho em inglês: meeting, boss, computer | CapyFala",
+    "youtube_descricao": "6 palavras de trabalho em inglês (meeting, boss, computer, desk, office, break), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (computer). VOCAB 45 · CapyFala.\n\nanterior: Palavras #44",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "mesaReuniao",
+      "mesaTrabalho",
+      "notebook",
+      "predioEscritorio"
+    ],
+    "acoes": []
+  }
+}

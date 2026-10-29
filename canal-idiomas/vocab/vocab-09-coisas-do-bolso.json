@@ -1,0 +1,171 @@
+{
+  "id": "vocab-09-coisas-do-bolso",
+  "format": "vocab",
+  "audio": "audio/vocab/coisas-do-bolso",
+  "tema": {
+    "pt": "coisas do bolso",
+    "en": "pocket things"
+  },
+  "serie": {
+    "codigo": "VOCAB 09",
+    "titulo": "coisas do bolso",
+    "post": "Palavras #09"
+  },
+  "data_ar": "2026-11-05",
+  "banco": 8,
+  "hookTitle": "O que tem no seu bolso?",
+  "nota": "Tema 8 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #09, vai ao ar 05/11/2026 (qui). Cenário pedido: café (achados e perdidos). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "phone",
+      "pt": "celular",
+      "digito": "1",
+      "objeto": "celular",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tphone",
+        "marca": "foun, não fone",
+        "dica": "É foun, com u no final.",
+        "voz": true
+      },
+      "pron": "FOUN"
+    },
+    {
+      "en": "key",
+      "pt": "chave",
+      "digito": "2",
+      "objeto": "chave",
+      "qtd": 2,
+      "pron": "KII"
+    },
+    {
+      "en": "wallet",
+      "pt": "carteira",
+      "digito": "1",
+      "objeto": "carteira",
+      "qtd": 1,
+      "pron": "UÓ-let"
+    },
+    {
+      "en": "money",
+      "pt": "dinheiro",
+      "digito": "3",
+      "objeto": "notas",
+      "qtd": 3,
+      "pron": "MÂ-ni"
+    },
+    {
+      "en": "card",
+      "pt": "cartão",
+      "digito": "1",
+      "objeto": "cartao",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tcard",
+        "marca": "termina no d, sem i",
+        "dica": "Termina no d, sem i.",
+        "voz": false
+      },
+      "pron": "KÁRD"
+    },
+    {
+      "en": "bag",
+      "pt": "bolsa",
+      "digito": "1",
+      "objeto": "bolsa",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbag",
+        "marca": "a bem aberto, quase é",
+        "dica": "É bég, com a boca aberta.",
+        "voz": true
+      },
+      "pron": "BÉG"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Seis coisas que todo mundo esquece no café."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual você mais esquece? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "phone → bag",
+    "cta": "qual você mais esquece? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #09 · coisas do bolso em inglês: phone, key, wallet e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #09 · Coisas do bolso em inglês: phone, key, wallet | CapyFala",
+    "youtube_descricao": "6 palavras de coisas do bolso em inglês (phone, key, wallet, money, card, bag), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (phone, card, bag). VOCAB 09 · CapyFala.\n\nanterior: Palavras #08",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bolsa",
+      "cartao",
+      "carteira",
+      "celular",
+      "chave",
+      "notas"
+    ],
+    "acoes": []
+  }
+}

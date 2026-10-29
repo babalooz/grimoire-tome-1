@@ -1,0 +1,180 @@
+{
+  "id": "vocab-51-rotina-da-manha",
+  "format": "vocab",
+  "audio": "audio/vocab/rotina-da-manha",
+  "tema": {
+    "pt": "rotina da manhã",
+    "en": "morning routine"
+  },
+  "serie": {
+    "codigo": "VOCAB 51",
+    "titulo": "rotina da manhã",
+    "post": "Palavras #51"
+  },
+  "data_ar": "2026-12-17",
+  "banco": 48,
+  "hookTitle": "Rotina da manhã em inglês",
+  "nota": "Tema 48 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #51, vai ao ar 17/12/2026 (qui). Cenário pedido: casa da Capy (manhã). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "wake up",
+      "pt": "acordar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "acorda",
+        "contexto": "o despertador tocou"
+      },
+      "pron": "UÊIK-âp"
+    },
+    {
+      "en": "shower",
+      "pt": "banho",
+      "digito": "1",
+      "objeto": "chuveiro",
+      "qtd": 1,
+      "pron": "SHÁU-er"
+    },
+    {
+      "en": "breakfast",
+      "pt": "café da manhã",
+      "digito": "1",
+      "objeto": "bandejaCafe",
+      "qtd": 1,
+      "pron": "BRÉK-fest"
+    },
+    {
+      "en": "work",
+      "pt": "trabalho",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "trabalha",
+        "contexto": "no café"
+      },
+      "armadilha": {
+        "id": "twork",
+        "marca": "uârk, não uórk",
+        "dica": "O o soa como â: uârk.",
+        "voz": true
+      },
+      "pron": "UÂRK"
+    },
+    {
+      "en": "lunch",
+      "pt": "almoço",
+      "digito": "1",
+      "objeto": "marmita",
+      "qtd": 1,
+      "pron": "LÂNTCH"
+    },
+    {
+      "en": "home",
+      "pt": "casa",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "chega",
+        "contexto": "de volta pra casa"
+      },
+      "armadilha": {
+        "id": "thome",
+        "marca": "h soprado",
+        "dica": "H soprado.",
+        "voz": false
+      },
+      "pron": "RÔUM"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "A manhã da Capy em seis palavras."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual é a primeira coisa que você faz? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "wake up → home",
+    "cta": "qual é a primeira coisa que você faz? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #51 · rotina da manhã em inglês: wake up, shower, breakfast e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #51 · Rotina da manhã em inglês: wake up, shower, breakfast | CapyFala",
+    "youtube_descricao": "6 palavras de rotina da manhã em inglês (wake up, shower, breakfast, work, lunch, home), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (work, home). VOCAB 51 · CapyFala.\n\nanterior: Palavras #50",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bandejaCafe",
+      "chuveiro",
+      "marmita"
+    ],
+    "acoes": [
+      "acorda",
+      "trabalha"
+    ]
+  }
+}

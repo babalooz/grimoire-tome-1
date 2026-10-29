@@ -1,0 +1,220 @@
+{
+  "id": "vocab-07-numeros-11a20",
+  "format": "vocab",
+  "audio": "audio/vocab/numeros-11a20",
+  "tema": {
+    "pt": "números de 11 a 20",
+    "en": "numbers 11-20"
+  },
+  "serie": {
+    "codigo": "VOCAB 07",
+    "titulo": "números de 11 a 20",
+    "post": "Palavras #07"
+  },
+  "data_ar": "2026-11-03",
+  "banco": 6,
+  "hookTitle": "11 a 20 em inglês",
+  "nota": "Tema 6 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #07, vai ao ar 03/11/2026 (ter). Cenário pedido: café (fila com senha). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "eleven",
+      "pt": "onze",
+      "digito": "11",
+      "objeto": "senha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "televen",
+        "marca": "força no meio: i-LEV-en",
+        "dica": "A força fica no meio: i-LÉ-ven.",
+        "voz": true
+      },
+      "pron": "i-LÉ-ven"
+    },
+    {
+      "en": "twelve",
+      "pt": "doze",
+      "digito": "12",
+      "objeto": "senha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ttwelve",
+        "marca": "termina no v, sem i",
+        "dica": "Termina no v, sem i.",
+        "voz": false
+      },
+      "pron": "TUÉLV"
+    },
+    {
+      "en": "thirteen",
+      "pt": "treze",
+      "digito": "13",
+      "objeto": "senha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tthirteen",
+        "marca": "força no fim: thir-TEEN",
+        "dica": "Força no fim: thir-TEEN.",
+        "voz": false
+      },
+      "pron": "thâr-TIIN"
+    },
+    {
+      "en": "fourteen",
+      "pt": "quatorze",
+      "digito": "14",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "for-TIIN"
+    },
+    {
+      "en": "fifteen",
+      "pt": "quinze",
+      "digito": "15",
+      "objeto": "senha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tfifteen",
+        "marca": "força no fim: fif-TEEN",
+        "dica": "Força no fim: fif-TEEN.",
+        "voz": false
+      },
+      "pron": "fif-TIIN"
+    },
+    {
+      "en": "sixteen",
+      "pt": "dezesseis",
+      "digito": "16",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "siks-TIIN"
+    },
+    {
+      "en": "seventeen",
+      "pt": "dezessete",
+      "digito": "17",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "se-ven-TIIN"
+    },
+    {
+      "en": "eighteen",
+      "pt": "dezoito",
+      "digito": "18",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "ei-TIIN"
+    },
+    {
+      "en": "nineteen",
+      "pt": "dezenove",
+      "digito": "19",
+      "objeto": "senha",
+      "qtd": 1,
+      "pron": "nain-TIIN"
+    },
+    {
+      "en": "twenty",
+      "pt": "vinte",
+      "digito": "20",
+      "objeto": "senha",
+      "qtd": 1,
+      "armadilha": {
+        "id": "ttwenty",
+        "marca": "no americano o t some: TWEN-ny",
+        "dica": "No americano o t some: TWEN-ny.",
+        "voz": false
+      },
+      "pron": "TUÉN-i"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      9
+    ],
+    "vozes": [
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": false,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "De onze a vinte: a força muda de lugar."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "10 palavras novas. Qual foi o mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 10 palavras",
+    "sub": "eleven → twenty",
+    "cta": "qual foi o mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #07 · números de 11 a 20 em inglês: eleven, twelve, thirteen e mais 7. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #07 · Números de 11 a 20 em inglês: eleven, twelve, thirteen | CapyFala",
+    "youtube_descricao": "10 palavras de números de 11 a 20 em inglês (eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (eleven, twelve, thirteen, fifteen, twenty). VOCAB 07 · CapyFala.\n\nanterior: Palavras #06",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "senha"
+    ],
+    "acoes": []
+  }
+}

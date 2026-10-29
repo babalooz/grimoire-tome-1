@@ -1,0 +1,190 @@
+{
+  "id": "vocab-33-corpo",
+  "format": "vocab",
+  "audio": "audio/vocab/corpo",
+  "tema": {
+    "pt": "corpo",
+    "en": "body"
+  },
+  "serie": {
+    "codigo": "VOCAB 33",
+    "titulo": "corpo",
+    "post": "Palavras #33"
+  },
+  "data_ar": "2026-11-29",
+  "banco": 30,
+  "hookTitle": "Partes do corpo em inglês",
+  "nota": "Tema 30 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #33, vai ao ar 29/11/2026 (dom). Cenário pedido: café (Lazy se espreguiçando). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "head",
+      "pt": "cabeça",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "mostra",
+        "contexto": "a cabeça"
+      },
+      "armadilha": {
+        "id": "thead",
+        "marca": "h soprado",
+        "dica": "O h sai num sopro: réd.",
+        "voz": true
+      },
+      "pron": "RÉD"
+    },
+    {
+      "en": "hand",
+      "pt": "mão",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "mostra",
+        "contexto": "a mão"
+      },
+      "pron": "RÉND"
+    },
+    {
+      "en": "eye",
+      "pt": "olho",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "mostra",
+        "contexto": "o olho"
+      },
+      "pron": "ÁI"
+    },
+    {
+      "en": "mouth",
+      "pt": "boca",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "mostra",
+        "contexto": "a boca"
+      },
+      "armadilha": {
+        "id": "tmouth",
+        "marca": "th no fim",
+        "dica": "Th no fim.",
+        "voz": false
+      },
+      "pron": "MÁUTH"
+    },
+    {
+      "en": "leg",
+      "pt": "perna",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "mostra",
+        "contexto": "a perna"
+      },
+      "pron": "LÉG"
+    },
+    {
+      "en": "back",
+      "pt": "costas",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "mostra",
+        "contexto": "as costas"
+      },
+      "pron": "BÉK"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "O Lazy se espreguiça e ensina seis partes do corpo."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de corpo. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "head → back",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #33 · corpo em inglês: head, hand, eye e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #33 · Corpo em inglês: head, hand, eye | CapyFala",
+    "youtube_descricao": "6 palavras de corpo em inglês (head, hand, eye, mouth, leg, back), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (head, mouth). VOCAB 33 · CapyFala.\n\nanterior: Palavras #32",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [],
+    "acoes": [
+      "mostra"
+    ]
+  }
+}

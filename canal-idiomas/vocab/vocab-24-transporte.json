@@ -1,0 +1,165 @@
+{
+  "id": "vocab-24-transporte",
+  "format": "vocab",
+  "audio": "audio/vocab/transporte",
+  "tema": {
+    "pt": "transporte",
+    "en": "transportation"
+  },
+  "serie": {
+    "codigo": "VOCAB 24",
+    "titulo": "transporte",
+    "post": "Palavras #24"
+  },
+  "data_ar": "2026-11-20",
+  "banco": 23,
+  "hookTitle": "Transporte em inglês",
+  "nota": "Tema 23 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #24, vai ao ar 20/11/2026 (sex). Cenário pedido: rua (ponto de ônibus). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "car",
+      "pt": "carro",
+      "digito": "1",
+      "objeto": "carro",
+      "qtd": 1,
+      "pron": "KÁR"
+    },
+    {
+      "en": "bus",
+      "pt": "ônibus",
+      "digito": "1",
+      "objeto": "onibus",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbus",
+        "marca": "bâs, não bus",
+        "dica": "O u soa como â: bâs.",
+        "voz": true
+      },
+      "pron": "BÂS"
+    },
+    {
+      "en": "train",
+      "pt": "trem",
+      "digito": "1",
+      "objeto": "trem",
+      "qtd": 1,
+      "pron": "TRÊIN"
+    },
+    {
+      "en": "plane",
+      "pt": "avião",
+      "digito": "1",
+      "objeto": "aviao",
+      "qtd": 1,
+      "pron": "PLÊIN"
+    },
+    {
+      "en": "bike",
+      "pt": "bicicleta",
+      "digito": "1",
+      "objeto": "bike",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbike",
+        "marca": "termina no k, sem i",
+        "dica": "Termina no k, sem i.",
+        "voz": false
+      },
+      "pron": "BÁIK"
+    },
+    {
+      "en": "taxi",
+      "pt": "táxi",
+      "digito": "1",
+      "objeto": "taxi",
+      "qtd": 1,
+      "pron": "TÉK-si"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Carro, ônibus, avião: como a Capy chega no trabalho."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de transporte. Como você vai trabalhar? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "car → taxi",
+    "cta": "como você vai trabalhar? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #24 · transporte em inglês: car, bus, train e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #24 · Transporte em inglês: car, bus, train | CapyFala",
+    "youtube_descricao": "6 palavras de transporte em inglês (car, bus, train, plane, bike, taxi), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (bus, bike). VOCAB 24 · CapyFala.\n\nanterior: Palavras #23",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "aviao",
+      "bike",
+      "carro",
+      "onibus",
+      "taxi",
+      "trem"
+    ],
+    "acoes": []
+  }
+}

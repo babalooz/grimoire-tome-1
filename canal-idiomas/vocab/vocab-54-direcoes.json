@@ -1,0 +1,162 @@
+{
+  "id": "vocab-54-direcoes",
+  "format": "vocab",
+  "audio": "audio/vocab/direcoes",
+  "tema": {
+    "pt": "direções",
+    "en": "directions"
+  },
+  "serie": {
+    "codigo": "VOCAB 54",
+    "titulo": "direções",
+    "post": "Palavras #54"
+  },
+  "data_ar": "2026-12-20",
+  "banco": 51,
+  "hookTitle": "Direita, esquerda: em inglês",
+  "nota": "Tema 51 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #54, vai ao ar 20/12/2026 (dom). Cenário pedido: rua (esquina). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "left",
+      "pt": "esquerda",
+      "digito": "←",
+      "objeto": "seta",
+      "qtd": 1,
+      "pron": "LÉFT"
+    },
+    {
+      "en": "right",
+      "pt": "direita",
+      "digito": "→",
+      "objeto": "seta",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tright",
+        "marca": "r americano, termina no t",
+        "dica": "O r é enrolado pra trás e termina no t.",
+        "voz": true
+      },
+      "pron": "RÁIT"
+    },
+    {
+      "en": "straight",
+      "pt": "reto",
+      "digito": "↑",
+      "objeto": "seta",
+      "qtd": 1,
+      "pron": "STRÊIT"
+    },
+    {
+      "en": "corner",
+      "pt": "esquina",
+      "digito": "1",
+      "objeto": "placaRua",
+      "qtd": 1,
+      "pron": "CÓR-ner"
+    },
+    {
+      "en": "street",
+      "pt": "rua",
+      "digito": "St",
+      "objeto": "placaRua",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tstreet",
+        "marca": "sem i no começo",
+        "dica": "Sem i no começo.",
+        "voz": false
+      },
+      "pron": "STRIIT"
+    },
+    {
+      "en": "block",
+      "pt": "quarteirão",
+      "digito": "1",
+      "objeto": "quarteirao",
+      "qtd": 1,
+      "pron": "BLÓK"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Um turista perdido na porta: seis palavras pra ajudar."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de direções. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "left → block",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #54 · direções em inglês: left, right, straight e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #54 · Direções em inglês: left, right, straight | CapyFala",
+    "youtube_descricao": "6 palavras de direções em inglês (left, right, straight, corner, street, block), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (right, street). VOCAB 54 · CapyFala.\n\nanterior: Palavras #53",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "placaRua",
+      "quarteirao",
+      "seta"
+    ],
+    "acoes": []
+  }
+}

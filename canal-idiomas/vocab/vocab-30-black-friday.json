@@ -1,0 +1,224 @@
+{
+  "id": "vocab-30-black-friday",
+  "format": "vocab",
+  "audio": "audio/vocab/black-friday",
+  "tema": {
+    "pt": "Black Friday",
+    "en": "black friday"
+  },
+  "serie": {
+    "codigo": "VOCAB 30",
+    "titulo": "Black Friday",
+    "post": "Palavras #30"
+  },
+  "data_ar": "2026-11-26",
+  "banco": 62,
+  "hookTitle": "Black Friday em inglês",
+  "nota": "Tema 62 do banco (ponte/saida/serie-vocabulario-banco-2.md, tema de data). Fila: Palavras #30, vai ao ar 26/11/2026 (qui). Cenário pedido: loja (vitrine de promoção). Black Friday 2026 = sexta 27/11; vai ao ar na véspera (no Brasil a promoção já começa antes). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "sale",
+      "pt": "liquidação",
+      "digito": "1",
+      "objeto": "placaSale",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tsale",
+        "marca": "termina no l",
+        "dica": "Termina no l.",
+        "voz": false
+      },
+      "pron": "SÊIL"
+    },
+    {
+      "en": "deal",
+      "pt": "oferta",
+      "digito": "2x1",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tdeal",
+        "marca": "i comprido, termina no l",
+        "dica": "I comprido, termina no l.",
+        "voz": false
+      },
+      "pron": "DIIL"
+    },
+    {
+      "en": "discount",
+      "pt": "desconto",
+      "digito": "-$20",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tdiscount",
+        "marca": "força no começo",
+        "dica": "Força no começo.",
+        "voz": false,
+        "enfase": "DIS"
+      },
+      "pron": "DÍS-kaunt"
+    },
+    {
+      "en": "price",
+      "pt": "preço",
+      "digito": "$",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "PRÁIS"
+    },
+    {
+      "en": "cheap",
+      "pt": "barato",
+      "digito": "$1",
+      "objeto": "etiquetaPreco",
+      "qtd": 1,
+      "pron": "TCHIIP"
+    },
+    {
+      "en": "store",
+      "pt": "loja",
+      "digito": "2",
+      "objeto": "sacola",
+      "qtd": 2,
+      "armadilha": {
+        "id": "tstore",
+        "marca": "sem i no começo: store, não istore",
+        "dica": "Começa direto no s. Sem i na frente.",
+        "voz": true
+      },
+      "pron": "STÓR"
+    },
+    {
+      "en": "line",
+      "pt": "fila",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista",
+          "duda"
+        ],
+        "acao": "esbarra",
+        "contexto": "a fila da porta"
+      },
+      "pron": "LÁIN"
+    },
+    {
+      "en": "buy",
+      "pt": "comprar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "pede",
+        "contexto": "no caixa"
+      },
+      "armadilha": {
+        "id": "tbuy",
+        "marca": "soa igual a bye",
+        "dica": "Soa igual a bye.",
+        "voz": false
+      },
+      "pron": "BÁI"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        6,
+        7
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      7
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Amanhã é Black Friday: oito palavras pra não cair em cilada."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "8 palavras de Black Friday. Você compra ou foge? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 8 palavras",
+    "sub": "sale → buy",
+    "cta": "você compra ou foge? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #30 · Black Friday em inglês: sale, deal, discount e mais 5. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #30 · Black Friday em inglês: sale, deal, discount | CapyFala",
+    "youtube_descricao": "8 palavras de Black Friday em inglês (sale, deal, discount, price, cheap, store, line, buy), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (sale, deal, discount, store, buy). VOCAB 30 · CapyFala.\n\nanterior: Palavras #29",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "etiquetaPreco",
+      "placaSale",
+      "sacola"
+    ],
+    "acoes": []
+  },
+  "dividir": {
+    "gancho": [
+      "Amanhã é Black Friday:",
+      "oito palavras pra não cair em cilada."
+    ]
+  }
+}

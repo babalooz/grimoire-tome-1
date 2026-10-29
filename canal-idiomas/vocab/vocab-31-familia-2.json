@@ -1,0 +1,175 @@
+{
+  "id": "vocab-31-familia-2",
+  "format": "vocab",
+  "audio": "audio/vocab/familia-2",
+  "tema": {
+    "pt": "família 2 e amigos",
+    "en": "family and friends"
+  },
+  "serie": {
+    "codigo": "VOCAB 31",
+    "titulo": "família 2 e amigos",
+    "post": "Palavras #31"
+  },
+  "data_ar": "2026-11-27",
+  "banco": 28,
+  "hookTitle": "Marido, esposa, amigo em inglês",
+  "nota": "Tema 28 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #31, vai ao ar 27/11/2026 (sex). Cenário pedido: café (fotos no celular). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "husband",
+      "pt": "marido",
+      "digito": "1",
+      "objeto": "fotoMarido",
+      "qtd": 1,
+      "armadilha": {
+        "id": "thusband",
+        "marca": "h soprado",
+        "dica": "H soprado.",
+        "voz": false
+      },
+      "pron": "RÂZ-band"
+    },
+    {
+      "en": "wife",
+      "pt": "esposa",
+      "digito": "1",
+      "objeto": "fotoEsposa",
+      "qtd": 1,
+      "pron": "UÁIF"
+    },
+    {
+      "en": "friend",
+      "pt": "amigo",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "acena",
+        "contexto": "a melhor amiga"
+      },
+      "armadilha": {
+        "id": "tfriend",
+        "marca": "termina no d, sem i",
+        "dica": "Termina no d. Sem i no final.",
+        "voz": true
+      },
+      "pron": "FRÉND"
+    },
+    {
+      "en": "boyfriend",
+      "pt": "namorado",
+      "digito": "1",
+      "objeto": "fotoNamorado",
+      "qtd": 1,
+      "pron": "BÓI-frend"
+    },
+    {
+      "en": "girlfriend",
+      "pt": "namorada",
+      "digito": "1",
+      "objeto": "fotoNamorada",
+      "qtd": 1,
+      "pron": "GÂRL-frend"
+    },
+    {
+      "en": "kid",
+      "pt": "filho pequeno",
+      "digito": "1",
+      "objeto": "fotoCrianca",
+      "qtd": 1,
+      "pron": "KÍD"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      0,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "As fotos do celular da Duda: seis palavras de gente querida."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "husband → kid",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #31 · família 2 e amigos em inglês: husband, wife, friend e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #31 · Família 2 e amigos em inglês: husband, wife, friend | CapyFala",
+    "youtube_descricao": "6 palavras de família 2 e amigos em inglês (husband, wife, friend, boyfriend, girlfriend, kid), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (husband, friend). VOCAB 31 · CapyFala.\n\nanterior: Palavras #30",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "fotoCrianca",
+      "fotoEsposa",
+      "fotoMarido",
+      "fotoNamorada",
+      "fotoNamorado"
+    ],
+    "acoes": []
+  },
+  "dividir": {
+    "gancho": [
+      "As fotos do celular da Duda:",
+      "seis palavras de gente querida."
+    ]
+  }
+}

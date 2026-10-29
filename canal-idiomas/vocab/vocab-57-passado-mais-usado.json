@@ -1,0 +1,184 @@
+{
+  "id": "vocab-57-passado-mais-usado",
+  "format": "vocab",
+  "audio": "audio/vocab/passado-mais-usado",
+  "tema": {
+    "pt": "o passado que mais aparece",
+    "en": "common past"
+  },
+  "serie": {
+    "codigo": "VOCAB 57",
+    "titulo": "o passado que mais aparece",
+    "post": "Palavras #57"
+  },
+  "data_ar": "2026-12-23",
+  "banco": 53,
+  "hookTitle": "O passado mais usado",
+  "nota": "Tema 53 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #57, vai ao ar 23/12/2026 (qua). Cenário pedido: café (segunda de manhã). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "was",
+      "pt": "era, estava",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "capi"
+        ],
+        "acao": "lembra",
+        "contexto": "ontem eu estava cansada"
+      },
+      "pron": "UÓZ"
+    },
+    {
+      "en": "were",
+      "pt": "eram, estavam",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "lembra",
+        "contexto": "nós estávamos lá"
+      },
+      "pron": "UÂR"
+    },
+    {
+      "en": "went",
+      "pt": "fui",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista"
+        ],
+        "acao": "lembra",
+        "contexto": "fui à praia"
+      },
+      "pron": "UÉNT"
+    },
+    {
+      "en": "had",
+      "pt": "tive",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "hank"
+        ],
+        "acao": "lembra",
+        "contexto": "tive um dia longo"
+      },
+      "armadilha": {
+        "id": "thad",
+        "marca": "h soprado",
+        "dica": "O h sai num sopro: réd.",
+        "voz": true
+      },
+      "pron": "RÉD"
+    },
+    {
+      "en": "did",
+      "pt": "fiz",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "lazy"
+        ],
+        "acao": "lembra",
+        "contexto": "não fiz nada"
+      },
+      "pron": "DÍD"
+    },
+    {
+      "en": "saw",
+      "pt": "vi",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "lembra",
+        "contexto": "vi um filme"
+      },
+      "pron": "SÓ"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      5
+    ],
+    "vozes": [
+      "duda",
+      "lazy"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Seis palavras do passado que aparecem em todo filme."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. O que você fez ontem? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "was → saw",
+    "cta": "o que você fez ontem? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #57 · o passado que mais aparece em inglês: was, were, went e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #57 · O passado que mais aparece em inglês: was, were, went | CapyFala",
+    "youtube_descricao": "6 palavras de o passado que mais aparece em inglês (was, were, went, had, did, saw), cada uma numa cena do café, com pausa para você repetir e as pegadinhas do brasileiro (had). VOCAB 57 · CapyFala.\n\nanterior: Palavras #56",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [],
+    "acoes": [
+      "lembra"
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "id": "vocab-52-supermercado",
+  "format": "vocab",
+  "audio": "audio/vocab/supermercado",
+  "tema": {
+    "pt": "supermercado",
+    "en": "supermarket"
+  },
+  "serie": {
+    "codigo": "VOCAB 52",
+    "titulo": "supermercado",
+    "post": "Palavras #52"
+  },
+  "data_ar": "2026-12-18",
+  "banco": 49,
+  "hookTitle": "Supermercado em inglês",
+  "nota": "Tema 49 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #52, vai ao ar 18/12/2026 (sex). Cenário pedido: supermercado. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "cart",
+      "pt": "carrinho",
+      "digito": "1",
+      "objeto": "carrinho",
+      "qtd": 1,
+      "pron": "KÁRT"
+    },
+    {
+      "en": "cash",
+      "pt": "dinheiro vivo",
+      "digito": "3",
+      "objeto": "notas",
+      "qtd": 3,
+      "pron": "KÉSH"
+    },
+    {
+      "en": "bag",
+      "pt": "sacola",
+      "digito": "2",
+      "objeto": "sacola",
+      "qtd": 2,
+      "pron": "BÉG"
+    },
+    {
+      "en": "receipt",
+      "pt": "nota fiscal",
+      "digito": "1",
+      "objeto": "notaFiscal",
+      "qtd": 1,
+      "armadilha": {
+        "id": "treceipt",
+        "marca": "o p não soa",
+        "dica": "O p não se fala: ri-siit.",
+        "voz": true
+      },
+      "pron": "ri-SIIT"
+    },
+    {
+      "en": "line",
+      "pt": "fila",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "turista",
+          "duda"
+        ],
+        "acao": "esbarra",
+        "contexto": "a fila do caixa"
+      },
+      "pron": "LÁIN"
+    },
+    {
+      "en": "sale",
+      "pt": "promoção",
+      "digito": "1",
+      "objeto": "placaSale",
+      "qtd": 1,
+      "pron": "SÊIL"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      5
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Na fila do mercado: seis palavras do caixa."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de supermercado. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "cart → sale",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #52 · supermercado em inglês: cart, cash, bag e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #52 · Supermercado em inglês: cart, cash, bag | CapyFala",
+    "youtube_descricao": "6 palavras de supermercado em inglês (cart, cash, bag, receipt, line, sale), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (receipt). VOCAB 52 · CapyFala.\n\nanterior: Palavras #51",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "carrinho",
+      "notaFiscal",
+      "notas",
+      "placaSale",
+      "sacola"
+    ],
+    "acoes": []
+  }
+}

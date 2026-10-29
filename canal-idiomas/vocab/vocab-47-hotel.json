@@ -1,0 +1,172 @@
+{
+  "id": "vocab-47-hotel",
+  "format": "vocab",
+  "audio": "audio/vocab/hotel",
+  "tema": {
+    "pt": "hotel",
+    "en": "hotel"
+  },
+  "serie": {
+    "codigo": "VOCAB 47",
+    "titulo": "hotel",
+    "post": "Palavras #47"
+  },
+  "data_ar": "2026-12-13",
+  "banco": 44,
+  "hookTitle": "Hotel em inglês",
+  "nota": "Tema 44 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #47, vai ao ar 13/12/2026 (dom). Cenário pedido: hotel (recepção). Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "room",
+      "pt": "quarto",
+      "digito": "204",
+      "objeto": "portaQuarto",
+      "qtd": 1,
+      "pron": "RUUM"
+    },
+    {
+      "en": "key",
+      "pt": "chave",
+      "digito": "1",
+      "objeto": "cartaoChave",
+      "qtd": 1,
+      "pron": "KII"
+    },
+    {
+      "en": "reservation",
+      "pt": "reserva",
+      "digito": "1",
+      "objeto": "prancheta",
+      "qtd": 1,
+      "armadilha": {
+        "id": "treservation",
+        "marca": "força no vei",
+        "dica": "Força no vei.",
+        "voz": false
+      },
+      "pron": "re-zer-VÊI-shan"
+    },
+    {
+      "en": "breakfast",
+      "pt": "café da manhã",
+      "digito": "1",
+      "objeto": "bandejaCafe",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tbreakfast",
+        "marca": "brék-fest, não brêik",
+        "dica": "O começo é brék: brék-fest.",
+        "voz": true
+      },
+      "pron": "BRÉK-fest"
+    },
+    {
+      "en": "towel",
+      "pt": "toalha",
+      "digito": "2",
+      "objeto": "toalha",
+      "qtd": 2,
+      "pron": "TÁU-el"
+    },
+    {
+      "en": "elevator",
+      "pt": "elevador",
+      "digito": "1",
+      "objeto": "elevador",
+      "qtd": 1,
+      "armadilha": {
+        "id": "televator",
+        "marca": "força no começo",
+        "dica": "Força no começo.",
+        "voz": false,
+        "enfase": "EL"
+      },
+      "pron": "É-le-vei-ter"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      2,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Na recepção do hotel: seis palavras que salvam a viagem."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras de hotel. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "room → elevator",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #47 · hotel em inglês: room, key, reservation e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #47 · Hotel em inglês: room, key, reservation | CapyFala",
+    "youtube_descricao": "6 palavras de hotel em inglês (room, key, reservation, breakfast, towel, elevator), cada uma colada no objeto, com pausa para você repetir e as pegadinhas do brasileiro (reservation, breakfast, elevator). VOCAB 47 · CapyFala.\n\nanterior: Palavras #46",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "bandejaCafe",
+      "cartaoChave",
+      "elevador",
+      "portaQuarto",
+      "prancheta",
+      "toalha"
+    ],
+    "acoes": []
+  }
+}

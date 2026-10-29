@@ -1,0 +1,169 @@
+{
+  "id": "vocab-59-tamanhos",
+  "format": "vocab",
+  "audio": "audio/vocab/tamanhos",
+  "tema": {
+    "pt": "tamanhos e provar",
+    "en": "sizes"
+  },
+  "serie": {
+    "codigo": "VOCAB 59",
+    "titulo": "tamanhos e provar",
+    "post": "Palavras #59"
+  },
+  "data_ar": "2026-12-25",
+  "banco": 55,
+  "hookTitle": "P, M, G em inglês",
+  "nota": "Tema 55 do banco (ponte/saida/serie-vocabulario.md §b). Fila: Palavras #59, vai ao ar 25/12/2026 (sex). Cenário pedido: loja de roupas. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "small",
+      "pt": "pequeno",
+      "digito": "S",
+      "objeto": "copoPequeno",
+      "qtd": 1,
+      "pron": "SMÓL"
+    },
+    {
+      "en": "medium",
+      "pt": "médio",
+      "digito": "M",
+      "objeto": "copoMedio",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tmedium",
+        "marca": "mii, não mé",
+        "dica": "Começa com mii: míi-di-um.",
+        "voz": true
+      },
+      "pron": "MÍI-di-um"
+    },
+    {
+      "en": "large",
+      "pt": "grande",
+      "digito": "L",
+      "objeto": "copoGrande",
+      "qtd": 1,
+      "pron": "LÁRDJ"
+    },
+    {
+      "en": "size",
+      "pt": "tamanho",
+      "digito": "1",
+      "objeto": "etiquetaTamanho",
+      "qtd": 1,
+      "pron": "SÁIZ"
+    },
+    {
+      "en": "try",
+      "pt": "provar",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "prova",
+        "contexto": "no provador"
+      },
+      "pron": "TRÁI"
+    },
+    {
+      "en": "fit",
+      "pt": "servir",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "sim",
+        "contexto": "— serviu?"
+      },
+      "pron": "FÍT"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5
+      ],
+      "ecos": [
+        "lazy",
+        "hank"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      1,
+      5
+    ],
+    "vozes": [
+      "hank",
+      "duda"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Pequeno, médio ou grande? No café e na loja."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "6 palavras novas. Qual foi a mais difícil? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 6 palavras",
+    "sub": "small → fit",
+    "cta": "qual foi a mais difícil? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #59 · tamanhos e provar em inglês: small, medium, large e mais 3. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #59 · Tamanhos e provar em inglês: small, medium, large | CapyFala",
+    "youtube_descricao": "6 palavras de tamanhos e provar em inglês (small, medium, large, size, try, fit), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (medium). VOCAB 59 · CapyFala.\n\nanterior: Palavras #58",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "copoGrande",
+      "copoMedio",
+      "copoPequeno",
+      "etiquetaTamanho"
+    ],
+    "acoes": [
+      "prova"
+    ]
+  }
+}

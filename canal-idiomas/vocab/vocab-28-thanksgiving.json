@@ -1,0 +1,192 @@
+{
+  "id": "vocab-28-thanksgiving",
+  "format": "vocab",
+  "audio": "audio/vocab/thanksgiving",
+  "tema": {
+    "pt": "Thanksgiving",
+    "en": "thanksgiving"
+  },
+  "serie": {
+    "codigo": "VOCAB 28",
+    "titulo": "Thanksgiving",
+    "post": "Palavras #28"
+  },
+  "data_ar": "2026-11-24",
+  "banco": 61,
+  "hookTitle": "Thanksgiving em inglês",
+  "nota": "Tema 61 do banco (ponte/saida/serie-vocabulario-banco-2.md, tema de data). Fila: Palavras #28, vai ao ar 24/11/2026 (ter). Cenário pedido: sala de jantar (mesa posta). Thanksgiving 2026 = quinta 26/11 (4ª quinta de novembro); vai ao ar 2 dias antes. Escrito no papel em 29/10/2026 (rotina de crédito): falta só voz e render, desde que os desenhos/ações de 'precisa' existam no motor.",
+  "palavras": [
+    {
+      "en": "turkey",
+      "pt": "peru",
+      "digito": "1",
+      "objeto": "peru",
+      "qtd": 1,
+      "pron": "TÂR-ki"
+    },
+    {
+      "en": "pie",
+      "pt": "torta",
+      "digito": "1",
+      "objeto": "torta",
+      "qtd": 1,
+      "pron": "PÁI"
+    },
+    {
+      "en": "dinner",
+      "pt": "jantar",
+      "digito": "1",
+      "objeto": "pratoJantar",
+      "qtd": 1,
+      "pron": "DÍ-ner"
+    },
+    {
+      "en": "family",
+      "pt": "família",
+      "digito": "1",
+      "objeto": "fotoFamilia",
+      "qtd": 1,
+      "armadilha": {
+        "id": "tfamily",
+        "marca": "força no começo: FAM-i-ly",
+        "dica": "Força no começo: FAM-i-ly.",
+        "voz": false,
+        "enfase": "FAM"
+      },
+      "pron": "FÉ-mi-li"
+    },
+    {
+      "en": "thankful",
+      "pt": "grato",
+      "digito": "",
+      "cena": {
+        "quem": [
+          "duda"
+        ],
+        "acao": "agradece",
+        "contexto": "na hora do brinde"
+      },
+      "armadilha": {
+        "id": "tthankful",
+        "marca": "th: língua nos dentes",
+        "dica": "Língua entre os dentes no th.",
+        "voz": true
+      },
+      "pron": "THÉNK-ful"
+    },
+    {
+      "en": "corn",
+      "pt": "milho",
+      "digito": "2",
+      "objeto": "milho",
+      "qtd": 2,
+      "pron": "KÓRN"
+    },
+    {
+      "en": "potato",
+      "pt": "batata",
+      "digito": "3",
+      "objeto": "batata",
+      "qtd": 3,
+      "armadilha": {
+        "id": "tpotato",
+        "marca": "força no meio: po-TA-to",
+        "dica": "Força no meio: po-TA-to.",
+        "voz": false
+      },
+      "pron": "pa-TÊI-tou"
+    }
+  ],
+  "blocos": [
+    {
+      "palavras": [
+        0,
+        1,
+        2
+      ],
+      "ecos": [
+        "hank",
+        "duda"
+      ]
+    },
+    {
+      "palavras": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "ecos": [
+        "duda",
+        "lazy"
+      ]
+    }
+  ],
+  "apresenta": "capi",
+  "dicas": "lazy",
+  "revisao": "bolinha",
+  "desafio": {
+    "itens": [
+      3,
+      6
+    ],
+    "vozes": [
+      "lazy",
+      "hank"
+    ]
+  },
+  "final": "hank",
+  "falarFinal": true,
+  "falas": {
+    "gancho": {
+      "speaker": "capi",
+      "text": "Quinta é Thanksgiving nos Estados Unidos: sete palavras da mesa."
+    },
+    "desafio": {
+      "speaker": "capi",
+      "text": "Agora sem a palavra. Qual é?"
+    },
+    "final": {
+      "speaker": "capi",
+      "text": "Agora tudo, cada vez mais rápido."
+    },
+    "fecho": {
+      "speaker": "capi",
+      "text": "7 palavras de Thanksgiving. Qual você comeria? Comenta aí."
+    }
+  },
+  "card": {
+    "titulo": "você já sabe 7 palavras",
+    "sub": "turkey → potato",
+    "cta": "qual você comeria? comenta aí"
+  },
+  "trilha": {
+    "src": "music/cafe-loop.wav",
+    "lufs": -16,
+    "loop_s": 20
+  },
+  "post": {
+    "tiktok": "Palavras #28 · Thanksgiving em inglês: turkey, pie, dinner e mais 4. fala junto em voz alta ☕",
+    "youtube_titulo": "Palavras #28 · Thanksgiving em inglês: turkey, pie, dinner | CapyFala",
+    "youtube_descricao": "7 palavras de Thanksgiving em inglês (turkey, pie, dinner, family, thankful, corn, potato), com o objeto ou a cena na tela, com pausa para você repetir e as pegadinhas do brasileiro (family, thankful, potato). VOCAB 28 · CapyFala.\n\nanterior: Palavras #27",
+    "hashtags_tiktok": "#capyfala #capybara #inglês #aprenderingles #inglesdozero",
+    "hashtags_youtube": "#capyfala #inglês #inglesdozero"
+  },
+  "precisa": {
+    "desenhos": [
+      "batata",
+      "fotoFamilia",
+      "milho",
+      "peru",
+      "pratoJantar",
+      "torta"
+    ],
+    "acoes": []
+  },
+  "dividir": {
+    "gancho": [
+      "Quinta é Thanksgiving nos Estados Unidos:",
+      "sete palavras da mesa."
+    ]
+  }
+}
