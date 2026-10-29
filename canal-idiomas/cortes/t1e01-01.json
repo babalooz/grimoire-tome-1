@@ -1,0 +1,24 @@
+{
+  "id": "corte-t1e01-01",
+  "arquivo": "corte-t1e01-01.mp4",
+  "origem": {
+    "episodio": "T1 E01",
+    "arquivo": "cafe-t1e01-hi-im-capy-v2.mp4",
+    "episodes_json": "episodes/cafe-t1e01-hi-im-capy-v2.json",
+    "inicio_s": 9.5,
+    "fim_s": 31.5,
+    "beats": "3-10 (turista 'Hi! I'm Rick!' ate hank 'Hi. I'm Hank.')",
+    "ja_ao_ar": "2026-10-29 12:10 BRT (YouTube, T1 E01 parte 2/3)"
+  },
+  "hype": {
+    "usado": false,
+    "motivo": "radar de 29/10 sem assunto do mundo anglofono que combine com 'apresentar-se no cafe' (topo: NBA, musicas Spotify BR, Oscar do piano, F1 ainda longe); Halloween ja usado hoje na VOCAB 02 (limite 2/semana) e nao se encaixa no trecho. Sem hype que encaixe, nao forcei (regra da rotina)."
+  },
+  "post": {
+    "tiktok": "do Ep. 1 · como dizer \"oi, eu sou\" em inglês — repete junto: \"Hi! I'm ___\" 🐹",
+    "hashtags_tiktok": "#capyfala #sloth #inglês #aprenderingles #inglesparainiciantes",
+    "youtube_titulo": "do Ep. 1 · Como dizer \"oi, eu sou\" em inglês (repita com a Capy)",
+    "youtube_descricao": "A Capy, o Lazy, o Hank e um cliente novo mostram 4 jeitos de dizer \"Hi! I'm ___\" no café. Repete em voz alta quando o vídeo pedir.\n\nTrecho do episódio T1 E01 (parte 2/3) · CapyFala",
+    "hashtags_youtube": "#capyfala #inglês"
+  }
+}

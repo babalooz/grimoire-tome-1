@@ -19,3 +19,5 @@ data,hora,rede,faixa,episodio,corte,post_id,url,status,arquivo,midia_url
 2026-10-30,17:10,youtube,vocab,VOCAB 03,,6ae27e5e59e061556347019b,,scheduled,vocab-cumprimentos.mp4,https://cdn.jsdelivr.net/gh/babalooz/grimoire-tome-1@15be6c740b6b1a27fcb9a156731f1aa0a9290891/vocab-cumprimentos.mp4
 2026-10-31,16:07,tiktok,vocab,VOCAB 04,,6ae357153173bf37af4f2315,,scheduled,vocab-bebidas.mp4,https://cdn.jsdelivr.net/gh/babalooz/grimoire-tome-1@1ab3f077977230f664b3c937e37facea29318401/vocab-bebidas.mp4
 2026-10-31,17:10,youtube,vocab,VOCAB 04,,6ae35715465f44defad720d2,,scheduled,vocab-bebidas.mp4,https://cdn.jsdelivr.net/gh/babalooz/grimoire-tome-1@1ab3f077977230f664b3c937e37facea29318401/vocab-bebidas.mp4
+2026-10-30,12:37,tiktok,corte,T1 E01,corte-t1e01-01,6ae3818d145e9f24d459ca6f,,scheduled,corte-t1e01-01.mp4,https://cdn.jsdelivr.net/gh/babalooz/grimoire-tome-1@ee1272623e9eb873aeb7bc2d544610f5cecb491c/corte-t1e01-01.mp4
+2026-10-30,20:10,youtube,corte,T1 E01,corte-t1e01-01,6ae3818ea23f0986fe07b998,,scheduled,corte-t1e01-01.mp4,https://cdn.jsdelivr.net/gh/babalooz/grimoire-tome-1@ee1272623e9eb873aeb7bc2d544610f5cecb491c/corte-t1e01-01.mp4
