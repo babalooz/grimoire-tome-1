@@ -1,0 +1,68 @@
+{
+  "id": "cafe-t1e14-this-is-my-friend",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 14,
+    "codigo": "T1 E14",
+    "tituloCapitulo": "Apresentando alguém",
+    "frasesAprendidas": 14,
+    "progresso": "você já sabe 14 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo apresentar alguém com uma fórmula simples.",
+  "title": "T1 E14 · a mão que apresenta ☕",
+  "hookTitle": "duas mãos paradas no ar",
+  "alvo": {
+    "en": "This is my friend.",
+    "pt": "Esse é meu amigo."
+  },
+  "errado": {
+    "en": "Dis is my friend.",
+    "pt": "th com voz vira 'dis', e não é"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "poppy", "turista"],
+  "contexto": {
+    "legenda": "duas mãos paradas no ar até alguém apresentar. This is my friend. 🤝"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 14,
+  "beats": [
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Eu é que tenho que apresentar. Como fala 'essa é minha amiga'?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você apresenta alguém. Com a mão e com quatro palavras." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This... is... my... friend." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "É 'esse aqui', do meu lado. Mão aberta, sempre." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Língua entre os dentes, e a garganta vibra. Diferente do 'd'." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Mão aberta." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "This is my friend." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: This is my friend." },
+    { "speaker": "poppy", "lang": "en", "emotion": "smile", "alvo": true, "text": "This is my friend." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'dis'? Dá pra entender. Com a língua pra fora, fica mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend." },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "Hi! I'm Duda!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my friend." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Tom." },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "This is my cousin!" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "No." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Apresentei. E as mãos se apertaram.",
+      "cardTexto": "1ª apresentação em inglês · T1 E14 · você já sabe 14 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Marca um amigo e escreve, em inglês: esse é meu amigo.",
+      "cardTexto": "CONSIGO… apresentar um amigo ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 13: o Mike esperou a Capy apresentar a Duda",
+    "gesto fixo: mão aberta, palma para cima, apontando a pessoa",
+    "th com voz (/ð/) x 'dis': erro clássico do brasileiro",
+    "Duda chamando o Hank de 'cousin' é piada recorrente",
+    "selo com progresso real"
+  ]
+}

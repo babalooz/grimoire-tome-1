@@ -1,0 +1,67 @@
+{
+  "id": "cafe-t1e15-its-a-phone",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 15,
+    "codigo": "T1 E15",
+    "tituloCapitulo": "O que é isso",
+    "frasesAprendidas": 15,
+    "progresso": "você já sabe 15 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer o que uma coisa é, com uma frase simples.",
+  "title": "T1 E15 · a caixa de achados e perdidos ☕",
+  "hookTitle": "tem algo tocando aqui dentro",
+  "alvo": {
+    "en": "It's a phone.",
+    "pt": "É um celular."
+  },
+  "errado": {
+    "en": "Is phone.",
+    "pt": "falta o 'it' e o 'a'"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "poppy", "bolinha"],
+  "contexto": {
+    "legenda": "uma caixa de achados e perdidos vibrando no balcão. tinha um celular dentro. It's a phone. 📦"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 15,
+  "beats": [
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "What's this?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você diz o que uma coisa é." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Três palavras, e o 'a' não pode faltar." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's... a... phone." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O começo e o artigo vêm sempre juntos. Não pula nenhum." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O 'i' é curto. Um gole só. Não é o bocejo." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Mostrando o celular." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "It's a phone." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: It's a phone." },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "It's a phone." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu comprido? Dá pra entender. Curtinho fica mais inglês." },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "It's a pizza!" },
+    { "speaker": "hank", "lang": "pt", "emotion": "bored", "text": "Era." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone!" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Quer dizer... alô?" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "text": "It's my phone!" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Esqueci ontem!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "It's a phone." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Disse o que era. E achei a dona.",
+      "cardTexto": "1º objeto dito em inglês · T1 E15 · você já sabe 15 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Olha em volta e comenta, em inglês: o que você vê.",
+      "cardTexto": "CONSIGO… dizer o que uma coisa é ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 14: a troca de presentes anunciada",
+    "cognatos que o brasileiro reconhece: phone, pizza, computer",
+    "'it's-a-phone' sempre colado; o erro 'Is phone.' nunca sai da boca",
+    "/ɪ/ curto (gole de espresso) x /iː/ longo (bocejo do assunto 2)",
+    "selo com progresso real"
+  ]
+}

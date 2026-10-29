@@ -1,0 +1,68 @@
+{
+  "id": "cafe-t1e13-how-old-are-you-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 13,
+    "codigo": "T1 E13 · parte 3/3",
+    "tituloCapitulo": "Quantos anos você tem",
+    "frasesAprendidas": 13,
+    "progresso": "você já sabe 13 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo falar de mim com frases prontas, como a minha idade, e perguntar a dos outros.",
+  "title": "T1 E13 · parte 3/3 · I'm ou I have? só pelo ouvido ☕",
+  "hookTitle": "um jeito tá certo. escuta",
+  "alvo": {
+    "en": "How old are you?",
+    "pt": "Quantos anos você tem?"
+  },
+  "errado": {
+    "en": "I have thirty years.",
+    "pt": "idade não se TEM em inglês, se É (I'm)"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha", "poppy"],
+  "contexto": {
+    "legenda": "um jeito tá certo pra dizer a idade. qual é? How old are you? 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 13,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você ouve a idade do jeito certo. E pergunta de novo." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How old are you?" },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "errado": true, "text": "I have thirty years." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "I'm thirty." },
+    { "tipo": "pergunta", "s": 3, "text": "A ou B? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "B. Idade usa 'eu sou', não 'eu tenho'." },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "How old are you?" },
+    { "tipo": "pausa", "s": 3, "text": "bolo ou crachá? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O bolo. É pergunta de idade. O crachá seria de nome." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Errou? Normal. As duas começam parecidas." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Pergunta pro Bolinha." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: How old are you?" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "I'm two." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Em anos de hamster, sou sábio." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Agora pro Hank. Coragem." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: How old are you?" },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "How old are you?" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Next question." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "We're friends." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "How old are you?" },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Pergunta certa. Sem confundir com 'eu tenho'.",
+      "cardTexto": "você perguntou a idade · CONSIGO ✓ · T1 E13 · você já sabe 13 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta a pergunta em inglês, e veja quem te responde.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido · dica: entre adultos que não são amigos, idade é assunto delicado · próximo assunto: This is my friend · segue a Capy" }
+  ],
+  "gatilhos": [
+    "mira o erro mais famoso do brasileiro nesta frase (I have x I'm)",
+    "separa 'How old' de 'What's your name' (assunto 3), que começam parecido",
+    "Bolinha devolve o assunto 9 ('lembra dessa?')",
+    "card final com ressalva cultural: idade é assunto delicado entre não-amigos"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "cafe-t1e11-im-brazilian-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 11,
+    "codigo": "T1 E11 · parte 3/3",
+    "tituloCapitulo": "De onde você é",
+    "frasesAprendidas": 11,
+    "progresso": "você já sabe 11 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer frases curtas sobre mim, como a minha nacionalidade.",
+  "title": "T1 E11 · parte 3/3 · país ou pessoa? só pelo ouvido ☕",
+  "hookTitle": "país ou pessoa? escuta",
+  "alvo": {
+    "en": "I'm Brazilian.",
+    "pt": "Eu sou brasileira.",
+    "variacoes": []
+  },
+  "errado": {
+    "en": "I'm Brazil.",
+    "pt": "eu sou Brasil (confunde país com pessoa)"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha", "poppy"],
+  "contexto": {
+    "legenda": "país ou pessoa? dá pra saber só pelo ouvido. I'm Brazilian. 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 11,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você ouve se é país ou pessoa. E diz o que você é." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "Brazilian." },
+    { "tipo": "pergunta", "s": 3, "text": "no mapa ou na roupa? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Na roupa. Brazilian é gente." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "I'm Brazil." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm Brazilian." },
+    { "tipo": "pausa", "s": 3, "text": "A ou B? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "B. Brazil é o país. Você é Brazilian." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "A primeira dá pra entender. Mas você não é um país." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Mão no peito. Sua vez." },
+    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: I'm Brazilian. (ou a sua nacionalidade)" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Where are you from?" },
+    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: I'm from Brazil." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "So... American?" },
+    { "tipo": "pausa", "s": 2.5, "text": "SUA VEZ: No. I'm Brazilian." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "text": "No." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "I'm Brazilian!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "I'm fine, thanks." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "País no mapa. Brasileiro no peito.",
+      "cardTexto": "você disse o que você é · T1 E11 · você já sabe 11 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.0, "emotion": "happy",
+      "text": "Comenta a sua nacionalidade, em inglês.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido · próximo assunto: My number is… · segue a Capy" }
+  ],
+  "gatilhos": [
+    "reconhecer antes de produzir: 2 rodadas de ouvir e decidir",
+    "Bolinha devolve o assunto 7 ('lembra dessa?') = revisão espaçada",
+    "a conversa com o Hank amarra os assuntos 5 e 11 (país x pessoa)",
+    "gancho verdadeiro: próximo assunto (12) já agendado"
+  ]
+}

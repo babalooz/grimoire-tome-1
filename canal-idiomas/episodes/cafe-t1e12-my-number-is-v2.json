@@ -1,0 +1,63 @@
+{
+  "id": "cafe-t1e12-my-number-is-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 12,
+    "codigo": "T1 E12 · parte 2/3",
+    "tituloCapitulo": "Seu contato",
+    "frasesAprendidas": 12,
+    "progresso": "você já sabe 12 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo reconhecer números ditos devagar e, com eles, dizer o meu telefone.",
+  "title": "T1 E12 · parte 2/3 · a encomenda de 30 cafés ☕",
+  "hookTitle": "um escritório quer 30 cafés",
+  "alvo": {
+    "en": "My number is...",
+    "pt": "Meu número é…",
+    "nucleo": "My number is"
+  },
+  "cast": ["capi", "hank", "lazy", "poppy", "turista"],
+  "contexto": {
+    "legenda": "um escritório ligou pedindo 30 cafés. e pediu o telefone da Capy, em inglês. My number is… ☎️"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 12,
+  "beats": [
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Atende esse telefone. Eu não falo com estranho." },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Ligação em inglês. Hoje eu dito meu número de verdade." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Can I get your phone number?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "My... number... is..." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: My number is… five, five, five…" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "My number is... five, five, five..." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Oh, one, two, three." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Thanks. One moment." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 4.0, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true,
+      "text": "My number is... five, five, five..." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Oh, one, two, three." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Terceira vez? Me dá isso." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "alvo": true, "text": "My number is..." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Five, five, five, oh, one, two, three." },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Ele falou com estranho!" },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Thirty coffees. By noon." },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "...My... number... is..." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Anotei o pedido. Trinta cafés até meio-dia.",
+      "cardTexto": "você ditou seu número para um pedido em inglês · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 2.0,
+      "text": "Idade em inglês... é 'eu tenho'?" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: encomenda de 30 cafés por telefone, sem data; usada se o V2 cair longe do Cyber Monday",
+    "você é a Capy, em 2 rodadas (o cliente pede o número, depois a chefe pede de novo: a experiência real de atendimento)",
+    "o Hank, que não fala com estranho, acaba falando: piada",
+    "gancho verdadeiro pro assunto 13: a mensagem do Mike com o bolo de aniversário"
+  ]
+}

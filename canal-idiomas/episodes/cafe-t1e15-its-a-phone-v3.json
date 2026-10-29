@@ -1,0 +1,67 @@
+{
+  "id": "cafe-t1e15-its-a-phone-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 15,
+    "codigo": "T1 E15 · parte 3/3",
+    "tituloCapitulo": "O que é isso",
+    "frasesAprendidas": 15,
+    "progresso": "você já sabe 15 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer o que uma coisa é, com uma frase simples.",
+  "title": "T1 E15 · parte 3/3 · o que é? só pelo ouvido ☕",
+  "hookTitle": "o que tem aqui? escuta",
+  "alvo": {
+    "en": "It's a phone.",
+    "pt": "É um celular."
+  },
+  "errado": {
+    "en": "Is phone.",
+    "pt": "falta o 'it' e o 'a'"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha", "poppy"],
+  "contexto": {
+    "legenda": "três caixas fechadas. dá pra saber o que tem só pelo som? It's a phone. 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 15,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você reconhece o objeto pelo som. E diz o que é." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "It's a computer." },
+    { "tipo": "pergunta", "s": 3, "text": "qual caixa? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O computador. Quase igual ao português." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "Is phone." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's a phone." },
+    { "tipo": "pausa", "s": 3, "text": "A ou B? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "B. O começo e o artigo, sempre juntos." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "It's a phone." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "A primeira dá pra entender. A segunda é inglês de verdade." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "O Hank vai mostrar. Você diz o que é." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "What's this?" },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: It's a phone." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Pega o seu celular. Ou aponta pra ele." },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: It's a phone." },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "It's a phone!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "I'm Brazilian." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "It's a phone." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Não cabe. Mas guardei a frase." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Agora é só trocar a última palavra.",
+      "cardTexto": "você disse o que é · CONSIGO ✓ · T1 E15 · você já sabe 15 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta, em inglês: o que tem na sua mesa.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido · próximo assunto: I'm tired · segue a Capy" }
+  ],
+  "gatilhos": [
+    "cognatos ajudam a reconhecer pelo som (computer quase igual ao português)",
+    "mira o erro mais comum ('Is phone.' sem it's/a)",
+    "personalização verdadeira pra quem assiste no próprio celular",
+    "Bolinha devolve o assunto 11 ('lembra dessa?')"
+  ]
+}

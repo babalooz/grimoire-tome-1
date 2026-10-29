@@ -1,0 +1,11 @@
+data,assunto,episodio,video,id,hype_ou_reserva,status,nota_portao,reescritas,motivo,arquivo
+2026-10-29,11,T1 E11,V1,cafe-t1e11-im-brazilian,,bloqueado_roteiro,,2,"inglês 18% das palavras faladas (mínimo 35% para episódio >10); roteiro aprovado é PT-pesado por desenho pedagógico (`explicação em PT`, CLAUDE.md); reescrita não fecha a lacuna sem inventar fala nova",
+2026-10-29,11,T1 E11,V2,cafe-t1e11-im-brazilian-v2,reserva,bloqueado_roteiro,,2,"inglês 27% das palavras faladas (mínimo 35%); versão reserva (ônibus de turismo) escolhida por prudência: assuntos 6-10 podem não estar no ar ainda, então a janela do hype datado (Black Friday 23-29/11) é incerta",
+2026-10-29,11,T1 E11,V3,cafe-t1e11-im-brazilian-v3,,bloqueado_roteiro,,2,"inglês 27% das palavras faladas (mínimo 35%)",
+2026-10-29,12,T1 E12,V1,cafe-t1e12-my-number-is,,bloqueado_roteiro,,2,"inglês 27% das palavras faladas (mínimo 35%)",
+2026-10-29,13,T1 E13,V1,cafe-t1e13-how-old-are-you,,bloqueado_roteiro,,2,"inglês 30% das palavras faladas (mínimo 35%)",
+2026-10-29,13,T1 E13,V3,cafe-t1e13-how-old-are-you-v3,,bloqueado_roteiro,,2,"inglês 30% das palavras faladas (mínimo 35%)",
+2026-10-29,14,T1 E14,V1,cafe-t1e14-this-is-my-friend,,bloqueado_roteiro,,2,"inglês 30% das palavras faladas (mínimo 35%)",
+2026-10-29,14,T1 E14,V3,cafe-t1e14-this-is-my-friend-v3,,bloqueado_roteiro,,2,"inglês 28% das palavras faladas (mínimo 35%)",
+2026-10-29,15,T1 E15,V1,cafe-t1e15-its-a-phone,,bloqueado_roteiro,,2,"inglês 25% das palavras faladas (mínimo 35%)",
+2026-10-29,15,T1 E15,V3,cafe-t1e15-its-a-phone-v3,,bloqueado_roteiro,,2,"inglês 24% das palavras faladas (mínimo 35%)",

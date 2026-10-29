@@ -1,0 +1,58 @@
+{
+  "id": "cafe-t1e13-how-old-are-you-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 13,
+    "codigo": "T1 E13 · parte 2/3",
+    "tituloCapitulo": "Quantos anos você tem",
+    "frasesAprendidas": 13,
+    "progresso": "você já sabe 13 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo falar de mim com frases prontas, como a minha idade, e perguntar a dos outros.",
+  "title": "T1 E13 · parte 2/3 · aniversário de gringo no café ☕",
+  "hookTitle": "aniversário de gringo no café",
+  "alvo": {
+    "en": "How old are you?",
+    "pt": "Quantos anos você tem?"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca", "poppy", "turista"],
+  "contexto": {
+    "legenda": "aniversário de gringo no café, com bolo de manhã. e todo mundo quis ser perguntado. How old are you? 🎂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 13,
+  "beats": [
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Aniversário de gringo no café. Bora!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "neutral",
+      "text": "Hoje eu pergunto a idade dele. Na frente de todo mundo." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Capy! You came!" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "How... old... are you?" },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: How old are you?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Pergunta pro crush, não pro chefe." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "alvo": "variacao", "text": "And Hank?" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Next question." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Eighty!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Oitenta? E dança assim? Quero o chá dela." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Perguntei duas vezes. E ninguém se ofendeu.",
+      "cardTexto": "você perguntou a idade numa festa americana · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 2.0,
+      "text": "Ele quer que eu apresente a Duda. Como fala 'essa é minha amiga'?" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: aniversário de gringo com bolo no balcão, sem tradição de fim de ano",
+    "você é a Capy, em 2 rodadas (a cliente fixa; depois a avó do Mike, que quer ser perguntada)",
+    "cultura verdadeira: a Poppy ensina quando perguntar idade é natural",
+    "gancho verdadeiro pro assunto 14: apresentar a Duda ao colega do Mike"
+  ]
+}

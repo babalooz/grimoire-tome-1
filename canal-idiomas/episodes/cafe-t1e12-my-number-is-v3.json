@@ -1,0 +1,70 @@
+{
+  "id": "cafe-t1e12-my-number-is-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 12,
+    "codigo": "T1 E12 · parte 3/3",
+    "tituloCapitulo": "Seu contato",
+    "frasesAprendidas": 12,
+    "progresso": "você já sabe 12 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo reconhecer números ditos devagar e, com eles, dizer o meu telefone.",
+  "title": "T1 E12 · parte 3/3 · um número muda tudo ☕",
+  "hookTitle": "um número muda tudo. escuta",
+  "alvo": {
+    "en": "My number is...",
+    "pt": "Meu número é…",
+    "nucleo": "My number is"
+  },
+  "errado": {
+    "en": "My númber is...",
+    "pt": "pronúncia 'númber' em vez de 'nâmber'"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "bolinha", "poppy"],
+  "contexto": {
+    "legenda": "dois números quase iguais. dá pra ouvir a diferença? My number is… 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 12,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você ouve um telefone. E dita o começo do seu." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "My number is..." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "text": "Five, five, five... oh, one, three, two." },
+    { "tipo": "pergunta", "s": 3, "text": "qual guardanapo? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "O segundo. Três, dois no final." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "My number is..." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "My númber is..." },
+    { "tipo": "pausa", "s": 3, "text": "em qual a boca abriu só até o meio? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Na primeira. Nâmber." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "A segunda dá pra entender. A primeira é mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "My number is..." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Agora com os três primeiros do seu." },
+    { "tipo": "pausa", "s": 5.0, "text": "SUA VEZ: My number is… (+ 3 primeiros dígitos)" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Your number?" },
+    { "tipo": "pausa", "s": 5.0, "text": "SUA VEZ: My number is… (+ 3 primeiros dígitos)" },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "My number is..." },
+    { "speaker": "duda", "lang": "pt", "emotion": "smile", "text": "...segredo!" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "How do you spell it?" },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "My number is..." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "One, two, three!" },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Nome, país, número. Já dá pra preencher uma ficha.",
+      "cardTexto": "você ditou seu número · CONSIGO ✓ · T1 E12 · você já sabe 12 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta só os três primeiros. Nunca o número inteiro.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido · nunca poste seu número inteiro · próximo assunto: How old are you? · segue a Capy" }
+  ],
+  "gatilhos": [
+    "reconhecer antes de produzir: dois números quase iguais obrigam a ouvir de verdade",
+    "mesmo recurso aprovado nos V3 dos assuntos 1 e 5 (par certo/errado gravado 1x só)",
+    "Bolinha devolve os assuntos 8 e 4 ('lembra dessa?')",
+    "contingência: se o TTS corrigir sozinho 'númber', o par vira outros dois números da faixa fictícia"
+  ]
+}

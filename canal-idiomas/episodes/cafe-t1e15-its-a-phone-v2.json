@@ -1,0 +1,60 @@
+{
+  "id": "cafe-t1e15-its-a-phone-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 15,
+    "codigo": "T1 E15 · parte 2/3",
+    "tituloCapitulo": "O que é isso",
+    "frasesAprendidas": 15,
+    "progresso": "você já sabe 15 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer o que uma coisa é, com uma frase simples.",
+  "title": "T1 E15 · parte 2/3 · a mudança do Hank ☕",
+  "hookTitle": "ninguém sabe o que tem dentro",
+  "alvo": {
+    "en": "It's a phone.",
+    "pt": "É um celular."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "poppy", "donajaca", "turista"],
+  "contexto": {
+    "legenda": "o Hank arrumando o estoque, caixa por caixa. e ninguém sabia o que tinha dentro. It's a phone. 📦"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 15,
+  "beats": [
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Box number one!" },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Cada caixa, um mistério!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "neutral",
+      "text": "Hoje eu digo o que tem em cada caixa. Em voz alta." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "What is it?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "It's... a... phone." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: It's a phone." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone! Classic!" },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "It's a mug!" },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Essa é minha. Devolve." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "What is it?" },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "alvo": true, "text": "...It's a phone." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Igual o meu! Ainda funciona, filha?" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "It's a phone!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "It's... a Lazy!" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Cada caixa, uma surpresa. E eu disse todas, em inglês.",
+      "cardTexto": "você disse o que tinha em cada caixa · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 2.0,
+      "text": "Que noite. Como diz 'tô cansada'?" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: arrumação do estoque, sem a troca de presentes de dezembro",
+    "você é a Capy, em 2 rodadas (o celular de flip; depois o Hank rouba e se decepciona)",
+    "o Lazy sai de dentro de uma caixa: piada física recorrente",
+    "gancho verdadeiro pro assunto 16: 'tô cansada'"
+  ]
+}

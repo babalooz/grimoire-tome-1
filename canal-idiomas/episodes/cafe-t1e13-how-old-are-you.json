@@ -1,0 +1,69 @@
+{
+  "id": "cafe-t1e13-how-old-are-you",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 13,
+    "codigo": "T1 E13",
+    "tituloCapitulo": "Quantos anos você tem",
+    "frasesAprendidas": 13,
+    "progresso": "você já sabe 13 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo falar de mim com frases prontas, como a minha idade, e perguntar a dos outros.",
+  "title": "T1 E13 · o bolo do Mike ☕",
+  "hookTitle": "bolo de aniversário, idade em segredo",
+  "alvo": {
+    "en": "How old are you?",
+    "pt": "Quantos anos você tem?"
+  },
+  "errado": {
+    "en": "I have 30 years.",
+    "pt": "idade não se TEM em inglês, se É (I'm)"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca", "turista"],
+  "contexto": {
+    "legenda": "aniversário do Mike no café. e ninguém sabia a idade dele. How old are you? 🎂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 13,
+  "beats": [
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Quantos anos ele faz? Como pergunta isso?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Hoje você pergunta a idade. Quatro palavras." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "How... old... are you?" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "I'm thirty." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Em inglês, você não TEM anos. Você É a idade." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "No old, antes do d, a língua encosta em cima." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Igual o L de Brazil." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. É a pergunta, hoje." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "How old are you?" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: How old are you?" },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "How old are you?" },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'ôud'? Dá pra entender. Com a língua encostando, fica mais inglês." },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "alvo": true, "text": "Hank! How old are you?" },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "Next question." },
+    { "speaker": "hank", "lang": "pt", "emotion": "bored", "text": "Isso não se pergunta, Duda." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Thirty!" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "How old are you?" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Ah, um bebê." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Perguntei. E sem errar o 'I have'.",
+      "cardTexto": "1ª pergunta de idade em inglês · T1 E13 · você já sabe 13 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta sua idade em inglês, se quiser contar.",
+      "cardTexto": "CONSIGO… perguntar a idade ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 12: o Mike mandou foto do bolo e perguntou a idade",
+    "idade se É (I'm), não se TEM (I have); erro clássico do brasileiro",
+    "o Hank se recusa a dizer a idade: piada recorrente, cultura verdadeira (entre não-próximos é indiscreto)",
+    "selo com progresso real"
+  ]
+}

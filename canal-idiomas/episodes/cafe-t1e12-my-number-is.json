@@ -1,0 +1,67 @@
+{
+  "id": "cafe-t1e12-my-number-is",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 12,
+    "codigo": "T1 E12",
+    "tituloCapitulo": "Seu contato",
+    "frasesAprendidas": 12,
+    "progresso": "você já sabe 12 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo reconhecer números ditos devagar e, com eles, dizer o meu telefone.",
+  "title": "T1 E12 · o número no guardanapo ☕",
+  "hookTitle": "o guardanapo que falta um número",
+  "alvo": {
+    "en": "My number is...",
+    "pt": "Meu número é…",
+    "nucleo": "My number is"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca", "poppy"],
+  "contexto": {
+    "legenda": "como ditar o telefone em inglês, um dígito por vez (e por que o zero vira 'oh'). My number is… ☎️"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 12,
+  "beats": [
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "Os números eu sei. Mas como começa a frase?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você dita o seu telefone. Começa com três palavras." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "My... number... is..." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "text": "Five, five, five." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "A boca abre só até o meio: nâmber." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Telefone se dita um por um. E o zero, americano fala 'oh'." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Só o começo." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "My number is..." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true,
+      "text": "My number is... five, five, five." },
+    { "tipo": "pausa", "s": 5.0, "text": "SUA VEZ: My number is… (+ 3 primeiros dígitos do seu)" },
+    { "speaker": "duda", "lang": "en", "emotion": "smile", "alvo": true, "text": "My number is..." },
+    { "speaker": "duda", "lang": "pt", "emotion": "smile", "text": "...e o resto é segredo." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu 'númber'? Dá pra entender. 'Nâmber' é mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "My number is..." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Five, five, five..." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Oh, one, two, three." },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "555? Número de filme!" },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "My number is..." },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "...ih, filha, você já tem." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Ditei meu número. Sem misturar com português.",
+      "cardTexto": "1º telefone ditado em inglês · T1 E12 · você já sabe 12 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta só os três primeiros. Nunca o número inteiro.",
+      "cardTexto": "CONSIGO… dizer meu telefone ✓ · sotaque não é erro: o objetivo é ser entendido · nunca poste seu número inteiro" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 11: a cliente da Black Friday pediu o número da Capy",
+    "telefone se dita 1 dígito por vez; só 0-9 do assunto 4 + o zero = 'oh'",
+    "número fictício 555-0123 (faixa reservada p/ filme e TV, nunca número real)",
+    "segurança verdadeira: comentar só os 3 primeiros dígitos",
+    "selo com progresso real"
+  ]
+}

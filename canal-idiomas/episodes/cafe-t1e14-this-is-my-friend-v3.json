@@ -1,0 +1,70 @@
+{
+  "id": "cafe-t1e14-this-is-my-friend-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 14,
+    "codigo": "T1 E14 · parte 3/3",
+    "tituloCapitulo": "Apresentando alguém",
+    "frasesAprendidas": 14,
+    "progresso": "você já sabe 14 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo apresentar alguém com uma fórmula simples.",
+  "title": "T1 E14 · parte 3/3 · dis ou this? só pelo ouvido ☕",
+  "hookTitle": "um vibra. o outro não",
+  "alvo": {
+    "en": "This is my friend.",
+    "pt": "Esse é meu amigo."
+  },
+  "errado": {
+    "en": "Dis is my friend.",
+    "pt": "th com voz vira 'dis', e não é"
+  },
+  "cast": ["capi", "hank", "lazy", "bolinha", "poppy"],
+  "contexto": {
+    "legenda": "um vibra. o outro não. dá pra ouvir a diferença? This is my friend. 👂"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 14,
+  "beats": [
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você reconhece essa palavra e apresenta alguém." },
+    { "speaker": "poppy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my friend." },
+    { "tipo": "pergunta", "s": 3, "text": "ela falou de outra pessoa ou dela mesma? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Outra pessoa. É quem tá do lado. Pra falar de você mesmo, é diferente." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my friend." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "errado": true, "text": "Dis is my friend." },
+    { "tipo": "pausa", "s": 3, "text": "em qual a etiqueta tremeu? pensa aí... ou chuta nos comentários" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "No primeiro." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "This is my friend." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "O segundo também dá pra entender. O primeiro é mais inglês." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Pensa num amigo do seu lado. Mão aberta." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: This is my friend. (+ o nome dele)" },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Isso." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy",
+      "text": "Me apresenta pro Hank. Ele vai fingir que não me conhece." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "And her?" },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: This is my friend. Capy." },
+    { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Hi, Capy." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "text": "Yes, I am." },
+    { "speaker": "bolinha", "lang": "en", "emotion": "happy", "bolinha": true, "alvo": true, "text": "This is my friend." },
+    { "speaker": "bolinha", "lang": "pt", "emotion": "happy", "text": "Guardei. Devolvo daqui a uns dias." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Você me apresentou pro Hank. Ele quase sorriu.",
+      "cardTexto": "você apresentou alguém · CONSIGO ✓ · T1 E14 · você já sabe 14 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Marca um amigo e escreve, em inglês: esse é meu amigo.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido · próximo assunto: It's a phone · segue a Capy" }
+  ],
+  "gatilhos": [
+    "apresentar alguém é frase com gesto; reconhecer o gesto junto com o som é codificação dupla",
+    "apresentar a Capy ao Hank fecha o arco do aluno virando amigo dela (assunto 9)",
+    "Bolinha devolve o assunto 10 ('lembra dessa?')",
+    "contingência: se o TTS corrigir 'dis', o par muda pra this/that só pelo gesto"
+  ]
+}

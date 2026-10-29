@@ -1,0 +1,70 @@
+{
+  "id": "cafe-t1e11-im-brazilian",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 11,
+    "codigo": "T1 E11",
+    "tituloCapitulo": "De onde você é",
+    "frasesAprendidas": 11,
+    "progresso": "você já sabe 11 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer frases curtas sobre mim, como a minha nacionalidade.",
+  "title": "T1 E11 · Brasil no mapa, brasileira no peito ☕",
+  "hookTitle": "país ou pessoa? não é igual",
+  "alvo": {
+    "en": "I'm Brazilian.",
+    "pt": "Eu sou brasileira.",
+    "variacoes": ["I'm Italian!"]
+  },
+  "errado": {
+    "en": "I'm Brazil.",
+    "pt": "eu sou Brasil (confunde país com pessoa)"
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "donajaca"],
+  "contexto": {
+    "legenda": "Brazil é o país. Brazilian é você. não é a mesma coisa. I'm Brazilian. 🇧🇷"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 11,
+  "beats": [
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
+      "text": "A avó do Mike disse 'I'm American'. E eu? Sou o quê?" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Hoje você diz a sua nacionalidade. Brasil vira brasileiro." },
+    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true,
+      "text": "I'm... Brazilian." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "Igual português: muda o fim. Brasil, brasileiro." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral",
+      "text": "A força vai no ZIL. Igual Brasil." },
+    { "speaker": "capi", "lang": "pt", "emotion": "happy", "text": "Vamos juntos. Mão no peito." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "repita": true, "text": "I'm Brazilian." },
+    { "tipo": "pausa", "s": 4.0, "text": "SUA VEZ: I'm Brazilian." },
+    { "speaker": "lazy", "lang": "en", "emotion": "smile", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral",
+      "text": "Saiu errado? Dá pra entender. No ZIL fica mais inglês." },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "alvo": "variacao", "text": "I'm Italian!" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "I'm..." },
+    { "speaker": "hank", "lang": "pt", "emotion": "bored", "text": "Isso é pessoal." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Com muito orgulho, filha." },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Brasil no mapa. Brasileira aqui.",
+      "cardTexto": "1º adesivo de nacionalidade · T1 E11 · você já sabe 11 frases" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 5.0, "emotion": "happy",
+      "text": "Comenta a sua nacionalidade, em inglês.",
+      "cardTexto": "CONSIGO… dizer a minha nacionalidade ✓ · sotaque não é erro: o objetivo é ser entendido" }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 10 (a avó do Mike disse 'I'm American' e perguntou 'and you?')",
+    "país x pessoa: Brazil (mapa) x Brazilian (roupa), -ian = -ano/-eiro",
+    "a força em bra-ZIL-ian, igual Brasil",
+    "o Hank esconde a própria nacionalidade: piada recorrente, mistério até a T2",
+    "selo com progresso real: 'você já sabe 11 frases'"
+  ]
+}

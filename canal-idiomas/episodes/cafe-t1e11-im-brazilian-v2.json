@@ -1,0 +1,64 @@
+{
+  "id": "cafe-t1e11-im-brazilian-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 11,
+    "codigo": "T1 E11 · parte 2/3",
+    "tituloCapitulo": "De onde você é",
+    "frasesAprendidas": 11,
+    "progresso": "você já sabe 11 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer frases curtas sobre mim, como a minha nacionalidade.",
+  "title": "T1 E11 · parte 2/3 · um ônibus inteiro de turista ☕",
+  "hookTitle": "um ônibus inteiro de turista",
+  "alvo": {
+    "en": "I'm Brazilian.",
+    "pt": "Eu sou brasileira.",
+    "variacoes": []
+  },
+  "cast": ["capi", "hank", "lazy", "poppy", "donajaca"],
+  "contexto": {
+    "legenda": "um ônibus inteiro de turista parou no café. e a Capy respondeu todo mundo. I'm Brazilian. ✈️"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 11,
+  "beats": [
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy",
+      "text": "Gente, turista do mundo inteiro! E a Capy vai falar com todo mundo!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "neutral",
+      "text": "Loja cheia, gente de todo lugar. Hoje eu digo que sou brasileira." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Are you American?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "I'm... Brazilian." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: I'm Brazilian." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "No." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Cool! I'm American." },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy",
+      "text": "O Lazy foi junto no ônibus." },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Turismo. Eficiente." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "No." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian." },
+    { "speaker": "donajaca", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian!" },
+    { "speaker": "donajaca", "lang": "pt", "emotion": "happy", "text": "Manda um oi pros turistas, filha." },
+    { "speaker": "hank", "lang": "en", "emotion": "bored", "text": "He's gone." },
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Quem é brasileiro comenta:" },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "I'm Brazilian!" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 3.0, "emotion": "happy",
+      "text": "Duas vezes. E ninguém ganhou desconto.",
+      "cardTexto": "você disse sua nacionalidade pra um ônibus de turistas · CONSIGO ✓" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 2.0,
+      "text": "Alguém quer meu número... em inglês?" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: ônibus de turistas no café, sem data; usado por a janela do hype datado (Black Friday) não ser garantida na posição da fila de estoque",
+    "você é a Capy, em 2 rodadas",
+    "o Lazy foi junto no ônibus por engano: piada física",
+    "gancho verdadeiro pro assunto 12 (o número de telefone)"
+  ]
+}

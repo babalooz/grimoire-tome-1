@@ -1,0 +1,60 @@
+{
+  "id": "cafe-t1e14-this-is-my-friend-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 3,
+    "episodio": 14,
+    "codigo": "T1 E14 · parte 2/3",
+    "tituloCapitulo": "Apresentando alguém",
+    "frasesAprendidas": 14,
+    "progresso": "você já sabe 14 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo apresentar alguém com uma fórmula simples.",
+  "title": "T1 E14 · parte 2/3 · o colega novo do Mike ☕",
+  "hookTitle": "o time do Mike chegou",
+  "alvo": {
+    "en": "This is my friend.",
+    "pt": "Esse é meu amigo."
+  },
+  "cast": ["capi", "hank", "lazy", "duda", "poppy", "turista"],
+  "contexto": {
+    "legenda": "o Mike trouxe o time do trabalho pro café. e a Capy apresentou todo mundo. This is my friend. 🤝"
+  },
+  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "notebook": 14,
+  "beats": [
+    { "speaker": "poppy", "lang": "pt", "emotion": "happy", "text": "Gente nova no café. Bora apresentar!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "neutral",
+      "text": "Hoje eu apresento minha turma pra turma do Mike." },
+    { "speaker": "turista", "lang": "en", "emotion": "neutral", "text": "Capy! And...?" },
+    { "speaker": "lazy", "lang": "en", "emotion": "whisper", "alvo": true, "text": "This... is... my... friend." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: This is my friend." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Duda." },
+    { "speaker": "duda", "lang": "en", "emotion": "happy", "text": "Ciao!" },
+    { "speaker": "hank", "lang": "pt", "emotion": "neutral", "text": "Seis cafés. Ninguém pediu ainda." },
+    { "tipo": "pausa", "s": 0.6 },
+    { "tipo": "pausa", "s": 3.0, "text": "de novo: SUA VEZ" },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend." },
+    { "speaker": "capi", "lang": "en", "emotion": "happy", "text": "Lazy." },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend!" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Capy!" },
+    { "speaker": "lazy", "lang": "pt", "emotion": "neutral", "text": "Eu só tava cochilando." },
+    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "This is my friend!" },
+    { "speaker": "capi", "lang": "pt", "card": true, "hold": 2.0, "emotion": "happy",
+      "text": "Apresentei minha turma toda.",
+      "cardTexto": "você apresentou sua turma pro time do Mike · CONSIGO ✓" },
+    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Gift exchange! Next week!" },
+    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried", "hold": 2.0,
+      "text": "Troca de presente? E se eu não souber dizer o que é?" }
+  ],
+  "gatilhos": [
+    "reserva atemporal: o time do trabalho do Mike no café, sem festa de dezembro",
+    "você é a Capy, em 2 rodadas (a Duda, depois o Lazy dentro da caixa de copos)",
+    "o Lazy dormindo numa caixa é piada física recorrente",
+    "gancho verdadeiro pro assunto 15: o cartaz 'Gift exchange'"
+  ]
+}
