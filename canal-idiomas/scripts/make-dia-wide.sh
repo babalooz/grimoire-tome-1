@@ -6,6 +6,7 @@
 #        out/dia-<data>-wide.miniatura.png (1280x720).
 # Uso: scripts/make-dia-wide.sh 2026-10-29 episodes/cafe-t1e01-hi-im-capy-v2.json vocab/halloween.json \
 #        episodes/cafe-t1e01-hi-im-capy.json 13 17 "Hi! I'm Capy." "INGLÊS DO ZERO · T1 E01" "+ 9 palavras de Halloween" [--stills] [--no-video]
+# SITCOM "-" = sem sitcom novo pra amanhã (publicados.csv sem episódio nesse dia): monta só vocabulário + corte.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 DATA="$1"; SITCOM="$2"; TEMA="$3"; CORTE="$4"; DE="$5"; ATE="$6"; FRASE="$7"; TAG="$8"; EXTRA="${9:-}"
@@ -18,7 +19,7 @@ BROWSER_FLAG=$([ -x "$BROWSER" ] && echo "--browser-executable=$BROWSER" || true
 RENDER_FLAGS="--audio-bitrate=320k --crf=22 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG"
 mkdir -p out
 
-.venv/bin/python scripts/tts_cache.py "$SITCOM"
+[ "$SITCOM" = "-" ] || .venv/bin/python scripts/tts_cache.py "$SITCOM"
 .venv/bin/python scripts/tts_cache.py "$CORTE"
 TID=$(node -e "console.log(require('./$TEMA').id)")
 AUDIO=$(node -e "console.log(require('./$TEMA').audio)")

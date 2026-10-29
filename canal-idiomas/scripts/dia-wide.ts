@@ -1,7 +1,10 @@
 // LONGO DO DIA (YouTube 16:9): monta os props do DiaWide a partir dos MESMOS JSONs e da voz em cache, e exporta
 // capítulos/quadros-chave da MESMA agenda (src/wide/dia.ts). Rodado por scripts/make-dia-wide.sh (bundle esbuild).
 // Uso:
-//   node dia.cjs montar <AAAA-MM-DD> <sitcom.json> <vocab-props.json> <corte.json> <de> <ate>  -> out/props-dia-<data>-wide.json
+//   node dia.cjs montar <AAAA-MM-DD> <sitcom.json|-> <vocab-props.json> <corte.json> <de> <ate>  -> out/props-dia-<data>-wide.json
+//   sitcom "-" (ou "") = sem sitcom novo pra amanhã (publicados.csv sem episódio nesse dia): monta só vocab + corte,
+//   igual previsto no plano §2 ("se faltar peça, monta com as que existem"). Quem fica de olho na nota 8 do critério
+//   "cabe no tempo sem encher linguiça" é o juiz humano/Claude, lendo `--pedido-juiz`; o script só monta o que existe.
 //   node dia.cjs capitulos <props-dia.json>   -> linhas "00:00 ..." (sai 1 se quebrar regra do YouTube)
 //   node dia.cjs pacote <props-dia.json>      -> out/<id>.youtube.json (título, descrição com capítulos, categoria 27)
 //   node dia.cjs quadros <props-dia.json>     -> quadros para stills/auditoria (início/meio de cada bloco)
@@ -55,23 +58,24 @@ const diaNum = (data: string) => 1 + (existsSync("publicados.csv") ? readFileSyn
 
 if (cmd === "montar") {
   const [data, sitcom, vocabProps, corte, de, ate] = a;
-  const s = cafeProps(sitcom);
+  const s = sitcom && sitcom !== "-" ? cafeProps(sitcom) : undefined;
   const v = ler(vocabProps);
   const c = cafeProps(corte);
   if (!jaPublicado(`${c.id}.mp4`, data)) throw new Error(`corte: ${c.id} não tem post no YouTube antes de ${data} (publicados.csv)`);
+  const partes: DiaProps["partes"] = [
+    ...(s ? [{ tipo: "cafe" as const, rotulo: "sitcom", numero: epNum(s), titulo: tituloCurto(s.title), props: s }] : []),
+    { tipo: "vocab", rotulo: "vocabulário", numero: palavrasNum(v), titulo: `${v.palavras.length} palavras de ${v.tema.pt}`, props: v },
+    { tipo: "corte", rotulo: `do ${c.serie.codigo}`, numero: `do Ep. ${c.serie.episodio}`, titulo: tituloCurto(c.title), props: c, de: +de, ate: +ate,
+      cta: `episódio completo: ${c.serie.codigo} no canal` },
+  ];
   const p: DiaProps = {
     id: `dia-${data}-wide`,
     data,
     dia: diaNum(data),
     dataTexto: dataTexto(data),
-    partes: [
-      { tipo: "cafe", rotulo: "sitcom", numero: epNum(s), titulo: tituloCurto(s.title), props: s },
-      { tipo: "vocab", rotulo: "vocabulário", numero: palavrasNum(v), titulo: `${v.palavras.length} palavras de ${v.tema.pt}`, props: v },
-      { tipo: "corte", rotulo: `do ${c.serie.codigo}`, numero: `do Ep. ${c.serie.episodio}`, titulo: tituloCurto(c.title), props: c, de: +de, ate: +ate,
-        cta: `episódio completo: ${c.serie.codigo} no canal` },
-    ],
-    recap: [`${s.alvo.en} = ${s.alvo.pt}`, `${v.palavras.length} palavras de ${v.tema.pt}`],
-    proximo: proximoAgendado(data, s.id),
+    partes,
+    recap: [...(s ? [`${s.alvo.en} = ${s.alvo.pt}`] : []), `${v.palavras.length} palavras de ${v.tema.pt}`],
+    proximo: proximoAgendado(data, s?.id ?? ""),
     capitulos: { encerramento: "Revisão do dia e próximo episódio" },
   };
   const out = `out/props-${p.id}.json`;
@@ -87,16 +91,25 @@ if (cmd === "montar") {
   // título/descrição do YouTube (vídeo normal, categoria Educação = 27). Regras do pacote do assunto 1
   // (ponte/saida/pacote-postagem-assunto1.md): termo de busca primeiro, frase em inglês escrita, sem gatilho proibido.
   const p = ler(a[0]) as DiaProps;
-  const s = p.partes.find((x) => x.tipo === "cafe")!.props as any;
+  const sPart = p.partes.find((x) => x.tipo === "cafe") as any;
   const v = p.partes.find((x) => x.tipo === "vocab")!.props as any;
   const c = p.partes.find((x) => x.tipo === "corte") as any;
+  // sem sitcom novo: a "frase do dia" vem do corte (é CafeProps também, mesmo alvo/canDo do episódio)
+  const alvoProps = (sPart ?? c).props as any;
   const cap = diaCapitulos(p, FPS);
-  const titulo = `Dia ${p.dia ?? 1} · Inglês do zero: ${s.alvo.en.replace(/[.!?]+$/, "")} + ${v.palavras.length} palavras de ${v.tema.pt} | CapyFala`;
+  const titulo = `Dia ${p.dia ?? 1} · Inglês do zero: ${alvoProps.alvo.en.replace(/[.!?]+$/, "")} + ${v.palavras.length} palavras de ${v.tema.pt} | CapyFala`;
+  const partesNomes = p.partes.map((x) =>
+    x.tipo === "cafe" ? `a sitcom do café Bean There, ${x.numero}` :
+    x.tipo === "vocab" ? `${palavrasNum(v)}, ${v.palavras.length} palavras de ${v.tema.pt}` :
+    `um trecho ${x.numero}`);
+  const partesTxt = partesNomes.length > 1
+    ? `${partesNomes.slice(0, -1).join("; ")}; e ${partesNomes[partesNomes.length - 1]}`
+    : partesNomes[0];
   const descricao = [
-    `Episódio do dia do CapyFala em tela cheia: a sitcom do café Bean There, ${p.partes[0].numero}; ${palavrasNum(v)}, ${v.palavras.length} palavras de ${v.tema.pt}; e um trecho ${c.numero}.`,
+    `Episódio do dia do CapyFala em tela cheia: ${partesTxt}.`,
     "",
-    `${s.canDo}`,
-    `Frase do dia: ${s.alvo.en} = ${s.alvo.pt}`,
+    `${alvoProps.canDo}`,
+    `Frase do dia: ${alvoProps.alvo.en} = ${alvoProps.alvo.pt}`,
     `Palavras: ${v.palavras.map((w: any) => `${w.en} (${w.pt})`).join(", ")}`,
     "",
     "Capítulos:",
