@@ -12,3 +12,8 @@ data,assunto,episodio,video,id,hype_ou_reserva,status,nota_portao,reescritas,mot
 2026-10-29,14,T1 E14,V3,cafe-t1e14-this-is-my-friend-v3,,bloqueado_roteiro,,2,"inglês 28% das palavras faladas (mínimo 35%)",
 2026-10-29,15,T1 E15,V1,cafe-t1e15-its-a-phone,,bloqueado_roteiro,,2,"inglês 25% das palavras faladas (mínimo 35%)",
 2026-10-29,15,T1 E15,V3,cafe-t1e15-its-a-phone-v3,,bloqueado_roteiro,,2,"inglês 24% das palavras faladas (mínimo 35%)",
+2026-10-29,12,T1 E12,V2,cafe-t1e12-my-number-is-v2,reserva,publicado_midia,8.3,0,"commit 2794a71; inglês 55%; régua do mestre (8 critérios) todos >= 8",cafe-t1e12-my-number-is-v2.mp4
+2026-10-29,12,T1 E12,V3,cafe-t1e12-my-number-is-v3,,publicado_midia,8.6,0,"commit 7dbe28f; inglês 36%; régua do mestre (8 critérios) todos >= 8",cafe-t1e12-my-number-is-v3.mp4
+2026-10-29,13,T1 E13,V2,cafe-t1e13-how-old-are-you-v2,reserva,pendente_cota,,0,"roteiro passou (inglês 35%); TTS parou em HTTP 429 (cota DIÁRIA do gemini-3.8-flash-tts esgotada, retryDelay ~4039s = ~67min); retomar depois que a cota renovar",
+2026-10-29,14,T1 E14,V2,cafe-t1e14-this-is-my-friend-v2,reserva,pendente_cota,,0,"roteiro passou (inglês 43%); não tentado nesta rodada - cota diária do gemini-3.8-flash-tts esgotada antes de chegar neste vídeo",
+2026-10-29,15,T1 E15,V2,cafe-t1e15-its-a-phone-v2,reserva,pendente_cota,,0,"roteiro passou (inglês 45%); não tentado nesta rodada - cota diária do gemini-3.8-flash-tts esgotada antes de chegar neste vídeo",
