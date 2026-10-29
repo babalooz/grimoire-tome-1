@@ -36,3 +36,4 @@
 - `cafe-t1e17-how-much-is-it-v2.mp4` · midia 1ab3f07 · 68.1 s · -14.1 LUFS · pico -1.5 · mov 0.245 · ok
 - `cafe-t1e17-how-much-is-it.mp4` · midia 1ab3f07 · 67.3 s · -14.0 LUFS · pico -1.5 · mov 0.260 · ok
 - `vocab-bebidas.mp4` · midia 1ab3f07 · 62.0 s · -14.0 LUFS · pico -1.5 · mov 0.250 · ok
+- `corte-t1e01-01.mp4` · midia ee12726 · 22.0 s · -14.2 LUFS · pico -1.5 · mov 0.271 · ok
