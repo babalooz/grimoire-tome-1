@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 11 · "I'm Brazilian." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -78,6 +80,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 **Quem traz o hype:** a Poppy, que filma "a Black Friday de verdade" para os seguidores brasileiros.
 
+**Janela do hype:** V2 Black Friday só se for ao ar entre 23 e 29/11/2026 (a semana da Black Friday, 27/11). Fora disso, V2 RESERVA ("o ônibus de turismo"). #BlackFriday só na legenda do post.
+
 **Exercício:** "você é a Capy", em 2 rodadas: clientes perguntam se ela é americana e depois se é mexicana.
 
 | # | Tempo | Cena | Fala | Som |
@@ -152,12 +156,12 @@ Para quando o V2 cair longe da Black Friday. Mesmos exercícios, mesma ordem. Mu
 | 15 | 43–46 s | Balão vazio | 🎤 **SUA VEZ** ("I'm from Brazil.") | trilha em zero |
 | 16 | 46–48 s | O Hank aperta os olhos | Hank EN: "So... American?" | — |
 | 17 | 48–51 s | Balão vazio | 🎤 **SUA VEZ** ("No. I'm Brazilian.") | trilha em zero |
-| 18 | 51–53 s | **Para conferir:** a Dona Jaca, na videochamada | Dona Jaca EN: "No." · Dona Jaca EN: ⭐ "I'm Brazilian!" | — |
+| 18 | 51–53 s | **Para conferir:** o Lazy, de longe | Lazy EN: "No." · Lazy EN: ⭐ "I'm Brazilian!" | — |
 | 19 | 53–58 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 7). Ele faz o joinha e guarda o adesivo "Brazilian" na bochecha | Bolinha EN: "I'm fine, thanks." · Bolinha EN: ⭐ "I'm Brazilian." · Bolinha PT: "Guardei. Devolvo daqui a uns dias." | — |
 | 20 | 58–62 s | ⭐ **VITÓRIA DO ASSUNTO**: "você disse o que você é" + **consigo ✓** + selo "T1 E11 · você já sabe 11 frases" | Capy PT: "País no mapa. Brasileiro no peito." | acerto maior |
 | 21 | 62–67 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: My number is… · segue a Capy"** | Capy PT: "Comenta a sua: I'm Brazilian." | — |
 
-**Frase-alvo: 5×** no áudio (Lazy ×2, Capy, Dona Jaca, Bolinha), em 4 bocas; a última é do Bolinha. "I'm Brazil." (cena 6) é o contraste de reconhecimento e não conta. O aluno fala 3× e reconhece 2×.
+**Frase-alvo: 5×** no áudio (Lazy ×3, Capy, Bolinha), em 3 bocas; a última é do Bolinha. "I'm Brazil." (cena 6) é o contraste de reconhecimento e não conta. O aluno fala 3× e reconhece 2×.
 
 **Nota de tempo:** a conversa com o Hank (cenas 14–18) tem 2 pausas em 11 s; se ficar apertado, sai a cena 13 (2 s).
 

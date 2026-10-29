@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 16 · "I'm tired." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -21,6 +23,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **Frase-alvo:** ⭐ "I'm tired."
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 12/12, na reta das compras de Natal. Sem data fixa; sem hype seguro, entra a reserva.
+
+**Janela do hype:** V2 "compras de Natal" só se for ao ar entre 1 e 24/12/2026; senão, V2 RESERVA.
 
 **Revisão:** o Bolinha devolve "My number is…" (assunto 12, cerca de 12 dias antes) no V3, com o texto "lembra dessa?". O V1 reaproveita "How are you?" (assunto 7).
 
@@ -101,7 +105,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 15 | 42–45 s | A Dona Jaca vê os quatro jogados no banco | Dona Jaca EN: ⭐ "...I'm tired." · Dona Jaca PT: "Só de olhar." | risada |
 | 16 | 45–48 s | O Hank passa com sacolas de grãos de café, firme | Hank PT: "Eu só vim comprar café. Saio em dois minutos." | — |
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você disse que tava cansada no shopping americano" + **consigo ✓** | Capy PT: "Falei duas vezes. Ninguém me levou pra mais uma loja." | acerto |
-| 18 | 52–56 s | A Capy vê, na praça do shopping, uma barraca de feira de Natal com chocolate quente e café | Capy (pensa) PT: "Café. Preciso pedir um café. E perguntar o preço." | — |
+| 18 | 52–56 s | A Capy vê, pela porta de vidro do shopping, a feira de Natal na praça em frente: uma barraca de café e chocolate quente | Capy (pensa) PT: "Café. Preciso pedir um café. E perguntar o preço." | — |
 | 19 | 56–60 s | **Gancho verdadeiro:** congela na barraca. Texto: **"como pede e pergunta quanto custa? próximo assunto: A coffee, please."** (só se o assunto 17 estiver agendado) | — | — |
 | 20 | 60–65 s | Card: "aula do assunto 16 no perfil · segue a Capy pro próximo capítulo" | — | — |
 

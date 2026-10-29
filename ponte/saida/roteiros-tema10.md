@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 10 · "Are you Brazilian? Yes, I am." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -51,20 +53,20 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre num broche:** close na bandeirinha do Brasil presa no avental da Capy. Um dedo grande de urso aponta para ela. Texto: **"a resposta tem 3 palavras."** | Mike EN: "Are you Brazilian?" (seta de vapor sobe) | — |
+| 1 | 0–2 s | **Abre num broche:** close na bandeirinha do Brasil presa no avental da Capy. O texugo de gravata vê o adesivo do Brasil no mapa e aponta a Capy. Texto: **"a resposta tem 3 palavras."** | Cliente EN: "Are you Brazilian?" (seta de vapor sobe) | — |
 | 2 | 2–5 s | A Capy, de boca aberta | Capy (pensa) PT: "Sim, eu sou. Como é que fala só 'sou'?" | — |
 | 3 | 5–8 s | O Lazy chega devagar (objetivo por cima da ação) | Lazy PT: "Hoje você responde sim. Três palavras, e a voz desce." | — |
 | 4 | 8–13 s | O Lazy faz que sim com a cabeça, bem devagar. Na tela, o plugue "I" encaixa em "am" e a luz acende | Lazy EN: ⭐ "Yes... I... am." · legenda EN + PT: "Sim, sou." | clique da tomada |
 | 5 | 13–18 s | Na tela, "Yes, I'm." aparece e é riscado (só escrito). O "am" inteiro brilha | Lazy PT: "No fim da resposta, o am fica inteiro. Nada de encurtar." | — |
-| 6 | 18–23 s | A **seta de vapor**: sobe na pergunta, desce na resposta | Mike EN: "Are you Brazilian?" · Lazy EN: ⭐ "Yes, I am." · Lazy PT: "A pergunta sobe. A resposta desce." | vapor |
+| 6 | 18–23 s | A **seta de vapor**: sobe na pergunta, desce na resposta | Cliente EN: "Are you Brazilian?" · Lazy EN: ⭐ "Yes, I am." · Lazy PT: "A pergunta sobe. A resposta desce." | vapor |
 | 7 | 23–25 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. Com a voz descendo." | — |
 | 8 | 25–28 s | **Em coro.** Na tela: "fala JUNTO" + seta descendo | Capy EN: ⭐ "Yes, I am." | vapor desce |
 | 9 | 28–31 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "Yes, I am." | vapor desce |
 | 10 | 31–35 s | **Sozinho:** a Capy fica em silêncio e aponta para a câmera | 🎤 **SUA VEZ** ("Yes, I am.") | trilha em zero |
 | 11 | 35–38 s | **Para conferir:** o Bolinha, como modelo | Bolinha EN: ⭐ "Yes, I am." | acerto baixinho |
 | 12 | 38–42 s | Balão do Hank ao fundo | Hank PT: "Saiu 'Yes, I'm'? Dá pra entender. Com o am inteiro, fica inglês." | — |
-| 13 | 42–45 s | De volta ao Mike | Mike EN: "Are you Brazilian?" · Capy EN: ⭐ "Yes, I am!" | vapor desce |
-| 14 | 45–48 s | O Mike sorri e vira para o Lazy | Mike EN: "Cool! Are you Lazy?" | — |
+| 13 | 42–45 s | De volta ao texugo de gravata | Cliente EN: "Are you Brazilian?" · Capy EN: ⭐ "Yes, I am!" | vapor desce |
+| 14 | 45–48 s | O cliente sorri e vira para o Lazy | Cliente EN: "Cool! Are you Lazy?" | — |
 | 15 | 48–52 s | **Piada:** o Lazy, ofendido, devagar | Lazy EN: ⭐ "Yes... I am." · Lazy PT: "O nome. Não o adjetivo. Eu sou eficiente." | risada |
 | 16 | 52–57 s | ⭐ **VITÓRIA DO DIA**: card "1ª resposta curta em inglês". Selo: **"T1 E10 · você já sabe 10 frases"** | Capy PT: "Sim, eu sou. Com o am inteiro." | acerto |
 | 17 | 57–64 s | Card final: **CONSIGO… responder 'sim' a uma pergunta ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: Yes, I am. Se você é brasileiro." | — |
@@ -81,6 +83,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 **Quem traz o hype:** o Mike, por videochamada; a família dele aparece como silhuetas de ursos, sem voz.
 
+**Janela do hype:** V2 principal (semana de Thanksgiving) só se for ao ar entre 22 e 26/11/2026; fora disso, V2 RESERVA.
+
 **Exercício:** "você é a Capy", em 2 rodadas: a avó do Mike pergunta; na 2ª, ela não ouviu e pergunta mais alto.
 
 | # | Tempo | Cena | Fala | Som |
@@ -88,7 +92,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 1 | 0–2 s | **Abre num toque de videochamada internacional:** na tela do celular, a cozinha da família do Mike, com uma torta de abóbora saindo do forno. Texto: **"semana de Thanksgiving: o Mike foi pra casa. e ligou."** | — | toque de chamada |
 | 2 | 2–5 s | A Capy segura o celular no balcão do Bean There (objetivo por cima da ação) | Capy (pensa) PT: "A família dele vai me perguntar coisa. Hoje eu respondo sim." | — |
 | 3 | 5–8 s | O Mike vira o celular para a cozinha cheia; a família acena | Mike EN: "Guys! It's Capy!" | burburinho |
-| 4 | 8–11 s | A avó do Mike (ursa de óculos, sem voz) chega perto da câmera; a pergunta vem em texto: "are you Brazilian?". O Mike repete para ajudar | Mike EN: "Are you Brazilian?" (seta sobe) | — |
+| 4 | 8–11 s | A avó do Mike cochicha com ele; o Mike repete para a câmera | Mike EN: "Grandma wants to know. Are you Brazilian?" (seta sobe) | — |
 | 5 | 11–14 s | O Lazy, pendurado atrás da Capy no Bean There, cochicha | Lazy EN: ⭐ "Yes... I am." | vapor desce |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando | ⏸ 0,6 s | — |
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** | trilha em zero |
@@ -140,7 +144,7 @@ Para quando o V2 cair depois de 26/11 ou o hype não for seguro. Mesmos exercíc
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre em duas xícaras com seta de vapor:** uma sobe, outra desce. Texto: **"pergunta sobe. resposta desce. ouve."** | — | — |
 | 2 | 2–5 s | O Lazy encosta nas xícaras, devagar | Lazy PT: "Hoje você escolhe o sim certo e responde. De dois jeitos." | — |
-| 3 | 5–7 s | | Mike EN: "Are you Brazilian?" | — |
+| 3 | 5–7 s | | Cliente EN (o texugo de gravata): "Are you Brazilian?" | — |
 | 4 | 7–9 s | A xícara **A** acende (gravado 1 vez só, sem risco vermelho) | Lazy EN: "Yes, I'm." | — |
 | 5 | 9–11 s | A xícara **B** acende | Lazy EN: ⭐ "Yes, I am." | — |
 | 6 | 11–14 s | **Rodada 1:** "A ou B? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
@@ -152,7 +156,7 @@ Para quando o V2 cair depois de 26/11 ou o hype não for seguro. Mesmos exercíc
 | 12 | 30–34 s | Tela: **"AGORA É VOCÊ"** | Capy EN: ⭐ "Yes, I am." · Capy PT: "Responde o Hank. A voz desce." | vapor desce |
 | 13 | 34–36 s | **Personalize 1:** o Hank olha para a câmera | Hank EN: "Are you Brazilian?" | — |
 | 14 | 36–39 s | Balão vazio | 🎤 **SUA VEZ** ("Yes, I am.") | trilha em zero |
-| 15 | 39–41 s | **Para conferir:** a Dona Jaca aparece na videochamada | Dona Jaca EN: ⭐ "Yes, I am!" | toque curto |
+| 15 | 39–41 s | **Para conferir:** a Capy, de longe | Capy EN: ⭐ "Yes, I am!" | — |
 | 16 | 41–44 s | **Personalize 2:** a Duda, com o mapa de adesivos atrás | Duda EN: "Are you from Brazil?" | — |
 | 17 | 44–47 s | Balão vazio | 🎤 **SUA VEZ** ("Yes, I am.") | trilha em zero |
 | 18 | 47–49 s | O Hank, de braços cruzados | Hank EN: "Good." | — |
@@ -160,7 +164,7 @@ Para quando o V2 cair depois de 26/11 ou o hype não for seguro. Mesmos exercíc
 | 20 | 54–58 s | ⭐ **VITÓRIA DO ASSUNTO**: "você respondeu sim, do jeito certo" + **consigo ✓** + selo "T1 E10 · você já sabe 10 frases" | Capy PT: "Dez frases. Começou do zero." | acerto maior |
 | 21 | 58–64 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: I'm Brazilian. · segue a Capy"** | Capy PT: "Comenta: Yes, I am. Só pra eu ver." | — |
 
-**Frase-alvo: 5×** no áudio (Lazy ×2, Capy, Dona Jaca, Bolinha), em 4 bocas; a última é do Bolinha. "Yes, I'm." (cena 4) é o contraste de reconhecimento e não conta. O aluno fala 2× e reconhece 2×.
+**Frase-alvo: 5×** no áudio (Lazy ×2, Capy ×2, Bolinha), em 3 bocas; a última é do Bolinha. "Yes, I'm." (cena 4) é o contraste de reconhecimento e não conta. O aluno fala 2× e reconhece 2×.
 
 ---
 

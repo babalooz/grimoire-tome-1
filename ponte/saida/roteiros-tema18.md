@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 18 · "This is my mother." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -21,6 +23,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **Decisão de elenco pedida ao Felipe (ver dúvidas):** este roteiro traz a **Dona Jaca em pessoa** (ela veio passar o Natal nos EUA). A versão por videochamada está escrita como reserva.
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 18/12. O passeio para ver as casas enfeitadas com luzes de Natal é tradição americana de dezembro, sem data fixa. Sem hype seguro, entra a reserva.
+
+**Janela do hype:** V2 "passeio das luzes" só se for ao ar entre 1/12/2026 e 1/1/2027; senão, V2 RESERVA.
 
 **Revisão:** o Bolinha devolve "This is my friend." (assunto 14, cerca de 12 dias antes) no V3, com o texto "lembra dessa?" — o par amigo × mãe.
 
@@ -52,7 +56,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre numa mala de rodinha** com fitinhas do Bonfim passando por cima do pé do Mike, na feira de Natal. Texto: **"ela veio. em pessoa."** | Mike EN: "Ouch!" | rodinha |
-| 2 | 2–5 s | A Dona Jaca, de casaco grosso, olha o Mike de cima a baixo; o Mike olha a Capy | Capy (pensa) PT: "O Mike não sabe quem ela é. Eu tenho que apresentar a minha mãe." | — |
+| 2 | 2–5 s | A Dona Jaca, de casaco grosso e gorro, olha o Mike de cima a baixo; o Mike olha a Capy, sem reconhecer | Capy (pensa) PT: "O Mike só viu ela pelo celular. Em pessoa, eu tenho que apresentar." | — |
 | 3 | 5–8 s | O Lazy chega devagar (objetivo por cima da ação) | Lazy PT: "Hoje você apresenta a sua mãe. Igual amigo, muda uma palavra." | — |
 | 4 | 8–13 s | O Lazy abre a mão para uma foto da mãe dele (uma preguiça idosa, de óculos) no celular | Lazy EN: ⭐ "This... is... my... mother." · legenda EN + PT: "Essa é minha mãe." | — |
 | 5 | 13–16 s | Na tela, "This is my **friend**" vira "This is my **mother**": só a última palavra troca | Lazy PT: "Você já sabe o começo. Só troca o fim." | — |
@@ -62,7 +66,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 9 | 25–28 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "This is my mother." | etiqueta treme |
 | 10 | 28–32 s | **Sozinho:** a Capy abre a mão para a Dona Jaca e fica em silêncio | 🎤 **SUA VEZ** ("This is my mother.") | trilha em zero |
 | 11 | 32–35 s | **Para conferir:** o Bolinha, de modelo, com uma foto da mãe dele na bochecha | Bolinha EN: ⭐ "This is my mother." | acerto baixinho |
-| 12 | 35–39 s | Balão do Hank (por mensagem) | Hank PT: "Saiu 'móder'? Dá pra entender. Vibrando, fica mais inglês." | mensagem |
+| 12 | 35–39 s | Balão do Hank: áudio no celular da Capy (ela mandou um áudio treinando; ele responde) | Hank PT: "Saiu 'móder'? Dá pra entender. Vibrando, fica mais inglês." | mensagem |
 | 13 | 39–42 s | De volta à feira. A Capy, mão aberta | Capy EN: ⭐ "Mike, this is my mother." | etiqueta treme |
 | 14 | 42–45 s | A Dona Jaca puxa o Mike para um abraço de mãe brasileira, que dura demais | Dona Jaca EN: "Hi, Mike!" · Dona Jaca PT: "Que menino grande!" | risada |
 | 15 | 45–49 s | O Mike, sufocado no abraço, mostra o celular: videochamada com a mãe dele (ursa de avental, sem voz) | Mike EN: ⭐ "This is my mother!" · Mike EN: "Hi, Mom!" | — |
@@ -94,12 +98,12 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 8 | 19–22 s | **Resposta**, mão aberta | Capy EN: ⭐ "This is my mother." | etiqueta treme |
 | 9 | 22–25 s | A vizinha dá um prato de biscoitos para a Dona Jaca | Dona Jaca EN: "Thank you!" · Dona Jaca PT: "Gente educada." | — |
 | 10 | 25–29 s | A Poppy, filmando, aponta o Lazy no jardim | Poppy PT: "Gente, o Lazy virou enfeite de Natal." · Lazy PT: "Eficiente. Pisco sem esforço." | risada |
-| 11 | 29–32 s | **2ª rodada:** um vizinho (sem voz) sai de trás de um boneco de neve inflável gigante e aponta a Dona Jaca. Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
+| 11 | 29–32 s | **2ª rodada:** um vizinho (sem voz), um castor de suéter, sai de trás de um boneco de neve inflável gigante e aponta a Dona Jaca. Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 35–38 s | **Resposta** | Capy EN: ⭐ "This is my mother." | etiqueta treme |
 | 14 | 38–42 s | A Dona Jaca, empolgada, quer apresentar alguém também; não tem ninguém da família dela ali e aponta a própria Capy | Dona Jaca EN: "This is my... daughter!" (só para ouvir) | — |
 | 15 | 42–45 s | O Mike apresenta a mãe dele, que chega pela calçada com uma caneca (sem voz) | Mike EN: ⭐ "This is my mother!" | — |
-| 16 | 45–48 s | O Hank, que veio junto, mostra no celular uma foto da mãe dele (uma panda idosa, séria igual a ele) | Hank EN: ⭐ "This is my mother." | "ownn" da rua |
+| 16 | 45–48 s | O Hank, que veio junto, mostra no celular uma foto da mãe dele (uma panda idosa, séria igual a ele) | Hank EN: ⭐ "This is my mother." · Hank PT: "Ela também não sorri." | "ownn" da rua |
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você apresentou sua mãe pra uma rua inteira" + **consigo ✓** | Capy PT: "Rua inteira. E até o Hank tem mãe." | acerto |
 | 18 | 52–57 s | O vizinho do inflável aperta a mão da Dona Jaca e pergunta, só em texto: "what do you do?" | Capy (pensa) PT: "Minha mãe é médica. Como ela fala isso?" | — |
 | 19 | 57–61 s | **Gancho verdadeiro:** congela. Texto: **"como diz a profissão? próximo assunto: I'm a doctor."** (só se o assunto 19 estiver agendado) | — | — |
@@ -132,9 +136,9 @@ Para quando o hype de dezembro não servir, ou se o Felipe preferir a Dona Jaca 
 1. **Ouça e reconheça**, em 2 rodadas:
    - "amigo ou mãe?": a voz diz "This is my friend." ou "This is my mother." e o aluno escolhe a foto (o Mike ou a Dona Jaca);
    - "vibrou?": "mother" com o th e "móder", uma vez cada.
-2. **Personalize**, em 2 rodadas: o aluno apresenta a própria mãe (ou quem cuidou dele: avó, tia; a tela diz isso); e apresenta a Dona Jaca ao Hank.
+2. **Personalize**, em 2 rodadas: o aluno apresenta a própria mãe (ou quem cuidou dele: avó, tia; a tela diz isso); depois responde ao Hank, que pega a moldura e pergunta quem é.
 
-**Por que estes:** o par friend × mother usa o molde inteiro do assunto 14 e treina o ouvido na única palavra que muda. A personalização é o "Talking about you" do Headway. A tela não supõe que todo mundo tem mãe por perto (cuidado com quem perdeu a mãe).
+**Por que estes:** o par friend × mother usa o molde inteiro do assunto 14 e treina o ouvido na única palavra que muda. A personalização é o "Talking about you" do Headway. A tela não supõe que todo mundo tem mãe por perto (cuidado com quem perdeu a mãe), e a 2ª rodada é pergunta de verdade: o Hank não conhece a pessoa da moldura.
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
@@ -152,14 +156,16 @@ Para quando o hype de dezembro não servir, ou se o Felipe preferir a Dona Jaca 
 | 12 | 34–38 s | **Personalize 1:** a moldura pisca | 🎤 **SUA VEZ** ("This is my mother.") | trilha em zero |
 | 13 | 38–40 s | A moldura ganha um ✓ | Capy PT: "Isso." | acerto |
 | 13b | 40–42 s | **Para conferir:** a Duda, com a foto da mãe dela (uma panda-vermelha de óculos) | Duda EN: ⭐ "This is my mother!" | — |
-| 14 | 42–45 s | **Personalize 2:** a Dona Jaca entra no café; o Hank olha para você, esperando | Hank EN: "And she?" | — |
-| 15 | 45–49 s | Balão vazio | 🎤 **SUA VEZ** ("This is my mother." — de mentirinha, ela adota você) | trilha em zero |
-| 16 | 49–51 s | A Dona Jaca abraça a câmera | Dona Jaca PT: "Adotei. Pronto." | risada |
+| 14 | 42–45 s | **Personalize 2:** o Hank está prendendo fotos no mural do Bean There; pega a moldura "SUA MÃE (ou quem cuidou de você)" e olha para você | Hank EN: "Who's this?" | — |
+| 15 | 45–49 s | Balão vazio | 🎤 **SUA VEZ** ("This is my mother.") | trilha em zero |
+| 16 | 49–51 s | O Hank prende a moldura no mural, ao lado da foto da Dona Jaca | Hank PT: "Do lado da Dona Jaca. Vão se dar bem." | risada |
 | 17 | 51–56 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 14). Ele abre a mão para o Lazy e depois para a foto da mãe dele | Bolinha EN: "This is my friend." · Bolinha EN: ⭐ "This is my mother." · Bolinha PT: "Guardei as duas. Só muda o fim." | — |
 | 18 | 56–60 s | ⭐ **VITÓRIA DO ASSUNTO**: "você apresentou sua família" + **consigo ✓** + selo "T1 E18 · você já sabe 18 frases" | Capy PT: "Amigo, mãe... a turma tá crescendo." | acerto maior |
 | 19 | 60–67 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: I'm a doctor · segue a Capy"** | Capy PT: "Marca alguém da sua família e escreve: This is my..." | — |
 
 **Frase-alvo: 5×** (Lazy ×2, Capy, Duda, Bolinha), em 4 bocas; a última é do Bolinha. "This is my móder." (cena 7) é o contraste e não conta. O aluno fala 2× e reconhece 2×.
+
+**Contingência da cena 7:** se o TTS não fizer o "móder", a rodada 2 vira outra rodada de "amigo ou mãe?", com a voz do Hank dizendo ⭐ "This is my mother."; resposta: a foto da Dona Jaca. Sem forma errada.
 
 ---
 
@@ -173,7 +179,7 @@ Para quando o hype de dezembro não servir, ou se o Felipe preferir a Dona Jaca 
 | Quem diz a última ⭐ | Mike | Hank | Bolinha | Capy nunca ✓ |
 | O aluno fala | 1 | 2 | 2 | **5** |
 | Reconhecimentos | — | — | 2 | 2 |
-| Revisão | "This is my…" (assunto 14), "Hi, Mom!" (assunto 5) | "Thank you" (VOCAB 03) | Bolinha: assunto 14; "And she?" (assunto 6) | ✓ |
+| Revisão | "This is my…" (assunto 14), "Hi, Mom!" (assunto 5) | "Thank you" (VOCAB 03) | Bolinha: assunto 14; "Who's this?" ("who": Palavras tema 27) | ✓ |
 | Primeiros 3 s | mala passando no pé do Mike | casa acendendo inteira | porta-retrato duplo | variam ✓ |
 | Gancho verdadeiro no fim | — | próximo assunto (19) | próximo assunto (19) | |
 

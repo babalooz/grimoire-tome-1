@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 15 · "It's a phone." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -21,6 +23,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **Frase-alvo:** ⭐ "It's a phone."
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 9/12. A troca de presentes americana com "roubo" de presente (a "white elephant", ou "amigo secreto do roubo") é tradição das festas de dezembro, sem data fixa. Sem hype seguro, entra a reserva.
+
+**Janela do hype:** V2 "troca de presentes com roubo" só se for ao ar entre 1 e 24/12/2026; senão, V2 RESERVA.
 
 **Revisão:** o Bolinha devolve "I'm Brazilian." (assunto 11, cerca de 12 dias antes) no V3, com o texto "lembra dessa?". O V3 usa "This is my friend." (assunto 14) como contraste.
 
@@ -53,7 +57,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre numa caixa de papelão vibrando** no balcão, escrita "LOST & FOUND". Texto: **"tem alguma coisa tocando aqui dentro."** | — | vibração |
 | 2 | 2–5 s | O Hank levanta a tampa com dois dedos, desconfiado | Hank EN: "What's this?" | — |
-| 3 | 5–8 s | O Lazy chega devagar (objetivo por cima da ação) | Lazy PT: "Hoje você diz o que uma coisa é. Três palavras e um 'a'." | — |
+| 3 | 5–8 s | O Lazy chega devagar (objetivo por cima da ação) | Lazy PT: "Hoje você diz o que uma coisa é. Três palavras, e o 'a' não pode faltar." | — |
 | 4 | 8–13 s | O Lazy tira da caixa um celular e mostra para a câmera; o desenho do celular e a palavra nascem juntos | Lazy EN: ⭐ "It's... a... phone." · legenda EN + PT: "É um celular." | — |
 | 5 | 13–17 s | Na tela, "Is phone." aparece e é riscado (só escrito); "It's" e "a" acendem em amarelo | Lazy PT: "Sempre com it's, sempre com o 'a'. Não pula nenhum." | — |
 | 6 | 17–21 s | Close na boca do Lazy em "it's", com o **ícone do gole rápido de espresso**; ao lado, o bocejo comprido do assunto 2, apagado | Lazy PT: "O 'i' é curto. Um gole só. Não é o bocejo." | gole |
@@ -63,7 +67,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 10 | 29–33 s | **Sozinho:** a Capy levanta o celular e fica em silêncio | 🎤 **SUA VEZ** ("It's a phone.") | trilha em zero |
 | 11 | 33–36 s | **Para conferir** | Duda EN: ⭐ "It's a phone." | acerto baixinho |
 | 12 | 36–40 s | Balão do Hank ao fundo | Hank PT: "Saiu 'íts', comprido? Dá pra entender. Curtinho fica mais inglês." | — |
-| 13 | 40–43 s | O Hank tira da caixa uma fatia de pizza esquecida, com nojo | Duda EN: "It's a pizza!" · Hank PT: "Era." | risada |
+| 13 | 40–43 s | O Hank tira da caixa uma caixa de pizza; dentro, uma pizza inteira, velha. Ele olha com nojo | Duda EN: "It's a pizza!" · Hank PT: "Era." | risada |
 | 14 | 43–46 s | O celular toca de novo; a Capy atende | Capy EN: ⭐ "It's a phone!" · Capy PT: "Quer dizer... alô?" | risada |
 | 15 | 46–49 s | A Poppy entra correndo, sem fôlego, e aponta o celular | Poppy EN: "It's my phone!" · Poppy PT: "Esqueci ontem!" | — |
 | 16 | 49–52 s | O Bolinha, em cima da caixa, aponta o celular devolvido | Bolinha EN: ⭐ "It's a phone." | — |
@@ -94,7 +98,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 8 | 19–22 s | **Resposta**, levantando o celular | Capy EN: ⭐ "It's a phone." | gole |
 | 9 | 22–25 s | O Mike, emocionado | Mike EN: ⭐ "It's a phone! Classic!" | festa |
 | 10 | 25–29 s | A Duda abre o dela: uma caneca escrita "BEAN THERE, DONE THAT" (trocadilho com o nome do café) | Duda EN: "It's a mug!" · Hank PT: "Essa é minha. Devolve." | risada |
-| 11 | 29–32 s | **2ª rodada:** o Hank "rouba" o celular da Capy, mas não entende o que é; a sala olha a Capy. Tela: **"de novo: você é a Capy"** | Hank EN: "What is it?" · ⏸ 0,6 s | — |
+| 11 | 29–32 s | **2ª rodada:** o Hank, que estava de costas na máquina de café, "rouba" da mão da Capy o celular fechado (fechado, parece um estojinho) sem saber o que é; a sala olha a Capy. Tela: **"de novo: você é a Capy"** | Hank EN: "What is it?" · ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 35–38 s | **Resposta** | Capy EN: ⭐ "It's a phone." | gole |
 | 14 | 38–41 s | O Hank abre o flip, olha, fecha | Hank EN: "...It's a phone." (seco, decepcionado) | clique do flip |
@@ -151,11 +155,11 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** | Capy EN: ⭐ "It's a phone." · Capy PT: "O Hank vai mostrar. Você diz o que é." | gole |
 | 12 | 34–37 s | **Personalize 1:** o Hank segura o celular de flip na frente da câmera | Hank EN: "What's this?" | — |
 | 13 | 37–40 s | Balão vazio | 🎤 **SUA VEZ** ("It's a phone.") | trilha em zero |
-| 14 | 40–43 s | **Personalize 2:** tela "e isso que tá na sua mão agora?" + um contorno de celular na borda da tela | Capy PT: "Olha pra sua mão." | — |
+| 14 | 40–43 s | **Personalize 2:** tela "e o seu celular? pega ele." + um contorno de celular na borda da tela | Capy PT: "Pega o seu celular. Ou aponta pra ele." | — |
 | 15 | 43–46 s | Balão vazio | 🎤 **SUA VEZ** ("It's a phone.") | trilha em zero |
 | 16 | 46–48 s | **Para conferir:** a Duda, segurando o dela | Duda EN: ⭐ "It's a phone!" | — |
 | 17 | 48–53 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 11). Ele põe a mão no peito e depois tenta guardar o celular na bochecha | Bolinha EN: "I'm Brazilian." · Bolinha EN: ⭐ "It's a phone." · Bolinha PT: "Não cabe. Mas guardei a frase." | — |
-| 18 | 53–57 s | ⭐ **VITÓRIA DO ASSUNTO**: "você disse o que é" + **consigo ✓** + selo "T1 E15 · você já sabe 15 frases" | Capy PT: "Agora tudo que você vê tem nome." | acerto maior |
+| 18 | 53–57 s | ⭐ **VITÓRIA DO ASSUNTO**: "você disse o que é" + **consigo ✓** + selo "T1 E15 · você já sabe 15 frases" | Capy PT: "Agora é só trocar a última palavra." | acerto maior |
 | 19 | 57–65 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: I'm tired · segue a Capy"** | Capy PT: "Comenta: It's a… o que tem na sua mesa." | — |
 
 **Frase-alvo: 5×** no áudio (Lazy ×2, Capy, Duda, Bolinha), em 4 bocas; a última é do Bolinha. "Is phone." (cena 6) é o contraste e não conta; "It's a computer." é variação. O aluno fala 2× e reconhece 2×.

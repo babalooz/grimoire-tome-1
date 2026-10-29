@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 17 · "A coffee, please. / How much is it?" · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -21,6 +23,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **Frase-alvo:** ⭐ "How much is it?"
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 15/12. Feira de Natal ao ar livre ("Christmas market") é tradição de dezembro em várias cidades americanas, sem data fixa. Sem hype seguro, entra a reserva.
+
+**Janela do hype:** V2 "feira de Natal" só se for ao ar entre 1 e 24/12/2026; senão, V2 RESERVA.
 
 **Revisão:** o Bolinha devolve "How old are you?" (assunto 13, cerca de 12 dias antes) no V3, com o texto "lembra dessa?". "It's a…" (assunto 15) e os números (assunto 4) aparecem nas respostas.
 
@@ -63,10 +67,10 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 10 | 27–30 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "How much is it?" | vapor desce |
 | 11 | 30–34 s | **Sozinho:** a Capy aponta o copo e fica em silêncio | 🎤 **SUA VEZ** ("How much is it?") | trilha em zero |
 | 12 | 34–37 s | **Para conferir:** a Duda, na barraca do lado, com um gorro na mão | Duda EN: ⭐ "How much is it?" | acerto baixinho |
-| 13 | 37–41 s | Balão do Hank (por mensagem no celular da Capy, com foto da barraca) | Hank PT: "Subiu no fim? Dá pra entender. Descendo, fica mais inglês." | mensagem |
+| 13 | 37–41 s | Balão do Hank: áudio no celular da Capy (ela mandou um áudio treinando; ele responde) | Hank PT: "Subiu no fim? Dá pra entender. Descendo, fica mais inglês." | mensagem |
 | 14 | 41–45 s | A Capy, agora para outro item: um chocolate quente | Capy EN: "A hot chocolate, please." · Capy EN: ⭐ "How much is it?" | vapor desce |
 | 15 | 45–48 s | A etiqueta se parte em blocos: "$4" | Vendedor EN: "Four dollars." | — |
-| 16 | 48–52 s | **Piada:** a Dona Jaca, por videochamada, faz a conta | Dona Jaca PT: "Quatro dólares? Num chocolate? Em real dá..." · Dona Jaca EN: ⭐ "How much is it?!" | risada |
+| 16 | 48–52 s | **Piada:** a Dona Jaca, por videochamada, faz a conta | Dona Jaca PT: "Quatro dólares? Num chocolate?" · Dona Jaca EN: ⭐ "How much is it..." (descendo, calma) · Dona Jaca PT: "...em real?" | risada |
 | 17 | 52–57 s | ⭐ **VITÓRIA DO DIA**: a Capy paga com a nota certa e segura os dois copos. Card "1º preço perguntado em inglês". Selo: **"T1 E17 · você já sabe 17 frases"** | Capy PT: "Pedi, perguntei e paguei. Sem susto." | acerto |
 | 18 | 57–65 s | Card final: **CONSIGO… pedir e perguntar o preço ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta o que você pediria: A coffee, please?" | — |
 
@@ -84,16 +88,16 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre num gorro de lã** caindo na cabeça da Capy, posto pelo Mike, no meio da feira iluminada. Texto: **"feira de Natal americana: tudo bonito. e sem preço."** | Mike EN: "Perfect!" | burburinho de feira |
-| 2 | 2–5 s | A Poppy, filmando as barracas | Poppy PT: "Feira de Natal gringa! Nada tem preço escrito!" | — |
+| 1 | 0–2 s | **Abre num gorro de lã** caindo na cabeça da Capy, posto pelo Mike, no meio da feira iluminada. Texto: **"feira de Natal americana: tudo lindo. e essa barraca sem preço."** | Mike EN: "Perfect!" | burburinho de feira |
+| 2 | 2–5 s | A Poppy, filmando as barracas | Poppy PT: "Feira de Natal gringa! E essa barraca não tem preço escrito!" | — |
 | 3 | 5–8 s | A Capy tira o gorro e procura a etiqueta (objetivo por cima da ação) | Capy (pensa) PT: "Hoje eu pergunto o preço antes de me apaixonar." | — |
 | 4 | 8–11 s | A vendedora da barraca de gorros (sem voz) sorri e espera | ⏸ 0,6 s | — |
 | 5 | 11–14 s | O Lazy, de gorro também, dormindo pendurado numa barraca de enfeites, cochicha | Lazy EN: ⭐ "How... much... is it?" | vapor desce |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando | ⏸ 0,6 s | — |
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** | trilha em zero |
 | 8 | 19–22 s | **Resposta**, segurando o gorro | Capy EN: ⭐ "How much is it?" | vapor desce |
-| 9 | 22–25 s | A vendedora mostra o preço só em texto, na etiqueta que se parte em blocos: "$10" | Mike EN: "Ten dollars. Good!" | — |
-| 10 | 25–29 s | O celular toca: a Dona Jaca, fazendo conta num papel | Dona Jaca PT: "Dez dólares num gorro? Eu faço um em tricô por amor." | risada |
+| 9 | 22–25 s | A vendedora mostra o preço só em texto, na etiqueta que se parte em blocos: "$10" | Mike EN: "Ten dollars. Not bad!" | — |
+| 10 | 25–29 s | O celular toca: a Dona Jaca, com muito barulho atrás | Dona Jaca PT: "Filha, que barulho é esse? Parece feira." | risada |
 | 11 | 29–32 s | **2ª rodada:** a Capy encontra um enfeite de capivara feito à mão numa barraca. Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 35–38 s | **Resposta** | Capy EN: ⭐ "How much is it?" | vapor desce |
@@ -107,7 +111,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 **Frase-alvo: 5×** (cena 5 Lazy, 8 Capy, 13 Capy, 14 Mike, 15 Poppy), em 4 bocas. A última é da Poppy. O aluno fala 2×.
 
-**Por que este hype puxa o inglês:** em feira de rua o preço muitas vezes não está escrito, e perguntar é a única saída. A Dona Jaca convertendo para reais é o que todo brasileiro faz na cabeça.
+**Por que este hype puxa o inglês:** na feira de rua, nem toda barraca mostra o preço, e perguntar é a saída.
 
 ### V2 RESERVA ATEMPORAL · "o cardápio novo do Hank" · ~66 s
 
@@ -119,7 +123,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | 2 | A Poppy, filmando o quadro | Poppy PT: "Cardápio novo! Sem preço nenhum!" |
 | 3 | A Capy, de avental, do lado do cliente desta vez (folga) | (igual) |
 | 4 | A Duda, no caixa, espera o pedido | — |
-| 9 | A Duda pergunta ao Hank e mostra o preço numa etiqueta: "$5" | Mike EN: "Five dollars. Good!" |
+| 9 | A Duda pergunta ao Hank e mostra o preço numa etiqueta: "$5" | Mike EN: "Five dollars. Not bad!" |
 | 11 | A 2ª rodada é um biscoito em forma de capivara no balcão | (igual) |
 | 16 | O Hank, sem tirar os olhos da máquina | Hank PT: "Preço é detalhe. Café é arte." |
 | 18 | A porta abre e entra a Dona Jaca, de mala | (igual) |
@@ -146,7 +150,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | 6 | 14–17 s | **Rodada 2:** a 1ª seta de vapor desce | Lazy EN: ⭐ "How much is it?" | vapor desce |
 | 7 | 17–20 s | A 2ª seta sobe (gravado 1 vez só, sem risco vermelho) | Lazy EN: "How much is it?" (subindo no fim) | vapor sobe |
 | 8 | 20–23 s | "em qual desceu no fim?" + contador | ⏸ 3 s | trilha em zero |
-| 9 | 23–27 s | **Resposta:** a 1ª seta desce | Lazy PT: "Na primeira. Pergunta com how desce." | acerto |
+| 9 | 23–27 s | **Resposta:** a 1ª seta desce | Lazy PT: "Na primeira. Subindo, parece susto." | acerto |
 | 10 | 27–30 s | | Hank PT: "A segunda também dá pra entender. A primeira é mais inglês." | — |
 | 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** | Capy EN: ⭐ "How much is it?" · Capy PT: "Pede o café e pergunta o preço pro Hank." | vapor desce |
 | 12 | 34–39 s | **Personalize 1:** o Hank espera atrás do balcão | 🎤 **SUA VEZ** ("A coffee, please. How much is it?") | trilha em zero |
@@ -155,7 +159,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | 15 | 45–48 s | Balão vazio | 🎤 **SUA VEZ** ("How much is it?") | trilha em zero |
 | 16 | 48–50 s | **Para conferir:** a Duda, apontando um gorro | Duda EN: ⭐ "How much is it?" | — |
 | 17 | 50–55 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 13). Ele aponta uma vela e depois esfrega os dedos | Bolinha EN: "How old are you?" · Bolinha EN: ⭐ "How much is it?" · Bolinha PT: "Guardei as duas. Começam igual." | — |
-| 18 | 55–59 s | ⭐ **VITÓRIA DO ASSUNTO**: "você pediu e perguntou o preço" + **consigo ✓** + selo "T1 E17 · você já sabe 17 frases" | Capy PT: "Agora você entra num café americano sozinho." | acerto maior |
+| 18 | 55–59 s | ⭐ **VITÓRIA DO ASSUNTO**: "você pediu e perguntou o preço" + **consigo ✓** + selo "T1 E17 · você já sabe 17 frases" | Capy PT: "Agora você pede e pergunta o preço sozinho." | acerto maior |
 | 19 | 59–65 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"próximo assunto: This is my mother · segue a Capy"** | Capy PT: "Comenta: How much is it? E o que você quer comprar." | — |
 
 **Frase-alvo: 5×** no áudio (cena 3 Lazy, 6 Lazy, 11 Capy, 16 Duda, 17 Bolinha), em 4 bocas; a última é do Bolinha. A pergunta subindo (cena 7) é o contraste de melodia e não conta. O aluno fala 2× e reconhece 2×.

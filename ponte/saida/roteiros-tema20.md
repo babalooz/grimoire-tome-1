@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 20 · "What time is it? It's three o'clock." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado. **Último assunto da T1.**
@@ -19,6 +21,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **Frase-alvo:** ⭐ "It's three o'clock." (só é verdade quando o relógio marca 3; todas as ⭐ acontecem às 3 em ponto).
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 24/12, véspera de Natal (Natal = 25/12/2026, sexta). Sem hype seguro ou fora de dezembro, entra a reserva.
+
+**Janela do hype:** V2 "Natal às três" só se for ao ar até 25/12/2026; senão, V2 RESERVA.
 
 **Revisão de fim de temporada:** o Bolinha devolve "I'm tired." (assunto 16, cerca de 12 dias antes) e "Hi! I'm Capy." (assunto 1, o começo de tudo) no V3, com o texto "lembra dessa?".
 
@@ -68,7 +72,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 15 | 45–48 s | A Capy, apontando o relógio | Capy EN: ⭐ "It's three o'clock!" | clic |
 | 16 | 48–51 s | **Piada:** a Dona Jaca levanta num pulo com a travessa; o Lazy, do sofá, ainda no tempo dele | Dona Jaca PT: "Atrasadas!" · Lazy EN: ⭐ "...It's three o'clock." · Lazy PT: "Pra mim, cedo." | risada |
 | 17 | 51–56 s | ⭐ **VITÓRIA DO DIA**: as duas saem pela porta; a pizza inteira do relógio brilha. Card "1ª hora dita em inglês". Selo: **"T1 E20 · você já sabe 20 frases"** | Capy PT: "Disse a hora. E a minha mãe não perdeu o jantar." | acerto |
-| 18 | 56–65 s | Card final: **CONSIGO… dizer a hora cheia ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta a hora que você tá vendo isso: It's... o'clock." | — |
+| 18 | 56–65 s | Card final: **CONSIGO… dizer a hora cheia ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Na próxima hora cheia, olha o relógio e fala. Depois comenta: It's... o'clock." | — |
 
 **Frase-alvo no áudio: 6×** (Lazy ×2, Capy ×3, Hank), em 3 bocas. A última é do Lazy. O aluno fala 1×.
 
@@ -94,15 +98,15 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 8 | 19–22 s | **Resposta** | Capy EN: ⭐ "It's three o'clock." | clic |
 | 9 | 22–25 s | O Mike levanta a luva | Mike EN: "Three o'clock! Dinner!" · todos vão para a mesa | festa |
 | 10 | 25–29 s | A Poppy, filmando a mesa | Poppy PT: "Gente, Natal americano é de tarde! E a ceia brasileira?" | — |
-| 11 | 29–32 s | **2ª rodada:** a avó do Mike (sem voz), na cabeceira, bate no relógio de pulso; a pergunta vem em texto, em letras grandes: "WHAT TIME IS IT?". Tela: **"de novo: você é a Capy · mais alto!"** | ⏸ 0,6 s | — |
+| 11 | 29–32 s | **2ª rodada:** a avó do Mike (sem voz), na outra ponta da mesa, bate no relógio de pulso, que parou; a pergunta vem em texto, em letras grandes: "WHAT TIME IS IT?". Tela: **"de novo: você é a Capy · mais alto!"** | ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 35–38 s | **Resposta**, mais alto | Capy EN: ⭐ "It's three o'clock!" | clic |
 | 14 | 38–41 s | A Dona Jaca responde junto, para a avó, como no assunto 10 | Dona Jaca EN: ⭐ "It's three o'clock!" | risada |
 | 15 | 41–45 s | O Hank, convidado, corta o peru e olha o relógio | Hank EN: ⭐ "It's three o'clock." · Hank PT: "E o peru tá no ponto." | — |
-| 16 | 45–49 s | **Corte para a noite:** o relógio de pizza agora no 12. A família do Mike dorme no sofá; a Dona Jaca abre a travessa da ceia | Dona Jaca EN: "It's twelve o'clock!" (só para ouvir) · Dona Jaca PT: "Agora é Natal de verdade!" | — |
+| 16 | 45–49 s | **Corte para a noite:** o relógio de pizza agora no 12. A família do Mike dorme no sofá; a Dona Jaca abre a travessa | Dona Jaca EN: "It's twelve o'clock!" (só para ouvir) · Dona Jaca PT: "Meia-noite! Agora sim, ceia!" | — |
 | 17 | 49–53 s | A família acorda com o cheiro da farofa e vai para a mesa de novo | Mike EN: "Again?!" | risada |
-| 18 | 53–57 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você disse a hora no Natal americano" + **consigo ✓** | Capy PT: "Dois Natais no mesmo dia. Um às três, outro à meia-noite." | acerto |
-| 19 | 57–61 s | **Gancho verdadeiro:** congela na mesa. Texto: **"amanhã: o último vídeo da temporada 1"** (verdadeiro só se o V3 estiver agendado; o portão confere) | — | — |
+| 18 | 53–57 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você disse a hora no Natal americano" + **consigo ✓** | Capy PT: "Jantar às três, ceia à meia-noite. Natal em dobro." | acerto |
+| 19 | 57–61 s | **Gancho verdadeiro:** congela na mesa. Texto: **"próximo vídeo: o último da temporada 1"** (só se o V3 estiver agendado) | — | — |
 | 20 | 61–66 s | Card: "aula do assunto 20 no perfil · segue a Capy" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Dona Jaca, Hank), em 4 bocas. A última é do Hank. O aluno fala 2×. "Three o'clock! Dinner!" e "It's twelve o'clock!" são variações e não contam.
@@ -150,7 +154,7 @@ Para quando o V2 sair fora de dezembro. Mesmos exercícios, mesma ordem. Mudam s
 | 8 | 20–23 s | "em qual fechou no k?" + contador | ⏸ 3 s | trilha em zero |
 | 9 | 23–27 s | **Resposta:** a 1ª tampa faz clic | Lazy PT: "Na primeira." · Lazy EN: ⭐ "It's three o'clock." | clic |
 | 10 | 27–30 s | | Hank PT: "A segunda também dá pra entender. A primeira é mais inglês." | — |
-| 11 | 30–33 s | Tela: **"AGORA É VOCÊ"**. A Capy aponta o relógio no 3; o Hank olha para a câmera | Capy EN: ⭐ "It's three o'clock." · Hank EN: "What time is it?" | clic |
+| 11 | 30–33 s | Tela: **"AGORA É VOCÊ"**. A Capy aponta o relógio no 3 | Capy EN: ⭐ "It's three o'clock." · Capy PT: "Agora o Hank pergunta pra você." · Hank EN: "What time is it?" | clic |
 | 12 | 33–36 s | **Personalize 1:** balão vazio | 🎤 **SUA VEZ** ("It's three o'clock.") | trilha em zero |
 | 13 | 36–38 s | **Para conferir:** a Duda | Duda EN: ⭐ "It's three o'clock!" | acerto |
 | 14 | 38–41 s | **Personalize 2 · revisão da temporada.** O Bolinha. Texto: **"lembra dessas?"** Ele devolve a 1ª frase da série | Bolinha EN: "Hi!" (e espera) | — |
@@ -159,9 +163,11 @@ Para quando o V2 sair fora de dezembro. Mesmos exercícios, mesma ordem. Mudam s
 | 17 | 46–49 s | Balão vazio | 🎤 **SUA VEZ** ("I'm fine, thanks." ou "I'm tired.") | trilha em zero |
 | 18 | 49–52 s | O Bolinha cospe a última semente: o relógio | Bolinha EN: ⭐ "It's three o'clock." · Bolinha PT: "Guardei a temporada inteira." | tic |
 | 19 | 52–58 s | ⭐ **VITÓRIA DA TEMPORADA**: o mural do Bean There com os 20 adesivos/selos da T1 acendendo um por um. Card **"T1 completa · você já sabe 20 frases"** + **consigo ✓** | Capy PT: "Vinte frases. Você começou do zero. Lembra?" | acerto maior |
-| 20 | 58–66 s | Card: "sotaque não é erro: o objetivo é ser entendido" + **"fim da temporada 1"** + convite verdadeiro: **"os 20 assuntos estão no perfil, na ordem"** (e "temporada 2: <data>" **só** se a T2 estiver agendada) | Capy PT: "Comenta qual foi a sua frase favorita." | — |
+| 20 | 58–66 s | Card: "sotaque não é erro: o objetivo é ser entendido" + **"fim da temporada 1"** + convite verdadeiro: **"os 20 assuntos estão no perfil, na ordem"** (só se os 20 estiverem publicados; senão, "a temporada 1 está no perfil") (e "temporada 2: <data>" **só** se a T2 estiver agendada) | Capy PT: "Comenta qual foi a sua frase favorita." | — |
 
 **Frase-alvo: 5×** (Lazy ×2, Capy, Duda, Bolinha), em 4 bocas; a última é do Bolinha. "o-clóqui" (cena 7) é o contraste e não conta; "It's five o'clock." é variação. O aluno fala 3× (1 com a ⭐ + 2 da revisão da temporada) e reconhece 2×.
+
+**Contingência da cena 7:** se o TTS fechar o "o'clock" sozinho, a rodada 2 vira outra rodada de "qual relógio?" (3 × 8), com a voz do Hank dizendo ⭐ "It's three o'clock."; resposta: o relógio no 3. Sem forma errada.
 
 ---
 

@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 13 · "How old are you?" · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -14,13 +16,15 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **G + V + P:**
 - **G:** o bloco "How old are you?" e o molde da resposta "I'm + idade". O erro clássico do brasileiro, "I have 30 years." ✗, aparece escrito e riscado (e dito 1 vez só, no V3). Imagem fixa: a **tomada** (o "I" encaixa em "am", não em "have").
 - **V:** old; as idades aparecem escritas (30, 25) e ditas pelos personagens, só para ouvir.
-- **P:** "old" termina no **L**: a ponta da língua encosta atrás dos dentes ("ould", e não "óudi"). Volta o **ícone da colherzinha na borda da xícara ("tlim")** do assunto 5.
+- **P:** em "old", antes do d, a ponta da língua encosta atrás dos dentes de cima (o L de verdade), e não vira "ôud". Volta o ícone da colherzinha na borda da xícara ("tlim") do assunto 5.
 
 **Cultura (verdadeira e útil):** entre adultos americanos que não são próximos, perguntar a idade é considerado indiscreto; entre amigos, no aniversário, é natural. O vídeo mostra as duas coisas (o Hank se recusa a responder).
 
 **Frase-alvo:** ⭐ "How old are you?"
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 3/12, começo da temporada de festas de fim de ano americanas (as "holiday parties"). Data não fixa; sem hype seguro, entra a reserva.
+
+**Janela do hype:** V2 "holiday party" só se for ao ar até 24/12/2026; senão, V2 RESERVA.
 
 **Revisão:** o Bolinha devolve "We're friends." (assunto 9, cerca de 12 dias antes) no V3, com o texto "lembra dessa?".
 
@@ -57,17 +61,17 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 4 | 8–13 s | O Lazy aponta o bolo, depois o Mike, bem devagar | Lazy EN: ⭐ "How... old... are you?" · legenda EN + PT: "Quantos anos você tem?" | — |
 | 5 | 13–16 s | O Mike mostra 3 dedos e depois faz um zero com a mão; na tela, "30" | Mike EN: "I'm thirty." | — |
 | 6 | 16–21 s | Na tela, "I have 30 years." aparece e é riscado (só escrito); a tomada "I" encaixa em "am" e acende | Lazy PT: "Em inglês, você não TEM anos. Você É a idade: I'm." | clique da tomada |
-| 7 | 21–25 s | Close na boca do Lazy em "old", com o **ícone da colherzinha** encostando na xícara | Lazy PT: "No fim do old, a língua encosta. Igual Brazil." | tlim |
+| 7 | 21–25 s | Close na boca do Lazy em "old", com o **ícone da colherzinha** encostando na xícara | Lazy PT: "No old, antes do d, a língua encosta em cima. Igual o L de Brazil." | tlim |
 | 8 | 25–27 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. É a pergunta, hoje." | — |
 | 9 | 27–30 s | **Em coro.** Na tela: "fala JUNTO" | Capy EN: ⭐ "How old are you?" | tlim |
 | 10 | 30–33 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "How old are you?" | tlim |
 | 11 | 33–37 s | **Sozinho:** a Capy fica em silêncio e aponta para a câmera | 🎤 **SUA VEZ** ("How old are you?") | trilha em zero |
 | 12 | 37–40 s | **Para conferir** | Duda EN: ⭐ "How old are you?" | acerto baixinho |
-| 13 | 40–44 s | Balão do Hank ao fundo | Hank PT: "Saiu 'óudi'? Dá pra entender. Com a língua encostando, fica mais inglês." | — |
+| 13 | 40–44 s | Balão do Hank ao fundo | Hank PT: "Saiu 'ôud'? Dá pra entender. Com a língua encostando, fica mais inglês." | — |
 | 14 | 44–47 s | **Piada:** a Duda vira para o Hank | Duda EN: ⭐ "Hank! How old are you?" | — |
 | 15 | 47–50 s | O Hank, sem levantar os olhos | Hank EN: "Next question." · Hank PT: "Isso não se pergunta, Duda." | risada |
 | 16 | 50–53 s | A Capy, para o Mike, ao lado do bolo | Capy EN: ⭐ "How old are you?" · Mike EN: "Thirty!" | — |
-| 17 | 53–55 s | A Dona Jaca, por videochamada, cantando baixinho "parabéns" em português, sem música | Dona Jaca EN: ⭐ "How old are you?" · Dona Jaca PT: "Ah, um bebê." | risada |
+| 17 | 53–55 s | A Dona Jaca, por videochamada, batendo palmas (sem cantar) | Dona Jaca EN: ⭐ "How old are you?" · Dona Jaca PT: "Ah, um bebê." | risada |
 | 18 | 55–59 s | ⭐ **VITÓRIA DO DIA**: o Mike sopra a vela. Card "1ª pergunta de idade em inglês". Selo: **"T1 E13 · você já sabe 13 frases"** | Capy PT: "Perguntei. E sem errar o 'I have'." | acerto |
 | 19 | 59–65 s | Card final: **CONSIGO… perguntar a idade ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: I'm… e a sua idade. Se quiser contar." | — |
 
@@ -81,26 +85,26 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 **Quem traz o hype:** o Mike (aniversariante) e a Poppy (filma "aniversário estilo americano").
 
-**Exercício:** "você é a Capy", em 2 rodadas: a Capy pergunta a idade do Mike; depois a de uma amiga dele, que responde com orgulho.
+**Exercício:** "você é a Capy", em 2 rodadas: a Capy pergunta a idade de uma prima do Mike, que acabou de chegar; depois a da avó dele, que bate no peito querendo ser perguntada.
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre num fio de luzinhas** acendendo de ponta a ponta no Bean There; um bolo enorme no balcão. Texto: **"festa de fim de ano americana. e aniversário do Mike."** | — | luzinhas |
 | 2 | 2–5 s | A Poppy, filmando | Poppy PT: "Festa de fim de ano gringa E aniversário. Combo!" | — |
 | 3 | 5–8 s | A Capy, com o presente embrulhado na mão (objetivo por cima da ação) | Capy (pensa) PT: "Hoje eu pergunto a idade dele. Na frente de todo mundo." | — |
-| 4 | 8–11 s | O Mike abre os braços para a Capy | Mike EN: "Capy! You came!" | — |
+| 4 | 8–11 s | O Mike abre os braços para a Capy e aponta a prima dele, que acabou de chegar (sem voz), de suéter | Mike EN: "Capy! You came!" | — |
 | 5 | 11–14 s | O Lazy, cochilando atrás do bolo, cochicha | Lazy EN: ⭐ "How... old... are you?" | tlim |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando | ⏸ 0,6 s | — |
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** | trilha em zero |
 | 8 | 19–22 s | **Resposta** | Capy EN: ⭐ "How old are you?" | tlim |
-| 9 | 22–25 s | O Mike aponta as velas: um "3" e um "0" | Mike EN: "I'm thirty!" | festa |
+| 9 | 22–25 s | A prima responde só em texto, no balão: "I'm 25!", e faz um brinde com o copo | — | festa |
 | 10 | 25–29 s | A Poppy vira para o celular | Poppy EN: ⭐ "How old are you?" · Poppy PT: "Pergunta pro seu crush, não pro seu chefe." | — |
-| 11 | 29–32 s | **2ª rodada:** uma amiga do Mike (sem voz), de suéter, se aproxima com um prato de bolo. Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
+| 11 | 29–32 s | **2ª rodada:** a avó do Mike (a do assunto 10, sem voz) bate no peito, querendo ser perguntada. Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 12 | 32–35 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
-| 13 | 35–38 s | **Resposta.** O balão dela, só em texto: "I'm 25!" | Capy EN: ⭐ "How old are you?" | tlim |
+| 13 | 35–38 s | **Resposta.** O balão da avó, só em texto: "I'm 80!", e ela flexiona o braço | Capy EN: ⭐ "How old are you?" | tlim |
 | 14 | 38–42 s | **Piada:** a Duda pergunta para o Hank, que serve o café | Duda EN: ⭐ "And Hank?" (gesto da pergunta) · Hank EN: "Next question." | risada |
-| 15 | 42–45 s | A Dona Jaca, por videochamada, quer participar | Dona Jaca EN: ⭐ "How old are you?" · Mike EN: "Thirty!" | — |
-| 16 | 45–48 s | A Dona Jaca, encantada | Dona Jaca PT: "Trinta! Na tua idade eu já tinha a Capy." | risada |
+| 15 | 42–45 s | A Dona Jaca, por videochamada, não viu o balão e pergunta de novo | Dona Jaca EN: ⭐ "How old are you?" · Mike EN: "Eighty!" | — |
+| 16 | 45–48 s | A Dona Jaca, encantada | Dona Jaca PT: "Oitenta? E dança assim? Quero o chá dela." | risada |
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você perguntou a idade numa festa americana" + **consigo ✓** | Capy PT: "Perguntei duas vezes. E ninguém se ofendeu." | acerto |
 | 18 | 52–57 s | O Mike chega com um colega de trabalho (sem voz) e olha a Capy e a Duda, esperando ser apresentado | Capy (pensa) PT: "Ele quer que eu apresente a Duda. Como fala 'essa é minha amiga'?" | — |
 | 19 | 57–61 s | **Gancho verdadeiro:** congela. Texto: **"como apresenta uma amiga? próximo assunto: This is my friend."** (só se o assunto 14 estiver agendado) | — | — |
@@ -118,8 +122,9 @@ Para quando o hype de fim de ano não servir. Mesmos exercícios, mesma ordem. M
 |---|---|---|
 | 1 | **Abre numa caixa de bolo** sendo aberta no balcão do Bean There, de manhã. Texto: **"aniversário do Mike. café com bolo."** | — |
 | 2 | A Poppy, filmando | Poppy PT: "Aniversário de gringo no café. Bora!" |
+| 4 | O Mike aponta uma cliente fixa (sem voz) com um pedaço de bolo | Mike EN: "Capy! You came!" |
 | 9 | O Mike aponta as velas "3" e "0" | (igual) |
-| 11 | A 2ª pergunta vai para uma cliente do café (sem voz) que ganhou um pedaço de bolo | (igual) |
+| 11 | A avó do Mike, que veio trazer o bolo, bate no peito querendo ser perguntada | (igual) |
 | 18 | O Mike chega com um colega de trabalho para tomar café | (igual) |
 
 ---
@@ -183,7 +188,7 @@ Para quando o hype de fim de ano não servir. Mesmos exercícios, mesma ordem. M
 | C2 | V1, cenas 14–15 ("Hank! How old are you?" "Next question.") | ~6 s | "pergunta a idade do Hank" | idem |
 | C3 | V2, cenas 1–10 (a festa, você é a Capy, "pergunta pro crush, não pro chefe") | ~28 s | "festa americana de fim de ano" | "o capítulo inteiro tá no perfil" |
 | C4 | V3, cenas 3–7 ("I have thirty years" ou "I'm thirty"?) | ~13 s | "qual está certo?" | "resposta e aula no perfil" |
-| C5 | V2, cenas 15–16 (a Dona Jaca: "Na tua idade eu já tinha a Capy.") | ~6 s | "minha mãe descobrindo a idade do meu amigo" | "o capítulo inteiro tá no perfil" |
+| C5 | V2, cenas 15–16 (a Dona Jaca descobre que a avó tem 80: "Quero o chá dela.") | ~6 s | "minha mãe descobrindo a idade da avó do meu amigo" | "o capítulo inteiro tá no perfil" |
 
 ---
 

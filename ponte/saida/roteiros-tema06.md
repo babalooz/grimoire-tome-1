@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 6 · "She's from Italy." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`:
@@ -73,7 +75,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre num dedo:** a amiga do Mike (sem voz) aponta a Duda, que arruma croissants na vitrine. Texto: **"a pergunta que ficou sem resposta"** | Mike EN: "And she?" | — |
+| 1 | 0–2 s | **Abre num dedo:** a amiga do Mike (sem voz) aponta a Duda, que arruma croissants na vitrine. Texto: **"a pergunta que ficou sem resposta"** | Mike EN: "And her?" | — |
 | 2 | 2–5 s | A Capy olha a Duda, depois o Mike | Capy (pensa) PT: "De onde EU sou, eu sei dizer. E de onde ELA é?" | — |
 | 3 | 5–8 s | O Lazy chega devagar (objetivo falado por cima da ação, sem card) | Lazy PT: "Hoje você diz de onde outra pessoa é. Muda uma palavra só." | — |
 | 4 | 8–12 s | A Duda se vira, mão no peito, orgulhosa | Duda EN: "I'm from Italy!" · legenda EN + PT: "Eu sou da Itália!" | — |
@@ -87,8 +89,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 12 | 37–40 s | **Para conferir:** o Hank, sem tirar os olhos do café | Hank EN: ⭐ "She's from Italy." | acerto baixinho |
 | 13 | 40–44 s | Balão do Hank ao fundo | Hank PT: "Saiu com a força no meio? Dá pra entender. No começo fica mais inglês." | — |
 | 14 | 44–47 s | De volta ao Mike. A Capy aponta a Duda | Capy EN: ⭐ "She's from Italy." | xícara grande |
-| 15 | 47–50 s | O Mike sorri e aponta o Hank | Mike EN: "Cool! And Hank?" | — |
-| 16 | 50–53 s | **Piada:** a Duda abraça o braço do Hank | Duda EN: "My cousin!" · Hank EN: "No." | risada |
+| 15 | 47–50 s | O Mike sorri e aponta o Hank | Mike EN: "Cool!" | — |
+| 16 | 50–53 s | A Duda abraça o Hank pelo pescoço | Duda EN: "My cousin!" · Hank EN: "No." | risada |
 | 17 | 53–56 s | O Mike, rindo, confirma para a amiga | Mike EN: ⭐ "She's from Italy." | — |
 | 18 | 56–61 s | ⭐ **VITÓRIA DO DIA**: card "1ª vez falando de outra pessoa". Selo: **"T1 E06 · você já sabe 6 frases"** | Capy PT: "Falei de outra pessoa. Em inglês." | acerto |
 | 19 | 61–67 s | Card final: **CONSIGO… dizer de onde outra pessoa é ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: She's from… e a cidade da sua mãe." | — |
@@ -100,6 +102,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "a noite do futebol americano" · parte 2/3 · ~67 s
 
 **Hype de exemplo:** noite de jogo de futebol americano (temporada regular da NFL, que vai de setembro a janeiro). Sem data de jogo específico, sem time, sem logo. Na tela, "futebol americano"; "NFL" só na legenda do post (mesma regra do basquete nos assuntos 3 e 4). O roteirista troca pelo hype anglófono do radar da semana se houver um melhor; sem hype seguro, entra a reserva abaixo.
+
+Continua o V2 do assunto 5: o Mike, que já conhece a Capy do café, leva a Capy e a Duda para a noite de futebol americano.
 
 **Quem traz o hype:** o Mike (figurante recorrente), que leva a Capy e a Duda ao bar do jogo.
 
@@ -125,7 +129,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 16 | 44–47 s | A Duda manda um beijo para a tela | Duda EN: "Ciao!" | — |
 | 17 | 47–50 s | O Hank aparece no bar trazendo a garrafa térmica de café que o Mike encomendou. Ele olha a Duda | Hank EN: ⭐ "She's from Italy." · Hank EN: "Not my cousin." | risada |
 | 18 | 50–54 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você apresentou a Duda e a sua mãe num bar americano" + **consigo ✓** | Capy PT: "Apresentei a Duda. E a minha mãe." | acerto |
-| 19 | 54–59 s | O jogo acaba. O Mike passa pela porta, acena e já vai saindo | Mike EN: "How are you?" · Capy (pensa) PT: "Ele perguntou como eu tô... e foi embora?" | porta |
+| 19 | 54–59 s | O Mike volta do balcão com as bebidas e passa pela mesa sem parar, a caminho do telão | Mike EN: "Hey, Capy! How are you?" · Capy (pensa) PT: "Ele perguntou como eu tô... e nem esperou?" | — |
 | 20 | 59–63 s | **Gancho verdadeiro:** congela na Capy de boca aberta. Texto: **"como responde 'How are you?' (e por que ele nem espera)? próximo assunto"** (só se o assunto 7 estiver agendado; o portão confere) | — | — |
 | 21 | 63–67 s | Card: "aula do assunto 6 no perfil · segue a Capy pro próximo capítulo" | — | — |
 
@@ -144,7 +148,7 @@ Para semana sem hype anglófono seguro. Mesmos exercícios, mesma ordem, mesmas 
 | 5 | O Lazy, dormindo em pé na fila do caixa, cochicha | Lazy EN: ⭐ "She's... from... Italy." |
 | 10 | **Piada visual:** o grupo tira uma foto, a guia conta e todos sorriem. O Lazy sorri só depois do flash | — |
 | 17 | O Hank traz a bandeja de cafés para o grupo, olha a Duda | Hank EN: ⭐ "She's from Italy." · Hank EN: "Not my cousin." |
-| 19 | O grupo vai embora atrás da bandeirinha. O Mike, já na porta, acena | Mike EN: "How are you?" |
+| 19 | O grupo segue a bandeirinha até o balcão; o Mike passa pela Capy sem parar | Mike EN: "Hey, Capy! How are you?" · Capy (pensa) PT: "Ele perguntou como eu tô... e nem esperou?" |
 
 ---
 
@@ -178,7 +182,7 @@ Para semana sem hype anglófono seguro. Mesmos exercícios, mesma ordem, mesmas 
 | 14 | 40–42 s | A moldura ganha um ✓ | Capy PT: "Isso." | acerto |
 | 15 | 42–45 s | **Personalize 2:** o Hank olha para a câmera | Hank EN: "Where are you from?" | — |
 | 16 | 45–48 s | Balão vazio | 🎤 **SUA VEZ** ("I'm from…") | trilha em zero |
-| 17 | 48–50 s | O Hank aponta a moldura "ELA" | Hank EN: "And she?" | — |
+| 17 | 48–50 s | O Hank aponta a moldura | Hank EN: "And her?" | — |
 | 18 | 50–53 s | Balão vazio | 🎤 **SUA VEZ** ("She's from…") | trilha em zero |
 | 19 | 53–55 s | **Para conferir o padrão:** a Poppy, passando, aponta a Duda | Poppy EN: ⭐ "She's from Italy." | — |
 | 20 | 55–59 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 2). Ele acena da porta e depois guarda um adesivo da Itália na bochecha | Bolinha EN: "Bye! See you!" · Bolinha EN: ⭐ "She's from Italy." · Bolinha PT: "Guardei. Devolvo daqui a uns dias." | — |

@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 9 · "We're friends." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -63,7 +65,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 12 | 36–40 s | Balão do Hank ao fundo | Hank PT: "Saiu 'frendis'? Dá pra entender. Fechando, fica mais inglês." | — |
 | 13 | 40–43 s | De volta ao balcão. A Capy põe o braço no ombro do Mike e olha o Hank | Capy EN: ⭐ "We're friends." | clic |
 | 14 | 43–46 s | O Mike dá um abraço de urso e tira a Capy do chão | Mike EN: ⭐ "We're friends!" | — |
-| 15 | 46–50 s | **Piada:** a Duda se enfia num abraço com o Hank | Duda EN: "We're cousins!" · Hank EN: "No." | risada |
+| 15 | 46–50 s | O Mike abraça o Hank também. O Hank fica duro, sem abraçar de volta, e olha para a câmera. Sem fala. | — | risada |
 | 16 | 50–56 s | ⭐ **VITÓRIA DO DIA**: a selfie da cena 1 volta, agora com o Hank meio sorrindo no fundo. Card "1ª vez dizendo 'a gente'". Selo: **"T1 E09 · você já sabe 9 frases"** | Capy PT: "Um americano virou amigo. E eu sei dizer isso." | acerto |
 | 17 | 56–64 s | Card final: **CONSIGO… dizer que somos amigos ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Marca aqui um amigo e escreve: We're friends." | — |
 
@@ -75,6 +77,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 **Hype de exemplo:** Friendsgiving (fim de semana antes do Thanksgiving de 26/11/2026). Mesa comprida no Bean There à noite, peru desenhado, torta, cidra quente, adultos. **Sem:** marca, música, criança, bebida alcoólica em destaque.
 
+**Janela do hype:** V2 principal só se for ao ar até 26/11/2026; depois disso, V2 RESERVA ("o mural de fotos").
+
 **Quem traz o hype:** o Mike (figurante recorrente), que organiza o jantar e chama os amigos dele.
 
 **Exercício:** "você é a Capy", em 2 rodadas: a convidada pergunta o que a Capy e o Mike são; depois, o que a Capy e o Hank são.
@@ -82,9 +86,9 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre numa travessa de peru assado** pousando numa mesa comprida, luzinhas no teto do Bean There. Texto: **"Friendsgiving: o Thanksgiving dos amigos."** | — | talheres |
-| 2 | 2–5 s | A Poppy, filmando a mesa | Poppy PT: "Antes do Thanksgiving, americano faz um jantar só com os amigos!" | — |
+| 2 | 2–5 s | A Poppy, filmando a mesa | Poppy PT: "Antes do Thanksgiving, muito americano faz um jantar só com os amigos!" | — |
 | 3 | 5–8 s | A Capy chega com uma torta (objetivo por cima da ação) | Capy (pensa) PT: "Mesa cheia de americano. Hoje eu digo quem é amigo de quem." | — |
-| 4 | 8–11 s | Uma convidada (sem voz) aponta a Capy e o Mike; a pergunta vem só em texto: "you two?" | ⏸ 0,6 s | — |
+| 4 | 8–11 s | Uma convidada sem voz aponta a Capy e o Mike. Balão só em texto: "you two... friends?" | ⏸ 0,6 s | — |
 | 5 | 11–14 s | O Lazy, cochilando na ponta da mesa com o guardanapo no pescoço, cochicha meio dormindo | Lazy EN: ⭐ "We're... friends." | clic |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando | ⏸ 0,8 s | — |
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** (braço no ombro do Mike) | trilha em zero |
@@ -139,7 +143,7 @@ Para quando o V2 cair depois do Thanksgiving ou o hype não for seguro. Mesmos e
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre em duas molduras:** uma com 1 xícara, outra com 2 xícaras encostadas. Texto: **"um ou dois? escuta."** | — | — |
 | 2 | 2–5 s | O Lazy encosta nas molduras, devagar | Lazy PT: "Hoje você ouve se é um ou são dois. E diz quem é seu amigo." | — |
-| 3 | 5–8 s | Só a voz, sem mostrar boca | Voz (Poppy) EN: "We're friends." | — |
+| 3 | 5–8 s | Só a voz, sem mostrar boca | Voz (Poppy) EN: "We're from Brazil." (não conta como ⭐) | — |
 | 4 | 8–11 s | **Rodada 1:** "uma ou duas xícaras? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
 | 5 | 11–14 s | **Resposta:** as 2 xícaras se encostam | Lazy PT: "Duas. We're é a gente: sempre mais de um." | acerto |
 | 6 | 14–17 s | **Rodada 2:** duas tampas de copo. A 1ª fecha | Lazy EN: ⭐ "We're friends." | clic |
@@ -150,7 +154,7 @@ Para quando o V2 cair depois do Thanksgiving ou o hype não for seguro. Mesmos e
 | 11 | 30–34 s | Tela: **"AGORA É VOCÊ"**. Uma moldura vazia: "VOCÊ + ?" | Capy EN: ⭐ "We're friends." · Capy PT: "Pensa num amigo de verdade. Fala olhando pra ele." | clic |
 | 12 | 34–38 s | **Personalize 1:** a moldura pisca | 🎤 **SUA VEZ** ("We're friends.") | trilha em zero |
 | 13 | 38–40 s | A moldura ganha um ✓ | Capy PT: "Isso." | acerto |
-| 14 | 40–43 s | **Personalize 2:** o Hank aponta a Capy e depois a câmera (você) | Hank EN: "You two?" | — |
+| 14 | 40–43 s | **Personalize 2:** o Hank aponta a Capy e depois a câmera (você) | Hank EN: "You two... friends?" | — |
 | 15 | 43–47 s | Balão vazio | 🎤 **SUA VEZ** ("We're friends.") | trilha em zero |
 | 16 | 47–50 s | **Para conferir:** a Duda pula num abraço com a Capy | Duda EN: ⭐ "We're friends!" | — |
 | 17 | 50–55 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 5). Ele aponta o adesivo do Brasil no mapa e depois guarda a selfie do V1 na bochecha | Bolinha EN: "I'm from Brazil." · Bolinha EN: ⭐ "We're friends." · Bolinha PT: "Guardei. Devolvo daqui a uns dias." | — |

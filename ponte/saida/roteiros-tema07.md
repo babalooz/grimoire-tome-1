@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 7 · "How are you? I'm fine, thanks." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -56,7 +58,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 3 | 5–8 s | O Lazy chega devagar (objetivo por cima da ação, sem card) | Lazy PT: "Hoje você responde o How are you. Curto, igual americano." | — |
 | 4 | 8–12 s | O Hank, limpando o balcão, sem levantar os olhos | Hank PT: "Aqui, How are you é um oi. Ninguém quer a sua vida inteira." | — |
 | 5 | 12–17 s | A Duda passa pelo Lazy e pergunta; o Lazy responde com um joinha lento | Duda EN: "How are you?" · Lazy EN: ⭐ "I'm... fine... thanks." · legenda EN + PT: "Tô bem, obrigado." | — |
-| 6 | 17–21 s | Close na boca do Lazy no "th": a ponta da língua aparece entre os dentes, com o **ícone do saquinho de chá com a etiqueta para fora**. Na tela, "tenks" aparece e é riscado (só escrito) | Lazy PT: "No thanks, a língua aparece. Igual a etiqueta do chá." | — |
+| 6 | 17–21 s | Close na boca do Lazy no "th": a ponta da língua aparece entre os dentes, com o **ícone do saquinho de chá com a etiqueta para fora**. Na tela, "tenks" aparece e é riscado (só escrito) | Lazy PT: "Em thanks, a língua aparece. Igual a etiqueta do chá." | — |
 | 7 | 21–23 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. Língua pra fora, sem vergonha." | — |
 | 8 | 23–26 s | **Em coro:** a Capy fala e o karaokê acende junto. Na tela: "fala JUNTO" | Capy EN: ⭐ "I'm fine, thanks." | etiqueta balança |
 | 9 | 26–29 s | De novo em coro, um pouco mais natural | Capy EN: ⭐ "I'm fine, thanks." | etiqueta balança |
@@ -103,7 +105,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 15 | 42–46 s | O Hank chega com a garrafa térmica do Bean There. O técnico passa por ele | Técnico EN: "How are you?" · Hank EN: "Tired." | — |
 | 16 | 46–50 s | **Piada:** a Poppy arregala os olhos para ele. O Hank suspira | Poppy PT: "Hank! É só fine!" · Hank EN: ⭐ "...I'm fine, thanks." | risada |
 | 17 | 50–54 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você respondeu no bastidor de um show gringo" + **consigo ✓** | Capy PT: "Respondi três vezes. E ninguém parou." | acerto |
-| 18 | 54–58 s | O técnico volta com uma prancheta (lista da equipe) e aponta o crachá dela | Técnico EN: "Capy? Spell it?" · Capy (pensa) PT: "Soletrar... em inglês?" | — |
+| 18 | 54–58 s | O técnico volta com uma prancheta (lista da equipe) e aponta o crachá dela | Técnico EN: "Capy... can you spell that?" · Capy (pensa) PT: "Soletrar... em inglês?" | — |
 | 19 | 58–62 s | **Gancho verdadeiro:** congela. Texto: **"como se soletra CAPY em inglês? próximo assunto: How do you spell it?"** (só se o assunto 8 estiver agendado) | — | — |
 | 20 | 62–66 s | Card: "aula do assunto 7 no perfil · segue a Capy pro próximo capítulo" | — | — |
 
@@ -124,7 +126,7 @@ Mesmos exercícios, mesma ordem. Mudam só estas cenas:
 | 11 | **2ª rodada:** uma corredora (sem voz) pega o café sem parar de correr no lugar; a pergunta vem só em texto | — |
 | 14 | A corredora sai pela porta ainda correndo | Capy (pensa) PT: "Ela nem parou de correr." |
 | 15 | O Hank volta do estoque com sacos de café | as mesmas falas |
-| 18 | O cliente de terno volta com o copo: o Hank escreveu o nome dele errado | Cliente EN: "Capy? Spell it?" vira Cliente EN: "My name. Spell it?" · Capy (pensa) PT: "E se pedirem pra EU soletrar?" |
+| 18 | O cliente de terno volta com o copo escrito "JOHN" e aponta o nome | Cliente EN: "It's Jon. No H." · Capy (pensa) PT: "E se pedirem pra EU soletrar?" |
 
 ---
 
@@ -156,7 +158,7 @@ Mesmos exercícios, mesma ordem. Mudam só estas cenas:
 | 12 | 33–35 s | **Personalize 1:** o Hank olha para a câmera | Hank EN: "How are you?" | — |
 | 13 | 35–38 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 14 | 38–40 s | O Hank quase sorri | Hank EN: "Good." | — |
-| 15 | 40–43 s | **Personalize 2:** tela "agora rápido, igual americano". O Mike passa pela vitrine | Mike EN: "How are you?" | passos |
+| 15 | 40–43 s | **Personalize 2:** tela "agora rápido, igual americano". A Poppy passa com o celular | Poppy EN: "How are you?" | passos |
 | 16 | 43–45 s | Barra de tempo curta (1,8 s) | 🎤 **SUA VEZ** | trilha em zero |
 | 17 | 45–47 s | **Para conferir:** a Duda, de passagem | Duda EN: ⭐ "I'm fine, thanks!" | — |
 | 18 | 47–49 s | O Mike, de longe, levanta o polegar | — | acerto |

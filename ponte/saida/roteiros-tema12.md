@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 12 · "My number is…" · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -35,7 +37,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | Vídeo | Começo do título/legenda | Fim da descrição |
 |---|---|---|
 | V1 | `Ep. 12 (parte 1/3) · My number is: como ditar o telefone em inglês` | `anterior: Ep. 11 (parte 3/3)` |
-| V2 | `Ep. 12 (parte 2/3) · Cyber Monday: o Hank comprou uma máquina` | `anterior: Ep. 12 (parte 1/3)` |
+| V2 | `Ep. 12 (parte 2/3) · o Hank comprou uma máquina na promoção` | `anterior: Ep. 12 (parte 1/3)` |
 | V3 | `Ep. 12 (parte 3/3) · um número muda tudo: só pelo ouvido` | `anterior: Ep. 12 (parte 2/3)` |
 | Cortes | `do Ep. 12 · …` | `anterior: Ep. 12 (parte X/3)` de onde saiu |
 
@@ -79,7 +81,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 ## VÍDEO 2 · PRATICAR · HISTÓRIA COM HYPE DO MUNDO QUE FALA INGLÊS · ≥ 61 s · "Cyber Monday: a máquina do Hank" · parte 2/3 · ~66 s
 
-**Hype de exemplo:** Cyber Monday (segunda, 30/11/2026), o dia das compras online depois do Thanksgiving. O Hank comprou uma máquina de espresso pela internet; ela chegou com defeito, e é preciso ligar para o suporte. **Sem:** marca da máquina, nome de loja, número real.
+**Hype de exemplo:** compra em promoção online de fim de novembro, sem data na tela. #BlackFriday só na legenda do post e só se for ao ar até 30/11/2026. O Hank comprou uma máquina de espresso pela internet; ela chegou com defeito, e é preciso ligar para o suporte. **Sem:** marca da máquina, nome de loja, número real.
 
 **Quem traz o hype:** o Hank (a compra) e o atendente do suporte (figurante com voz, só no viva-voz).
 
@@ -87,10 +89,10 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre numa caixa enorme** sendo empurrada porta adentro; dentro, uma máquina de espresso sem marca, soltando uma fumacinha. Texto: **"Cyber Monday: o Hank comprou uma máquina. veio com defeito."** | — | caixa arrastando |
+| 1 | 0–2 s | **Abre numa caixa enorme** sendo empurrada porta adentro; dentro, uma máquina de espresso sem marca, soltando uma fumacinha. Texto: **"o Hank comprou uma máquina na promoção. veio com defeito."** | — | caixa arrastando |
 | 2 | 2–5 s | O Hank empurra o celular para a Capy | Hank PT: "Liga pro suporte. Eu não falo com estranho no telefone." | — |
 | 3 | 5–8 s | A Capy, com o celular no viva-voz (objetivo por cima da ação) | Capy (pensa) PT: "Ligação em inglês. Hoje eu dito meu número de verdade." | música de espera genérica |
-| 4 | 8–11 s | Uma janelinha de chamada: o atendente (figurante: um esquilo de headset) | Suporte EN: "Your phone number?" | — |
+| 4 | 8–11 s | Uma janelinha de chamada: o atendente (figurante: um esquilo de headset) | Suporte EN: "Can I get your phone number?" | — |
 | 5 | 11–14 s | O Lazy, dentro da caixa vazia, entre os isopores, cochicha | Lazy EN: ⭐ "My... number... is..." | — |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando; o número 555-0123 aparece no canto da tela | ⏸ 0,6 s | — |
 | 7 | 16–20 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** ("My number is… five, five, five…") | trilha em zero |
@@ -102,7 +104,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 13 | 38–41 s | Música de espera de novo. O Hank bufa | Hank PT: "Terceira vez? Me dá isso." | música de espera |
 | 14 | 41–45 s | **Piada:** o Hank, que não fala com estranho, pega o telefone e dita seco, rápido, em blocos | Hank EN: ⭐ "My number is..." · Hank EN: "five, five, five, oh, one, two, three." | — |
 | 15 | 45–48 s | A Poppy, que filmava o "unboxing" | Poppy PT: "Ele falou com estranho!" | — |
-| 16 | 48–51 s | | Suporte EN: "New machine. Tomorrow." | — |
+| 16 | 48–51 s | | Suporte EN: "We'll send a new one. Tomorrow." | — |
 | 17 | 51–54 s | O Lazy sai da caixa, ainda terminando a frase da cena 5 | Lazy EN: ⭐ "...My... number... is..." | risada |
 | 18 | 54–58 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você ditou seu número numa ligação em inglês" + **consigo ✓** | Capy PT: "Liguei pro suporte. E a máquina chega amanhã." | acerto |
 | 19 | 58–62 s | O celular vibra: mensagem do Mike com a foto de um bolo com velas. Texto da mensagem: "how old are you?" | Capy (pensa) PT: "Idade em inglês... é 'eu tenho'?" | vibração |
@@ -121,12 +123,12 @@ Para quando o V2 cair longe do Cyber Monday. Mesmos exercícios, mesma ordem. Mu
 |---|---|---|
 | 1 | **Abre num telefone fixo antigo** tocando no balcão do Bean There. Texto: **"um escritório quer 30 cafés. por telefone."** | — (telefone tocando) |
 | 2 | O Hank empurra o telefone para a Capy | (igual) |
-| 4 | O cliente do escritório (o mesmo esquilo, agora de gravata), numa janelinha | Cliente EN: "Your phone number?" |
+| 4 | O cliente do escritório (o mesmo esquilo, agora de gravata), numa janelinha | Cliente EN: "Can I get your phone number?" |
 | 9 | | Cliente EN: "Thanks. One moment." |
 | 10 | O cliente passa o telefone para a chefe (sem voz), que pede de novo em texto | (igual) |
 | 13–14 | O Hank pega o telefone | (iguais) |
 | 15 | A Poppy, filmando a pilha de copos | (igual) |
-| 16 | | Cliente EN: "Thirty coffees. Noon." |
+| 16 | | Cliente EN: "Thirty coffees. By noon." |
 | 17 | O Lazy sai de trás da pilha de copos | (igual) |
 | 18 | Card | "você ditou seu número para um pedido em inglês" |
 

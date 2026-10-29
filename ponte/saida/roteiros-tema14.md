@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 14 · "This is my friend." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -19,6 +21,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 **Frase-alvo:** ⭐ "This is my friend." (só sai da boca de quem está apresentando um amigo de verdade, com o amigo do lado).
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 6/12. A festa do suéter feio ("ugly sweater party") é tradição americana de dezembro, sem data fixa. Sem hype seguro, entra a reserva.
+
+**Janela do hype:** V2 "festa do suéter feio" só se for ao ar entre 1 e 24/12/2026; senão, V2 RESERVA.
 
 **Revisão:** o Bolinha devolve "Yes, I am." (assunto 10, cerca de 12 dias antes) no V3, com o texto "lembra dessa?". O V1 e o V3 usam "We're friends." (assunto 9) como ponte.
 
@@ -99,8 +103,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 15 | 41–44 s | A turma aplaude o suéter do Lazy, que acorda | Lazy PT: "Ganhei? Eu só tava com frio." | risada |
 | 16 | 44–48 s | A Poppy apresenta a Capy para os seguidores dela | Poppy EN: ⭐ "This is my friend!" | — |
 | 17 | 48–52 s | ⭐ **VITÓRIA DO CAPÍTULO**: card "você apresentou sua turma numa festa americana" + **consigo ✓** | Capy PT: "Apresentei a Duda e o Lazy. E o Lazy ganhou." | acerto |
-| 18 | 52–57 s | O Mike chega com uma pilha de caixas embrulhadas | Mike EN: "Gift exchange!" · Capy (pensa) PT: "Troca de presente? E se eu não souber dizer o que é?" | papel de presente |
-| 19 | 57–61 s | **Gancho verdadeiro:** congela numa caixa. Texto: **"o que tem na caixa? próximo assunto: It's a phone."** (só se o assunto 15 estiver agendado) | — | — |
+| 18 | 52–57 s | O Mike pendura um cartaz na parede: "GIFT EXCHANGE" | Mike EN: "Gift exchange! Next week!" · Capy (pensa) PT: "Troca de presente? E se eu não souber dizer o que é?" | papel de presente |
+| 19 | 57–61 s | **Gancho verdadeiro:** congela no cartaz. Texto: **"o que vai ter na caixa? próximo assunto: It's a phone."** (só se o assunto 15 estiver agendado) | — | — |
 | 20 | 61–66 s | Card: "aula do assunto 14 no perfil · segue a Capy pro próximo capítulo" | — | — |
 
 **Frase-alvo: 5×** (Lazy, Capy ×2, Mike, Poppy), em 4 bocas. A última é da Poppy. O aluno fala 2×.
@@ -119,7 +123,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | 10 | O Hank, de avental | Hank PT: "Seis cafés. Ninguém pediu ainda." |
 | 11 | A caixa de copos anda sozinha até a mesa: o Lazy dentro | (igual) |
 | 15 | O time do Mike ri da caixa | Lazy PT: "Eu só tava cochilando." |
-| 18 | O Mike tira da mochila caixinhas embrulhadas | Mike EN: "Gifts! For you!" |
+| 18 | O Mike prende no mural do café um cartaz "GIFT EXCHANGE" | Mike EN: "Gift exchange! Next week!" |
 
 ---
 
@@ -127,7 +131,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 
 **Exercícios:**
 1. **Ouça e reconheça**, em 2 rodadas:
-   - "quem está sendo apresentado?": a voz diz "This is my friend." e a mão de quem apresenta aponta para um de dois personagens; qual? (pelo gesto + som);
+   - "falou de outra pessoa ou dela mesma?": a voz diz "This is my friend." e o aluno escolhe o cartão (mão aberta para o lado = apresentar alguém × mão no peito = falar de si, como no "I'm Duda");
    - "this ou dis?": as duas, uma vez cada (mesmo recurso aprovado nos V3 dos assuntos 1 e 5).
 2. **Personalize**, em 2 rodadas: o aluno apresenta um amigo de verdade (mão aberta para o lado); e o aluno apresenta a Capy ao Hank.
 
@@ -137,9 +141,9 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre em dois saquinhos de chá** pendurados, um com a etiqueta tremendo e outro parado. Texto: **"um vibra. o outro não. escuta."** | — | zumbido curto |
 | 2 | 2–5 s | O Lazy encosta nos saquinhos, devagar | Lazy PT: "Hoje você reconhece o this e apresenta alguém." | — |
-| 3 | 5–8 s | **Rodada 1:** a Poppy está entre o Bolinha e a Duda; a mão dela abre para um lado só | Poppy EN: ⭐ "This is my friend." | — |
-| 4 | 8–11 s | "quem ela apresentou? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
-| 5 | 11–14 s | **Resposta:** o Bolinha acende | Lazy PT: "O Bolinha. Mão aberta pra ele: this é o do lado." | acerto |
+| 3 | 5–8 s | **Rodada 1:** dois cartões, mão aberta para o lado e mão no peito. Só a voz, sem boca | Voz (Poppy) EN: ⭐ "This is my friend." | — |
+| 4 | 8–11 s | "ela falou de outra pessoa ou dela mesma? pensa aí... ou chuta nos comentários" + contador | ⏸ 3 s | trilha em zero |
+| 5 | 11–14 s | **Resposta:** a mão aberta acende | Lazy PT: "Outra pessoa. This is é quem tá do lado. Pra você mesmo, é I'm." | acerto |
 | 6 | 14–17 s | **Rodada 2:** o 1º saquinho, etiqueta tremendo | Lazy EN: ⭐ "This is my friend." | zumbido |
 | 7 | 17–20 s | O 2º saquinho, parado (gravado 1 vez só, sem risco vermelho) | Lazy EN: "Dis is my friend." | — |
 | 8 | 20–23 s | "em qual a etiqueta tremeu?" + contador | ⏸ 3 s | trilha em zero |
@@ -148,7 +152,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | 11 | 30–34 s | Tela: **"AGORA É VOCÊ"**. Uma moldura vazia ao lado da câmera: "SEU AMIGO" | Capy EN: ⭐ "This is my friend." · Capy PT: "Pensa num amigo do seu lado. Mão aberta." | etiqueta treme |
 | 12 | 34–38 s | **Personalize 1:** a moldura pisca | 🎤 **SUA VEZ** ("This is my friend." + o nome dele) | trilha em zero |
 | 13 | 38–40 s | A moldura ganha um ✓ | Capy PT: "Isso." | acerto |
-| 14 | 40–43 s | **Personalize 2:** a Capy fica do lado da câmera; o Hank olha para ela e para você | Hank EN: "And she?" | — |
+| 14 | 40–43 s | **Personalize 2:** a Capy fica do lado da câmera e cochicha; o Hank olha para ela e para você | Capy PT: "Me apresenta pro Hank. Ele vai fingir que não me conhece." · Hank EN (fingindo): "And her?" | — |
 | 15 | 43–47 s | Balão vazio | 🎤 **SUA VEZ** ("This is my friend. Capy.") | trilha em zero |
 | 16 | 47–49 s | O Hank acena com 1 dedo para a Capy, como no assunto 1 | Hank EN: "Hi, Capy." | — |
 | 17 | 49–54 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 10). Ele faz que sim e depois abre a mão para o Lazy | Bolinha EN: "Yes, I am." · Bolinha EN: ⭐ "This is my friend." · Bolinha PT: "Guardei. Devolvo daqui a uns dias." | — |
@@ -171,7 +175,7 @@ Para quando o hype de dezembro não servir. Mesmos exercícios, mesma ordem. Mud
 | Quem diz a última ⭐ | Mike | Poppy | Bolinha | Capy nunca ✓ |
 | O aluno fala | 1 | 2 | 2 | **5** |
 | Reconhecimentos | — | — | 2 | 2 |
-| Revisão | friend (assunto 9), "Hi! I'm Duda!" (assunto 1) | "Ciao!" (assunto 6) | "And she?" (assunto 6), "Hi, Capy." (assunto 1); Bolinha: assunto 10 | ✓ |
+| Revisão | friend (assunto 9), "Hi! I'm Duda!" (assunto 1) | "Ciao!" (assunto 6) | "And her?" (assunto 6, já corrigido), "Hi, Capy." (assunto 1); Bolinha: assunto 10 | ✓ |
 | Primeiros 3 s | duas mãos paradas no ar | suéter de rena piscando | dois saquinhos de chá | variam ✓ |
 | Gancho verdadeiro no fim | — | próximo assunto (15) | próximo assunto (15) | |
 

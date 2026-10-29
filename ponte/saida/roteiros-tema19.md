@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 19 · "I'm a doctor." · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -24,6 +26,8 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 **Datas do hype:** pela estimativa (1 vídeo por dia), o V2 cai perto de 21/12, semana do Natal. Sem hype seguro, entra a reserva.
 
+**Janela do hype:** V2 "festa de Natal" só se for ao ar até 24/12/2026; senão, V2 RESERVA.
+
 **Revisão:** o Bolinha devolve "It's a phone." (assunto 15, cerca de 12 dias antes) no V3, com o texto "lembra dessa?" — o mesmo "a" antes da palavra.
 
 **Selos:** "T1 E19", "T1 E19 · parte 2/3", "T1 E19 · parte 3/3". Progresso real: "você já sabe 19 frases".
@@ -37,7 +41,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | V3 | `Ep. 19 (parte 3/3) · I'm a ou I'm? só pelo ouvido` | `anterior: Ep. 19 (parte 2/3)` |
 | Cortes | `do Ep. 19 · …` | `anterior: Ep. 19 (parte X/3)` de onde saiu |
 
-**Vozes:** as mesmas dos assuntos 6–18 (Dona Jaca em pessoa, sem filtro de telefone). Figurante com voz (speaker `turista`, Orus): o vizinho do Mike (o urso do inflável, médico) no V1 e no V2. No V3 não há figurante com voz.
+**Vozes:** as mesmas dos assuntos 6–18 (Dona Jaca em pessoa, sem filtro de telefone). Figurante com voz (speaker `turista`, Orus): o vizinho do Mike (o castor do inflável, médico) no V1 e no V2. O Mike não fala no V1 nem no V2 do assunto 19. No V3 não há figurante com voz.
 
 **Legenda e regras:** as mesmas dos assuntos 1–18 (no máximo 4 palavras por fala em inglês; ⭐ a ~100 palavras/min na 1ª vez; pausas ≥ 0,6 s; Hank seco sem humilhar; a Capy nunca a última ⭐ (ela nunca diz a ⭐ neste assunto: não é médica); erro dito 1× e riscado; nada infantil; nada de cena médica com sangue ou doença).
 
@@ -53,11 +57,11 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
-| 1 | 0–2 s | **Abre num crachá caindo** no chão do Bean There: "DR. JACA". Texto: **"ela é médica. e não sabe dizer isso em inglês."** | — | crachá no chão |
-| 2 | 2–5 s | O vizinho do Mike (um urso de suéter, o do inflável) toma café e pergunta | Vizinho EN: "What do you do?" | — |
+| 1 | 0–2 s | **Abre num crachá caindo** no chão do Bean There: "DR. JACA". Texto: **"ontem ela não soube responder. hoje ele veio ao café."** | — | crachá no chão |
+| 2 | 2–5 s | O vizinho do Mike (um castor de suéter, o do inflável) toma café e pergunta | Vizinho EN: "What do you do?" | — |
 | 3 | 5–8 s | A Dona Jaca, em pânico, cochicha para a Capy | Dona Jaca PT: "Filha, como fala 'sou médica'?" | — |
 | 4 | 8–11 s | O Lazy chega devagar (objetivo por cima da ação) | Lazy PT: "Hoje você diz o que faz. Com um 'a' que ninguém pode esquecer." | — |
-| 5 | 11–16 s | O Lazy põe um estetoscópio de brinquedo de adulto (de feltro) e aponta para si, bem devagar | Lazy EN: ⭐ "I'm... a... doctor." · legenda EN + PT: "Eu sou médico." | — |
+| 5 | 11–16 s | O Lazy põe um estetoscópio de feltro, de enfeite, e aponta para si, bem devagar | Lazy EN: ⭐ "I'm... a... doctor." · legenda EN + PT: "Eu sou médico." | — |
 | 6 | 16–20 s | Na tela, "I'm doctor." aparece e o crachá cai; a plaquinha "a" encaixa e o crachá fica de pé. "I'm doctor." é riscado (só escrito) | Lazy PT: "Sem o 'a', o crachá cai. Profissão sempre com 'a'." | crachá |
 | 7 | 20–24 s | Fileira de 4 xícaras sob "I'm-a-doc-tor": a do "a" é **pequenininha**, a do "doc" é grande | Lazy PT: "O 'a' é fraquinho. Quase some. A força vai no DOC." | tlim fraco, tlim forte |
 | 8 | 24–26 s | Tela: **"REPETE COMIGO"** | Capy PT: "Repete com o Lazy. Eu não sou médica, mas ajudo." | — |
@@ -69,7 +73,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 14 | 43–46 s | A Dona Jaca respira, pega o crachá do chão e vira para o vizinho | Dona Jaca EN: ⭐ "I'm a doctor." | xícara pequena |
 | 15 | 46–49 s | O vizinho sorri e aponta para si | Vizinho EN: ⭐ "Me too! I'm a doctor." | — |
 | 16 | 49–52 s | **Piada:** os dois médicos se olham e, ao mesmo tempo, olham a garganta do Hank, que tossiu | Hank EN: "No." · Hank PT: "Eu tô ótimo." | risada |
-| 17 | 52–55 s | A Capy, de avental, entra na conversa com o mesmo molde | Capy EN: "And I'm a barista." | — |
+| 17 | 52–55 s | A Capy, no balcão, testa o molde com a profissão dela (o vizinho não ouve: está ocupado com a garganta do Hank) | Capy EN: "I'm a barista." | — |
 | 18 | 55–59 s | ⭐ **VITÓRIA DO DIA**: o crachá "DR. JACA" de pé no avental da Dona Jaca. Card "1ª profissão dita em inglês". Selo: **"T1 E19 · você já sabe 19 frases"** | Capy PT: "Minha mãe disse o que faz. E eu também." | acerto |
 | 19 | 59–65 s | Card final: **CONSIGO… dizer o que eu faço ✓** + "sotaque não é erro: o objetivo é ser entendido" | Capy PT: "Comenta: I'm a… e a sua profissão." | — |
 
@@ -88,15 +92,15 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | # | Tempo | Cena | Fala | Som |
 |---|---|---|---|---|
 | 1 | 0–2 s | **Abre numa árvore de Natal** sendo ligada na tomada (a tomada do dicionário visual, em versão Natal). Texto: **"festa de Natal americana: todo mundo pergunta o que você faz."** | — | clique da tomada |
-| 2 | 2–5 s | A Poppy, filmando a sala | Poppy PT: "Gente, gringo pergunta a profissão antes de perguntar o nome!" | — |
+| 2 | 2–5 s | A Poppy, filmando a sala | Poppy PT: "Gente, aqui o 'what do you do?' vem logo depois do nome!" | — |
 | 3 | 5–8 s | A Capy chega com a Dona Jaca (objetivo por cima da ação) | Capy (pensa) PT: "Hoje eu digo o que eu faço. E a minha mãe também." | — |
-| 4 | 8–11 s | O vizinho médico recebe as duas com um copo de cidra quente | Vizinho EN: "What do you do?" | — |
+| 4 | 8–11 s | O vizinho médico recebe as duas com um copo de cidra quente; não reconhece a Capy sem o avental | Vizinho EN: "What do you do?" | — |
 | 5 | 11–14 s | O Lazy, deitado embaixo da árvore como se fosse presente, cochicha o molde com o exemplo e depois a troca | Lazy EN: ⭐ "I'm a doctor..." · Lazy EN: 🔁 "...barista." | xícara pequena |
 | 6 | 14–16 s | Tela: **"você é a Capy"**. Balão vazio piscando | ⏸ 0,6 s | — |
 | 7 | 16–19 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** ("I'm a barista.") | trilha em zero |
 | 8 | 19–22 s | **Resposta** | Capy EN: 🔁 "I'm a barista." | xícara pequena |
-| 9 | 22–25 s | O vizinho vira para a Dona Jaca | Vizinho EN: "And you?" · Dona Jaca EN: ⭐ "I'm a doctor!" | — |
-| 10 | 25–28 s | O vizinho, empolgado, abraça a Dona Jaca | Vizinho EN: ⭐ "Me too! I'm a doctor." | — |
+| 9 | 22–25 s | Uma convidada (sem voz) pergunta à Dona Jaca, só em texto: "and you?" | Dona Jaca EN: ⭐ "I'm a doctor!" | — |
+| 10 | 25–28 s | A convidada vira para o vizinho, que ri e levanta o copo | Vizinho EN: ⭐ "I'm a doctor, too!" | — |
 | 11 | 28–31 s | **2ª rodada:** uma convidada (sem voz) de suéter de rena aponta a Capy; a pergunta vem em texto: "what do you do?". Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 12 | 31–34 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 13 | 34–37 s | **Resposta** | Capy EN: 🔁 "I'm a barista." | xícara pequena |
@@ -119,7 +123,7 @@ Para quando o hype de Natal não servir. Mesmos exercícios, mesma ordem. Mudam 
 | # | Cena (reserva) | Fala |
 |---|---|---|
 | 1 | **Abre num quadro de cortiça** no Bean There, cheio de cartões de visita de clientes. Texto: **"o mural dos clientes: cada um diz o que faz."** | — |
-| 2 | A Poppy, filmando o mural | Poppy PT: "Gente, gringo pergunta a profissão antes do nome!" |
+| 2 | A Poppy, filmando o mural | Poppy PT: "Gente, aqui o 'what do you do?' vem logo depois do nome!" |
 | 4 | O vizinho médico, cliente fixo, prende o cartão dele | Vizinho EN: "What do you do?" |
 | 5 | O Lazy, deitado no banco embaixo do mural | (igual) |
 | 11 | Uma cliente (sem voz) de jaleco de laboratório aponta a Capy | (igual) |
@@ -151,14 +155,14 @@ Para quando o hype de Natal não servir. Mesmos exercícios, mesma ordem. Mudam 
 | 8 | 20–23 s | "A ou B?" + contador | ⏸ 3 s | trilha em zero |
 | 9 | 23–27 s | **Resposta:** a B acende | Lazy PT: "B. Com o 'a'." | acerto |
 | 10 | 27–30 s | | Hank PT: "A primeira dá pra entender. A segunda é inglês de verdade." | — |
-| 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** + 6 crachás com palavras: doctor, teacher, student, nurse, driver, barista | Dona Jaca EN: ⭐ "I'm a doctor." · Capy PT: "Agora você. Escolhe o seu crachá. Com o 'a'." | — |
+| 11 | 30–34 s | Tela: **"AGORA É VOCÊ"** + 6 crachás com palavras: doctor, teacher, student, nurse, driver, barista + texto pequeno: "sem trabalho agora? escolhe o que você quer ser" | Dona Jaca EN: ⭐ "I'm a doctor." · Capy PT: "Agora você. Escolhe o seu crachá. Com o 'a'." | — |
 | 12 | 34–38 s | **Personalize 1:** um crachá em branco pisca | 🎤 **SUA VEZ** ("I'm a…" + a sua profissão) | trilha em zero |
 | 13 | 38–40 s | O crachá ganha um ✓; a Duda passa de avental | Duda EN: "I'm a barista!" · Hank EN: "Junior barista." | risada |
 | 14 | 40–43 s | **Personalize 2:** o Hank olha para a câmera | Hank EN: "What do you do?" | — |
 | 15 | 43–47 s | Balão vazio | 🎤 **SUA VEZ** ("I'm a…") | trilha em zero |
 | 16 | 47–49 s | **Para conferir o molde:** a Dona Jaca, com o crachá "DR. JACA" | Dona Jaca EN: ⭐ "I'm a doctor." | — |
 | 17 | 49–54 s | O Bolinha. Texto: **"lembra dessa?"** (revisão do assunto 15). Ele mostra o celular de flip e depois o estetoscópio de feltro | Bolinha EN: "It's a phone." · Bolinha EN: ⭐ "I'm a doctor." · Bolinha PT: "Guardei. O 'a' tá nas duas." | — |
-| 18 | 54–59 s | ⭐ **VITÓRIA DO ASSUNTO**: "você disse o que faz" + **consigo ✓** + selo "T1 E19 · você já sabe 19 frases" | Capy PT: "Nome, país, idade, família, profissão. Você já se apresenta inteiro." | acerto maior |
+| 18 | 54–59 s | ⭐ **VITÓRIA DO ASSUNTO**: "você disse o que faz" + **consigo ✓** + selo "T1 E19 · você já sabe 19 frases" | Capy PT: "Nome, país, família, profissão. Você já se apresenta." | acerto maior |
 | 19 | 59–66 s | Card: "sotaque não é erro: o objetivo é ser entendido" + convite verdadeiro **"último assunto da temporada: What time is it? · segue a Capy"** | Capy PT: "Comenta: I'm a… e a sua profissão." | — |
 
 **Frase-alvo: 5×** (Lazy ×2, Dona Jaca ×2, Bolinha), em 3 bocas; a última é do Bolinha. "I'm doctor." (cena 6) é o contraste e não conta; "I'm a teacher." e "I'm a barista!" são variações do molde. O aluno fala 2× e reconhece 2×.

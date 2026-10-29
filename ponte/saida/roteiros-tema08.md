@@ -1,5 +1,7 @@
 # CapyFala · T1 · ASSUNTO 8 · "How do you spell it?" · 3 vídeos (papel, sem vídeo)
 
+**APROVADO pelo Felipe em 28/10/2026 com as correções do mestre**
+
 **Status: rascunho para o Felipe aprovar.**
 
 Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1 (v6) e 5, as regras do `mestre-ingles.md` e as `correcoes-mestre-27out.md`. É só texto: nada foi gravado, renderizado ou sintetizado.
@@ -59,7 +61,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 4 | 8–10 s | O Mike entra e pede o café. O Hank pergunta o nome | Hank EN: "Name?" · Mike EN: "Mike." | sino da porta |
 | 5 | 10–14 s | O Hank olha para a Capy, caneta parada. O Lazy se inclina para o Mike | Lazy EN: ⭐ "How do you... spell it?" · legenda EN + PT: "Como se escreve?" | — |
 | 6 | 14–17 s | O Mike soletra; cada letra nasce na **espuma do café** | Mike EN: "M... I... K... E." | — |
-| 7 | 17–21 s | Close na espuma: o I e o E piscam. Na tela, "I = i" aparece e é riscado (só escrito) | Lazy PT: "O I se fala 'ai'. O E se fala 'i'. É o contrário do português." | — |
+| 7 | 17–21 s | Close na espuma: o I e o E piscam. Na tela, "I = i" aparece e é riscado (só escrito) | Lazy PT: "O I se fala 'ai'. O E se fala 'i'. Parece trocado, né?" | — |
 | 8 | 21–23 s | Tela: **"REPETE COMIGO"** | Capy PT: "Vamos juntos. Em dois pedaços." | — |
 | 9 | 23–26 s | **Em coro:** o karaokê acende em 2 blocos. Na tela: "fala JUNTO" | Capy EN: ⭐ "How do you... spell it?" | — |
 | 10 | 26–29 s | De novo em coro, ligando "spell it" ("spe-lit") | Capy EN: ⭐ "How do you spell it?" | — |
@@ -97,7 +99,7 @@ Versão 1 · 28/10/2026 (rotina da nuvem). Segue o molde aprovado dos assuntos 1
 | 8 | 17–20 s | Balão vazio, barra de tempo | 🎤 **SUA VEZ** | trilha em zero |
 | 9 | 20–23 s | **Resposta** | Capy EN: ⭐ "How do you spell it?" | — |
 | 10 | 23–27 s | O cliente soletra; as letras nascem na espuma, e o Y pisca | Cliente EN: "B... R... Y... A... N." | — |
-| 11 | 27–30 s | A Capy escreve "BRYAN" certo. O cliente arregala os olhos | Cliente EN: "Wow. Correct!" · Poppy PT: "Primeira vez na vida dele!" | risada |
+| 11 | 27–30 s | A Capy escreve "BRYAN" certo. O cliente arregala os olhos | Cliente EN: "Whoa. You got it!" · Poppy PT: "Primeira vez na vida dele!" | risada |
 | 12 | 30–33 s | **2ª rodada:** entra uma cliente (sem voz) com crachá do trabalho; o nome aparece meio coberto: "Kath…". Tela: **"de novo: você é a Capy"** | ⏸ 0,6 s | — |
 | 13 | 33–36 s | Balão vazio | 🎤 **SUA VEZ** | trilha em zero |
 | 14 | 36–39 s | **Resposta.** O balão dela soletra só em texto: "K-A-T-H-R-Y-N" | Capy EN: ⭐ "How do you spell it?" | — |
@@ -123,7 +125,7 @@ Para quando o roteirista preferir não usar o meme. Mesmos exercícios, mesma or
 | 1 | **Abre num caderno de reservas** aberto no balcão, com nomes riscados e reescritos. Texto: **"sábado: o café lota. tudo por reserva."** | — |
 | 2 | A Poppy ajuda no balcão | Poppy PT: "Sábado lotado. E o Hank escreve cada nome..." |
 | 4 | O cliente liga para reservar (o castor aparece numa janelinha de telefone) | Cliente EN: "Table for two. Bryan." |
-| 11 | A Capy escreve "BRYAN" no caderno | Cliente EN: "Wow. Correct!" · Poppy PT: "O Hank nunca acertou esse." |
+| 11 | A Capy escreve "BRYAN" no caderno | Cliente EN: "Whoa. You got it!" · Poppy PT: "O Hank nunca acertou esse." |
 | 12 | A 2ª cliente chega sem reserva e mostra o crachá | (igual) |
 | 15 | A Poppy, para o celular | (igual) |
 | 19 | Card | "nenhum nome errado no caderno" |
