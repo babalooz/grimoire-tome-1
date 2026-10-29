@@ -1,6 +1,6 @@
 # Correções do mestre de inglês · assuntos 13 a 20 · 28/10/2026
 
-**Aguardando aprovação do Felipe**
+**APROVADO pelo Felipe em 28/10/2026 (todas as recomendações do mestre). Decisões: Dona Jaca visita os EUA em pessoa nos assuntos 17 a 20 (arco da visita); Dona Jaca é médica no assunto 19; depois de 24/12, pausa de fim de ano: de 25 a 31/12 a faixa da sitcom vira cortes da T1 (sem voz nova) e o card final do assunto 20 diz só "fim da temporada 1", sem data.**
 
 Este arquivo é a fonte para aplicar as correções nos roteiros `roteiros-tema13.md` a `roteiros-tema20.md` (versão 1, escrita pela nuvem em 28/10/2026, ainda sem voz gravada). Cada correção diz o vídeo, a cena, o personagem e o texto exato. Aplicar literalmente; nada aqui pede interpretação. Onde diz "trocar", o texto antigo sai inteiro e entra o novo. O que não está listado fica igual, palavra por palavra.
 
