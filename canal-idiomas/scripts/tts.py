@@ -296,13 +296,15 @@ def _cafe_pieces(beat: dict, first_alvo: bool, nucleo: str | None) -> list[str]:
     return [text]
 
 
-def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: float = CAFE_PAUSE, engine: str = "kokoro"):
+def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: float = CAFE_PAUSE, engine: str = "kokoro",
+               cache_dir: Path | None = None):
     """Sintetiza cada pedaço e cola com silêncio medido. Devolve (áudio, sr, partes com início/fim em s).
-    engine="gemini": 1 chamada por FALA (ignora o split em pedaços; o Gemini lê "..." como pausa pela instrução)."""
+    engine="gemini": 1 chamada por FALA (ignora o split em pedaços; o Gemini lê "..." como pausa pela instrução).
+    cache_dir: pasta de cache alternativa (ex. public/audio/flash-tts/assuntoN), repassada a synth_gemini."""
     if engine == "gemini":
         texto = " ".join(p.rstrip(" ,") + ("..." if i < len(pieces) - 1 and not p.rstrip().endswith("...") else "")
                           for i, p in enumerate(pieces))
-        audio, sr = synth_gemini(texto, lang, speaker, speed)
+        audio, sr = synth_gemini(texto, lang, speaker, speed, cache_dir=cache_dir)
         gain = 1.0
     else:
         global _kokoro
@@ -343,7 +345,7 @@ def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: 
     return audio.astype(np.float32), sr, parts
 
 
-def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro") -> list:
+def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir: Path | None = None) -> list:
     """Formato cafe: 1 .wav por beat de fala (c<n>.wav); pausa/pergunta = null na lista de timings."""
     for old in out_dir.glob("c*.wav"):
         old.unlink()
@@ -361,7 +363,7 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro") -> list:
             speed = CAFE_SPEED.get((speaker, lang), 1.0) * (CAFE_THOUGHT if mode == "pensamento" else 1.0)
         pieces = _cafe_pieces(b, i == first, alvo.get("nucleo"))
         try:
-            audio, sr, parts = synth_cafe(pieces, lang, speaker, speed, engine=engine)
+            audio, sr, parts = synth_cafe(pieces, lang, speaker, speed, engine=engine, cache_dir=cache_dir)
         except GeminiQuotaError as e:
             feitas = sum(1 for t in timings if t is not None)
             faltam = len(episode["beats"]) - i
@@ -380,13 +382,14 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro") -> list:
     return timings
 
 
-def main(episode_path: str, motor: str = "kokoro") -> None:
+def main(episode_path: str, motor: str = "kokoro", cache_dir: str | None = None) -> None:
     episode = json.loads(Path(episode_path).read_text())
     out_dir = ROOT / "public/audio" / episode["id"]
     out_dir.mkdir(parents=True, exist_ok=True)
+    cache_path = (ROOT / cache_dir) if cache_dir else None
 
     if episode.get("format") == "cafe":
-        timings = render_cafe(episode, out_dir, engine=motor)
+        timings = render_cafe(episode, out_dir, engine=motor, cache_dir=cache_path)
         (out_dir / "timings.json").write_text(json.dumps(timings, ensure_ascii=False, indent=2))
         import pyloudnorm as pyln
         voice = np.concatenate([sf.read(ROOT / "public" / t["audio"])[0] for t in timings if t])
@@ -427,5 +430,6 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("episodio")
     ap.add_argument("--motor", choices=["kokoro", "gemini"], default="kokoro")
+    ap.add_argument("--cache-dir", default=None, help="pasta de cache alternativa, relativa a este repo (ex. public/audio/flash-tts/assunto6)")
     a = ap.parse_args()
-    main(a.episodio, a.motor)
+    main(a.episodio, a.motor, a.cache_dir)

@@ -12,7 +12,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 EP="$1"; shift
-STILLS=0; AUDIT=0; VIDEO=1; ESQ=1; TTS=1; MOTOR=kokoro
+STILLS=0; AUDIT=0; VIDEO=1; ESQ=1; TTS=1; MOTOR=kokoro; CACHE_DIR=""
 while [ $# -gt 0 ]; do
   case "$1" in
     --stills) STILLS=1 ;;
@@ -21,6 +21,7 @@ while [ $# -gt 0 ]; do
     --no-esquetes) ESQ=0 ;;
     --no-tts) TTS=0 ;;
     --motor) MOTOR="$2"; shift ;;
+    --cache-dir) CACHE_DIR="$2"; shift ;;
   esac
   shift
 done
@@ -29,7 +30,7 @@ BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shel
 BROWSER_FLAG=$([ -x "$BROWSER" ] && echo "--browser-executable=$BROWSER" || true)
 RENDER_FLAGS="--audio-bitrate=320k --crf=26 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG"
 
-[ "$TTS" = 1 ] && .venv/bin/python scripts/tts.py "$EP" --motor "$MOTOR"
+[ "$TTS" = 1 ] && .venv/bin/python scripts/tts.py "$EP" --motor "$MOTOR" ${CACHE_DIR:+--cache-dir "$CACHE_DIR"}
 [ -f public/music/cafe-loop.wav ] || .venv/bin/python scripts/music.py
 mkdir -p out
 node -e "

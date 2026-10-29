@@ -1,4 +1,7 @@
 data,assunto,episodio,video,id,hype_ou_reserva,status,nota_portao,reescritas,motivo,arquivo
+2026-10-29,6,T1 E06,V1,cafe-t1e06-shes-from-italy,,aprovado,8.5,1,,cafe-t1e06-shes-from-italy.mp4
+2026-10-29,6,T1 E06,V2,cafe-t1e06-shes-from-italy-v2,hype,aprovado,8.3,2,,cafe-t1e06-shes-from-italy-v2.mp4
+2026-10-29,6,T1 E06,V3,cafe-t1e06-shes-from-italy-v3,,aprovado,8.6,1,,cafe-t1e06-shes-from-italy-v3.mp4
 2026-10-29,11,T1 E11,V1,cafe-t1e11-im-brazilian,,bloqueado_roteiro,,2,"inglês 18% das palavras faladas (mínimo 35% para episódio >10); roteiro aprovado é PT-pesado por desenho pedagógico (`explicação em PT`, CLAUDE.md); reescrita não fecha a lacuna sem inventar fala nova",
 2026-10-29,11,T1 E11,V2,cafe-t1e11-im-brazilian-v2,reserva,bloqueado_roteiro,,2,"inglês 27% das palavras faladas (mínimo 35%); versão reserva (ônibus de turismo) escolhida por prudência: assuntos 6-10 podem não estar no ar ainda, então a janela do hype datado (Black Friday 23-29/11) é incerta",
 2026-10-29,11,T1 E11,V3,cafe-t1e11-im-brazilian-v3,,bloqueado_roteiro,,2,"inglês 27% das palavras faladas (mínimo 35%)",
