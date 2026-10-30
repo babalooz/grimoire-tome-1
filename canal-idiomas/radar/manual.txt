@@ -1,26 +1,27 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-29)
-# 6 buscas web (trend tiktok brasil hoje 29 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana brasil outubro 2026 / hashtag viral tiktok brasil halloween 2026 /
-# trending tiktok brazil this week late october 2026 / tiktok viralizou hoje brasil).
-# Nenhuma achou tendência NOVA e confiável das últimas 24-48h no TikTok BR com fonte/data clara: resultados
-# eram guias genéricos sem data, rankings de influenciador/criador (não de trend), ou tendências antigas
-# já conhecidas e já avaliadas em rotinas anteriores.
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-30)
+# 6 buscas web: trend tiktok brasil hoje 30 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana brasil / tiktok trending brazil this week halloween / bordão viral tiktok brasil
+# essa semana / "viralizou no tiktok" brasil 29 outubro 2026.
 # Candidatas avaliadas e DESCARTADAS hoje:
-# - "six seven" / "6 7" — segue citado (Folha PE, sem data nova confirmada) como meme ainda forte em sala
-#   de aula no Brasil, mas CONTINUA PROIBIDA por regra do projeto (docs/tiktok-nativo.md §4: risco "feito
-#   para crianças"), mesmo não tendo pessoa real como protagonista do termo em si.
-# - "A Seleção Chegou" (funk/torcida, ligado à Copa 2026) — sem fonte datada de out/2026; e mesmo se
-#   estivesse em alta, não puxa para o inglês (regra do V2: hype só de assunto do mundo anglófono).
-# - Morango do Amor — trend de 2025, sem fonte de retorno em alta agora; descartada por não ser atual.
-# - #halloween2026, #halloweentiktok, #spookyseason, #trickortreat, #halloweencostume — mesma lista
-#   genérica de guias de marketing de sempre, sem confirmação de pico real no TikTok BR agora; não entra
-#   separado do evento "Halloween" já mantido abaixo (calendário já cobre trick-or-treat/jack-o'-
-#   lantern/haunted/spooky).
-# Endpoint público /api/challenge/detail testado hoje para sixseven, halloween2026, falsocognato,
-# erroseminglescapyfala -> resposta vazia nas quatro = "não medido" (mesma falha documentada desde 26/09;
-# a medição via nuvem continua indisponível, só o PC mede).
-# Mantidos da rotina anterior (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
-# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, faltam 2 d — já consta também no
+# - "six seven" / "6 7" — ainda citado como o meme mais duradouro do momento no Brasil (Folha PE, sem data
+#   nova de hoje) mas CONTINUA PROIBIDO por regra do próprio projeto (docs/tiktok-nativo.md §4: "puxa para
+#   feito para crianças"), mesmo não tendo pessoa real como protagonista do termo.
+# - "Morto-Vivo" (Animadinhos) e "VOU DANÇAR, VOU BEBER" (MC Donzela/MC Otavio da 9/DJ CR Original) —
+#   topo de áudios do Tokchart em 28/10/2026 (fonte: https://tokchart.com/pt-br/audios-do-tiktok), mas são
+#   funk/BR puro: não puxam para o inglês (regra do V2: hype só de assunto do mundo anglófono) — descartadas.
+# - "Housewife" (Tate McRae) — mesmo ranking do Tokchart (28/10/2026): artista anglófona, letra em inglês,
+#   gancho forte para aula. NÃO adicionada aqui de propósito: é candidata a "música internacional" e já é
+#   coberta automaticamente pela fonte spotify-br do próprio radar.py (cruza chart BR × chart global); deixar
+#   o radar decidir evita duplicar critério.
+# - Ghost Trend / Pumpkin Head Trend / "Ramalama Costume Walk" (Róisín Murphy) / #spookyseason — trends de
+#   Halloween citadas em fontes globais/MX (Uno TV, New Engen, EchoTik), sem confirmação de pico específico
+#   no TikTok BR com data de hoje; Halloween como evento já está coberto abaixo e no calendário/evento do dia.
+# - "A Seleção Chegou" / músicas de torcida — sem fonte datada desta semana.
+# Endpoint público /api/challenge/detail testado hoje para halloween, ghosttrend, pumpkinheadtrend,
+# tatemcrae, housewife, ramalamacostumewalk, spookyseason -> HTTP 200 mas corpo 0 bytes nas sete (mesma
+# falha documentada desde 26/09: medição via nuvem indisponível; só o PC mede).
+# Mantidos (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
+# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, falta 1 d — já consta também no
 # calendário/evento do dia do radar).
 NBA
 Halloween
