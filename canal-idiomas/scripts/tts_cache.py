@@ -48,6 +48,10 @@ def synth_cache(text: str, lang: str, speaker: str, speed: float, **_k):
 def main(ep_path: str) -> int:
     teste_voz.http = _sem_rede
     tts.synth_gemini = synth_cache
+    tts.LOTE = False  # o lote (tts_lote.preencher) só confere o cache no modelo ATUAL (GEMINI_MODEL_CAFE),
+    # ignorando o fallback multi-modelo do BUSCA acima; em episódios gravados num modelo antigo (ex.: assunto 1,
+    # flash-lite-tts, antes do padrão virar flash-tts em 28/10) ele julga tudo "faltando" e pede rede sem necessidade.
+    # Sem lote, cada fala passa por synth_cache (BUSCA completo) e só falta de verdade vira FaltaNoCache.
     episode = json.loads(Path(ep_path).read_text())
     out_dir = ROOT / "public/audio" / episode["id"]
     out_dir.mkdir(parents=True, exist_ok=True)
