@@ -36,8 +36,11 @@
   "notebook": 3,
   "beats": [
     {
-      "tipo": "pausa",
-      "s": 1.5
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "curious",
+      "text": "Um copo em branco. Pra quem é esse?"
     },
     {
       "speaker": "hank",
