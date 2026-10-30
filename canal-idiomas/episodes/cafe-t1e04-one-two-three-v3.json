@@ -1,0 +1,229 @@
+{
+  "id": "cafe-t1e04-one-two-three-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 4,
+    "codigo": "T1 E04 · parte 3/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 4,
+    "progresso": "você já sabe 4 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo contar de um a dez em inglês.",
+  "title": "Ep. 4 (parte 3/3) · One, two, three! qual número foi? ☕",
+  "hookTitle": "qual número foi?",
+  "alvo": {
+    "en": "One, two, three!",
+    "pt": "Um, dois, três!",
+    "variacoes": []
+  },
+  "cast": [
+    "capi",
+    "lazy",
+    "hank",
+    "duda",
+    "bolinha"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
+  "notebook": 4,
+  "beats": [
+    {
+      "tipo": "pausa",
+      "s": 1.5,
+      "text": "6, 7 ou 8? só pelo ouvido"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One... two... three..."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Hoje você reconhece de ouvido e conta sozinho até dez."
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Seven."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "qual foi? pensa aí... ou chuta nos comentários"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Sete. SEV-en."
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "Seven."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Nine cups."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "5 ou 9? pensa aí..."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Nove. Nine, com n no fim."
+    },
+    {
+      "speaker": "hank",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Five e nine têm o mesmo ai. O fim é que muda."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three..."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Quantos cafés você toma por dia? Fala o número."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: o número da sua vida"
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Three. Every day."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Ten."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three..."
+    },
+    {
+      "speaker": "hank",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Eu mostro. Você conta."
+    },
+    {
+      "tipo": "pausa",
+      "s": 5.0,
+      "text": "SUA VEZ: One, two, three... ten"
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Four, five, six."
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Seven, eight, nine, ten."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "Good."
+    },
+    {
+      "speaker": "bolinha",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "What's your name?"
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: I'm... e o seu nome"
+    },
+    {
+      "speaker": "bolinha",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "bolinha",
+      "lang": "pt",
+      "emotion": "happy",
+      "text": "Guardei. Devolvo daqui a uns dias."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 5.0,
+      "emotion": "happy",
+      "text": "Quatro assuntos. Dez números. Seus.",
+      "cardTexto": "CONSIGO contar de 1 a 10 em inglês ✓ · T1 E04 · você já sabe 4 frases"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 6.0,
+      "emotion": "happy",
+      "text": "Comenta quantos cafés você toma por dia. Em inglês.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido"
+    }
+  ],
+  "gatilhos": [
+    "reconhecer antes de produzir: 6-7-8 vizinhos e o par five/nine, as confusões reais de ouvido do brasileiro",
+    "personalize 1 (cafés por dia) dá o uso adulto real; personalize 2 é a prova final, os 10 sozinha guiada só pelos dedos do Hank, sem voz",
+    "Bolinha devolve 'What's your name?' do assunto 3 (revisão espaçada) e fecha guardando a frase-alvo deste assunto nas bochechas",
+    "a Capy nunca é a última a dizer a frase-alvo: fecha com o Bolinha",
+    "sem gancho de próximo assunto (só quando o assunto 5 estiver agendado)"
+  ],
+  "contexto": {
+    "legenda": "Ep. 4 (parte 3/3) · 6, 7 ou 8? reconheça os números em inglês só de ouvido e conte até dez sozinho. one, two, three! 🔢☕",
+    "anterior": "Ep. 4 (parte 2/3)"
+  }
+}

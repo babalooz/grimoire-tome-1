@@ -1,0 +1,174 @@
+{
+  "id": "cafe-t1e04-one-two-three-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 4,
+    "codigo": "T1 E04 · parte 2/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 4,
+    "progresso": "você já sabe 4 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo contar de um a dez em inglês.",
+  "title": "Ep. 4 (parte 2/3) · One, two, three! o grupo de dez turistas ☕",
+  "hookTitle": "o grupo de dez turistas",
+  "alvo": {
+    "en": "One, two, three!",
+    "pt": "Um, dois, três!",
+    "variacoes": []
+  },
+  "cast": [
+    "capi",
+    "hank",
+    "lazy",
+    "duda",
+    "turista"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
+  "notebook": 4,
+  "beats": [
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three..."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Ugh. Again."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Ele quer que eu conte. Até dez. Em inglês."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "whisper",
+      "alvo": true,
+      "text": "One... two... three..."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "whisper",
+      "text": "Four... five... six."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: One, two, three, four, five, six."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Four, five, six!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "O sete... o do SEV."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "whisper",
+      "text": "Seven... eight... nine... ten."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: Seven, eight, nine, ten!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Seven, eight, nine, ten!"
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "Eleven?"
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Ten."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Thank you! Okay, team..."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 4.0,
+      "emotion": "happy",
+      "text": "Dez turistas. Contei sem perder nenhum.",
+      "cardTexto": "contou o grupo inteiro em inglês · T1 E04 · parte 2/3 · CONSIGO ✓"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "hold": 2.0,
+      "text": "De onde eu sou... como é que fala isso?"
+    }
+  ],
+  "gatilhos": [
+    "reserva atemporal (guia de turismo americano com grupo de 10): usada na produção em estoque porque a data de postagem ainda não é conhecida, mesmo padrão dos assuntos 12/16/17",
+    "a Duda vira a 11ª do grupo, piada visual; 'Eleven?' não é ensinado, só entendido pela imagem",
+    "a Capy confirma sozinha os 2 primeiros blocos (atendimento real: ela puxa a contagem, não só repete)",
+    "fecha com o Hank contando a saída do grupo: a Capy nunca diz a frase-alvo por último",
+    "gancho verdadeiro pro próximo assunto (de onde a Capy é), sem citar número de episódio (ainda não agendado)"
+  ],
+  "contexto": {
+    "legenda": "Ep. 4 (parte 2/3) · um guia de turismo gringo perdeu a conta de 10 turistas e pediu ajuda pra Capy, em inglês. one, two, three! 🔢☕",
+    "anterior": "Ep. 4 (parte 1/3)"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "id": "cafe-t1e04-one-two-three",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 4,
+    "codigo": "T1 E04",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 4,
+    "progresso": "você já sabe 4 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo contar de um a dez em inglês.",
+  "title": "Ep. 4 (parte 1/3) · One, two, three! o pedido de dez ☕",
+  "hookTitle": "o pedido de dez",
+  "alvo": {
+    "en": "One, two, three!",
+    "pt": "Um, dois, três!",
+    "variacoes": []
+  },
+  "cast": [
+    "capi",
+    "hank",
+    "lazy",
+    "duda"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
+  "notebook": 4,
+  "beats": [
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Errei no three. E pediram dez cafés."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Hoje você conta de um a dez. Em três pedaços."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One... two... three!"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "O three é comprido. Igual meu bocejo."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "repita": true,
+      "text": "One, two, three!"
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "SUA VEZ: One, two, three!"
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Four... five... six."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Five termina vibrando. Sem i no fim."
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "SUA VEZ: Four, five, six."
+    },
+    {
+      "speaker": "duda",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Four, five, six!"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Seven... eight... nine... ten."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "SEV-en, forte no começo. Eight acaba no t."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: Seven, eight, nine, ten."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Seven, eight, nine, ten."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three, four..."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Five, six, seven..."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Eight, nine, ten!"
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Ten. Good."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 5.0,
+      "emotion": "happy",
+      "text": "Contei até dez. E levantei a caixa na hora certa.",
+      "cardTexto": "1º pedido de 10 em inglês · T1 E04 · você já sabe 4 frases"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 6.5,
+      "emotion": "happy",
+      "text": "Comenta: qual número foi o mais difícil pra você?",
+      "cardTexto": "CONSIGO contar de 1 a 10 em inglês ✓ · sotaque não é erro: o objetivo é ser entendido"
+    }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 3 ('a Capy sabe contar em inglês?'): abre direto na ação física (a caixa) em vez de pensamento, variando do abridor dos assuntos 1-3",
+    "3 blocos (1-3 · 4-6 · 7-10), mesma mecânica (apresentar → sua vez → confere), 1 armadilha de pronúncia por bloco: three comprido (bocejo do Lazy, revisão do /iː/ do assunto 2), five vibra sem i no fim, SEV-en forte no começo e eight sem i no final",
+    "a Capy nunca é a última a dizer a frase-alvo: fecha com o Hank levantando a caixa no three",
+    "vitória do dia: 1º pedido de 10 cafés contado certo, selo 'T1 E04 · você já sabe 4 frases'",
+    "sem gancho de próximo assunto nesta V1 (o laço fica para o V2/V3, só quando o assunto 5 estiver agendado)"
+  ],
+  "contexto": {
+    "legenda": "Ep. 4 (parte 1/3) · como contar de 1 a 10 em inglês (nos eua \"one, two, three\" é a contagem de levantar peso de verdade). one, two, three! 🔢☕",
+    "anterior": "Ep. 3 (parte 3/3)"
+  }
+}
