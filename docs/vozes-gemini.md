@@ -7,6 +7,14 @@ por hash em `public/audio/_cache_gemini/` (sitcom) e `public/<tema>/` (vocabulá
 entre re-renders. O assunto 2 usou a pasta temporária `public/audio/flash-tts/assunto2/` durante o teste das
 correções do mestre; as falas já foram incorporadas ao cache padrão.
 
+**Voz em LOTE (30/10, `canal-idiomas/scripts/tts_lote.py`, padrão do motor gemini; `--sem-lote` volta ao antigo):**
+1 pedido por (personagem, idioma) no episódio, falas separadas por `\n\n[long pause]\n\n`, corte por silêncio,
+cada corte conferido (margem de silêncio ≥ 1,3× + transcrição de 1 clipe por pedido no modelo de texto); o que não
+conferir volta a 1 pedido por fala. Medido: só linha em branco dá pausa de 0,4–0,6 s entre falas (igual às pausas
+internas, corte ambíguo em 3 de 5 grupos); com a marcação `[long pause]` a pausa foi 1,7–2,7 s e a marcação NÃO foi
+lida em voz alta no `gemini-3.8-flash-tts` (transcrição dos cortes sem "pause"). Transcrever vários clipes num pedido
+só não serve: o modelo redistribui o texto entre eles e inventa frase.
+
 ## Capy — decidida pelo Felipe (teste cego, 03/10)
 
 | Personagem | Voz Gemini | Por quê |

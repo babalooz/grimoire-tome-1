@@ -18,6 +18,7 @@ Saída (formato lição, `format: "licao"`): public/audio/<id>/l<hash>.wav (1 po
   = {chave: {audio, duration}}, chave = line_key() (mesma conta de src/lesson/timeline.ts: lineKey).
   Velocidades mais calmas (feedback do piloto: "muito rápido"): Capy PT 1.0 · EN 0.9; `speed` na fala sobrescreve.
 Saída (formato Sitcom do Café, `format: "cafe"`): public/audio/<id>/c<n>.wav (1 por beat de fala) + timings.json
+  (+ lote.json: motor gemini gera em LOTE, 1 pedido por personagem+idioma, scripts/tts_lote.py; --sem-lote = 1 por fala)
   = lista alinhada com `beats` (null em pausa/pergunta), cada item {audio, duration, parts[{text,start,end}], speed, wpm}.
   `parts` = pedaços separados por pausa real (reticências / núcleo da 1ª frase-alvo) -> karaokê em src/cafe/timeline.ts.
 """
@@ -240,6 +241,15 @@ def _gemini_key(speaker: str, lang: str, mode: str, speed: float, text: str, voi
 
 
 _gemini_pedidos = 0  # contador de chamadas reais (fora do cache) nesta execução
+MAX_PEDIDOS: int | None = None  # teto de pedidos TTS nesta execução (--max-pedidos); passou = para como se fosse 429
+LOTE = True  # sitcom em lote por (personagem, idioma) (scripts/tts_lote.py); --sem-lote volta a 1 pedido por fala
+
+
+def _conta_pedido() -> None:
+    global _gemini_pedidos
+    if MAX_PEDIDOS is not None and _gemini_pedidos >= MAX_PEDIDOS:
+        raise GeminiQuotaError(f"teto de {MAX_PEDIDOS} pedidos desta execução atingido")
+    _gemini_pedidos += 1
 
 
 def synth_gemini(text: str, lang: str, speaker: str, speed: float,
@@ -248,7 +258,6 @@ def synth_gemini(text: str, lang: str, speaker: str, speed: float,
     Cacheada por hash em public/audio/_cache_gemini/ (reaproveita entre V1/V2/V3 e entre re-renders).
     `model`/`cache_dir` permitem reaproveitar esta função com outro modelo Gemini (cota separada) e outra
     pasta de cache, sem misturar com a cota/arquivos do motor padrão (GEMINI_MODEL_CAFE/GEMINI_CACHE)."""
-    global _gemini_pedidos
     import io
     import numpy as np
     import soundfile as sf
@@ -264,6 +273,7 @@ def synth_gemini(text: str, lang: str, speaker: str, speed: float,
     from teste_voz import GEMINI_API, http  # import tardio: evita import circular (teste_voz importa tts.synth em runtime)
     corpo = speech_text(text, lang)  # só o texto da fala: instrução em prefixo é lida em voz alta (ver nota acima)
     url = f"{GEMINI_API}/models/{model}:generateContent"
+    _conta_pedido()
     body = {"contents": [{"parts": [{"text": corpo}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice}}}}}
@@ -282,7 +292,6 @@ def synth_gemini(text: str, lang: str, speaker: str, speed: float,
         audio = np.frombuffer(bruto, dtype="<i2").astype("float32") / 32768
     audio = _trim(audio)
     sf.write(cache_f, audio, sr)
-    _gemini_pedidos += 1
     return audio, sr
 
 
@@ -351,6 +360,10 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir:
         old.unlink()
     alvo = episode.get("alvo") or {}
     first = next((i for i, b in enumerate(episode["beats"]) if b.get("alvo") is True), -1)
+    if engine == "gemini" and LOTE:  # enche o cache em lote; o que não conferir cai no laço abaixo, 1 pedido por fala
+        import tts_lote
+        reg = tts_lote.preencher(episode, cache_dir=cache_dir)
+        (out_dir / "lote.json").write_text(json.dumps(reg, ensure_ascii=False, indent=2))
     timings = []
     for i, b in enumerate(episode["beats"]):
         if b.get("tipo") in ("pausa", "pergunta") or "text" not in b:
@@ -383,6 +396,7 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir:
 
 
 def main(episode_path: str, motor: str = "kokoro", cache_dir: str | None = None) -> None:
+    sys.path.insert(0, str(ROOT / "scripts"))  # tts_lote/teste_voz/tts_vocab
     episode = json.loads(Path(episode_path).read_text())
     out_dir = ROOT / "public/audio" / episode["id"]
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -427,9 +441,14 @@ def main(episode_path: str, motor: str = "kokoro", cache_dir: str | None = None)
 
 
 if __name__ == "__main__":
+    sys.modules.setdefault("tts", sys.modules[__name__])  # tts_lote/tts_vocab fazem `import tts`: mesmo módulo (contador, flags)
     ap = argparse.ArgumentParser()
     ap.add_argument("episodio")
     ap.add_argument("--motor", choices=["kokoro", "gemini"], default="kokoro")
     ap.add_argument("--cache-dir", default=None, help="pasta de cache alternativa, relativa a este repo (ex. public/audio/flash-tts/assunto6)")
+    ap.add_argument("--sem-lote", action="store_true", help="sitcom no modo antigo: 1 pedido Gemini por fala")
+    ap.add_argument("--max-pedidos", type=int, default=None, help="teto de pedidos TTS nesta execução")
     a = ap.parse_args()
+    LOTE = not a.sem_lote
+    MAX_PEDIDOS = a.max_pedidos
     main(a.episodio, a.motor, a.cache_dir)

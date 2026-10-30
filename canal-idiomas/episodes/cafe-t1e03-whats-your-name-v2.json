@@ -23,7 +23,6 @@
   "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
   "notebook": 3,
   "beats": [
-    { "tipo": "pausa", "s": 1.5 },
     { "speaker": "poppy", "lang": "pt", "emotion": "excited",
       "text": "Noite de basquete americano! O bar tá cheio de gringo!" },
     { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",

@@ -9,10 +9,12 @@
 #   --auditoria  os mesmos quadros no modo auditoria (fundo preto, só interface) em out/<id>-auditoria/
 #   --no-video   pula o render dos MP4 · --no-esquetes só o episódio · --no-tts reaproveita o áudio já gerado
 #   --motor      gemini (padrão: kokoro, aposentado no formato cafe) ou kokoro
+#   --sem-lote   motor gemini no modo antigo (1 pedido por fala); padrão = lote por personagem+idioma (scripts/tts_lote.py)
+#   --max-pedidos N  teto de pedidos de voz nesta execução (passou = para como 429)
 set -euo pipefail
 cd "$(dirname "$0")/.."
 EP="$1"; shift
-STILLS=0; AUDIT=0; VIDEO=1; ESQ=1; TTS=1; MOTOR=kokoro; CACHE_DIR=""
+STILLS=0; AUDIT=0; VIDEO=1; ESQ=1; TTS=1; MOTOR=kokoro; CACHE_DIR=""; TTS_EXTRA=()
 while [ $# -gt 0 ]; do
   case "$1" in
     --stills) STILLS=1 ;;
@@ -22,6 +24,8 @@ while [ $# -gt 0 ]; do
     --no-tts) TTS=0 ;;
     --motor) MOTOR="$2"; shift ;;
     --cache-dir) CACHE_DIR="$2"; shift ;;
+    --sem-lote) TTS_EXTRA+=(--sem-lote) ;;
+    --max-pedidos) TTS_EXTRA+=(--max-pedidos "$2"); shift ;;
   esac
   shift
 done
@@ -30,7 +34,7 @@ BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shel
 BROWSER_FLAG=$([ -x "$BROWSER" ] && echo "--browser-executable=$BROWSER" || true)
 RENDER_FLAGS="--audio-bitrate=320k --crf=26 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG"
 
-[ "$TTS" = 1 ] && .venv/bin/python scripts/tts.py "$EP" --motor "$MOTOR" ${CACHE_DIR:+--cache-dir "$CACHE_DIR"}
+[ "$TTS" = 1 ] && .venv/bin/python scripts/tts.py "$EP" --motor "$MOTOR" ${CACHE_DIR:+--cache-dir "$CACHE_DIR"} "${TTS_EXTRA[@]}"
 [ -f public/music/cafe-loop.wav ] || .venv/bin/python scripts/music.py
 mkdir -p out
 node -e "
