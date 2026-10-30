@@ -1,0 +1,238 @@
+[
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c0.wav",
+    "duration": 3.9709583333333334,
+    "parts": [
+      {
+        "text": "Hoje você ouve o H e diz seu nome sem medo. Só escuta.",
+        "start": 0.0,
+        "end": 3.971
+      }
+    ],
+    "speed": 0.86,
+    "wpm": 196
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c1.wav",
+    "duration": 1.49475,
+    "parts": [
+      {
+        "text": "Hi! I'm Lazy.",
+        "start": 0.0,
+        "end": 1.495
+      }
+    ],
+    "speed": 0.75,
+    "wpm": 120
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c2.wav",
+    "duration": 0.9702083333333333,
+    "parts": [
+      {
+        "text": "Ai, I'm Lazy.",
+        "start": 0.0,
+        "end": 0.97
+      }
+    ],
+    "speed": 0.75,
+    "wpm": 186
+  },
+  null,
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c4.wav",
+    "duration": 2.2769166666666667,
+    "parts": [
+      {
+        "text": "A. O H é um sopro.",
+        "start": 0.0,
+        "end": 2.277
+      }
+    ],
+    "speed": 0.86,
+    "wpm": 158
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c5.wav",
+    "duration": 1.49475,
+    "parts": [
+      {
+        "text": "Hi! I'm Lazy.",
+        "start": 0.0,
+        "end": 1.495
+      }
+    ],
+    "speed": 0.75,
+    "wpm": 120
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c6.wav",
+    "duration": 4.396791666666667,
+    "parts": [
+      {
+        "text": "A B também dá pra entender. A A é mais inglês.",
+        "start": 0.0,
+        "end": 4.397
+      }
+    ],
+    "speed": 0.92,
+    "wpm": 150
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c7.wav",
+    "duration": 1.5676666666666668,
+    "parts": [
+      {
+        "text": "Hi! I'm Poppy.",
+        "start": 0.0,
+        "end": 1.568
+      }
+    ],
+    "speed": 0.9,
+    "wpm": 115
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c8.wav",
+    "duration": 2.97425,
+    "parts": [
+      {
+        "text": "Quem foi? Eu conheço essa voz.",
+        "start": 0.0,
+        "end": 2.974
+      }
+    ],
+    "speed": 1.05,
+    "wpm": 121
+  },
+  null,
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c10.wav",
+    "duration": 1.5676666666666668,
+    "parts": [
+      {
+        "text": "Hi! I'm Poppy.",
+        "start": 0.0,
+        "end": 1.568
+      }
+    ],
+    "speed": 0.9,
+    "wpm": 115
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c11.wav",
+    "duration": 0.9027916666666667,
+    "parts": [
+      {
+        "text": "Com o seu nome.",
+        "start": 0.0,
+        "end": 0.903
+      }
+    ],
+    "speed": 1.0,
+    "wpm": 266
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c12.wav",
+    "duration": 3.4225,
+    "parts": [
+      {
+        "text": "Hi! I'm Capy.",
+        "start": 0.0,
+        "end": 3.422
+      }
+    ],
+    "speed": 0.85,
+    "wpm": 53
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c13.wav",
+    "duration": 0.6516666666666666,
+    "parts": [
+      {
+        "text": "Isso.",
+        "start": 0.0,
+        "end": 0.652
+      }
+    ],
+    "speed": 1.0,
+    "wpm": 92
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c14.wav",
+    "duration": 0.465375,
+    "parts": [
+      {
+        "text": "Hi.",
+        "start": 0.0,
+        "end": 0.465
+      }
+    ],
+    "speed": 0.85,
+    "wpm": 129
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c15.wav",
+    "duration": 0.44425,
+    "parts": [
+      {
+        "text": "Hi!",
+        "start": 0.0,
+        "end": 0.444
+      }
+    ],
+    "speed": 0.85,
+    "wpm": 135
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c16.wav",
+    "duration": 1.2637083333333334,
+    "parts": [
+      {
+        "text": "Hi! I'm Capy.",
+        "start": 0.0,
+        "end": 1.264
+      }
+    ],
+    "speed": 0.9,
+    "wpm": 142
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c17.wav",
+    "duration": 2.517333333333333,
+    "parts": [
+      {
+        "text": "Guardei. Devolvo daqui a uns dias.",
+        "start": 0.0,
+        "end": 2.517
+      }
+    ],
+    "speed": 1.05,
+    "wpm": 143
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c18.wav",
+    "duration": 2.981125,
+    "parts": [
+      {
+        "text": "Três vídeos. Uma frase. Ela é sua.",
+        "start": 0.0,
+        "end": 2.981
+      }
+    ],
+    "speed": 1.0,
+    "wpm": 141
+  },
+  {
+    "audio": "audio/cafe-t1e01-hi-im-capy-v3/c19.wav",
+    "duration": 4.028458333333333,
+    "parts": [
+      {
+        "text": "Sotaque não é erro: o objetivo é ser entendido.",
+        "start": 0.0,
+        "end": 4.028
+      }
+    ],
+    "speed": 1.0,
+    "wpm": 134
+  }
+]

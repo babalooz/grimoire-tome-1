@@ -1,0 +1,15 @@
+{
+  "episodio": "cafe-t1e01-hi-im-capy-v3",
+  "modelo": "gemini-3.8-flash-lite-tts",
+  "grupos": [
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "falas": 1,
+      "beats": [
+        0
+      ],
+      "modo": "unico"
+    }
+  ]
+}
