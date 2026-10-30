@@ -151,3 +151,4 @@
 - 2026-10-30T08:19Z · voz reserva · saíram 8 áudios (3.8-flash), 8 (3.8-flash-lite), 6 (2.5-flash-preview; 2 falhas: HTTP 400 e KeyError content); bateram no ouvido 7/8, 7/8, 6/6; duração média 2.55 s, 2.19 s, 3.00 s · Felipe escuta às cegas fala1..8 A/B/C e escolhe; gabarito só depois
 - 2026-10-30T11:29Z · portão T1 E03 · parte 2/3: 1 vídeo(s) aprovado(s) no branch midia · commit 8fc1918f5f1f54ada6cbd7568e37bcf48ad8ab2a: cafe-t1e03-whats-your-name-v2.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
 - 2026-10-30T11:37Z · portão T1 E03: 1 vídeo(s) aprovado(s) no branch midia · commit d42c419207f13550684205055c5c5bc5d4cf66dd: cafe-t1e03-whats-your-name.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
+- 2026-10-30T12:08Z · portão T1 E03 · parte 3/3: 1 vídeo(s) aprovado(s) no branch midia · commit dd7130374a665e4839c732f11d7a9aa733c1b4b8: cafe-t1e03-whats-your-name-v3.mp4 · PC auditar (duração, cor, movimento 0–1 s, zona segura)
