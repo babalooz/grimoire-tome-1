@@ -20,6 +20,8 @@ Uso (a partir de canal-idiomas/):
       Monta os posts do dia a partir de config/grade.json e mostra o que seria enviado. Não envia nada.
   python3 scripts/publicar.py --data 2026-10-12
       Agenda os posts do dia (mode=customScheduled, schedulingType=automatic, horário da grade em BRT).
+  python3 scripts/publicar.py --entregar-longo 2026-10-31
+      Entrega o longo aprovado pelo portão em longo/<data>/ no branch midia; o notebook agenda pela API do YouTube.
   python3 scripts/publicar.py --teste-rascunho out/<id>.mp4
       Teste real SEM publicar: cria rascunho no TikTok com o vídeo, mostra se carregou e apaga.
 
@@ -34,6 +36,7 @@ import csv
 import datetime as dt
 import json
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -58,8 +61,8 @@ AI_LABEL = {"tiktok": True, "youtube": False, "instagram": False}
 #   notificação manual — https://support.buffer.com/article/562-using-youtube-shorts-with-buffer
 #   miniatura própria: VideoAssetInput.thumbnailUrl "Do not use ... the API rejects video assets that set this field"
 #   — https://developers.buffer.com/types/VideoAssetInput.html
-# Então o longo vai para fila/ com o PACOTE pronto (arquivo, título, descrição com capítulos, categoria 27, miniatura)
-# para subir no YouTube Studio (ou, no futuro, pela YouTube Data API com OAuth do Felipe). Nunca vai ao Buffer.
+# Então o longo aprovado vai para longo/<data>/ no branch midia (entregar_longo) e o notebook sobe pela YouTube Data API
+# (ponte/subir_longo.py). Sem entrega, a faixa "longo" da grade cai em fila/ com o motivo. Nunca vai ao Buffer.
 BUFFER_SEM_LONGO = "https://support.buffer.com/article/562-using-youtube-shorts-with-buffer"
 SHORT_MAX_S = 180.0  # Buffer: Short > 3 min não publica sozinho (vira notificação)
 
@@ -160,11 +163,13 @@ def canal_id(rede: str) -> str | None:
 REPO = "babalooz/grimoire-tome-1"
 MIDIA_DIAS = 7
 JSDELIVR_MAX = 20 * 1024 * 1024
+MIDIA_MAX = 95 * 1024 * 1024  # o GitHub recusa arquivo acima de 100 MB
+LONGO_RE = re.compile(r"longo/(\d{4}-\d{2}-\d{2})(-completo)?/[^/]+")
 GIT_ROOT = ROOT.parent
 
 
-def _git(*args: str, cwd: Path = GIT_ROOT) -> str:
-    return subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True, text=True).stdout.strip()
+def _git(*args: str, cwd: Path | None = None) -> str:
+    return subprocess.run(["git", *args], cwd=cwd or GIT_ROOT, check=True, capture_output=True, text=True).stdout.strip()
 
 
 def pacote_yt_vivo(nome: str, hoje: dt.date) -> bool:
@@ -174,13 +179,32 @@ def pacote_yt_vivo(nome: str, hoje: dt.date) -> bool:
     return (hoje - dt.date.fromisoformat(nome[3:13])).days < MIDIA_DIAS
 
 
+def longo_vivo(nome: str, hoje: dt.date) -> bool:
+    """longo/<AAAA-MM-DD[-completo]>/*: fica até MIDIA_DIAS depois da data da pasta (data futura nunca vence)."""
+    m = LONGO_RE.fullmatch(nome)
+    if not m:
+        return False
+    try:
+        return (hoje - dt.date.fromisoformat(m[1])).days < MIDIA_DIAS
+    except ValueError:
+        return False
+
+
+def buscar_midia() -> bool:
+    """Atualiza origin/midia (refspec explícito: clone de um branch só não atualiza sozinho). False = branch não existe.
+    Erro de rede sobe como exceção: reescrever sem saber o que há no branch apagaria tudo o que está lá."""
+    if not _git("ls-remote", "origin", "refs/heads/midia"):
+        return False
+    _git("fetch", "-q", "origin", "+refs/heads/midia:refs/remotes/origin/midia")
+    return True
+
+
 def midia_manter(hoje: dt.date) -> set[str]:
     """Arquivos atuais do branch midia que continuam: tudo, menos os publicados há MIDIA_DIAS dias ou mais."""
-    try:
-        _git("fetch", "-q", "origin", "midia")
-        atuais = {n for n in _git("ls-tree", "--name-only", "origin/midia").splitlines() if n.endswith(".mp4") or pacote_yt_vivo(n, hoje)}
-    except subprocess.CalledProcessError:
+    if not buscar_midia():
         return set()
+    atuais = {n for n in _git("ls-tree", "-r", "--name-only", "origin/midia").splitlines()
+              if ("/" not in n and n.endswith(".mp4")) or pacote_yt_vivo(n, hoje) or longo_vivo(n, hoje)}
     velhos = set()
     if PUBLICADOS.exists():
         for row in csv.DictReader(PUBLICADOS.open()):
@@ -189,24 +213,23 @@ def midia_manter(hoje: dt.date) -> set[str]:
     return atuais - velhos
 
 
-def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
-    """Sobe os MP4 para o branch midia (substitui os de mesmo nome) e devolve {nome: url pública} + "_commit"."""
+def hospedar(mp4s: list[Path], hoje: dt.date, pasta: str = "") -> dict[str, str]:
+    """Sobe os MP4 para o branch midia, na raiz ou em `pasta` (substitui os de mesmo caminho), e devolve
+    {nome: url pública} + "_commit"."""
+    prefixo = f"{pasta}/" if pasta else ""
     tmp = Path(tempfile.mkdtemp(prefix="midia-"))
     wt = tmp / "wt"
     antigos = tmp / "antigos"
     antigos.mkdir()
-    manter = midia_manter(hoje) - {m.name for m in mp4s}
-    try:
-        _git("fetch", "-q", "origin", "midia")
-        for nome in manter:  # recupera do branch atual os vídeos que ainda precisam ficar no ar
-            try:
-                blob = subprocess.run(["git", "show", f"origin/midia:{nome}"], cwd=GIT_ROOT, check=True,
-                                      capture_output=True).stdout
-                (antigos / nome).write_bytes(blob)
-            except subprocess.CalledProcessError:
-                pass
-    except subprocess.CalledProcessError:
-        pass  # branch ainda não existe
+    manter = midia_manter(hoje) - {prefixo + m.name for m in mp4s}
+    for nome in manter:  # recupera do branch atual os vídeos que ainda precisam ficar no ar
+        try:
+            blob = subprocess.run(["git", "show", f"origin/midia:{nome}"], cwd=GIT_ROOT, check=True,
+                                  capture_output=True).stdout
+            (antigos / nome).parent.mkdir(parents=True, exist_ok=True)
+            (antigos / nome).write_bytes(blob)
+        except subprocess.CalledProcessError:
+            pass
     _git("worktree", "add", "-q", "--detach", str(wt))
     try:
         _git("checkout", "-q", "--orphan", "midia-novo", cwd=wt)
@@ -216,8 +239,10 @@ def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
                 shutil.rmtree(f) if f.is_dir() else f.unlink()
         (wt / "README.md").write_text("Vídeos temporários do CapyFala para o Buffer buscar. Branch reescrito a cada "
                                       f"publicação (scripts/publicar.py); vídeos saem {MIDIA_DIAS} dias depois de publicados.\n")
-        for f in list(antigos.iterdir()) + list(mp4s):
-            shutil.copy2(f, wt / f.name)
+        for destino, f in [(f.relative_to(antigos), f) for f in antigos.rglob("*") if f.is_file()] + \
+                           [(prefixo + m.name, m) for m in mp4s]:
+            (wt / destino).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(f, wt / destino)
         _git("add", "-A", cwd=wt)
         _git("-c", "user.name=CapyFala", "-c", "user.email=capyfala@users.noreply.github.com",
              "commit", "-qm", f"midia {hoje.isoformat()}", cwd=wt)
@@ -230,9 +255,9 @@ def hospedar(mp4s: list[Path], hoje: dt.date) -> dict[str, str]:
     urls = {}
     for m in mp4s:
         if m.stat().st_size <= JSDELIVR_MAX:
-            urls[m.name] = f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/{m.name}"
+            urls[m.name] = f"https://cdn.jsdelivr.net/gh/{REPO}@{sha}/{prefixo}{m.name}"
         else:
-            urls[m.name] = f"https://raw.githubusercontent.com/{REPO}/{sha}/{m.name}"
+            urls[m.name] = f"https://raw.githubusercontent.com/{REPO}/{sha}/{prefixo}{m.name}"
     urls["_commit"] = sha
     return urls
 
@@ -312,11 +337,11 @@ def duracao(mp4: Path) -> float:
 
 
 def pacote_longo(dia: dt.date) -> tuple[list[str], dict]:
-    """Longo do dia (16:9): motivo de não ir ao Buffer + pacote pronto para o upload manual no YouTube Studio."""
+    """Longo do dia (16:9) ainda não entregue: motivo de não ir ao Buffer + pacote gerado."""
     base = ROOT / "out" / f"dia-{dia.isoformat()}-wide"
     pac_f = base.with_suffix(".youtube.json")
     motivo = [f"Buffer não publica vídeo longo do YouTube (só Shorts ≤ 3 min, 1:1/9:16): {BUFFER_SEM_LONGO} — "
-              "subir no YouTube Studio com o pacote abaixo"]
+              f"entregar ao notebook com scripts/publicar.py --entregar-longo {dia.isoformat()}"]
     if not pac_f.exists():
         return motivo + [f"pacote não gerado ({pac_f.relative_to(ROOT)}; rode scripts/make-dia-wide.sh)"], {}
     pac = json.loads(pac_f.read_text())
@@ -326,6 +351,56 @@ def pacote_longo(dia: dt.date) -> tuple[list[str], dict]:
     if not aprovado:
         motivo.append("portão não aprovou o longo (scripts/portao.py --dia)")
     return motivo, {"pacote": {**pac, "portao_aprovado": aprovado, "visibilidade": "public", "feito_para_criancas": False}}
+
+
+def arquivos_longo(dia: dt.date) -> list[str]:
+    """Caminhos de longo/<data>/ que já estão no branch midia."""
+    if not buscar_midia():
+        return []
+    return _git("ls-tree", "-r", "--name-only", "origin/midia", f"longo/{dia.isoformat()}/").splitlines()
+
+
+def hora_longo(dia: dt.date) -> str:
+    """Horário da faixa "longo" na grade; sem entrada na grade, 18:00 (padrão das rotinas de longo)."""
+    posts = next((g["posts"] for g in json.loads(GRADE.read_text())["grade"] if g["data"] == dia.isoformat()), [])
+    return next((p["hora"] for p in posts if p["faixa"] == "longo"), "18:00")
+
+
+def entregar_longo(dia: dt.date) -> None:
+    """Longo aprovado -> longo/<data>/{video.mp4,miniatura.png,pacote.json} no branch midia (lido por ponte/subir_longo.py).
+    Roda depois de make-dia-wide.sh e de portao.py --dia. Qualquer pendência encerra com erro, sem tocar no branch."""
+    base = ROOT / "out" / f"dia-{dia.isoformat()}-wide"
+    mp4, mini = base.with_suffix(".mp4"), base.with_suffix(".miniatura.png")
+    pac_f, portao = base.with_suffix(".youtube.json"), base.with_suffix(".portao.json")
+    faltam = [f.name for f in (mp4, mini, pac_f, portao) if not f.exists()]
+    if faltam:
+        raise SystemExit(f"longo {dia}: faltam {', '.join(faltam)}")
+    if json.loads(portao.read_text()).get("aprovado") is not True:
+        raise SystemExit(f"longo {dia}: portão não aprovou ({portao.name})")
+    if mp4.stat().st_size > MIDIA_MAX:
+        raise SystemExit(f"longo {dia}: {mp4.stat().st_size / 2**20:.0f} MB passa do limite de {MIDIA_MAX // 2**20} MB do branch")
+    pac = json.loads(pac_f.read_text(encoding="utf-8"))
+    if not 0 < len(pac["titulo"]) <= 100 or len(pac["descricao"]) > 5000:  # limites da YouTube Data API
+        raise SystemExit(f"longo {dia}: título com {len(pac['titulo'])} ou descrição com {len(pac['descricao'])} caracteres")
+    hh, mm = map(int, hora_longo(dia).split(":"))
+    quando = dt.datetime(dia.year, dia.month, dia.day, hh, mm, tzinfo=BRT)
+    if quando <= dt.datetime.now(dt.timezone.utc):  # o notebook publicaria na hora, sem agendamento
+        raise SystemExit(f"longo {dia}: horário {quando.isoformat()} já passou")
+    pasta = f"longo/{dia.isoformat()}"
+    if arquivos_longo(dia):
+        print(f"{pasta}: já está no branch midia, nada a fazer.")
+        return
+    with tempfile.TemporaryDirectory() as t:
+        video, miniatura, pacote = Path(t) / "video.mp4", Path(t) / "miniatura.png", Path(t) / "pacote.json"
+        shutil.copy2(mp4, video)
+        shutil.copy2(mini, miniatura)
+        pacote.write_text(json.dumps({"titulo": pac["titulo"], "descricao": pac["descricao"], "publicar_em": quando.isoformat(),
+                                      "categoria": pac["categoriaId"]}, ensure_ascii=False, indent=1), encoding="utf-8")
+        hospedar([video, miniatura, pacote], dt.datetime.now(BRT).date(), pasta=pasta)
+    chegou = arquivos_longo(dia)
+    if len(chegou) != 3:
+        raise SystemExit(f"{pasta}: o branch midia tem {chegou}, esperava 3 arquivos")
+    print(f"OK {pasta}: {mp4.stat().st_size / 2**20:.1f} MB, agendado para {quando.isoformat()}; o notebook sobe pela API.")
 
 
 def para_fila(dia: str, p: dict, motivo: list[str], extra: dict) -> None:
@@ -378,7 +453,10 @@ def publicar_dia(dia: dt.date, dry: bool) -> int:
     prontos = []  # (post da grade, mp4, entrada GraphQL)
     for p in grade[dia.isoformat()]["posts"]:
         if p["faixa"] == "longo":
-            para_fila(dia.isoformat(), p, *pacote_longo(dia))
+            if arquivos_longo(dia):
+                print(f"  OK   {p['hora']} youtube   longo    já em longo/{dia.isoformat()}/ -> fila do notebook")
+            else:
+                para_fila(dia.isoformat(), p, *pacote_longo(dia))
             continue
         ep = eps.get(p["episodio"])
         if ep is None:
@@ -474,6 +552,7 @@ def main() -> None:
     ap.add_argument("--listar", action="store_true", help="só leitura: organizações e canais do Buffer")
     ap.add_argument("--data", help="AAAA-MM-DD (padrão: hoje em BRT)")
     ap.add_argument("--dry-run", action="store_true", help="mostra os posts do dia sem enviar nada")
+    ap.add_argument("--entregar-longo", metavar="AAAA-MM-DD", help="longo aprovado -> longo/<data>/ no branch midia")
     ap.add_argument("--teste-rascunho", metavar="MP4", help="teste real sem publicar: rascunho no Buffer + apaga")
     args = ap.parse_args()
 
@@ -485,6 +564,9 @@ def main() -> None:
         print(("OK: " if ok else "FALHOU: ") + msg)
         print(f"Instagram: {status_instagram()}")
         sys.exit(0 if ok else 1)
+    if args.entregar_longo:
+        entregar_longo(dt.date.fromisoformat(args.entregar_longo))
+        return
     dia = dt.date.fromisoformat(args.data) if args.data else dt.datetime.now(BRT).date()
     if args.teste_rascunho:
         teste_rascunho(Path(args.teste_rascunho).resolve())

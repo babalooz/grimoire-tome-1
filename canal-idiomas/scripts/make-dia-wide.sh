@@ -4,6 +4,7 @@
 # scripts/tts_cache.py (só cache, rede bloqueada) e o vocabulário usa os cortes de public/audio/<tema.audio>/ (voz-cache).
 # Saída: out/dia-<data>-wide.mp4 (H.264, yuv420p/tv/bt709, −14 LUFS, pico ≤ −1 dBTP), out/dia-<data>-wide.capitulos.txt,
 #        out/dia-<data>-wide.miniatura.png (1280x720).
+# Depois: scripts/portao.py --dia out/props-dia-<data>-wide.json --juiz <nota> e scripts/publicar.py --entregar-longo <data>.
 # Uso: scripts/make-dia-wide.sh 2026-10-29 episodes/cafe-t1e01-hi-im-capy-v2.json vocab/halloween.json \
 #        episodes/cafe-t1e01-hi-im-capy.json 13 17 "Hi! I'm Capy." "INGLÊS DO ZERO · T1 E01" "+ 9 palavras de Halloween" [--stills] [--no-video]
 # SITCOM "-" = sem sitcom novo pra amanhã (publicados.csv sem episódio nesse dia): monta só vocabulário + corte.

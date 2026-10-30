@@ -32,6 +32,7 @@ def main() -> None:
     publicar.acesso_ok = lambda: (True, "simulado")
     publicar.canal_id = lambda rede: "canal-simulado"
     publicar.duracao = lambda mp4: 200.0  # "Short" de 3:20
+    publicar.arquivos_longo = lambda d: []  # ainda não entregue
     publicar.gql = lambda *a, **k: (_ for _ in ()).throw(AssertionError("NÃO pode chamar o Buffer"))
     publicar.hospedar = lambda *a, **k: (_ for _ in ()).throw(AssertionError("NÃO pode subir mídia"))
     agora = dt.datetime(2026, 10, 29, 10, 0, tzinfo=dt.timezone.utc)
