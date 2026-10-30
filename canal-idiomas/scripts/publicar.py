@@ -256,16 +256,26 @@ def textos(ep: dict, p: dict) -> dict:
         tags += " #capybara"
     ctx = ep.get("contexto") or {}
     if p["faixa"] == "episodio":
-        # title já vem com o código no formato "cafe" (ex.: "T1 E01 · o primeiro..."); no formato "licao" não vem.
-        titulo = (ep["title"] if ep["title"].startswith(cod) else f"{cod} · {ep['title']}")[:100]
+        # regra de numeração (CLAUDE.md, 28/10): título/legenda começam por "Ep. N (parte X/3) · " — já embutido em
+        # ep["title"]/ctx["legenda"] pelos episódios escritos depois dessa regra; sem isso (formato antigo "licao" ou
+        # episódios de antes de 28/10, já agendados), cai no comportamento anterior (prefixo do código da série).
+        numerado = ep["title"].startswith("Ep. ") or (ctx.get("legenda") or "").startswith("Ep. ")
+        titulo = ep["title"] if numerado else (ep["title"] if ep["title"].startswith(cod) else f"{cod} · {ep['title']}")
+        titulo = titulo[:100]
         legenda = ctx.get("legenda") or ep.get("canDo") or ep["title"]
         if p["rede"] == "tiktok":
-            texto = f"{cod} | {legenda.lower()} {tags}"
+            texto = f"{legenda} {tags}" if numerado else f"{cod} | {legenda.lower()} {tags}"
         elif p["rede"] == "instagram":
             # legenda própria do Instagram: sem o prefixo de código do YouTube, sem o "cod |" do TikTok.
             texto = f"{legenda}\n\n{tags}"
         else:
-            texto = f"{titulo}\n\n{legenda}\n\n{tags}"
+            # numerado: o título já começa por "Ep. N (parte X/3) · ", então o corpo usa o objetivo (canDo) em vez
+            # de repetir a legenda inteira (que também começa pelo mesmo prefixo).
+            corpo = (ep.get("canDo") if numerado and ep.get("canDo") else legenda)
+            texto = f"{titulo}\n\n{corpo}\n\n{tags}"
+            if ctx.get("anterior"):
+                # regra de numeração: a descrição do YouTube TERMINA com "anterior: ..." (depois das hashtags)
+                texto += f"\n\nanterior: {ctx['anterior']}"
     else:
         esq = next((e for e in ep.get("esquetes") or [] if e.get("id") == p.get("corte")), {})
         cta = esq.get("cta") or f"aula completa no {cod.split()[-1].replace('E', 'EP ')}"

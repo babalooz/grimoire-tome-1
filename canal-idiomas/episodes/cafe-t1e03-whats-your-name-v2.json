@@ -19,40 +19,160 @@
     "pt": "Qual é o seu nome?",
     "variacoes": []
   },
-  "cast": ["capi", "lazy", "poppy", "turista", "hank"],
-  "hashtags": ["#capyfala", "#inglês", "#capybara", "#aprenderingles", "#inglesdozero"],
+  "cast": [
+    "capi",
+    "lazy",
+    "poppy",
+    "turista",
+    "hank"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
   "notebook": 3,
   "beats": [
-    { "speaker": "poppy", "lang": "pt", "emotion": "excited",
-      "text": "Noite de basquete americano! O bar tá cheio de gringo!" },
-    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "happy",
-      "text": "Hoje eu pergunto o nome de alguém. Eu aprendi isso." },
-    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "Hi, Capy!" },
-    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
-      "text": "Ele leu meu crachá. Eu não sei o nome dele." },
-    { "speaker": "capi", "lang": "en", "emotion": "worried", "text": "Hi... Smith?" },
-    { "speaker": "turista", "lang": "en", "emotion": "smile", "text": "No! That's the player." },
-    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "alvo": true, "text": "What's... your... name?" },
-    { "tipo": "pausa", "s": 0.8 },
-    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: pergunte o nome dele (What's your name?)" },
-    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "What's your name?" },
-    { "speaker": "turista", "lang": "en", "emotion": "happy", "text": "I'm Mike!" },
-    { "speaker": "turista", "lang": "en", "emotion": "smile", "alvo": true, "text": "What's your name?" },
-    { "tipo": "pausa", "s": 2.0 },
-    { "speaker": "lazy", "lang": "en", "emotion": "neutral", "text": "Lazy." },
-    { "tipo": "pausa", "s": 0.6 },
-    { "tipo": "pausa", "s": 3.0, "text": "SUA VEZ: de novo, pergunte o nome dela" },
-    { "speaker": "capi", "lang": "en", "emotion": "happy", "alvo": true, "text": "What's your name?" },
-    { "speaker": "poppy", "lang": "en", "emotion": "happy", "alvo": true, "text": "What's your name?" },
-    { "speaker": "hank", "lang": "en", "emotion": "smile", "text": "Hank. You know me." },
-    { "speaker": "capi", "lang": "pt", "card": true, "hold": 4.5, "emotion": "happy",
+    {
+      "speaker": "poppy",
+      "lang": "pt",
+      "emotion": "excited",
+      "text": "Noite de basquete americano! O bar tá cheio de gringo!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "happy",
+      "text": "Hoje eu pergunto o nome de alguém. Eu aprendi isso."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Hi, Capy!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Ele leu meu crachá. Eu não sei o nome dele."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "worried",
+      "text": "Hi... Smith?"
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "No! That's the player."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "What's... your... name?"
+    },
+    {
+      "tipo": "pausa",
+      "s": 0.8
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: pergunte o nome dele (What's your name?)"
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "What's your name?"
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "I'm Mike!"
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "smile",
+      "alvo": true,
+      "text": "What's your name?"
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.0
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Lazy."
+    },
+    {
+      "tipo": "pausa",
+      "s": 0.6
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: de novo, pergunte o nome dela"
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "What's your name?"
+    },
+    {
+      "speaker": "poppy",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "What's your name?"
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "Hank. You know me."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 4.5,
+      "emotion": "happy",
       "text": "Perguntei dois nomes. E não confundi mais com a camisa.",
-      "cardTexto": "você perguntou o nome de 2 gringos · CONSIGO ✓" },
-    { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "worried",
-      "text": "Eles vão contar. E eu não sei contar em inglês." },
-    { "speaker": "poppy", "lang": "pt", "card": true, "hold": 4.0, "emotion": "excited",
+      "cardTexto": "você perguntou o nome de 2 gringos · CONSIGO ✓"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Eles vão contar. E eu não sei contar em inglês."
+    },
+    {
+      "speaker": "poppy",
+      "lang": "pt",
+      "card": true,
+      "hold": 4.0,
+      "emotion": "excited",
       "text": "Conta com eles, Capy!",
-      "cardTexto": "a Capy sabe contar até 10? próximo assunto: os números de 1 a 10 · segue a Capy" }
+      "cardTexto": "a Capy sabe contar até 10? próximo assunto: os números de 1 a 10 · segue a Capy"
+    }
   ],
   "gatilhos": [
     "continua o V2 do assunto 2: o Mike (gringo que comentou no vídeo da Poppy) leva a Capy a um bar na noite de basquete americano — hype sem data de estreia (temporada regular, segura o ano inteiro); 'NBA' só na legenda do post",
@@ -60,5 +180,9 @@
     "piada da palavra: a Capy lê 'SMITH' nas costas da camisa e acha que é o nome do Mike",
     "gancho verdadeiro pro próximo capítulo: 'não sei contar em inglês' aparece só em pensamento, sem fala nova; o card final tease só diz 'próximo assunto', sem 'EP' nem 'amanhã'",
     "o Lazy demorando pra responder é a piada 2 (bar inteiro espera)"
-  ]
+  ],
+  "contexto": {
+    "legenda": "Ep. 3 (parte 2/3) · bar cheio de gringo numa noite de basquete americano e eu tive que perguntar o nome de alguém em inglês. what's your name? 🏀",
+    "anterior": "Ep. 3 (parte 1/3)"
+  }
 }

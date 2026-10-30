@@ -909,6 +909,60 @@
      "episodio": "T1 E02 · parte 3/3"
     }
    ]
+  },
+  {
+   "data": "2026-11-05",
+   "diaSemana": "qui",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E03"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E03"
+    }
+   ]
+  },
+  {
+   "data": "2026-11-06",
+   "diaSemana": "sex",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E03 · parte 2/3"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E03 · parte 2/3"
+    }
+   ]
+  },
+  {
+   "data": "2026-11-07",
+   "diaSemana": "sab",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E03 · parte 3/3"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E03 · parte 3/3"
+    }
+   ]
   }
  ]
 }
