@@ -1,10 +1,12 @@
-"""Sobe os vídeos LONGOS do CapyFala (16:9) no YouTube pela API, sem ninguém clicar.
+"""Sobe os vídeos do CapyFala no YouTube pela API, sem ninguém clicar: os LONGOS (16:9) e, desde 30/10/2026, os Shorts.
 
 Por que existe: o Buffer não publica vídeo longo do YouTube (só Shorts); verificado em 28/10/2026.
 Onde roda: no PC do Felipe, por tarefa agendada do Windows (a nuvem não guarda o token OAuth).
 
 Entrada: branch `midia` do repo grimoire-tome-1, pasta longo/<AAAA-MM-DD>/ com
   video.mp4, miniatura.png e pacote.json {"titulo", "descricao", "publicar_em" (ISO com fuso), "categoria"}.
+Shorts: pacotes yt-<data>-*.json na raiz do branch `midia`, ao lado do MP4 (scripts/publicar.py), para o Buffer ficar só
+  com TikTok; {"arquivo", "titulo", "descricao", "publicar_em", "categoria", "ia"}. Registro em ~/.capyfala/shorts.json.
 Saída: vídeo agendado no canal (privado com publishAt; vira público sozinho na hora marcada),
   linha em ponte/LONGOS.md (branch ponte) e registro local em ~/.capyfala/longos.json.
 
@@ -27,6 +29,7 @@ CASA = Path.home() / ".capyfala"
 CLIENTE = CASA / "client_secret.json"
 TOKEN = CASA / "token.json"
 FEITOS = CASA / "longos.json"
+FEITOS_SHORTS = CASA / "shorts.json"
 REPO = Path(r"C:\Users\felip\.claude\grimoire-ponte")
 ESCOPOS = ["https://www.googleapis.com/auth/youtube.upload", "https://www.googleapis.com/auth/youtube"]
 CANAL_ESPERADO = "UCXnc9jimA8PogcbNIcemMPw"  # CapyFala (@ACapyFala)
@@ -77,14 +80,21 @@ def pendentes():
             and {f"longo/{d}/video.mp4", f"longo/{d}/pacote.json"} <= set(nomes)], feitos
 
 
-def subir(d, yt, tmp):
+def ler_json(caminho):
+    return json.loads(git("show", f"origin/midia:{caminho}", binario=True).decode("utf-8"))  # text=True estragaria acento no Windows
+
+
+def pendentes_shorts():
+    nomes = git("ls-tree", "--name-only", "origin/midia").split()
+    feitos = json.loads(FEITOS_SHORTS.read_text()) if FEITOS_SHORTS.exists() else {}
+    return [n for n in sorted(nomes) if n.startswith("yt-") and n.endswith(".json") and n not in feitos], feitos
+
+
+def enviar(pac, mp4, yt):
     from googleapiclient.http import MediaFileUpload
-    pac = json.loads(git("show", f"origin/midia:longo/{d}/pacote.json"))
-    mp4 = tmp / f"{d}.mp4"
-    mp4.write_bytes(git("show", f"origin/midia:longo/{d}/video.mp4", binario=True))
     agora = dt.datetime.now(dt.timezone.utc)
     quando = dt.datetime.fromisoformat(pac["publicar_em"])
-    status = {"selfDeclaredMadeForKids": False, "containsSyntheticMedia": True}
+    status = {"selfDeclaredMadeForKids": False, "containsSyntheticMedia": pac.get("ia", True)}
     if quando > agora + dt.timedelta(minutes=15):
         status |= {"privacyStatus": "private", "publishAt": quando.astimezone(dt.timezone.utc).isoformat()}
     else:
@@ -98,7 +108,24 @@ def subir(d, yt, tmp):
     resp = None
     while resp is None:
         _, resp = req.next_chunk()
-    vid = resp["id"]
+    return resp["id"], status.get("publishAt", "agora")
+
+
+def subir_short(nome, yt, tmp):
+    pac = ler_json(nome)
+    mp4 = tmp / pac["arquivo"]
+    mp4.write_bytes(git("show", f"origin/midia:{pac['arquivo']}", binario=True))
+    if not mp4.stat().st_size:
+        raise FileNotFoundError(f"{pac['arquivo']} não está no branch midia")
+    return enviar(pac, mp4, yt)
+
+
+def subir(d, yt, tmp):
+    from googleapiclient.http import MediaFileUpload
+    pac = ler_json(f"longo/{d}/pacote.json")
+    mp4 = tmp / f"{d}.mp4"
+    mp4.write_bytes(git("show", f"origin/midia:longo/{d}/video.mp4", binario=True))
+    vid, quando = enviar(pac, mp4, yt)
     nomes = git("ls-tree", "-r", "--name-only", "origin/midia", f"longo/{d}/").split()
     if f"longo/{d}/miniatura.png" in nomes:
         png = tmp / f"{d}.png"
@@ -107,7 +134,7 @@ def subir(d, yt, tmp):
             yt.thumbnails().set(videoId=vid, media_body=MediaFileUpload(str(png))).execute()
         except Exception as e:  # miniatura personalizada exige canal verificado por telefone
             print(f"  miniatura não aplicada ({e.__class__.__name__}): {str(e)[:160]}")
-    return vid, status.get("publishAt", "agora")
+    return vid, quando
 
 
 def registrar(linhas):
@@ -127,16 +154,22 @@ def main():
     if "--autorizar" in sys.argv:
         return autorizar()
     datas, feitos = pendentes()
-    if not datas:
+    shorts, feitos_shorts = pendentes_shorts()
+    if not datas and not shorts:
         print("nada pendente")
         return
     if "--simular" in sys.argv:
         for d in datas:
-            print("subiria:", d, json.loads(git("show", f"origin/midia:longo/{d}/pacote.json"))["titulo"])
+            print("subiria:", d, ler_json(f"longo/{d}/pacote.json")["titulo"])
+        for n in shorts:
+            print("subiria:", n, ler_json(n)["titulo"])
         return
     yt = servico(credenciais())
+    canal = yt.channels().list(part="id", mine=True).execute()["items"][0]["id"]
+    if canal != CANAL_ESPERADO:  # conta errada: não sobe nada
+        sys.exit(f"CANAL ERRADO: token é de {canal}, esperado {CANAL_ESPERADO}")
     linhas = []
-    with tempfile.TemporaryDirectory() as t:
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as t:  # no Windows o envio segura o arquivo aberto
         for d in datas:
             try:
                 vid, quando = subir(d, yt, Path(t))
@@ -147,6 +180,16 @@ def main():
             FEITOS.write_text(json.dumps(feitos, indent=1))
             linhas.append(f"- {d} · https://youtu.be/{vid} · publica {quando}\n")
             print(f"subiu {d}: https://youtu.be/{vid} (publica {quando})")
+        for n in shorts:
+            try:
+                vid, quando = subir_short(n, yt, Path(t))
+            except Exception as e:
+                print(f"SHORT FALHOU {n}: {e.__class__.__name__}: {str(e)[:200]}", flush=True)
+                continue
+            feitos_shorts[n] = {"video": vid, "publica": quando}
+            FEITOS_SHORTS.write_text(json.dumps(feitos_shorts, indent=1))
+            linhas.append(f"- {n} · https://youtu.be/{vid} · publica {quando}\n")
+            print(f"subiu {n}: https://youtu.be/{vid} (publica {quando})")
     if linhas:
         registrar(linhas)
 
