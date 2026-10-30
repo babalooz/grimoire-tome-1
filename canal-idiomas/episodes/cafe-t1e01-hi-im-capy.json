@@ -34,7 +34,7 @@
       "text": "Hoje você sai daqui conseguindo dizer oi e o seu nome. Em inglês." },
     { "speaker": "hank", "lang": "en", "emotion": "neutral", "vapor": true, "text": "Hi." },
     { "speaker": "capi", "lang": "pt", "mode": "pensamento", "emotion": "shock",
-      "text": "Eu sei essa. Por que eu travei?" },
+      "text": "Eu sei essa. Por que eu congelei?" },
     { "speaker": "duda", "lang": "en", "emotion": "happy", "alvo": "variacao", "vapor": true,
       "text": "Hi! I'm Duda!" },
     { "speaker": "hank", "lang": "en", "emotion": "neutral", "text": "Hi, Duda." },

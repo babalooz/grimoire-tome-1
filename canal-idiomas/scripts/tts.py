@@ -218,6 +218,10 @@ WORD = re.compile(r"[A-Za-z0-9À-ÿ']+")
 # formato "cafe". Separação de modelo por série (28/10): a Sitcom do Café usa o flash-tts normal (10 pedidos/dia no
 # plano grátis); o flash-lite fica reservado para a série de vocabulário (tts_vocab.py), cada um com cota própria.
 GEMINI_MODEL_CAFE = "gemini-3.8-flash-tts"
+# Voz reserva (escuta cega do Felipe, 30/10: 3.8-flash 4 falas, lite 3, 2.5-preview 1, nenhuma reprovada): cota diária do
+# GEMINI_MODEL_CAFE acabou = o episódio inteiro é refeito neste modelo, para não misturar duas vozes na mesma cena.
+# A cota do lite é a mesma da série de vocabulário (tts_vocab.py): usar a reserva gasta o dia do vocabulário.
+GEMINI_MODEL_RESERVA = "gemini-3.8-flash-lite-tts"
 GEMINI_VOICE = {  # vozes bem diferentes entre si (grave/seco, lento, animada, jovem/rápida, leve)
     "capi": "Sulafat", "hank": "Algenib", "lazy": "Umbriel", "duda": "Autonoe", "poppy": "Zephyr",
     "bolinha": "Despina", "donajaca": "Gacrux", "narrador": "Enceladus", "turista": "Orus",
@@ -235,6 +239,10 @@ class GeminiQuotaError(RuntimeError):
     """429 persistente: a rotina deve parar e avisar quantas falas faltaram (nunca cair pro Kokoro em silêncio)."""
 
 
+class TetoPedidos(GeminiQuotaError):
+    """Teto próprio (--max-pedidos) atingido: não é cota do Gemini, então a voz reserva não entra."""
+
+
 def _gemini_key(speaker: str, lang: str, mode: str, speed: float, text: str, voice: str,
                  model: str = GEMINI_MODEL_CAFE) -> str:
     return hashlib.sha256("|".join([speaker, lang, mode, _num(speed), text, voice, model]).encode()).hexdigest()[:16]
@@ -242,13 +250,14 @@ def _gemini_key(speaker: str, lang: str, mode: str, speed: float, text: str, voi
 
 _gemini_pedidos = 0  # contador de chamadas reais (fora do cache) nesta execução
 MAX_PEDIDOS: int | None = None  # teto de pedidos TTS nesta execução (--max-pedidos); passou = para como se fosse 429
+RESERVA = True  # cota diária do modelo da sitcom acabou = refaz o episódio em GEMINI_MODEL_RESERVA; --sem-reserva = só para
 LOTE = True  # sitcom em lote por (personagem, idioma) (scripts/tts_lote.py); --sem-lote volta a 1 pedido por fala
 
 
 def _conta_pedido() -> None:
     global _gemini_pedidos
     if MAX_PEDIDOS is not None and _gemini_pedidos >= MAX_PEDIDOS:
-        raise GeminiQuotaError(f"teto de {MAX_PEDIDOS} pedidos desta execução atingido")
+        raise TetoPedidos(f"teto de {MAX_PEDIDOS} pedidos desta execução atingido")
     _gemini_pedidos += 1
 
 
@@ -306,14 +315,14 @@ def _cafe_pieces(beat: dict, first_alvo: bool, nucleo: str | None) -> list[str]:
 
 
 def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: float = CAFE_PAUSE, engine: str = "kokoro",
-               cache_dir: Path | None = None):
+               cache_dir: Path | None = None, model: str = GEMINI_MODEL_CAFE):
     """Sintetiza cada pedaço e cola com silêncio medido. Devolve (áudio, sr, partes com início/fim em s).
     engine="gemini": 1 chamada por FALA (ignora o split em pedaços; o Gemini lê "..." como pausa pela instrução).
     cache_dir: pasta de cache alternativa (ex. public/audio/flash-tts/assuntoN), repassada a synth_gemini."""
     if engine == "gemini":
         texto = " ".join(p.rstrip(" ,") + ("..." if i < len(pieces) - 1 and not p.rstrip().endswith("...") else "")
                           for i, p in enumerate(pieces))
-        audio, sr = synth_gemini(texto, lang, speaker, speed, cache_dir=cache_dir)
+        audio, sr = synth_gemini(texto, lang, speaker, speed, model=model, cache_dir=cache_dir)
         gain = 1.0
     else:
         global _kokoro
@@ -354,7 +363,8 @@ def synth_cafe(pieces: list[str], lang: str, speaker: str, speed: float, pause: 
     return audio.astype(np.float32), sr, parts
 
 
-def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir: Path | None = None) -> list:
+def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir: Path | None = None,
+                model: str = GEMINI_MODEL_CAFE) -> list:
     """Formato cafe: 1 .wav por beat de fala (c<n>.wav); pausa/pergunta = null na lista de timings."""
     for old in out_dir.glob("c*.wav"):
         old.unlink()
@@ -362,7 +372,7 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir:
     first = next((i for i, b in enumerate(episode["beats"]) if b.get("alvo") is True), -1)
     if engine == "gemini" and LOTE:  # enche o cache em lote; o que não conferir cai no laço abaixo, 1 pedido por fala
         import tts_lote
-        reg = tts_lote.preencher(episode, cache_dir=cache_dir)
+        reg = tts_lote.preencher(episode, model=model, cache_dir=cache_dir)
         (out_dir / "lote.json").write_text(json.dumps(reg, ensure_ascii=False, indent=2))
     timings = []
     for i, b in enumerate(episode["beats"]):
@@ -376,7 +386,7 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir:
             speed = CAFE_SPEED.get((speaker, lang), 1.0) * (CAFE_THOUGHT if mode == "pensamento" else 1.0)
         pieces = _cafe_pieces(b, i == first, alvo.get("nucleo"))
         try:
-            audio, sr, parts = synth_cafe(pieces, lang, speaker, speed, engine=engine, cache_dir=cache_dir)
+            audio, sr, parts = synth_cafe(pieces, lang, speaker, speed, engine=engine, cache_dir=cache_dir, model=model)
         except GeminiQuotaError as e:
             feitas = sum(1 for t in timings if t is not None)
             faltam = len(episode["beats"]) - i
@@ -395,6 +405,24 @@ def render_cafe(episode: dict, out_dir: Path, engine: str = "kokoro", cache_dir:
     return timings
 
 
+def render_cafe_com_reserva(episode: dict, out_dir: Path, engine: str, cache_dir: Path | None) -> list:
+    """Modelo da sitcom; só cota DIÁRIA esgotada troca para a reserva. Registra em voz.json qual modelo saiu."""
+    modelo = GEMINI_MODEL_CAFE
+    try:
+        timings = render_cafe(episode, out_dir, engine=engine, cache_dir=cache_dir, model=modelo)
+    except TetoPedidos:
+        raise
+    except GeminiQuotaError as e:
+        if not (RESERVA and engine == "gemini" and "cota diária" in str(e)):
+            raise
+        modelo = GEMINI_MODEL_RESERVA
+        print(f"VOZ RESERVA: cota diária de {GEMINI_MODEL_CAFE} acabou em {episode['id']}; refazendo em {modelo}",
+              file=sys.stderr)
+        timings = render_cafe(episode, out_dir, engine=engine, cache_dir=cache_dir, model=modelo)
+    (out_dir / "voz.json").write_text(json.dumps({"modelo": modelo if engine == "gemini" else engine}))
+    return timings
+
+
 def main(episode_path: str, motor: str = "kokoro", cache_dir: str | None = None) -> None:
     sys.path.insert(0, str(ROOT / "scripts"))  # tts_lote/teste_voz/tts_vocab
     episode = json.loads(Path(episode_path).read_text())
@@ -403,7 +431,7 @@ def main(episode_path: str, motor: str = "kokoro", cache_dir: str | None = None)
     cache_path = (ROOT / cache_dir) if cache_dir else None
 
     if episode.get("format") == "cafe":
-        timings = render_cafe(episode, out_dir, engine=motor, cache_dir=cache_path)
+        timings = render_cafe_com_reserva(episode, out_dir, motor, cache_path)
         (out_dir / "timings.json").write_text(json.dumps(timings, ensure_ascii=False, indent=2))
         import pyloudnorm as pyln
         voice = np.concatenate([sf.read(ROOT / "public" / t["audio"])[0] for t in timings if t])
@@ -447,8 +475,10 @@ if __name__ == "__main__":
     ap.add_argument("--motor", choices=["kokoro", "gemini"], default="kokoro")
     ap.add_argument("--cache-dir", default=None, help="pasta de cache alternativa, relativa a este repo (ex. public/audio/flash-tts/assunto6)")
     ap.add_argument("--sem-lote", action="store_true", help="sitcom no modo antigo: 1 pedido Gemini por fala")
+    ap.add_argument("--sem-reserva", action="store_true", help="cota diária acabou = para, sem trocar para a voz reserva")
     ap.add_argument("--max-pedidos", type=int, default=None, help="teto de pedidos TTS nesta execução")
     a = ap.parse_args()
     LOTE = not a.sem_lote
+    RESERVA = not a.sem_reserva
     MAX_PEDIDOS = a.max_pedidos
     main(a.episodio, a.motor, a.cache_dir)
