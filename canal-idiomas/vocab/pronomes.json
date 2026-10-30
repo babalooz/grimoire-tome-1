@@ -27,7 +27,7 @@
       "armadilha": {
         "id": "ti",
         "marca": "sempre maiúsculo · ái",
-        "dica": "É ái. E escreve sempre com letra maiúscula.",
+        "dica": "É ái, e escreve sempre com letra maiúscula.",
         "voz": true
       }
     },
@@ -57,7 +57,7 @@
       "armadilha": {
         "id": "the",
         "marca": "H é só ar: hii",
-        "dica": "O H é só ar saindo, bem leve. Hii.",
+        "dica": "O H é só ar saindo, bem leve, hii.",
         "voz": true
       }
     },
@@ -75,7 +75,7 @@
       "armadilha": {
         "id": "tshe",
         "marca": "chii, não sii",
-        "dica": "É chii, com som de ch. Não é sii.",
+        "dica": "É chii, com som de ch, não sii.",
         "voz": true
       }
     },
@@ -107,7 +107,7 @@
       "armadilha": {
         "id": "tthey",
         "marca": "th: língua entre os dentes",
-        "dica": "Língua entre os dentes no th. Não é dei.",
+        "dica": "Língua entre os dentes no th, não dei.",
         "voz": true
       }
     }
@@ -137,7 +137,7 @@
     }
   ],
   "apresenta": "capi",
-  "dicas": "capi",
+  "dicas": "lazy",
   "revisao": "bolinha",
   "desafio": {
     "itens": [
@@ -154,7 +154,7 @@
   "falas": {
     "gancho": {
       "speaker": "capi",
-      "text": "Eu, você, ele, ela: 6 palavras pra falar de qualquer pessoa em inglês."
+      "text": "Eu, você, ele, ela. 6 palavras pra falar de qualquer pessoa."
     },
     "desafio": {
       "speaker": "capi",
