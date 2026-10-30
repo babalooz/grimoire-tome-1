@@ -88,12 +88,16 @@ def main() -> None:
         due = dt.datetime(dia.year, dia.month, dia.day, hh, mm, tzinfo=pub.BRT).astimezone(dt.timezone.utc)
         if due <= dt.datetime.now(dt.timezone.utc):
             raise SystemExit(f"{rede}: horário já passou")
-        entrada = {"input": {"channelId": pub.canal_id(rede), "text": textos[rede]["texto"], "schedulingType": "automatic",
+        entrada = {"input": {"channelId": "notebook" if rede == "youtube" else pub.canal_id(rede), "text": textos[rede]["texto"], "schedulingType": "automatic",
                              "mode": "customScheduled", "dueAt": due.isoformat().replace("+00:00", "Z"), "aiAssisted": True,
                              "metadata": pub.metadata(rede, textos[rede]),
                              "assets": [{"video": {"url": url, "metadata": {"thumbnailOffset": 0}}}]}}
         if a.dry_run:
             print(f"  [dry-run] {json.dumps(entrada, ensure_ascii=False)[:600]}")
+            continue
+        if rede == "youtube":  # YouTube sai do notebook pela API, não pelo Buffer
+            pub.enfileirar_youtube(a.data, {"hora": HORAS[rede], "rede": rede, "faixa": "vocab", "episodio": cod}, nome, url, entrada)
+            print(f"  OK youtube {a.data} {HORAS[rede]} BRT -> fila do notebook")
             continue
         r = pub.gql(pub.M_POST, entrada)["createPost"]
         if "post" not in r:

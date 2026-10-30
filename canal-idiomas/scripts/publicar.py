@@ -2,11 +2,13 @@
 
 Chave: "Credencial de API" do ambiente Default (nome "Buffer", Bearer, site api.buffer.com). O proxy do ambiente injeta
 o header Authorization sozinho: o script NÃO lê nem vê a chave. (Fallback local: BUFFER_TOKEN/BUFFER_API_KEY, se existir.)
-Teste de acesso = consulta de leitura (listar canais) responde 200 e contém TikTok "acapyfala" e YouTube "CapyFala".
+Teste de acesso = consulta de leitura (listar canais) responde 200 e contém TikTok "acapyfala".
+YouTube NÃO passa mais pelo Buffer (30/10/2026, para caber 3 TikToks no plano grátis): cada Short vira um pacote
+yt-<data>-*.json no branch "midia", ao lado do MP4, e o notebook sobe pela API do YouTube (ponte/subir_longo.py, a cada 2 h).
 
-Instagram é canal OPCIONAL (3º canal, `--listar` só exige TikTok + YouTube): se não estiver conectado no Buffer,
+Instagram é canal OPCIONAL (`--listar` só exige o TikTok): se não estiver conectado no Buffer,
 o script segue normal com os outros dois e avisa "Instagram ainda não conectado" sem falhar (código de saída
-continua baseado só em TikTok + YouTube); quando alguém conectar o Instagram no Buffer, ele entra sozinho no próximo
+continua baseado só no TikTok); quando alguém conectar o Instagram no Buffer, ele entra sozinho no próximo
 --listar/publicação, com legenda própria (textos()) — sem ID fixo no código, descoberto pelo `service` do canal.
 
 Uso (a partir de canal-idiomas/):
@@ -19,7 +21,7 @@ Uso (a partir de canal-idiomas/):
   python3 scripts/publicar.py --data 2026-10-12
       Agenda os posts do dia (mode=customScheduled, schedulingType=automatic, horário da grade em BRT).
   python3 scripts/publicar.py --teste-rascunho out/<id>.mp4
-      Teste real SEM publicar: cria rascunho no YouTube e no TikTok com o vídeo, mostra se carregou e apaga.
+      Teste real SEM publicar: cria rascunho no TikTok com o vídeo, mostra se carregou e apaga.
 
 Um post só é enviado se TUDO for verdade (docs/plano-de-acao.md §4):
   data >= 2026-10-12 · acesso ao Buffer OK (--listar) · MP4 existe · portão aprovou (out/<arquivo>.portao.json com "aprovado": true)
@@ -63,7 +65,7 @@ SHORT_MAX_S = 180.0  # Buffer: Short > 3 min não publica sozinho (vira notifica
 
 
 # ---------------------------------------------------------------- API
-ESPERADOS = {"tiktok": "acapyfala", "youtube": "capyfala"}  # canais que precisam aparecer no teste de acesso
+ESPERADOS = {"tiktok": "acapyfala"}  # canais que precisam aparecer no teste de acesso
 
 
 class SemAcesso(Exception):
@@ -120,7 +122,7 @@ def listar() -> dict:
 
 
 def acesso_ok() -> tuple[bool, str]:
-    """Teste das rotinas: leitura em api.buffer.com responde e lista TikTok acapyfala + YouTube CapyFala."""
+    """Teste das rotinas: leitura em api.buffer.com responde e lista TikTok acapyfala."""
     try:
         d = listar()
     except SemAcesso as e:
@@ -133,9 +135,9 @@ def acesso_ok() -> tuple[bool, str]:
 
 
 def status_instagram() -> str:
-    """Linha informativa pro --listar: Instagram é opcional, nunca derruba o acesso OK de TikTok/YouTube."""
+    """Linha informativa pro --listar: Instagram é opcional, nunca derruba o acesso OK do TikTok."""
     cid = canal_id("instagram")
-    return f"conectado ({cid})" if cid else "ainda não conectado (opcional; TikTok + YouTube seguem normal)"
+    return f"conectado ({cid})" if cid else "ainda não conectado (opcional; TikTok segue normal)"
 
 
 def canal_id(rede: str) -> str | None:
@@ -165,11 +167,18 @@ def _git(*args: str, cwd: Path = GIT_ROOT) -> str:
     return subprocess.run(["git", *args], cwd=cwd, check=True, capture_output=True, text=True).stdout.strip()
 
 
+def pacote_yt_vivo(nome: str, hoje: dt.date) -> bool:
+    """yt-AAAA-MM-DD-*.json: pedido de envio para o notebook; sai do branch junto com o vídeo, MIDIA_DIAS depois."""
+    if not (nome.startswith("yt-") and nome.endswith(".json")):
+        return False
+    return (hoje - dt.date.fromisoformat(nome[3:13])).days < MIDIA_DIAS
+
+
 def midia_manter(hoje: dt.date) -> set[str]:
     """Arquivos atuais do branch midia que continuam: tudo, menos os publicados há MIDIA_DIAS dias ou mais."""
     try:
         _git("fetch", "-q", "origin", "midia")
-        atuais = {n for n in _git("ls-tree", "--name-only", "origin/midia").splitlines() if n.endswith(".mp4")}
+        atuais = {n for n in _git("ls-tree", "--name-only", "origin/midia").splitlines() if n.endswith(".mp4") or pacote_yt_vivo(n, hoje)}
     except subprocess.CalledProcessError:
         return set()
     velhos = set()
@@ -340,6 +349,25 @@ def registrar(dia: str, p: dict, post: dict, arquivo: str, midia_url: str) -> No
                     post.get("status", "scheduled"), arquivo, midia_url])
 
 
+def pacote_youtube(pasta: Path, dia: str, p: dict, arquivo: str, entrada: dict) -> Path:
+    """Pedido de envio que o notebook lê do branch midia (ponte/subir_longo.py). O título vem do mesmo metadata()."""
+    i = entrada["input"]
+    meta = i["metadata"]["youtube"]
+    cod = p["episodio"].replace(" ", "").replace("/", "-")
+    f = pasta / f"yt-{dia}-{p['hora'].replace(':', '')}-{p['faixa']}-{cod}{('-' + p['corte']) if p.get('corte') else ''}.json"
+    f.write_text(json.dumps({"arquivo": arquivo, "titulo": meta["title"], "descricao": i["text"], "categoria": meta["categoryId"],
+                             "publicar_em": i["dueAt"].replace("Z", "+00:00"), "ia": meta["isAiGenerated"]},
+                            ensure_ascii=False, indent=1), encoding="utf-8")
+    return f
+
+
+def enfileirar_youtube(dia: str, p: dict, arquivo: str, url: str, entrada: dict) -> None:
+    """Para quem já tem o MP4 no branch midia (publicar_vocab, publicar_corte): só acrescenta o pacote."""
+    with tempfile.TemporaryDirectory() as t:
+        hospedar([pacote_youtube(Path(t), dia, p, arquivo, entrada)], dt.date.fromisoformat(dia))
+    registrar(dia, p, {"id": "", "status": "na fila do notebook"}, arquivo, url)
+
+
 def publicar_dia(dia: dt.date, dry: bool) -> int:
     grade = {g["data"]: g for g in json.loads(GRADE.read_text())["grade"]}
     if dia.isoformat() not in grade:
@@ -363,7 +391,7 @@ def publicar_dia(dia: dt.date, dry: bool) -> int:
         motivo = []
         if dia < INICIO:
             motivo.append(f"antes de {INICIO}")
-        if not acesso:
+        if not acesso and p["rede"] != "youtube":
             motivo.append(f"sem acesso ao Buffer ({acesso_msg})")
         if not mp4.exists():
             motivo.append(f"MP4 não renderizado ({mp4.relative_to(ROOT)})")
@@ -372,7 +400,7 @@ def publicar_dia(dia: dt.date, dry: bool) -> int:
         portao = mp4.with_suffix(".portao.json")
         if not (portao.exists() and json.loads(portao.read_text()).get("aprovado") is True):
             motivo.append("portão não aprovou (rode scripts/portao.py)")
-        cid = canal_id(p["rede"])
+        cid = "notebook" if p["rede"] == "youtube" else canal_id(p["rede"])
         if not cid:
             motivo.append(f"canal {p['rede']} não conectado no Buffer")
         if due <= dt.datetime.now(dt.timezone.utc):
@@ -392,9 +420,16 @@ def publicar_dia(dia: dt.date, dry: bool) -> int:
         prontos.append((p, mp4, entrada))
     if dry or not prontos:
         return 0
-    urls = hospedar(sorted({m for _, m, _ in prontos}), dia)
+    with tempfile.TemporaryDirectory() as t:
+        pacotes = [pacote_youtube(Path(t), dia.isoformat(), p, mp4.name, e) for p, mp4, e in prontos if p["rede"] == "youtube"]
+        urls = hospedar(sorted({m for _, m, _ in prontos}) + pacotes, dia)
     enviados = 0
     for p, mp4, entrada in prontos:
+        if p["rede"] == "youtube":
+            registrar(dia.isoformat(), p, {"id": "", "status": "na fila do notebook"}, mp4.name, urls[mp4.name])
+            enviados += 1
+            print(f"  OK   {p['hora']} youtube   {p['faixa']:8} {p['episodio']} -> fila do notebook")
+            continue
         entrada["input"]["assets"][0]["video"]["url"] = urls[mp4.name]
         r = gql(M_POST, entrada)["createPost"]
         if "post" not in r:
@@ -417,7 +452,7 @@ def teste_rascunho(mp4: Path) -> None:
     """Teste real sem publicar: hospeda o MP4, cria RASCUNHO no YouTube e no TikTok, mostra se o vídeo carregou, apaga."""
     url = hospedar([mp4], dt.datetime.now(BRT).date())[mp4.name]
     print(f"vídeo hospedado: {url}")
-    for rede in ("youtube", "tiktok"):
+    for rede in ("tiktok",):
         t = {"titulo": "TESTE rascunho CapyFala (apagar)", "texto": "TESTE rascunho CapyFala (apagar)"}
         meta = metadata(rede, t)
         if rede == "youtube":
@@ -456,7 +491,7 @@ def main() -> None:
         return
     n = publicar_dia(dia, args.dry_run)
     if not args.dry_run:
-        print(f"{dia}: {n} post(s) agendado(s) no Buffer.")
+        print(f"{dia}: {n} post(s) agendado(s) (TikTok no Buffer, YouTube na fila do notebook).")
 
 
 if __name__ == "__main__":

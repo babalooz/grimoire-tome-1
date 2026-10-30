@@ -33,7 +33,7 @@ Q_POST = """query P($id: PostId!) { post(input: { id: $id }) {
 def ler_publicados() -> list[dict]:
     if not PUBLICADOS.exists():
         return []
-    return [r for r in csv.DictReader(PUBLICADOS.open()) if r.get("post_id")]
+    return [r for r in csv.DictReader(PUBLICADOS.open()) if r.get("post_id") and r["rede"] != "youtube"]  # YouTube: API no notebook (metricas.bat), não Buffer
 
 
 def postado_em(r: dict) -> dt.datetime:
