@@ -1,0 +1,159 @@
+{
+  "id": "cafe-t1e05-im-from-brazil-v2",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 5,
+    "codigo": "T1 E05 · parte 2/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 5,
+    "progresso": "você já sabe 5 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer de onde eu sou.",
+  "title": "Ep. 5 (parte 2/3) · I'm from Brazil! o gringo do bar voltou ☕",
+  "hookTitle": "o gringo do bar voltou",
+  "alvo": {
+    "en": "I'm from Brazil.",
+    "pt": "Eu sou do Brasil.",
+    "variacoes": [
+      "I'm from Texas."
+    ]
+  },
+  "cast": [
+    "capi",
+    "hank",
+    "lazy",
+    "turista",
+    "donajaca"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
+  "notebook": 5,
+  "beats": [
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Where are you from?"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Hoje eu digo de onde eu sou. Pra um gringo de verdade."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Respira. Três palavras."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "whisper",
+      "alvo": true,
+      "text": "I'm... from... Brazil."
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "SUA VEZ: I'm from Brazil."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": "variacao",
+      "text": "Cool! I'm from Texas."
+    },
+    {
+      "speaker": "donajaca",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil!"
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Hi, Mom!"
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "de novo: SUA VEZ"
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "And you?"
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "bored",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "bored",
+      "text": "Kidding."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 4.0,
+      "emotion": "happy",
+      "text": "Disse de onde eu sou. E o Hank fez piada.",
+      "cardTexto": "você disse de onde é pra um gringo · T1 E05 · parte 2/3 · CONSIGO ✓"
+    },
+    {
+      "speaker": "donajaca",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "hold": 2.0,
+      "text": "E como fala de onde ELA é, filha?"
+    }
+  ],
+  "gatilhos": [
+    "continua o capítulo dos assuntos 3-4: o Mike (urso do bar, figurante recorrente) volta atrás da resposta que ainda não ouviu",
+    "versão principal pós-correção do mestre (27/10): reserva atemporal do Mike, sem depender de janela de Halloween",
+    "a exceção da regra (frase-alvo só na boca de quem é do Brasil): o Hank 'do Brasil' de brincadeira, desmentido na fala seguinte ('Kidding.'); fecha o vídeo, a Capy nunca é a última",
+    "a Dona Jaca liga, orgulhosa, e dá o humor de verdade (ela é mesmo do Brasil)",
+    "gancho verdadeiro pro próximo assunto (de onde ELA é), sem citar número de episódio (ainda não agendado)"
+  ],
+  "contexto": {
+    "legenda": "Ep. 5 (parte 2/3) · o gringo do bar quer saber de onde a Capy é, e o Hank entra na piada. i'm from brazil! 🗺️☕",
+    "anterior": "Ep. 5 (parte 1/3)"
+  }
+}

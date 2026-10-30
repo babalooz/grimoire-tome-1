@@ -1,0 +1,174 @@
+{
+  "id": "cafe-t1e05-im-from-brazil",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 5,
+    "codigo": "T1 E05",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 5,
+    "progresso": "você já sabe 5 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer de onde eu sou.",
+  "title": "Ep. 5 (parte 1/3) · I'm from Brazil! o adesivo no mapa ☕",
+  "hookTitle": "o adesivo no mapa",
+  "alvo": {
+    "en": "I'm from Brazil.",
+    "pt": "Eu sou do Brasil.",
+    "variacoes": [
+      "I'm from Canada."
+    ]
+  },
+  "cast": [
+    "capi",
+    "hank",
+    "lazy",
+    "turista",
+    "donajaca"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
+  "notebook": 5,
+  "beats": [
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": "variacao",
+      "text": "I'm from Canada."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Where are you from?"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "worried",
+      "text": "Eu sei onde fica o Brasil. Só não sei dizer."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Hoje você diz de onde é. Em inglês. Uma palavra nova."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "I'm... from... Brazil."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "No fim, a língua encosta. Brazil. Não é Brasiu."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "emotion": "happy",
+      "text": "Vamos juntos. Essa é nossa."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "repita": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "SUA VEZ: I'm from Brazil."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "smile",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "hank",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Saiu Brasiu? Dá pra entender. A colher encosta na próxima."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "happy",
+      "text": "Canada. Brazil. Cool."
+    },
+    {
+      "speaker": "donajaca",
+      "lang": "pt",
+      "emotion": "happy",
+      "text": "Filha, eu também sei essa!"
+    },
+    {
+      "speaker": "donajaca",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil!"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 5.0,
+      "emotion": "happy",
+      "text": "Meu adesivo tá no mapa. E eu disse de onde sou.",
+      "cardTexto": "1º adesivo no mapa · T1 E05 · você já sabe 5 frases"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 6.0,
+      "emotion": "happy",
+      "text": "Comenta de onde você é. Em inglês.",
+      "cardTexto": "CONSIGO dizer de onde eu sou ✓ · sotaque não é erro: o objetivo é ser entendido"
+    }
+  ],
+  "gatilhos": [
+    "paga o gancho do assunto 4 ('de onde a Capy é?'): abre num close do mapa de adesivos, variando dos ganchos anteriores (porta, frase no 1º segundo, copo, caixa)",
+    "a peça nova é só 'from' (o 'I'm' já vem do assunto 1); som da vez = o L final (colherzinha na borda da xícara, 'tlim')",
+    "a frase-alvo só sai de quem é do Brasil (Capy, Dona Jaca) ou de quem ensina (Lazy); fecha com a Dona Jaca, verdadeira e com humor",
+    "vitória do dia: 1º adesivo da Capy no mapa, selo 'T1 E05 · você já sabe 5 frases'",
+    "sem gancho de próximo assunto nesta V1 (fica pro V2/V3, só quando o assunto 6 estiver agendado)"
+  ],
+  "contexto": {
+    "legenda": "Ep. 5 (parte 1/3) · como dizer de onde você é em inglês (no Bean There todo cliente cola um adesivo no mapa do país dele). i'm from brazil! 🗺️☕",
+    "anterior": "Ep. 4 (parte 3/3)"
+  }
+}

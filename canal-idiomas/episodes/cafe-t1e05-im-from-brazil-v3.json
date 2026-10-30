@@ -1,0 +1,223 @@
+{
+  "id": "cafe-t1e05-im-from-brazil-v3",
+  "format": "cafe",
+  "serie": {
+    "temporada": 1,
+    "capitulo": 1,
+    "episodio": 5,
+    "codigo": "T1 E05 · parte 3/3",
+    "tituloCapitulo": "Você já fala inglês",
+    "frasesAprendidas": 5,
+    "progresso": "você já sabe 5 frases"
+  },
+  "level": "A1",
+  "canDo": "Consigo dizer de onde eu sou.",
+  "title": "Ep. 5 (parte 3/3) · I'm from Brazil! de onde é só pelo ouvido ☕",
+  "hookTitle": "de onde é só pelo ouvido",
+  "alvo": {
+    "en": "I'm from Brazil.",
+    "pt": "Eu sou do Brasil.",
+    "variacoes": [
+      "I'm from Mexico.",
+      "I'm from Recife."
+    ]
+  },
+  "cast": [
+    "capi",
+    "lazy",
+    "hank",
+    "bolinha",
+    "turista"
+  ],
+  "hashtags": [
+    "#capyfala",
+    "#inglês",
+    "#capybara",
+    "#aprenderingles",
+    "#inglesdozero"
+  ],
+  "notebook": 5,
+  "beats": [
+    {
+      "tipo": "pausa",
+      "s": 1.5,
+      "text": "de onde ele é? escuta o país"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Hoje você reconhece país de ouvido e diz a sua cidade."
+    },
+    {
+      "speaker": "turista",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": "variacao",
+      "text": "I'm from Mexico."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "Canadá ou México? pensa aí... ou chuta nos comentários"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "México. Quase igual ao português."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "errado": true,
+      "text": "I'm from Brasiu."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "em qual a colher encostou? pensa aí..."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Na primeira. A língua encostou no fim."
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "hank",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "A segunda também dá pra entender. A primeira é mais inglês."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "neutral",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "emotion": "neutral",
+      "text": "Agora troca Brazil pela sua cidade."
+    },
+    {
+      "speaker": "capi",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": "variacao",
+      "text": "I'm from Recife."
+    },
+    {
+      "tipo": "pausa",
+      "s": 3.0,
+      "text": "SUA VEZ: I'm from… e a sua cidade"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "emotion": "happy",
+      "text": "Isso."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "What's your name?"
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "SUA VEZ: I'm… e o seu nome"
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "Where are you from?"
+    },
+    {
+      "tipo": "pausa",
+      "s": 2.5,
+      "text": "SUA VEZ: I'm from… Brazil ou a sua cidade"
+    },
+    {
+      "speaker": "lazy",
+      "lang": "en",
+      "emotion": "smile",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "hank",
+      "lang": "en",
+      "emotion": "smile",
+      "text": "Good."
+    },
+    {
+      "speaker": "bolinha",
+      "lang": "en",
+      "emotion": "neutral",
+      "text": "One, two, three!"
+    },
+    {
+      "speaker": "bolinha",
+      "lang": "en",
+      "emotion": "happy",
+      "alvo": true,
+      "text": "I'm from Brazil."
+    },
+    {
+      "speaker": "bolinha",
+      "lang": "pt",
+      "emotion": "happy",
+      "text": "Guardei. Devolvo daqui a uns dias."
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 5.0,
+      "emotion": "happy",
+      "text": "Cinco frases. Já dá pra uma conversa.",
+      "cardTexto": "CONSIGO dizer de onde eu sou ✓ · T1 E05 · você já sabe 5 frases"
+    },
+    {
+      "speaker": "capi",
+      "lang": "pt",
+      "card": true,
+      "hold": 6.0,
+      "emotion": "happy",
+      "text": "Comenta de onde você é. Em inglês.",
+      "cardTexto": "sotaque não é erro: o objetivo é ser entendido"
+    }
+  ],
+  "gatilhos": [
+    "reconhecer país pelo som (México, quase cognato) antes de reconhecer a colherzinha do L final (Brazil × Brasiu, mesmo recurso do assunto 1 com o H)",
+    "personalize 1: troca Brazil pela própria cidade; personalize 2: conversa curta com o Hank junta os assuntos 3 e 5",
+    "Bolinha devolve 'One, two, three!' do assunto 4 (revisão espaçada) e fecha guardando a frase-alvo deste assunto",
+    "a Capy nunca é a última a dizer a frase-alvo: fecha com o Bolinha",
+    "sem gancho de próximo assunto (só quando o assunto 6 estiver agendado)"
+  ],
+  "contexto": {
+    "legenda": "Ep. 5 (parte 3/3) · reconheça o país só de ouvido e diga de onde você é, com a sua própria cidade. i'm from brazil! 🗺️☕",
+    "anterior": "Ep. 5 (parte 2/3)"
+  }
+}
