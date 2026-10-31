@@ -36,9 +36,11 @@
   "notebook": 4,
   "beats": [
     {
-      "tipo": "pausa",
-      "s": 1.5,
-      "text": "6, 7 ou 8? só pelo ouvido"
+      "speaker": "capi",
+      "lang": "pt",
+      "mode": "pensamento",
+      "emotion": "curious",
+      "text": "6, 7 ou 8? Só ouvi o número."
     },
     {
       "speaker": "lazy",
