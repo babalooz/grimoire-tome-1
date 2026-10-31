@@ -1,27 +1,27 @@
-# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-30)
-# 6 buscas web: trend tiktok brasil hoje 30 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
-# áudio viral tiktok semana brasil / tiktok trending brazil this week halloween / bordão viral tiktok brasil
-# essa semana / "viralizou no tiktok" brasil 29 outubro 2026.
+# TikTok BR — camada manual do radar (atualizado pela rotina 2026-10-31)
+# 6 buscas web: trend tiktok brasil hoje 31 outubro 2026 / meme do momento tiktok brasil outubro 2026 /
+# áudio viral tiktok semana brasil halloween 2026 / "viralizou no tiktok" brasil 30 outubro 2026 /
+# tiktok trending brazil this week halloween 2026 / bordão viral tiktok brasil essa semana.
 # Candidatas avaliadas e DESCARTADAS hoje:
-# - "six seven" / "6 7" — ainda citado como o meme mais duradouro do momento no Brasil (Folha PE, sem data
-#   nova de hoje) mas CONTINUA PROIBIDO por regra do próprio projeto (docs/tiktok-nativo.md §4: "puxa para
-#   feito para crianças"), mesmo não tendo pessoa real como protagonista do termo.
+# - "Será" (trend de março/2026, Whindersson Nunes + Celso Portioli, citada de novo por retrospectiva) —
+#   pessoa real como protagonista do formato + não puxa pro inglês. Descartada.
+# - "six seven" / "6 7" — ainda citado (retrospectiva), mas CONTINUA PROIBIDO por regra do projeto
+#   (docs/tiktok-nativo.md §4: "puxa para feito para crianças").
+# - Ghostface / Ghost Trend / Pumpkin Head Trend (Halloween) — citadas em fontes genéricas/MX/US sem data
+#   confirmada de pico no TikTok BR nesta semana; mesmo achado de ontem (26-30/09 a 30/10), sem fonte nova
+#   datada. Halloween como evento já está coberto abaixo e no calendário/evento do dia.
 # - "Morto-Vivo" (Animadinhos) e "VOU DANÇAR, VOU BEBER" (MC Donzela/MC Otavio da 9/DJ CR Original) —
-#   topo de áudios do Tokchart em 28/10/2026 (fonte: https://tokchart.com/pt-br/audios-do-tiktok), mas são
-#   funk/BR puro: não puxam para o inglês (regra do V2: hype só de assunto do mundo anglófono) — descartadas.
-# - "Housewife" (Tate McRae) — mesmo ranking do Tokchart (28/10/2026): artista anglófona, letra em inglês,
-#   gancho forte para aula. NÃO adicionada aqui de propósito: é candidata a "música internacional" e já é
-#   coberta automaticamente pela fonte spotify-br do próprio radar.py (cruza chart BR × chart global); deixar
-#   o radar decidir evita duplicar critério.
-# - Ghost Trend / Pumpkin Head Trend / "Ramalama Costume Walk" (Róisín Murphy) / #spookyseason — trends de
-#   Halloween citadas em fontes globais/MX (Uno TV, New Engen, EchoTik), sem confirmação de pico específico
-#   no TikTok BR com data de hoje; Halloween como evento já está coberto abaixo e no calendário/evento do dia.
-# - "A Seleção Chegou" / músicas de torcida — sem fonte datada desta semana.
-# Endpoint público /api/challenge/detail testado hoje para halloween, ghosttrend, pumpkinheadtrend,
-# tatemcrae, housewife, ramalamacostumewalk, spookyseason -> HTTP 200 mas corpo 0 bytes nas sete (mesma
-# falha documentada desde 26/09: medição via nuvem indisponível; só o PC mede).
+#   topo de áudios do Tokchart em 28/10/2026 (fonte: https://tokchart.com/pt-br/audios-do-tiktok): funk/BR
+#   puro, não puxa pro inglês. Descartadas de novo.
+# - "Housewife" (Tate McRae) — mesmo ranking do Tokchart (28/10/2026): artista anglófona, gancho forte, mas
+#   já coberta automaticamente pela fonte spotify-br do radar.py (saiu no top 10 de hoje, #10). Não duplicar.
+# - "Garçom, tem Pitú?" (Laércia Dantas) — bordão de retrospectiva 2025, sem pico novo citado em 2026;
+#   mesmo assim não puxa pro inglês. Descartada.
+# Nenhuma candidata nova e segura com fonte datada desta semana apareceu nas 6 buscas de hoje.
+# Endpoint público /api/challenge/detail testado hoje para nba e halloween -> HTTP 200 mas corpo 0 bytes nas
+# duas (mesma falha documentada desde 26/09: medição via nuvem indisponível; só o PC mede). "não medido".
 # Mantidos (seguros, com fonte/evento real, ainda vigentes, "não medido" em views/vídeos):
-# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, falta 1 d — já consta também no
+# NBA (temporada 2026-27 em andamento) e Halloween (evento fixo, 31/10, hoje — já consta também no
 # calendário/evento do dia do radar).
 NBA
 Halloween

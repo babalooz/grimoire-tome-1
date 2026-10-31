@@ -1,0 +1,590 @@
+{
+  "version": 2,
+  "date": "2026-10-31",
+  "evento_do_dia": {
+    "hoje": [
+      {
+        "id": "bts-morumbis",
+        "evento": "BTS 'Arirang' no MorumBIS (datas a confirmar: 28, 30 e 31/10; CNN diz 28/29/31)",
+        "data_inicio": "2026-10-28",
+        "data_fim": "2026-10-31",
+        "categoria": "musica",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês de show e de fandom: fan chant, setlist, sold out, line up, merch; ARMY, comeback, era; 'I've been a fan since...'. Sem letra nem áudio original.",
+        "ganchos_ingles": [
+          "sold out",
+          "setlist",
+          "merch",
+          "comeback",
+          "I've been a fan since"
+        ],
+        "status": "divergente (a confirmar)"
+      },
+      {
+        "id": "halloween-saci",
+        "evento": "Halloween + Dia do Saci",
+        "data_inicio": "2026-10-31",
+        "data_fim": "2026-10-31",
+        "categoria": "data",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Como explicar o Saci em inglês (one-legged imp) + vocabulário de Halloween: trick or treat, jack-o'-lantern, haunted, spooky.",
+        "ganchos_ingles": [
+          "trick or treat",
+          "jack-o'-lantern",
+          "haunted",
+          "spooky",
+          "one-legged imp"
+        ],
+        "status": "fixo"
+      }
+    ],
+    "preparar": [
+      {
+        "id": "enem-serie-revisao",
+        "evento": "Série de revisão 'Inglês do ENEM em 30 s'",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-07",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Falsos cognatos que o ENEM ama (actually, eventually, pretend) e estratégia de cognatos para as 5 questões de língua estrangeira.",
+        "ganchos_ingles": [
+          "actually",
+          "eventually",
+          "pretend",
+          "cognates"
+        ],
+        "status": "verificado",
+        "faltam_dias": 2
+      }
+    ],
+    "proximos": [
+      {
+        "id": "finados",
+        "evento": "Finados (feriado) — não tematizar",
+        "data_inicio": "2026-11-02",
+        "data_fim": "2026-11-02",
+        "categoria": "cuidado",
+        "seguro": false,
+        "block_hype": false,
+        "tema_aula": "Não tematizar (sem piada de morte). Seguir com a série ENEM.",
+        "ganchos_ingles": [],
+        "status": "fixo",
+        "faltam_dias": 2
+      },
+      {
+        "id": "f1-interlagos",
+        "evento": "F1 GP São Paulo, Interlagos (corrida dom 08/11)",
+        "data_inicio": "2026-11-06",
+        "data_fim": "2026-11-08",
+        "categoria": "esporte",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Rádio de equipe em inglês: 'box box', pit stop, pole position, overtake, podium; make x do ('did a great career' é erro).",
+        "ganchos_ingles": [
+          "box box",
+          "pit stop",
+          "pole position",
+          "overtake",
+          "podium"
+        ],
+        "status": "verificado",
+        "faltam_dias": 6
+      },
+      {
+        "id": "enem-dia1",
+        "evento": "ENEM dia 1 (Linguagens, 5 questões de língua estrangeira)",
+        "data_inicio": "2026-11-08",
+        "data_fim": "2026-11-08",
+        "categoria": "educacao",
+        "seguro": true,
+        "block_hype": false,
+        "tema_aula": "Inglês do ENEM: palavras e cognatos que mais aparecem nas provas anteriores do INEP (conferir nas provas).",
+        "ganchos_ingles": [
+          "cognates",
+          "false friends",
+          "reading comprehension"
+        ],
+        "status": "verificado",
+        "faltam_dias": 8
+      }
+    ],
+    "block_hype": false
+  },
+  "hype_seguro": [
+    {
+      "termo": "esportes",
+      "score": 10.57,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "50.000+ buscas",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "esportes em inglês",
+        "esportes em inglês lista",
+        "esportes em inglês e português",
+        "esportes em inglês atividades",
+        "esportes em inglês com tradução",
+        "esportes em inglês 7 ano",
+        "esportes em inglês atividades 4 ano",
+        "esportes em inglês wordwall",
+        "como se diz esportes em inglês",
+        "como se diz quadra de esportes em inglês",
+        "como se escreve esportes em inglês",
+        "como se fala esportes em inglês"
+      ],
+      "contexto": "Copa do Brasil vira esperança do Vasco na temporada em meio ao risco no Brasileirão e à eliminação na Sula",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'esportes' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": "https://ge.globo.com/futebol/times/vasco/noticia/2026/10/31/copa-do-brasil-vira-esperanca-do-vasco-na-temporada-em-meio-ao-risco-no-brasileirao-e-a-eliminacao-na-sula.ghtml"
+    },
+    {
+      "termo": "NBA",
+      "score": 6.75,
+      "fontes": [
+        "manual (TikTok)"
+      ],
+      "volume_txt": "colado à mão",
+      "categoria": "esporte",
+      "subindo": true,
+      "aula": [
+        "nba em inglês",
+        "o que significa nba em inglês"
+      ],
+      "contexto": "",
+      "sugestao_aula": "Vocabulário do jogo em inglês a partir de 'NBA' (score, draw, extra time, penalty) + 1 pergunta.",
+      "url": ""
+    },
+    {
+      "termo": "Giovanna Gold",
+      "score": 5.32,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "3.537 views na Wikipédia",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [],
+      "contexto": "atriz, modelo e empreendedora brasileira",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Giovanna Gold' (título original, bordões) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Giovanna_Gold"
+    },
+    {
+      "termo": "Radiohead - Creep",
+      "score": 5.3,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#199 Spotify BR. 171.222 streams/dia. 60 dias no chart",
+      "categoria": "música internacional",
+      "subindo": true,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#199)",
+      "sugestao_aula": "'Radiohead - Creep': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ivete sangalo",
+      "score": 4.5,
+      "fontes": [
+        "google-trends"
+      ],
+      "volume_txt": "100+ buscas",
+      "categoria": "cultura pop",
+      "subindo": true,
+      "aula": [
+        "ivete sangalo em inglês",
+        "ivete sangalo cantando em inglês",
+        "ivete sangalo música em inglês",
+        "ivete sangalo cantando música em inglês",
+        "biografia de ivete sangalo em inglês"
+      ],
+      "contexto": "VÍDEO: Ivete Sangalo lamenta e explica decisão de adiar show após receber críticas de fãs",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'ivete sangalo' (título original, bordões) + 1 pergunta.",
+      "url": "https://g1.globo.com/ba/bahia/noticia/2026/10/30/ivete-sangalo-lamenta-e-explica-decisao-de-adiar-show.ghtml"
+    },
+    {
+      "termo": "BTS - SWIM",
+      "score": 4.18,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#85 Spotify BR. 257.857 streams/dia. 224 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se fala bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#85)",
+      "sugestao_aula": "'BTS - SWIM': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "BTS - NORMAL",
+      "score": 4.0,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#180 Spotify BR. 177.871 streams/dia. 173 dias no chart",
+      "categoria": "música de catálogo",
+      "subindo": true,
+      "aula": [
+        "bts em inglês",
+        "bts canta em inglês ou coreano",
+        "frases bts em inglês com tradução",
+        "bts sigla em inglês",
+        "frases bts em inglês",
+        "bts canta em inglês",
+        "bts músicas em inglês",
+        "amo bts em inglês",
+        "bts significado em inglês",
+        "nome bts em inglês",
+        "como se fala bts em inglês",
+        "como se escreve bts em inglês",
+        "como se pronuncia bts em inglês"
+      ],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#180)",
+      "sugestao_aula": "'BTS - NORMAL': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "ADÉLA - Nicole Kidman",
+      "score": 3.76,
+      "fontes": [
+        "spotify-br"
+      ],
+      "volume_txt": "#67 Spotify BR. 289.663 streams/dia. 44 dias no chart",
+      "categoria": "música internacional",
+      "subindo": false,
+      "aula": [],
+      "contexto": "música em inglês/K-pop no top 200 do Brasil (#67)",
+      "sugestao_aula": "'ADÉLA - Nicole Kidman': o que o título quer dizer + 2 expressões ligadas (sem letra longa nem áudio original).",
+      "url": "https://kworb.net/spotify/country/br_daily.html"
+    },
+    {
+      "termo": "Ian McKellen",
+      "score": 3.75,
+      "fontes": [
+        "wikipedia"
+      ],
+      "volume_txt": "5.636 views na Wikipédia",
+      "categoria": "cultura pop",
+      "subindo": false,
+      "aula": [],
+      "contexto": "ator britânico",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Ian McKellen' (título original, bordões) + 1 pergunta.",
+      "url": "https://pt.wikipedia.org/wiki/Ian_McKellen"
+    },
+    {
+      "termo": "Flash",
+      "score": 3.75,
+      "fontes": [
+        "tiktok (notícias)"
+      ],
+      "volume_txt": "citado na imprensa",
+      "categoria": "cultura pop",
+      "subindo": false,
+      "aula": [
+        "flash em inglês",
+        "flash em inglês tradução",
+        "flashcards em inglês",
+        "palavra flash em inglês",
+        "black flash em inglês",
+        "flash card em inglês",
+        "nome flash em inglês",
+        "flash reverso em inglês",
+        "flash back em inglês",
+        "flash drive em inglês",
+        "como se diz flash em inglês"
+      ],
+      "contexto": "Hugo & Guilherme lançam EP ao vivo com “Flash” após música alcançar o Top 100 global do Spotify",
+      "sugestao_aula": "Gírias/expressões em inglês ligadas a 'Flash' (título original, bordões) + 1 pergunta.",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOX2wtdjdvU0tMVEVZbXcycnU1LVBsd2JCVkxsZHZRNnBPVWlRLTA3eFhuR3luMUJyWlVyZDBVNXhjZk9oVkRpVlNMWWFaVUNhTkNranp5T1QyWjYta3Vab0F1N1cwenRQdTlpM3Iya3hyMTdFMzZ0a0QyYnNrdWQ3Um9qUkxxbXNQTEdDS2VOTUFfQQ?oc=5"
+    }
+  ],
+  "duvidas_em_alta": [],
+  "descartados": [
+    {
+      "termo": "aposentadoria",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"stf\" em \"STF valida regra que altera isenção de contribuição previdenciária sobre aposentadoria de \""
+    },
+    {
+      "termo": "desembargador",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"moraes\" em \"Moraes solta desembargador investigado no caso TH Joias e autoriza transferência de Bacell\""
+    },
+    {
+      "termo": "vacina mpox",
+      "fonte": "google-trends",
+      "motivo": "política/eleição: \"prefeitura\" em \"Prefeitura do RJ investiga nova morte por suspeita de Mpox\""
+    },
+    {
+      "termo": "Patrick Stewart",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: morte recente em \"ator inglês (1940–2026)\""
+    },
+    {
+      "termo": "Eleições nos Estados Unidos em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicoes\" em \"Eleições nos Estados Unidos em 2026\""
+    },
+    {
+      "termo": "Rafael Fonteles",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro; governador do Piauí (2023–presente)\""
+    },
+    {
+      "termo": "Luiz Inácio Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Luiz Inácio Lula da Silva\""
+    },
+    {
+      "termo": "Jair Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Bolsonaro\""
+    },
+    {
+      "termo": "André Janones",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro e Deputado federal do Brasil\""
+    },
+    {
+      "termo": "Lista de presidentes do Brasil",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidentes\" em \"Lista de presidentes do Brasil\""
+    },
+    {
+      "termo": "Flávio Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Flávio Bolsonaro\""
+    },
+    {
+      "termo": "Dia das Bruxas",
+      "fonte": "wikipedia",
+      "motivo": "tragédia/morte: \"mortos\" em \"Dia das Bruxas (originalmente em inglês: Halloween, pronuncia-se [hæləʊˈiːn], ou [ˌhæloʊˈi\""
+    },
+    {
+      "termo": "Charlie Kirk",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"ativista político conservador norte-americano (1993–2025)\""
+    },
+    {
+      "termo": "Simone Tebet",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"tebet\" em \"Simone Tebet\""
+    },
+    {
+      "termo": "Jair Renan Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Jair Renan Bolsonaro\""
+    },
+    {
+      "termo": "Rosângela Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Rosângela Lula da Silva\""
+    },
+    {
+      "termo": "Enéas Carneiro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"cardiologista e político brasileiro (1938–2007)\""
+    },
+    {
+      "termo": "Geraldo Alckmin",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"alckmin\" em \"Geraldo Alckmin\""
+    },
+    {
+      "termo": "Michelle Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Michelle Bolsonaro\""
+    },
+    {
+      "termo": "Erika Hilton",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politica\" em \"política brasileira\""
+    },
+    {
+      "termo": "Renan Santos",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"renan santos\" em \"Renan Santos\""
+    },
+    {
+      "termo": "Tarcísio de Freitas",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"tarcisio\" em \"Tarcísio de Freitas\""
+    },
+    {
+      "termo": "Nikolas Ferreira",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político brasileiro\""
+    },
+    {
+      "termo": "Donald Trump",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"trump\" em \"Donald Trump\""
+    },
+    {
+      "termo": "Carlos Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Carlos Bolsonaro\""
+    },
+    {
+      "termo": "Barack Obama",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político americano, 44º presidente dos Estados Unidos (de 2009 a 2017)\""
+    },
+    {
+      "termo": "Dilma Rousseff",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"36.ª presidente do Brasil (2011–2016)\""
+    },
+    {
+      "termo": "Eleição presidencial no Brasil em 2026",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"eleicao\" em \"Eleição presidencial no Brasil em 2026\""
+    },
+    {
+      "termo": "Fernando Haddad",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"haddad\" em \"Fernando Haddad\""
+    },
+    {
+      "termo": "Eduardo Bolsonaro",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"bolsonaro\" em \"Eduardo Bolsonaro\""
+    },
+    {
+      "termo": "Marco Rubio",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"político norte-americano, Secretário de Estado dos Estados Unidos desde 2025\""
+    },
+    {
+      "termo": "Zoofilia",
+      "fonte": "wikipedia",
+      "motivo": "sexo: \"sexual\" em \"parafilia em que animais são o objeto preferido do interesse sexual\""
+    },
+    {
+      "termo": "Marisa Letícia Lula da Silva",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"lula\" em \"Marisa Letícia Lula da Silva\""
+    },
+    {
+      "termo": "Partido Liberal",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"partido\" em \"Partido Liberal\""
+    },
+    {
+      "termo": "Fernando Henrique Cardoso",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"presidente\" em \"34.º presidente do Brasil (1995–2003)\""
+    },
+    {
+      "termo": "Jones Manoel",
+      "fonte": "wikipedia",
+      "motivo": "política/eleição: \"politico\" em \"Jones Manoel da Silva (Recife, 9 de janeiro de 1990) é um historiador, professor, escritor\""
+    }
+  ],
+  "demanda": {},
+  "coletados": [
+    "adela - nicole kidman",
+    "andre janones",
+    "aposentadoria",
+    "barack obama",
+    "brandin podziemski",
+    "brandon williams",
+    "bts",
+    "bts - normal",
+    "bts - swim",
+    "camisola chic",
+    "carlos alberto",
+    "carlos bolsonaro",
+    "charlie kirk",
+    "chatgpt",
+    "che guevara",
+    "colecionando momentos",
+    "desembargador",
+    "dia das bruxas",
+    "dilma rousseff",
+    "dominic fike - babydoll",
+    "donald trump",
+    "eduardo bolsonaro",
+    "eleicao presidencial no brasil em 2026",
+    "eleicoes nos estados unidos em 2026",
+    "eneas carneiro",
+    "erika hilton",
+    "esportes",
+    "essa sou eu quando era crianca",
+    "evanescence - bring me to life",
+    "fernando haddad",
+    "fernando henrique cardoso",
+    "flash",
+    "flavio bolsonaro",
+    "geraldo alckmin",
+    "giovanna gold",
+    "guns n' roses - sweet child o' mine",
+    "halloween",
+    "harry styles - sign of the times",
+    "ian mckellen",
+    "ivete sangalo",
+    "jair bolsonaro",
+    "jair renan bolsonaro",
+    "jones manoel",
+    "justin bieber - beauty and a beat (w/ nicki minaj)",
+    "lady gaga - die with a smile (w/ bruno mars)",
+    "linkin park - in the end",
+    "lista de presidentes do brasil",
+    "luiz inacio lula da silva",
+    "malcolm todd - earrings",
+    "marco rubio",
+    "marisa leticia lula da silva",
+    "mary on a cross",
+    "mc donalds",
+    "michael blair quilos mortais",
+    "michael jackson - billie jean",
+    "michelle bolsonaro",
+    "nba",
+    "nikolas ferreira",
+    "oasis - wonderwall - remastered",
+    "partido liberal",
+    "patrick stewart",
+    "pc gamer da xuxa",
+    "radiohead - creep",
+    "rafael fonteles",
+    "renan santos",
+    "rosangela lula da silva",
+    "simone tebet",
+    "sombr - back to friends",
+    "tarcisio de freitas",
+    "tate mcrae - housewife",
+    "the goo goo dolls - iris",
+    "the neighbourhood - sweater weather",
+    "the police - every breath you take",
+    "vacina mpox",
+    "whatsapp",
+    "youtube",
+    "zoofilia"
+  ],
+  "log": [
+    "google-trends: 10 itens",
+    "wikipedia: 40 itens",
+    "spotify-br: 19 itens",
+    "tiktok: 6 itens",
+    "manual: 2 itens"
+  ]
+}
