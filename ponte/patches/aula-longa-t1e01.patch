@@ -1,0 +1,1667 @@
+From 8661a4d86035bc6a88d81a679eb526eef31feb59 Mon Sep 17 00:00:00 2001
+From: babalooz <felipe_pguimaraes@hotmail.com>
+Date: Fri, 30 Oct 2026 22:50:00 -0300
+Subject: [PATCH] =?UTF-8?q?aula=20longa:=20T1=20E01=20em=205=20partes=20(a?=
+ =?UTF-8?q?ula-wide.ts,=20make-aula-wide.sh,=20faixa=20pr=C3=B3pria=20no?=
+ =?UTF-8?q?=20port=C3=A3o)?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+---
+ canal-idiomas/aulas/t1e01.json                |  48 +++
+ .../episodes/cafe-t1e01-aula-cena.json        | 187 ++++++++
+ .../episodes/cafe-t1e01-aula-explicacao.json  | 401 ++++++++++++++++++
+ .../episodes/cafe-t1e01-aula-gringo.json      | 171 ++++++++
+ .../episodes/cafe-t1e01-aula-sua-vez.json     | 313 ++++++++++++++
+ .../episodes/cafe-t1e01-aula-vida-real.json   | 349 +++++++++++++++
+ canal-idiomas/scripts/aula-wide.ts            |  48 +++
+ canal-idiomas/scripts/make-aula-wide.sh       |  38 ++
+ canal-idiomas/scripts/portao.py               |   6 +-
+ 9 files changed, 1559 insertions(+), 2 deletions(-)
+ create mode 100644 canal-idiomas/aulas/t1e01.json
+ create mode 100644 canal-idiomas/episodes/cafe-t1e01-aula-cena.json
+ create mode 100644 canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json
+ create mode 100644 canal-idiomas/episodes/cafe-t1e01-aula-gringo.json
+ create mode 100644 canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json
+ create mode 100644 canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json
+ create mode 100644 canal-idiomas/scripts/aula-wide.ts
+ create mode 100644 canal-idiomas/scripts/make-aula-wide.sh
+
+diff --git a/canal-idiomas/aulas/t1e01.json b/canal-idiomas/aulas/t1e01.json
+new file mode 100644
+index 0000000..4e873b2
+--- /dev/null
++++ b/canal-idiomas/aulas/t1e01.json
+@@ -0,0 +1,48 @@
++{
++ "slug": "t1e01",
++ "data": "2026-11-01",
++ "titulo": "Como se apresentar em inglês do zero: Hi! I'm... | Aula completa | CapyFala",
++ "descricao": [
++  "Aula com calma, para quem está começando: como cumprimentar alguém e dizer o seu nome em inglês.",
++  "Tem a cena no café, a explicação de cada palavra, pausas para você falar junto e os lugares onde a frase aparece de verdade.",
++  "",
++  "Frase da aula: Hi! I'm Capy. = Oi! Eu sou a Capy."
++ ],
++ "recap": [
++  "Hi! I'm Capy. = Oi! Eu sou a Capy.",
++  "o H sai como um sopro",
++  "nada antes do nome"
++ ],
++ "miniatura": {
++  "frase": "Hi! I'm...",
++  "tag": "INGLÊS DO ZERO · AULA COMPLETA",
++  "extra": "com pausas para falar junto"
++ },
++ "partes": [
++  {
++   "ep": "episodes/cafe-t1e01-aula-cena.json",
++   "rotulo": "a cena",
++   "titulo": "o primeiro oi da Capy"
++  },
++  {
++   "ep": "episodes/cafe-t1e01-aula-explicacao.json",
++   "rotulo": "a explicação",
++   "titulo": "três palavras e um sopro"
++  },
++  {
++   "ep": "episodes/cafe-t1e01-aula-sua-vez.json",
++   "rotulo": "sua vez",
++   "titulo": "fale com a turma"
++  },
++  {
++   "ep": "episodes/cafe-t1e01-aula-gringo.json",
++   "rotulo": "no café",
++   "titulo": "um gringo de verdade"
++  },
++  {
++   "ep": "episodes/cafe-t1e01-aula-vida-real.json",
++   "rotulo": "na vida real",
++   "titulo": "onde você vai usar"
++  }
++ ]
++}
+\ No newline at end of file
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-cena.json b/canal-idiomas/episodes/cafe-t1e01-aula-cena.json
+new file mode 100644
+index 0000000..d3bbe8a
+--- /dev/null
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-cena.json
+@@ -0,0 +1,187 @@
++{
++ "id": "cafe-t1e01-aula-cena",
++ "format": "cafe",
++ "serie": {
++  "temporada": 1,
++  "capitulo": 1,
++  "episodio": 1,
++  "codigo": "T1 E01",
++  "tituloCapitulo": "Você já fala inglês",
++  "frasesAprendidas": 1,
++  "progresso": "você já sabe 1 frase"
++ },
++ "level": "A1",
++ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
++ "title": "Aula · a cena no café",
++ "hookTitle": "a cena no café",
++ "alvo": {
++  "en": "Hi! I'm Capy.",
++  "pt": "Oi! Eu sou a Capy.",
++  "nucleo": "Hi! I'm",
++  "variacoes": [
++   "Hi! I'm Duda!",
++   "Hi!... I'm... Lazy."
++  ]
++ },
++ "cast": [
++  "capi",
++  "hank",
++  "lazy",
++  "duda",
++  "bolinha"
++ ],
++ "hashtags": [
++  "#capyfala",
++  "#inglês",
++  "#capybara",
++  "#aprenderingles",
++  "#inglesdozero"
++ ],
++ "notebook": 1,
++ "beats": [
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "mode": "pensamento",
++   "emotion": "sweat",
++   "text": "Primeiro dia de trabalho. E se alguém falar comigo?"
++  },
++  {
++   "tipo": "pausa",
++   "s": 0.5,
++   "react": {
++    "hank": "neutral"
++   }
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "emotion": "neutral",
++   "text": "Hoje você sai daqui conseguindo dizer oi e o seu nome. Em inglês."
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "emotion": "neutral",
++   "vapor": true,
++   "text": "Hi."
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "mode": "pensamento",
++   "emotion": "shock",
++   "text": "Eu sei essa. Por que eu congelei?"
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true,
++   "text": "Hi! I'm Duda!"
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "emotion": "neutral",
++   "text": "Hi, Duda."
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "emotion": "neutral",
++   "text": "Oi, e eu sou. Três palavras."
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "emotion": "neutral",
++   "alvo": "variacao",
++   "vapor": true,
++   "text": "Hi!... I'm... Lazy."
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "emotion": "neutral",
++   "text": "Esse H é um sopro, igual vapor de café."
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "emotion": "happy",
++   "text": "Vamos juntos. Eu também tô aprendendo."
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "text": "Hi! I'm Capy."
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "repita": true,
++   "text": "Hi! I'm Capy."
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "emotion": "smile",
++   "alvo": true,
++   "vapor": true,
++   "text": "Hi! I'm Capy."
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "emotion": "neutral",
++   "text": "Com sotaque? Tudo bem. Deu pra entender."
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "text": "Hi! I'm... Capy."
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "emotion": "neutral",
++   "sfx": [
++    "tick"
++   ],
++   "text": "Hi, Capy."
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "emotion": "happy",
++   "text": "Ele escreveu meu nome. Eu falei inglês."
++  },
++  {
++   "speaker": "bolinha",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": true,
++   "bolinha": true,
++   "vapor": true,
++   "text": "Hi! I'm Capy."
++  }
++ ],
++ "gatilhos": [
++  "gancho verdadeiro: 'você já sabe essa. sério.' (sem laço inventado)",
++  "vitória do dia: o 1º oi da Capy, celebrada no card final",
++  "selo com progresso real: T1 E01 · você já sabe 1 frase",
++  "sem card CONSIGO parado no início: objetivo dito em off pelo Lazy, por cima da ação",
++  "revisão espaçada: Bolinha guarda a frase pra devolver em 3 dias"
++ ]
++}
+\ No newline at end of file
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json b/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json
+new file mode 100644
+index 0000000..dce03cc
+--- /dev/null
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json
+@@ -0,0 +1,401 @@
++{
++ "id": "cafe-t1e01-aula-explicacao",
++ "format": "cafe",
++ "serie": {
++  "temporada": 1,
++  "capitulo": 1,
++  "episodio": 1,
++  "codigo": "T1 E01",
++  "tituloCapitulo": "Você já fala inglês"
++ },
++ "level": "A1",
++ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
++ "title": "Aula · três palavras e um sopro",
++ "hookTitle": "três palavras e um sopro",
++ "alvo": {
++  "en": "Hi! I'm Capy.",
++  "pt": "Oi! Eu sou a Capy.",
++  "nucleo": "Hi! I'm",
++  "variacoes": [
++   "Hi! I'm Duda!"
++  ]
++ },
++ "cast": [
++  "capi",
++  "hank",
++  "lazy",
++  "duda",
++  "bolinha"
++ ],
++ "notebook": 1,
++ "beats": [
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Vamos devagar. Essa frase tem só três palavras.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Primeira palavra. Ela quer dizer oi.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "neutral",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "happy",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Só isso? Serve para qualquer pessoa?",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Serve no café, no trabalho, no elevador. Até com quem você não conhece.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "text": "Eu falo com todo mundo assim. Quando falo.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora o som. Começa com um sopro, igual vapor de café.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "neutral",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Põe a mão na frente da boca. O ar precisa bater nela.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 3
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Senti o ar! E se eu esquecer o sopro?",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Ai.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "text": "Dá para entender. Mas soa como ai, que é eu.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Segunda parte. Quer dizer eu sou.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "I'm.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "No fim, os lábios fecham. Dá para sentir a boca fechar.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "I'm.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 3
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Então eu falo: oi, eu sou... e meu nome.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Isso. E repara: em português a gente fala a Capy.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Em inglês, nada antes do nome. Só o nome.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "duda",
++   "lang": "pt",
++   "text": "Eu também! É só trocar o nome.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "text": "Hi! I'm Duda!",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Lazy.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi. I'm Hank.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora um erro comum. Olha o que some aqui.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "I Capy.",
++   "emotion": "sweat",
++   "errado": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Faltou aquele som da boca fechando. Com ele, fica certo.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pergunta",
++   "s": 5,
++   "text": "em inglês, o que vai antes do nome? pensa aí..."
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Nada antes do nome. Nem a, nem o.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "bolinha",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "bolinha": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora só escuta a turma. Sem pressa.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Lazy.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi. I'm Hank.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "text": "Hi! I'm Duda!",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Três palavras, um sopro e a boca fechando. Entendi.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  }
++ ]
++}
+\ No newline at end of file
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json b/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json
+new file mode 100644
+index 0000000..e5e1a3b
+--- /dev/null
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json
+@@ -0,0 +1,171 @@
++{
++ "id": "cafe-t1e01-aula-gringo",
++ "format": "cafe",
++ "serie": {
++  "temporada": 1,
++  "capitulo": 1,
++  "episodio": 1,
++  "codigo": "T1 E01 · parte 2/3",
++  "tituloCapitulo": "Você já fala inglês",
++  "frasesAprendidas": 1,
++  "progresso": "você já sabe 1 frase"
++ },
++ "level": "A1",
++ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
++ "title": "Aula · um gringo no café",
++ "hookTitle": "um gringo no café",
++ "alvo": {
++  "en": "Hi! I'm Capy.",
++  "pt": "Oi! Eu sou a Capy.",
++  "nucleo": "Hi! I'm",
++  "variacoes": [
++   "Hi! I'm Rick!",
++   "Hi!... I'm... Lazy.",
++   "Hi. I'm Hank."
++  ]
++ },
++ "cast": [
++  "capi",
++  "hank",
++  "lazy",
++  "turista"
++ ],
++ "hashtags": [
++  "#capyfala",
++  "#inglês",
++  "#capybara",
++  "#aprenderingles",
++  "#inglesdozero"
++ ],
++ "notebook": 1,
++ "beats": [
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "mode": "pensamento",
++   "emotion": "surprised",
++   "hold": 1.0,
++   "text": "Um cliente diferente. Será que ele é gringo mesmo?"
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "emotion": "neutral",
++   "hold": 0.8,
++   "text": "Esse aí tá perdido. Vê se ele quer café."
++  },
++  {
++   "tipo": "pausa",
++   "s": 0.8,
++   "react": {
++    "hank": "neutral"
++   }
++  },
++  {
++   "speaker": "turista",
++   "lang": "en",
++   "emotion": "neutral",
++   "alvo": "variacao",
++   "vapor": true,
++   "text": "Hi! I'm Rick!"
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "emotion": "bored",
++   "text": "Hi."
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "mode": "pensamento",
++   "emotion": "shock",
++   "hold": 1.0,
++   "text": "Ele se apresentou. Eu sei isso. Eu aprendi isso."
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "emotion": "whisper",
++   "alvo": "variacao",
++   "vapor": true,
++   "hold": 0.6,
++   "text": "Hi!... I'm... Lazy."
++  },
++  {
++   "speaker": "turista",
++   "lang": "en",
++   "emotion": "smile",
++   "repita": true,
++   "text": "Hi!"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "text": "Hi! I'm Capy!"
++  },
++  {
++   "speaker": "turista",
++   "lang": "en",
++   "emotion": "happy",
++   "sfx": [
++    "pop"
++   ],
++   "hold": 0.5,
++   "text": "Nice, Capy!"
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "emotion": "bored",
++   "alvo": "variacao",
++   "hold": 0.5,
++   "text": "Hi. I'm Hank."
++  },
++  {
++   "speaker": "turista",
++   "lang": "en",
++   "emotion": "neutral",
++   "hold": 0.4,
++   "text": "Coffee, please?"
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "emotion": "neutral",
++   "hold": 0.5,
++   "text": "Hi. Coffee's on me, Rick."
++  },
++  {
++   "tipo": "pausa",
++   "s": 0.8,
++   "react": {
++    "capi": "thinking"
++   }
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "text": "Hi! I'm Capy!"
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "emotion": "happy",
++   "text": "Eu me apresentei pra um gringo de verdade."
++  }
++ ],
++ "gatilhos": [
++  "hype anglófono: turista americano de verdade no café (reserva atemporal, roteiro v6)",
++  "o Hank nunca humilha: seco com o turista, nunca debocha (até oferece o café de cortesia)",
++  "gancho verdadeiro pro próximo capítulo: como a Capy se despede (assunto 2 já na grade)",
++  "variações reforçam o padrão 'Hi! I'm ___' (Rick, Lazy, Hank) antes da Capy repetir",
++  "card final reaproveita a fala 'Sotaque não é erro: o objetivo é ser entendido.' já sintetizada no V1 (mesmo hash, cota zero; sem inglês dentro da fala pt)"
++ ]
++}
+\ No newline at end of file
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json b/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json
+new file mode 100644
+index 0000000..cde670b
+--- /dev/null
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json
+@@ -0,0 +1,313 @@
++{
++ "id": "cafe-t1e01-aula-sua-vez",
++ "format": "cafe",
++ "serie": {
++  "temporada": 1,
++  "capitulo": 1,
++  "episodio": 1,
++  "codigo": "T1 E01",
++  "tituloCapitulo": "Você já fala inglês"
++ },
++ "level": "A1",
++ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
++ "title": "Aula · fale com a turma",
++ "hookTitle": "fale com a turma",
++ "alvo": {
++  "en": "Hi! I'm Capy.",
++  "pt": "Oi! Eu sou a Capy.",
++  "nucleo": "Hi! I'm",
++  "variacoes": [
++   "Hi! I'm Duda!"
++  ]
++ },
++ "cast": [
++  "capi",
++  "hank",
++  "lazy",
++  "duda",
++  "bolinha"
++ ],
++ "notebook": 1,
++ "beats": [
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora é com você. Fala em voz alta, mesmo baixinho.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Eu falo, depois fica um silêncio. O silêncio é seu.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Primeiro, só o sopro.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "neutral",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "happy",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "neutral",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora a boca fechando no fim.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "I'm.",
++   "emotion": "neutral",
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "I'm.",
++   "emotion": "happy",
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora junto. Bem devagar, com a pausa.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi!... I'm... Lazy.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi!... I'm... Capy.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Um pouco mais rápido. Sem pressa de acertar.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "bolinha",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "bolinha": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 3
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Agora vem a parte boa. Troca o meu nome pelo seu.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Fala a frase inteira, com o seu nome. Pode falar.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "text": "Mais uma vez. Eu não ouvi.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Saiu com sotaque? Tudo bem. Sotaque não é erro.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Se a pessoa entendeu, deu certo.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Última rodada. Cada um dá oi, você responde com seu nome.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "text": "Hi! I'm Duda!",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Lazy.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "tipo": "pergunta",
++   "s": 5,
++   "text": "qual palavra começa com sopro? pensa aí..."
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "happy",
++   "vapor": true
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Se você falou junto, acabou de se apresentar em inglês.",
++   "emotion": "neutral"
++  }
++ ]
++}
+\ No newline at end of file
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json b/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json
+new file mode 100644
+index 0000000..2ab07d4
+--- /dev/null
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json
+@@ -0,0 +1,349 @@
++{
++ "id": "cafe-t1e01-aula-vida-real",
++ "format": "cafe",
++ "serie": {
++  "temporada": 1,
++  "capitulo": 1,
++  "episodio": 1,
++  "codigo": "T1 E01",
++  "tituloCapitulo": "Você já fala inglês"
++ },
++ "level": "A1",
++ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
++ "title": "Aula · onde você vai usar",
++ "hookTitle": "onde você vai usar",
++ "alvo": {
++  "en": "Hi! I'm Capy.",
++  "pt": "Oi! Eu sou a Capy.",
++  "nucleo": "Hi! I'm",
++  "variacoes": [
++   "Hi! I'm Duda!"
++  ]
++ },
++ "cast": [
++  "capi",
++  "hank",
++  "lazy",
++  "duda",
++  "poppy",
++  "bolinha"
++ ],
++ "notebook": 1,
++ "beats": [
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Última parte. Onde essa frase aparece de verdade?",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Primeiro lugar: a reunião de trabalho por vídeo.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Todo mundo se apresenta. Chega a sua vez.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "poppy",
++   "lang": "en",
++   "text": "Hi! I'm Poppy.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi. I'm Hank.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Falou o seu nome? Então passou.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Segundo lugar: o balcão, na viagem.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "text": "Eu falo primeiro. E falo pouco.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 4
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "No balcão, o nome fica para depois. Responde só com oi.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi.",
++   "emotion": "happy",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Terceiro lugar: alguém puxa conversa.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "text": "Hi! I'm Duda!",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Ela disse o nome. Você diz o seu, igualzinho.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "text": "Hi! I'm Duda!",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 5
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "E se a pessoa falar rápido e eu não entender?",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Você ainda pode dizer oi e o seu nome.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "hank",
++   "lang": "pt",
++   "text": "Não precisa de mais nada para começar.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Agora o treino para levar daqui. Dura dez segundos.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Hoje, fala a frase três vezes com o seu nome.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Pode ser no banho, no carro, na fila.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Amanhã, fala de novo. É assim que fica na memória.",
++   "emotion": "neutral"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1.5
++  },
++  {
++   "speaker": "bolinha",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "bolinha": true
++  },
++  {
++   "speaker": "bolinha",
++   "lang": "pt",
++   "text": "Guardei na bochecha. Devolvo daqui a uns dias.",
++   "emotion": "happy"
++  },
++  {
++   "tipo": "pausa",
++   "s": 1
++  },
++  {
++   "speaker": "lazy",
++   "lang": "pt",
++   "text": "Uma última vez, junto com a turma.",
++   "emotion": "neutral"
++  },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "duda",
++   "lang": "en",
++   "text": "Hi! I'm Duda!",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "capi",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "emotion": "happy",
++   "alvo": true,
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 2.5
++  },
++  {
++   "speaker": "hank",
++   "lang": "en",
++   "text": "Hi. I'm Hank.",
++   "emotion": "happy",
++   "alvo": "variacao",
++   "vapor": true,
++   "repita": true
++  },
++  {
++   "tipo": "pausa",
++   "s": 4
++  },
++  {
++   "speaker": "capi",
++   "lang": "pt",
++   "text": "Consigo cumprimentar e dizer meu nome.",
++   "emotion": "happy",
++   "card": true,
++   "hold": 2,
++   "cardTexto": "CONSIGO cumprimentar e dizer meu nome ✓"
++  }
++ ]
++}
+\ No newline at end of file
+diff --git a/canal-idiomas/scripts/aula-wide.ts b/canal-idiomas/scripts/aula-wide.ts
+new file mode 100644
+index 0000000..0644a67
+--- /dev/null
++++ b/canal-idiomas/scripts/aula-wide.ts
+@@ -0,0 +1,48 @@
++// AULA LONGA (YouTube 16:9, 8 a 12 min): mesma composição e agenda do longo do dia (src/DiaWide.tsx, src/wide/dia.ts),
++// com partes `cafe` escolhidas num roteiro de aula (aulas/<slug>.json), mais pausadas e didáticas. Rodado por scripts/make-aula-wide.sh.
++// Uso:
++//   node aula.cjs montar <aulas/slug.json>   -> out/props-aula-<slug>.json
++//   node aula.cjs capitulos <props.json>     -> linhas "00:00 ..." (sai 1 se quebrar regra do YouTube)
++//   node aula.cjs pacote <aulas/slug.json> <props.json> -> out/aula-<slug>.youtube.json
++import { readFileSync, writeFileSync } from "fs";
++import { DiaProps, diaCapitulos } from "../src/wide/dia";
++
++const FPS = 30;
++const [cmd, ...a] = process.argv.slice(2);
++const ler = (f: string) => JSON.parse(readFileSync(f, "utf8"));
++const cafeProps = (ep: string) => {
++  const e = ler(ep);
++  return { ...e, timings: ler(`public/audio/${e.id}/timings.json`), ...ler(`public/audio/${e.id}/mix.json`) };
++};
++
++if (cmd === "montar") {
++  const au = ler(a[0]);
++  const p: DiaProps = {
++    id: `aula-${au.slug}`,
++    data: au.data,
++    dataTexto: "aula completa", // a abertura escreve "inglês do básico, em episódios · aula completa"
++    partes: au.partes.map((x: any) => ({ tipo: "cafe" as const, rotulo: x.rotulo, titulo: x.titulo, props: cafeProps(x.ep) })),
++    recap: au.recap,
++    capitulos: { encerramento: "Revisão da aula" },
++  };
++  const out = `out/props-${p.id}.json`;
++  writeFileSync(out, JSON.stringify(p));
++  console.log(out);
++} else if (cmd === "capitulos") {
++  const c = diaCapitulos(ler(a[0]) as DiaProps, FPS);
++  c.linhas.forEach((l) => console.log(l));
++  console.error(`duração: ${c.total.toFixed(1)} s`);
++  if (c.problemas.length) { c.problemas.forEach((x) => console.error("CAPÍTULO: " + x)); process.exit(1); }
++} else if (cmd === "pacote") {
++  const au = ler(a[0]);
++  const p = ler(a[1]) as DiaProps;
++  const cap = diaCapitulos(p, FPS);
++  const descricao = [...au.descricao, "", "Capítulos:", ...cap.linhas, "", "#capyfala #inglês #inglesdozero"].join("\n");
++  const out = { titulo: au.titulo, descricao, categoriaId: "27", madeForKids: false, miniatura: `out/${p.id}.miniatura.png`, arquivo: `${p.id}.mp4`,
++    duracao: +cap.total.toFixed(1), capitulos: cap.linhas };
++  writeFileSync(`out/${p.id}.youtube.json`, JSON.stringify(out, null, 2));
++  console.log(`out/${p.id}.youtube.json (título ${au.titulo.length} car., descrição ${descricao.length} car.)`);
++} else {
++  console.error("uso: montar | capitulos | pacote");
++  process.exit(2);
++}
+diff --git a/canal-idiomas/scripts/make-aula-wide.sh b/canal-idiomas/scripts/make-aula-wide.sh
+new file mode 100644
+index 0000000..e4456c8
+--- /dev/null
++++ b/canal-idiomas/scripts/make-aula-wide.sh
+@@ -0,0 +1,38 @@
++#!/usr/bin/env bash
++# AULA LONGA 16:9 (YouTube, 8 a 12 min): as partes de aulas/<slug>.json viram um vídeo só na composição DiaWide.
++# Voz: scripts/tts.py pede só o que não está no cache. Saída: out/aula-<slug>.mp4 (H.264, yuv420p/tv/bt709, −14 LUFS),
++# out/aula-<slug>.capitulos.txt, out/aula-<slug>.miniatura.png e, acima de 95 MB (limite por arquivo do GitHub é 100 MB),
++# out/aula-<slug>.mp4.part-* para o ramo midia (juntar com cat).
++# Depois: scripts/portao.py --dia out/props-aula-<slug>.json --juiz <nota>. Nunca sobe nem publica.
++# Uso: scripts/make-aula-wide.sh <slug> [--max-pedidos N] [--no-video]
++set -euo pipefail
++cd "$(dirname "$0")/.."
++SLUG="$1"; shift
++MAX=60; VIDEO=1
++while [ $# -gt 0 ]; do case "$1" in --max-pedidos) MAX="$2"; shift ;; --no-video) VIDEO=0 ;; esac; shift; done
++AULA="aulas/$SLUG.json"; ID="aula-$SLUG"
++BROWSER=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell
++BROWSER_FLAG=$([ -x "$BROWSER" ] && echo "--browser-executable=$BROWSER" || true)
++mkdir -p out
++
++for EP in $(node -e "require('./$AULA').partes.forEach(x=>console.log(x.ep))"); do
++  .venv/bin/python scripts/tts.py "$EP" --motor gemini --max-pedidos "$MAX"
++done
++
++JS=$(mktemp --suffix=.cjs)
++trap 'rm -f "$JS"' EXIT
++npx esbuild scripts/aula-wide.ts --bundle --platform=node --log-level=warning > "$JS"
++node "$JS" montar "$AULA" >/dev/null
++node "$JS" capitulos "out/props-$ID.json" > "out/$ID.capitulos.txt"
++cat "out/$ID.capitulos.txt"
++node "$JS" pacote "$AULA" "out/props-$ID.json"
++node -e "const a=require('./$AULA');require('fs').writeFileSync('out/props-$ID-miniatura.json',JSON.stringify(a.miniatura))"
++npx remotion still src/index.ts MiniaturaWide "out/$ID.miniatura.png" --props="out/props-$ID-miniatura.json" $BROWSER_FLAG >/dev/null
++
++if [ "$VIDEO" = 1 ]; then
++  npx remotion render src/index.ts DiaWide "out/$ID.mp4" --props="out/props-$ID.json" --audio-bitrate=320k --crf=22 --pixel-format=yuv420p --color-space=bt709 $BROWSER_FLAG
++  .venv/bin/python scripts/loudnorm.py "out/$ID.mp4"
++  rm -f "out/$ID.mp4.part-"*
++  [ "$(stat -c %s "out/$ID.mp4")" -le 95000000 ] || split -b 90M "out/$ID.mp4" "out/$ID.mp4.part-"
++  ls -l "out/$ID.mp4"*
++fi
+diff --git a/canal-idiomas/scripts/portao.py b/canal-idiomas/scripts/portao.py
+index dac2b8a..caf2b41 100644
+--- a/canal-idiomas/scripts/portao.py
++++ b/canal-idiomas/scripts/portao.py
+@@ -557,6 +557,7 @@ def gravar(mp4: Path, c1: dict, juiz: dict | None) -> dict:
+ 
+ # ---------------------------------------------------------------- LONGO DO DIA 16:9 (YouTube, decisão do Felipe 28/10)
+ FAIXA_LONGO = (150.0, 300.0)  # "cerca de 3 a 4 minutos" (folga de 2:30 a 5:00)
++FAIXA_AULA = (480.0, 780.0)  # aula longa (id aula-*, scripts/make-aula-wide.sh): 8 a 13 min
+ # Zona segura 16:9 (src/wide/geo.ts SAFE_W): margem de título e faixa dos controles do player embaixo.
+ ZONAS_W = {"controles do player (y>960)": (0, 960, 1920, 1080), "borda esquerda (x<96)": (0, 0, 96, 1080),
+            "borda direita (x>1824)": (1824, 0, 1920, 1080), "borda de cima (y<54)": (0, 0, 1920, 54)}
+@@ -568,8 +569,9 @@ def checar_arquivo_dia(mp4: Path) -> tuple[list[str], dict]:
+     if not mp4.exists():
+         return [f"MP4 não existe: {mp4.name}"], {}
+     falhas, m = [], probe(mp4)
+-    if not FAIXA_LONGO[0] <= m["duracao"] <= FAIXA_LONGO[1]:
+-        falhas.append(f"duração {m['duracao']} s fora da faixa do longo ({FAIXA_LONGO[0]}–{FAIXA_LONGO[1]} s)")
++    faixa = FAIXA_AULA if mp4.name.startswith("aula-") else FAIXA_LONGO
++    if not faixa[0] <= m["duracao"] <= faixa[1]:
++        falhas.append(f"duração {m['duracao']} s fora da faixa do longo ({faixa[0]}–{faixa[1]} s)")
+     if (m["largura"], m["altura"]) != (1920, 1080):
+         falhas.append(f"resolução {m['largura']}x{m['altura']} (esperado 1920x1080)")
+     if m.get("codec") != "h264":
+-- 
+2.54.0.windows.1
+
