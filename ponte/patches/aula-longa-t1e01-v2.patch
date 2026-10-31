@@ -1,0 +1,360 @@
+From 834f13bc28761dedd70b025ff6f81bb7920608e5 Mon Sep 17 00:00:00 2001
+From: babalooz <felipe_pguimaraes@hotmail.com>
+Date: Sat, 31 Oct 2026 09:35:33 -0300
+Subject: [PATCH] canal-idiomas: corrige a aula longa T1E01 apontada pelo juiz
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Troca a resposta errada sobre o que vem antes do nome, resolve a
+contradição do balcão, corta a chamada da turma e as repetições, tira a
+promessa não verificada do encerramento. Numera o item 5 da agenda e
+remove o selo "parte 2/3" do capítulo do café.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+---
+ canal-idiomas/aulas/t1e01.json                |  4 +-
+ .../episodes/cafe-t1e01-aula-cena.json        |  4 +-
+ .../episodes/cafe-t1e01-aula-explicacao.json  | 74 +++----------------
+ .../episodes/cafe-t1e01-aula-gringo.json      | 20 ++---
+ .../episodes/cafe-t1e01-aula-sua-vez.json     |  7 ++
+ .../episodes/cafe-t1e01-aula-vida-real.json   | 30 +-------
+ canal-idiomas/src/DiaWide.tsx                 |  3 +-
+ 7 files changed, 34 insertions(+), 108 deletions(-)
+
+diff --git a/canal-idiomas/aulas/t1e01.json b/canal-idiomas/aulas/t1e01.json
+index 4e873b2..9ae7edc 100644
+--- a/canal-idiomas/aulas/t1e01.json
++++ b/canal-idiomas/aulas/t1e01.json
+@@ -3,8 +3,8 @@
+  "data": "2026-11-01",
+  "titulo": "Como se apresentar em inglês do zero: Hi! I'm... | Aula completa | CapyFala",
+  "descricao": [
+-  "Aula com calma, para quem está começando: como cumprimentar alguém e dizer o seu nome em inglês.",
+-  "Tem a cena no café, a explicação de cada palavra, pausas para você falar junto e os lugares onde a frase aparece de verdade.",
++  "Aula com calma para quem está começando o inglês do zero. Você aprende a cumprimentar alguém e a dizer o seu nome.",
++  "Há uma cena no café e a explicação de cada palavra. Entram ainda pausas para você falar junto e exemplos de onde a frase aparece na vida real.",
+   "",
+   "Frase da aula: Hi! I'm Capy. = Oi! Eu sou a Capy."
+  ],
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-cena.json b/canal-idiomas/episodes/cafe-t1e01-aula-cena.json
+index d3bbe8a..1f7ff9b 100644
+--- a/canal-idiomas/episodes/cafe-t1e01-aula-cena.json
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-cena.json
+@@ -71,7 +71,7 @@
+    "lang": "pt",
+    "mode": "pensamento",
+    "emotion": "shock",
+-   "text": "Eu sei essa. Por que eu congelei?"
++   "text": "Eu sei essa. Como é mesmo?"
+   },
+   {
+    "speaker": "duda",
+@@ -91,7 +91,7 @@
+    "speaker": "lazy",
+    "lang": "pt",
+    "emotion": "neutral",
+-   "text": "Oi, e eu sou. Três palavras."
++   "text": "Primeiro o oi. Depois, eu sou. Depois, o nome."
+   },
+   {
+    "speaker": "lazy",
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json b/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json
+index dce03cc..f65fe47 100644
+--- a/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-explicacao.json
+@@ -159,7 +159,7 @@
+   {
+    "speaker": "hank",
+    "lang": "pt",
+-   "text": "Dá para entender. Mas soa como ai, que é eu.",
++   "text": "Dá para entender. Mas vira outra palavra: ai. Em inglês, quer dizer eu.",
+    "emotion": "neutral"
+   },
+   {
+@@ -217,7 +217,7 @@
+   {
+    "speaker": "lazy",
+    "lang": "pt",
+-   "text": "Em inglês, nada antes do nome. Só o nome.",
++   "text": "Em inglês, sem esse a. Só o nome.",
+    "emotion": "neutral"
+   },
+   {
+@@ -304,84 +304,32 @@
+   {
+    "tipo": "pergunta",
+    "s": 5,
+-   "text": "em inglês, o que vai antes do nome? pensa aí..."
++   "text": "como é \"oi, eu sou a Capy\" em inglês? fala aí..."
+   },
+   {
+-   "speaker": "lazy",
+-   "lang": "pt",
+-   "text": "Nada antes do nome. Nem a, nem o.",
+-   "emotion": "neutral"
+-  },
+-  {
+-   "speaker": "bolinha",
++   "speaker": "capi",
+    "lang": "en",
+    "text": "Hi! I'm Capy.",
+-   "emotion": "happy",
+    "alvo": true,
+-   "vapor": true,
+-   "bolinha": true
+-  },
+-  {
+-   "tipo": "pausa",
+-   "s": 1
++   "vapor": true
+   },
+   {
+    "speaker": "lazy",
+    "lang": "pt",
+-   "text": "Agora só escuta a turma. Sem pressa.",
+-   "emotion": "neutral"
++   "text": "Sem o a. Só o nome."
+   },
+   {
+-   "tipo": "pausa",
+-   "s": 1
+-  },
+-  {
+-   "speaker": "lazy",
+-   "lang": "en",
+-   "text": "Hi! I'm Lazy.",
+-   "emotion": "happy",
+-   "alvo": "variacao",
+-   "vapor": true
+-  },
+-  {
+-   "tipo": "pausa",
+-   "s": 1
+-  },
+-  {
+-   "speaker": "hank",
+-   "lang": "en",
+-   "text": "Hi. I'm Hank.",
+-   "emotion": "happy",
+-   "alvo": "variacao",
+-   "vapor": true
+-  },
+-  {
+-   "tipo": "pausa",
+-   "s": 1
+-  },
+-  {
+-   "speaker": "duda",
+-   "lang": "en",
+-   "text": "Hi! I'm Duda!",
+-   "emotion": "happy",
+-   "alvo": "variacao",
+-   "vapor": true
+-  },
+-  {
+-   "tipo": "pausa",
+-   "s": 1
+-  },
+-  {
+-   "speaker": "capi",
++   "speaker": "bolinha",
+    "lang": "en",
+    "text": "Hi! I'm Capy.",
+    "emotion": "happy",
+    "alvo": true,
+-   "vapor": true
++   "vapor": true,
++   "bolinha": true
+   },
+   {
+    "tipo": "pausa",
+-   "s": 1.5
++   "s": 1
+   },
+   {
+    "speaker": "capi",
+@@ -390,7 +338,7 @@
+    "emotion": "neutral"
+   },
+   {
+-   "speaker": "capi",
++   "speaker": "lazy",
+    "lang": "en",
+    "text": "Hi! I'm Capy.",
+    "emotion": "happy",
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json b/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json
+index e5e1a3b..faa5326 100644
+--- a/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-gringo.json
+@@ -5,7 +5,7 @@
+   "temporada": 1,
+   "capitulo": 1,
+   "episodio": 1,
+-  "codigo": "T1 E01 · parte 2/3",
++  "codigo": "T1 E01",
+   "tituloCapitulo": "Você já fala inglês",
+   "frasesAprendidas": 1,
+   "progresso": "você já sabe 1 frase"
+@@ -52,7 +52,7 @@
+    "lang": "pt",
+    "emotion": "neutral",
+    "hold": 0.8,
+-   "text": "Esse aí tá perdido. Vê se ele quer café."
++   "text": "Vizinho novo. Se apresenta pra todo mundo. Vê se ele quer café."
+   },
+   {
+    "tipo": "pausa",
+@@ -99,6 +99,10 @@
+    "repita": true,
+    "text": "Hi!"
+   },
++  {
++   "tipo": "pausa",
++   "s": 3
++  },
+   {
+    "speaker": "capi",
+    "lang": "en",
+@@ -115,7 +119,7 @@
+     "pop"
+    ],
+    "hold": 0.5,
+-   "text": "Nice, Capy!"
++   "text": "Hi, Capy!"
+   },
+   {
+    "speaker": "hank",
+@@ -137,7 +141,7 @@
+    "lang": "en",
+    "emotion": "neutral",
+    "hold": 0.5,
+-   "text": "Hi. Coffee's on me, Rick."
++   "text": "Coffee for Rick."
+   },
+   {
+    "tipo": "pausa",
+@@ -146,14 +150,6 @@
+     "capi": "thinking"
+    }
+   },
+-  {
+-   "speaker": "capi",
+-   "lang": "en",
+-   "emotion": "happy",
+-   "alvo": true,
+-   "vapor": true,
+-   "text": "Hi! I'm Capy!"
+-  },
+   {
+    "speaker": "capi",
+    "lang": "pt",
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json b/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json
+index cde670b..1151253 100644
+--- a/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-sua-vez.json
+@@ -299,6 +299,13 @@
+    "alvo": true,
+    "vapor": true
+   },
++  {
++   "speaker": "lazy",
++   "lang": "en",
++   "text": "Hi! I'm Capy.",
++   "alvo": true,
++   "vapor": true
++  },
+   {
+    "tipo": "pausa",
+    "s": 1
+diff --git a/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json b/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json
+index 2ab07d4..1300fa2 100644
+--- a/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json
++++ b/canal-idiomas/episodes/cafe-t1e01-aula-vida-real.json
+@@ -168,13 +168,13 @@
+   {
+    "speaker": "capi",
+    "lang": "pt",
+-   "text": "E se a pessoa falar rápido e eu não entender?",
++   "text": "E se a pessoa se apresentar rápido e eu não entender?",
+    "emotion": "neutral"
+   },
+   {
+    "speaker": "lazy",
+    "lang": "pt",
+-   "text": "Você ainda pode dizer oi e o seu nome.",
++   "text": "Você não precisa entender tudo. Ainda pode dizer oi e o seu nome.",
+    "emotion": "neutral"
+   },
+   {
+@@ -189,18 +189,6 @@
+    "tipo": "pausa",
+    "s": 1
+   },
+-  {
+-   "speaker": "lazy",
+-   "lang": "en",
+-   "text": "Hi! I'm Capy.",
+-   "emotion": "happy",
+-   "alvo": true,
+-   "vapor": true
+-  },
+-  {
+-   "tipo": "pausa",
+-   "s": 1.5
+-  },
+   {
+    "speaker": "hank",
+    "lang": "pt",
+@@ -211,18 +199,6 @@
+    "tipo": "pausa",
+    "s": 1
+   },
+-  {
+-   "speaker": "capi",
+-   "lang": "en",
+-   "text": "Hi! I'm Capy.",
+-   "emotion": "happy",
+-   "alvo": true,
+-   "vapor": true
+-  },
+-  {
+-   "tipo": "pausa",
+-   "s": 1
+-  },
+   {
+    "speaker": "lazy",
+    "lang": "pt",
+@@ -271,7 +247,7 @@
+   {
+    "speaker": "bolinha",
+    "lang": "pt",
+-   "text": "Guardei na bochecha. Devolvo daqui a uns dias.",
++   "text": "Guardei na bochecha.",
+    "emotion": "happy"
+   },
+   {
+diff --git a/canal-idiomas/src/DiaWide.tsx b/canal-idiomas/src/DiaWide.tsx
+index 0b3d12a..d67a301 100644
+--- a/canal-idiomas/src/DiaWide.tsx
++++ b/canal-idiomas/src/DiaWide.tsx
+@@ -23,7 +23,6 @@ export const DiaWide: React.FC<DiaProps> = (p) => (
+   <AuditCtx.Provider value={!!p.auditoria}><DiaInner {...p} /></AuditCtx.Provider>
+ );
+ 
+-const NUM = ["1", "2", "3", "4"];
+ 
+ const DiaInner: React.FC<DiaProps> = (p) => {
+   const frame = useCurrentFrame();
+@@ -126,7 +125,7 @@ const Abertura: React.FC<{ p: DiaProps }> = ({ p }) => {
+             const s = spring({ frame: frame - 44 - i * 10, fps, config: { damping: 13 } });
+             return (
+               <div key={i} style={{ display: "flex", alignItems: "center", gap: 20, marginTop: 16, opacity: s, transform: `translateX(${(1 - s) * 40}px)` }}>
+-                <div style={{ width: 64, height: 64, borderRadius: 18, background: C.roxo, color: C.creme, fontFamily: TITLE, fontSize: 44, lineHeight: "64px", textAlign: "center", flexShrink: 0 }}>{NUM[i]}</div>
++                <div style={{ width: 64, height: 64, borderRadius: 18, background: C.roxo, color: C.creme, fontFamily: TITLE, fontSize: 44, lineHeight: "64px", textAlign: "center", flexShrink: 0 }}>{i + 1}</div>
+                 <div style={{ fontFamily: TITLE, fontSize: 50, lineHeight: 1.05, color: C.tinta }}>
+                   <span style={{ color: C.roxo }}>{pt.rotulo}:</span> {pt.titulo}
+                 </div>
+-- 
+2.54.0.windows.1
+
