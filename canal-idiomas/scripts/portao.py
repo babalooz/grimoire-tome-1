@@ -557,6 +557,7 @@ def gravar(mp4: Path, c1: dict, juiz: dict | None) -> dict:
 
 # ---------------------------------------------------------------- LONGO DO DIA 16:9 (YouTube, decisão do Felipe 28/10)
 FAIXA_LONGO = (150.0, 300.0)  # "cerca de 3 a 4 minutos" (folga de 2:30 a 5:00)
+FAIXA_AULA = (480.0, 780.0)  # aula longa (id aula-*, scripts/make-aula-wide.sh): 8 a 13 min
 # Zona segura 16:9 (src/wide/geo.ts SAFE_W): margem de título e faixa dos controles do player embaixo.
 ZONAS_W = {"controles do player (y>960)": (0, 960, 1920, 1080), "borda esquerda (x<96)": (0, 0, 96, 1080),
            "borda direita (x>1824)": (1824, 0, 1920, 1080), "borda de cima (y<54)": (0, 0, 1920, 54)}
@@ -568,8 +569,9 @@ def checar_arquivo_dia(mp4: Path) -> tuple[list[str], dict]:
     if not mp4.exists():
         return [f"MP4 não existe: {mp4.name}"], {}
     falhas, m = [], probe(mp4)
-    if not FAIXA_LONGO[0] <= m["duracao"] <= FAIXA_LONGO[1]:
-        falhas.append(f"duração {m['duracao']} s fora da faixa do longo ({FAIXA_LONGO[0]}–{FAIXA_LONGO[1]} s)")
+    faixa = FAIXA_AULA if mp4.name.startswith("aula-") else FAIXA_LONGO
+    if not faixa[0] <= m["duracao"] <= faixa[1]:
+        falhas.append(f"duração {m['duracao']} s fora da faixa do longo ({faixa[0]}–{faixa[1]} s)")
     if (m["largura"], m["altura"]) != (1920, 1080):
         falhas.append(f"resolução {m['largura']}x{m['altura']} (esperado 1920x1080)")
     if m.get("codec") != "h264":

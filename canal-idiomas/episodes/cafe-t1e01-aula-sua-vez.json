@@ -1,0 +1,313 @@
+{
+ "id": "cafe-t1e01-aula-sua-vez",
+ "format": "cafe",
+ "serie": {
+  "temporada": 1,
+  "capitulo": 1,
+  "episodio": 1,
+  "codigo": "T1 E01",
+  "tituloCapitulo": "Você já fala inglês"
+ },
+ "level": "A1",
+ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
+ "title": "Aula · fale com a turma",
+ "hookTitle": "fale com a turma",
+ "alvo": {
+  "en": "Hi! I'm Capy.",
+  "pt": "Oi! Eu sou a Capy.",
+  "nucleo": "Hi! I'm",
+  "variacoes": [
+   "Hi! I'm Duda!"
+  ]
+ },
+ "cast": [
+  "capi",
+  "hank",
+  "lazy",
+  "duda",
+  "bolinha"
+ ],
+ "notebook": 1,
+ "beats": [
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Agora é com você. Fala em voz alta, mesmo baixinho.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Eu falo, depois fica um silêncio. O silêncio é seu.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Primeiro, só o sopro.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "neutral",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "happy",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "hank",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "neutral",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Agora a boca fechando no fim.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "I'm.",
+   "emotion": "neutral",
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "I'm.",
+   "emotion": "happy",
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Agora junto. Bem devagar, com a pausa.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "Hi!... I'm... Lazy.",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi!... I'm... Capy.",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Um pouco mais rápido. Sem pressa de acertar.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "bolinha",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true,
+   "bolinha": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 3
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Agora vem a parte boa. Troca o meu nome pelo seu.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Fala a frase inteira, com o seu nome. Pode falar.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "hank",
+   "lang": "pt",
+   "text": "Mais uma vez. Eu não ouvi.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Saiu com sotaque? Tudo bem. Sotaque não é erro.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Se a pessoa entendeu, deu certo.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Última rodada. Cada um dá oi, você responde com seu nome.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "hank",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "duda",
+   "lang": "en",
+   "text": "Hi! I'm Duda!",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "Hi! I'm Lazy.",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "tipo": "pergunta",
+   "s": 5,
+   "text": "qual palavra começa com sopro? pensa aí..."
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "happy",
+   "vapor": true
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Se você falou junto, acabou de se apresentar em inglês.",
+   "emotion": "neutral"
+  }
+ ]
+}

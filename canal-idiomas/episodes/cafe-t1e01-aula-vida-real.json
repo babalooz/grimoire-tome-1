@@ -1,0 +1,349 @@
+{
+ "id": "cafe-t1e01-aula-vida-real",
+ "format": "cafe",
+ "serie": {
+  "temporada": 1,
+  "capitulo": 1,
+  "episodio": 1,
+  "codigo": "T1 E01",
+  "tituloCapitulo": "Você já fala inglês"
+ },
+ "level": "A1",
+ "canDo": "Consigo cumprimentar alguém e dizer meu nome de um jeito simples.",
+ "title": "Aula · onde você vai usar",
+ "hookTitle": "onde você vai usar",
+ "alvo": {
+  "en": "Hi! I'm Capy.",
+  "pt": "Oi! Eu sou a Capy.",
+  "nucleo": "Hi! I'm",
+  "variacoes": [
+   "Hi! I'm Duda!"
+  ]
+ },
+ "cast": [
+  "capi",
+  "hank",
+  "lazy",
+  "duda",
+  "poppy",
+  "bolinha"
+ ],
+ "notebook": 1,
+ "beats": [
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Última parte. Onde essa frase aparece de verdade?",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Primeiro lugar: a reunião de trabalho por vídeo.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Todo mundo se apresenta. Chega a sua vez.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "poppy",
+   "lang": "en",
+   "text": "Hi! I'm Poppy.",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "hank",
+   "lang": "en",
+   "text": "Hi. I'm Hank.",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Falou o seu nome? Então passou.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Segundo lugar: o balcão, na viagem.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "hank",
+   "lang": "pt",
+   "text": "Eu falo primeiro. E falo pouco.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "hank",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 4
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "No balcão, o nome fica para depois. Responde só com oi.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi.",
+   "emotion": "happy",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Terceiro lugar: alguém puxa conversa.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "duda",
+   "lang": "en",
+   "text": "Hi! I'm Duda!",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Ela disse o nome. Você diz o seu, igualzinho.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "duda",
+   "lang": "en",
+   "text": "Hi! I'm Duda!",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 5
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "E se a pessoa falar rápido e eu não entender?",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Você ainda pode dizer oi e o seu nome.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "hank",
+   "lang": "pt",
+   "text": "Não precisa de mais nada para começar.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Agora o treino para levar daqui. Dura dez segundos.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Hoje, fala a frase três vezes com o seu nome.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Pode ser no banho, no carro, na fila.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Amanhã, fala de novo. É assim que fica na memória.",
+   "emotion": "neutral"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1.5
+  },
+  {
+   "speaker": "bolinha",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true,
+   "bolinha": true
+  },
+  {
+   "speaker": "bolinha",
+   "lang": "pt",
+   "text": "Guardei na bochecha. Devolvo daqui a uns dias.",
+   "emotion": "happy"
+  },
+  {
+   "tipo": "pausa",
+   "s": 1
+  },
+  {
+   "speaker": "lazy",
+   "lang": "pt",
+   "text": "Uma última vez, junto com a turma.",
+   "emotion": "neutral"
+  },
+  {
+   "speaker": "lazy",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "duda",
+   "lang": "en",
+   "text": "Hi! I'm Duda!",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "capi",
+   "lang": "en",
+   "text": "Hi! I'm Capy.",
+   "emotion": "happy",
+   "alvo": true,
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 2.5
+  },
+  {
+   "speaker": "hank",
+   "lang": "en",
+   "text": "Hi. I'm Hank.",
+   "emotion": "happy",
+   "alvo": "variacao",
+   "vapor": true,
+   "repita": true
+  },
+  {
+   "tipo": "pausa",
+   "s": 4
+  },
+  {
+   "speaker": "capi",
+   "lang": "pt",
+   "text": "Consigo cumprimentar e dizer meu nome.",
+   "emotion": "happy",
+   "card": true,
+   "hold": 2,
+   "cardTexto": "CONSIGO cumprimentar e dizer meu nome ✓"
+  }
+ ]
+}

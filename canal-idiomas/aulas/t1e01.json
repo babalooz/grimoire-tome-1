@@ -1,0 +1,48 @@
+{
+ "slug": "t1e01",
+ "data": "2026-11-01",
+ "titulo": "Como se apresentar em inglês do zero: Hi! I'm... | Aula completa | CapyFala",
+ "descricao": [
+  "Aula com calma, para quem está começando: como cumprimentar alguém e dizer o seu nome em inglês.",
+  "Tem a cena no café, a explicação de cada palavra, pausas para você falar junto e os lugares onde a frase aparece de verdade.",
+  "",
+  "Frase da aula: Hi! I'm Capy. = Oi! Eu sou a Capy."
+ ],
+ "recap": [
+  "Hi! I'm Capy. = Oi! Eu sou a Capy.",
+  "o H sai como um sopro",
+  "nada antes do nome"
+ ],
+ "miniatura": {
+  "frase": "Hi! I'm...",
+  "tag": "INGLÊS DO ZERO · AULA COMPLETA",
+  "extra": "com pausas para falar junto"
+ },
+ "partes": [
+  {
+   "ep": "episodes/cafe-t1e01-aula-cena.json",
+   "rotulo": "a cena",
+   "titulo": "o primeiro oi da Capy"
+  },
+  {
+   "ep": "episodes/cafe-t1e01-aula-explicacao.json",
+   "rotulo": "a explicação",
+   "titulo": "três palavras e um sopro"
+  },
+  {
+   "ep": "episodes/cafe-t1e01-aula-sua-vez.json",
+   "rotulo": "sua vez",
+   "titulo": "fale com a turma"
+  },
+  {
+   "ep": "episodes/cafe-t1e01-aula-gringo.json",
+   "rotulo": "no café",
+   "titulo": "um gringo de verdade"
+  },
+  {
+   "ep": "episodes/cafe-t1e01-aula-vida-real.json",
+   "rotulo": "na vida real",
+   "titulo": "onde você vai usar"
+  }
+ ]
+}
