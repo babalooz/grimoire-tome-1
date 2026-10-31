@@ -963,6 +963,42 @@
      "episodio": "T1 E03 · parte 3/3"
     }
    ]
+  },
+  {
+   "data": "2026-11-08",
+   "diaSemana": "dom",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E04"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E04"
+    }
+   ]
+  },
+  {
+   "data": "2026-11-09",
+   "diaSemana": "seg",
+   "posts": [
+    {
+     "hora": "12:10",
+     "rede": "youtube",
+     "faixa": "episodio",
+     "episodio": "T1 E04 · parte 2/3"
+    },
+    {
+     "hora": "19:07",
+     "rede": "tiktok",
+     "faixa": "episodio",
+     "episodio": "T1 E04 · parte 2/3"
+    }
+   ]
   }
  ]
 }
